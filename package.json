@@ -1,0 +1,11 @@
+{
+  "name": "lexora-digital",
+  "private": true,
+  "type": "module",
+  "description": "Lexora Digital — website (static, zero dependencies)",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node tools/serve.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

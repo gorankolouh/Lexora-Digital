@@ -1,0 +1,10 @@
+const { chromium } = require('playwright');
+(async()=>{const b=await chromium.launch();
+const p=await b.newPage({viewport:{width:1440,height:900}});
+await p.goto('http://localhost:4321/en/');await p.waitForTimeout(3000);
+console.log('hero video', await p.evaluate(()=>{const v=document.querySelector('.hero video');return {src:v.currentSrc.split('/').pop(),paused:v.paused,t:v.currentTime.toFixed(2),rs:v.readyState}}));
+const m=await b.newPage({viewport:{width:390,height:844}});await m.goto('http://localhost:4321/en/');await m.waitForTimeout(2000);
+console.log('mobile src', await m.evaluate(()=>document.querySelector('.hero video').currentSrc.split('/').pop()));
+const c=await b.newContext({reducedMotion:'reduce'});const r=await c.newPage();await r.goto('http://localhost:4321/en/');await r.waitForTimeout(2000);
+console.log('reduced motion paused', await r.evaluate(()=>document.querySelector('.hero video').paused));
+await b.close();})();

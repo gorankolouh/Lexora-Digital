@@ -1,0 +1,21 @@
+const { chromium } = require('playwright');
+(async()=>{const b=await chromium.launch();const errs=[];
+const p=await b.newPage({viewport:{width:390,height:844}});
+p.on('pageerror',e=>errs.push(e.message));
+await p.goto('http://localhost:4321/en/');await p.waitForTimeout(800);
+await p.click('.burger');await p.waitForTimeout(500);await p.screenshot({path:'/tmp/lx-menu.png'});
+await p.keyboard.press('Escape');
+const d=await b.newPage({viewport:{width:1440,height:900}});
+await d.goto('http://localhost:4321/en/');await d.waitForTimeout(500);
+await d.click('.lang-btn');await d.waitForTimeout(400);await d.screenshot({path:'/tmp/lx-lang.png',clip:{x:900,y:0,width:540,height:420}});
+await d.click('body',{position:{x:10,y:500}});
+await d.click('.nav .dd button');await d.waitForTimeout(400);await d.screenshot({path:'/tmp/lx-svc.png',clip:{x:400,y:0,width:700,height:360}});
+// perf: measure frame rate
+const fps=await d.evaluate(()=>new Promise(r=>{let n=0,t0=performance.now();function f(){n++; if(performance.now()-t0<2000) requestAnimationFrame(f); else r(n/2);}requestAnimationFrame(f);}));
+console.log('fps',fps);
+const rm=await b.newContext({reducedMotion:'reduce',viewport:{width:1440,height:900}});const r=await rm.newPage();r.on('pageerror',e=>errs.push('rm '+e.message));
+await r.goto('http://localhost:4321/en/');await r.waitForTimeout(500);await r.screenshot({path:'/tmp/lx-rm.png'});
+const nj=await b.newContext({javaScriptEnabled:false,viewport:{width:1440,height:900}});const q=await nj.newPage();
+await q.goto('http://localhost:4321/en/');await q.screenshot({path:'/tmp/lx-nojs.png'});
+const nf=await b.newPage({viewport:{width:1440,height:900}});await nf.goto('http://localhost:4321/en/xyz/');await nf.waitForTimeout(1500);await nf.screenshot({path:'/tmp/lx-404.png'});
+console.log('errors',errs);await b.close();})();
