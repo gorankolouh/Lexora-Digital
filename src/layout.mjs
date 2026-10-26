@@ -1,4 +1,4 @@
-import { LANGS, SITE_URL, BRAND, TAGLINE, SERVICES, FORMS, PLANET_VIDEO } from "./config.mjs";
+import { LANGS, SITE_URL, BRAND, TAGLINE, SERVICES, FORMS, PLANET_VIDEO, ORG_PROFILES, FOUNDER } from "./config.mjs";
 import { esc, fmt, path, abs, LOGO, icon, readyLangs } from "./lib.mjs";
 
 const V = Date.now().toString(36); // cache-busting for assets
@@ -114,7 +114,15 @@ export function page({ t, key, title, desc, body, globe = false, noindex = false
   const selfPath = altFn(t.lang);
   const alts = readyLangs().map((l) => `<link rel="alternate" hreflang="${l.code}" href="${abs(altFn(l.code))}">`).join("\n");
   const xdef = key === "home" ? `\n<link rel="alternate" hreflang="x-default" href="${SITE_URL}/">` : "";
-  const org = key === "home" ? { "@context": "https://schema.org", "@type": "Organization", name: BRAND, url: SITE_URL + "/", logo: SITE_URL + "/assets/img/lexora-logo-512.png", slogan: TAGLINE } : null;
+  const org = key === "home" ? {
+    "@context": "https://schema.org", "@type": "Organization", "@id": SITE_URL + "/#organization",
+    name: BRAND, url: SITE_URL + "/", logo: SITE_URL + "/assets/img/lexora-logo-512.png", image: SITE_URL + "/assets/img/og-image.jpg",
+    slogan: TAGLINE, description: desc, email: "info@lexoradigital.com",
+    areaServed: { "@type": "Place", name: "Europe" },
+    knowsLanguage: readyLangs().map((l) => l.code),
+    sameAs: ORG_PROFILES,
+    founder: { "@type": "Person", "@id": SITE_URL + "/#founder", name: FOUNDER.name, jobTitle: FOUNDER.jobTitle, url: FOUNDER.url, sameAs: FOUNDER.profiles }
+  } : null;
   const jsonld = [org, ld].filter(Boolean).map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n");
   const formCfg = `<script>window.LEXORA_FORMS=${JSON.stringify(FORMS)};window.LEXORA_I18N=${JSON.stringify(t.form.js)};</script>`;
   return `<!doctype html>
