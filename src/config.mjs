@@ -3,6 +3,28 @@ export const SITE_URL = "https://lexoradigital.com";
 export const BRAND = "Lexora Digital";
 export const TAGLINE = "WEB · LAW · LANGUAGE · DESIGN";
 
+// ---------------------------------------------------------------------------
+// PROFILES — used in the structured data (schema.org "sameAs") so search engines
+// can connect these profiles to the brand and to the founder. Clean URLs only (no ?utm… tracking).
+// ---------------------------------------------------------------------------
+export const ORG_PROFILES = [
+  "https://www.linkedin.com/company/lexoradigitalcom/",
+  "https://www.instagram.com/lexora_digital/",
+  "https://www.trustpilot.com/review/lexoradigital.com"
+];
+export const FOUNDER = {
+  name: "Goran Kolouh",
+  jobTitle: "Founder & Director",
+  url: "https://kolouch.pro/",
+  profiles: [
+    "https://kolouch.pro/",
+    "https://gorankolouch.medium.com/",
+    "https://substack.com/@gorankolouch",
+    "https://www.upwork.com/freelancers/~01fd19597aba5eb0ff",
+    "https://gorankolouh.gumroad.com/"
+  ]
+};
+
 export const LANGS = [
   { code: "en", native: "English", ready: true },
   { code: "de", native: "Deutsch", ready: true },

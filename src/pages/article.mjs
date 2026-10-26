@@ -1,5 +1,6 @@
 // Journal article pages + shared article cards
-import { esc, fmt, path, icon } from "../lib.mjs";
+import { esc, fmt, path, abs, icon } from "../lib.mjs";
+import { SITE_URL, FOUNDER } from "../config.mjs";
 import { pageHero, band, btn, slug as slugify } from "../components.mjs";
 import { JART } from "./inner.mjs";
 
@@ -63,10 +64,14 @@ export function article(t, a) {
 }
 
 export function articleLd(t, a) {
+  const url = abs(articleHref(t, a));
   return {
     "@context": "https://schema.org", "@type": "Article", headline: a.t, description: a.d, inLanguage: t.lang,
-    datePublished: a.iso, dateModified: a.iso,
-    author: { "@type": "Person", name: "Goran Kolouh", jobTitle: "Founder & Director" },
-    publisher: { "@type": "Organization", name: "Lexora Digital" }
+    url, mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    image: SITE_URL + "/assets/img/og-image.jpg",
+    datePublished: a.iso, dateModified: a.updated || a.iso,
+    author: { "@type": "Person", "@id": SITE_URL + "/#founder", name: FOUNDER.name, jobTitle: FOUNDER.jobTitle, url: FOUNDER.url, sameAs: FOUNDER.profiles },
+    publisher: { "@type": "Organization", "@id": SITE_URL + "/#organization", name: "Lexora Digital", url: SITE_URL + "/",
+      logo: { "@type": "ImageObject", url: SITE_URL + "/assets/img/lexora-logo-512.png", width: 512, height: 512 } }
   };
 }

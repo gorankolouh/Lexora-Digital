@@ -63,7 +63,7 @@ async function build() {
       const alt = (c) => articleHref(all[c], a);
       const html = page({ t, key: "journal", title: `${a.t} | Lexora Digital`, desc: a.d, body: article(t, a), alt, ld: articleLd(t, a), ogType: "article" });
       await write(join(alt(l.code), "index.html"), html);
-      if (l.code === DEFAULT_LANG) urls.push({ alt });
+      if (l.code === DEFAULT_LANG) urls.push({ alt, lastmod: a.updated || a.iso });
     }
     // case studies share their slug across languages
     for (const item of t.home.work.items) {
@@ -103,8 +103,8 @@ location.replace("/"+(s||d)+"/");})();</script>
 <div class="hero-cta" style="margin-top:28px">${ready.map((l) => `<a class="btn btn-ghost btn-sm" href="/${l.code}/" lang="${l.code}">${l.native}</a>`).join("")}</div></div></section>`
   }));
 
-  const today = new Date().toISOString().slice(0, 10);
-  const sm = urls.flatMap(({ alt }) => ready.map((l) => `  <url><loc>${abs(alt(l.code))}</loc><lastmod>${today}</lastmod>
+  // lastmod only where we know the real date (articles); a build-date stamp on every page teaches Google to ignore it
+  const sm = urls.flatMap(({ alt, lastmod }) => ready.map((l) => `  <url><loc>${abs(alt(l.code))}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}
 ${ready.map((m) => `    <xhtml:link rel="alternate" hreflang="${m.code}" href="${abs(alt(m.code))}"/>`).join("\n")}
   </url>`)).join("\n");
   await write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sm}\n</urlset>\n`);
