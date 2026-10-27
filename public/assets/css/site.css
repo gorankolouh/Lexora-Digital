@@ -932,3 +932,6 @@ ul,ol{margin:0;padding:0}
 .shop-kits .price-line b{font-weight:500;color:var(--lime)}
 /* one more main-menu item: tighten the pills slightly on narrow desktops so the logo keeps its size */
 @media (min-width:1181px) and (max-width:1320px){.nav > a,.nav .dd > button{padding:0 11px}}
+/* mobile: no blue tap box (keyboard focus ring stays), and the menu glow must not make the menu scroll sideways */
+html{-webkit-tap-highlight-color:transparent}
+.mnav{overflow-x:hidden;overscroll-behavior:contain}
