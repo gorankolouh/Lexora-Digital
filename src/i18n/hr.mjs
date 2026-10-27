@@ -15,7 +15,7 @@ export default {
     work: "Radovi", journal: "Journal", about: "O nama", contact: "Kontakt", shop: "Predlošci",
     web: ["Web dizajn i razvoj", "Web stranice, landing stranice, objava", "</>"],
     compliance: ["Digitalna usklađenost", "GDPR, kolačići, digitalna pravila EU-a", "§"],
-    check: ["GDPR i provjera kolačića", "Besplatna provjera · ispravak za 99 €", "✓"],
+    check: ["GDPR i provjera kolačića", "Besplatna provjera · ispravak od 99 €", "✓"],
     language: ["Prijevodi", "Pet jezika, u svim smjerovima", "⇄"],
     creative: ["Kreativne usluge", "Identitet, grafika, obrada medija", "Aa"]
   },
@@ -23,7 +23,7 @@ export default {
     home: { title: "Lexora Digital — studio za web, pravo, jezik i dizajn", desc: "Neovisni digitalni studio za web stranice, usklađenost s GDPR-om i pravilima o kolačićima, prijevode i dizajn — za tvrtke diljem Europe, na pet jezika." },
     web: { title: "Izrada web stranica — Lexora Digital", desc: "Web stranice i landing stranice po mjeri za mala i srednja poduzeća. Osnovna web stranica od 99 €, prilagođena mobitelima, prijateljska prema privatnosti i objavljena na Vašoj domeni." },
     compliance: { title: "Digitalna usklađenost: GDPR, kolačići i pravila EU-a — Lexora Digital", desc: "Praktična pomoć s GDPR-om, privolom za kolačiće, izjavama o privatnosti i digitalnim pravilima EU-a za poslovne web stranice — informacije i provedba, ne pravni savjet." },
-    check: { title: "Besplatna GDPR provjera i provjera kolačića — ispravak za 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: besplatna provjera privole, praćenja i pravnih stranica Vaše web stranice. Ako pronađemo nedostatke, ispravljamo ih po fiksnoj cijeni od 99 €." },
+    check: { title: "Besplatna GDPR provjera i provjera kolačića — ispravak od 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: besplatna provjera privole, praćenja i pravnih stranica Vaše web stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 €." },
     language: { title: "Prijevodi s engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — Lexora Digital", desc: "Prijevod web stranica, poslovnih i pravnih tekstova između engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — precizno i prirodno." },
     creative: { title: "Kreativne usluge: identitet, grafički dizajn i obrada medija — Lexora Digital", desc: "Vizualni identitet, materijali brenda, grafički dizajn te odabrana obrada fotografija, videa, zvuka i glasa za tvrtke." },
     work: { title: "Radovi — konceptualni projekti | Lexora Digital", desc: "Koncepti web stranica za kozmetiku, obrtnike i autoservise — cjeloviti, prilagodljivi dizajni koji pokazuju kako Lexora Digital radi." },
@@ -71,7 +71,7 @@ export default {
           p: "Web stranice i landing stranice po mjeri, prilagodljiv dizajn, poboljšanja postojećih stranica, objava i jasna primopredaja. Osnovne web stranice od 99 €.",
           tags: ["Web stranice po mjeri", "Landing stranice", "Prilagodljiv dizajn", "Poboljšanja", "Objava"], link: "Web dizajn i razvoj" },
         { key: "law", route: "compliance", g: "§", word: "Pravo", title: "Web stranice koje poštuju svoje posjetitelje.",
-          p: "Savjetovanje i praktična podrška za GDPR, kolačiće i izjave o privatnosti — uključujući besplatnu provjeru web stranice i ispravak po fiksnoj cijeni od 99 €.",
+          p: "Savjetovanje i praktična podrška za GDPR, kolačiće i izjave o privatnosti — uključujući besplatnu provjeru web stranice i ispravak po cijeni od 99 €.",
           tags: ["GDPR i kolačići", "Postavljanje privole", "Pravne stranice", "Digitalna pravila EU-a"],
           note: "Opće informacije i praktična provedba na web stranicama. Nismo odvjetnički ured i ne pružamo pravne savjete ni pravno zastupanje.", link: "Digitalna usklađenost" },
         { key: "language", route: "language", g: "⇄", word: "Jezik", title: "Tekstovi koji zvuče kao da su napisani na Vašem jeziku.",
@@ -124,8 +124,8 @@ export default {
     checkBand: {
       label: "GDPR, Cookies & Co.",
       h2: "Je li Vaša web stranica usklađena s GDPR-om i pravilima o kolačićima? *Saznajte besplatno.*",
-      lead: "Provjeravamo privolu, praćenje, izjavu o privatnosti i pravne stranice. Ako pronađemo nedostatke, ispravljamo ih po jednoj fiksnoj cijeni.",
-      priceFree: "0 €", priceFix: "99 €", free: "Provjera", fix: "Ispravak — jednokratno", cta: "Provjerite moju stranicu"
+      lead: "Provjeravamo privolu, praćenje, izjavu o privatnosti i pravne stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 € — cijenu znate unaprijed.",
+      priceFree: "0 €", priceFix: "od 99 €", free: "Provjera", fix: "Ispravak — jednokratno", cta: "Provjerite moju stranicu"
     },
     process: {
       label: "Naš pristup",
@@ -197,7 +197,7 @@ export default {
       pricing: {
         label: "Paketi", h2: "Transparentno od početka.", lead: "Jasno definiran početni paket za male tvrtke i individualne ponude za sve veće.",
         incl: "Uključeno", extra: "Nije uključeno / dodatno",
-        starter: { name: "Osnovna web stranica", price: "99 €", unit: "jednokratno", svc: "web", cta: "Naručite osnovnu web stranicu",
+        starter: { name: "Osnovna web stranica", price: "od 99 €", unit: "jednokratno", svc: "web", cta: "Naručite osnovnu web stranicu",
           p: "Profesionalna web stranica na jednoj stranici za malu tvrtku, obično gotova u roku od 48 sati nakon što primimo sav sadržaj.",
           incl: ["Jedna prilagodljiva stranica s do 6 odjeljaka", "Vaši tekstovi, fotografije i logotip, pažljivo složeni", "Kontaktni odjeljak s telefonom, e-mailom, adresom i poveznicom na kartu", "Postavke prijateljske prema privatnosti i poveznice na Vaše pravne stranice", "Objava na Vašoj postojećoj domeni"],
           extra: ["Troškovi domene i hostinga", "Pisanje ili prijevod Vaših tekstova", "Dodatne stranice, rezervacije ili web trgovina", "Izrada logotipa ili fotografija", "Stalne izmjene nakon objave"] },
@@ -250,12 +250,12 @@ export default {
         doT: "Što radimo", do: ["Razumljivo objašnjavamo pravila koja se vjerojatno primjenjuju", "Provjeravamo Vašu web stranicu na uobičajene nedostatke", "Ispravljamo privolu, praćenje i obrasce na Vašoj web stranici", "Strukturiramo izjavu o privatnosti i impresum iz Vaših podataka", "Ponovno provjeravamo stranicu nakon izmjena"],
         dontT: "Što ne radimo", dont: ["Pravni savjeti ili pravno zastupanje", "Jamstvo da je web stranica \"100 % usklađena\"", "Uloga Vašeg službenika za zaštitu podataka", "Sastavljanje ugovora ili zastupanje pred tijelima"]
       },
-      band: { h2: "Počnite s *besplatnom provjerom* svoje web stranice.", lead: "Provjeravamo privolu, praćenje, izjavu o privatnosti i pravne stranice. Ako pronađemo nedostatke, ispravljamo ih po fiksnoj cijeni od 99 €.", cta: "Provjerite moju stranicu" }
+      band: { h2: "Počnite s *besplatnom provjerom* svoje web stranice.", lead: "Provjeravamo privolu, praćenje, izjavu o privatnosti i pravne stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 €.", cta: "Provjerite moju stranicu" }
     },
 
     check: {
-      hero: { label: "GDPR, Cookies & Co.", h1: "Besplatna GDPR provjera i provjera kolačića. *Ispravljamo za 99 €.*", lead: "Pošaljite nam svoju web stranicu. Provjeravamo privolu, praćenje, izjavu o privatnosti i pravne stranice prema pravilima EU-a i Vaše države. Ako je sve u redu, ne plaćate ništa. Ako nije, uskladit ćemo Vašu stranicu po jednoj fiksnoj cijeni.",
-        points: ["Bez računa i kartice", "Besplatno ako nema nedostataka", "Jedna fiksna cijena za ispravak", "Besplatna ponovna provjera"] },
+      hero: { label: "GDPR, Cookies & Co.", h1: "Besplatna GDPR provjera i provjera kolačića. *Ispravak od 99 €.*", lead: "Pošaljite nam svoju web stranicu. Provjeravamo privolu, praćenje, izjavu o privatnosti i pravne stranice prema pravilima EU-a i Vaše države. Ako je sve u redu, ne plaćate ništa. Ako nije, uskladit ćemo Vašu stranicu po cijeni od 99 € — cijenu znate unaprijed.",
+        points: ["Bez računa i kartice", "Besplatno ako nema nedostataka", "Cijena dogovorena unaprijed", "Besplatna ponovna provjera"] },
       areas: {
         label: "Što provjeravamo", h2: "Četiri područja koja najčešće dovode do pritužbi i kazni.", lead: "Provjeravamo ono što Vaši posjetitelji zaista vide i što Vaša stranica zaista učitava.",
         items: [
@@ -271,7 +271,7 @@ export default {
           ["Pošaljite stranicu", "Unesite adresu web stranice, e-mail i državu — više nam ne treba."],
           ["Provjeravamo", "Provjeravamo privolu, praćenje, izjavu o privatnosti i pravne stranice prema pravilima EU-a i Vaše države."],
           ["Dobivate rezultat", "Besplatno. Ako je sve u redu, to je sve. Ako nije, dobivate kratak, razumljiv popis nedostataka."],
-          ["Ispravljamo za 99 €", "Uz Vaše odobrenje ispravljamo nedostatke na stranici, a zatim je besplatno ponovno provjeravamo."]
+          ["Ispravljamo po cijeni od 99 €", "Uz Vaše odobrenje ispravljamo nedostatke na stranici, a zatim je besplatno ponovno provjeravamo."]
         ]
       },
       example: {
@@ -288,17 +288,17 @@ export default {
         label: "Cijene", h2: "Dvije cijene. Bez iznenađenja.", lead: "Provjera je uvijek besplatna. Plaćate samo ako pronađemo nedostatke i želite da ih ispravimo.",
         plans: [
           { name: "Provjera", price: "0 €", unit: "besplatno", cta: "Zatražite besplatnu provjeru", p: "Pregled Vaše web stranice koji provodimo mi.", incl: ["Privola, praćenje, izjava o privatnosti i pravne stranice", "Prema pravilima EU-a i Vaše države", "Kratak, razumljiv popis mogućih nedostataka", "Bez obveze"] },
-          { name: "Ispravak", price: "99 €", unit: "jednokratno", cta: "Počnite s besplatnom provjerom", p: "Usklađujemo Vašu web stranicu s GDPR-om i pravilima o kolačićima EU-a i Vaše države.",
+          { name: "Ispravak", price: "od 99 €", unit: "jednokratno", cta: "Počnite s besplatnom provjerom", p: "Usklađujemo Vašu web stranicu s GDPR-om i pravilima o kolačićima EU-a i Vaše države.",
             incl: ["Ispravno postavljen banner za privolu — jednako istaknuti Prihvati i Odbij, stvaran izbor", "Alati za praćenje i ugrađeni sadržaj blokirani do privole, koliko to Vaša platforma dopušta", "Izjava o privatnosti i impresum dopunjeni iz podataka koje nam date", "Obavijesti u obrascima i poveznice na pravne stranice na svakoj stranici", "Besplatna ponovna provjera i kratak sažetak izmjena"] }
         ],
-        scope: "Ispravak za 99 € obuhvaća standardne web stranice na uobičajenim platformama poput WordPressa, Wixa, Squarespacea, Shopifyja, Webflowa, Jimda ili čistog HTML-a i zahtijeva pristup Vašoj stranici ili Vašem developeru. Ako Vašoj stranici treba više — primjerice posebni dodaci, naplata u web trgovini ili promjena hostinga — reći ćemo Vam to unaprijed, s posebnom cijenom. Cijene bez PDV-a, gdje je primjenjivo."
+        scope: "Ispravak od 99 € obuhvaća standardne web stranice na uobičajenim platformama poput WordPressa, Wixa, Squarespacea, Shopifyja, Webflowa, Jimda ili čistog HTML-a i zahtijeva pristup Vašoj stranici ili Vašem developeru. Ako Vašoj stranici treba više — primjerice posebni dodaci, naplata u web trgovini ili promjena hostinga — reći ćemo Vam to unaprijed, s posebnom cijenom. Cijene bez PDV-a, gdje je primjenjivo."
       },
       countries: { label: "Države", h2: "Provjereno prema pravilima koja vrijede za Vas.", lead: "Recite nam gdje je sjedište Vaše tvrtke. Vašu stranicu provjeravamo prema pravilima EU-a i nacionalnom zakonodavstvu te države." },
       faq: {
         label: "Pitanja", h2: "Česta pitanja.",
         items: [
           ["Je li provjera zaista besplatna?", "Da. Provjera ne košta ništa. Ako ne pronađemo nedostatke, ne plaćate baš ništa."],
-          ["Što točno uključuje ispravak za 99 €?", "Ispravno postavljamo privolu, blokiramo alate za praćenje do privole koliko to Vaša platforma dopušta, dopunjujemo izjavu o privatnosti i impresum iz podataka koje nam date, dodajemo obavijesti u obrasce i poveznice na pravne stranice te nakon toga ponovno provjeravamo stranicu."],
+          ["Što točno uključuje ispravak od 99 €?", "Ispravno postavljamo privolu, blokiramo alate za praćenje do privole koliko to Vaša platforma dopušta, dopunjujemo izjavu o privatnosti i impresum iz podataka koje nam date, dodajemo obavijesti u obrasce i poveznice na pravne stranice te nakon toga ponovno provjeravamo stranicu."],
           ["Mijenjate li moju stranicu bez pitanja?", "Ne. Mijenjamo nešto tek nakon što prihvatite ponudu, i samo ono što je u njoj opisano."],
           ["Što trebate od mene?", "Pristup Vašoj web stranici (npr. privremeni administratorski pristup) ili kontakt Vašeg developera — te podatke o tvrtki koji trebaju biti u izjavi o privatnosti i impresumu."],
           ["Je li ovo pravni savjet?", "Ne. Provjera i ispravak praktičan su, tehnički rad na temelju pravila EU-a i nacionalnih pravila. Nisu pravni savjet i ne jamče usklađenost. Za pravni savjet obratite se odvjetniku."],
@@ -628,14 +628,14 @@ export default {
       consent: "Slažem se da Lexora Digital koristi moje podatke kako bi odgovorila na moj upit. Više u {privacy}.",
       success: ["Hvala — Vaša poruka je poslana.", "Odgovorit ćemo što prije, na Vašem jeziku."],
       f: { name: "Ime", email: "E-mail", company: "Naziv tvrtke", language: "Željeni jezik", service: "S čime Vam možemo pomoći?", budget: "Budžet", message: "Vaša poruka", messagePh: "Što želite postići?", choose: "Odaberite" },
-      services: [["web", "Web stranica (dizajn i razvoj)"], ["design", "Kreativne i dizajnerske usluge"], ["compliance", "Savjetovanje o GDPR-u i kolačićima"], ["check", "GDPR provjera i provjera kolačića / ispravak za 99 €"], ["translation", "Prijevod"], ["other", "Nešto drugo"]],
+      services: [["web", "Web stranica (dizajn i razvoj)"], ["design", "Kreativne i dizajnerske usluge"], ["compliance", "Savjetovanje o GDPR-u i kolačićima"], ["check", "GDPR provjera i provjera kolačića / ispravak od 99 €"], ["translation", "Prijevod"], ["other", "Nešto drugo"]],
       budgets: [["<500", "Manje od 500 €"], ["500-1500", "500–1.500 €"], ["1500-5000", "1.500–5.000 €"], ["5000+", "Više od 5.000 €"], ["unsure", "Još ne znam"]]
     },
     check: {
       title: "Zatražite besplatnu provjeru", intro: "Rezultat šaljemo na Vašu e-mail adresu.",
       submit: "Besplatno provjerite moju stranicu", subject: "Zahtjev za GDPR provjeru i provjeru kolačića",
       consent: "Slažem se da se moji podaci koriste samo za provedbu provjere i slanje rezultata. Više u {privacy}.",
-      success: ["Hvala — Vaš zahtjev je zaprimljen.", "Rezultat ćemo Vam poslati e-mailom. Ako pronađemo nedostatke, dobit ćete ponudu za ispravak od 99 € — na Vašoj stranici ništa se ne mijenja bez Vašeg odobrenja."],
+      success: ["Hvala — Vaš zahtjev je zaprimljen.", "Rezultat ćemo Vam poslati e-mailom. Ako pronađemo nedostatke, dobit ćete ponudu za ispravak (od 99 €) — na Vašoj stranici ništa se ne mijenja bez Vašeg odobrenja."],
       f: { website: "Adresa web stranice", email: "E-mail za rezultat", country: "Država sjedišta tvrtke", platform: "Platforma web stranice", message: "Trebamo li nešto znati?", choose: "Odaberite" },
       countries: [["DE", "Njemačka"], ["AT", "Austrija"], ["CH", "Švicarska"], ["NL", "Nizozemska"], ["BE", "Belgija"], ["ES", "Španjolska"], ["HR", "Hrvatska"], ["UK", "Ujedinjeno Kraljevstvo"], ["EU", "Druga država EU-a"], ["other", "Druga država"]],
       platforms: [["wordpress", "WordPress"], ["wix", "Wix"], ["squarespace", "Squarespace"], ["shopify", "Shopify"], ["webflow", "Webflow"], ["jimdo", "Jimdo"], ["html", "Po mjeri / HTML"], ["unknown", "Ne znam"]]

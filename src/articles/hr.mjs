@@ -60,7 +60,7 @@ export default [
 
       ["h2", "Bit"],
       ["p", "Pravo nije neprijatelj dobrog dizajna. Uredne, brze web stranice koje učitavaju samo ono što im treba obično su istodobno usklađenije i ugodnije za korištenje. Najbolji trenutak za razmišljanje o GDPR-u jest dok još odlučujete što će stranica biti. Nakon toga više ne oblikujete — popravljate."],
-      ["note", "Želite znati gdje je vaša trenutačna web stranica? Naša **besplatna GDPR provjera i provjera kolačića** pokazuje što se učitava, što postavlja kolačiće i što treba ispraviti — a za 99 € to ispravljamo umjesto vas."]
+      ["note", "Želite znati gdje je vaša trenutačna web stranica? Naša **besplatna GDPR provjera i provjera kolačića** pokazuje što se učitava, što postavlja kolačiće i što treba ispraviti — a već od 99 € to ispravljamo umjesto vas."]
     ],
     sources: [
       ["GDPR — Uredba (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"],

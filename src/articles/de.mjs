@@ -60,7 +60,7 @@ export default [
 
       ["h2", "Worauf es ankommt"],
       ["p", "Recht ist nicht der Feind guten Designs. Schlanke, schnelle Websites, die nur laden, was sie brauchen, sind meist zugleich rechtskonformer und angenehmer zu benutzen. Der beste Zeitpunkt, über die DSGVO nachzudenken, ist, solange Sie noch entscheiden, was die Website sein soll. Danach gestalten Sie nicht mehr — Sie reparieren."],
-      ["note", "Sie möchten wissen, wo Ihre aktuelle Website steht? Unser **kostenloser DSGVO- & Cookie-Check** zeigt, was lädt, was Cookies setzt und was korrigiert werden muss — und für 99 € beheben wir es für Sie."]
+      ["note", "Sie möchten wissen, wo Ihre aktuelle Website steht? Unser **kostenloser DSGVO- & Cookie-Check** zeigt, was lädt, was Cookies setzt und was korrigiert werden muss — und ab 99 € beheben wir es für Sie."]
     ],
     sources: [
       ["DSGVO — Verordnung (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"],

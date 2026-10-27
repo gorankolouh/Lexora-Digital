@@ -15,7 +15,7 @@ export default {
     work: "Proyectos", journal: "Journal", about: "Sobre nosotros", contact: "Contacto", shop: "Plantillas",
     web: ["Diseño y desarrollo web", "Webs, landing pages, lanzamiento", "</>"],
     compliance: ["Cumplimiento digital", "RGPD, cookies, normas digitales de la UE", "§"],
-    check: ["Revisión RGPD y cookies", "Revisión gratuita · corrección por 99 €", "✓"],
+    check: ["Revisión RGPD y cookies", "Revisión gratuita · corrección desde 99 €", "✓"],
     language: ["Traducciones", "Cinco idiomas, en todas las direcciones", "⇄"],
     creative: ["Servicios creativos", "Identidad, gráfica, edición multimedia", "Aa"]
   },
@@ -23,7 +23,7 @@ export default {
     home: { title: "Lexora Digital — estudio de web, derecho, idiomas y diseño", desc: "Estudio digital independiente de webs, cumplimiento del RGPD y de cookies, traducción y diseño — para empresas de toda Europa, en cinco idiomas." },
     web: { title: "Diseño y desarrollo web — Lexora Digital", desc: "Webs y landing pages a medida para pymes. Web básica desde 99 €, adaptable a móviles, respetuosa con la privacidad y publicada en su dominio." },
     compliance: { title: "Cumplimiento digital: RGPD, cookies y normas de la UE — Lexora Digital", desc: "Ayuda práctica con el RGPD, el consentimiento de cookies, las políticas de privacidad y las normas digitales de la UE para webs de empresa — información e implementación, no asesoramiento jurídico." },
-    check: { title: "Revisión RGPD y cookies gratuita — corrección por 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: revisión gratuita del consentimiento, el seguimiento y los textos legales de su web. Si encontramos problemas, los corregimos por un precio fijo de 99 €." },
+    check: { title: "Revisión RGPD y cookies gratuita — corrección desde 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: revisión gratuita del consentimiento, el seguimiento y los textos legales de su web. Si encontramos problemas, los corregimos desde 99 €." },
     language: { title: "Traducciones en inglés, alemán, neerlandés, español y croata — Lexora Digital", desc: "Traducción de webs, documentos empresariales y textos jurídicos entre inglés, alemán, neerlandés, español y croata — precisa y natural." },
     creative: { title: "Servicios creativos: identidad, diseño gráfico y edición multimedia — Lexora Digital", desc: "Identidad visual, materiales de marca, diseño gráfico y edición seleccionada de foto, vídeo, audio y voz para empresas." },
     work: { title: "Proyectos — proyectos conceptuales | Lexora Digital", desc: "Conceptos de web para estética, oficios y talleres de automoción — diseños completos y adaptables que muestran cómo trabaja Lexora Digital." },
@@ -71,7 +71,7 @@ export default {
           p: "Webs y landing pages a medida, diseño adaptable, mejoras de webs existentes, publicación y una entrega clara. Webs básicas desde 99 €.",
           tags: ["Webs a medida", "Landing pages", "Diseño adaptable", "Mejoras", "Publicación"], link: "Diseño y desarrollo web" },
         { key: "law", route: "compliance", g: "§", word: "Derecho", title: "Webs que respetan a quienes las usan.",
-          p: "Consultoría y apoyo práctico en RGPD, cookies y políticas de privacidad — con una revisión gratuita de su web y corrección a precio fijo de 99 €.",
+          p: "Consultoría y apoyo práctico en RGPD, cookies y políticas de privacidad — con una revisión gratuita de su web y corrección desde 99 €.",
           tags: ["RGPD y cookies", "Configuración del consentimiento", "Textos legales", "Normas digitales de la UE"],
           note: "Información general e implementación práctica en webs. No somos un despacho de abogados y no prestamos asesoramiento ni representación jurídica.", link: "Cumplimiento digital" },
         { key: "language", route: "language", g: "⇄", word: "Idioma", title: "Textos que suenan como si se hubieran escrito en su idioma.",
@@ -124,8 +124,8 @@ export default {
     checkBand: {
       label: "GDPR, Cookies & Co.",
       h2: "¿Cumple su web el RGPD y la normativa de cookies? *Descúbralo gratis.*",
-      lead: "Revisamos el consentimiento, el seguimiento, la política de privacidad y los textos legales. Si encontramos problemas, los corregimos por un precio fijo.",
-      priceFree: "0 €", priceFix: "99 €", free: "La revisión", fix: "La corrección — pago único", cta: "Revisar mi web"
+      lead: "Revisamos el consentimiento, el seguimiento, la política de privacidad y los textos legales. Si encontramos problemas, los corregimos desde 99 €, con el precio claro antes de empezar.",
+      priceFree: "0 €", priceFix: "desde 99 €", free: "La revisión", fix: "La corrección — pago único", cta: "Revisar mi web"
     },
     process: {
       label: "Nuestro método",
@@ -197,7 +197,7 @@ export default {
       pricing: {
         label: "Paquetes", h2: "Transparencia desde el principio.", lead: "Un paquete de entrada bien definido para pequeñas empresas y presupuestos individuales para todo lo demás.",
         incl: "Incluido", extra: "No incluido / extra",
-        starter: { name: "Web básica", price: "99 €", unit: "pago único", svc: "web", cta: "Pedir una web básica",
+        starter: { name: "Web básica", price: "desde 99 €", unit: "pago único", svc: "web", cta: "Pedir una web básica",
           p: "Una web profesional de una página para una pequeña empresa, normalmente lista en 48 horas desde que recibimos todo el contenido.",
           incl: ["Una página adaptable con hasta 6 secciones", "Sus textos, fotos y logotipo, cuidadosamente maquetados", "Sección de contacto con teléfono, email, dirección y enlace al mapa", "Configuración respetuosa con la privacidad y enlaces a sus textos legales", "Publicación en su dominio actual"],
           extra: ["Costes de dominio y alojamiento", "Redacción o traducción de sus textos", "Páginas adicionales, reservas o tienda online", "Producción de logotipo o fotografías", "Cambios continuos tras la publicación"] },
@@ -250,12 +250,12 @@ export default {
         doT: "Qué hacemos", do: ["Explicar de forma sencilla las normas que probablemente se aplican", "Revisar su web en busca de problemas de cumplimiento habituales", "Corregir consentimiento, seguimiento y formularios en su web", "Estructurar la política de privacidad y el aviso legal con la información que nos dé", "Volver a revisar la web tras los cambios"],
         dontT: "Qué no hacemos", dont: ["Asesoramiento o representación jurídica", "Garantizar que una web cumple \"al 100 %\"", "Actuar como su delegado de protección de datos", "Redactar contratos o representarle ante autoridades"]
       },
-      band: { h2: "Empiece con una *revisión gratuita* de su web.", lead: "Revisamos el consentimiento, el seguimiento, la política de privacidad y los textos legales. Si encontramos problemas, los corregimos por un precio fijo de 99 €.", cta: "Revisar mi web" }
+      band: { h2: "Empiece con una *revisión gratuita* de su web.", lead: "Revisamos el consentimiento, el seguimiento, la política de privacidad y los textos legales. Si encontramos problemas, los corregimos desde 99 €.", cta: "Revisar mi web" }
     },
 
     check: {
-      hero: { label: "GDPR, Cookies & Co.", h1: "Revisión RGPD y cookies gratuita. *La corregimos por 99 €.*", lead: "Envíenos su web. Revisamos el consentimiento, el seguimiento, la política de privacidad y los textos legales según las normas de la UE y de su país. Si todo está bien, no cuesta nada. Si no, adaptamos su web por un precio fijo.",
-        points: ["Sin cuenta ni tarjeta", "Gratis si no hay problemas", "Un precio fijo por la corrección", "Nueva revisión gratuita después"] },
+      hero: { label: "GDPR, Cookies & Co.", h1: "Revisión RGPD y cookies gratuita. *La corregimos desde 99 €.*", lead: "Envíenos su web. Revisamos el consentimiento, el seguimiento, la política de privacidad y los textos legales según las normas de la UE y de su país. Si todo está bien, no cuesta nada. Si no, adaptamos su web desde 99 €, con el precio claro antes de empezar.",
+        points: ["Sin cuenta ni tarjeta", "Gratis si no hay problemas", "Precio acordado antes de empezar", "Nueva revisión gratuita después"] },
       areas: {
         label: "Qué revisamos", h2: "Las cuatro áreas que más reclamaciones y multas generan.", lead: "Revisamos lo que sus visitantes ven realmente y lo que su web carga realmente.",
         items: [
@@ -271,7 +271,7 @@ export default {
           ["Envíe su web", "Indique la dirección de su web, su email y su país — no necesitamos más."],
           ["La revisamos", "Revisamos consentimiento, seguimiento, política de privacidad y textos legales según las normas de la UE y de su país."],
           ["Recibe el resultado", "Sin coste. Si todo está bien, ahí termina. Si no, recibe una lista breve y clara de los problemas."],
-          ["Lo corregimos por 99 €", "Con su aprobación, hacemos las correcciones en su web y después la volvemos a revisar gratis."]
+          ["Lo corregimos desde 99 €", "Con su aprobación, hacemos las correcciones en su web y después la volvemos a revisar gratis."]
         ]
       },
       example: {
@@ -288,17 +288,17 @@ export default {
         label: "Precios", h2: "Dos precios. Sin sorpresas.", lead: "La revisión es siempre gratuita. Solo paga si encontramos problemas y quiere que los corrijamos.",
         plans: [
           { name: "La revisión", price: "0 €", unit: "gratis", cta: "Solicitar revisión gratuita", p: "Una revisión de su web realizada por nosotros.", incl: ["Consentimiento, seguimiento, política de privacidad y textos legales", "Según las normas de la UE y de su país", "Lista breve y clara de los posibles problemas", "Sin compromiso"] },
-          { name: "La corrección", price: "99 €", unit: "pago único", cta: "Empezar con la revisión gratuita", p: "Adaptamos su web al RGPD y a la normativa de cookies de la UE y de su país.",
+          { name: "La corrección", price: "desde 99 €", unit: "pago único", cta: "Empezar con la revisión gratuita", p: "Adaptamos su web al RGPD y a la normativa de cookies de la UE y de su país.",
             incl: ["Banner de consentimiento bien configurado — Aceptar y Rechazar al mismo nivel, elección real", "Rastreadores y contenido incrustado bloqueados hasta el consentimiento, si su plataforma lo permite", "Política de privacidad y aviso legal completados con la información que nos facilite", "Avisos en los formularios y enlaces a los textos legales en todas las páginas", "Nueva revisión gratuita y un breve resumen de los cambios"] }
         ],
-        scope: "La corrección por 99 € cubre webs estándar en plataformas habituales como WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo o HTML, y requiere acceso a su web o a su desarrollador. Si su web necesita más — por ejemplo plugins a medida, pasarelas de pago de tiendas online o un cambio de alojamiento — se lo decimos antes de empezar, con un precio aparte. Precios sin IVA cuando proceda."
+        scope: "La corrección desde 99 € cubre webs estándar en plataformas habituales como WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo o HTML, y requiere acceso a su web o a su desarrollador. Si su web necesita más — por ejemplo plugins a medida, pasarelas de pago de tiendas online o un cambio de alojamiento — se lo decimos antes de empezar, con un precio aparte. Precios sin IVA cuando proceda."
       },
       countries: { label: "Países", h2: "Revisada según las normas que le afectan.", lead: "Indíquenos dónde está su empresa. Revisamos su web según las normas de la UE y la legislación nacional de ese país." },
       faq: {
         label: "Preguntas", h2: "Preguntas frecuentes.",
         items: [
           ["¿La revisión es realmente gratuita?", "Sí. La revisión no cuesta nada. Si no encontramos problemas, no paga absolutamente nada."],
-          ["¿Qué incluye exactamente la corrección de 99 €?", "Configuramos bien el consentimiento, bloqueamos los rastreadores hasta el consentimiento si su plataforma lo permite, completamos su política de privacidad y aviso legal con la información que nos facilite, añadimos avisos en los formularios y enlaces a los textos legales, y después revisamos la web de nuevo."],
+          ["¿Qué incluye la corrección desde 99 €?", "Configuramos bien el consentimiento, bloqueamos los rastreadores hasta el consentimiento si su plataforma lo permite, completamos su política de privacidad y aviso legal con la información que nos facilite, añadimos avisos en los formularios y enlaces a los textos legales, y después revisamos la web de nuevo."],
           ["¿Cambian mi web sin preguntar?", "No. Solo hacemos cambios después de que acepte la oferta, y únicamente los que se describen en ella."],
           ["¿Qué necesitan de mí?", "Acceso a su web (por ejemplo, un usuario de administración temporal) o el contacto de su desarrollador — además de los datos de la empresa que deben figurar en la política de privacidad y el aviso legal."],
           ["¿Es asesoramiento jurídico?", "No. La revisión y la corrección son un trabajo práctico y técnico basado en las normas de la UE y nacionales. No constituyen asesoramiento jurídico ni garantizan el cumplimiento. Para asesoramiento jurídico, consulte a un abogado."],
@@ -640,14 +640,14 @@ export default {
       consent: "Acepto que Lexora Digital utilice mis datos para responder a mi consulta. Más información en la {privacy}.",
       success: ["Gracias — su mensaje se ha enviado.", "Le responderemos lo antes posible, en su idioma."],
       f: { name: "Nombre", email: "Email", company: "Empresa", language: "Idioma preferido", service: "¿En qué podemos ayudarle?", budget: "Presupuesto", message: "Su mensaje", messagePh: "¿Qué quiere conseguir?", choose: "Seleccione una opción" },
-      services: [["web", "Web (diseño y desarrollo)"], ["design", "Servicios creativos y de diseño"], ["compliance", "Consultoría RGPD y cookies"], ["check", "Revisión RGPD y cookies / corrección por 99 €"], ["translation", "Traducción"], ["other", "Otra cosa"]],
+      services: [["web", "Web (diseño y desarrollo)"], ["design", "Servicios creativos y de diseño"], ["compliance", "Consultoría RGPD y cookies"], ["check", "Revisión RGPD y cookies / corrección desde 99 €"], ["translation", "Traducción"], ["other", "Otra cosa"]],
       budgets: [["<500", "Menos de 500 €"], ["500-1500", "500–1.500 €"], ["1500-5000", "1.500–5.000 €"], ["5000+", "Más de 5.000 €"], ["unsure", "Aún no lo sé"]]
     },
     check: {
       title: "Solicite su revisión gratuita", intro: "Le enviamos el resultado a su email.",
       submit: "Revisar mi web gratis", subject: "Solicitud de revisión RGPD y cookies",
       consent: "Acepto que mis datos se utilicen solo para realizar la revisión y enviarme el resultado. Más información en la {privacy}.",
-      success: ["Gracias — hemos recibido su solicitud.", "Le enviaremos el resultado por email. Si encontramos problemas, recibirá una oferta para la corrección de 99 € — no se cambia nada en su web sin su aprobación."],
+      success: ["Gracias — hemos recibido su solicitud.", "Le enviaremos el resultado por email. Si encontramos problemas, recibirá una oferta para la corrección (desde 99 €) — no se cambia nada en su web sin su aprobación."],
       f: { website: "Dirección web", email: "Email para el resultado", country: "País de su empresa", platform: "Plataforma de la web", message: "¿Algo que debamos saber?", choose: "Seleccione una opción" },
       countries: [["DE", "Alemania"], ["AT", "Austria"], ["CH", "Suiza"], ["NL", "Países Bajos"], ["BE", "Bélgica"], ["ES", "España"], ["HR", "Croacia"], ["UK", "Reino Unido"], ["EU", "Otro país de la UE"], ["other", "Otro país"]],
       platforms: [["wordpress", "WordPress"], ["wix", "Wix"], ["squarespace", "Squarespace"], ["shopify", "Shopify"], ["webflow", "Webflow"], ["jimdo", "Jimdo"], ["html", "A medida / HTML"], ["unknown", "No lo sé"]]

@@ -60,7 +60,7 @@ export default [
 
       ["h2", "The point"],
       ["p", "Law is not the enemy of good design. Clean, fast websites that load only what they need tend to be both more compliant and more pleasant to use. The best time to think about GDPR is when you are still deciding what the site will be. After that, you are no longer designing — you are repairing."],
-      ["note", "Want to know where your current website stands? Our **free GDPR & cookie check** shows what loads, what sets cookies and what needs fixing — and for €99 we fix it for you."]
+      ["note", "Want to know where your current website stands? Our **free GDPR & cookie check** shows what loads, what sets cookies and what needs fixing — and we fix it for you from €99."]
     ],
     sources: [
       ["GDPR — Regulation (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"],

@@ -60,7 +60,7 @@ export default [
 
       ["h2", "Lo esencial"],
       ["p", "El derecho no es enemigo del buen diseño. Las webs limpias y rápidas que solo cargan lo que necesitan suelen ser a la vez más conformes y más agradables de usar. El mejor momento para pensar en el RGPD es cuando todavía está decidiendo qué será la web. Después ya no diseña — repara."],
-      ["note", "¿Quiere saber en qué situación está su web actual? Nuestra **revisión gratuita de RGPD y cookies** muestra qué se carga, qué instala cookies y qué hay que corregir — y por 99 € lo corregimos por usted."]
+      ["note", "¿Quiere saber en qué situación está su web actual? Nuestra **revisión gratuita de RGPD y cookies** muestra qué se carga, qué instala cookies y qué hay que corregir — y desde 99 € lo corregimos por usted."]
     ],
     sources: [
       ["RGPD — Reglamento (UE) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"],
