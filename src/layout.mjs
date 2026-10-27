@@ -132,6 +132,8 @@ export function page({ t, key, title, desc, body, globe = false, noindex = false
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<style>html,body{background:#050605}</style>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 ${noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${abs(selfPath)}">\n${alts}${xdef}`}
