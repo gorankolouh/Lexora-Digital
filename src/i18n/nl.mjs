@@ -470,6 +470,7 @@ export default {
       },
       kits: { label: "De kits", h2: "Vijf kits. *Eén bundel.*", lead: "Elke kit is een kant-en-klare Notion-workspace met registers, handleidingen en voorbeeldregels. U kiest de taalversie bij het afrekenen." },
       cat: "Notion-template",
+      notion: "Gemaakt voor Notion",
       bundleCat: "Bundel · 5 Notion-kits",
       num: "5 kits",
       vs: "{bundle} in plaats van {full}",

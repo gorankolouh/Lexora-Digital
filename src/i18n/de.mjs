@@ -474,6 +474,7 @@ export default {
         lead: "Jedes Kit ist ein einsatzbereiter Notion-Workspace mit Registern, Anleitungen und Beispieleinträgen. Die Sprachversion wählen Sie beim Kauf."
       },
       cat: "Notion-Vorlage",
+      notion: "Gemacht für Notion",
       bundleCat: "Bundle · 5 Notion-Kits",
       num: "5 Kits",
       vs: "{bundle} statt {full}",

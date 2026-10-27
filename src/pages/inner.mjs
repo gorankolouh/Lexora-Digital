@@ -263,21 +263,21 @@ export function shop(t) {
   const buyLabel = (x, it) => `${p.buy}: ${it.t} (${money(t, x.price)})`;
   const feat = `<article class="proj feat reveal" id="bundle">
         <div class="media">${shopCover(bundle, b.t, "(max-width:960px) 100vw, 64vw", true)}</div>
-        <div class="side"><p class="num">${esc(p.num)}</p><p class="cat" style="margin-top:18px">${esc(p.bundleCat)}</p><h3 class="h3">${esc(b.t)}</h3><p class="body">${fmt(b.p)}</p><p class="svc">${esc(vs(p.vs))}</p><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
+        <div class="side"><p class="num">${esc(p.num)}</p><p class="cat" style="margin-top:18px"><img class="ni" src="/assets/img/shop/notion-64.png" width="62" height="64" alt="">${esc(p.bundleCat)}</p><h3 class="h3">${esc(b.t)}</h3><p class="body">${fmt(b.p)}</p><p class="svc">${esc(vs(p.vs))}</p><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
         <a href="${bundle.url}" rel="noopener" aria-label="${esc(buyLabel(bundle, b))}"></a>
       </article>`;
   const cards = kits.map((x, i) => {
     const it = p.items[x.key];
     return `<article class="proj s reveal${i % 3 ? ` d${i % 3}` : ""}">
         <div class="media">${shopCover(x, it.t, "(max-width:960px) 100vw, 33vw")}</div>
-        <div class="meta"><div><p class="cat">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p></div><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
+        <div class="meta"><div><p class="cat"><img class="ni" src="/assets/img/shop/notion-64.png" width="62" height="64" alt="">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p></div><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
         <a href="${x.url}" rel="noopener" aria-label="${esc(buyLabel(x, it))}"></a>
       </article>`;
   }).join("");
   return [
     pageHero({ label: p.hero.label, glyph: "§", h1: p.hero.h1, lead: p.hero.lead, crumbs: crumbsFor(t, t.nav.shop),
       actions: [{ href: bundle.url, label: `${p.hero.cta1} · ${money(t, bundle.price)}`, primary: true }, { href: "#kits", label: p.hero.cta2 }],
-      extra: `<ul class="points rise d4">${p.hero.points.map((x) => `<li>${icon("check", 16, 2)}${esc(x)}</li>`).join("")}</ul>` }),
+      extra: `<p class="notion-badge rise d4"><img src="/assets/img/shop/notion-128.png" width="123" height="128" alt="">${esc(p.notion)}</p><ul class="points rise d4">${p.hero.points.map((x) => `<li>${icon("check", 16, 2)}${esc(x)}</li>`).join("")}</ul>` }),
     `<section class="section rule shop-kits" id="kits" aria-labelledby="s1"><div class="wrap">
       ${head({ label: p.kits.label, h2: p.kits.h2, lead: p.kits.lead, id: "s1" })}
       ${feat}

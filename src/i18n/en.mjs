@@ -471,6 +471,7 @@ export default {
       },
       kits: { label: "The kits", h2: "Five kits. *One bundle.*", lead: "Each kit is a ready-to-use Notion workspace with registers, guides and example entries. You choose your language edition at checkout." },
       cat: "Notion template",
+      notion: "Made for Notion",
       bundleCat: "Bundle · 5 Notion kits",
       num: "5 kits",
       vs: "{bundle} instead of {full}",

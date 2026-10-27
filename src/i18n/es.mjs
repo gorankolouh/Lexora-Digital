@@ -470,6 +470,7 @@ export default {
       },
       kits: { label: "Los kits", h2: "Cinco kits. *Un pack.*", lead: "Cada kit es un espacio de Notion listo para usar, con registros, guías y ejemplos. Usted elige la versión de idioma al pagar." },
       cat: "Plantilla de Notion",
+      notion: "Hecho para Notion",
       bundleCat: "Pack · 5 kits de Notion",
       num: "5 kits",
       vs: "{bundle} en lugar de {full}",

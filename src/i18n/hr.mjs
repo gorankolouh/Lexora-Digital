@@ -470,6 +470,7 @@ export default {
       },
       kits: { label: "Kitovi", h2: "Pet kitova. *Jedan paket.*", lead: "Svaki kit je Notion workspace spreman za rad, s evidencijama, vodičima i primjerima unosa. Jezičnu verziju birate pri plaćanju." },
       cat: "Notion predložak",
+      notion: "Izrađeno za Notion",
       bundleCat: "Paket · 5 Notion kitova",
       num: "5 kitova",
       vs: "{bundle} umjesto {full}",

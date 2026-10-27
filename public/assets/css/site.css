@@ -935,3 +935,8 @@ ul,ol{margin:0;padding:0}
 /* mobile: no blue tap box (keyboard focus ring stays), and the menu glow must not make the menu scroll sideways */
 html{-webkit-tap-highlight-color:transparent}
 .mnav{overflow-x:hidden;overscroll-behavior:contain}
+/* Templates page: "Made for Notion" badge and the small Notion mark on each kit */
+.notion-badge{display:inline-flex;align-items:center;gap:10px;margin-top:32px;padding:6px 16px 6px 6px;border:1px solid var(--line-2);border-radius:999px;font-size:14px;font-weight:500;color:var(--text)}
+.notion-badge img{width:30px;height:30px;object-fit:contain;padding:4px;border-radius:50%;background:#F5F7F2}
+.notion-badge + .points{margin-top:24px}
+.cat .ni{display:inline-block;width:16px;height:16px;object-fit:contain;padding:1.5px;margin-right:9px;border-radius:4px;background:#F5F7F2;vertical-align:-3px}
