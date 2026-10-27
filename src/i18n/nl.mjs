@@ -5,17 +5,17 @@ export default {
   slugs: {
     home: "", web: "webdesign/", compliance: "digitale-compliance/", check: "avg-cookie-check/", language: "vertalingen/",
     creative: "creatieve-diensten/", work: "werk/", journal: "journal/", about: "over-ons/", contact: "contact/",
-    privacy: "privacy/", cookies: "cookies/", imprint: "juridische-informatie/", accessibility: "toegankelijkheid/"
+    privacy: "privacy/", cookies: "cookies/", imprint: "juridische-informatie/", accessibility: "toegankelijkheid/", shop: "templates/"
   },
   ui: {
     skip: "Naar de inhoud", home: "Home", mainNav: "Hoofdnavigatie", contents: "Inhoud",
     menu: "Menu", language: "Taal", soon: "binnenkort", services: "Diensten", startProject: "Project starten"
   },
   nav: {
-    work: "Werk", journal: "Journal", about: "Over ons", contact: "Contact",
+    work: "Werk", journal: "Journal", about: "Over ons", contact: "Contact", shop: "Templates",
     web: ["Webdesign & ontwikkeling", "Websites, landingspagina's, lancering", "</>"],
     compliance: ["Digitale compliance", "AVG, cookies, Europese digitale regels", "§"],
-    check: ["AVG- & cookiecheck", "Gratis check · opgelost voor € 99", "✓"],
+    check: ["AVG- & cookiecheck", "Gratis check · opgelost vanaf € 99", "✓"],
     language: ["Vertalingen", "Vijf talen, elke richting", "⇄"],
     creative: ["Creatieve diensten", "Identiteit, grafisch werk, mediabewerking", "Aa"]
   },
@@ -23,7 +23,7 @@ export default {
     home: { title: "Lexora Digital — studio voor web, recht, taal & design", desc: "Onafhankelijke digitale studio voor websites, AVG- en cookiecompliance, vertalingen en design — voor bedrijven in heel Europa, in vijf talen." },
     web: { title: "Webdesign & webontwikkeling — Lexora Digital", desc: "Websites en landingspagina's op maat voor het mkb. Startwebsite vanaf € 99, responsive, privacyvriendelijk en live op uw eigen domein." },
     compliance: { title: "Digitale compliance: AVG, cookies & EU-regels — Lexora Digital", desc: "Praktische hulp bij de AVG, cookietoestemming, privacyverklaringen en Europese digitale regels voor bedrijfswebsites — informatie en uitvoering, geen juridisch advies." },
-    check: { title: "Gratis AVG- & cookiecheck — opgelost voor € 99 | Lexora Digital", desc: "GDPR, Cookies & Co.: een gratis check van toestemming, tracking en juridische pagina's op uw website. Vinden we problemen, dan lossen we ze op voor een vaste € 99." },
+    check: { title: "Gratis AVG- & cookiecheck — opgelost vanaf € 99 | Lexora Digital", desc: "GDPR, Cookies & Co.: een gratis check van toestemming, tracking en juridische pagina's op uw website. Vinden we problemen, dan lossen we ze op vanaf € 99." },
     language: { title: "Vertalingen Engels, Duits, Nederlands, Spaans & Kroatisch — Lexora Digital", desc: "Vertaling van websites, zakelijke en juridische teksten tussen Engels, Duits, Nederlands, Spaans en Kroatisch — nauwkeurig en natuurlijk geformuleerd." },
     creative: { title: "Creatieve diensten: identiteit, grafisch ontwerp & mediabewerking — Lexora Digital", desc: "Visuele identiteit, merkmiddelen, grafisch ontwerp en geselecteerde foto-, video-, audio- en stembewerking voor bedrijven." },
     work: { title: "Werk — conceptprojecten | Lexora Digital", desc: "Websiteconcepten voor beauty, vakmensen en autobedrijven — complete, responsive ontwerpen die laten zien hoe Lexora Digital werkt." },
@@ -33,6 +33,10 @@ export default {
     privacy: { title: "Privacyverklaring — Lexora Digital", desc: "Hoe Lexora Digital persoonsgegevens op deze website verwerkt." },
     cookies: { title: "Cookiebeleid — Lexora Digital", desc: "Deze website gebruikt geen tracking- of advertentiecookies. Hier staat precies wat er wordt opgeslagen en waarom." },
     imprint: { title: "Juridische informatie — Lexora Digital", desc: "Aanbiedersinformatie voor lexoradigital.com." },
+    shop: {
+      title: "Notion-templates voor EU-compliance: AVG, AI Act en meer — Lexora Digital",
+      desc: "Kant-en-klare Notion-kits voor de AVG, de EU AI Act, AI-beleid op de werkvloer, loontransparantie en leverancierscontroles — in het Nederlands, Engels, Duits, Spaans en Kroatisch."
+    },
     accessibility: { title: "Toegankelijkheidsverklaring — Lexora Digital", desc: "Onze toegankelijkheidsdoelen voor deze website, bekende beperkingen en hoe u feedback geeft." }
   },
 
@@ -67,7 +71,7 @@ export default {
           p: "Websites en landingspagina's op maat, responsive design, verbeteringen aan bestaande sites, lancering en een duidelijke overdracht. Startwebsites vanaf € 99.",
           tags: ["Websites op maat", "Landingspagina's", "Responsive design", "Verbeteringen", "Lancering"], link: "Webdesign & ontwikkeling" },
         { key: "law", route: "compliance", g: "§", word: "Recht", title: "Websites die hun bezoekers respecteren.",
-          p: "Advies en praktische ondersteuning bij AVG, cookies en privacyverklaringen — inclusief een gratis websitecheck en een oplossing voor een vaste € 99.",
+          p: "Advies en praktische ondersteuning bij AVG, cookies en privacyverklaringen — inclusief een gratis websitecheck en een oplossing vanaf € 99.",
           tags: ["AVG & cookies", "Toestemming instellen", "Privacypagina's", "Europese digitale regels"],
           note: "Algemene informatie en praktische uitvoering op websites. Wij zijn geen advocatenkantoor en geven geen juridisch advies of vertegenwoordiging.", link: "Digitale compliance" },
         { key: "language", route: "language", g: "⇄", word: "Taal", title: "Teksten die lezen alsof ze in uw taal zijn geschreven.",
@@ -120,8 +124,8 @@ export default {
     checkBand: {
       label: "GDPR, Cookies & Co.",
       h2: "Voldoet uw website aan de AVG en de cookieregels? *Ontdek het gratis.*",
-      lead: "Wij controleren toestemming, tracking, privacyverklaring en juridische pagina's. Vinden we problemen, dan lossen we ze op voor één vaste prijs.",
-      priceFree: "€ 0", priceFix: "€ 99", free: "De check", fix: "De oplossing — eenmalig", cta: "Check mijn website"
+      lead: "Wij controleren toestemming, tracking, privacyverklaring en juridische pagina's. Vinden we problemen, dan lossen we ze op vanaf € 99 — u kent de prijs vooraf.",
+      priceFree: "€ 0", priceFix: "vanaf € 99", free: "De check", fix: "De oplossing — eenmalig", cta: "Check mijn website"
     },
     process: {
       label: "Onze aanpak",
@@ -193,7 +197,7 @@ export default {
       pricing: {
         label: "Pakketten", h2: "Transparant vanaf het begin.", lead: "Een duidelijk instappakket voor kleine bedrijven en offertes op maat voor alles wat groter is.",
         incl: "Inbegrepen", extra: "Niet inbegrepen / extra",
-        starter: { name: "Startwebsite", price: "€ 99", unit: "eenmalig", svc: "web", cta: "Startwebsite bestellen",
+        starter: { name: "Startwebsite", price: "vanaf € 99", unit: "eenmalig", svc: "web", cta: "Startwebsite bestellen",
           p: "Een professionele onepager voor een klein bedrijf, meestal binnen 48 uur klaar nadat we alle content hebben ontvangen.",
           incl: ["Eén responsive pagina met maximaal 6 secties", "Uw teksten, foto's en logo, zorgvuldig vormgegeven", "Contactsectie met telefoon, e-mail, adres en kaartlink", "Privacyvriendelijke inrichting en links naar uw juridische pagina's", "Lancering op uw bestaande domein"],
           extra: ["Kosten voor domein en hosting", "Schrijven of vertalen van uw teksten", "Extra pagina's, boekings- of webshopfuncties", "Logo- of fotoproductie", "Doorlopende wijzigingen na de lancering"] },
@@ -246,12 +250,12 @@ export default {
         doT: "Wat we doen", do: ["De waarschijnlijk geldende regels begrijpelijk uitleggen", "Uw website controleren op veelvoorkomende compliance-problemen", "Toestemming, tracking en formulieren op uw website corrigeren", "Privacy- en juridische pagina's structureren op basis van uw gegevens", "De website na de wijzigingen opnieuw controleren"],
         dontT: "Wat we niet doen", dont: ["Juridisch advies of juridische vertegenwoordiging", "Garanderen dat een website \"100% compliant\" is", "Optreden als uw functionaris gegevensbescherming", "Contracten opstellen of u vertegenwoordigen bij toezichthouders"]
       },
-      band: { h2: "Begin met een *gratis check* van uw website.", lead: "Wij controleren toestemming, tracking, privacyverklaring en juridische pagina's. Vinden we problemen, dan lossen we ze op voor een vaste € 99.", cta: "Check mijn website" }
+      band: { h2: "Begin met een *gratis check* van uw website.", lead: "Wij controleren toestemming, tracking, privacyverklaring en juridische pagina's. Vinden we problemen, dan lossen we ze op vanaf € 99.", cta: "Check mijn website" }
     },
 
     check: {
-      hero: { label: "GDPR, Cookies & Co.", h1: "Gratis AVG- & cookiecheck. *Opgelost voor € 99.*", lead: "Stuur ons uw website. Wij controleren toestemming, tracking, privacyverklaring en juridische pagina's aan de hand van Europese en nationale regels. Is alles in orde, dan kost het niets. Zo niet, dan maken we uw website compliant voor één vaste prijs.",
-        points: ["Geen account, geen creditcard", "Gratis als alles klopt", "Eén vaste prijs voor de oplossing", "Gratis hercontrole na de oplossing"] },
+      hero: { label: "GDPR, Cookies & Co.", h1: "Gratis AVG- & cookiecheck. *Opgelost vanaf € 99.*", lead: "Stuur ons uw website. Wij controleren toestemming, tracking, privacyverklaring en juridische pagina's aan de hand van Europese en nationale regels. Is alles in orde, dan kost het niets. Zo niet, dan maken we uw website compliant vanaf € 99 — u kent de prijs vooraf.",
+        points: ["Geen account, geen creditcard", "Gratis als alles klopt", "Prijs vooraf afgesproken", "Gratis hercontrole na de oplossing"] },
       areas: {
         label: "Wat we controleren", h2: "De vier gebieden die het vaakst tot klachten en boetes leiden.", lead: "We bekijken wat uw bezoekers echt zien en wat uw website echt laadt.",
         items: [
@@ -267,7 +271,7 @@ export default {
           ["Stuur uw website", "Vul uw websiteadres, e-mail en land in — meer hebben we niet nodig."],
           ["Wij controleren", "We controleren toestemming, tracking, privacyverklaring en juridische pagina's aan de hand van Europese en nationale regels."],
           ["U krijgt het resultaat", "Gratis. Is alles in orde, dan is het klaar. Zo niet, dan ontvangt u een korte, begrijpelijke lijst met problemen."],
-          ["Wij lossen het op voor € 99", "Na uw akkoord voeren we de correcties op uw website uit en controleren we haar daarna gratis opnieuw."]
+          ["Wij lossen het op vanaf € 99", "Na uw akkoord voeren we de correcties op uw website uit en controleren we haar daarna gratis opnieuw."]
         ]
       },
       example: {
@@ -284,17 +288,17 @@ export default {
         label: "Prijzen", h2: "Twee prijzen. Geen verrassingen.", lead: "De check is altijd gratis. U betaalt alleen als we problemen vinden en u wilt dat wij ze oplossen.",
         plans: [
           { name: "De check", price: "€ 0", unit: "gratis", cta: "Gratis check aanvragen", p: "Een controle van uw website door ons.", incl: ["Toestemming, tracking, privacyverklaring en juridische pagina's", "Gecontroleerd aan de hand van Europese en uw nationale regels", "Korte, begrijpelijke lijst met eventuele problemen", "Vrijblijvend"] },
-          { name: "De oplossing", price: "€ 99", unit: "eenmalig", cta: "Begin met de gratis check", p: "Wij maken uw website AVG- en cookieproof volgens Europese en nationale regels.",
+          { name: "De oplossing", price: "vanaf € 99", unit: "eenmalig", cta: "Begin met de gratis check", p: "Wij maken uw website AVG- en cookieproof volgens Europese en nationale regels.",
             incl: ["Consentbanner correct ingesteld — gelijkwaardig Accepteren en Weigeren, echte keuze", "Trackers en ingesloten content geblokkeerd tot toestemming, voor zover uw platform dat toelaat", "Privacyverklaring en aanbiedersinformatie aangevuld op basis van uw gegevens", "Meldingen bij formulieren en links naar juridische pagina's op elke pagina", "Gratis hercontrole en een korte samenvatting van de wijzigingen"] }
         ],
-        scope: "De oplossing voor € 99 geldt voor standaardwebsites op gangbare platforms zoals WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo of gewone HTML, en vereist toegang tot uw website of uw ontwikkelaar. Heeft uw site meer nodig — bijvoorbeeld eigen plug-ins, webshop-checkouts of een hostingwissel — dan zeggen we dat vooraf, met een aparte prijs. Prijzen exclusief btw waar van toepassing."
+        scope: "De oplossing vanaf € 99 geldt voor standaardwebsites op gangbare platforms zoals WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo of gewone HTML, en vereist toegang tot uw website of uw ontwikkelaar. Heeft uw site meer nodig — bijvoorbeeld eigen plug-ins, webshop-checkouts of een hostingwissel — dan zeggen we dat vooraf, met een aparte prijs. Prijzen exclusief btw waar van toepassing."
       },
       countries: { label: "Landen", h2: "Gecontroleerd aan de hand van de regels die voor u gelden.", lead: "Vertel ons waar uw bedrijf gevestigd is. We controleren uw website aan de hand van de Europese regels en de nationale wetgeving van dat land." },
       faq: {
         label: "Vragen", h2: "Veelgestelde vragen.",
         items: [
           ["Is de check echt gratis?", "Ja. De check kost niets. Vinden we geen problemen, dan betaalt u helemaal niets."],
-          ["Wat houdt de oplossing van € 99 precies in?", "We stellen de toestemming correct in, blokkeren trackers tot toestemming voor zover uw platform dat toelaat, vullen uw privacyverklaring en aanbiedersinformatie aan op basis van uw gegevens, voegen meldingen bij formulieren en links naar juridische pagina's toe en controleren de website daarna opnieuw."],
+          ["Wat houdt de oplossing vanaf € 99 in?", "We stellen de toestemming correct in, blokkeren trackers tot toestemming voor zover uw platform dat toelaat, vullen uw privacyverklaring en aanbiedersinformatie aan op basis van uw gegevens, voegen meldingen bij formulieren en links naar juridische pagina's toe en controleren de website daarna opnieuw."],
           ["Passen jullie mijn website aan zonder te vragen?", "Nee. We wijzigen pas iets nadat u het aanbod heeft geaccepteerd, en alleen wat daarin staat."],
           ["Wat hebben jullie van mij nodig?", "Toegang tot uw website (bijvoorbeeld een tijdelijke beheerderslogin) of de contactgegevens van uw ontwikkelaar — plus de bedrijfsgegevens voor uw privacyverklaring en aanbiedersinformatie."],
           ["Is dit juridisch advies?", "Nee. De check en de oplossing zijn praktisch, technisch werk op basis van Europese en nationale regels. Ze zijn geen juridisch advies en garanderen geen compliance. Voor juridisch advies raadpleegt u een advocaat of jurist."],
@@ -455,6 +459,73 @@ export default {
       check: { t: "Wilt u alleen weten of uw website aan de AVG voldoet?", p: "Gebruik dan de gratis AVG- & cookiecheck." }
     },
 
+    shop: {
+      hero: {
+        label: "Notion-templates",
+        h1: "EU-compliancekits, *klaar in Notion.*",
+        lead: "Praktische Notion-templates voor de AVG, de EU AI Act, loontransparantie en leverancierscontroles — voor het mkb, in vijf talen.",
+        cta1: "Naar de bundel",
+        cta2: "Alle kits bekijken",
+        points: ["Nederlands, Engels, Duits, Spaans, Kroatisch", "Werkt met het gratis Notion-abonnement", "Direct toegang na aankoop", "Eenmalige betaling, geen abonnement"]
+      },
+      kits: { label: "De kits", h2: "Vijf kits. *Eén bundel.*", lead: "Elke kit is een kant-en-klare Notion-workspace met registers, handleidingen en voorbeeldregels. U kiest de taalversie bij het afrekenen." },
+      cat: "Notion-template",
+      notion: "Gemaakt voor Notion",
+      bundleCat: "Bundel · 5 Notion-kits",
+      num: "5 kits",
+      vs: "{bundle} in plaats van {full}",
+      buy: "Kopen via Gumroad",
+      items: {
+        bundle: { t: "EU Compliance Bundle", s: "5 Notion-kits", p: "Alle vijf kits in één aankoop: AVG, AI-compliance, AI-beleid op de werkvloer, loontransparantie en leveranciersbeoordeling." },
+        gdpr: { t: "GDPR Compliance Kit", s: "AVG", p: "Een checklist met artikelverwijzingen plus registers voor verwerkingsactiviteiten, verzoeken van betrokkenen, datalekken, verwerkers en cookies." },
+        ai: { t: "AI Compliance Toolkit", s: "EU AI Act + AVG", p: "Een register van AI-tools, AVG-controlepunten, een AI-beleid voor medewerkers, scripts voor trainingsvideo's en een trainingslogboek." },
+        policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + AVG", p: "Een AI-gebruiksbeleid, een beknopte gids voor medewerkers, een bevestigingsformulier, aanvragen voor AI-tools en een trainingslogboek." },
+        pay: {
+          t: "EU Pay Transparency Kit",
+          s: "Richtlijn (EU) 2023/970",
+          p: "Beloningsbeleid, functiehuis en salarisschalen, een loonkloofcalculator, informatieverzoeken van werknemers en kant-en-klare teksten."
+        },
+        vendor: {
+          t: "Vendor & AI Supplier Assessment Kit",
+          s: "AVG + EU AI Act",
+          p: "Een vragenlijst voor leveranciers, een beoordelingsgids, een checklist voor de verwerkersovereenkomst (art. 28 AVG), een leveranciersregister en een beoordelingslogboek."
+        }
+      },
+      how: {
+        label: "Zo werkt het",
+        h2: "Van afrekenen naar uw eigen workspace *in twee minuten.*",
+        lead: "Geen installatie, geen account bij ons — de template wordt gekopieerd naar uw eigen Notion-workspace.",
+        steps: [
+          ["Kies kit en taal", "Kies een kit of de bundel en selecteer bij het afrekenen op Gumroad uw taalversie."],
+          ["Ontvang uw link", "Direct na betaling ontvangt u de link naar uw template."],
+          ["Dupliceer in Notion", "Open de link en klik op ‘Dupliceren’ om de template naar uw eigen Notion-workspace te kopiëren. Het gratis abonnement is genoeg."],
+          ["Vul hem in", "Volg de installatiegids en de voorbeeldregels en voeg uw eigen gegevens toe."]
+        ]
+      },
+      bounds: {
+        label: "Grenzen",
+        h2: "Wat de kits doen — en wat niet.",
+        doT: "Wat de kits doen",
+        do: ["Een duidelijke structuur voor registers, overzichten en beleid", "Voorbeeldregels die laten zien hoe u elk register invult", "De relevante EU-regels in begrijpelijke taal", "Hulp bij het vastleggen van wat u hebt gedaan"],
+        dontT: "Wat ze niet doen",
+        dont: ["Juridisch advies voor uw specifieke situatie vervangen", "Uw bedrijf op zichzelf compliant maken", "Meldingen of rapportages namens u bij autoriteiten indienen", "AI-systemen indelen of juridische beslissingen voor u nemen"]
+      },
+      faq: {
+        label: "Vragen",
+        h2: "Voordat u koopt.",
+        items: [
+          ["Heb ik een betaald Notion-abonnement nodig?", "Nee. De templates werken met het gratis Notion-abonnement. U hebt alleen een Notion-account nodig, dat u gratis aanmaakt."],
+          ["Welke talen zijn er?", "Elke kit is beschikbaar in het Nederlands, Engels, Duits, Spaans en Kroatisch. U kiest uw taalversie bij het afrekenen."],
+          ["Hoe ontvang ik de template?", "Betaling en bon lopen via Gumroad. Direct na aankoop krijgt u een link waarmee u de template naar uw Notion-workspace dupliceert."],
+          ["Mag ik een kit voor meerdere bedrijven gebruiken?", "Eén aankoop geldt voor gebruik binnen één bedrijf. Hebt u kits nodig voor meerdere bedrijven of voor uw klanten, neem dan contact met ons op."],
+          ["Is dit juridisch advies?", "Nee. De kits zijn organisatorische hulpmiddelen en een praktisch startpunt. Ze vormen geen juridisch advies en maken uw bedrijf niet op zichzelf compliant. Laat bij toepassingen met een hoog risico — bijvoorbeeld AI bij werving — uw definitieve documenten beoordelen door een deskundige."],
+          ["Word ik gevolgd als ik op ‘Kopen’ klik?", "Niet door deze website. Die laadt geen Gumroad-scripts en plaatst geen cookies. De koopknoppen zijn gewone links; op de afrekenpagina geldt het privacybeleid van Gumroad."]
+        ]
+      },
+      band: { h2: "Alle vijf kits *voor één prijs.*", lead: "{bundle} in plaats van {full} — u kiest uw taalversie bij het afrekenen.", cta: "Naar de bundel" },
+      disclaimer: "De kits zijn organisatorische hulpmiddelen en een praktisch startpunt. Ze vormen geen juridisch advies en garanderen geen naleving van de AVG, de EU AI Act of andere wetgeving."
+    },
+
     privacy: {
       label: "Juridisch", h1: "Privacyverklaring", lead: "Hoe wij persoonsgegevens verwerken als u deze website bezoekt of contact met ons opneemt.", updated: "Laatst bijgewerkt: oktober 2026",
       draft: "",
@@ -553,14 +624,14 @@ export default {
       consent: "Ik ga ermee akkoord dat Lexora Digital mijn gegevens gebruikt om mijn aanvraag te beantwoorden. Meer in de {privacy}.",
       success: ["Bedankt — uw bericht is verzonden.", "We antwoorden zo snel mogelijk, in uw taal."],
       f: { name: "Naam", email: "E-mail", company: "Bedrijfsnaam", language: "Voorkeurstaal", service: "Waarmee kunnen we helpen?", budget: "Budget", message: "Uw bericht", messagePh: "Wat wilt u bereiken?", choose: "Maak een keuze" },
-      services: [["web", "Website (ontwerp & ontwikkeling)"], ["design", "Creatieve & designdiensten"], ["compliance", "AVG- & cookieadvies"], ["check", "AVG- & cookiecheck / oplossing voor € 99"], ["translation", "Vertaling"], ["other", "Iets anders"]],
+      services: [["web", "Website (ontwerp & ontwikkeling)"], ["design", "Creatieve & designdiensten"], ["compliance", "AVG- & cookieadvies"], ["check", "AVG- & cookiecheck / oplossing vanaf € 99"], ["translation", "Vertaling"], ["other", "Iets anders"]],
       budgets: [["<500", "Minder dan € 500"], ["500-1500", "€ 500–1.500"], ["1500-5000", "€ 1.500–5.000"], ["5000+", "Meer dan € 5.000"], ["unsure", "Weet ik nog niet"]]
     },
     check: {
       title: "Vraag uw gratis check aan", intro: "We sturen het resultaat naar uw e-mailadres.",
       submit: "Check mijn website gratis", subject: "Aanvraag AVG- & cookiecheck",
       consent: "Ik ga ermee akkoord dat mijn gegevens alleen worden gebruikt om de check uit te voeren en mij het resultaat te sturen. Meer in de {privacy}.",
-      success: ["Bedankt — uw aanvraag is ontvangen.", "We sturen het resultaat naar uw e-mailadres. Vinden we problemen, dan ontvangt u een aanbod voor de oplossing van € 99 — er verandert niets aan uw website zonder uw akkoord."],
+      success: ["Bedankt — uw aanvraag is ontvangen.", "We sturen het resultaat naar uw e-mailadres. Vinden we problemen, dan ontvangt u een aanbod voor de oplossing (vanaf € 99) — er verandert niets aan uw website zonder uw akkoord."],
       f: { website: "Websiteadres", email: "E-mail voor het resultaat", country: "Land van uw bedrijf", platform: "Websiteplatform", message: "Is er iets wat we moeten weten?", choose: "Maak een keuze" },
       countries: [["DE", "Duitsland"], ["AT", "Oostenrijk"], ["CH", "Zwitserland"], ["NL", "Nederland"], ["BE", "België"], ["ES", "Spanje"], ["HR", "Kroatië"], ["UK", "Verenigd Koninkrijk"], ["EU", "Ander EU-land"], ["other", "Ander land"]],
       platforms: [["wordpress", "WordPress"], ["wix", "Wix"], ["squarespace", "Squarespace"], ["shopify", "Shopify"], ["webflow", "Webflow"], ["jimdo", "Jimdo"], ["html", "Maatwerk / HTML"], ["unknown", "Weet ik niet"]]

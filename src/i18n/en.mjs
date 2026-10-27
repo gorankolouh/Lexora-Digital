@@ -6,17 +6,17 @@ export default {
   slugs: {
     home: "", web: "web-design/", compliance: "digital-compliance/", check: "gdpr-cookie-check/", language: "translation/",
     creative: "creative-services/", work: "work/", journal: "journal/", about: "about/", contact: "contact/",
-    privacy: "privacy/", cookies: "cookies/", imprint: "legal-notice/", accessibility: "accessibility/"
+    privacy: "privacy/", cookies: "cookies/", imprint: "legal-notice/", accessibility: "accessibility/", shop: "templates/"
   },
   ui: {
     skip: "Skip to content", home: "Home", mainNav: "Main", contents: "Contents",
     menu: "Menu", language: "Language", soon: "soon", services: "Services", startProject: "Start a project"
   },
   nav: {
-    work: "Work", journal: "Journal", about: "About", contact: "Contact",
+    work: "Work", journal: "Journal", about: "About", contact: "Contact", shop: "Templates",
     web: ["Web Design & Development", "Websites, landing pages, launch", "</>"],
     compliance: ["Digital Compliance", "GDPR, cookies, EU digital rules", "§"],
-    check: ["GDPR & Cookie Check", "Free check · fixed for €99", "✓"],
+    check: ["GDPR & Cookie Check", "Free check · fix from €99", "✓"],
     language: ["Translation", "Five languages, every direction", "⇄"],
     creative: ["Creative Services", "Identity, graphics, media editing", "Aa"]
   },
@@ -24,7 +24,7 @@ export default {
     home: { title: "Lexora Digital — Web, Law, Language & Design Studio", desc: "Independent digital studio for websites, GDPR and cookie compliance, translation and design — for businesses across Europe, in five languages." },
     web: { title: "Web Design & Development — Lexora Digital", desc: "Custom websites and landing pages for small and medium-sized businesses. Starter website from €99, responsive, privacy-friendly and launched on your domain." },
     compliance: { title: "Digital Compliance: GDPR, Cookies & EU Rules — Lexora Digital", desc: "Practical help with GDPR, cookie consent, privacy notices and EU digital rules for business websites — information and implementation, not legal advice." },
-    check: { title: "Free GDPR & Cookie Check — We Fix It for €99 | Lexora Digital", desc: "GDPR, Cookies & Co.: a free check of your website's consent, tracking and legal pages. If we find issues, we fix them for a fixed €99." },
+    check: { title: "Free GDPR & Cookie Check — We Fix It from €99 | Lexora Digital", desc: "GDPR, Cookies & Co.: a free check of your website's consent, tracking and legal pages. If we find issues, we fix them from €99." },
     language: { title: "Translation Services in English, German, Dutch, Spanish & Croatian — Lexora Digital", desc: "Business, legal and website translation between English, German, Dutch, Spanish and Croatian — with a focus on clear, natural language." },
     creative: { title: "Creative Services: Identity, Graphics & Media Editing — Lexora Digital", desc: "Visual identity, brand assets, graphic design and selected photo, video, audio and voice editing for businesses." },
     work: { title: "Work — Concept Projects | Lexora Digital", desc: "Website concepts for beauty, trades and automotive businesses — complete, responsive designs that show how Lexora Digital works." },
@@ -34,6 +34,10 @@ export default {
     privacy: { title: "Privacy Policy — Lexora Digital", desc: "How Lexora Digital processes personal data on this website." },
     cookies: { title: "Cookie Policy — Lexora Digital", desc: "This website uses no tracking or advertising cookies. Here is exactly what is stored and why." },
     imprint: { title: "Legal Notice — Lexora Digital", desc: "Provider information for lexoradigital.com." },
+    shop: {
+      title: "Notion Templates for EU Compliance: GDPR, AI Act & more — Lexora Digital",
+      desc: "Ready-to-use Notion kits for the GDPR, the EU AI Act, AI workplace policies, pay transparency and supplier checks — in English, German, Dutch, Spanish and Croatian."
+    },
     accessibility: { title: "Accessibility Statement — Lexora Digital", desc: "Our accessibility goals for this website, known limitations and how to give feedback." }
   },
 
@@ -68,7 +72,7 @@ export default {
           p: "Custom websites and landing pages, responsive design, improvements to existing sites, deployment and a clear handover. Starter websites from €99.",
           tags: ["Custom websites", "Landing pages", "Responsive design", "Improvements", "Deployment"], link: "Web design & development" },
         { key: "law", route: "compliance", g: "§", word: "Law", title: "Websites that respect the people using them.",
-          p: "Consultation and practical support on GDPR, cookies and privacy notices — including a free website check and a fixed-price €99 fix.",
+          p: "Consultation and practical support on GDPR, cookies and privacy notices — including a free website check and a fix from €99.",
           tags: ["GDPR & cookies", "Consent setup", "Privacy pages", "EU digital rules"],
           note: "General information and practical website implementation. We are not a law firm and do not provide legal advice or representation.", link: "Digital compliance" },
         { key: "language", route: "language", g: "⇄", word: "Language", title: "Content that reads as if it was written in your language.",
@@ -121,8 +125,8 @@ export default {
     checkBand: {
       label: "GDPR, Cookies & Co.",
       h2: "Is your website GDPR and cookie compliant? *Find out for free.*",
-      lead: "We check consent, tracking, privacy policy and legal pages. If we find issues, we fix them for one fixed price.",
-      priceFree: "€0", priceFix: "€99", free: "The check", fix: "The fix — one-time", cta: "Check my website"
+      lead: "We check consent, tracking, privacy policy and legal pages. If we find issues, we fix them from €99 — you know the price before we start.",
+      priceFree: "€0", priceFix: "from €99", free: "The check", fix: "The fix — one-time", cta: "Check my website"
     },
     process: {
       label: "Our approach",
@@ -194,7 +198,7 @@ export default {
       pricing: {
         label: "Packages", h2: "Transparent from the start.", lead: "A defined entry-level package for small businesses, and individual quotes for everything larger.",
         incl: "Included", extra: "Not included / extra",
-        starter: { name: "Starter website", price: "€99", unit: "one-time", svc: "web", cta: "Order a starter website",
+        starter: { name: "Starter website", price: "from €99", unit: "one-time", svc: "web", cta: "Order a starter website",
           p: "A professional one-page website for a small business, typically delivered within 48 hours after we have received all content.",
           incl: ["One responsive page with up to 6 sections", "Your texts, photos and logo, carefully laid out", "Contact section with phone, email, address and map link", "Privacy-friendly setup and links to your legal pages", "Launch on your existing domain"],
           extra: ["Domain and hosting costs", "Writing or translating your texts", "Additional pages, booking or shop functions", "Logo or photo production", "Ongoing changes after launch"] },
@@ -247,12 +251,12 @@ export default {
         doT: "What we do", do: ["Explain the rules that are likely to apply, in plain language", "Check your website for common compliance issues", "Implement consent, tracking and form fixes on your website", "Structure privacy and legal pages from the information you provide", "Re-check the website after changes"],
         dontT: "What we don't do", dont: ["Give legal advice or legal representation", "Guarantee that a website is \"100% compliant\"", "Act as your data protection officer", "Draft contracts or represent you before authorities"]
       },
-      band: { h2: "Start with a *free check* of your website.", lead: "We review consent, tracking, privacy policy and legal pages. If we find issues, we fix them for a fixed €99.", cta: "Check my website" }
+      band: { h2: "Start with a *free check* of your website.", lead: "We review consent, tracking, privacy policy and legal pages. If we find issues, we fix them from €99.", cta: "Check my website" }
     },
 
     check: {
-      hero: { label: "GDPR, Cookies & Co.", h1: "Free GDPR & cookie check. *We fix it for €99.*", lead: "Send us your website. We check consent, tracking, privacy policy and legal pages against EU and national rules. If everything is fine, it costs nothing. If not, we make your website compliant for one fixed price.",
-        points: ["No account, no card", "Free if no issues are found", "One fixed price for the fix", "Free re-check after the fix"] },
+      hero: { label: "GDPR, Cookies & Co.", h1: "Free GDPR & cookie check. *We fix it from €99.*", lead: "Send us your website. We check consent, tracking, privacy policy and legal pages against EU and national rules. If everything is fine, it costs nothing. If not, we make your website compliant from €99 — you know the price before we start.",
+        points: ["No account, no card", "Free if no issues are found", "Price agreed before we start", "Free re-check after the fix"] },
       areas: {
         label: "What we check", h2: "The four areas most often behind complaints and fines.", lead: "We review what your visitors actually see and what your website actually loads.",
         items: [
@@ -268,7 +272,7 @@ export default {
           ["Send your website", "Enter your website address, your email and your country — that's all we need."],
           ["We check", "We review consent, tracking, privacy policy and legal pages against EU and national rules."],
           ["You get the result", "Free of charge. If everything is fine, that's it. If not, you receive a short, plain-language list of the issues."],
-          ["We fix it for €99", "On your go-ahead we make the fixes on your website, then re-check it for free."]
+          ["We fix it from €99", "On your go-ahead we make the fixes on your website, then re-check it for free."]
         ]
       },
       example: {
@@ -285,17 +289,17 @@ export default {
         label: "Pricing", h2: "Two prices. No surprises.", lead: "The check is always free. You only pay if we find issues and you want us to fix them.",
         plans: [
           { name: "The check", price: "€0", unit: "free", cta: "Request a free check", p: "A review of your website by us.", incl: ["Consent, tracking, privacy policy and legal pages", "Checked against EU and your national rules", "Short, plain-language list of any issues", "No obligation"] },
-          { name: "The fix", price: "€99", unit: "one-time", cta: "Start with the free check", p: "We make your website GDPR and cookie compliant with EU and national rules.",
+          { name: "The fix", price: "from €99", unit: "one-time", cta: "Start with the free check", p: "We make your website GDPR and cookie compliant with EU and national rules.",
             incl: ["Consent banner set up correctly — equal Accept and Reject, real choices", "Trackers and embeds blocked until consent, where your platform allows it", "Privacy policy and legal notice completed from the information you provide", "Form notices and links to legal pages on every page", "Free re-check and a short summary of what we changed"] }
         ],
-        scope: "The €99 fix covers standard websites on common platforms such as WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo or plain HTML, and needs access to your website or your developer. If your site needs more — for example custom plugins, shop checkouts or a hosting change — we tell you before we start, with a separate price. Prices exclude VAT where applicable."
+        scope: "The fix from €99 covers standard websites on common platforms such as WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo or plain HTML, and needs access to your website or your developer. If your site needs more — for example custom plugins, shop checkouts or a hosting change — we tell you before we start, with a separate price. Prices exclude VAT where applicable."
       },
       countries: { label: "Countries", h2: "Checked against the rules that apply to you.", lead: "Tell us where your business is based. We check your website against EU rules and the national law of that country." },
       faq: {
         label: "Questions", h2: "Frequently asked questions.",
         items: [
           ["Is the check really free?", "Yes. The check costs nothing. If we find no issues, you pay nothing at all."],
-          ["What exactly does the €99 fix include?", "We set up consent correctly, block trackers until consent where your platform allows it, complete your privacy policy and legal notice from the information you provide, add form notices and links to legal pages, and re-check the website afterwards."],
+          ["What does the fix from €99 include?", "We set up consent correctly, block trackers until consent where your platform allows it, complete your privacy policy and legal notice from the information you provide, add form notices and links to legal pages, and re-check the website afterwards."],
           ["Do you change my website without asking?", "No. We only make changes after you accept the offer, and only the ones described in it."],
           ["What do you need from me?", "Access to your website (for example a temporary admin login) or your developer's contact — plus the business details that belong in your privacy policy and legal notice."],
           ["Is this legal advice?", "No. The check and the fix are practical, technical work based on EU and national rules. They are not legal advice and do not guarantee compliance. For legal advice, consult a qualified lawyer."],
@@ -456,6 +460,65 @@ export default {
       check: { t: "Just want to know if your website is GDPR compliant?", p: "Use the free GDPR & cookie check instead." }
     },
 
+    shop: {
+      hero: {
+        label: "Notion templates",
+        h1: "EU compliance kits, *ready in Notion.*",
+        lead: "Practical Notion templates for the GDPR, the EU AI Act, pay transparency and supplier checks — built for small and medium-sized businesses, in five languages.",
+        cta1: "Get the bundle",
+        cta2: "See all kits",
+        points: ["English, German, Dutch, Spanish, Croatian", "Works on the free Notion plan", "Instant access after purchase", "One-time payment, no subscription"]
+      },
+      kits: { label: "The kits", h2: "Five kits. *One bundle.*", lead: "Each kit is a ready-to-use Notion workspace with registers, guides and example entries. You choose your language edition at checkout." },
+      cat: "Notion template",
+      notion: "Made for Notion",
+      bundleCat: "Bundle · 5 Notion kits",
+      num: "5 kits",
+      vs: "{bundle} instead of {full}",
+      buy: "Buy on Gumroad",
+      items: {
+        bundle: { t: "EU Compliance Bundle", s: "5 Notion kits", p: "All five kits in one purchase: GDPR, AI compliance, AI workplace policy, pay transparency and supplier assessment." },
+        gdpr: { t: "GDPR Compliance Kit", s: "GDPR", p: "A checklist with article references plus registers for processing activities, data subject requests, data breaches, processors and cookies." },
+        ai: { t: "AI Compliance Toolkit", s: "EU AI Act + GDPR", p: "An AI tools registry, GDPR checkpoints, an employee AI policy, training video scripts and a training log." },
+        policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + GDPR", p: "An AI use policy, a staff quick guide, an acknowledgment form, AI tool requests and a training log." },
+        pay: { t: "EU Pay Transparency Kit", s: "Directive (EU) 2023/970", p: "Pay policy, job architecture and pay ranges, a pay gap calculator, employee information requests and ready-to-use texts." },
+        vendor: { t: "Vendor & AI Supplier Assessment Kit", s: "GDPR + EU AI Act", p: "A supplier questionnaire, an assessment guide, a DPA checklist (Art. 28 GDPR), a supplier register and an assessment log." }
+      },
+      how: {
+        label: "How it works",
+        h2: "From checkout to your workspace *in two minutes.*",
+        lead: "No installation, no account with us — the template is copied into your own Notion workspace.",
+        steps: [
+          ["Choose kit and language", "Pick a kit or the bundle and choose your language edition at checkout on Gumroad."],
+          ["Get your link", "Right after payment you receive the link to your template."],
+          ["Duplicate into Notion", "Open the link and click “Duplicate” to copy the template into your own Notion workspace. The free plan is enough."],
+          ["Fill it in", "Follow the setup guide and the example entries to add your own information."]
+        ]
+      },
+      bounds: {
+        label: "Boundaries",
+        h2: "What the kits do — and what they don't.",
+        doT: "What the kits do",
+        do: ["Give you a clear structure for records, registers and policies", "Show with example entries how each register is filled in", "Explain the relevant EU rules in plain language", "Help you document what you have done"],
+        dontT: "What they don't do",
+        dont: ["Replace legal advice for your specific situation", "Make your business compliant on their own", "Submit notifications or reports to authorities for you", "Classify AI systems or make legal decisions for you"]
+      },
+      faq: {
+        label: "Questions",
+        h2: "Before you buy.",
+        items: [
+          ["Do I need a paid Notion plan?", "No. The templates work on the free Notion plan. You only need a Notion account, which you can create for free."],
+          ["Which languages are available?", "Every kit is available in English, German, Dutch, Spanish and Croatian. You choose your edition at checkout."],
+          ["How do I receive the template?", "Payment and your receipt are handled by Gumroad. Right after purchase you get a link to duplicate the template into your Notion workspace."],
+          ["Can I use a kit for several companies?", "One purchase covers use within one business. If you need kits for several companies or for your clients, please contact us."],
+          ["Is this legal advice?", "No. The kits are organisational tools and a practical starting point. They do not constitute legal advice and do not by themselves make your business compliant. For high-risk uses — for example AI in recruitment — have your final documents reviewed by a qualified professional."],
+          ["Am I tracked when I click “Buy”?", "Not by this website. It loads no Gumroad scripts and sets no cookies. The buy buttons are plain links; on the checkout page, Gumroad's own privacy policy applies."]
+        ]
+      },
+      band: { h2: "All five kits *for one price.*", lead: "{bundle} instead of {full} — choose your language edition at checkout.", cta: "Get the bundle" },
+      disclaimer: "The kits are organisational tools and a practical starting point. They do not constitute legal advice and do not guarantee compliance with the GDPR, the EU AI Act or any other law."
+    },
+
     privacy: {
       label: "Legal", h1: "Privacy Policy", lead: "How we process personal data when you visit this website or contact us.", updated: "Last updated: October 2026",
       draft: "",
@@ -554,14 +617,14 @@ export default {
       consent: "I agree that Lexora Digital may use my details to answer my enquiry. More in the {privacy}.",
       success: ["Thank you — your message has been sent.", "We will reply as soon as possible, in your language."],
       f: { name: "Name", email: "Email", company: "Business name", language: "Preferred language", service: "What can we help with?", budget: "Budget", message: "Your message", messagePh: "What would you like to achieve?", choose: "Please choose" },
-      services: [["web", "Website (design & development)"], ["design", "Creative & design services"], ["compliance", "GDPR & cookie consultation"], ["check", "GDPR & cookie check / €99 fix"], ["translation", "Translation"], ["other", "Something else"]],
+      services: [["web", "Website (design & development)"], ["design", "Creative & design services"], ["compliance", "GDPR & cookie consultation"], ["check", "GDPR & cookie check / fix from €99"], ["translation", "Translation"], ["other", "Something else"]],
       budgets: [["<500", "Under €500"], ["500-1500", "€500–1,500"], ["1500-5000", "€1,500–5,000"], ["5000+", "Over €5,000"], ["unsure", "Not sure yet"]]
     },
     check: {
       title: "Request your free check", intro: "We send the result to your email address.",
       submit: "Check my website for free", subject: "GDPR & cookie check request",
       consent: "I agree that my details are used only to carry out the check and send me the result. More in the {privacy}.",
-      success: ["Thank you — your check request has been received.", "We will send the result to your email address. If we find issues, you'll receive an offer for the €99 fix — nothing changes on your website without your go-ahead."],
+      success: ["Thank you — your check request has been received.", "We will send the result to your email address. If we find issues, you'll receive an offer for the fix (from €99) — nothing changes on your website without your go-ahead."],
       f: { website: "Website address", email: "Email for the result", country: "Country of your business", platform: "Website platform", message: "Anything we should know?", choose: "Please choose" },
       countries: [["DE", "Germany"], ["AT", "Austria"], ["CH", "Switzerland"], ["NL", "Netherlands"], ["BE", "Belgium"], ["ES", "Spain"], ["HR", "Croatia"], ["UK", "United Kingdom"], ["EU", "Other EU country"], ["other", "Other"]],
       platforms: [["wordpress", "WordPress"], ["wix", "Wix"], ["squarespace", "Squarespace"], ["shopify", "Shopify"], ["webflow", "Webflow"], ["jimdo", "Jimdo"], ["html", "Custom / HTML"], ["unknown", "I don't know"]]

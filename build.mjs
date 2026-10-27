@@ -17,7 +17,7 @@ const DIST = join(ROOT, "dist");
 const PAGES = {
   home: { r: home },
   web: { r: P.web }, compliance: { r: P.compliance }, check: { r: P.check }, language: { r: P.language }, creative: { r: P.creative },
-  work: { r: P.work }, journal: { r: P.journal }, about: { r: P.about }, contact: { r: P.contact },
+  work: { r: P.work }, shop: { r: P.shop, ld: P.shopLd }, journal: { r: P.journal }, about: { r: P.about }, contact: { r: P.contact },
   privacy: { r: (t) => P.legal(t, "privacy") }, cookies: { r: (t) => P.legal(t, "cookies") },
   imprint: { r: (t) => P.legal(t, "imprint") }, accessibility: { r: (t) => P.legal(t, "accessibility") }
 };
@@ -54,7 +54,7 @@ async function build() {
     for (const [key, def] of Object.entries(PAGES)) {
       const m = t.meta[key];
       if (!m) throw new Error(`Missing meta.${key} for ${l.code}`);
-      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key) });
+      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key), ld: def.ld ? def.ld(t) : null });
       await write(join(path(t, key), "index.html"), html);
       if (l.code === DEFAULT_LANG) urls.push({ alt: (c) => path(all[c], key) });
     }

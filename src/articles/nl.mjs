@@ -60,7 +60,7 @@ export default [
 
       ["h2", "Waar het om gaat"],
       ["p", "Recht is niet de vijand van goed ontwerp. Schone, snelle websites die alleen laden wat ze nodig hebben, zijn meestal zowel beter in lijn met de regels als prettiger in gebruik. Het beste moment om over de AVG na te denken, is wanneer u nog beslist wat de site moet worden. Daarna ontwerpt u niet meer — dan repareert u."],
-      ["note", "Wilt u weten waar uw huidige website staat? Onze **gratis AVG- & cookiecheck** laat zien wat er laadt, wat cookies plaatst en wat moet worden opgelost — en voor € 99 lossen wij het voor u op."]
+      ["note", "Wilt u weten waar uw huidige website staat? Onze **gratis AVG- & cookiecheck** laat zien wat er laadt, wat cookies plaatst en wat moet worden opgelost — en vanaf € 99 lossen wij het voor u op."]
     ],
     sources: [
       ["AVG — Verordening (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"],

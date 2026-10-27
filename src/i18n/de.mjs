@@ -5,17 +5,17 @@ export default {
   slugs: {
     home: "", web: "webdesign/", compliance: "digitale-compliance/", check: "dsgvo-cookie-check/", language: "uebersetzungen/",
     creative: "kreativleistungen/", work: "arbeiten/", journal: "journal/", about: "ueber-uns/", contact: "kontakt/",
-    privacy: "datenschutz/", cookies: "cookies/", imprint: "impressum/", accessibility: "barrierefreiheit/"
+    privacy: "datenschutz/", cookies: "cookies/", imprint: "impressum/", accessibility: "barrierefreiheit/", shop: "vorlagen/"
   },
   ui: {
     skip: "Zum Inhalt springen", home: "Startseite", mainNav: "Hauptnavigation", contents: "Inhalt",
     menu: "Menü", language: "Sprache", soon: "bald", services: "Leistungen", startProject: "Projekt starten"
   },
   nav: {
-    work: "Arbeiten", journal: "Journal", about: "Über uns", contact: "Kontakt",
+    work: "Arbeiten", journal: "Journal", about: "Über uns", contact: "Kontakt", shop: "Vorlagen",
     web: ["Webdesign & Entwicklung", "Websites, Landingpages, Launch", "</>"],
     compliance: ["Digitale Compliance", "DSGVO, Cookies, EU-Digitalrecht", "§"],
-    check: ["DSGVO- & Cookie-Check", "Kostenloser Check · Behebung für 99 €", "✓"],
+    check: ["DSGVO- & Cookie-Check", "Kostenloser Check · Behebung ab 99 €", "✓"],
     language: ["Übersetzungen", "Fünf Sprachen, jede Richtung", "⇄"],
     creative: ["Kreativleistungen", "Identität, Grafik, Medienbearbeitung", "Aa"]
   },
@@ -23,7 +23,7 @@ export default {
     home: { title: "Lexora Digital — Studio für Web, Recht, Sprache & Design", desc: "Unabhängiges Digitalstudio für Websites, DSGVO- und Cookie-Compliance, Übersetzungen und Design — für Unternehmen in ganz Europa, in fünf Sprachen." },
     web: { title: "Webdesign & Webentwicklung — Lexora Digital", desc: "Individuelle Websites und Landingpages für kleine und mittlere Unternehmen. Einstiegs-Website ab 99 €, responsiv, datenschutzfreundlich und auf Ihrer Domain live." },
     compliance: { title: "Digitale Compliance: DSGVO, Cookies & EU-Recht — Lexora Digital", desc: "Praktische Unterstützung bei DSGVO, Cookie-Einwilligung, Datenschutzerklärung und EU-Digitalrecht für Unternehmenswebsites — Information und Umsetzung, keine Rechtsberatung." },
-    check: { title: "Kostenloser DSGVO- & Cookie-Check — Behebung für 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: kostenloser Check von Einwilligung, Tracking und Rechtstexten Ihrer Website. Finden wir Mängel, beheben wir sie zum Festpreis von 99 €." },
+    check: { title: "Kostenloser DSGVO- & Cookie-Check — Behebung ab 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: kostenloser Check von Einwilligung, Tracking und Rechtstexten Ihrer Website. Finden wir Mängel, beheben wir sie ab 99 €." },
     language: { title: "Übersetzungen Englisch, Deutsch, Niederländisch, Spanisch & Kroatisch — Lexora Digital", desc: "Übersetzung von Websites, Geschäfts- und Rechtstexten zwischen Englisch, Deutsch, Niederländisch, Spanisch und Kroatisch — präzise und natürlich formuliert." },
     creative: { title: "Kreativleistungen: Identität, Grafik & Medienbearbeitung — Lexora Digital", desc: "Visuelle Identität, Markenmaterialien, Grafikdesign sowie ausgewählte Foto-, Video-, Audio- und Sprachbearbeitung für Unternehmen." },
     work: { title: "Arbeiten — Konzeptprojekte | Lexora Digital", desc: "Website-Konzepte für Beauty, Handwerk und Kfz-Betriebe — vollständige, responsive Designs, die zeigen, wie Lexora Digital arbeitet." },
@@ -33,6 +33,10 @@ export default {
     privacy: { title: "Datenschutzerklärung — Lexora Digital", desc: "Wie Lexora Digital personenbezogene Daten auf dieser Website verarbeitet." },
     cookies: { title: "Cookie-Richtlinie — Lexora Digital", desc: "Diese Website verwendet keine Tracking- oder Werbe-Cookies. Hier steht genau, was gespeichert wird und warum." },
     imprint: { title: "Impressum — Lexora Digital", desc: "Anbieterkennzeichnung für lexoradigital.com." },
+    shop: {
+      title: "Notion-Vorlagen für EU-Compliance: DSGVO, AI Act & mehr — Lexora Digital",
+      desc: "Einsatzbereite Notion-Kits für DSGVO, EU AI Act, KI-Richtlinien am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung — auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch."
+    },
     accessibility: { title: "Erklärung zur Barrierefreiheit — Lexora Digital", desc: "Unsere Ziele zur Barrierefreiheit dieser Website, bekannte Einschränkungen und wie Sie uns Rückmeldung geben." }
   },
 
@@ -67,7 +71,7 @@ export default {
           p: "Individuelle Websites und Landingpages, responsives Design, Verbesserungen bestehender Seiten, Veröffentlichung und eine klare Übergabe. Einstiegs-Websites ab 99 €.",
           tags: ["Individuelle Websites", "Landingpages", "Responsives Design", "Optimierung", "Veröffentlichung"], link: "Webdesign & Entwicklung" },
         { key: "law", route: "compliance", g: "§", word: "Recht", title: "Websites, die ihre Besucher respektieren.",
-          p: "Beratung und praktische Unterstützung zu DSGVO, Cookies und Datenschutzerklärungen — inklusive kostenlosem Website-Check und Behebung zum Festpreis von 99 €.",
+          p: "Beratung und praktische Unterstützung zu DSGVO, Cookies und Datenschutzerklärungen — inklusive kostenlosem Website-Check und Behebung ab 99 €.",
           tags: ["DSGVO & Cookies", "Einwilligung einrichten", "Rechtstexte", "EU-Digitalrecht"],
           note: "Allgemeine Informationen und praktische Umsetzung auf Websites. Wir sind keine Anwaltskanzlei und erbringen keine Rechtsberatung oder rechtliche Vertretung.", link: "Digitale Compliance" },
         { key: "language", route: "language", g: "⇄", word: "Sprache", title: "Inhalte, die klingen, als wären sie in Ihrer Sprache geschrieben.",
@@ -120,8 +124,8 @@ export default {
     checkBand: {
       label: "GDPR, Cookies & Co.",
       h2: "Ist Ihre Website DSGVO- und cookie-konform? *Finden Sie es kostenlos heraus.*",
-      lead: "Wir prüfen Einwilligung, Tracking, Datenschutzerklärung und Impressum. Finden wir Mängel, beheben wir sie zum Festpreis.",
-      priceFree: "0 €", priceFix: "99 €", free: "Der Check", fix: "Die Behebung — einmalig", cta: "Website prüfen lassen"
+      lead: "Wir prüfen Einwilligung, Tracking, Datenschutzerklärung und Impressum. Finden wir Mängel, beheben wir sie ab 99 € — den Preis kennen Sie vorher.",
+      priceFree: "0 €", priceFix: "ab 99 €", free: "Der Check", fix: "Die Behebung — einmalig", cta: "Website prüfen lassen"
     },
     process: {
       label: "Unsere Arbeitsweise",
@@ -193,7 +197,7 @@ export default {
       pricing: {
         label: "Pakete", h2: "Transparent von Anfang an.", lead: "Ein klar definiertes Einstiegspaket für kleine Unternehmen und individuelle Angebote für alles Größere.",
         incl: "Enthalten", extra: "Nicht enthalten / extra",
-        starter: { name: "Einstiegs-Website", price: "99 €", unit: "einmalig", svc: "web", cta: "Einstiegs-Website bestellen",
+        starter: { name: "Einstiegs-Website", price: "ab 99 €", unit: "einmalig", svc: "web", cta: "Einstiegs-Website bestellen",
           p: "Eine professionelle One-Page-Website für kleine Unternehmen, in der Regel innerhalb von 48 Stunden nach Erhalt aller Inhalte fertig.",
           incl: ["Eine responsive Seite mit bis zu 6 Abschnitten", "Ihre Texte, Fotos und Ihr Logo, sorgfältig gestaltet", "Kontaktbereich mit Telefon, E-Mail, Adresse und Kartenlink", "Datenschutzfreundliche Einrichtung und Links zu Ihren Rechtstexten", "Veröffentlichung auf Ihrer bestehenden Domain"],
           extra: ["Kosten für Domain und Hosting", "Erstellung oder Übersetzung Ihrer Texte", "Weitere Seiten, Buchungs- oder Shopfunktionen", "Logo- oder Fotoproduktion", "Laufende Änderungen nach dem Launch"] },
@@ -246,12 +250,12 @@ export default {
         doT: "Was wir tun", do: ["Die voraussichtlich geltenden Regeln verständlich erklären", "Ihre Website auf typische Compliance-Mängel prüfen", "Einwilligung, Tracking und Formulare auf Ihrer Website korrigieren", "Datenschutzerklärung und Impressum aus Ihren Angaben strukturieren", "Die Website nach den Änderungen erneut prüfen"],
         dontT: "Was wir nicht tun", dont: ["Rechtsberatung oder rechtliche Vertretung", "Garantieren, dass eine Website „100 % konform“ ist", "Als Ihr Datenschutzbeauftragter tätig werden", "Verträge entwerfen oder Sie gegenüber Behörden vertreten"]
       },
-      band: { h2: "Beginnen Sie mit einem *kostenlosen Check* Ihrer Website.", lead: "Wir prüfen Einwilligung, Tracking, Datenschutzerklärung und Impressum. Finden wir Mängel, beheben wir sie zum Festpreis von 99 €.", cta: "Website prüfen lassen" }
+      band: { h2: "Beginnen Sie mit einem *kostenlosen Check* Ihrer Website.", lead: "Wir prüfen Einwilligung, Tracking, Datenschutzerklärung und Impressum. Finden wir Mängel, beheben wir sie ab 99 €.", cta: "Website prüfen lassen" }
     },
 
     check: {
-      hero: { label: "GDPR, Cookies & Co.", h1: "Kostenloser DSGVO- & Cookie-Check. *Behebung für 99 €.*", lead: "Senden Sie uns Ihre Website. Wir prüfen Einwilligung, Tracking, Datenschutzerklärung und Impressum nach EU- und nationalem Recht. Ist alles in Ordnung, kostet es nichts. Wenn nicht, machen wir Ihre Website zum Festpreis regelkonform.",
-        points: ["Kein Konto, keine Karte", "Kostenlos, wenn alles passt", "Ein Festpreis für die Behebung", "Kostenloser Nach-Check"] },
+      hero: { label: "GDPR, Cookies & Co.", h1: "Kostenloser DSGVO- & Cookie-Check. *Behebung ab 99 €.*", lead: "Senden Sie uns Ihre Website. Wir prüfen Einwilligung, Tracking, Datenschutzerklärung und Impressum nach EU- und nationalem Recht. Ist alles in Ordnung, kostet es nichts. Wenn nicht, machen wir Ihre Website ab 99 € regelkonform — den Preis kennen Sie vorher.",
+        points: ["Kein Konto, keine Karte", "Kostenlos, wenn alles passt", "Preis steht vor Beginn fest", "Kostenloser Nach-Check"] },
       areas: {
         label: "Was wir prüfen", h2: "Die vier Bereiche, die am häufigsten zu Beschwerden und Bußgeldern führen.", lead: "Wir prüfen, was Ihre Besucher tatsächlich sehen und was Ihre Website tatsächlich lädt.",
         items: [
@@ -267,7 +271,7 @@ export default {
           ["Website senden", "Geben Sie Ihre Website-Adresse, Ihre E-Mail und Ihr Land ein — mehr brauchen wir nicht."],
           ["Wir prüfen", "Wir prüfen Einwilligung, Tracking, Datenschutzerklärung und Impressum nach EU- und nationalem Recht."],
           ["Sie erhalten das Ergebnis", "Kostenlos. Ist alles in Ordnung, war's das. Wenn nicht, erhalten Sie eine kurze, verständliche Liste der Mängel."],
-          ["Wir beheben es für 99 €", "Nach Ihrer Freigabe nehmen wir die Korrekturen an Ihrer Website vor und prüfen sie anschließend kostenlos erneut."]
+          ["Wir beheben es ab 99 €", "Nach Ihrer Freigabe nehmen wir die Korrekturen an Ihrer Website vor und prüfen sie anschließend kostenlos erneut."]
         ]
       },
       example: {
@@ -284,17 +288,17 @@ export default {
         label: "Preise", h2: "Zwei Preise. Keine Überraschungen.", lead: "Der Check ist immer kostenlos. Sie zahlen nur, wenn wir Mängel finden und Sie diese beheben lassen möchten.",
         plans: [
           { name: "Der Check", price: "0 €", unit: "kostenlos", cta: "Kostenlosen Check anfragen", p: "Eine Prüfung Ihrer Website durch uns.", incl: ["Einwilligung, Tracking, Datenschutzerklärung und Impressum", "Geprüft nach EU- und Ihrem nationalen Recht", "Kurze, verständliche Liste möglicher Mängel", "Unverbindlich"] },
-          { name: "Die Behebung", price: "99 €", unit: "einmalig", cta: "Mit dem kostenlosen Check starten", p: "Wir machen Ihre Website DSGVO- und cookie-konform nach EU- und nationalem Recht.",
+          { name: "Die Behebung", price: "ab 99 €", unit: "einmalig", cta: "Mit dem kostenlosen Check starten", p: "Wir machen Ihre Website DSGVO- und cookie-konform nach EU- und nationalem Recht.",
             incl: ["Consent-Banner korrekt eingerichtet — gleichwertiges Akzeptieren und Ablehnen, echte Wahl", "Tracker und Einbettungen bis zur Einwilligung blockiert, soweit Ihre Plattform es zulässt", "Datenschutzerklärung und Impressum aus Ihren Angaben vervollständigt", "Hinweise in Formularen und Links zu den Rechtstexten auf jeder Seite", "Kostenloser Nach-Check und kurze Zusammenfassung der Änderungen"] }
         ],
-        scope: "Die Behebung für 99 € gilt für Standard-Websites auf gängigen Plattformen wie WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo oder reinem HTML und setzt Zugang zu Ihrer Website oder zu Ihrem Entwickler voraus. Braucht Ihre Website mehr — etwa individuelle Plugins, Shop-Checkouts oder einen Hosting-Wechsel —, sagen wir Ihnen das vorher, mit einem separaten Preis. Preise zzgl. MwSt., sofern anwendbar."
+        scope: "Die Behebung ab 99 € gilt für Standard-Websites auf gängigen Plattformen wie WordPress, Wix, Squarespace, Shopify, Webflow, Jimdo oder reinem HTML und setzt Zugang zu Ihrer Website oder zu Ihrem Entwickler voraus. Braucht Ihre Website mehr — etwa individuelle Plugins, Shop-Checkouts oder einen Hosting-Wechsel —, sagen wir Ihnen das vorher, mit einem separaten Preis. Preise zzgl. MwSt., sofern anwendbar."
       },
       countries: { label: "Länder", h2: "Geprüft nach den Regeln, die für Sie gelten.", lead: "Nennen Sie uns den Sitz Ihres Unternehmens. Wir prüfen Ihre Website nach EU-Recht und dem nationalen Recht dieses Landes." },
       faq: {
         label: "Fragen", h2: "Häufige Fragen.",
         items: [
           ["Ist der Check wirklich kostenlos?", "Ja. Der Check kostet nichts. Finden wir keine Mängel, zahlen Sie überhaupt nichts."],
-          ["Was genau umfasst die Behebung für 99 €?", "Wir richten die Einwilligung korrekt ein, blockieren Tracker bis zur Einwilligung, soweit Ihre Plattform es zulässt, vervollständigen Datenschutzerklärung und Impressum aus Ihren Angaben, ergänzen Hinweise in Formularen und Links zu den Rechtstexten und prüfen die Website anschließend erneut."],
+          ["Was umfasst die Behebung ab 99 €?", "Wir richten die Einwilligung korrekt ein, blockieren Tracker bis zur Einwilligung, soweit Ihre Plattform es zulässt, vervollständigen Datenschutzerklärung und Impressum aus Ihren Angaben, ergänzen Hinweise in Formularen und Links zu den Rechtstexten und prüfen die Website anschließend erneut."],
           ["Ändern Sie meine Website ohne Rückfrage?", "Nein. Wir ändern erst etwas, nachdem Sie das Angebot angenommen haben — und nur das, was darin beschrieben ist."],
           ["Was brauchen Sie von mir?", "Zugang zu Ihrer Website (zum Beispiel einen vorübergehenden Admin-Zugang) oder den Kontakt zu Ihrem Entwickler — sowie die Unternehmensangaben für Datenschutzerklärung und Impressum."],
           ["Ist das eine Rechtsberatung?", "Nein. Check und Behebung sind praktische, technische Arbeiten auf Grundlage des EU- und nationalen Rechts. Sie sind keine Rechtsberatung und garantieren keine Konformität. Für Rechtsberatung wenden Sie sich an eine Rechtsanwältin oder einen Rechtsanwalt."],
@@ -455,6 +459,73 @@ export default {
       check: { t: "Sie möchten nur wissen, ob Ihre Website DSGVO-konform ist?", p: "Nutzen Sie stattdessen den kostenlosen DSGVO- & Cookie-Check." }
     },
 
+    shop: {
+      hero: {
+        label: "Notion-Vorlagen",
+        h1: "EU-Compliance-Kits, *fertig in Notion.*",
+        lead: "Praxisnahe Notion-Vorlagen für DSGVO, EU AI Act, Entgelttransparenz und Lieferantenprüfung — für kleine und mittlere Unternehmen, in fünf Sprachen.",
+        cta1: "Zum Bundle",
+        cta2: "Alle Kits ansehen",
+        points: ["Deutsch, Englisch, Niederländisch, Spanisch, Kroatisch", "Funktioniert mit dem kostenlosen Notion-Tarif", "Sofortiger Zugang nach dem Kauf", "Einmalzahlung, kein Abo"]
+      },
+      kits: {
+        label: "Die Kits",
+        h2: "Fünf Kits. *Ein Bundle.*",
+        lead: "Jedes Kit ist ein einsatzbereiter Notion-Workspace mit Registern, Anleitungen und Beispieleinträgen. Die Sprachversion wählen Sie beim Kauf."
+      },
+      cat: "Notion-Vorlage",
+      notion: "Gemacht für Notion",
+      bundleCat: "Bundle · 5 Notion-Kits",
+      num: "5 Kits",
+      vs: "{bundle} statt {full}",
+      buy: "Bei Gumroad kaufen",
+      items: {
+        bundle: { t: "EU Compliance Bundle", s: "5 Notion-Kits", p: "Alle fünf Kits in einem Kauf: DSGVO, KI-Compliance, KI-Richtlinie am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung." },
+        gdpr: { t: "GDPR Compliance Kit", s: "DSGVO", p: "Checkliste mit Artikelverweisen sowie Register für Verarbeitungstätigkeiten, Betroffenenanfragen, Datenpannen, Auftragsverarbeiter und Cookies." },
+        ai: { t: "AI Compliance Toolkit", s: "EU AI Act + DSGVO", p: "KI-Tool-Register, DSGVO-Prüfpunkte, eine KI-Richtlinie für Mitarbeitende, Skripte für Schulungsvideos und ein Schulungsnachweis." },
+        policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + DSGVO", p: "KI-Nutzungsrichtlinie, Kurzleitfaden für Mitarbeitende, Bestätigungsformular, KI-Tool-Anfragen und ein Schulungsnachweis." },
+        pay: {
+          t: "EU Pay Transparency Kit",
+          s: "Richtlinie (EU) 2023/970",
+          p: "Vergütungsrichtlinie, Stellenarchitektur und Gehaltsbänder, Entgeltlücken-Rechner, Auskunftsanfragen von Beschäftigten und fertige Textbausteine."
+        },
+        vendor: { t: "Vendor & AI Supplier Assessment Kit", s: "DSGVO + EU AI Act", p: "Lieferantenfragebogen, Bewertungsleitfaden, AVV-Checkliste (Art. 28 DSGVO), Lieferantenregister und Bewertungsprotokoll." }
+      },
+      how: {
+        label: "So funktioniert es",
+        h2: "Vom Kauf zum eigenen Workspace *in zwei Minuten.*",
+        lead: "Keine Installation, kein Konto bei uns — die Vorlage wird in Ihren eigenen Notion-Workspace kopiert.",
+        steps: [
+          ["Kit und Sprache wählen", "Wählen Sie ein Kit oder das Bundle und beim Checkout auf Gumroad Ihre Sprachversion."],
+          ["Link erhalten", "Direkt nach der Zahlung erhalten Sie den Link zu Ihrer Vorlage."],
+          ["In Notion duplizieren", "Öffnen Sie den Link und klicken Sie auf „Duplizieren“, um die Vorlage in Ihren eigenen Notion-Workspace zu kopieren. Der kostenlose Tarif reicht."],
+          ["Ausfüllen", "Folgen Sie der Einrichtungsanleitung und den Beispieleinträgen und ergänzen Sie Ihre eigenen Angaben."]
+        ]
+      },
+      bounds: {
+        label: "Grenzen",
+        h2: "Was die Kits leisten — und was nicht.",
+        doT: "Was die Kits leisten",
+        do: ["Eine klare Struktur für Verzeichnisse, Register und Richtlinien", "Beispieleinträge, die zeigen, wie jedes Register ausgefüllt wird", "Die relevanten EU-Regeln in verständlicher Sprache", "Hilfe dabei, zu dokumentieren, was Sie umgesetzt haben"],
+        dontT: "Was sie nicht leisten",
+        dont: ["Rechtsberatung für Ihren konkreten Fall ersetzen", "Ihr Unternehmen schon für sich allein rechtskonform machen", "Meldungen oder Berichte für Sie bei Behörden einreichen", "KI-Systeme einstufen oder rechtliche Entscheidungen für Sie treffen"]
+      },
+      faq: {
+        label: "Fragen",
+        h2: "Vor dem Kauf.",
+        items: [
+          ["Brauche ich einen kostenpflichtigen Notion-Tarif?", "Nein. Die Vorlagen funktionieren mit dem kostenlosen Notion-Tarif. Sie brauchen nur ein Notion-Konto, das Sie kostenlos anlegen können."],
+          ["Welche Sprachen gibt es?", "Jedes Kit gibt es auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch. Die Sprachversion wählen Sie beim Kauf."],
+          ["Wie erhalte ich die Vorlage?", "Zahlung und Beleg laufen über Gumroad. Direkt nach dem Kauf erhalten Sie einen Link, mit dem Sie die Vorlage in Ihren Notion-Workspace duplizieren."],
+          ["Kann ich ein Kit für mehrere Unternehmen nutzen?", "Ein Kauf gilt für die Nutzung in einem Unternehmen. Wenn Sie Kits für mehrere Unternehmen oder für Ihre Kunden brauchen, schreiben Sie uns."],
+          ["Ist das Rechtsberatung?", "Nein. Die Kits sind Organisationshilfen und ein praktischer Ausgangspunkt. Sie stellen keine Rechtsberatung dar und machen Ihr Unternehmen nicht schon für sich allein rechtskonform. Bei Einsätzen mit hohem Risiko — etwa KI im Recruiting — lassen Sie Ihre finalen Dokumente fachkundig prüfen."],
+          ["Werde ich beim Klick auf „Kaufen“ getrackt?", "Nicht von dieser Website. Sie lädt keine Gumroad-Skripte und setzt keine Cookies. Die Kaufbuttons sind einfache Links; auf der Checkout-Seite gilt die Datenschutzerklärung von Gumroad."]
+        ]
+      },
+      band: { h2: "Alle fünf Kits *zu einem Preis.*", lead: "{bundle} statt {full} — die Sprachversion wählen Sie beim Kauf.", cta: "Zum Bundle" },
+      disclaimer: "Die Kits sind Organisationshilfen und ein praktischer Ausgangspunkt. Sie stellen keine Rechtsberatung dar und garantieren nicht die Einhaltung der DSGVO, des EU AI Act oder anderer Gesetze."
+    },
+
     privacy: {
       label: "Rechtliches", h1: "Datenschutzerklärung", lead: "Wie wir personenbezogene Daten verarbeiten, wenn Sie diese Website besuchen oder uns kontaktieren.", updated: "Stand: Oktober 2026",
       draft: "",
@@ -553,14 +624,14 @@ export default {
       consent: "Ich bin einverstanden, dass Lexora Digital meine Angaben zur Beantwortung meiner Anfrage verwendet. Mehr in der {privacy}.",
       success: ["Vielen Dank — Ihre Nachricht wurde gesendet.", "Wir antworten so bald wie möglich, in Ihrer Sprache."],
       f: { name: "Name", email: "E-Mail", company: "Unternehmen", language: "Bevorzugte Sprache", service: "Wobei können wir helfen?", budget: "Budget", message: "Ihre Nachricht", messagePh: "Was möchten Sie erreichen?", choose: "Bitte wählen" },
-      services: [["web", "Website (Design & Entwicklung)"], ["design", "Kreativ- & Designleistungen"], ["compliance", "DSGVO- & Cookie-Beratung"], ["check", "DSGVO- & Cookie-Check / Behebung für 99 €"], ["translation", "Übersetzung"], ["other", "Etwas anderes"]],
+      services: [["web", "Website (Design & Entwicklung)"], ["design", "Kreativ- & Designleistungen"], ["compliance", "DSGVO- & Cookie-Beratung"], ["check", "DSGVO- & Cookie-Check / Behebung ab 99 €"], ["translation", "Übersetzung"], ["other", "Etwas anderes"]],
       budgets: [["<500", "Unter 500 €"], ["500-1500", "500–1.500 €"], ["1500-5000", "1.500–5.000 €"], ["5000+", "Über 5.000 €"], ["unsure", "Noch unklar"]]
     },
     check: {
       title: "Kostenlosen Check anfragen", intro: "Wir senden Ihnen das Ergebnis per E-Mail.",
       submit: "Website kostenlos prüfen", subject: "Anfrage DSGVO- & Cookie-Check",
       consent: "Ich bin einverstanden, dass meine Angaben nur zur Durchführung des Checks und zur Zusendung des Ergebnisses verwendet werden. Mehr in der {privacy}.",
-      success: ["Vielen Dank — Ihre Check-Anfrage ist eingegangen.", "Wir senden Ihnen das Ergebnis per E-Mail. Finden wir Mängel, erhalten Sie ein Angebot für die Behebung zu 99 € — an Ihrer Website ändert sich nichts ohne Ihre Freigabe."],
+      success: ["Vielen Dank — Ihre Check-Anfrage ist eingegangen.", "Wir senden Ihnen das Ergebnis per E-Mail. Finden wir Mängel, erhalten Sie ein Angebot für die Behebung (ab 99 €) — an Ihrer Website ändert sich nichts ohne Ihre Freigabe."],
       f: { website: "Website-Adresse", email: "E-Mail für das Ergebnis", country: "Sitz Ihres Unternehmens", platform: "Website-Plattform", message: "Gibt es etwas, das wir wissen sollten?", choose: "Bitte wählen" },
       countries: [["DE", "Deutschland"], ["AT", "Österreich"], ["CH", "Schweiz"], ["NL", "Niederlande"], ["BE", "Belgien"], ["ES", "Spanien"], ["HR", "Kroatien"], ["UK", "Vereinigtes Königreich"], ["EU", "Anderes EU-Land"], ["other", "Anderes Land"]],
       platforms: [["wordpress", "WordPress"], ["wix", "Wix"], ["squarespace", "Squarespace"], ["shopify", "Shopify"], ["webflow", "Webflow"], ["jimdo", "Jimdo"], ["html", "Individuell / HTML"], ["unknown", "Weiß ich nicht"]]

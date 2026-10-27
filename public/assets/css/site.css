@@ -923,3 +923,20 @@ ul,ol{margin:0;padding:0}
 .head > .link{width:fit-content;align-self:start}
 .founder figcaption b{display:block;font-weight:500;color:var(--text);letter-spacing:.06em}
 .founder figcaption span{display:block;margin-top:4px;font-family:var(--f-serif);font-style:italic;font-size:15px;letter-spacing:0;text-transform:none;color:var(--text-2)}
+
+/* Templates (shop) page — reuses the .proj cards; product covers keep their own wide format */
+.shop-kits .proj .media{aspect-ratio:2576/1438}
+.shop-kits .proj.feat{margin-bottom:clamp(40px,5vw,72px)}
+.shop-kits .strip{row-gap:clamp(40px,5vw,56px)}
+.shop-kits .price-line{margin-top:14px;font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--text-3)}
+.shop-kits .price-line b{font-weight:500;color:var(--lime)}
+/* one more main-menu item: tighten the pills slightly on narrow desktops so the logo keeps its size */
+@media (min-width:1181px) and (max-width:1320px){.nav > a,.nav .dd > button{padding:0 11px}}
+/* mobile: no blue tap box (keyboard focus ring stays), and the menu glow must not make the menu scroll sideways */
+html{-webkit-tap-highlight-color:transparent}
+.mnav{overflow-x:hidden;overscroll-behavior:contain}
+/* Templates page: "Made for Notion" badge and the small Notion mark on each kit */
+.notion-badge{display:inline-flex;align-items:center;gap:10px;margin-top:32px;padding:6px 16px 6px 6px;border:1px solid var(--line-2);border-radius:999px;font-size:14px;font-weight:500;color:var(--text)}
+.notion-badge img{width:30px;height:30px;object-fit:contain;padding:4px;border-radius:50%;background:#F5F7F2}
+.notion-badge + .points{margin-top:24px}
+.cat .ni{display:inline-block;width:16px;height:16px;object-fit:contain;padding:1.5px;margin-right:9px;border-radius:4px;background:#F5F7F2;vertical-align:-3px}

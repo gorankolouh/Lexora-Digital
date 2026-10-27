@@ -21,9 +21,23 @@ export const FOUNDER = {
     "https://gorankolouch.medium.com/",
     "https://substack.com/@gorankolouch",
     "https://www.upwork.com/freelancers/~01fd19597aba5eb0ff",
-    "https://gorankolouh.gumroad.com/"
+    "https://lexoradigital.gumroad.com/"
   ]
 };
+
+// ---------------------------------------------------------------------------
+// SHOP — Notion templates sold on Gumroad. Plain links only: no Gumroad script or overlay is loaded,
+// so the site stays free of third-party scripts and cookies. Text per product lives in src/i18n/<lang>.mjs → pages.shop.items.
+// ---------------------------------------------------------------------------
+export const SHOP_URL = "https://lexoradigital.gumroad.com/";
+export const SHOP = [
+  { key: "bundle", url: "https://lexoradigital.gumroad.com/l/eu-compliance-bundle", price: 69.99 },
+  { key: "gdpr", url: "https://lexoradigital.gumroad.com/l/gdpr-compliance-kit", price: 29.99 },
+  { key: "ai", img: "ai-toolkit", url: "https://lexoradigital.gumroad.com/l/ai-compliance-toolkit", price: 29.99 },
+  { key: "policy", url: "https://lexoradigital.gumroad.com/l/ai-workplace-policy-pack", price: 29.99 },
+  { key: "pay", url: "https://lexoradigital.gumroad.com/l/pay-transparency-kit", price: 29.99 },
+  { key: "vendor", url: "https://lexoradigital.gumroad.com/l/vendor-ai-supplier-kit", price: 29.99 }
+];
 
 export const LANGS = [
   { code: "en", native: "English", ready: true },
