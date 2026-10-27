@@ -5,14 +5,14 @@ export default {
   slugs: {
     home: "", web: "webdesign/", compliance: "digitale-compliance/", check: "dsgvo-cookie-check/", language: "uebersetzungen/",
     creative: "kreativleistungen/", work: "arbeiten/", journal: "journal/", about: "ueber-uns/", contact: "kontakt/",
-    privacy: "datenschutz/", cookies: "cookies/", imprint: "impressum/", accessibility: "barrierefreiheit/"
+    privacy: "datenschutz/", cookies: "cookies/", imprint: "impressum/", accessibility: "barrierefreiheit/", shop: "vorlagen/"
   },
   ui: {
     skip: "Zum Inhalt springen", home: "Startseite", mainNav: "Hauptnavigation", contents: "Inhalt",
     menu: "Menü", language: "Sprache", soon: "bald", services: "Leistungen", startProject: "Projekt starten"
   },
   nav: {
-    work: "Arbeiten", journal: "Journal", about: "Über uns", contact: "Kontakt",
+    work: "Arbeiten", journal: "Journal", about: "Über uns", contact: "Kontakt", shop: "Vorlagen",
     web: ["Webdesign & Entwicklung", "Websites, Landingpages, Launch", "</>"],
     compliance: ["Digitale Compliance", "DSGVO, Cookies, EU-Digitalrecht", "§"],
     check: ["DSGVO- & Cookie-Check", "Kostenloser Check · Behebung für 99 €", "✓"],
@@ -33,6 +33,10 @@ export default {
     privacy: { title: "Datenschutzerklärung — Lexora Digital", desc: "Wie Lexora Digital personenbezogene Daten auf dieser Website verarbeitet." },
     cookies: { title: "Cookie-Richtlinie — Lexora Digital", desc: "Diese Website verwendet keine Tracking- oder Werbe-Cookies. Hier steht genau, was gespeichert wird und warum." },
     imprint: { title: "Impressum — Lexora Digital", desc: "Anbieterkennzeichnung für lexoradigital.com." },
+    shop: {
+      title: "Notion-Vorlagen für EU-Compliance: DSGVO, AI Act & mehr — Lexora Digital",
+      desc: "Einsatzbereite Notion-Kits für DSGVO, EU AI Act, KI-Richtlinien am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung — auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch."
+    },
     accessibility: { title: "Erklärung zur Barrierefreiheit — Lexora Digital", desc: "Unsere Ziele zur Barrierefreiheit dieser Website, bekannte Einschränkungen und wie Sie uns Rückmeldung geben." }
   },
 
@@ -453,6 +457,72 @@ export default {
       direct: { label: "E-Mail", p: "Wir antworten in der Regel innerhalb von zwei Werktagen." },
       next: { label: "So geht es weiter", steps: [["Wir lesen Ihre Nachricht", "und fragen nach, wenn etwas unklar ist."], ["Wir schlagen einen nächsten Schritt vor", "— ein kurzes Gespräch, ein Angebot oder einen kostenlosen Check."], ["Sie entscheiden", "Nichts beginnt ohne Ihre Freigabe."]] },
       check: { t: "Sie möchten nur wissen, ob Ihre Website DSGVO-konform ist?", p: "Nutzen Sie stattdessen den kostenlosen DSGVO- & Cookie-Check." }
+    },
+
+    shop: {
+      hero: {
+        label: "Notion-Vorlagen",
+        h1: "EU-Compliance-Kits, *fertig in Notion.*",
+        lead: "Praxisnahe Notion-Vorlagen für DSGVO, EU AI Act, Entgelttransparenz und Lieferantenprüfung — für kleine und mittlere Unternehmen, in fünf Sprachen.",
+        cta1: "Zum Bundle",
+        cta2: "Alle Kits ansehen",
+        points: ["Deutsch, Englisch, Niederländisch, Spanisch, Kroatisch", "Funktioniert mit dem kostenlosen Notion-Tarif", "Sofortiger Zugang nach dem Kauf", "Einmalzahlung, kein Abo"]
+      },
+      kits: {
+        label: "Die Kits",
+        h2: "Fünf Kits. *Ein Bundle.*",
+        lead: "Jedes Kit ist ein einsatzbereiter Notion-Workspace mit Registern, Anleitungen und Beispieleinträgen. Die Sprachversion wählen Sie beim Kauf."
+      },
+      cat: "Notion-Vorlage",
+      bundleCat: "Bundle · 5 Notion-Kits",
+      num: "5 Kits",
+      vs: "{bundle} statt {full}",
+      buy: "Bei Gumroad kaufen",
+      items: {
+        bundle: { t: "EU Compliance Bundle", s: "5 Notion-Kits", p: "Alle fünf Kits in einem Kauf: DSGVO, KI-Compliance, KI-Richtlinie am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung." },
+        gdpr: { t: "GDPR Compliance Kit", s: "DSGVO", p: "Checkliste mit Artikelverweisen sowie Register für Verarbeitungstätigkeiten, Betroffenenanfragen, Datenpannen, Auftragsverarbeiter und Cookies." },
+        ai: { t: "AI Compliance Toolkit", s: "EU AI Act + DSGVO", p: "KI-Tool-Register, DSGVO-Prüfpunkte, eine KI-Richtlinie für Mitarbeitende, Skripte für Schulungsvideos und ein Schulungsnachweis." },
+        policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + DSGVO", p: "KI-Nutzungsrichtlinie, Kurzleitfaden für Mitarbeitende, Bestätigungsformular, KI-Tool-Anfragen und ein Schulungsnachweis." },
+        pay: {
+          t: "EU Pay Transparency Kit",
+          s: "Richtlinie (EU) 2023/970",
+          p: "Vergütungsrichtlinie, Stellenarchitektur und Gehaltsbänder, Entgeltlücken-Rechner, Auskunftsanfragen von Beschäftigten und fertige Textbausteine."
+        },
+        vendor: { t: "Vendor & AI Supplier Assessment Kit", s: "DSGVO + EU AI Act", p: "Lieferantenfragebogen, Bewertungsleitfaden, AVV-Checkliste (Art. 28 DSGVO), Lieferantenregister und Bewertungsprotokoll." }
+      },
+      how: {
+        label: "So funktioniert es",
+        h2: "Vom Kauf zum eigenen Workspace *in zwei Minuten.*",
+        lead: "Keine Installation, kein Konto bei uns — die Vorlage wird in Ihren eigenen Notion-Workspace kopiert.",
+        steps: [
+          ["Kit und Sprache wählen", "Wählen Sie ein Kit oder das Bundle und beim Checkout auf Gumroad Ihre Sprachversion."],
+          ["Link erhalten", "Direkt nach der Zahlung erhalten Sie den Link zu Ihrer Vorlage."],
+          ["In Notion duplizieren", "Öffnen Sie den Link und klicken Sie auf „Duplizieren“, um die Vorlage in Ihren eigenen Notion-Workspace zu kopieren. Der kostenlose Tarif reicht."],
+          ["Ausfüllen", "Folgen Sie der Einrichtungsanleitung und den Beispieleinträgen und ergänzen Sie Ihre eigenen Angaben."]
+        ]
+      },
+      bounds: {
+        label: "Grenzen",
+        h2: "Was die Kits leisten — und was nicht.",
+        doT: "Was die Kits leisten",
+        do: ["Eine klare Struktur für Verzeichnisse, Register und Richtlinien", "Beispieleinträge, die zeigen, wie jedes Register ausgefüllt wird", "Die relevanten EU-Regeln in verständlicher Sprache", "Hilfe dabei, zu dokumentieren, was Sie umgesetzt haben"],
+        dontT: "Was sie nicht leisten",
+        dont: ["Rechtsberatung für Ihren konkreten Fall ersetzen", "Ihr Unternehmen schon für sich allein rechtskonform machen", "Meldungen oder Berichte für Sie bei Behörden einreichen", "KI-Systeme einstufen oder rechtliche Entscheidungen für Sie treffen"]
+      },
+      faq: {
+        label: "Fragen",
+        h2: "Vor dem Kauf.",
+        items: [
+          ["Brauche ich einen kostenpflichtigen Notion-Tarif?", "Nein. Die Vorlagen funktionieren mit dem kostenlosen Notion-Tarif. Sie brauchen nur ein Notion-Konto, das Sie kostenlos anlegen können."],
+          ["Welche Sprachen gibt es?", "Jedes Kit gibt es auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch. Die Sprachversion wählen Sie beim Kauf."],
+          ["Wie erhalte ich die Vorlage?", "Zahlung und Beleg laufen über Gumroad. Direkt nach dem Kauf erhalten Sie einen Link, mit dem Sie die Vorlage in Ihren Notion-Workspace duplizieren."],
+          ["Kann ich ein Kit für mehrere Unternehmen nutzen?", "Ein Kauf gilt für die Nutzung in einem Unternehmen. Wenn Sie Kits für mehrere Unternehmen oder für Ihre Kunden brauchen, schreiben Sie uns."],
+          ["Ist das Rechtsberatung?", "Nein. Die Kits sind Organisationshilfen und ein praktischer Ausgangspunkt. Sie stellen keine Rechtsberatung dar und machen Ihr Unternehmen nicht schon für sich allein rechtskonform. Bei Einsätzen mit hohem Risiko — etwa KI im Recruiting — lassen Sie Ihre finalen Dokumente fachkundig prüfen."],
+          ["Werde ich beim Klick auf „Kaufen“ getrackt?", "Nicht von dieser Website. Sie lädt keine Gumroad-Skripte und setzt keine Cookies. Die Kaufbuttons sind einfache Links; auf der Checkout-Seite gilt die Datenschutzerklärung von Gumroad."]
+        ]
+      },
+      band: { h2: "Alle fünf Kits *zu einem Preis.*", lead: "{bundle} statt {full} — die Sprachversion wählen Sie beim Kauf.", cta: "Zum Bundle" },
+      disclaimer: "Die Kits sind Organisationshilfen und ein praktischer Ausgangspunkt. Sie stellen keine Rechtsberatung dar und garantieren nicht die Einhaltung der DSGVO, des EU AI Act oder anderer Gesetze."
     },
 
     privacy: {

@@ -6,14 +6,14 @@ export default {
   slugs: {
     home: "", web: "web-design/", compliance: "digital-compliance/", check: "gdpr-cookie-check/", language: "translation/",
     creative: "creative-services/", work: "work/", journal: "journal/", about: "about/", contact: "contact/",
-    privacy: "privacy/", cookies: "cookies/", imprint: "legal-notice/", accessibility: "accessibility/"
+    privacy: "privacy/", cookies: "cookies/", imprint: "legal-notice/", accessibility: "accessibility/", shop: "templates/"
   },
   ui: {
     skip: "Skip to content", home: "Home", mainNav: "Main", contents: "Contents",
     menu: "Menu", language: "Language", soon: "soon", services: "Services", startProject: "Start a project"
   },
   nav: {
-    work: "Work", journal: "Journal", about: "About", contact: "Contact",
+    work: "Work", journal: "Journal", about: "About", contact: "Contact", shop: "Templates",
     web: ["Web Design & Development", "Websites, landing pages, launch", "</>"],
     compliance: ["Digital Compliance", "GDPR, cookies, EU digital rules", "§"],
     check: ["GDPR & Cookie Check", "Free check · fixed for €99", "✓"],
@@ -34,6 +34,10 @@ export default {
     privacy: { title: "Privacy Policy — Lexora Digital", desc: "How Lexora Digital processes personal data on this website." },
     cookies: { title: "Cookie Policy — Lexora Digital", desc: "This website uses no tracking or advertising cookies. Here is exactly what is stored and why." },
     imprint: { title: "Legal Notice — Lexora Digital", desc: "Provider information for lexoradigital.com." },
+    shop: {
+      title: "Notion Templates for EU Compliance: GDPR, AI Act & more — Lexora Digital",
+      desc: "Ready-to-use Notion kits for the GDPR, the EU AI Act, AI workplace policies, pay transparency and supplier checks — in English, German, Dutch, Spanish and Croatian."
+    },
     accessibility: { title: "Accessibility Statement — Lexora Digital", desc: "Our accessibility goals for this website, known limitations and how to give feedback." }
   },
 
@@ -454,6 +458,64 @@ export default {
       direct: { label: "Email", p: "We usually reply within two working days." },
       next: { label: "What happens next", steps: [["We read your message", "and ask questions if anything is unclear."], ["We suggest a next step", "— a short call, a quote or a free check."], ["You decide", "Nothing starts without your go-ahead."]] },
       check: { t: "Just want to know if your website is GDPR compliant?", p: "Use the free GDPR & cookie check instead." }
+    },
+
+    shop: {
+      hero: {
+        label: "Notion templates",
+        h1: "EU compliance kits, *ready in Notion.*",
+        lead: "Practical Notion templates for the GDPR, the EU AI Act, pay transparency and supplier checks — built for small and medium-sized businesses, in five languages.",
+        cta1: "Get the bundle",
+        cta2: "See all kits",
+        points: ["English, German, Dutch, Spanish, Croatian", "Works on the free Notion plan", "Instant access after purchase", "One-time payment, no subscription"]
+      },
+      kits: { label: "The kits", h2: "Five kits. *One bundle.*", lead: "Each kit is a ready-to-use Notion workspace with registers, guides and example entries. You choose your language edition at checkout." },
+      cat: "Notion template",
+      bundleCat: "Bundle · 5 Notion kits",
+      num: "5 kits",
+      vs: "{bundle} instead of {full}",
+      buy: "Buy on Gumroad",
+      items: {
+        bundle: { t: "EU Compliance Bundle", s: "5 Notion kits", p: "All five kits in one purchase: GDPR, AI compliance, AI workplace policy, pay transparency and supplier assessment." },
+        gdpr: { t: "GDPR Compliance Kit", s: "GDPR", p: "A checklist with article references plus registers for processing activities, data subject requests, data breaches, processors and cookies." },
+        ai: { t: "AI Compliance Toolkit", s: "EU AI Act + GDPR", p: "An AI tools registry, GDPR checkpoints, an employee AI policy, training video scripts and a training log." },
+        policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + GDPR", p: "An AI use policy, a staff quick guide, an acknowledgment form, AI tool requests and a training log." },
+        pay: { t: "EU Pay Transparency Kit", s: "Directive (EU) 2023/970", p: "Pay policy, job architecture and pay ranges, a pay gap calculator, employee information requests and ready-to-use texts." },
+        vendor: { t: "Vendor & AI Supplier Assessment Kit", s: "GDPR + EU AI Act", p: "A supplier questionnaire, an assessment guide, a DPA checklist (Art. 28 GDPR), a supplier register and an assessment log." }
+      },
+      how: {
+        label: "How it works",
+        h2: "From checkout to your workspace *in two minutes.*",
+        lead: "No installation, no account with us — the template is copied into your own Notion workspace.",
+        steps: [
+          ["Choose kit and language", "Pick a kit or the bundle and choose your language edition at checkout on Gumroad."],
+          ["Get your link", "Right after payment you receive the link to your template."],
+          ["Duplicate into Notion", "Open the link and click “Duplicate” to copy the template into your own Notion workspace. The free plan is enough."],
+          ["Fill it in", "Follow the setup guide and the example entries to add your own information."]
+        ]
+      },
+      bounds: {
+        label: "Boundaries",
+        h2: "What the kits do — and what they don't.",
+        doT: "What the kits do",
+        do: ["Give you a clear structure for records, registers and policies", "Show with example entries how each register is filled in", "Explain the relevant EU rules in plain language", "Help you document what you have done"],
+        dontT: "What they don't do",
+        dont: ["Replace legal advice for your specific situation", "Make your business compliant on their own", "Submit notifications or reports to authorities for you", "Classify AI systems or make legal decisions for you"]
+      },
+      faq: {
+        label: "Questions",
+        h2: "Before you buy.",
+        items: [
+          ["Do I need a paid Notion plan?", "No. The templates work on the free Notion plan. You only need a Notion account, which you can create for free."],
+          ["Which languages are available?", "Every kit is available in English, German, Dutch, Spanish and Croatian. You choose your edition at checkout."],
+          ["How do I receive the template?", "Payment and your receipt are handled by Gumroad. Right after purchase you get a link to duplicate the template into your Notion workspace."],
+          ["Can I use a kit for several companies?", "One purchase covers use within one business. If you need kits for several companies or for your clients, please contact us."],
+          ["Is this legal advice?", "No. The kits are organisational tools and a practical starting point. They do not constitute legal advice and do not by themselves make your business compliant. For high-risk uses — for example AI in recruitment — have your final documents reviewed by a qualified professional."],
+          ["Am I tracked when I click “Buy”?", "Not by this website. It loads no Gumroad scripts and sets no cookies. The buy buttons are plain links; on the checkout page, Gumroad's own privacy policy applies."]
+        ]
+      },
+      band: { h2: "All five kits *for one price.*", lead: "{bundle} instead of {full} — choose your language edition at checkout.", cta: "Get the bundle" },
+      disclaimer: "The kits are organisational tools and a practical starting point. They do not constitute legal advice and do not guarantee compliance with the GDPR, the EU AI Act or any other law."
     },
 
     privacy: {

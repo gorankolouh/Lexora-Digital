@@ -5,14 +5,14 @@ export default {
   slugs: {
     home: "", web: "webdesign/", compliance: "digitale-compliance/", check: "avg-cookie-check/", language: "vertalingen/",
     creative: "creatieve-diensten/", work: "werk/", journal: "journal/", about: "over-ons/", contact: "contact/",
-    privacy: "privacy/", cookies: "cookies/", imprint: "juridische-informatie/", accessibility: "toegankelijkheid/"
+    privacy: "privacy/", cookies: "cookies/", imprint: "juridische-informatie/", accessibility: "toegankelijkheid/", shop: "templates/"
   },
   ui: {
     skip: "Naar de inhoud", home: "Home", mainNav: "Hoofdnavigatie", contents: "Inhoud",
     menu: "Menu", language: "Taal", soon: "binnenkort", services: "Diensten", startProject: "Project starten"
   },
   nav: {
-    work: "Werk", journal: "Journal", about: "Over ons", contact: "Contact",
+    work: "Werk", journal: "Journal", about: "Over ons", contact: "Contact", shop: "Templates",
     web: ["Webdesign & ontwikkeling", "Websites, landingspagina's, lancering", "</>"],
     compliance: ["Digitale compliance", "AVG, cookies, Europese digitale regels", "§"],
     check: ["AVG- & cookiecheck", "Gratis check · opgelost voor € 99", "✓"],
@@ -33,6 +33,10 @@ export default {
     privacy: { title: "Privacyverklaring — Lexora Digital", desc: "Hoe Lexora Digital persoonsgegevens op deze website verwerkt." },
     cookies: { title: "Cookiebeleid — Lexora Digital", desc: "Deze website gebruikt geen tracking- of advertentiecookies. Hier staat precies wat er wordt opgeslagen en waarom." },
     imprint: { title: "Juridische informatie — Lexora Digital", desc: "Aanbiedersinformatie voor lexoradigital.com." },
+    shop: {
+      title: "Notion-templates voor EU-compliance: AVG, AI Act en meer — Lexora Digital",
+      desc: "Kant-en-klare Notion-kits voor de AVG, de EU AI Act, AI-beleid op de werkvloer, loontransparantie en leverancierscontroles — in het Nederlands, Engels, Duits, Spaans en Kroatisch."
+    },
     accessibility: { title: "Toegankelijkheidsverklaring — Lexora Digital", desc: "Onze toegankelijkheidsdoelen voor deze website, bekende beperkingen en hoe u feedback geeft." }
   },
 
@@ -453,6 +457,72 @@ export default {
       direct: { label: "E-mail", p: "We antwoorden meestal binnen twee werkdagen." },
       next: { label: "Wat er nu gebeurt", steps: [["We lezen uw bericht", "en stellen vragen als iets onduidelijk is."], ["We stellen een volgende stap voor", "— een kort gesprek, een offerte of een gratis check."], ["U beslist", "Er begint niets zonder uw akkoord."]] },
       check: { t: "Wilt u alleen weten of uw website aan de AVG voldoet?", p: "Gebruik dan de gratis AVG- & cookiecheck." }
+    },
+
+    shop: {
+      hero: {
+        label: "Notion-templates",
+        h1: "EU-compliancekits, *klaar in Notion.*",
+        lead: "Praktische Notion-templates voor de AVG, de EU AI Act, loontransparantie en leverancierscontroles — voor het mkb, in vijf talen.",
+        cta1: "Naar de bundel",
+        cta2: "Alle kits bekijken",
+        points: ["Nederlands, Engels, Duits, Spaans, Kroatisch", "Werkt met het gratis Notion-abonnement", "Direct toegang na aankoop", "Eenmalige betaling, geen abonnement"]
+      },
+      kits: { label: "De kits", h2: "Vijf kits. *Eén bundel.*", lead: "Elke kit is een kant-en-klare Notion-workspace met registers, handleidingen en voorbeeldregels. U kiest de taalversie bij het afrekenen." },
+      cat: "Notion-template",
+      bundleCat: "Bundel · 5 Notion-kits",
+      num: "5 kits",
+      vs: "{bundle} in plaats van {full}",
+      buy: "Kopen via Gumroad",
+      items: {
+        bundle: { t: "EU Compliance Bundle", s: "5 Notion-kits", p: "Alle vijf kits in één aankoop: AVG, AI-compliance, AI-beleid op de werkvloer, loontransparantie en leveranciersbeoordeling." },
+        gdpr: { t: "GDPR Compliance Kit", s: "AVG", p: "Een checklist met artikelverwijzingen plus registers voor verwerkingsactiviteiten, verzoeken van betrokkenen, datalekken, verwerkers en cookies." },
+        ai: { t: "AI Compliance Toolkit", s: "EU AI Act + AVG", p: "Een register van AI-tools, AVG-controlepunten, een AI-beleid voor medewerkers, scripts voor trainingsvideo's en een trainingslogboek." },
+        policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + AVG", p: "Een AI-gebruiksbeleid, een beknopte gids voor medewerkers, een bevestigingsformulier, aanvragen voor AI-tools en een trainingslogboek." },
+        pay: {
+          t: "EU Pay Transparency Kit",
+          s: "Richtlijn (EU) 2023/970",
+          p: "Beloningsbeleid, functiehuis en salarisschalen, een loonkloofcalculator, informatieverzoeken van werknemers en kant-en-klare teksten."
+        },
+        vendor: {
+          t: "Vendor & AI Supplier Assessment Kit",
+          s: "AVG + EU AI Act",
+          p: "Een vragenlijst voor leveranciers, een beoordelingsgids, een checklist voor de verwerkersovereenkomst (art. 28 AVG), een leveranciersregister en een beoordelingslogboek."
+        }
+      },
+      how: {
+        label: "Zo werkt het",
+        h2: "Van afrekenen naar uw eigen workspace *in twee minuten.*",
+        lead: "Geen installatie, geen account bij ons — de template wordt gekopieerd naar uw eigen Notion-workspace.",
+        steps: [
+          ["Kies kit en taal", "Kies een kit of de bundel en selecteer bij het afrekenen op Gumroad uw taalversie."],
+          ["Ontvang uw link", "Direct na betaling ontvangt u de link naar uw template."],
+          ["Dupliceer in Notion", "Open de link en klik op ‘Dupliceren’ om de template naar uw eigen Notion-workspace te kopiëren. Het gratis abonnement is genoeg."],
+          ["Vul hem in", "Volg de installatiegids en de voorbeeldregels en voeg uw eigen gegevens toe."]
+        ]
+      },
+      bounds: {
+        label: "Grenzen",
+        h2: "Wat de kits doen — en wat niet.",
+        doT: "Wat de kits doen",
+        do: ["Een duidelijke structuur voor registers, overzichten en beleid", "Voorbeeldregels die laten zien hoe u elk register invult", "De relevante EU-regels in begrijpelijke taal", "Hulp bij het vastleggen van wat u hebt gedaan"],
+        dontT: "Wat ze niet doen",
+        dont: ["Juridisch advies voor uw specifieke situatie vervangen", "Uw bedrijf op zichzelf compliant maken", "Meldingen of rapportages namens u bij autoriteiten indienen", "AI-systemen indelen of juridische beslissingen voor u nemen"]
+      },
+      faq: {
+        label: "Vragen",
+        h2: "Voordat u koopt.",
+        items: [
+          ["Heb ik een betaald Notion-abonnement nodig?", "Nee. De templates werken met het gratis Notion-abonnement. U hebt alleen een Notion-account nodig, dat u gratis aanmaakt."],
+          ["Welke talen zijn er?", "Elke kit is beschikbaar in het Nederlands, Engels, Duits, Spaans en Kroatisch. U kiest uw taalversie bij het afrekenen."],
+          ["Hoe ontvang ik de template?", "Betaling en bon lopen via Gumroad. Direct na aankoop krijgt u een link waarmee u de template naar uw Notion-workspace dupliceert."],
+          ["Mag ik een kit voor meerdere bedrijven gebruiken?", "Eén aankoop geldt voor gebruik binnen één bedrijf. Hebt u kits nodig voor meerdere bedrijven of voor uw klanten, neem dan contact met ons op."],
+          ["Is dit juridisch advies?", "Nee. De kits zijn organisatorische hulpmiddelen en een praktisch startpunt. Ze vormen geen juridisch advies en maken uw bedrijf niet op zichzelf compliant. Laat bij toepassingen met een hoog risico — bijvoorbeeld AI bij werving — uw definitieve documenten beoordelen door een deskundige."],
+          ["Word ik gevolgd als ik op ‘Kopen’ klik?", "Niet door deze website. Die laadt geen Gumroad-scripts en plaatst geen cookies. De koopknoppen zijn gewone links; op de afrekenpagina geldt het privacybeleid van Gumroad."]
+        ]
+      },
+      band: { h2: "Alle vijf kits *voor één prijs.*", lead: "{bundle} in plaats van {full} — u kiest uw taalversie bij het afrekenen.", cta: "Naar de bundel" },
+      disclaimer: "De kits zijn organisatorische hulpmiddelen en een praktisch startpunt. Ze vormen geen juridisch advies en garanderen geen naleving van de AVG, de EU AI Act of andere wetgeving."
     },
 
     privacy: {

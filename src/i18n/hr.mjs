@@ -5,14 +5,14 @@ export default {
   slugs: {
     home: "", web: "izrada-web-stranica/", compliance: "digitalna-uskladenost/", check: "gdpr-provjera-kolacica/", language: "prijevodi/",
     creative: "kreativne-usluge/", work: "radovi/", journal: "journal/", about: "o-nama/", contact: "kontakt/",
-    privacy: "privatnost/", cookies: "kolacici/", imprint: "impresum/", accessibility: "pristupacnost/"
+    privacy: "privatnost/", cookies: "kolacici/", imprint: "impresum/", accessibility: "pristupacnost/", shop: "predlosci/"
   },
   ui: {
     skip: "Preskoči na sadržaj", home: "Početna", mainNav: "Glavna navigacija", contents: "Sadržaj",
     menu: "Izbornik", language: "Jezik", soon: "uskoro", services: "Usluge", startProject: "Pokrenite projekt"
   },
   nav: {
-    work: "Radovi", journal: "Journal", about: "O nama", contact: "Kontakt",
+    work: "Radovi", journal: "Journal", about: "O nama", contact: "Kontakt", shop: "Predlošci",
     web: ["Web dizajn i razvoj", "Web stranice, landing stranice, objava", "</>"],
     compliance: ["Digitalna usklađenost", "GDPR, kolačići, digitalna pravila EU-a", "§"],
     check: ["GDPR i provjera kolačića", "Besplatna provjera · ispravak za 99 €", "✓"],
@@ -33,6 +33,10 @@ export default {
     privacy: { title: "Izjava o privatnosti — Lexora Digital", desc: "Kako Lexora Digital obrađuje osobne podatke na ovoj web stranici." },
     cookies: { title: "Politika kolačića — Lexora Digital", desc: "Ova web stranica ne koristi kolačiće za praćenje ni oglašavanje. Ovdje točno piše što se sprema i zašto." },
     imprint: { title: "Impresum — Lexora Digital", desc: "Podaci o pružatelju usluge za lexoradigital.com." },
+    shop: {
+      title: "Notion predlošci za EU usklađenost: GDPR, Akt o UI i više — Lexora Digital",
+      desc: "Notion kitovi spremni za rad za GDPR, EU Akt o umjetnoj inteligenciji, politike korištenja UI na radnom mjestu, transparentnost plaća i provjeru dobavljača — na hrvatskom, engleskom, njemačkom, nizozemskom i španjolskom."
+    },
     accessibility: { title: "Izjava o pristupačnosti — Lexora Digital", desc: "Naši ciljevi pristupačnosti za ovu web stranicu, poznata ograničenja i kako nam poslati povratnu informaciju." }
   },
 
@@ -453,6 +457,76 @@ export default {
       direct: { label: "E-mail", p: "Obično odgovaramo u roku od dva radna dana." },
       next: { label: "Što slijedi", steps: [["Čitamo Vašu poruku", "i pitamo ako nešto nije jasno."], ["Predlažemo sljedeći korak", "— kratak razgovor, ponudu ili besplatnu provjeru."], ["Vi odlučujete", "Ništa ne počinje bez Vašeg odobrenja."]] },
       check: { t: "Samo želite znati je li Vaša web stranica usklađena s GDPR-om?", p: "Iskoristite besplatnu GDPR provjeru i provjeru kolačića." }
+    },
+
+    shop: {
+      hero: {
+        label: "Notion predlošci",
+        h1: "Kitovi za EU usklađenost, *spremni u Notionu.*",
+        lead: "Praktični Notion predlošci za GDPR, EU Akt o umjetnoj inteligenciji, transparentnost plaća i provjeru dobavljača — za mala i srednja poduzeća, na pet jezika.",
+        cta1: "Paket svih kitova",
+        cta2: "Pogledajte sve kitove",
+        points: ["Hrvatski, engleski, njemački, nizozemski, španjolski", "Radi s besplatnim Notion paketom", "Pristup odmah nakon kupnje", "Jednokratno plaćanje, bez pretplate"]
+      },
+      kits: { label: "Kitovi", h2: "Pet kitova. *Jedan paket.*", lead: "Svaki kit je Notion workspace spreman za rad, s evidencijama, vodičima i primjerima unosa. Jezičnu verziju birate pri plaćanju." },
+      cat: "Notion predložak",
+      bundleCat: "Paket · 5 Notion kitova",
+      num: "5 kitova",
+      vs: "{bundle} umjesto {full}",
+      buy: "Kupi na Gumroadu",
+      items: {
+        bundle: {
+          t: "EU Compliance Bundle",
+          s: "5 Notion kitova",
+          p: "Svih pet kitova u jednoj kupnji: GDPR, usklađenost u korištenju UI, politika korištenja UI na radnom mjestu, transparentnost plaća i procjena dobavljača."
+        },
+        gdpr: { t: "GDPR Compliance Kit", s: "GDPR", p: "Kontrolni popis s pozivima na članke te evidencije aktivnosti obrade, zahtjeva ispitanika, povreda osobnih podataka, izvršitelja obrade i kolačića." },
+        ai: { t: "AI Compliance Toolkit", s: "Akt o UI + GDPR", p: "Registar UI alata, GDPR kontrolne točke, politika korištenja UI za zaposlenike, skripte za edukacijske videozapise i evidencija edukacija." },
+        policy: { t: "AI Workplace Policy Pack", s: "Akt o UI + GDPR", p: "Politika korištenja UI, kratki vodič za zaposlenike, obrazac potvrde, zahtjevi za UI alate i evidencija edukacija." },
+        pay: {
+          t: "EU Pay Transparency Kit",
+          s: "Direktiva (EU) 2023/970",
+          p: "Politika plaća, struktura radnih mjesta i platni razredi, kalkulator razlike u plaćama, zahtjevi zaposlenika za informacijama i gotovi tekstovi."
+        },
+        vendor: {
+          t: "Vendor & AI Supplier Assessment Kit",
+          s: "GDPR + Akt o UI",
+          p: "Upitnik za dobavljače, vodič za procjenu, kontrolni popis za ugovor o obradi (čl. 28. GDPR-a), registar dobavljača i evidencija procjena."
+        }
+      },
+      how: {
+        label: "Kako funkcionira",
+        h2: "Od kupnje do Vašeg workspacea *u dvije minute.*",
+        lead: "Bez instalacije i bez računa kod nas — predložak se kopira u Vaš vlastiti Notion workspace.",
+        steps: [
+          ["Odaberite kit i jezik", "Odaberite kit ili paket te pri plaćanju na Gumroadu odaberite jezičnu verziju."],
+          ["Primite poveznicu", "Odmah nakon plaćanja primate poveznicu na svoj predložak."],
+          ["Duplicirajte u Notion", "Otvorite poveznicu i kliknite „Duplicate” kako biste predložak kopirali u svoj Notion workspace. Besplatni paket je dovoljan."],
+          ["Ispunite ga", "Slijedite vodič za postavljanje i primjere unosa te dodajte vlastite podatke."]
+        ]
+      },
+      bounds: {
+        label: "Granice",
+        h2: "Što kitovi rade — a što ne.",
+        doT: "Što kitovi rade",
+        do: ["Daju jasnu strukturu za evidencije, registre i politike", "Primjerima unosa pokazuju kako se ispunjava svaka evidencija", "Objašnjavaju relevantna pravila EU-a razumljivim jezikom", "Pomažu Vam dokumentirati što ste napravili"],
+        dontT: "Što ne rade",
+        dont: ["Ne zamjenjuju pravni savjet za Vaš konkretni slučaj", "Sami po sebi ne čine Vaše poduzeće usklađenim", "Ne podnose prijave ni izvješća nadležnim tijelima umjesto Vas", "Ne razvrstavaju UI sustave i ne donose pravne odluke umjesto Vas"]
+      },
+      faq: {
+        label: "Pitanja",
+        h2: "Prije kupnje.",
+        items: [
+          ["Trebam li plaćeni Notion paket?", "Ne. Predlošci rade s besplatnim Notion paketom. Potreban Vam je samo Notion račun, koji možete otvoriti besplatno."],
+          ["Na kojim su jezicima dostupni?", "Svaki kit dostupan je na hrvatskom, engleskom, njemačkom, nizozemskom i španjolskom. Jezičnu verziju birate pri plaćanju."],
+          ["Kako dobivam predložak?", "Plaćanje i potvrdu o kupnji obrađuje Gumroad. Odmah nakon kupnje dobivate poveznicu za dupliciranje predloška u svoj Notion workspace."],
+          ["Mogu li kit koristiti za više poduzeća?", "Jedna kupnja vrijedi za korištenje unutar jednog poduzeća. Ako trebate kitove za više poduzeća ili za svoje klijente, javite nam se."],
+          ["Je li ovo pravni savjet?", "Ne. Kitovi su organizacijski alati i praktična polazna točka. Ne predstavljaju pravni savjet i sami po sebi ne čine Vaše poduzeće usklađenim. Za visokorizične primjene — primjerice UI pri zapošljavanju — neka Vaše konačne dokumente pregleda stručna osoba."],
+          ["Prati li me netko kad kliknem „Kupi”?", "Ova stranica ne. Ne učitava Gumroad skripte i ne postavlja kolačiće. Gumbi za kupnju obične su poveznice; na stranici za plaćanje primjenjuju se Gumroadova pravila privatnosti."]
+        ]
+      },
+      band: { h2: "Svih pet kitova *po jednoj cijeni.*", lead: "{bundle} umjesto {full} — jezičnu verziju birate pri plaćanju.", cta: "Paket svih kitova" },
+      disclaimer: "Kitovi su organizacijski alati i praktična polazna točka. Ne predstavljaju pravni savjet i ne jamče usklađenost s GDPR-om, EU Aktom o umjetnoj inteligenciji ni drugim propisima."
     },
 
     privacy: {

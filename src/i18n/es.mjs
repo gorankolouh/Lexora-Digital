@@ -5,14 +5,14 @@ export default {
   slugs: {
     home: "", web: "diseno-web/", compliance: "cumplimiento-digital/", check: "revision-rgpd-cookies/", language: "traducciones/",
     creative: "servicios-creativos/", work: "proyectos/", journal: "journal/", about: "sobre-nosotros/", contact: "contacto/",
-    privacy: "privacidad/", cookies: "cookies/", imprint: "aviso-legal/", accessibility: "accesibilidad/"
+    privacy: "privacidad/", cookies: "cookies/", imprint: "aviso-legal/", accessibility: "accesibilidad/", shop: "plantillas/"
   },
   ui: {
     skip: "Saltar al contenido", home: "Inicio", mainNav: "Navegación principal", contents: "Contenido",
     menu: "Menú", language: "Idioma", soon: "pronto", services: "Servicios", startProject: "Iniciar un proyecto"
   },
   nav: {
-    work: "Proyectos", journal: "Journal", about: "Sobre nosotros", contact: "Contacto",
+    work: "Proyectos", journal: "Journal", about: "Sobre nosotros", contact: "Contacto", shop: "Plantillas",
     web: ["Diseño y desarrollo web", "Webs, landing pages, lanzamiento", "</>"],
     compliance: ["Cumplimiento digital", "RGPD, cookies, normas digitales de la UE", "§"],
     check: ["Revisión RGPD y cookies", "Revisión gratuita · corrección por 99 €", "✓"],
@@ -33,6 +33,10 @@ export default {
     privacy: { title: "Política de privacidad — Lexora Digital", desc: "Cómo trata Lexora Digital los datos personales en esta web." },
     cookies: { title: "Política de cookies — Lexora Digital", desc: "Esta web no utiliza cookies de seguimiento ni de publicidad. Aquí se explica exactamente qué se guarda y por qué." },
     imprint: { title: "Aviso legal — Lexora Digital", desc: "Información del titular de lexoradigital.com." },
+    shop: {
+      title: "Plantillas de Notion para el cumplimiento UE: RGPD, Reglamento de IA y más — Lexora Digital",
+      desc: "Kits de Notion listos para usar para el RGPD, el Reglamento de IA de la UE, políticas de IA en el trabajo, transparencia retributiva y evaluación de proveedores — en español, inglés, alemán, neerlandés y croata."
+    },
     accessibility: { title: "Declaración de accesibilidad — Lexora Digital", desc: "Nuestros objetivos de accesibilidad para esta web, limitaciones conocidas y cómo enviarnos comentarios." }
   },
 
@@ -453,6 +457,88 @@ export default {
       direct: { label: "Email", p: "Solemos responder en un plazo de dos días laborables." },
       next: { label: "Qué pasa después", steps: [["Leemos su mensaje", "y le preguntamos si algo no está claro."], ["Le proponemos un siguiente paso", "— una llamada breve, un presupuesto o una revisión gratuita."], ["Usted decide", "No empieza nada sin su aprobación."]] },
       check: { t: "¿Solo quiere saber si su web cumple el RGPD?", p: "Utilice entonces la revisión gratuita de RGPD y cookies." }
+    },
+
+    shop: {
+      hero: {
+        label: "Plantillas de Notion",
+        h1: "Kits de cumplimiento UE, *listos en Notion.*",
+        lead: "Plantillas prácticas de Notion para el RGPD, el Reglamento de IA de la UE, la transparencia retributiva y la evaluación de proveedores — para pymes, en cinco idiomas.",
+        cta1: "Ver el pack",
+        cta2: "Ver todos los kits",
+        points: ["Español, inglés, alemán, neerlandés, croata", "Funciona con el plan gratuito de Notion", "Acceso inmediato tras la compra", "Pago único, sin suscripción"]
+      },
+      kits: { label: "Los kits", h2: "Cinco kits. *Un pack.*", lead: "Cada kit es un espacio de Notion listo para usar, con registros, guías y ejemplos. Usted elige la versión de idioma al pagar." },
+      cat: "Plantilla de Notion",
+      bundleCat: "Pack · 5 kits de Notion",
+      num: "5 kits",
+      vs: "{bundle} en lugar de {full}",
+      buy: "Comprar en Gumroad",
+      items: {
+        bundle: {
+          t: "EU Compliance Bundle",
+          s: "5 kits de Notion",
+          p: "Los cinco kits en una sola compra: RGPD, cumplimiento en IA, política de IA en el trabajo, transparencia retributiva y evaluación de proveedores."
+        },
+        gdpr: {
+          t: "GDPR Compliance Kit",
+          s: "RGPD",
+          p: "Una lista de verificación con referencias a artículos y registros de actividades de tratamiento, solicitudes de interesados, brechas de datos, encargados y cookies."
+        },
+        ai: {
+          t: "AI Compliance Toolkit",
+          s: "Reglamento de IA + RGPD",
+          p: "Un registro de herramientas de IA, controles del RGPD, una política de IA para empleados, guiones para vídeos de formación y un registro de formación."
+        },
+        policy: {
+          t: "AI Workplace Policy Pack",
+          s: "Reglamento de IA + RGPD",
+          p: "Una política de uso de IA, una guía rápida para el personal, un formulario de acuse de recibo, solicitudes de herramientas de IA y un registro de formación."
+        },
+        pay: {
+          t: "EU Pay Transparency Kit",
+          s: "Directiva (UE) 2023/970",
+          p: "Política retributiva, arquitectura de puestos y bandas salariales, una calculadora de brecha salarial, solicitudes de información del personal y textos listos para usar."
+        },
+        vendor: {
+          t: "Vendor & AI Supplier Assessment Kit",
+          s: "RGPD + Reglamento de IA",
+          p: "Un cuestionario para proveedores, una guía de evaluación, una lista de verificación del contrato de encargo (art. 28 RGPD), un registro de proveedores y un registro de evaluaciones."
+        }
+      },
+      how: {
+        label: "Cómo funciona",
+        h2: "Del pago a su espacio de trabajo *en dos minutos.*",
+        lead: "Sin instalación ni cuenta con nosotros — la plantilla se copia en su propio espacio de Notion.",
+        steps: [
+          ["Elija kit e idioma", "Elija un kit o el pack y seleccione su versión de idioma al pagar en Gumroad."],
+          ["Reciba su enlace", "Justo después del pago recibe el enlace a su plantilla."],
+          ["Duplíquela en Notion", "Abra el enlace y haga clic en «Duplicar» para copiar la plantilla en su propio espacio de Notion. El plan gratuito es suficiente."],
+          ["Complétela", "Siga la guía de configuración y los ejemplos y añada sus propios datos."]
+        ]
+      },
+      bounds: {
+        label: "Límites",
+        h2: "Lo que hacen los kits — y lo que no.",
+        doT: "Lo que hacen",
+        do: ["Dan una estructura clara para registros, inventarios y políticas", "Incluyen ejemplos que muestran cómo rellenar cada registro", "Explican las normas europeas relevantes en lenguaje claro", "Le ayudan a documentar lo que ha hecho"],
+        dontT: "Lo que no hacen",
+        dont: ["Sustituir el asesoramiento jurídico para su caso concreto", "Hacer que su empresa cumpla la normativa por sí solos", "Presentar notificaciones o informes ante las autoridades por usted", "Clasificar sistemas de IA o tomar decisiones jurídicas por usted"]
+      },
+      faq: {
+        label: "Preguntas",
+        h2: "Antes de comprar.",
+        items: [
+          ["¿Necesito un plan de pago de Notion?", "No. Las plantillas funcionan con el plan gratuito de Notion. Solo necesita una cuenta de Notion, que puede crear gratis."],
+          ["¿En qué idiomas están disponibles?", "Cada kit está disponible en español, inglés, alemán, neerlandés y croata. Usted elige su versión al pagar."],
+          ["¿Cómo recibo la plantilla?", "El pago y el recibo se gestionan a través de Gumroad. Justo después de la compra recibe un enlace para duplicar la plantilla en su espacio de Notion."],
+          ["¿Puedo usar un kit para varias empresas?", "Una compra cubre el uso dentro de una empresa. Si necesita kits para varias empresas o para sus clientes, escríbanos."],
+          ["¿Es asesoramiento jurídico?", "No. Los kits son herramientas organizativas y un punto de partida práctico. No constituyen asesoramiento jurídico ni hacen que su empresa cumpla la normativa por sí solos. Para usos de alto riesgo — por ejemplo, IA en procesos de selección — haga revisar sus documentos finales por un profesional cualificado."],
+          ["¿Me rastrean al hacer clic en «Comprar»?", "Esta web no. No carga scripts de Gumroad ni instala cookies. Los botones de compra son enlaces normales; en la página de pago se aplica la política de privacidad de Gumroad."]
+        ]
+      },
+      band: { h2: "Los cinco kits *por un solo precio.*", lead: "{bundle} en lugar de {full} — elija su versión de idioma al pagar.", cta: "Ver el pack" },
+      disclaimer: "Los kits son herramientas organizativas y un punto de partida práctico. No constituyen asesoramiento jurídico ni garantizan el cumplimiento del RGPD, del Reglamento de IA de la UE ni de ninguna otra ley."
     },
 
     privacy: {

@@ -23,7 +23,7 @@ function header(t, key, alt) {
     `<a href="${href}" lang="${l.code}" hreflang="${l.code}" data-lang="${l.code}"${cur ? ' aria-current="true"' : ""}${dis}>${l.code.toUpperCase()}</a>`).join("");
   const cur = (k) => (k === key || (k === "work" && String(key).startsWith("case:")) ? ' aria-current="page"' : "");
   const svcActive = SERVICES.includes(key) ? " is-active" : "";
-  const mItems = [["work", n.work, ""], ...SERVICES.map((k) => [k, n[k][0], n[k][2]]), ["journal", n.journal, ""], ["about", n.about, ""], ["contact", n.contact, ""]];
+  const mItems = [["work", n.work, ""], ...SERVICES.map((k) => [k, n[k][0], n[k][2]]), ["shop", n.shop, ""], ["journal", n.journal, ""], ["about", n.about, ""], ["contact", n.contact, ""]];
   return `<a class="skip" href="#main">${esc(t.ui.skip)}</a>
 <header class="hdr">
   <div class="wrap">
@@ -34,6 +34,7 @@ function header(t, key, alt) {
         <button type="button" aria-expanded="false" aria-haspopup="true">${esc(t.ui.services)} <span class="chev">${icon("chev", 14, 2)}</span></button>
         <div class="dd-menu">${svc}</div>
       </div>
+      <a href="${path(t, "shop")}"${cur("shop")}>${esc(n.shop)}</a>
       <a href="${path(t, "journal")}"${cur("journal")}>${esc(n.journal)}</a>
       <a href="${path(t, "about")}"${cur("about")}>${esc(n.about)}</a>
       <a href="${path(t, "contact")}"${cur("contact")}>${esc(n.contact)}</a>
@@ -71,6 +72,7 @@ function footer(t, alt) {
     </div>
     <div><h4>${esc(f.studio)}</h4><ul>
       <li><a href="${path(t, "work")}">${esc(n.work)}</a></li>
+      <li><a href="${path(t, "shop")}">${esc(n.shop)}</a></li>
       <li><a href="${path(t, "journal")}">${esc(n.journal)}</a></li>
       <li><a href="${path(t, "about")}">${esc(n.about)}</a></li>
       <li><a href="${path(t, "contact")}">${esc(n.contact)}</a></li></ul></div>
