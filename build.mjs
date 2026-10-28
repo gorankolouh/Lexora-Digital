@@ -88,9 +88,9 @@ async function build() {
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lexora Digital — Web · Law · Language · Design</title>
 <meta name="description" content="${esc(tDef.meta.home.desc)}">
-<link rel="canonical" href="${SITE_URL}/">
+<link rel="canonical" href="${SITE_URL}/${DEFAULT_LANG}/">
 ${ready.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${SITE_URL}/${l.code}/">`).join("\n")}
-<link rel="alternate" hreflang="x-default" href="${SITE_URL}/">
+<link rel="alternate" hreflang="x-default" href="${SITE_URL}/${DEFAULT_LANG}/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#050605">
 <script>(function(){var a=${JSON.stringify(codes)},d=${JSON.stringify(DEFAULT_LANG)},s=null;try{s=localStorage.getItem("lexora-lang")}catch(e){}
