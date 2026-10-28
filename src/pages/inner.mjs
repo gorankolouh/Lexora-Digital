@@ -251,37 +251,43 @@ export const JART = [
 /* ---------------- Templates (Notion kits sold on Gumroad) ----------------
    Buy links are plain links to Gumroad: no Gumroad script, overlay or cookie on this site. */
 const money = (t, n) => new Intl.NumberFormat(t.locale.replace("_", "-"), { style: "currency", currency: "EUR" }).format(n);
-const shopCover = (x, title, sizes, eager = false) => `<img src="/assets/img/shop/${x.img || x.key}-900.webp" srcset="/assets/img/shop/${x.img || x.key}-900.webp 900w, /assets/img/shop/${x.img || x.key}-1600.webp 1600w" sizes="${sizes}" width="1600" height="893" alt="${esc(title)}"${eager ? "" : ' loading="lazy"'} decoding="async">`;
-function shopPrices(t) {
+const shopCover = (x, title, sizes, eager = false) => `<img src="/assets/img/shop/ed/${x.img || x.key}-900.webp" srcset="/assets/img/shop/ed/${x.img || x.key}-900.webp 900w, /assets/img/shop/ed/${x.img || x.key}-1600.webp 1600w" sizes="${sizes}" width="1600" height="893" alt="${esc(title)}"${eager ? "" : ' loading="lazy"'} decoding="async">`;
+export function shopPrices(t) {
   const [bundle, ...kits] = SHOP;
   const full = kits.reduce((s, k) => s + k.price, 0);
   return (s) => s.replace("{bundle}", money(t, bundle.price)).replace("{full}", money(t, full));
 }
-export function shop(t) {
+/* Kit cards (bundle feature + five kits), each with its two edition buttons. Used on the Templates page and the landing page. */
+export function kitCards(t) {
   const p = t.pages.shop, vs = shopPrices(t);
   const [bundle, ...kits] = SHOP, b = p.items.bundle;
-  const buyLabel = (x, it) => `${p.buy}: ${it.t} (${money(t, x.price)})`;
+  const buyLabel = (x, it, ed) => `${p.buy}: ${it.t}, ${ed} (${money(t, x.price)})`;
+  // two editions per kit: Notion template and Word, Excel & PDF download
+  const editions = (x, it) => `<div class="eds"><a class="btn btn-lime btn-sm" href="${x.url}" rel="noopener" aria-label="${esc(buyLabel(x, it, p.edNotion))}"><img src="/assets/img/shop/notion-64.png" width="62" height="64" alt="">${esc(p.edNotion)}</a><a class="btn btn-ghost btn-sm" href="${x.dl}" rel="noopener" aria-label="${esc(buyLabel(x, it, p.edDl))}">${icon("download", 16, 2)}${esc(p.edDl)}</a></div>`;
   const feat = `<article class="proj feat reveal" id="bundle">
         <div class="media">${shopCover(bundle, b.t, "(max-width:960px) 100vw, 64vw", true)}</div>
-        <div class="side"><p class="num">${esc(p.num)}</p><p class="cat" style="margin-top:18px"><img class="ni" src="/assets/img/shop/notion-64.png" width="62" height="64" alt="">${esc(p.bundleCat)}</p><h3 class="h3">${esc(b.t)}</h3><p class="body">${fmt(b.p)}</p><p class="svc">${esc(vs(p.vs))}</p><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
-        <a href="${bundle.url}" rel="noopener" aria-label="${esc(buyLabel(bundle, b))}"></a>
+        <div class="side"><p class="num">${esc(p.num)}</p><p class="cat" style="margin-top:18px">${esc(p.bundleCat)}</p><h3 class="h3">${esc(b.t)}</h3><p class="body">${fmt(b.p)}</p><p class="svc">${esc(vs(p.vs))}</p>${editions(bundle, b)}</div>
       </article>`;
   const cards = kits.map((x, i) => {
     const it = p.items[x.key];
     return `<article class="proj s reveal${i % 3 ? ` d${i % 3}` : ""}">
         <div class="media">${shopCover(x, it.t, "(max-width:960px) 100vw, 33vw")}</div>
-        <div class="meta"><div><p class="cat"><img class="ni" src="/assets/img/shop/notion-64.png" width="62" height="64" alt="">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p></div><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
-        <a href="${x.url}" rel="noopener" aria-label="${esc(buyLabel(x, it))}"></a>
+        <div class="meta"><div><p class="cat">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p>${editions(x, it)}</div></div>
       </article>`;
   }).join("");
+  return `${feat}
+      <div class="strip">${cards}</div>`;
+}
+export function shop(t) {
+  const p = t.pages.shop, vs = shopPrices(t);
+  const [bundle] = SHOP;
   return [
     pageHero({ label: p.hero.label, glyph: "§", h1: p.hero.h1, lead: p.hero.lead, crumbs: crumbsFor(t, t.nav.shop),
-      actions: [{ href: bundle.url, label: `${p.hero.cta1} · ${money(t, bundle.price)}`, primary: true }, { href: "#kits", label: p.hero.cta2 }],
+      actions: [{ href: "#bundle", label: `${p.hero.cta1} · ${money(t, bundle.price)}`, primary: true }, { href: "#kits", label: p.hero.cta2 }],
       extra: `<p class="notion-badge rise d4"><img src="/assets/img/shop/notion-128.png" width="123" height="128" alt="">${esc(p.notion)}</p><ul class="points rise d4">${p.hero.points.map((x) => `<li>${icon("check", 16, 2)}${esc(x)}</li>`).join("")}</ul>` }),
     `<section class="section rule shop-kits" id="kits" aria-labelledby="s1"><div class="wrap">
       ${head({ label: p.kits.label, h2: p.kits.h2, lead: p.kits.lead, id: "s1" })}
-      ${feat}
-      <div class="strip">${cards}</div>
+      ${kitCards(t)}
     </div></section>`,
     sec(`${head({ label: p.how.label, h2: p.how.h2, lead: p.how.lead, id: "s2" })}${steps(p.how.steps)}`, "trust", "s2"),
     sec(`${head({ label: p.bounds.label, h2: p.bounds.h2, id: "s3" })}
@@ -290,7 +296,7 @@ export function shop(t) {
     sec(`<div class="split">
       <div>${ml(p.faq.label)}<h2 class="h2 reveal" id="s4" style="margin-top:24px">${fmt(p.faq.h2)}</h2></div>
       ${faq(p.faq.items)}</div>`, "rule", "s4"),
-    band({ h2: p.band.h2, lead: vs(p.band.lead), actions: [{ href: bundle.url, label: p.band.cta, primary: true }, { href: path(t, "check"), label: t.nav.check[0] }] }),
+    band({ h2: p.band.h2, lead: vs(p.band.lead), actions: [{ href: "#bundle", label: p.band.cta, primary: true }, { href: path(t, "check"), label: t.nav.check[0] }] }),
     `<div class="wrap fine">${disclaimer(p.disclaimer)}</div>`
   ].join("\n");
 }
@@ -303,9 +309,9 @@ export function shopLd(t) {
       "@type": "ListItem", position: i + 1,
       item: {
         "@type": "Product", name: p.items[x.key].t, description: p.items[x.key].p.replace(/[*~]/g, ""),
-        image: `${SITE_URL}/assets/img/shop/${x.img || x.key}-1600.webp`,
+        image: `${SITE_URL}/assets/img/shop/ed/${x.img || x.key}-1600.webp`,
         brand: { "@type": "Brand", name: "Lexora Digital" },
-        offers: { "@type": "Offer", price: x.price.toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", url: x.url }
+        offers: [x.url, x.dl].map((u) => ({ "@type": "Offer", price: x.price.toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", url: u }))
       }
     }))
   };

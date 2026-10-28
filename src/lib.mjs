@@ -30,6 +30,7 @@ export const LOGO = (cls = "") => `<svg class="${cls}" viewBox="0 0 572 100" fil
 const ic = {
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   arrowUR: '<path d="M7 17L17 7M8 7h9v9"/>',
+  download: '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
   chev: '<path d="M6 9l6 6 6-6"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/>',
   web: '<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/>',

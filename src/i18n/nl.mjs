@@ -34,8 +34,8 @@ export default {
     cookies: { title: "Cookiebeleid — Lexora Digital", desc: "Deze website gebruikt geen tracking- of advertentiecookies. Hier staat precies wat er wordt opgeslagen en waarom." },
     imprint: { title: "Juridische informatie — Lexora Digital", desc: "Aanbiedersinformatie voor lexoradigital.com." },
     shop: {
-      title: "Notion-templates voor EU-compliance: AVG, AI Act en meer — Lexora Digital",
-      desc: "Kant-en-klare Notion-kits voor de AVG, de EU AI Act, AI-beleid op de werkvloer, loontransparantie en leverancierscontroles — in het Nederlands, Engels, Duits, Spaans en Kroatisch."
+      title: "EU-compliancetemplates voor Notion, Word & Excel: AVG, AI Act en meer — Lexora Digital",
+      desc: "Kant-en-klare kits voor de AVG, de EU AI Act, AI-beleid op de werkvloer, loontransparantie en leverancierscontroles — als Notion-template of Word-, Excel- en pdf-bestanden, in vijf talen."
     },
     accessibility: { title: "Toegankelijkheidsverklaring — Lexora Digital", desc: "Onze toegankelijkheidsdoelen voor deze website, bekende beperkingen en hoe u feedback geeft." }
   },
@@ -461,22 +461,24 @@ export default {
 
     shop: {
       hero: {
-        label: "Notion-templates",
-        h1: "EU-compliancekits, *klaar in Notion.*",
-        lead: "Praktische Notion-templates voor de AVG, de EU AI Act, loontransparantie en leverancierscontroles — voor het mkb, in vijf talen.",
+        label: "Compliancetemplates",
+        h1: "EU-compliancekits, *in Notion of Word & Excel.*",
+        lead: "Praktische kits voor de AVG, de EU AI Act, loontransparantie en leverancierscontroles — voor het mkb, in vijf talen. Als Notion-template of als Word-, Excel- en pdf-bestanden om te downloaden.",
         cta1: "Naar de bundel",
         cta2: "Alle kits bekijken",
-        points: ["Nederlands, Engels, Duits, Spaans, Kroatisch", "Werkt met het gratis Notion-abonnement", "Direct toegang na aankoop", "Eenmalige betaling, geen abonnement"]
+        points: ["Nederlands, Engels, Duits, Spaans, Kroatisch", "Notion-template of Word, Excel & pdf", "Direct toegang na aankoop", "Eenmalige betaling, geen abonnement"]
       },
-      kits: { label: "De kits", h2: "Vijf kits. *Eén bundel.*", lead: "Elke kit is een kant-en-klare Notion-workspace met registers, handleidingen en voorbeeldregels. U kiest de taalversie bij het afrekenen." },
+      kits: { label: "De kits", h2: "Vijf kits. *Eén bundel.*", lead: "Elke kit is er in twee edities met dezelfde inhoud en prijs: een kant-en-klare Notion-workspace, of Word-, Excel- en pdf-bestanden om te downloaden, af te drukken of zonder Notion te gebruiken. U kiest de taal bij het afrekenen." },
       cat: "Notion-template",
-      notion: "Gemaakt voor Notion",
-      bundleCat: "Bundel · 5 Notion-kits",
+      notion: "Gemaakt voor Notion · ook als Word, Excel & pdf",
+      edNotion: "Notion-template",
+      edDl: "Word · Excel · pdf",
+      bundleCat: "Bundel · 5 kits",
       num: "5 kits",
       vs: "{bundle} in plaats van {full}",
       buy: "Kopen via Gumroad",
       items: {
-        bundle: { t: "EU Compliance Bundle", s: "5 Notion-kits", p: "Alle vijf kits in één aankoop: AVG, AI-compliance, AI-beleid op de werkvloer, loontransparantie en leveranciersbeoordeling." },
+        bundle: { t: "EU Compliance Bundle", s: "5 kits", p: "Alle vijf kits in één aankoop: AVG, AI-compliance, AI-beleid op de werkvloer, loontransparantie en leveranciersbeoordeling." },
         gdpr: { t: "GDPR Compliance Kit", s: "AVG", p: "Een checklist met artikelverwijzingen plus registers voor verwerkingsactiviteiten, verzoeken van betrokkenen, datalekken, verwerkers en cookies." },
         ai: { t: "AI Compliance Toolkit", s: "EU AI Act + AVG", p: "Een register van AI-tools, AVG-controlepunten, een AI-beleid voor medewerkers, scripts voor trainingsvideo's en een trainingslogboek." },
         policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + AVG", p: "Een AI-gebruiksbeleid, een beknopte gids voor medewerkers, een bevestigingsformulier, aanvragen voor AI-tools en een trainingslogboek." },
@@ -493,12 +495,12 @@ export default {
       },
       how: {
         label: "Zo werkt het",
-        h2: "Van afrekenen naar uw eigen workspace *in twee minuten.*",
-        lead: "Geen installatie, geen account bij ons — de template wordt gekopieerd naar uw eigen Notion-workspace.",
+        h2: "Van afrekenen naar aan de slag *in twee minuten.*",
+        lead: "Geen installatie en geen account bij ons — u dupliceert de template in Notion of downloadt de bestanden.",
         steps: [
-          ["Kies kit en taal", "Kies een kit of de bundel en selecteer bij het afrekenen op Gumroad uw taalversie."],
-          ["Ontvang uw link", "Direct na betaling ontvangt u de link naar uw template."],
-          ["Dupliceer in Notion", "Open de link en klik op ‘Dupliceren’ om de template naar uw eigen Notion-workspace te kopiëren. Het gratis abonnement is genoeg."],
+          ["Kies kit, editie en taal", "Kies een kit of de bundel, de Notion- of de Word-, Excel- & pdf-editie en bij het afrekenen op Gumroad uw taal."],
+          ["Ontvang toegang", "Direct na betaling ontvangt u de Notion-link of de download."],
+          ["Dupliceer of open", "Notion: klik op ‘Dupliceren’ om de template naar uw eigen workspace te kopiëren — het gratis abonnement is genoeg. Download: pak het bestand uit en open eerst de handleiding."],
           ["Vul hem in", "Volg de installatiegids en de voorbeeldregels en voeg uw eigen gegevens toe."]
         ]
       },
@@ -514,9 +516,10 @@ export default {
         label: "Vragen",
         h2: "Voordat u koopt.",
         items: [
-          ["Heb ik een betaald Notion-abonnement nodig?", "Nee. De templates werken met het gratis Notion-abonnement. U hebt alleen een Notion-account nodig, dat u gratis aanmaakt."],
+          ["Heb ik Notion nodig?", "Nee. Elke kit is ook verkrijgbaar als Word-, Excel- en pdf-bestanden. Voor de Notion-editie is het gratis Notion-abonnement genoeg."],
           ["Welke talen zijn er?", "Elke kit is beschikbaar in het Nederlands, Engels, Duits, Spaans en Kroatisch. U kiest uw taalversie bij het afrekenen."],
-          ["Hoe ontvang ik de template?", "Betaling en bon lopen via Gumroad. Direct na aankoop krijgt u een link waarmee u de template naar uw Notion-workspace dupliceert."],
+          ["Hoe ontvang ik de kit?", "Betaling en bon lopen via Gumroad. Direct na aankoop krijgt u een link waarmee u de template naar uw Notion-workspace dupliceert, of een zip-bestand met Word-, Excel- en pdf-bestanden."],
+          ["Wat is het verschil tussen de twee edities?", "Inhoud en prijs zijn gelijk. De Notion-editie is een gekoppelde workspace met weergaven en automatische velden. De downloadeditie bevat Word-documenten om te bewerken, een Excel-werkmap met de registers en automatische termijnen en controles, en pdf’s om af te drukken."],
           ["Mag ik een kit voor meerdere bedrijven gebruiken?", "Eén aankoop geldt voor gebruik binnen één bedrijf. Hebt u kits nodig voor meerdere bedrijven of voor uw klanten, neem dan contact met ons op."],
           ["Is dit juridisch advies?", "Nee. De kits zijn organisatorische hulpmiddelen en een praktisch startpunt. Ze vormen geen juridisch advies en maken uw bedrijf niet op zichzelf compliant. Laat bij toepassingen met een hoog risico — bijvoorbeeld AI bij werving — uw definitieve documenten beoordelen door een deskundige."],
           ["Word ik gevolgd als ik op ‘Kopen’ klik?", "Niet door deze website. Die laadt geen Gumroad-scripts en plaatst geen cookies. De koopknoppen zijn gewone links; op de afrekenpagina geldt het privacybeleid van Gumroad."]

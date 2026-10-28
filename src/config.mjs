@@ -30,13 +30,15 @@ export const FOUNDER = {
 // so the site stays free of third-party scripts and cookies. Text per product lives in src/i18n/<lang>.mjs → pages.shop.items.
 // ---------------------------------------------------------------------------
 export const SHOP_URL = "https://lexoradigital.gumroad.com/";
+// url = Notion edition, dl = download edition (Word, Excel & PDF). Same price for both.
+const GR = "https://lexoradigital.gumroad.com/l/";
 export const SHOP = [
-  { key: "bundle", url: "https://lexoradigital.gumroad.com/l/eu-compliance-bundle", price: 69.99 },
-  { key: "gdpr", url: "https://lexoradigital.gumroad.com/l/gdpr-compliance-kit", price: 29.99 },
-  { key: "ai", img: "ai-toolkit", url: "https://lexoradigital.gumroad.com/l/ai-compliance-toolkit", price: 29.99 },
-  { key: "policy", url: "https://lexoradigital.gumroad.com/l/ai-workplace-policy-pack", price: 29.99 },
-  { key: "pay", url: "https://lexoradigital.gumroad.com/l/pay-transparency-kit", price: 29.99 },
-  { key: "vendor", url: "https://lexoradigital.gumroad.com/l/vendor-ai-supplier-kit", price: 29.99 }
+  { key: "bundle", url: GR + "eu-compliance-bundle", dl: GR + "eu-compliance-bundle-download", price: 69.99 },
+  { key: "gdpr", url: GR + "gdpr-compliance-kit", dl: GR + "gdpr-compliance-kit-download", price: 29.99 },
+  { key: "ai", img: "ai-toolkit", url: GR + "ai-compliance-toolkit", dl: GR + "ai-compliance-toolkit-download", price: 29.99 },
+  { key: "policy", url: GR + "ai-workplace-policy-pack", dl: GR + "ai-workplace-policy-pack-download", price: 29.99 },
+  { key: "pay", url: GR + "pay-transparency-kit", dl: GR + "pay-transparency-kit-download", price: 29.99 },
+  { key: "vendor", url: GR + "vendor-ai-supplier-kit", dl: GR + "vendor-ai-supplier-kit-download", price: 29.99 }
 ];
 
 export const LANGS = [

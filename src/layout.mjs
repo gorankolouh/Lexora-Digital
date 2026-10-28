@@ -111,7 +111,7 @@ function privacyDialog(t) {
 </dialog>`;
 }
 
-export function page({ t, key, title, desc, body, globe = false, noindex = false, alt, ld = null, ogType = "website" }) {
+export function page({ t, key, title, desc, body, globe = false, noindex = false, alt, ld = null, ogType = "website", og = null }) {
   const altFn = alt || ((code) => `/${code}/${t.__all[code].slugs[key] ?? ""}`);
   const selfPath = altFn(t.lang);
   const alts = readyLangs().map((l) => `<link rel="alternate" hreflang="${l.code}" href="${abs(altFn(l.code))}">`).join("\n");
@@ -143,9 +143,9 @@ ${noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" hr
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${abs(selfPath)}">
-<meta property="og:image" content="${SITE_URL}/assets/img/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="${SITE_URL}${og ? og.src : "/assets/img/og-image.jpg"}">
+<meta property="og:image:width" content="${og ? og.w : 1200}">
+<meta property="og:image:height" content="${og ? og.h : 630}">
 <meta property="og:locale" content="${t.locale}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">

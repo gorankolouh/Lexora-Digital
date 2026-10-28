@@ -9,6 +9,8 @@ import { esc, fmt, path, abs, icon } from "./src/lib.mjs";
 import home from "./src/pages/home.mjs";
 import * as P from "./src/pages/inner.mjs";
 import { article, articleHref, articleLd } from "./src/pages/article.mjs";
+import { landing, landingLd } from "./src/pages/landing.mjs";
+import LANDING from "./src/i18n/landing.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const DIST = join(ROOT, "dist");
@@ -19,7 +21,9 @@ const PAGES = {
   web: { r: P.web }, compliance: { r: P.compliance }, check: { r: P.check }, language: { r: P.language }, creative: { r: P.creative },
   work: { r: P.work }, shop: { r: P.shop, ld: P.shopLd }, journal: { r: P.journal }, about: { r: P.about }, contact: { r: P.contact },
   privacy: { r: (t) => P.legal(t, "privacy") }, cookies: { r: (t) => P.legal(t, "cookies") },
-  imprint: { r: (t) => P.legal(t, "imprint") }, accessibility: { r: (t) => P.legal(t, "accessibility") }
+  imprint: { r: (t) => P.legal(t, "imprint") }, accessibility: { r: (t) => P.legal(t, "accessibility") },
+  // landing page for ads and social links
+  kits: { r: landing, ld: landingLd, og: { src: "/assets/img/og-kits.jpg", w: 1200, h: 630 } }
 };
 const NOINDEX = new Set([]);
 
@@ -27,6 +31,8 @@ async function loadDicts() {
   const all = {};
   for (const l of LANGS.filter((x) => x.ready)) all[l.code] = (await import(`./src/i18n/${l.code}.mjs`)).default;
   for (const code in all) { all[code].__all = all; all[code].articles = (await import(`./src/articles/${code}.mjs`)).default; }
+  // landing page texts live in src/i18n/landing.mjs; same address in every language
+  for (const code in all) { all[code].pages.kits = LANDING[code]; all[code].meta.kits = LANDING[code].meta; all[code].slugs.kits = "eu-compliance-kits/"; }
   return all;
 }
 async function write(rel, html) {
@@ -54,7 +60,7 @@ async function build() {
     for (const [key, def] of Object.entries(PAGES)) {
       const m = t.meta[key];
       if (!m) throw new Error(`Missing meta.${key} for ${l.code}`);
-      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key), ld: def.ld ? def.ld(t) : null });
+      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key), ld: def.ld ? def.ld(t) : null, og: def.og });
       await write(join(path(t, key), "index.html"), html);
       if (l.code === DEFAULT_LANG) urls.push({ alt: (c) => path(all[c], key) });
     }
