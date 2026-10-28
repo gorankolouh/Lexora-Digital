@@ -45,7 +45,17 @@
       "permanent": false
     },
     {
+      "source": "/kits/",
+      "destination": "/en/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
       "source": "/en/kits",
+      "destination": "/en/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/en/kits/",
       "destination": "/en/eu-compliance-kits/",
       "permanent": false
     },
@@ -55,7 +65,17 @@
       "permanent": false
     },
     {
+      "source": "/de/kits/",
+      "destination": "/de/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
       "source": "/nl/kits",
+      "destination": "/nl/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/nl/kits/",
       "destination": "/nl/eu-compliance-kits/",
       "permanent": false
     },
@@ -65,7 +85,17 @@
       "permanent": false
     },
     {
+      "source": "/es/kits/",
+      "destination": "/es/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
       "source": "/hr/kits",
+      "destination": "/hr/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/hr/kits/",
       "destination": "/hr/eu-compliance-kits/",
       "permanent": false
     }
