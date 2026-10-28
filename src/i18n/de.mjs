@@ -34,8 +34,8 @@ export default {
     cookies: { title: "Cookie-Richtlinie — Lexora Digital", desc: "Diese Website verwendet keine Tracking- oder Werbe-Cookies. Hier steht genau, was gespeichert wird und warum." },
     imprint: { title: "Impressum — Lexora Digital", desc: "Anbieterkennzeichnung für lexoradigital.com." },
     shop: {
-      title: "Notion-Vorlagen für EU-Compliance: DSGVO, AI Act & mehr — Lexora Digital",
-      desc: "Einsatzbereite Notion-Kits für DSGVO, EU AI Act, KI-Richtlinien am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung — auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch."
+      title: "EU-Compliance-Vorlagen für Notion, Word & Excel: DSGVO, AI Act & mehr — Lexora Digital",
+      desc: "Einsatzbereite Kits für DSGVO, EU AI Act, KI-Richtlinien am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung — als Notion-Vorlage oder Word-, Excel- & PDF-Dateien, in fünf Sprachen."
     },
     accessibility: { title: "Erklärung zur Barrierefreiheit — Lexora Digital", desc: "Unsere Ziele zur Barrierefreiheit dieser Website, bekannte Einschränkungen und wie Sie uns Rückmeldung geben." }
   },
@@ -461,26 +461,28 @@ export default {
 
     shop: {
       hero: {
-        label: "Notion-Vorlagen",
-        h1: "EU-Compliance-Kits, *fertig in Notion.*",
-        lead: "Praxisnahe Notion-Vorlagen für DSGVO, EU AI Act, Entgelttransparenz und Lieferantenprüfung — für kleine und mittlere Unternehmen, in fünf Sprachen.",
+        label: "Compliance-Vorlagen",
+        h1: "EU-Compliance-Kits, *in Notion oder Word & Excel.*",
+        lead: "Praxisnahe Kits für DSGVO, EU AI Act, Entgelttransparenz und Lieferantenprüfung — für kleine und mittlere Unternehmen, in fünf Sprachen. Als Notion-Vorlage oder als Word-, Excel- und PDF-Dateien zum Herunterladen.",
         cta1: "Zum Bundle",
         cta2: "Alle Kits ansehen",
-        points: ["Deutsch, Englisch, Niederländisch, Spanisch, Kroatisch", "Funktioniert mit dem kostenlosen Notion-Tarif", "Sofortiger Zugang nach dem Kauf", "Einmalzahlung, kein Abo"]
+        points: ["Deutsch, Englisch, Niederländisch, Spanisch, Kroatisch", "Notion-Vorlage oder Word, Excel & PDF", "Sofortiger Zugang nach dem Kauf", "Einmalzahlung, kein Abo"]
       },
       kits: {
         label: "Die Kits",
         h2: "Fünf Kits. *Ein Bundle.*",
-        lead: "Jedes Kit ist ein einsatzbereiter Notion-Workspace mit Registern, Anleitungen und Beispieleinträgen. Die Sprachversion wählen Sie beim Kauf."
+        lead: "Jedes Kit gibt es in zwei Ausgaben mit gleichem Inhalt und Preis: als einsatzbereiten Notion-Workspace oder als Word-, Excel- und PDF-Dateien zum Herunterladen, Ausdrucken oder Nutzen ohne Notion. Die Sprachversion wählen Sie beim Kauf."
       },
       cat: "Notion-Vorlage",
-      notion: "Gemacht für Notion",
-      bundleCat: "Bundle · 5 Notion-Kits",
+      notion: "Gemacht für Notion · auch als Word, Excel & PDF",
+      edNotion: "Notion-Vorlage",
+      edDl: "Word · Excel · PDF",
+      bundleCat: "Bundle · 5 Kits",
       num: "5 Kits",
       vs: "{bundle} statt {full}",
       buy: "Bei Gumroad kaufen",
       items: {
-        bundle: { t: "EU Compliance Bundle", s: "5 Notion-Kits", p: "Alle fünf Kits in einem Kauf: DSGVO, KI-Compliance, KI-Richtlinie am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung." },
+        bundle: { t: "EU Compliance Bundle", s: "5 Kits", p: "Alle fünf Kits in einem Kauf: DSGVO, KI-Compliance, KI-Richtlinie am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung." },
         gdpr: { t: "GDPR Compliance Kit", s: "DSGVO", p: "Checkliste mit Artikelverweisen sowie Register für Verarbeitungstätigkeiten, Betroffenenanfragen, Datenpannen, Auftragsverarbeiter und Cookies." },
         ai: { t: "AI Compliance Toolkit", s: "EU AI Act + DSGVO", p: "KI-Tool-Register, DSGVO-Prüfpunkte, eine KI-Richtlinie für Mitarbeitende, Skripte für Schulungsvideos und ein Schulungsnachweis." },
         policy: { t: "AI Workplace Policy Pack", s: "EU AI Act + DSGVO", p: "KI-Nutzungsrichtlinie, Kurzleitfaden für Mitarbeitende, Bestätigungsformular, KI-Tool-Anfragen und ein Schulungsnachweis." },
@@ -493,12 +495,12 @@ export default {
       },
       how: {
         label: "So funktioniert es",
-        h2: "Vom Kauf zum eigenen Workspace *in zwei Minuten.*",
-        lead: "Keine Installation, kein Konto bei uns — die Vorlage wird in Ihren eigenen Notion-Workspace kopiert.",
+        h2: "Vom Kauf zur Arbeit *in zwei Minuten.*",
+        lead: "Keine Installation, kein Konto bei uns — Sie duplizieren die Vorlage in Notion oder laden die Dateien herunter.",
         steps: [
-          ["Kit und Sprache wählen", "Wählen Sie ein Kit oder das Bundle und beim Checkout auf Gumroad Ihre Sprachversion."],
-          ["Link erhalten", "Direkt nach der Zahlung erhalten Sie den Link zu Ihrer Vorlage."],
-          ["In Notion duplizieren", "Öffnen Sie den Link und klicken Sie auf „Duplizieren“, um die Vorlage in Ihren eigenen Notion-Workspace zu kopieren. Der kostenlose Tarif reicht."],
+          ["Kit, Ausgabe und Sprache wählen", "Wählen Sie ein Kit oder das Bundle, die Notion- oder die Word-, Excel- & PDF-Ausgabe und beim Checkout auf Gumroad Ihre Sprache."],
+          ["Zugang erhalten", "Direkt nach der Zahlung erhalten Sie den Notion-Link oder den Download."],
+          ["Duplizieren oder öffnen", "Notion: Klicken Sie auf „Duplizieren“, um die Vorlage in Ihren eigenen Workspace zu kopieren — der kostenlose Tarif reicht. Download: Entpacken Sie die Datei und öffnen Sie zuerst den Leitfaden."],
           ["Ausfüllen", "Folgen Sie der Einrichtungsanleitung und den Beispieleinträgen und ergänzen Sie Ihre eigenen Angaben."]
         ]
       },
@@ -514,9 +516,10 @@ export default {
         label: "Fragen",
         h2: "Vor dem Kauf.",
         items: [
-          ["Brauche ich einen kostenpflichtigen Notion-Tarif?", "Nein. Die Vorlagen funktionieren mit dem kostenlosen Notion-Tarif. Sie brauchen nur ein Notion-Konto, das Sie kostenlos anlegen können."],
+          ["Brauche ich Notion?", "Nein. Jedes Kit gibt es auch als Word-, Excel- und PDF-Dateien. Für die Notion-Ausgabe reicht der kostenlose Notion-Tarif."],
           ["Welche Sprachen gibt es?", "Jedes Kit gibt es auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch. Die Sprachversion wählen Sie beim Kauf."],
-          ["Wie erhalte ich die Vorlage?", "Zahlung und Beleg laufen über Gumroad. Direkt nach dem Kauf erhalten Sie einen Link, mit dem Sie die Vorlage in Ihren Notion-Workspace duplizieren."],
+          ["Wie erhalte ich das Kit?", "Zahlung und Beleg laufen über Gumroad. Direkt nach dem Kauf erhalten Sie entweder einen Link, mit dem Sie die Vorlage in Ihren Notion-Workspace duplizieren, oder eine ZIP-Datei mit Word-, Excel- und PDF-Dateien."],
+          ["Was ist der Unterschied zwischen den beiden Ausgaben?", "Inhalt und Preis sind gleich. Die Notion-Ausgabe ist ein verknüpfter Workspace mit Ansichten und automatischen Feldern. Die Download-Ausgabe enthält Word-Dokumente zum Bearbeiten, eine Excel-Arbeitsmappe mit den Registern sowie automatischen Fristen und Prüfungen und PDFs zum Ausdrucken."],
           ["Kann ich ein Kit für mehrere Unternehmen nutzen?", "Ein Kauf gilt für die Nutzung in einem Unternehmen. Wenn Sie Kits für mehrere Unternehmen oder für Ihre Kunden brauchen, schreiben Sie uns."],
           ["Ist das Rechtsberatung?", "Nein. Die Kits sind Organisationshilfen und ein praktischer Ausgangspunkt. Sie stellen keine Rechtsberatung dar und machen Ihr Unternehmen nicht schon für sich allein rechtskonform. Bei Einsätzen mit hohem Risiko — etwa KI im Recruiting — lassen Sie Ihre finalen Dokumente fachkundig prüfen."],
           ["Werde ich beim Klick auf „Kaufen“ getrackt?", "Nicht von dieser Website. Sie lädt keine Gumroad-Skripte und setzt keine Cookies. Die Kaufbuttons sind einfache Links; auf der Checkout-Seite gilt die Datenschutzerklärung von Gumroad."]

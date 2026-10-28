@@ -34,8 +34,8 @@ export default {
     cookies: { title: "Política de cookies — Lexora Digital", desc: "Esta web no utiliza cookies de seguimiento ni de publicidad. Aquí se explica exactamente qué se guarda y por qué." },
     imprint: { title: "Aviso legal — Lexora Digital", desc: "Información del titular de lexoradigital.com." },
     shop: {
-      title: "Plantillas de Notion para el cumplimiento UE: RGPD, Reglamento de IA y más — Lexora Digital",
-      desc: "Kits de Notion listos para usar para el RGPD, el Reglamento de IA de la UE, políticas de IA en el trabajo, transparencia retributiva y evaluación de proveedores — en español, inglés, alemán, neerlandés y croata."
+      title: "Plantillas de cumplimiento UE para Notion, Word y Excel: RGPD, Reglamento de IA y más — Lexora Digital",
+      desc: "Kits listos para usar para el RGPD, el Reglamento de IA de la UE, políticas de IA en el trabajo, transparencia retributiva y evaluación de proveedores — en Notion o en Word, Excel y PDF, en cinco idiomas."
     },
     accessibility: { title: "Declaración de accesibilidad — Lexora Digital", desc: "Nuestros objetivos de accesibilidad para esta web, limitaciones conocidas y cómo enviarnos comentarios." }
   },
@@ -461,24 +461,26 @@ export default {
 
     shop: {
       hero: {
-        label: "Plantillas de Notion",
-        h1: "Kits de cumplimiento UE, *listos en Notion.*",
-        lead: "Plantillas prácticas de Notion para el RGPD, el Reglamento de IA de la UE, la transparencia retributiva y la evaluación de proveedores — para pymes, en cinco idiomas.",
+        label: "Plantillas de cumplimiento",
+        h1: "Kits de cumplimiento UE, *en Notion o Word y Excel.*",
+        lead: "Kits prácticos para el RGPD, el Reglamento de IA de la UE, la transparencia retributiva y la evaluación de proveedores — para pymes, en cinco idiomas. Como plantilla de Notion o como archivos Word, Excel y PDF para descargar.",
         cta1: "Ver el pack",
         cta2: "Ver todos los kits",
-        points: ["Español, inglés, alemán, neerlandés, croata", "Funciona con el plan gratuito de Notion", "Acceso inmediato tras la compra", "Pago único, sin suscripción"]
+        points: ["Español, inglés, alemán, neerlandés, croata", "Plantilla de Notion o Word, Excel y PDF", "Acceso inmediato tras la compra", "Pago único, sin suscripción"]
       },
-      kits: { label: "Los kits", h2: "Cinco kits. *Un pack.*", lead: "Cada kit es un espacio de Notion listo para usar, con registros, guías y ejemplos. Usted elige la versión de idioma al pagar." },
+      kits: { label: "Los kits", h2: "Cinco kits. *Un pack.*", lead: "Cada kit tiene dos ediciones con el mismo contenido y precio: un espacio de Notion listo para usar, o archivos Word, Excel y PDF para descargar, imprimir o usar sin Notion. Usted elige el idioma al pagar." },
       cat: "Plantilla de Notion",
-      notion: "Hecho para Notion",
-      bundleCat: "Pack · 5 kits de Notion",
+      notion: "Hecho para Notion · también en Word, Excel y PDF",
+      edNotion: "Plantilla de Notion",
+      edDl: "Word · Excel · PDF",
+      bundleCat: "Pack · 5 kits",
       num: "5 kits",
       vs: "{bundle} en lugar de {full}",
       buy: "Comprar en Gumroad",
       items: {
         bundle: {
           t: "EU Compliance Bundle",
-          s: "5 kits de Notion",
+          s: "5 kits",
           p: "Los cinco kits en una sola compra: RGPD, cumplimiento en IA, política de IA en el trabajo, transparencia retributiva y evaluación de proveedores."
         },
         gdpr: {
@@ -509,12 +511,12 @@ export default {
       },
       how: {
         label: "Cómo funciona",
-        h2: "Del pago a su espacio de trabajo *en dos minutos.*",
-        lead: "Sin instalación ni cuenta con nosotros — la plantilla se copia en su propio espacio de Notion.",
+        h2: "Del pago al trabajo *en dos minutos.*",
+        lead: "Sin instalación ni cuenta con nosotros — duplica la plantilla en Notion o descarga los archivos.",
         steps: [
-          ["Elija kit e idioma", "Elija un kit o el pack y seleccione su versión de idioma al pagar en Gumroad."],
-          ["Reciba su enlace", "Justo después del pago recibe el enlace a su plantilla."],
-          ["Duplíquela en Notion", "Abra el enlace y haga clic en «Duplicar» para copiar la plantilla en su propio espacio de Notion. El plan gratuito es suficiente."],
+          ["Elija kit, edición e idioma", "Elija un kit o el pack, la edición de Notion o la de Word, Excel y PDF, y su idioma al pagar en Gumroad."],
+          ["Reciba el acceso", "Justo después del pago recibe el enlace de Notion o la descarga."],
+          ["Duplique o abra", "Notion: haga clic en «Duplicar» para copiar la plantilla en su propio espacio — el plan gratuito es suficiente. Descarga: descomprima el archivo y abra primero la guía."],
           ["Complétela", "Siga la guía de configuración y los ejemplos y añada sus propios datos."]
         ]
       },
@@ -530,9 +532,10 @@ export default {
         label: "Preguntas",
         h2: "Antes de comprar.",
         items: [
-          ["¿Necesito un plan de pago de Notion?", "No. Las plantillas funcionan con el plan gratuito de Notion. Solo necesita una cuenta de Notion, que puede crear gratis."],
+          ["¿Necesito Notion?", "No. Cada kit está disponible también en archivos Word, Excel y PDF. Para la edición de Notion basta con el plan gratuito."],
           ["¿En qué idiomas están disponibles?", "Cada kit está disponible en español, inglés, alemán, neerlandés y croata. Usted elige su versión al pagar."],
-          ["¿Cómo recibo la plantilla?", "El pago y el recibo se gestionan a través de Gumroad. Justo después de la compra recibe un enlace para duplicar la plantilla en su espacio de Notion."],
+          ["¿Cómo recibo el kit?", "El pago y el recibo se gestionan a través de Gumroad. Justo después de la compra recibe un enlace para duplicar la plantilla en su espacio de Notion, o un archivo ZIP con los archivos Word, Excel y PDF."],
+          ["¿Qué diferencia hay entre las dos ediciones?", "El contenido y el precio son los mismos. La edición de Notion es un espacio conectado con vistas y campos automáticos. La edición descargable incluye documentos Word editables, un libro de Excel con los registros y plazos y controles automáticos, y PDF para imprimir."],
           ["¿Puedo usar un kit para varias empresas?", "Una compra cubre el uso dentro de una empresa. Si necesita kits para varias empresas o para sus clientes, escríbanos."],
           ["¿Es asesoramiento jurídico?", "No. Los kits son herramientas organizativas y un punto de partida práctico. No constituyen asesoramiento jurídico ni hacen que su empresa cumpla la normativa por sí solos. Para usos de alto riesgo — por ejemplo, IA en procesos de selección — haga revisar sus documentos finales por un profesional cualificado."],
           ["¿Me rastrean al hacer clic en «Comprar»?", "Esta web no. No carga scripts de Gumroad ni instala cookies. Los botones de compra son enlaces normales; en la página de pago se aplica la política de privacidad de Gumroad."]

@@ -34,8 +34,8 @@ export default {
     cookies: { title: "Politika kolačića — Lexora Digital", desc: "Ova web stranica ne koristi kolačiće za praćenje ni oglašavanje. Ovdje točno piše što se sprema i zašto." },
     imprint: { title: "Impresum — Lexora Digital", desc: "Podaci o pružatelju usluge za lexoradigital.com." },
     shop: {
-      title: "Notion predlošci za EU usklađenost: GDPR, Akt o UI i više — Lexora Digital",
-      desc: "Notion kitovi spremni za rad za GDPR, EU Akt o umjetnoj inteligenciji, politike korištenja UI na radnom mjestu, transparentnost plaća i provjeru dobavljača — na hrvatskom, engleskom, njemačkom, nizozemskom i španjolskom."
+      title: "Predlošci za EU usklađenost za Notion, Word i Excel: GDPR, Akt o UI i više — Lexora Digital",
+      desc: "Kitovi spremni za rad za GDPR, EU Akt o umjetnoj inteligenciji, politike korištenja UI na radnom mjestu, transparentnost plaća i provjeru dobavljača — u Notionu ili kao Word, Excel i PDF, na pet jezika."
     },
     accessibility: { title: "Izjava o pristupačnosti — Lexora Digital", desc: "Naši ciljevi pristupačnosti za ovu web stranicu, poznata ograničenja i kako nam poslati povratnu informaciju." }
   },
@@ -461,24 +461,26 @@ export default {
 
     shop: {
       hero: {
-        label: "Notion predlošci",
-        h1: "Kitovi za EU usklađenost, *spremni u Notionu.*",
-        lead: "Praktični Notion predlošci za GDPR, EU Akt o umjetnoj inteligenciji, transparentnost plaća i provjeru dobavljača — za mala i srednja poduzeća, na pet jezika.",
+        label: "Predlošci za usklađenost",
+        h1: "Kitovi za EU usklađenost, *u Notionu ili Wordu i Excelu.*",
+        lead: "Praktični kitovi za GDPR, EU Akt o umjetnoj inteligenciji, transparentnost plaća i provjeru dobavljača — za mala i srednja poduzeća, na pet jezika. Kao Notion predložak ili kao Word, Excel i PDF datoteke za preuzimanje.",
         cta1: "Paket svih kitova",
         cta2: "Pogledajte sve kitove",
-        points: ["Hrvatski, engleski, njemački, nizozemski, španjolski", "Radi s besplatnim Notion paketom", "Pristup odmah nakon kupnje", "Jednokratno plaćanje, bez pretplate"]
+        points: ["Hrvatski, engleski, njemački, nizozemski, španjolski", "Notion predložak ili Word, Excel i PDF", "Pristup odmah nakon kupnje", "Jednokratno plaćanje, bez pretplate"]
       },
-      kits: { label: "Kitovi", h2: "Pet kitova. *Jedan paket.*", lead: "Svaki kit je Notion workspace spreman za rad, s evidencijama, vodičima i primjerima unosa. Jezičnu verziju birate pri plaćanju." },
+      kits: { label: "Kitovi", h2: "Pet kitova. *Jedan paket.*", lead: "Svaki kit postoji u dvije verzije s istim sadržajem i cijenom: kao Notion workspace spreman za rad ili kao Word, Excel i PDF datoteke za preuzimanje, ispis ili rad bez Notiona. Jezik birate pri plaćanju." },
       cat: "Notion predložak",
-      notion: "Izrađeno za Notion",
-      bundleCat: "Paket · 5 Notion kitova",
+      notion: "Izrađeno za Notion · i kao Word, Excel i PDF",
+      edNotion: "Notion predložak",
+      edDl: "Word · Excel · PDF",
+      bundleCat: "Paket · 5 kitova",
       num: "5 kitova",
       vs: "{bundle} umjesto {full}",
       buy: "Kupi na Gumroadu",
       items: {
         bundle: {
           t: "EU Compliance Bundle",
-          s: "5 Notion kitova",
+          s: "5 kitova",
           p: "Svih pet kitova u jednoj kupnji: GDPR, usklađenost u korištenju UI, politika korištenja UI na radnom mjestu, transparentnost plaća i procjena dobavljača."
         },
         gdpr: { t: "GDPR Compliance Kit", s: "GDPR", p: "Kontrolni popis s pozivima na članke te evidencije aktivnosti obrade, zahtjeva ispitanika, povreda osobnih podataka, izvršitelja obrade i kolačića." },
@@ -497,12 +499,12 @@ export default {
       },
       how: {
         label: "Kako funkcionira",
-        h2: "Od kupnje do Vašeg workspacea *u dvije minute.*",
-        lead: "Bez instalacije i bez računa kod nas — predložak se kopira u Vaš vlastiti Notion workspace.",
+        h2: "Od kupnje do rada *u dvije minute.*",
+        lead: "Bez instalacije i bez računa kod nas — predložak duplicirate u Notion ili preuzmete datoteke.",
         steps: [
-          ["Odaberite kit i jezik", "Odaberite kit ili paket te pri plaćanju na Gumroadu odaberite jezičnu verziju."],
-          ["Primite poveznicu", "Odmah nakon plaćanja primate poveznicu na svoj predložak."],
-          ["Duplicirajte u Notion", "Otvorite poveznicu i kliknite „Duplicate” kako biste predložak kopirali u svoj Notion workspace. Besplatni paket je dovoljan."],
+          ["Odaberite kit, verziju i jezik", "Odaberite kit ili paket, Notion verziju ili Word, Excel i PDF verziju te pri plaćanju na Gumroadu jezik."],
+          ["Primite pristup", "Odmah nakon plaćanja primate Notion poveznicu ili datoteku za preuzimanje."],
+          ["Duplicirajte ili otvorite", "Notion: kliknite „Duplicate” kako biste predložak kopirali u svoj workspace — besplatni paket je dovoljan. Preuzimanje: raspakirajte datoteku i najprije otvorite vodič."],
           ["Ispunite ga", "Slijedite vodič za postavljanje i primjere unosa te dodajte vlastite podatke."]
         ]
       },
@@ -518,9 +520,10 @@ export default {
         label: "Pitanja",
         h2: "Prije kupnje.",
         items: [
-          ["Trebam li plaćeni Notion paket?", "Ne. Predlošci rade s besplatnim Notion paketom. Potreban Vam je samo Notion račun, koji možete otvoriti besplatno."],
+          ["Trebam li Notion?", "Ne. Svaki kit dostupan je i kao Word, Excel i PDF datoteke. Za Notion verziju dovoljan je besplatni Notion paket."],
           ["Na kojim su jezicima dostupni?", "Svaki kit dostupan je na hrvatskom, engleskom, njemačkom, nizozemskom i španjolskom. Jezičnu verziju birate pri plaćanju."],
-          ["Kako dobivam predložak?", "Plaćanje i potvrdu o kupnji obrađuje Gumroad. Odmah nakon kupnje dobivate poveznicu za dupliciranje predloška u svoj Notion workspace."],
+          ["Kako dobivam kit?", "Plaćanje i potvrdu o kupnji obrađuje Gumroad. Odmah nakon kupnje dobivate poveznicu za dupliciranje predloška u svoj Notion workspace ili ZIP datoteku s Word, Excel i PDF datotekama."],
+          ["Koja je razlika između dviju verzija?", "Sadržaj i cijena su isti. Notion verzija je povezani workspace s prikazima i automatskim poljima. Verzija za preuzimanje sadrži Word dokumente za uređivanje, Excel radnu knjigu s evidencijama, automatskim rokovima i provjerama te PDF-ove za ispis."],
           ["Mogu li kit koristiti za više poduzeća?", "Jedna kupnja vrijedi za korištenje unutar jednog poduzeća. Ako trebate kitove za više poduzeća ili za svoje klijente, javite nam se."],
           ["Je li ovo pravni savjet?", "Ne. Kitovi su organizacijski alati i praktična polazna točka. Ne predstavljaju pravni savjet i sami po sebi ne čine Vaše poduzeće usklađenim. Za visokorizične primjene — primjerice UI pri zapošljavanju — neka Vaše konačne dokumente pregleda stručna osoba."],
           ["Prati li me netko kad kliknem „Kupi”?", "Ova stranica ne. Ne učitava Gumroad skripte i ne postavlja kolačiće. Gumbi za kupnju obične su poveznice; na stranici za plaćanje primjenjuju se Gumroadova pravila privatnosti."]

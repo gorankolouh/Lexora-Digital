@@ -940,3 +940,10 @@ html{-webkit-tap-highlight-color:transparent}
 .notion-badge img{width:30px;height:30px;object-fit:contain;padding:4px;border-radius:50%;background:#F5F7F2}
 .notion-badge + .points{margin-top:24px}
 .cat .ni{display:inline-block;width:16px;height:16px;object-fit:contain;padding:1.5px;margin-right:9px;border-radius:4px;background:#F5F7F2;vertical-align:-3px}
+/* Templates page: two editions per kit (Notion / Word, Excel & PDF) */
+.shop-kits .eds{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.shop-kits .eds .btn{position:relative;z-index:4;gap:9px}
+.shop-kits .eds .btn img{width:18px;height:auto;border-radius:3px;background:#fff;padding:1px}
+.shop-kits .eds .btn svg{flex:0 0 auto}
+.shop-kits .proj.feat .eds{margin-top:24px}
+@media (max-width:520px){.shop-kits .eds .btn{flex:1 1 100%}}
