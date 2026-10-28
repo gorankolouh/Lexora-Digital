@@ -251,7 +251,7 @@ export const JART = [
 /* ---------------- Templates (Notion kits sold on Gumroad) ----------------
    Buy links are plain links to Gumroad: no Gumroad script, overlay or cookie on this site. */
 const money = (t, n) => new Intl.NumberFormat(t.locale.replace("_", "-"), { style: "currency", currency: "EUR" }).format(n);
-const shopCover = (x, title, sizes, eager = false) => `<img src="/assets/img/shop/${x.img || x.key}-900.webp" srcset="/assets/img/shop/${x.img || x.key}-900.webp 900w, /assets/img/shop/${x.img || x.key}-1600.webp 1600w" sizes="${sizes}" width="1600" height="893" alt="${esc(title)}"${eager ? "" : ' loading="lazy"'} decoding="async">`;
+const shopCover = (x, title, sizes, eager = false) => `<img src="/assets/img/shop/ed/${x.img || x.key}-900.webp" srcset="/assets/img/shop/ed/${x.img || x.key}-900.webp 900w, /assets/img/shop/ed/${x.img || x.key}-1600.webp 1600w" sizes="${sizes}" width="1600" height="893" alt="${esc(title)}"${eager ? "" : ' loading="lazy"'} decoding="async">`;
 export function shopPrices(t) {
   const [bundle, ...kits] = SHOP;
   const full = kits.reduce((s, k) => s + k.price, 0);
@@ -309,7 +309,7 @@ export function shopLd(t) {
       "@type": "ListItem", position: i + 1,
       item: {
         "@type": "Product", name: p.items[x.key].t, description: p.items[x.key].p.replace(/[*~]/g, ""),
-        image: `${SITE_URL}/assets/img/shop/${x.img || x.key}-1600.webp`,
+        image: `${SITE_URL}/assets/img/shop/ed/${x.img || x.key}-1600.webp`,
         brand: { "@type": "Brand", name: "Lexora Digital" },
         offers: [x.url, x.dl].map((u) => ({ "@type": "Offer", price: x.price.toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", url: u }))
       }

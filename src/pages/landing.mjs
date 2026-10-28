@@ -44,7 +44,7 @@ export function landingLd(t) {
       "@type": "ListItem", position: i + 1,
       item: {
         "@type": "Product", name: s.items[x.key].t, description: s.items[x.key].p.replace(/[*~]/g, ""),
-        image: `${SITE_URL}/assets/img/shop/${x.img || x.key}-1600.webp`, brand: { "@type": "Brand", name: "Lexora Digital" },
+        image: `${SITE_URL}/assets/img/shop/ed/${x.img || x.key}-1600.webp`, brand: { "@type": "Brand", name: "Lexora Digital" },
         offers: [x.url, x.dl].map((u) => ({ "@type": "Offer", price: x.price.toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", url: u }))
       }
     }))
