@@ -947,3 +947,11 @@ html{-webkit-tap-highlight-color:transparent}
 .shop-kits .eds .btn svg{flex:0 0 auto}
 .shop-kits .proj.feat .eds{margin-top:24px}
 @media (max-width:520px){.shop-kits .eds .btn{flex:1 1 100%}}
+/* Landing page (eu-compliance-kits) */
+.lp-shot{margin:0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 90px -40px rgba(183,255,0,.25)}
+.lp-shot img{display:block;width:100%;height:auto}
+.lp-eds h3{display:flex;align-items:center;gap:10px}
+.lp-eds h3 img{width:22px;height:auto;border-radius:4px;background:#fff;padding:1px}
+.lp-who{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:0;margin:0}
+.lp-who li{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border:1px solid var(--line-2);border-radius:999px;color:var(--text-2);font-size:15px}
+.lp-who li svg{color:var(--lime)}

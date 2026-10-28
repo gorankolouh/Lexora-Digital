@@ -252,12 +252,13 @@ export const JART = [
    Buy links are plain links to Gumroad: no Gumroad script, overlay or cookie on this site. */
 const money = (t, n) => new Intl.NumberFormat(t.locale.replace("_", "-"), { style: "currency", currency: "EUR" }).format(n);
 const shopCover = (x, title, sizes, eager = false) => `<img src="/assets/img/shop/${x.img || x.key}-900.webp" srcset="/assets/img/shop/${x.img || x.key}-900.webp 900w, /assets/img/shop/${x.img || x.key}-1600.webp 1600w" sizes="${sizes}" width="1600" height="893" alt="${esc(title)}"${eager ? "" : ' loading="lazy"'} decoding="async">`;
-function shopPrices(t) {
+export function shopPrices(t) {
   const [bundle, ...kits] = SHOP;
   const full = kits.reduce((s, k) => s + k.price, 0);
   return (s) => s.replace("{bundle}", money(t, bundle.price)).replace("{full}", money(t, full));
 }
-export function shop(t) {
+/* Kit cards (bundle feature + five kits), each with its two edition buttons. Used on the Templates page and the landing page. */
+export function kitCards(t) {
   const p = t.pages.shop, vs = shopPrices(t);
   const [bundle, ...kits] = SHOP, b = p.items.bundle;
   const buyLabel = (x, it, ed) => `${p.buy}: ${it.t}, ${ed} (${money(t, x.price)})`;
@@ -274,14 +275,19 @@ export function shop(t) {
         <div class="meta"><div><p class="cat">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p>${editions(x, it)}</div></div>
       </article>`;
   }).join("");
+  return `${feat}
+      <div class="strip">${cards}</div>`;
+}
+export function shop(t) {
+  const p = t.pages.shop, vs = shopPrices(t);
+  const [bundle] = SHOP;
   return [
     pageHero({ label: p.hero.label, glyph: "§", h1: p.hero.h1, lead: p.hero.lead, crumbs: crumbsFor(t, t.nav.shop),
       actions: [{ href: "#bundle", label: `${p.hero.cta1} · ${money(t, bundle.price)}`, primary: true }, { href: "#kits", label: p.hero.cta2 }],
       extra: `<p class="notion-badge rise d4"><img src="/assets/img/shop/notion-128.png" width="123" height="128" alt="">${esc(p.notion)}</p><ul class="points rise d4">${p.hero.points.map((x) => `<li>${icon("check", 16, 2)}${esc(x)}</li>`).join("")}</ul>` }),
     `<section class="section rule shop-kits" id="kits" aria-labelledby="s1"><div class="wrap">
       ${head({ label: p.kits.label, h2: p.kits.h2, lead: p.kits.lead, id: "s1" })}
-      ${feat}
-      <div class="strip">${cards}</div>
+      ${kitCards(t)}
     </div></section>`,
     sec(`${head({ label: p.how.label, h2: p.how.h2, lead: p.how.lead, id: "s2" })}${steps(p.how.steps)}`, "trust", "s2"),
     sec(`${head({ label: p.bounds.label, h2: p.bounds.h2, id: "s3" })}

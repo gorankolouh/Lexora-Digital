@@ -7,12 +7,67 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "headers": [
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/(.*)", "headers": [
-      { "key": "X-Content-Type-Options", "value": "nosniff" },
-      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-      { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
-      { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
-    ] }
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/kits",
+      "destination": "/en/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/en/kits",
+      "destination": "/en/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/de/kits",
+      "destination": "/de/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/nl/kits",
+      "destination": "/nl/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/es/kits",
+      "destination": "/es/eu-compliance-kits/",
+      "permanent": false
+    },
+    {
+      "source": "/hr/kits",
+      "destination": "/hr/eu-compliance-kits/",
+      "permanent": false
+    }
   ]
 }
