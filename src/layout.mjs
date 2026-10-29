@@ -1,4 +1,4 @@
-import { LANGS, SITE_URL, BRAND, TAGLINE, SERVICES, FORMS, PLANET_VIDEO, ORG_PROFILES, FOUNDER, DEFAULT_LANG } from "./config.mjs";
+import { LANGS, SITE_URL, BRAND, TAGLINE, SERVICES, FORMS, PLANET_VIDEO, ORG_PROFILES, FOUNDER, DEFAULT_LANG, CONTACT } from "./config.mjs";
 import { esc, fmt, path, abs, LOGO, icon, readyLangs } from "./lib.mjs";
 
 const V = Date.now().toString(36); // cache-busting for assets
@@ -137,7 +137,8 @@ function pageRaw({ t, key, title, desc, body, globe = false, noindex = false, al
   const org = key === "home" ? {
     "@context": "https://schema.org", "@type": "Organization", "@id": SITE_URL + "/#organization",
     name: BRAND, url: SITE_URL + "/", logo: SITE_URL + "/assets/img/lexora-logo-512.png", image: SITE_URL + "/assets/img/og-image.jpg",
-    slogan: TAGLINE, description: desc, email: "info@lexoradigital.com",
+    slogan: TAGLINE, description: desc, email: "info@lexoradigital.com", telephone: CONTACT.tel,
+    address: { "@type": "PostalAddress", ...CONTACT.address },
     disambiguatingDescription: "Independent European digital studio at lexoradigital.com for websites, GDPR and cookie compliance, legal and business translation (EN, DE, NL, ES, HR) and design. Not affiliated with any other company or product named Lexora.",
     foundingDate: "2026-10",
     knowsAbout: ["Web design", "Web development", "GDPR", "Cookie consent", "EU AI Act", "Digital Services Act", "Pay transparency", "Legal translation", "Business translation"],

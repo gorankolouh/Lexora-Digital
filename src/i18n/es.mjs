@@ -454,7 +454,7 @@ export default {
 
     contact: {
       hero: { label: "Contacto", h1: "Empecemos con *una conversación.*", lead: "Cuéntenos qué quiere conseguir — una web, una revisión de cumplimiento, una traducción o un proyecto creativo. Respondemos en su idioma." },
-      direct: { label: "Email", p: "Solemos responder en un plazo de dos días laborables." },
+      direct: { label: "Correo y teléfono", p: "Solemos responder en un plazo de dos días laborables." },
       next: { label: "Qué pasa después", steps: [["Leemos su mensaje", "y le preguntamos si algo no está claro."], ["Le proponemos un siguiente paso", "— una llamada breve, un presupuesto o una revisión gratuita."], ["Usted decide", "No empieza nada sin su aprobación."]] },
       check: { t: "¿Solo quiere saber si su web cumple el RGPD?", p: "Utilice entonces la revisión gratuita de RGPD y cookies." }
     },
@@ -596,7 +596,7 @@ export default {
         ["h2", "Titular"],
         ["p", "**Lexora Digital**  \nRue Jean Robbie 44  \n1060 Saint-Gilles (Bruxelles), Bélgica  \nRepresentada por: Goran Kolouh, Fundador y director"],
         ["h2", "Contacto"],
-        ["p", "General: info@lexoradigital.com  \nProtección de datos: gdpr@lexoradigital.com  \nFundador: kolouh@lexoradigital.com"],
+        ["p", "Teléfono: +31 970 1027 9680  \nGeneral: info@lexoradigital.com  \nProtección de datos: gdpr@lexoradigital.com  \nFundador: kolouh@lexoradigital.com"],
         ["h2", "Número de IVA"],
         ["p", "17636920948"],
         ["h2", "Sociedad en EE. UU."],

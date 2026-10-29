@@ -454,7 +454,7 @@ export default {
 
     contact: {
       hero: { label: "Contact", h1: "Laten we beginnen met *een gesprek.*", lead: "Vertel ons wat u wilt bereiken — een website, een compliancecheck, een vertaling of een creatief project. Wij antwoorden in uw taal." },
-      direct: { label: "E-mail", p: "We antwoorden meestal binnen twee werkdagen." },
+      direct: { label: "E-mail & telefoon", p: "We antwoorden meestal binnen twee werkdagen." },
       next: { label: "Wat er nu gebeurt", steps: [["We lezen uw bericht", "en stellen vragen als iets onduidelijk is."], ["We stellen een volgende stap voor", "— een kort gesprek, een offerte of een gratis check."], ["U beslist", "Er begint niets zonder uw akkoord."]] },
       check: { t: "Wilt u alleen weten of uw website aan de AVG voldoet?", p: "Gebruik dan de gratis AVG- & cookiecheck." }
     },
@@ -580,7 +580,7 @@ export default {
         ["h2", "Aanbieder"],
         ["p", "**Lexora Digital**  \nRue Jean Robbie 44  \n1060 Saint-Gilles (Bruxelles), België  \nVertegenwoordigd door: Goran Kolouh, Oprichter & directeur"],
         ["h2", "Contact"],
-        ["p", "Algemeen: info@lexoradigital.com  \nPrivacy: gdpr@lexoradigital.com  \nOprichter: kolouh@lexoradigital.com"],
+        ["p", "Telefoon: +31 970 1027 9680  \nAlgemeen: info@lexoradigital.com  \nPrivacy: gdpr@lexoradigital.com  \nOprichter: kolouh@lexoradigital.com"],
         ["h2", "Btw-identificatienummer"],
         ["p", "17636920948"],
         ["h2", "Amerikaanse vennootschap"],
