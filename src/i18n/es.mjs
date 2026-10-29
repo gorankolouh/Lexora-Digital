@@ -22,10 +22,10 @@ export default {
   meta: {
     home: { title: "Lexora Digital — estudio de web, derecho, idiomas y diseño", desc: "Estudio digital independiente de webs, cumplimiento del RGPD y de cookies, traducción y diseño — para empresas de toda Europa, en cinco idiomas." },
     web: { title: "Diseño y desarrollo web — Lexora Digital", desc: "Webs y landing pages a medida para pymes. Web básica desde 99 €, adaptable a móviles, respetuosa con la privacidad y publicada en su dominio." },
-    compliance: { title: "Cumplimiento digital: RGPD, cookies y normas de la UE — Lexora Digital", desc: "Ayuda práctica con el RGPD, el consentimiento de cookies, las políticas de privacidad y las normas digitales de la UE para webs de empresa — información e implementación, no asesoramiento jurídico." },
-    check: { title: "Revisión RGPD y cookies gratuita — corrección desde 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: revisión gratuita del consentimiento, el seguimiento y los textos legales de su web. Si encontramos problemas, los corregimos desde 99 €." },
-    language: { title: "Traducciones en inglés, alemán, neerlandés, español y croata — Lexora Digital", desc: "Traducción de webs, documentos empresariales y textos jurídicos entre inglés, alemán, neerlandés, español y croata — precisa y natural." },
-    creative: { title: "Servicios creativos: identidad, diseño gráfico y edición multimedia — Lexora Digital", desc: "Identidad visual, materiales de marca, diseño gráfico y edición seleccionada de foto, vídeo, audio y voz para empresas." },
+    compliance: { title: "Cumplimiento digital: RGPD, cookies y normas UE — Lexora Digital", desc: "Ayuda práctica con el RGPD, las cookies y la política de privacidad de su web — información e implementación, no asesoramiento jurídico." },
+    check: { title: "Revisión RGPD y cookies gratuita, corrección desde 99 €", desc: "GDPR, Cookies & Co.: revisión gratuita del consentimiento, el seguimiento y los textos legales de su web. Si encontramos problemas, los corregimos desde 99 €." },
+    language: { title: "Traducciones: inglés, alemán, neerlandés, español y croata", desc: "Traducción de webs, documentos empresariales y textos jurídicos entre inglés, alemán, neerlandés, español y croata — precisa y natural." },
+    creative: { title: "Servicios creativos: identidad y diseño gráfico — Lexora Digital", desc: "Identidad visual, materiales de marca, diseño gráfico y edición seleccionada de foto, vídeo, audio y voz para empresas." },
     work: { title: "Proyectos — proyectos conceptuales | Lexora Digital", desc: "Conceptos de web para estética, oficios y talleres de automoción — diseños completos y adaptables que muestran cómo trabaja Lexora Digital." },
     journal: { title: "Journal — guías sobre RGPD, DSA y Ley de IA | Lexora Digital", desc: "Guías claras sobre las normas europeas que afectan a las webs de empresa: RGPD y cookies, la Ley de Servicios Digitales y la Ley de IA de la UE." },
     about: { title: "Sobre nosotros — Lexora Digital", desc: "Un estudio digital independiente que combina diseño web, conocimiento práctico de las normas digitales europeas, traducción y trabajo creativo." },
@@ -34,8 +34,8 @@ export default {
     cookies: { title: "Política de cookies — Lexora Digital", desc: "Esta web no utiliza cookies de seguimiento ni de publicidad. Aquí se explica exactamente qué se guarda y por qué." },
     imprint: { title: "Aviso legal — Lexora Digital", desc: "Información del titular de lexoradigital.com." },
     shop: {
-      title: "Plantillas de cumplimiento UE para Notion, Word y Excel: RGPD, Reglamento de IA y más — Lexora Digital",
-      desc: "Kits listos para usar para el RGPD, el Reglamento de IA de la UE, políticas de IA en el trabajo, transparencia retributiva y evaluación de proveedores — en Notion o en Word, Excel y PDF, en cinco idiomas."
+      title: "Plantillas RGPD y Ley de IA para Notion y Word — Lexora Digital",
+      desc: "Kits para el RGPD, la Ley de IA, políticas de IA, transparencia retributiva y evaluación de proveedores — en Notion o Word, Excel y PDF, en cinco idiomas."
     },
     accessibility: { title: "Declaración de accesibilidad — Lexora Digital", desc: "Nuestros objetivos de accesibilidad para esta web, limitaciones conocidas y cómo enviarnos comentarios." }
   },

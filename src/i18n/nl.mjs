@@ -22,10 +22,10 @@ export default {
   meta: {
     home: { title: "Lexora Digital — studio voor web, recht, taal & design", desc: "Onafhankelijke digitale studio voor websites, AVG- en cookiecompliance, vertalingen en design — voor bedrijven in heel Europa, in vijf talen." },
     web: { title: "Webdesign & webontwikkeling — Lexora Digital", desc: "Websites en landingspagina's op maat voor het mkb. Startwebsite vanaf € 99, responsive, privacyvriendelijk en live op uw eigen domein." },
-    compliance: { title: "Digitale compliance: AVG, cookies & EU-regels — Lexora Digital", desc: "Praktische hulp bij de AVG, cookietoestemming, privacyverklaringen en Europese digitale regels voor bedrijfswebsites — informatie en uitvoering, geen juridisch advies." },
+    compliance: { title: "Digitale compliance: AVG, cookies & EU-regels — Lexora Digital", desc: "Praktische hulp bij de AVG, cookietoestemming en privacyverklaringen voor bedrijfswebsites — informatie en uitvoering, geen juridisch advies." },
     check: { title: "Gratis AVG- & cookiecheck — opgelost vanaf € 99 | Lexora Digital", desc: "GDPR, Cookies & Co.: een gratis check van toestemming, tracking en juridische pagina's op uw website. Vinden we problemen, dan lossen we ze op vanaf € 99." },
-    language: { title: "Vertalingen Engels, Duits, Nederlands, Spaans & Kroatisch — Lexora Digital", desc: "Vertaling van websites, zakelijke en juridische teksten tussen Engels, Duits, Nederlands, Spaans en Kroatisch — nauwkeurig en natuurlijk geformuleerd." },
-    creative: { title: "Creatieve diensten: identiteit, grafisch ontwerp & mediabewerking — Lexora Digital", desc: "Visuele identiteit, merkmiddelen, grafisch ontwerp en geselecteerde foto-, video-, audio- en stembewerking voor bedrijven." },
+    language: { title: "Vertalingen Engels, Duits, Nederlands, Spaans & Kroatisch", desc: "Vertaling van websites, zakelijke en juridische teksten tussen Engels, Duits, Nederlands, Spaans en Kroatisch — nauwkeurig en natuurlijk geformuleerd." },
+    creative: { title: "Creatieve diensten: identiteit & ontwerp — Lexora Digital", desc: "Visuele identiteit, merkmiddelen, grafisch ontwerp en geselecteerde foto-, video-, audio- en stembewerking voor bedrijven." },
     work: { title: "Werk — conceptprojecten | Lexora Digital", desc: "Websiteconcepten voor beauty, vakmensen en autobedrijven — complete, responsive ontwerpen die laten zien hoe Lexora Digital werkt." },
     journal: { title: "Journal — gidsen over AVG, DSA en AI Act | Lexora Digital", desc: "Heldere gidsen over de Europese regels voor bedrijfswebsites: AVG en cookies, de Digital Services Act en de EU AI Act." },
     about: { title: "Over ons — Lexora Digital", desc: "Een onafhankelijke digitale studio die webdesign, praktische kennis van Europese digitale regels, vertaling en creatief werk combineert." },
@@ -34,8 +34,8 @@ export default {
     cookies: { title: "Cookiebeleid — Lexora Digital", desc: "Deze website gebruikt geen tracking- of advertentiecookies. Hier staat precies wat er wordt opgeslagen en waarom." },
     imprint: { title: "Juridische informatie — Lexora Digital", desc: "Aanbiedersinformatie voor lexoradigital.com." },
     shop: {
-      title: "EU-compliancetemplates voor Notion, Word & Excel: AVG, AI Act en meer — Lexora Digital",
-      desc: "Kant-en-klare kits voor de AVG, de EU AI Act, AI-beleid op de werkvloer, loontransparantie en leverancierscontroles — als Notion-template of Word-, Excel- en pdf-bestanden, in vijf talen."
+      title: "AVG- & AI Act-templates voor Notion en Word — Lexora Digital",
+      desc: "Kits voor de AVG, de EU AI Act, AI-beleid, loontransparantie en leverancierscontroles — als Notion-template of Word, Excel en pdf, in vijf talen."
     },
     accessibility: { title: "Toegankelijkheidsverklaring — Lexora Digital", desc: "Onze toegankelijkheidsdoelen voor deze website, bekende beperkingen en hoe u feedback geeft." }
   },

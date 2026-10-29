@@ -2,8 +2,8 @@
 // Product names, card texts, steps, FAQ basics and the disclaimer come from pages.shop in each language file.
 export default {
   en: {
-    meta: { title: "EU Compliance Kits for Small Businesses: GDPR, AI Act, Pay Transparency — Lexora Digital",
-      desc: "Five ready-made compliance kits for EU small businesses — GDPR, EU AI Act, AI policy, pay transparency and supplier checks. Notion or Word, Excel & PDF. From €29.99." },
+    meta: { title: "GDPR & AI Act Compliance Kits for SMEs — Lexora Digital",
+      desc: "Ready-made compliance kits for EU small businesses — GDPR, AI Act, AI policy, pay transparency and supplier checks. Notion or Word, Excel & PDF. From €29.99." },
     hero: { label: "For EU small businesses", h1: "Your GDPR and AI Act paperwork, *in order this week.*",
       lead: "Ready-made kits with checklists, registers and policy templates — so you can show what you have done without hiring a consultant. In Notion or as Word, Excel and PDF files, in five languages.",
       cta1: "All 5 kits", cta2: "See the kits", alt: "Inside the kits: a Word guide, an Excel register with automatic checks and a printable register",
@@ -26,8 +26,8 @@ export default {
     faqH2: "Questions before you buy."
   },
   de: {
-    meta: { title: "EU-Compliance-Kits für kleine Unternehmen: DSGVO, AI Act, Entgelttransparenz — Lexora Digital",
-      desc: "Fünf fertige Compliance-Kits für kleine Unternehmen in der EU — DSGVO, EU AI Act, KI-Richtlinie, Entgelttransparenz und Lieferantenprüfung. In Notion oder als Word, Excel & PDF. Ab 29,99 €." },
+    meta: { title: "EU-Compliance-Kits für KMU: DSGVO & AI Act — Lexora Digital",
+      desc: "Fertige Compliance-Kits für KMU: DSGVO, AI Act, KI-Richtlinie, Entgelttransparenz und Lieferanten. Notion oder Word, Excel & PDF. Ab 29,99 €." },
     hero: { label: "Für kleine Unternehmen in der EU", h1: "Ihre DSGVO- und AI-Act-Unterlagen, *diese Woche in Ordnung.*",
       lead: "Fertige Kits mit Checklisten, Registern und Richtlinien-Vorlagen — damit Sie zeigen können, was Sie umgesetzt haben, ohne Beratung einzukaufen. In Notion oder als Word-, Excel- und PDF-Dateien, in fünf Sprachen.",
       cta1: "Alle 5 Kits", cta2: "Kits ansehen", alt: "Inhalt der Kits: ein Word-Leitfaden, ein Excel-Register mit automatischen Prüfungen und ein Register zum Ausdrucken",
@@ -50,8 +50,8 @@ export default {
     faqH2: "Fragen vor dem Kauf."
   },
   nl: {
-    meta: { title: "EU-compliancekits voor het mkb: AVG, AI Act, loontransparantie — Lexora Digital",
-      desc: "Vijf kant-en-klare compliancekits voor het mkb in de EU — AVG, EU AI Act, AI-beleid, loontransparantie en leverancierscontroles. In Notion of als Word, Excel & pdf. Vanaf € 29,99." },
+    meta: { title: "Compliancekits voor het mkb: AVG & AI Act — Lexora Digital",
+      desc: "Kant-en-klare compliancekits voor het mkb: AVG, AI Act, AI-beleid, loontransparantie en leveranciers. In Notion of als Word, Excel & pdf. Vanaf € 29,99." },
     hero: { label: "Voor het mkb in de EU", h1: "Uw AVG- en AI Act-documentatie, *deze week op orde.*",
       lead: "Kant-en-klare kits met checklists, registers en beleidstemplates — zodat u kunt laten zien wat u hebt gedaan, zonder een adviseur in te huren. In Notion of als Word-, Excel- en pdf-bestanden, in vijf talen.",
       cta1: "Alle 5 kits", cta2: "Bekijk de kits", alt: "Inhoud van de kits: een Word-handleiding, een Excel-register met automatische controles en een register om te printen",
@@ -74,8 +74,8 @@ export default {
     faqH2: "Vragen voordat u koopt."
   },
   es: {
-    meta: { title: "Kits de cumplimiento UE para pymes: RGPD, Reglamento de IA, transparencia retributiva — Lexora Digital",
-      desc: "Cinco kits de cumplimiento listos para pymes de la UE — RGPD, Reglamento de IA, política de IA, transparencia retributiva y evaluación de proveedores. En Notion o en Word, Excel y PDF. Desde 29,99 €." },
+    meta: { title: "Kits de cumplimiento para pymes: RGPD e IA — Lexora Digital",
+      desc: "Kits de cumplimiento para pymes: RGPD, Ley de IA, política de IA, transparencia retributiva y proveedores. Notion o Word, Excel y PDF. Desde 29,99 €." },
     hero: { label: "Para pymes de la UE", h1: "Su documentación del RGPD y del Reglamento de IA, *en orden esta semana.*",
       lead: "Kits listos con listas de verificación, registros y plantillas de políticas — para demostrar lo que ha hecho sin contratar una consultoría. En Notion o en archivos Word, Excel y PDF, en cinco idiomas.",
       cta1: "Los 5 kits", cta2: "Ver los kits", alt: "Contenido de los kits: una guía en Word, un registro en Excel con controles automáticos y un registro para imprimir",
@@ -98,8 +98,8 @@ export default {
     faqH2: "Preguntas antes de comprar."
   },
   hr: {
-    meta: { title: "Kitovi za EU usklađenost za mala poduzeća: GDPR, Akt o UI, transparentnost plaća — Lexora Digital",
-      desc: "Pet gotovih kitova za usklađenost za mala i srednja poduzeća u EU — GDPR, Akt o UI, politika korištenja UI, transparentnost plaća i provjera dobavljača. U Notionu ili kao Word, Excel i PDF. Od 29,99 €." },
+    meta: { title: "Kitovi za usklađenost: GDPR i Akt o UI — Lexora Digital",
+      desc: "Gotovi kitovi za usklađenost za MSP: GDPR, Akt o UI, politika UI, transparentnost plaća i provjera dobavljača. Notion ili Word, Excel i PDF. Od 29,99 €." },
     hero: { label: "Za mala i srednja poduzeća u EU", h1: "Vaša GDPR i AI Act dokumentacija, *uređena ovaj tjedan.*",
       lead: "Gotovi kitovi s kontrolnim popisima, evidencijama i predlošcima politika — kako biste mogli pokazati što ste napravili bez angažiranja savjetnika. U Notionu ili kao Word, Excel i PDF datoteke, na pet jezika.",
       cta1: "Svih 5 kitova", cta2: "Pogledajte kitove", alt: "Sadržaj kitova: Word vodič, Excel evidencija s automatskim provjerama i evidencija za ispis",

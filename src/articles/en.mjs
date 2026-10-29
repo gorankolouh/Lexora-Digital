@@ -75,6 +75,7 @@ export default [
     tag: "DSA",
     t: "The Digital Services Act Is Not Only About Big Tech",
     d: "The headlines are about record fines for global platforms. But the DSA also decides what happens when your business hosts reviews, sells on a marketplace or has its account suspended.",
+    md: "The DSA also decides what happens when your business hosts reviews, sells on a marketplace or has its account suspended. What it means for you.",
     lead: "The headlines are about record fines for global platforms. But the DSA also shapes what happens when your business hosts reviews, sells on a marketplace — or wakes up to a suspended account.",
     date: "October 2026", iso: "2026-10-18",
     blocks: [
@@ -135,6 +136,7 @@ export default [
     tag: "AI Act",
     t: "Your Chatbot Has to Say It Is a Chatbot",
     d: "The EU AI Act's transparency rules apply since 2 August 2026. What changed with the Digital Omnibus, what did not — and what to build into a business website now.",
+    md: "The EU AI Act's transparency rules apply since 2 August 2026. What the Digital Omnibus changed — and what to build into a business website now.",
     lead: "The EU AI Act's transparency rules apply since 2 August 2026. Here is what the Digital Omnibus delayed, what it did not — and what a business website should build in now.",
     date: "October 2026", iso: "2026-10-18",
     blocks: [
