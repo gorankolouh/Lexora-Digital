@@ -422,8 +422,8 @@ export default {
 
     journal: {
       hero: { label: "Journal", h1: "Gidsen over *Europa's digitale regels.*", lead: "Heldere artikelen over AVG en cookies, de Digital Services Act en de EU AI Act — wat de regels zeggen, voor wie ze gelden en wat u moet doen." },
-      note: { label: "Over het journal", p: "Geschreven door **Goran Kolouh**, oprichter van Lexora Digital — jurist van opleiding die websites bouwt. Elke gids wordt getoetst aan de officiële teksten en bijgewerkt wanneer de regels veranderen. Algemene informatie, geen juridisch advies." },
-      article: { by: "Door", min: "min. lezen", read: "Lees het artikel", back: "Alle artikelen", sources: "Bronnen", more: "Verder lezen", talk: "Neem contact op", all: "Alle artikelen", bio: "Jurist van opleiding, webbouwer van beroep. Goran schrijft over Europees digitaal recht — de AVG, de DSA en de AI-verordening — en wat dat betekent voor wie websites bouwt en beheert.", disclaimer: "Dit artikel is algemene informatie en geen juridisch advies. Het geeft de stand van het recht weer op de datum van publicatie." },
+      note: { label: "Over het journal", p: "Geschreven door **Goran Kolouh**, oprichter van Lexora Digital — met een juridische achtergrond, bouwt websites. Elke gids wordt getoetst aan de officiële teksten en bijgewerkt wanneer de regels veranderen. Algemene informatie, geen juridisch advies." },
+      article: { by: "Door", min: "min. lezen", read: "Lees het artikel", back: "Alle artikelen", sources: "Bronnen", more: "Verder lezen", talk: "Neem contact op", all: "Alle artikelen", bio: "Juridische achtergrond, webbouwer van beroep. Goran schrijft over Europees digitaal recht — de AVG, de DSA en de AI-verordening — en wat dat betekent voor wie websites bouwt en beheert.", disclaimer: "Dit artikel is algemene informatie en geen juridisch advies. Het geeft de stand van het recht weer op de datum van publicatie." },
       band: { h2: "Wilt u weten waar uw website staat?", lead: "Onze gratis AVG- & cookiecheck geeft u een helder antwoord." }
     },
 
