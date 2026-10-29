@@ -422,8 +422,8 @@ export default {
 
     journal: {
       hero: { label: "Journal", h1: "Leitfäden zu *Europas Digitalrecht.*", lead: "Verständliche Artikel zu DSGVO und Cookies, dem Digital Services Act und dem EU AI Act — was die Regeln sagen, für wen sie gelten und was zu tun ist." },
-      note: { label: "Über das Journal", p: "Geschrieben von **Goran Kolouh**, Gründer von Lexora Digital — Jurist von der Ausbildung, der Websites baut. Jeder Leitfaden wird an den amtlichen Texten geprüft und aktualisiert, wenn sich die Regeln ändern. Allgemeine Information, keine Rechtsberatung." },
-      article: { by: "Von", min: "Min. Lesezeit", read: "Artikel lesen", back: "Alle Artikel", sources: "Quellen", more: "Weiterlesen", talk: "Sprechen Sie mit uns", all: "Alle Artikel", bio: "Jurist von der Ausbildung, Webdesigner aus Überzeugung. Goran schreibt über EU-Digitalrecht — DSGVO, DSA und KI-Verordnung — und darüber, was es für alle bedeutet, die Websites bauen und betreiben.", disclaimer: "Dieser Artikel ist eine allgemeine Information und keine Rechtsberatung. Er gibt die Rechtslage zum Zeitpunkt der Veröffentlichung wieder." },
+      note: { label: "Über das Journal", p: "Geschrieben von **Goran Kolouh**, Gründer von Lexora Digital — mit juristischem Hintergrund, baut Websites. Jeder Leitfaden wird an den amtlichen Texten geprüft und aktualisiert, wenn sich die Regeln ändern. Allgemeine Information, keine Rechtsberatung." },
+      article: { by: "Von", min: "Min. Lesezeit", read: "Artikel lesen", back: "Alle Artikel", sources: "Quellen", more: "Weiterlesen", talk: "Sprechen Sie mit uns", all: "Alle Artikel", bio: "Juristischer Hintergrund, Webdesigner aus Überzeugung. Goran schreibt über EU-Digitalrecht — DSGVO, DSA und KI-Verordnung — und darüber, was es für alle bedeutet, die Websites bauen und betreiben.", disclaimer: "Dieser Artikel ist eine allgemeine Information und keine Rechtsberatung. Er gibt die Rechtslage zum Zeitpunkt der Veröffentlichung wieder." },
       band: { h2: "Wissen, wo Ihre Website steht?", lead: "Unser kostenloser DSGVO- & Cookie-Check gibt Ihnen eine klare Antwort." }
     },
 

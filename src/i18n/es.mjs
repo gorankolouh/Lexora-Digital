@@ -422,8 +422,8 @@ export default {
 
     journal: {
       hero: { label: "Journal", h1: "Guías sobre *las normas digitales de Europa.*", lead: "Artículos claros sobre RGPD y cookies, la Ley de Servicios Digitales y la Ley de IA de la UE — qué dicen las normas, a quién se aplican y qué hacer." },
-      note: { label: "Sobre el journal", p: "Escrito por **Goran Kolouh**, fundador de Lexora Digital — jurista de formación que crea sitios web. Cada guía se contrasta con los textos oficiales y se actualiza cuando cambian las normas. Información general, no asesoramiento jurídico." },
-      article: { by: "Por", min: "min de lectura", read: "Leer el artículo", back: "Todos los artículos", sources: "Fuentes", more: "Seguir leyendo", talk: "Hablemos", all: "Todos los artículos", bio: "Jurista de formación, creador de webs de profesión. Goran escribe sobre el derecho digital de la UE — el RGPD, la DSA y la Ley de IA — y lo que significa para quienes crean y gestionan sitios web.", disclaimer: "Este artículo es información general, no asesoramiento jurídico. Refleja la normativa vigente en la fecha de publicación." },
+      note: { label: "Sobre el journal", p: "Escrito por **Goran Kolouh**, fundador de Lexora Digital — con formación jurídica, crea sitios web. Cada guía se contrasta con los textos oficiales y se actualiza cuando cambian las normas. Información general, no asesoramiento jurídico." },
+      article: { by: "Por", min: "min de lectura", read: "Leer el artículo", back: "Todos los artículos", sources: "Fuentes", more: "Seguir leyendo", talk: "Hablemos", all: "Todos los artículos", bio: "Formación jurídica, creador de webs de profesión. Goran escribe sobre el derecho digital de la UE — el RGPD, la DSA y la Ley de IA — y lo que significa para quienes crean y gestionan sitios web.", disclaimer: "Este artículo es información general, no asesoramiento jurídico. Refleja la normativa vigente en la fecha de publicación." },
       band: { h2: "¿Quiere saber en qué punto está su web?", lead: "Nuestra revisión gratuita de RGPD y cookies le da una respuesta clara." }
     },
 

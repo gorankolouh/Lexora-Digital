@@ -422,8 +422,8 @@ export default {
 
     journal: {
       hero: { label: "Journal", h1: "Vodiči kroz *europska digitalna pravila.*", lead: "Razumljivi članci o GDPR-u i kolačićima, Aktu o digitalnim uslugama i Aktu EU-a o umjetnoj inteligenciji — što pravila kažu, na koga se odnose i što učiniti." },
-      note: { label: "O journalu", p: "Piše **Goran Kolouh**, osnivač tvrtke Lexora Digital — pravnik po obrazovanju koji izrađuje web stranice. Svaki vodič provjeren je prema službenim tekstovima i ažurira se kad se pravila promijene. Opća informacija, ne pravni savjet." },
-      article: { by: "Autor:", min: "min čitanja", read: "Pročitajte članak", back: "Svi članci", sources: "Izvori", more: "Čitajte dalje", talk: "Javite nam se", all: "Svi članci", bio: "Pravnik po obrazovanju, izrađivač web stranica po zanimanju. Goran piše o digitalnom pravu EU-a — GDPR-u, DSA-u i Aktu o umjetnoj inteligenciji — i o tome što ono znači za one koji izrađuju i vode web stranice.", disclaimer: "Ovaj članak je opća informacija, a ne pravni savjet. Odražava pravno stanje na dan objave." },
+      note: { label: "O journalu", p: "Piše **Goran Kolouh**, osnivač tvrtke Lexora Digital — s pravnom pozadinom, izrađuje web stranice. Svaki vodič provjeren je prema službenim tekstovima i ažurira se kad se pravila promijene. Opća informacija, ne pravni savjet." },
+      article: { by: "Autor:", min: "min čitanja", read: "Pročitajte članak", back: "Svi članci", sources: "Izvori", more: "Čitajte dalje", talk: "Javite nam se", all: "Svi članci", bio: "Pravna pozadina, izrađivač web stranica po zanimanju. Goran piše o digitalnom pravu EU-a — GDPR-u, DSA-u i Aktu o umjetnoj inteligenciji — i o tome što ono znači za one koji izrađuju i vode web stranice.", disclaimer: "Ovaj članak je opća informacija, a ne pravni savjet. Odražava pravno stanje na dan objave." },
       band: { h2: "Želite znati gdje je Vaša web stranica?", lead: "Naša besplatna GDPR provjera i provjera kolačića daje Vam jasan odgovor." }
     },
 

@@ -423,8 +423,8 @@ export default {
 
     journal: {
       hero: { label: "Journal", h1: "Guides to *Europe's digital rules.*", lead: "Plain-language articles on GDPR and cookies, the Digital Services Act and the EU AI Act — what the rules say, who they apply to and what to do next." },
-      note: { label: "About the journal", p: "Written by **Goran Kolouh**, founder of Lexora Digital — a lawyer by training who builds websites. Every guide is checked against the official texts and updated when the rules change. General information, not legal advice." },
-      article: { by: "By", min: "min read", read: "Read the article", back: "All articles", sources: "Sources", more: "Keep reading", talk: "Talk to us", all: "All articles", bio: "Lawyer by training, web builder by trade. Goran writes about EU digital law — GDPR, the DSA and the AI Act — and what it means for the people who build and run websites.", disclaimer: "This article is general information, not legal advice. It reflects the law as of its publication date." },
+      note: { label: "About the journal", p: "Written by **Goran Kolouh**, founder of Lexora Digital — with a legal background, he builds websites. Every guide is checked against the official texts and updated when the rules change. General information, not legal advice." },
+      article: { by: "By", min: "min read", read: "Read the article", back: "All articles", sources: "Sources", more: "Keep reading", talk: "Talk to us", all: "All articles", bio: "Legal background, web builder by trade. Goran writes about EU digital law — GDPR, the DSA and the AI Act — and what it means for the people who build and run websites.", disclaimer: "This article is general information, not legal advice. It reflects the law as of its publication date." },
       band: { h2: "Want to know where your website stands?", lead: "Our free GDPR & cookie check gives you a clear answer." }
     },
 
