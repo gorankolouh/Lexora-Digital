@@ -197,7 +197,7 @@ export default function home(t) {
       <p class="lead reveal d1">${esc(h.journal.lead)}</p>
       <a class="link reveal d2" href="${path(t, "journal")}">${esc(t.pages.journal.article.all)} ${icon("arrow", 15, 1.8)}</a>
     </div>
-    <div class="posts">${t.articles.map((a, i) => articleCard(t, a, i)).join("")}
+    <div class="posts">${t.articles.slice(0, 3).map((a, i) => articleCard(t, a, i)).join("")}
     </div>
   </div>
 </section>`;

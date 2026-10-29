@@ -1,6 +1,128 @@
 // Journal-Artikel — Deutsch
 export default [
   {
+    slug: "cookie-banner-urteile",
+    tag: "Cookies",
+    cta: "check",
+    t: "Cookie-Banner: 8 Urteile, die jede Website kennen sollte (2026)",
+    d: "Von Planet49 bis VG Hannover: Was deutsche Gerichte zu Cookie-Bannern, „Alles ablehnen“, Google Fonts und Abmahnungen entschieden haben — mit Checkliste für Ihre Website.",
+    lead: "„Alles ablehnen“ auf der ersten Ebene, kein Häkchen voreingestellt, kein Google Fonts ohne Einwilligung: Was heute für Cookie-Banner gilt, haben vor allem Gerichte festgelegt. Hier sind die acht Entscheidungen, die man kennen sollte — und was sie für Ihre Website bedeuten.",
+    date: "Oktober 2026", iso: "2026-10-29",
+    blocks: [
+      ["p", "Kaum ein Element einer Website ist so umstritten wie das Cookie-Banner. Es nervt Besucher, es kostet Betreiber Daten — und trotzdem ist es bei vielen Websites rechtlich falsch gebaut. Das Gesetz selbst sagt nur wenig darüber, wie ein Banner aussehen muss. Die Details haben Gerichte in den letzten Jahren entschieden, Stück für Stück."],
+      ["p", "Wir prüfen Websites von kleinen und mittleren Unternehmen auf genau diese Punkte. Die Fehler wiederholen sich, und fast jeder davon ist schon einmal vor Gericht gelandet. Deshalb lohnt sich der Blick auf die Urteile."],
+
+      ["h2", "Kurz zusammengefasst"],
+      ["check", [
+        "Nicht notwendige Cookies und Tracking erst **nach** einer aktiven Einwilligung — vorher wird nichts geladen.",
+        "Keine voreingestellten Häkchen. Schweigen oder Weitersurfen ist keine Einwilligung.",
+        "„Alles ablehnen“ muss **auf der ersten Ebene** stehen und so leicht sein wie „Alles akzeptieren“.",
+        "Das „X“ zum Schließen darf nicht heimlich „Akzeptieren“ bedeuten.",
+        "Google Fonts, Google Maps, YouTube, Tag Manager, Analytics und Pixel brauchen eine Einwilligung — oder eine datensparsame Alternative.",
+        "Abmahnen dürfen nicht nur Betroffene, sondern seit 2025 ausdrücklich auch **Mitbewerber und Verbraucherverbände**."
+      ]],
+
+      ["h2", "Die Rechtslage in zwei Sätzen"],
+      ["p", "Für Cookies und ähnliche Technologien gilt in Deutschland **§ 25 TDDDG** (bis Mai 2024 hieß das Gesetz TTDSG): Wer Informationen auf dem Gerät eines Besuchers speichert oder ausliest, braucht dafür eine Einwilligung — außer, es ist unbedingt erforderlich für den Dienst, den der Besucher ausdrücklich angefordert hat. Wie eine wirksame Einwilligung aussieht, bestimmt die **DSGVO**: freiwillig, informiert, für einen bestimmten Zweck und durch eine eindeutige, aktive Handlung (Art. 4 Nr. 11, Art. 7 DSGVO)."],
+      ["p", "Alles Weitere — welche Buttons, auf welcher Ebene, in welcher Farbe — steht in keinem Gesetz. Das haben die folgenden Gerichte entschieden."],
+
+      ["h2", "Die 8 wichtigsten Urteile"],
+
+      ["h3", "1. EuGH und BGH „Planet49“ (2019/2020): Vorausgefüllte Häkchen sind keine Einwilligung"],
+      ["p", "Ein Gewinnspielanbieter hatte das Kästchen für Werbe-Cookies schon angekreuzt. Der Gerichtshof der EU entschied am 1. Oktober 2019 (C-673/17): Ein voreingestelltes Häkchen, das der Nutzer abwählen müsste, ist keine wirksame Einwilligung. Der Bundesgerichtshof übernahm das am 28. Mai 2020 (I ZR 7/16, „Cookie-Einwilligung II“) für das deutsche Recht."],
+      ["p", "**Für Ihre Website:** Alle optionalen Kategorien im Banner — Statistik, Marketing, Komfort — müssen standardmäßig **aus** sein."],
+
+      ["h3", "2. LG Rostock (2020): Ein „OK“-Button und versteckte Ablehnung reichen nicht"],
+      ["p", "Der Verbraucherzentrale Bundesverband klagte gegen ein Anwaltssuchportal. Dessen Banner hatte Statistik- und Marketing-Cookies vorausgewählt und nur einen Button „OK“; eine spätere Version bot einen großen grünen Button „Cookies zulassen“, während die Option für nur notwendige Cookies kaum als klickbar zu erkennen war. Das LG Rostock (15.09.2020, 3 O 762/19) hielt beides für unwirksam."],
+      ["p", "**Für Ihre Website:** Eine Ablehnung, die man suchen muss, ist rechtlich so gut wie keine Ablehnung."],
+
+      ["h3", "3. LG München I (2022): 100 Euro wegen Google Fonts"],
+      ["p", "Eine Website lud Schriftarten dynamisch von Googles Servern. Dabei wurde die IP-Adresse jedes Besuchers an Google übertragen — ohne Einwilligung. Das LG München I (20.01.2022, 3 O 17493/20) sprach einem Besucher 100 Euro Schadensersatz zu und untersagte die Übertragung."],
+      ["p", "Das Urteil löste 2022 eine Welle von Massenabmahnungen aus. Tausende Website-Betreiber erhielten Schreiben mit Zahlungsaufforderungen."],
+
+      ["h3", "4. LG München I (2023): Die Abmahnwelle war rechtsmissbräuchlich — das Problem bleibt"],
+      ["p", "Ein Jahr später stellte das LG München I (30.03.2023, 4 O 13063/22) klar: Wer mit einem Crawler gezielt Websites mit Google Fonts sucht, um daraus Ansprüche zu machen, handelt rechtsmissbräuchlich und hat keinen Anspruch auf Schadensersatz. Gegen die Initiatoren der Abmahnwelle wurde auch strafrechtlich ermittelt."],
+      ["p", "**Für Ihre Website:** Massenabmahnungen sind nicht automatisch berechtigt — aber die Pflicht dahinter besteht weiter. Schriften selbst zu hosten kostet nichts und beendet das Thema dauerhaft."],
+
+      ["h3", "5. OLG Köln (2024): „Ablehnen“ muss gleichwertig sein — und das „X“ ist kein Ja"],
+      ["p", "Die Verbraucherzentrale NRW klagte gegen wetteronline.de. Auf der ersten Ebene des Banners gab es keine Ablehnungsoption; die zweite Ebene bot nur „Alles akzeptieren“ und „Speichern“. Oben rechts stand ein Link „Akzeptieren & Schließen X“. Das OLG Köln (19.01.2024, 6 U 80/23) entschied: Die Einwilligung war weder freiwillig noch ausreichend informiert. Besucher kennen das „X“ als Schließen-Symbol — dass es zugleich eine Einwilligung auslöst, ist irreführend."],
+      ["p", "**Für Ihre Website:** Kein Kombi-Button aus Schließen und Akzeptieren. Wer das Banner wegklickt, hat nicht eingewilligt."],
+
+      ["h3", "6. BGH (2024): Schon der Kontrollverlust über Daten ist ein Schaden"],
+      ["p", "Im Facebook-Scraping-Verfahren entschied der BGH am 18.11.2024 (VI ZR 10/24): Bereits der kurzzeitige Verlust der Kontrolle über personenbezogene Daten kann ein immaterieller Schaden nach Art. 82 DSGVO sein — ein Missbrauch der Daten muss nicht nachgewiesen werden. Als Größenordnung nannte das Gericht für den konkreten Fall rund 100 Euro."],
+      ["p", "**Für Ihre Website:** Der Fall betraf kein Cookie-Banner. Er senkt aber die Hürde für Schadensersatzforderungen allgemein — auch wegen Tracking ohne Einwilligung."],
+
+      ["h3", "7. BGH (2025): Mitbewerber und Verbände dürfen abmahnen"],
+      ["p", "Lange war umstritten, ob Konkurrenten Datenschutzverstöße abmahnen dürfen. Nach dem EuGH-Urteil „Lindenapotheke“ (04.10.2024, C-21/23) entschied der BGH am 27. März 2025 (I ZR 186/17, I ZR 222/19, I ZR 223/19): Verbraucherschutzverbände und Mitbewerber können DSGVO-Verstöße mit einer wettbewerbsrechtlichen Klage verfolgen."],
+      ["p", "**Für Ihre Website:** Das Risiko kommt nicht mehr nur von Besuchern oder der Aufsichtsbehörde, sondern auch von der Konkurrenz."],
+
+      ["h3", "8. VG Hannover (2025): „Alles ablehnen“ gehört auf die erste Ebene"],
+      ["p", "Die Datenschutzbehörde Niedersachsen hatte einem Medienunternehmen aufgegeben, sein Banner umzubauen. Dort gab es auf der ersten Ebene nur „Alle akzeptieren“ und „Einstellungen“; ablehnen ging erst eine Ebene tiefer. Das VG Hannover (19.03.2025, 10 A 5385/22) wies die Klage des Unternehmens ab. Ablehnen muss so einfach sein wie Zustimmen. Wer das Banner bei jedem Besuch erneut zeigt, bis der Nutzer nachgibt, übt unzulässigen Druck aus. Und auch der **Google Tag Manager** selbst braucht eine Einwilligung, weil er für den angeforderten Dienst nicht unbedingt erforderlich ist."],
+      ["p", "**Für Ihre Website:** Zwei gleichwertige Buttons auf der ersten Ebene — „Alles akzeptieren“ und „Alles ablehnen“ — plus „Einstellungen“. Und der Tag Manager lädt erst nach der Einwilligung."],
+
+      ["h2", "Checkliste: So prüfen Sie Ihr Cookie-Banner"],
+      ["p", "Öffnen Sie Ihre Website in einem privaten Browserfenster und gehen Sie diese Punkte durch:"],
+      ["check", [
+        "Werden **vor** einem Klick im Banner Anfragen an Google, Meta, YouTube oder andere Dritte gesendet? (Entwicklertools → Netzwerk.) Wenn ja: Fehler.",
+        "Stehen „Alles akzeptieren“ und „Alles ablehnen“ **gleich groß und gleich auffällig** auf der ersten Ebene?",
+        "Sind in den Einstellungen alle optionalen Kategorien **standardmäßig deaktiviert**?",
+        "Schließt das „X“ das Banner, ohne eine Einwilligung zu erteilen?",
+        "Nennt das Banner Zwecke, Empfänger und eventuelle Übermittlungen in Drittländer — oder verlinkt es direkt dorthin?",
+        "Kann man die Einwilligung jederzeit genauso leicht **widerrufen**, etwa über einen Link im Footer?",
+        "Bleiben Impressum und Datenschutzerklärung erreichbar, solange das Banner offen ist?",
+        "Wird eine Ablehnung **gespeichert**, statt das Banner bei jedem Seitenaufruf erneut zu zeigen?",
+        "Stimmt die Datenschutzerklärung mit den Diensten überein, die tatsächlich laden?"
+      ]],
+
+      ["h2", "Die häufigsten Fehler auf deutschen Websites"],
+      ["ul", [
+        "**Google Fonts vom Google-Server** statt lokal eingebunden.",
+        "**Google Maps und YouTube direkt eingebettet** — sie setzen beim Laden der Seite Cookies und kontaktieren Google. Ein „Zum Laden klicken“-Platzhalter löst das.",
+        "**Google Analytics, Meta Pixel oder der Tag Manager feuern sofort**, und das Banner ist nur Dekoration.",
+        "**Ein Baukasten-Banner mit Standardeinstellungen**, das nie an die eigene Website angepasst wurde.",
+        "**„Nur notwendige Cookies“ als grauer Textlink**, „Alle akzeptieren“ als großer farbiger Button."
+      ]],
+
+      ["h2", "Was ist mit EinwV und Digital Omnibus?"],
+      ["p", "Zwei Entwicklungen versprechen weniger Banner — ändern heute aber wenig:"],
+      ["ul", [
+        "**Einwilligungsverwaltungsverordnung (EinwV).** Seit dem 1. April 2025 können anerkannte Dienste Einwilligungen zentral verwalten, etwa im Browser. Die Einbindung ist für Website-Betreiber freiwillig (§ 18 Abs. 1 EinwV), und bis Mai 2025 lagen der Bundesdatenschutzbeauftragten noch keine Anträge auf Anerkennung vor. Ihr Banner ersetzt das vorerst nicht.",
+        "**Digital Omnibus der EU.** Die Kommission hat im November 2025 vorgeschlagen, die Cookie-Regeln in die DSGVO zu verschieben, einige Zwecke von der Einwilligung auszunehmen und Browsersignale verbindlich zu machen. Stand Oktober 2026 ist der Vorschlag nicht beschlossen: Parlament und Rat haben noch keine Positionen verabschiedet. Bis eine Einigung in Kraft tritt, gilt § 25 TDDDG unverändert."
+      ]],
+
+      ["h2", "Die eleganteste Lösung: gar kein Banner brauchen"],
+      ["p", "Ein Cookie-Banner ist nur nötig, wenn Ihre Website Dinge tut, die eine Einwilligung erfordern. Viele Unternehmenswebsites brauchen das gar nicht: Schriften lokal hosten, Karten und Videos erst nach Klick laden, eine cookielose Statistik statt Google Analytics verwenden — und das Banner entfällt."],
+      ["p", "Unsere eigene Website lexoradigital.com funktioniert genau so: keine Cookies, keine Tracker, kein Banner. Das ist keine Verzichtserklärung, sondern eine Designentscheidung — schneller für Besucher, sauberer im Recht."],
+
+      ["h2", "Häufige Fragen"],
+      ["h3", "Ist ein „Alles ablehnen“-Button Pflicht?"],
+      ["p", "Das Gesetz nennt keinen Button. Nach dem OLG Köln (2024) und dem VG Hannover (2025) muss das Ablehnen aber so einfach sein wie das Zustimmen — in der Praxis bedeutet das einen gleichwertigen „Alles ablehnen“-Button auf der ersten Ebene."],
+      ["h3", "Brauche ich ein Cookie-Banner, wenn ich nur technisch notwendige Cookies nutze?"],
+      ["p", "Für unbedingt erforderliche Cookies — etwa für einen Warenkorb oder einen Login — brauchen Sie keine Einwilligung und damit auch kein Einwilligungsbanner. In der Datenschutzerklärung müssen Sie diese Cookies trotzdem beschreiben."],
+      ["h3", "Was kostet ein Fehler im Cookie-Banner?"],
+      ["p", "Bußgelder gegen kleine Unternehmen sind selten. Realistischer sind Abmahnungen von Mitbewerbern oder Verbänden mit Anwaltskosten, Unterlassungserklärungen und Forderungen von Besuchern nach Schadensersatz — oft um die 100 Euro pro Fall, bei vielen Fällen schnell mehr."],
+      ["h3", "Ist mein Banner sicher, wenn ich ein bekanntes Consent-Tool verwende?"],
+      ["p", "Nicht automatisch. In den Fällen des OLG Köln und des VG Hannover lag das Problem in der Konfiguration: welche Buttons auf welcher Ebene stehen und was vor der Einwilligung lädt. Entscheidend ist, wie das Tool auf Ihrer Website eingestellt ist."],
+
+      ["note", "Unsicher, ob Ihr Banner diesen Urteilen standhält? Wir prüfen Ihre Website technisch — was vor der Einwilligung lädt, wie das Banner aufgebaut ist — und **beheben die Fehler direkt**, statt nur einen Bericht zu schreiben."]
+    ],
+    sources: [
+      ["§ 25 TDDDG (gesetze-im-internet.de)", "https://www.gesetze-im-internet.de/ttdsg/__25.html"],
+      ["EuGH, Planet49, C-673/17 (2019)", "https://curia.europa.eu/juris/liste.jsf?num=C-673/17"],
+      ["BGH, Cookie-Einwilligung II, I ZR 7/16 (2020) — Noerr", "https://www.noerr.com/de/insights/kurzinfo-zu-bgh-entscheidung-voreingestellte-einwilligungen"],
+      ["LG Rostock, 3 O 762/19 (2020) — beck-aktuell", "https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/lg-rostock-tracking-cookies-mit-voreingestellter-einwilligung-nicht-erlaubt-2020-11-26"],
+      ["LG München I, 3 O 17493/20 (2022) — IHK", "https://www.ihk.de/bergische/recht-und-steuern/wettbewerbsrecht/google-fonts-5646176"],
+      ["LG München I, 4 O 13063/22 (2023) — Der Betrieb", "https://der-betrieb.de/meldungen/google-fonts-abmahnwelle-war-rechtsmissbraeuchlich"],
+      ["OLG Köln, 6 U 80/23 (2024) — Urteil (PDF, Verbraucherzentrale NRW)", "https://www.verbraucherzentrale.nrw/sites/default/files/2024-01/olg-koln-vom-19.01.2024_6-u-80_23_geschwarzt.pdf"],
+      ["BGH, VI ZR 10/24 (2024) — CURIA", "https://curia.europa.eu/site/jcms/p1_1000048773/de/bundesgerichtshof-urteil-vom-18-november-2024-vi-zr-10/24"],
+      ["BGH, I ZR 186/17 u. a. (2025) — Dr. Datenschutz", "https://www.dr-datenschutz.de/bgh-ermoeglicht-leichtere-abmahnung-von-datenschutzverstoessen/"],
+      ["VG Hannover, 10 A 5385/22 (2025) — WBS Legal", "https://www.wbs.legal/it-und-internet-recht/datenschutzrecht/vg-hannover-zu-einwilligungsbutton-cookie-banner-brauchen-alles-ablehnen-schaltflaeche-82973/"],
+      ["Einwilligungsverwaltungsverordnung (EinwV)", "https://www.gesetze-im-internet.de/einwv/"],
+      ["Europäische Kommission — Digital Omnibus", "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-regulation-proposal"]
+    ]
+  },
+
+  {
     slug: "gdpr-website-legal-document",
     tag: "DSGVO",
     t: "Ihre Website ist bereits ein Rechtsdokument",
