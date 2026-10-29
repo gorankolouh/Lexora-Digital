@@ -1,12 +1,127 @@
 // Journal-artikelen — Nederlands
 export default [
   {
+    slug: "cookiebanner-regels-ap",
+    tag: "Cookies",
+    cta: "check",
+    t: "Cookiebanner-regels 2026: wat de AP nu controleert",
+    d: "De Autoriteit Persoonsgegevens waarschuwt organisaties en start onderzoeken naar misleidende cookiebanners. De regels, de boetes, recente uitspraken en een checklist voor uw website.",
+    lead: "Een weigerknop direct naast „Accepteren”, niets vooraf aangevinkt, geen tracking vóór toestemming: de Autoriteit Persoonsgegevens controleert cookiebanners nu structureel. Dit zijn de regels, de boetes en de uitspraken die u moet kennen — en wat u doet als er een brief komt.",
+    date: "oktober 2026", iso: "2026-10-29",
+    blocks: [
+      ["p", "In oktober 2026 maakte de Autoriteit Persoonsgegevens (AP) bekend dat zij twee organisaties onderzoekt die hun misleidende cookiebanner niet aanpasten — ondanks uitleg en een waarschuwing. In de maanden daarvoor had de AP al ongeveer honderd organisaties gewaarschuwd, onder meer in de media, de zorg en de verzekeringssector."],
+      ["p", "Dat is geen incident, maar een plan. De AP controleert cookiebanners sinds 2024 veel vaker en wil de komende jaren duizenden organisaties langs. De kans dat ook uw website een keer wordt bekeken, is dus reëel. Het goede nieuws: de regels zijn helder, en de meeste fouten zijn met een middag werk te verhelpen."],
+
+      ["h2", "Kort samengevat"],
+      ["check", [
+        "Een **weigerknop direct zichtbaar naast de knop „Accepteren”** — even groot, even duidelijk, op dezelfde laag.",
+        "Geen vooraf aangevinkte vakjes. „Door verder te surfen gaat u akkoord” is geen toestemming.",
+        "Tracking cookies en pixels laden pas **na** toestemming — niet eerst plaatsen en daarna pas vragen.",
+        "Geen cookiewall: wie weigert, moet de website gewoon kunnen gebruiken.",
+        "Toestemming intrekken moet even makkelijk zijn als geven.",
+        "Na een waarschuwing van de AP heeft u ongeveer **drie maanden**. Daarna volgt mogelijk een onderzoek en een boete."
+      ]],
+
+      ["h2", "De regels in twee zinnen"],
+      ["p", "Voor cookies en vergelijkbare technieken geldt in Nederland **artikel 11.7a van de Telecommunicatiewet**: wie informatie op het apparaat van een bezoeker plaatst of uitleest, heeft daarvoor toestemming nodig. Wat geldige toestemming is, bepaalt de **AVG**: vrij, specifiek, geïnformeerd en door een actieve handeling."],
+      ["p", "Er is een belangrijk Nederlands verschil met bijvoorbeeld Duitsland: voor **functionele cookies** en voor **analytische cookies met weinig gevolgen voor de privacy** van bezoekers is geen toestemming nodig. U moet bezoekers er wel over informeren, bijvoorbeeld in uw privacyverklaring. Voor tracking cookies — die gedrag volgen, profielen opbouwen of gegevens met advertentieplatforms delen — is toestemming altijd nodig."],
+
+      ["h2", "Wat de AP sinds 2024 doet"],
+      ["ul", [
+        "**2024:** de AP kondigt meer controles aan, na klachten over cookies zonder toestemming en misleidende banners. Vijf organisaties worden onderzocht.",
+        "**April 2025:** de AP publiceert regels voor duidelijke cookiebanners, waarschuwt de eerste vijftig organisaties en kondigt aan structureel te controleren — zo'n 500 organisaties per jaar, uiteindelijk ongeveer 10.000. Wie na een waarschuwing binnen drie maanden niets aanpast, riskeert een onderzoek en een boete.",
+        "**Oktober 2026:** ongeveer honderd organisaties zijn inmiddels gewaarschuwd. Zo'n 70% past de banner daarna aan. Twee organisaties die dat niet deden — hun banner heeft geen direct zichtbare weigerknop — worden nu onderzocht."
+      ]],
+      ["p", "De AP noemt als misleidend onder meer: vooraf aangevinkte vakjes, extra klikken die nodig zijn om te weigeren, en opties die verstopt worden."],
+
+      ["h2", "De boetes: Coolblue en Kruidvat"],
+      ["p", "Hoe het afloopt als een waarschuwing wordt genegeerd, laten twee bekende webwinkels zien. Beide zaken begonnen eind 2019 met een brief van de AP."],
+      ["h3", "Coolblue: € 40.000"],
+      ["p", "Coolblue behandelde in 2020 het gebruik van de website als toestemming, liet bezoekers niet actief kiezen en had vakjes voor cookies vooraf aangevinkt. Na een waarschuwing in november 2019 bleek in het voorjaar van 2020 dat de site nog steeds niet voldeed. In december 2024 legde de AP een boete op van € 40.000."],
+      ["h3", "Kruidvat (A.S. Watson): € 600.000, na bezwaar € 50.000"],
+      ["p", "Op kruidvat.nl werden tracking cookies geplaatst zonder geldige toestemming. Vakjes waren vooraf aangevinkt en weigeren kostte veel moeite. Dat woog extra zwaar omdat de webwinkel ook producten als zwangerschapstesten verkoopt. De AP legde in 2024 een boete op van € 600.000. Na bezwaar verlaagde de AP die in mei 2025 tot € 50.000, onder meer omdat de procedure onnodig lang had geduurd."],
+      ["p", "**De les:** de boete kwam niet voor de eerste fout, maar omdat de fout na de waarschuwing bleef bestaan. Precies dat patroon — eerst een brief, dan drie maanden, dan een onderzoek — hanteert de AP nu op grote schaal."],
+
+      ["h2", "Recente uitspraken van Nederlandse rechters"],
+      ["h3", "Rechtbank Amsterdam, 12 februari 2025: Microsoft en Xandr"],
+      ["p", "Twee internetgebruikers spanden een kort geding aan tegen Microsoft en dochterbedrijf Xandr. Die plaatsten via websites van anderen tracking cookies en controleerden pas daarna of er toestemming was. De rechter (ECLI:NL:RBAMS:2025:885) verbood dat, met een dwangsom van € 500 per overtreding tot maximaal € 50.000 per bedrijf. Eerst plaatsen en later checken mag niet. De bedrijven konden zich ook niet verschuilen achter de websites waarop de cookies werden geplaatst."],
+      ["h3", "Rechtbank Rotterdam, 19 november 2025: Criteo"],
+      ["p", "Advertentiebedrijf Criteo plaatste via partnerwebsites tracking cookies zonder geldige toestemming. De rechtbank (ECLI:NL:RBROT:2025:14138) oordeelde dat dit onrechtmatig was en bevestigde een eerder verbod van het Gerechtshof Amsterdam. Criteo blijft verantwoordelijk, ook voor fouten bij partners. De gevraagde immateriële schadevergoeding wees de rechter wel af: een „onbehaaglijk gevoel” is niet genoeg, er moet concrete schade worden aangetoond."],
+      ["p", "**Voor uw website:** deze zaken gingen over grote advertentieplatforms, maar hun cookies laden op gewone websites. Rechters verwachten dat tracking **technisch geblokkeerd** is tot er toestemming is. Een banner die alleen een melding toont terwijl de pixels al draaien, voldoet niet."],
+
+      ["h2", "Checklist: zo controleert u uw cookiebanner"],
+      ["p", "Open uw website in een privévenster en loop deze punten na:"],
+      ["check", [
+        "Staat er een **weigerknop direct naast „Accepteren”**, even groot en even opvallend, op de eerste laag van de banner?",
+        "Worden er **vóór** een keuze verzoeken verstuurd naar Google, Meta, TikTok, LinkedIn of andere partijen? (Ontwikkelaarstools → Netwerk.) Zo ja: niet in orde.",
+        "Zijn alle optionele categorieën in de instellingen **standaard uitgeschakeld**?",
+        "Kunnen bezoekers die weigeren de website **gewoon gebruiken** (geen cookiewall)?",
+        "Vermeldt de banner welke gegevens u verzamelt, waarom, met wie u ze deelt en hoe lang u ze bewaart — of linkt hij daar direct naar?",
+        "Kan een bezoeker zijn toestemming **net zo makkelijk intrekken**, bijvoorbeeld via een link in de footer?",
+        "Is uw statistiekentool **privacyvriendelijk ingesteld**, of vraagt u er toestemming voor?",
+        "Wordt een weigering **onthouden**, in plaats van de banner bij elke pagina opnieuw te tonen?",
+        "Klopt uw privacyverklaring met de diensten die echt laden?"
+      ]],
+
+      ["h2", "Brief van de AP ontvangen? Zo pakt u het aan"],
+      ["ul", [
+        "**Neem het serieus, maar raak niet in paniek.** Een waarschuwing is nog geen boete. Ongeveer 70% van de organisaties lost het daarna op, en daarmee is de zaak meestal klaar.",
+        "**Gebruik de drie maanden.** Laat de banner én de techniek erachter controleren: wat laadt er vóór toestemming, en waar staat de weigerknop?",
+        "**Pas de techniek aan, niet alleen de tekst.** Een nieuwe banner helpt niet als de Meta-pixel nog steeds direct afgaat.",
+        "**Leg vast wat u heeft gedaan.** Bewaar schermafbeeldingen vóór en na, en noteer welke tools u heeft aangepast of verwijderd.",
+        "**Controleer ook uw privacyverklaring.** Die moet passen bij de nieuwe situatie."
+      ]],
+
+      ["h2", "Veelgemaakte fouten op Nederlandse websites"],
+      ["ul", [
+        "**Alleen „Akkoord” en „Instellingen”** op de eerste laag — weigeren kan pas na extra klikken.",
+        "**Weigeren als grijze tekstlink**, accepteren als grote gekleurde knop.",
+        "**Meta-pixel, Google Ads of TikTok-pixel laden direct**, en de banner is alleen decoratie.",
+        "**YouTube-video's en Google Maps rechtstreeks ingesloten**, waardoor ze bij het laden van de pagina al cookies plaatsen. Een „klik om te laden”-placeholder lost dat op.",
+        "**Schuifjes voor „gerechtvaardigd belang”** die standaard aan staan. Voor tracking cookies vereist de Telecommunicatiewet toestemming; een gerechtvaardigd belang vervangt die niet.",
+        "**Een standaard cookietool** die nooit is afgestemd op de eigen website."
+      ]],
+
+      ["h2", "En de Europese Digital Omnibus?"],
+      ["p", "De Europese Commissie stelde in november 2025 voor om de cookieregels naar de AVG te verplaatsen, sommige doelen van toestemming uit te zonderen en browsersignalen verplicht te maken. Stand oktober 2026 is dat voorstel niet aangenomen: Parlement en Raad hebben nog geen standpunt vastgesteld. Tot er een akkoord is én in werking treedt, gelden artikel 11.7a Telecommunicatiewet en de AVG onveranderd — en blijft de AP gewoon controleren."],
+
+      ["h2", "De beste cookiebanner is er geen"],
+      ["p", "Een cookiebanner is alleen nodig als uw website dingen doet waarvoor toestemming vereist is. In Nederland is de lat daarvoor relatief duidelijk: met functionele cookies, privacyvriendelijke statistieken, zelf gehoste lettertypen en video's en kaarten die pas na een klik laden, heeft veel bedrijfswebsites helemaal geen toestemmingsbanner nodig."],
+      ["p", "Onze eigen website lexoradigital.com werkt zo: geen cookies, geen trackers, geen banner. Dat is geen beperking, maar een ontwerpkeuze — sneller voor bezoekers en zonder risico bij een controle."],
+
+      ["h2", "Veelgestelde vragen"],
+      ["h3", "Is een weigerknop in de cookiebanner verplicht?"],
+      ["p", "De wet noemt geen knop, maar weigeren moet even makkelijk zijn als accepteren. De AP verwacht daarom een direct zichtbare weigerknop naast de knop om te accepteren. Het ontbreken daarvan is precies de reden voor de onderzoeken van oktober 2026."],
+      ["h3", "Heb ik toestemming nodig voor Google Analytics?"],
+      ["p", "Voor analytische cookies met weinig gevolgen voor de privacy is in Nederland geen toestemming nodig. Dat geldt alleen als de tool privacyvriendelijk is ingesteld — bijvoorbeeld zonder gegevens te delen voor advertenties. Twijfelt u, of gebruikt u de gegevens ook voor marketing? Vraag dan toestemming, of kies een cookieloze statistiekentool."],
+      ["h3", "Hoe hoog is de boete voor een foute cookiebanner?"],
+      ["p", "De bekende cookieboetes lagen tussen € 40.000 en € 600.000. De AP beboet meestal pas na een waarschuwing en een termijn om het op te lossen. Daarnaast lopen grote advertentiebedrijven civiele procedures, met dwangsommen tot € 50.000."],
+      ["h3", "Mag ik een cookiewall gebruiken?"],
+      ["p", "Nee. Een cookiewall die bezoekers de toegang weigert of de site onbruikbaar maakt als zij tracking cookies weigeren, is niet toegestaan."],
+
+      ["note", "Twijfelt u of uw cookiebanner een controle van de AP doorstaat? Wij controleren uw website technisch — wat er laadt vóór toestemming en hoe de banner is opgebouwd — en **lossen de fouten direct op**, in plaats van alleen een rapport te sturen."]
+    ],
+    sources: [
+      ["Autoriteit Persoonsgegevens — AP onderzoekt websites vanwege misleidende cookiebanner (2026)", "https://autoriteitpersoonsgegevens.nl/actueel/ap-onderzoekt-websites-vanwege-misleidende-cookiebanner"],
+      ["Security Management — AP onderzoekt misleidende cookiebanners na eerdere waarschuwing (21-10-2026)", "https://www.securitymanagement.nl/ap-onderzoekt-misleidende-cookiebanners-na-eerdere-waarschuwing/"],
+      ["Pinsent Masons — Dutch DPA targets misleading cookie banners (april 2025, EN)", "https://www.pinsentmasons.com/out-law/news/dutch-data-protection-authority-misleading-cookie-banners"],
+      ["Ondernemersplein (KVK) — Gebruik van cookies op uw website", "https://ondernemersplein.overheid.nl/wetten-en-regels/gebruik-van-cookies-op-uw-website/"],
+      ["NL Times — Coolblue fined €40,000 (december 2024, EN)", "https://nltimes.nl/2024/12/29/coolblue-fined-eu40000-unlawful-data-collection-via-cookies"],
+      ["PPC Land — AP verlaagt boete A.S. Watson tot € 50.000 (2025, EN)", "https://ppc.land/dutch-regulator-reduces-as-watson-fine-to-eu50-000-for-cookie-violations/"],
+      ["Rechtbank Amsterdam, ECLI:NL:RBAMS:2025:885 (Microsoft/Xandr)", "https://deeplink.rechtspraak.nl/uitspraak?id=ECLI:NL:RBAMS:2025:885"],
+      ["IT en Recht — Rechtbank Rotterdam, Criteo, ECLI:NL:RBROT:2025:14138", "https://www.itenrecht.nl/artikelen/criteo-handelde-onrechtmatig-door-tracking-cookies-zonder-toestemming-te-plaatsen"],
+      ["Telecommunicatiewet, artikel 11.7a (wetten.overheid.nl)", "https://wetten.overheid.nl/jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a"],
+      ["Europese Commissie — Digital Omnibus", "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-regulation-proposal"]
+    ]
+  },
+
+  {
     slug: "gdpr-website-legal-document",
     tag: "AVG",
     t: "Uw website is al een juridisch document",
     d: "De AVG en de cookieregels zijn geen banner die u aan het eind toevoegt. Het zijn ontwerpbeslissingen — en die neemt u het goedkoopst vóór de eerste regel code.",
     lead: "De AVG en de cookieregels zijn geen banner die u aan het eind toevoegt. Het zijn ontwerpbeslissingen — en die neemt u het goedkoopst vóór de eerste regel code.",
-    date: "Oktober 2026", iso: "2026-10-18",
+    date: "oktober 2026", iso: "2026-10-18",
     blocks: [
       ["p", "De meeste websites die ik controleer, voldoen niet aan de regels omdat het recht als laatste kwam — niet omdat de eigenaars er niet om geven. Het ontwerp werd goedgekeurd, de ontwikkelaar bouwde het, de site ging live — en toen dacht iemand aan de cookiebanner en plakte er een bovenop."],
       ["p", "Die volgorde is het probleem. Tegen de tijd dat de banner komt, laden de lettertypen al van een server in een ander land, plaatst de kaart al cookies en draait het analysescript al voordat iemand ergens op heeft geklikt. De banner wordt een decoratie over beslissingen die zonder hem zijn genomen."],
@@ -76,7 +191,7 @@ export default [
     t: "De Digital Services Act gaat niet alleen over Big Tech",
     d: "De krantenkoppen gaan over recordboetes voor wereldwijde platforms. Maar de DSA bepaalt ook wat er gebeurt als uw bedrijf reviews host, op een marktplaats verkoopt of een geblokkeerd account heeft.",
     lead: "De krantenkoppen gaan over recordboetes voor wereldwijde platforms. Maar de DSA bepaalt ook wat er gebeurt als uw bedrijf reviews host, op een marktplaats verkoopt — of wakker wordt met een geblokkeerd account.",
-    date: "Oktober 2026", iso: "2026-10-18",
+    date: "oktober 2026", iso: "2026-10-18",
     blocks: [
       ["p", "In december 2025 legde de Europese Commissie X een boete op van € 120 miljoen op grond van de Digital Services Act. In juli 2026 kreeg AliExpress € 550 miljoen boete omdat het illegale en onveilige producten niet goed aanpakte. Wie alleen de koppen leest, denkt dat de DSA een wet is over een handvol reuzen."],
       ["p", "Dat is hij niet. De reuzen dragen de zwaarste verplichtingen, maar de DSA is in lagen opgebouwd — en sommige lagen raken gewone bedrijven op twee heel verschillende manieren: als **aanbieder** van een digitale dienst en als **gebruiker** van de platforms waarvan ze afhankelijk zijn."],
@@ -136,7 +251,7 @@ export default [
     t: "Uw chatbot moet zeggen dat hij een chatbot is",
     d: "De transparantieregels van de AI-verordening gelden sinds 2 augustus 2026. Wat de Digital Omnibus heeft uitgesteld, wat niet — en wat een bedrijfswebsite nu moet inbouwen.",
     lead: "De transparantieregels van de AI-verordening gelden sinds 2 augustus 2026. Wat de Digital Omnibus heeft uitgesteld, wat niet — en wat een bedrijfswebsite nu moet inbouwen.",
-    date: "Oktober 2026", iso: "2026-10-18",
+    date: "oktober 2026", iso: "2026-10-18",
     blocks: [
       ["p", "Veel bedrijven hoorden deze zomer vooral één ding over de AI-verordening: „ze is uitgesteld”. Dat is maar half waar. De Digital Omnibus, in juni aangenomen en sinds eind juli 2026 van kracht, stelde de regels voor AI-systemen met een **hoog risico** uit. De regels die een gewone bedrijfswebsite het meest raken, stelde hij niet uit."],
       ["p", "Heeft uw site een chatbot, publiceert u AI-gegenereerde beelden of maakt u inhoud met AI, dan gelden de relevante verplichtingen al."],
