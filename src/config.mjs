@@ -12,6 +12,10 @@ export const ORG_PROFILES = [
   "https://www.instagram.com/lexora_digital/",
   "https://www.trustpilot.com/review/lexoradigital.com"
 ];
+export const CONTACT = {
+  phone: "+31 970 1027 9680", tel: "+3197010279680",
+  address: { streetAddress: "Rue Jean Robbie 44", postalCode: "1060", addressLocality: "Saint-Gilles (Brussels)", addressRegion: "Brussels-Capital Region", addressCountry: "BE" }
+};
 export const FOUNDER = {
   name: "Goran Kolouh",
   jobTitle: "Founder & Director",

@@ -454,7 +454,7 @@ export default {
 
     contact: {
       hero: { label: "Kontakt", h1: "Počnimo s *razgovorom.*", lead: "Recite nam što želite postići — web stranicu, provjeru usklađenosti, prijevod ili kreativni projekt. Odgovaramo na Vašem jeziku." },
-      direct: { label: "E-mail", p: "Obično odgovaramo u roku od dva radna dana." },
+      direct: { label: "E-pošta i telefon", p: "Obično odgovaramo u roku od dva radna dana." },
       next: { label: "Što slijedi", steps: [["Čitamo Vašu poruku", "i pitamo ako nešto nije jasno."], ["Predlažemo sljedeći korak", "— kratak razgovor, ponudu ili besplatnu provjeru."], ["Vi odlučujete", "Ništa ne počinje bez Vašeg odobrenja."]] },
       check: { t: "Samo želite znati je li Vaša web stranica usklađena s GDPR-om?", p: "Iskoristite besplatnu GDPR provjeru i provjeru kolačića." }
     },
@@ -584,7 +584,7 @@ export default {
         ["h2", "Pružatelj usluge"],
         ["p", "**Lexora Digital**  \nRue Jean Robbie 44  \n1060 Saint-Gilles (Bruxelles), Belgija  \nZastupa: Goran Kolouh, Osnivač i direktor"],
         ["h2", "Kontakt"],
-        ["p", "Općenito: info@lexoradigital.com  \nZaštita podataka: gdpr@lexoradigital.com  \nOsnivač: kolouh@lexoradigital.com"],
+        ["p", "Telefon: +31 970 1027 9680  \nOpćenito: info@lexoradigital.com  \nZaštita podataka: gdpr@lexoradigital.com  \nOsnivač: kolouh@lexoradigital.com"],
         ["h2", "PDV identifikacijski broj"],
         ["p", "17636920948"],
         ["h2", "Američko društvo"],

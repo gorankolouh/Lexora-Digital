@@ -1,6 +1,6 @@
 // Inner pages — all built from the shared components so every page follows one system.
 import { esc, fmt, path, icon } from "../lib.mjs";
-import { SHOP, SITE_URL } from "../config.mjs";
+import { SHOP, SITE_URL, CONTACT } from "../config.mjs";
 import { articleCard } from "./article.mjs";
 import { pageHero, head, features, steps, faq, band, matrix, disclaimer, table, prose, form, ml, btn, art } from "../components.mjs";
 
@@ -336,7 +336,7 @@ export function about(t) {
 export function contact(t) {
   const p = t.pages.contact;
   const left = `<div class="contact-l">
-      <div class="reveal"><p class="ml plain">${esc(p.direct.label)}</p><p class="cline">${icon("mail", 18, 1.6)} <a href="mailto:info@lexoradigital.com">info@lexoradigital.com</a></p><p class="small dim mails">GDPR: <a href="mailto:gdpr@lexoradigital.com">gdpr@lexoradigital.com</a><br>Goran Kolouh: <a href="mailto:kolouh@lexoradigital.com">kolouh@lexoradigital.com</a></p><p class="small dim">${fmt(p.direct.p)}</p></div>
+      <div class="reveal"><p class="ml plain">${esc(p.direct.label)}</p><p class="cline">${icon("mail", 18, 1.6)} <a href="mailto:info@lexoradigital.com">info@lexoradigital.com</a></p><p class="cline">${icon("phone", 18, 1.6)} <a href="tel:${CONTACT.tel}">${CONTACT.phone}</a></p><p class="small dim mails">GDPR: <a href="mailto:gdpr@lexoradigital.com">gdpr@lexoradigital.com</a><br>Goran Kolouh: <a href="mailto:kolouh@lexoradigital.com">kolouh@lexoradigital.com</a></p><p class="small dim">${fmt(p.direct.p)}</p></div>
       <div class="reveal"><p class="ml plain">${esc(p.next.label)}</p><ol class="mini-steps">${p.next.steps.map(([a, b], i) => `<li><span class="mono">${String(i + 1).padStart(2, "0")}</span><div><b>${esc(a)}</b> <p>${fmt(b)}</p></div></li>`).join("")}</ol></div>
       <a class="checkcard reveal" href="${path(t, "check")}"><span class="ml">${esc(t.nav.check[0])}</span><b>${esc(p.check.t)}</b><span class="small dim">${esc(p.check.p)}</span><span class="go" aria-hidden="true">${icon("arrow", 18, 1.8)}</span></a>
     </div>`;
