@@ -115,6 +115,21 @@ ${ready.map((m) => `    <xhtml:link rel="alternate" hreflang="${m.code}" href="$
   </url>`)).join("\n");
   await write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sm}\n</urlset>\n`);
   await write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+  await pingIndexNow(urls.flatMap(({ alt }) => ready.map((l) => abs(alt(l.code)))));
   console.log(`Built ${urls.length * ready.length} pages in ${codes.join(", ")} → dist/`);
+}
+// IndexNow: tells Bing (and other IndexNow engines) about the site's URLs after each production deploy,
+// so new pages and articles are picked up within hours. Runs only on Vercel production builds; never fails the build.
+const INDEXNOW_KEY = "cdfb9ca7dff0cc5f47308fd2895efa9d"; // public by design — the same key is served at /cdfb9ca7dff0cc5f47308fd2895efa9d.txt
+async function pingIndexNow(urlList) {
+  if (process.env.VERCEL_ENV !== "production") return;
+  try {
+    const res = await fetch("https://api.indexnow.org/indexnow", {
+      method: "POST", headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify({ host: new URL(SITE_URL).host, key: INDEXNOW_KEY, keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`, urlList }),
+      signal: AbortSignal.timeout(15000)
+    });
+    console.log(`IndexNow: submitted ${urlList.length} URLs → HTTP ${res.status}`);
+  } catch (e) { console.log("IndexNow: skipped (" + e.message + ")"); }
 }
 build().catch((e) => { console.error(e); process.exit(1); });
