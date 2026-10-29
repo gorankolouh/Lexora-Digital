@@ -21,11 +21,11 @@ export default {
   },
   meta: {
     home: { title: "Lexora Digital — studio za web, pravo, jezik i dizajn", desc: "Neovisni digitalni studio za web stranice, usklađenost s GDPR-om i pravilima o kolačićima, prijevode i dizajn — za tvrtke diljem Europe, na pet jezika." },
-    web: { title: "Izrada web stranica — Lexora Digital", desc: "Web stranice i landing stranice po mjeri za mala i srednja poduzeća. Osnovna web stranica od 99 €, prilagođena mobitelima, prijateljska prema privatnosti i objavljena na Vašoj domeni." },
-    compliance: { title: "Digitalna usklađenost: GDPR, kolačići i pravila EU-a — Lexora Digital", desc: "Praktična pomoć s GDPR-om, privolom za kolačiće, izjavama o privatnosti i digitalnim pravilima EU-a za poslovne web stranice — informacije i provedba, ne pravni savjet." },
-    check: { title: "Besplatna GDPR provjera i provjera kolačića — ispravak od 99 € | Lexora Digital", desc: "GDPR, Cookies & Co.: besplatna provjera privole, praćenja i pravnih stranica Vaše web stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 €." },
-    language: { title: "Prijevodi s engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — Lexora Digital", desc: "Prijevod web stranica, poslovnih i pravnih tekstova između engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — precizno i prirodno." },
-    creative: { title: "Kreativne usluge: identitet, grafički dizajn i obrada medija — Lexora Digital", desc: "Vizualni identitet, materijali brenda, grafički dizajn te odabrana obrada fotografija, videa, zvuka i glasa za tvrtke." },
+    web: { title: "Izrada web stranica — Lexora Digital", desc: "Web stranice i landing stranice po mjeri za mala i srednja poduzeća. Od 99 €, prilagođene mobitelima, poštuju privatnost i objavljene na Vašoj domeni." },
+    compliance: { title: "Digitalna usklađenost: GDPR i kolačići — Lexora Digital", desc: "Praktična pomoć s GDPR-om, privolom za kolačiće i izjavama o privatnosti za poslovne web stranice — informacije i provedba, ne pravni savjet." },
+    check: { title: "Besplatna provjera GDPR-a i kolačića — Lexora Digital", desc: "GDPR, Cookies & Co.: besplatna provjera privole, praćenja i pravnih stranica Vaše web stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 €." },
+    language: { title: "Prijevodi: engleski, njemački, nizozemski, španjolski, hrvatski", desc: "Prijevod web stranica, poslovnih i pravnih tekstova između engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — precizno i prirodno." },
+    creative: { title: "Kreativne usluge: identitet i grafički dizajn — Lexora Digital", desc: "Vizualni identitet, materijali brenda, grafički dizajn te odabrana obrada fotografija, videa, zvuka i glasa za tvrtke." },
     work: { title: "Radovi — konceptualni projekti | Lexora Digital", desc: "Koncepti web stranica za kozmetiku, obrtnike i autoservise — cjeloviti, prilagodljivi dizajni koji pokazuju kako Lexora Digital radi." },
     journal: { title: "Journal — vodiči o GDPR-u, DSA-u i Aktu o UI | Lexora Digital", desc: "Razumljivi vodiči o europskim pravilima za poslovne web stranice: GDPR i kolačići, Akt o digitalnim uslugama i Akt EU-a o umjetnoj inteligenciji." },
     about: { title: "O nama — Lexora Digital", desc: "Neovisni digitalni studio koji spaja web dizajn, praktično znanje o europskim digitalnim pravilima, prevođenje i kreativni rad." },
@@ -34,8 +34,8 @@ export default {
     cookies: { title: "Politika kolačića — Lexora Digital", desc: "Ova web stranica ne koristi kolačiće za praćenje ni oglašavanje. Ovdje točno piše što se sprema i zašto." },
     imprint: { title: "Impresum — Lexora Digital", desc: "Podaci o pružatelju usluge za lexoradigital.com." },
     shop: {
-      title: "Predlošci za EU usklađenost za Notion, Word i Excel: GDPR, Akt o UI i više — Lexora Digital",
-      desc: "Kitovi spremni za rad za GDPR, EU Akt o umjetnoj inteligenciji, politike korištenja UI na radnom mjestu, transparentnost plaća i provjeru dobavljača — u Notionu ili kao Word, Excel i PDF, na pet jezika."
+      title: "Predlošci za GDPR i Akt o UI za Notion i Word — Lexora Digital",
+      desc: "Kitovi za GDPR, Akt o UI, politike korištenja UI, transparentnost plaća i provjeru dobavljača — u Notionu ili kao Word, Excel i PDF, na pet jezika."
     },
     accessibility: { title: "Izjava o pristupačnosti — Lexora Digital", desc: "Naši ciljevi pristupačnosti za ovu web stranicu, poznata ograničenja i kako nam poslati povratnu informaciju." }
   },

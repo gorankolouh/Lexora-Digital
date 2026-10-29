@@ -6,6 +6,7 @@ export default [
     cta: "check",
     t: "Cookiebanner-regels 2026: wat de AP nu controleert",
     d: "De Autoriteit Persoonsgegevens waarschuwt organisaties en start onderzoeken naar misleidende cookiebanners. De regels, de boetes, recente uitspraken en een checklist voor uw website.",
+    md: "De AP waarschuwt organisaties en onderzoekt misleidende cookiebanners. De regels, boetes, recente uitspraken en een checklist voor uw website.",
     lead: "Een weigerknop direct naast „Accepteren”, niets vooraf aangevinkt, geen tracking vóór toestemming: de Autoriteit Persoonsgegevens controleert cookiebanners nu structureel. Dit zijn de regels, de boetes en de uitspraken die u moet kennen — en wat u doet als er een brief komt.",
     date: "oktober 2026", iso: "2026-10-29",
     blocks: [
@@ -190,6 +191,7 @@ export default [
     tag: "DSA",
     t: "De Digital Services Act gaat niet alleen over Big Tech",
     d: "De krantenkoppen gaan over recordboetes voor wereldwijde platforms. Maar de DSA bepaalt ook wat er gebeurt als uw bedrijf reviews host, op een marktplaats verkoopt of een geblokkeerd account heeft.",
+    md: "De DSA bepaalt ook wat er gebeurt als uw bedrijf reviews host, op een marktplaats verkoopt of een geblokkeerd account heeft. Wat dat betekent.",
     lead: "De krantenkoppen gaan over recordboetes voor wereldwijde platforms. Maar de DSA bepaalt ook wat er gebeurt als uw bedrijf reviews host, op een marktplaats verkoopt — of wakker wordt met een geblokkeerd account.",
     date: "oktober 2026", iso: "2026-10-18",
     blocks: [
@@ -250,6 +252,7 @@ export default [
     tag: "AI Act",
     t: "Uw chatbot moet zeggen dat hij een chatbot is",
     d: "De transparantieregels van de AI-verordening gelden sinds 2 augustus 2026. Wat de Digital Omnibus heeft uitgesteld, wat niet — en wat een bedrijfswebsite nu moet inbouwen.",
+    md: "De transparantieregels van de AI-verordening gelden sinds 2 augustus 2026. Wat de Digital Omnibus uitstelde — en wat uw website nu moet inbouwen.",
     lead: "De transparantieregels van de AI-verordening gelden sinds 2 augustus 2026. Wat de Digital Omnibus heeft uitgesteld, wat niet — en wat een bedrijfswebsite nu moet inbouwen.",
     date: "oktober 2026", iso: "2026-10-18",
     blocks: [

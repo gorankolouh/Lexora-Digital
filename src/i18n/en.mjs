@@ -25,8 +25,8 @@ export default {
     web: { title: "Web Design & Development — Lexora Digital", desc: "Custom websites and landing pages for small and medium-sized businesses. Starter website from €99, responsive, privacy-friendly and launched on your domain." },
     compliance: { title: "Digital Compliance: GDPR, Cookies & EU Rules — Lexora Digital", desc: "Practical help with GDPR, cookie consent, privacy notices and EU digital rules for business websites — information and implementation, not legal advice." },
     check: { title: "Free GDPR & Cookie Check — We Fix It from €99 | Lexora Digital", desc: "GDPR, Cookies & Co.: a free check of your website's consent, tracking and legal pages. If we find issues, we fix them from €99." },
-    language: { title: "Translation Services in English, German, Dutch, Spanish & Croatian — Lexora Digital", desc: "Business, legal and website translation between English, German, Dutch, Spanish and Croatian — with a focus on clear, natural language." },
-    creative: { title: "Creative Services: Identity, Graphics & Media Editing — Lexora Digital", desc: "Visual identity, brand assets, graphic design and selected photo, video, audio and voice editing for businesses." },
+    language: { title: "Translation: English, German, Dutch, Spanish & Croatian", desc: "Business, legal and website translation between English, German, Dutch, Spanish and Croatian — with a focus on clear, natural language." },
+    creative: { title: "Creative Services: Identity & Graphic Design — Lexora Digital", desc: "Visual identity, brand assets, graphic design and selected photo, video, audio and voice editing for businesses." },
     work: { title: "Work — Concept Projects | Lexora Digital", desc: "Website concepts for beauty, trades and automotive businesses — complete, responsive designs that show how Lexora Digital works." },
     journal: { title: "Journal — Guides to GDPR, the DSA and the AI Act | Lexora Digital", desc: "Plain-language guides to the European rules that shape business websites: GDPR and cookies, the Digital Services Act and the EU AI Act." },
     about: { title: "About — Lexora Digital", desc: "An independent digital studio combining web design, practical knowledge of European digital rules, translation and creative work." },
@@ -35,8 +35,8 @@ export default {
     cookies: { title: "Cookie Policy — Lexora Digital", desc: "This website uses no tracking or advertising cookies. Here is exactly what is stored and why." },
     imprint: { title: "Legal Notice — Lexora Digital", desc: "Provider information for lexoradigital.com." },
     shop: {
-      title: "EU Compliance Templates for Notion, Word & Excel: GDPR, AI Act & more — Lexora Digital",
-      desc: "Ready-to-use kits for the GDPR, the EU AI Act, AI workplace policies, pay transparency and supplier checks — as Notion templates or Word, Excel & PDF files, in five languages."
+      title: "GDPR & AI Act Templates for Notion, Word & Excel — Lexora Digital",
+      desc: "Ready-to-use kits for the GDPR, EU AI Act, AI workplace policies, pay transparency and supplier checks — Notion or Word, Excel & PDF, in five languages."
     },
     accessibility: { title: "Accessibility Statement — Lexora Digital", desc: "Our accessibility goals for this website, known limitations and how to give feedback." }
   },

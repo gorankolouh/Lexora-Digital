@@ -5,6 +5,7 @@ export default [
     tag: "RGPD",
     t: "Su web ya es un documento jurídico",
     d: "El RGPD y las normas sobre cookies no son un banner que se añade al final. Son decisiones de diseño, y el momento más barato para tomarlas es antes de la primera línea de código.",
+    md: "El RGPD y las cookies no son un banner que se añade al final, sino decisiones de diseño. Lo más barato es tomarlas antes de escribir código.",
     lead: "El RGPD y las normas sobre cookies no son un banner que se añade al final. Son decisiones de diseño — y el momento más barato para tomarlas es antes de la primera línea de código.",
     date: "Octubre de 2026", iso: "2026-10-18",
     blocks: [
@@ -75,6 +76,8 @@ export default [
     tag: "DSA",
     t: "La Ley de Servicios Digitales no va solo de las grandes tecnológicas",
     d: "Los titulares hablan de multas récord a plataformas globales. Pero la DSA también decide qué ocurre cuando su empresa aloja reseñas, vende en un marketplace o ve su cuenta suspendida.",
+    mt: "La DSA no va solo de las grandes tecnológicas",
+    md: "La DSA también decide qué ocurre cuando su empresa aloja reseñas, vende en un marketplace o ve su cuenta suspendida. Qué significa para usted.",
     lead: "Los titulares hablan de multas récord a plataformas globales. Pero la DSA también determina qué ocurre cuando su empresa aloja reseñas, vende en un marketplace — o amanece con la cuenta suspendida.",
     date: "Octubre de 2026", iso: "2026-10-18",
     blocks: [
@@ -135,6 +138,7 @@ export default [
     tag: "Ley de IA",
     t: "Su chatbot tiene que decir que es un chatbot",
     d: "Las obligaciones de transparencia de la Ley de IA de la UE se aplican desde el 2 de agosto de 2026. Qué aplazó el Digital Omnibus, qué no — y qué debe incorporar ya una web de empresa.",
+    md: "Las obligaciones de transparencia de la Ley de IA se aplican desde el 2 de agosto de 2026. Qué aplazó el Digital Omnibus y qué debe tener su web.",
     lead: "Las obligaciones de transparencia de la Ley de IA de la UE se aplican desde el 2 de agosto de 2026. Qué aplazó el Digital Omnibus, qué no — y qué debe incorporar ya una web de empresa.",
     date: "Octubre de 2026", iso: "2026-10-18",
     blocks: [

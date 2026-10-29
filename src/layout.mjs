@@ -111,7 +111,25 @@ function privacyDialog(t) {
 </dialog>`;
 }
 
-export function page({ t, key, title, desc, body, globe = false, noindex = false, alt, langs = null, ld = null, ogType = "website", og = null }) {
+// Alt texts for images that used alt="" (search engines report empty alts as missing)
+const ALTS = {
+  web: { en: "Illustration: website layout, design tools and pen", de: "Illustration: Website-Layout, Designwerkzeuge und Stift", nl: "Illustratie: websitelay-out, ontwerptools en pen", es: "Ilustración: diseño de una web, herramientas de diseño y pluma", hr: "Ilustracija: izgled web stranice, alati za dizajn i olovka" },
+  compliance: { en: "Illustration: globe with EU shield, scales of justice, privacy lock and cookie settings", de: "Illustration: Globus mit EU-Schild, Waage, Datenschutz-Schloss und Cookie-Einstellungen", nl: "Illustratie: wereldbol met EU-schild, weegschaal, privacyslot en cookie-instellingen", es: "Ilustración: globo con escudo de la UE, balanza, candado de privacidad y ajustes de cookies", hr: "Ilustracija: globus sa štitom EU-a, vagom, lokotom privatnosti i postavkama kolačića" },
+  translation: { en: "Illustration: globe with British, German, Dutch, Croatian and Spanish flags and translation icons", de: "Illustration: Globus mit britischer, deutscher, niederländischer, kroatischer und spanischer Flagge und Übersetzungssymbolen", nl: "Illustratie: wereldbol met Britse, Duitse, Nederlandse, Kroatische en Spaanse vlag en vertaalpictogrammen", es: "Ilustración: globo con banderas británica, alemana, neerlandesa, croata y española e iconos de traducción", hr: "Ilustracija: globus s britanskom, njemačkom, nizozemskom, hrvatskom i španjolskom zastavom te ikonama prijevoda" },
+  planet: { en: "Glowing green globe", de: "Leuchtender grüner Globus", nl: "Gloeiende groene wereldbol", es: "Globo verde luminoso", hr: "Svjetleći zeleni globus" },
+  founder: "Goran Kolouh", notion: "Notion"
+};
+function fillAlts(html, lang) {
+  return html.replace(/<img\b[^>]*>/g, (tag) => {
+    if (!/\salt=""/.test(tag)) return tag;
+    const m = tag.match(/\/assets\/img\/(?:art|shop)\/([a-z]+)/); const a = m && ALTS[m[1]];
+    const txt = a ? (typeof a === "string" ? a : a[lang] || a.en) : null;
+    return txt ? tag.replace(/\salt=""/, ` alt="${esc(txt)}"`) : tag;
+  });
+}
+export function page(o) { return fillAlts(pageRaw(o), o.t.lang); }
+
+function pageRaw({ t, key, title, desc, body, globe = false, noindex = false, alt, langs = null, ld = null, ogType = "website", og = null }) {
   const altFn = alt || ((code) => `/${code}/${t.__all[code].slugs[key] ?? ""}`);
   const selfPath = altFn(t.lang);
   const alts = readyLangs().filter((l) => !langs || langs.includes(l.code)).map((l) => `<link rel="alternate" hreflang="${l.code}" href="${abs(altFn(l.code))}">`).join("\n");

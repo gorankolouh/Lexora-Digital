@@ -6,6 +6,7 @@ export default [
     cta: "check",
     t: "Cookie-Banner: 8 Urteile, die jede Website kennen sollte (2026)",
     d: "Von Planet49 bis VG Hannover: Was deutsche Gerichte zu Cookie-Bannern, „Alles ablehnen“, Google Fonts und Abmahnungen entschieden haben — mit Checkliste für Ihre Website.",
+    md: "Planet49 bis VG Hannover: Was Gerichte zu Cookie-Bannern, „Alles ablehnen“, Google Fonts und Abmahnungen entschieden haben — mit Checkliste.",
     lead: "„Alles ablehnen“ auf der ersten Ebene, kein Häkchen voreingestellt, kein Google Fonts ohne Einwilligung: Was heute für Cookie-Banner gilt, haben vor allem Gerichte festgelegt. Hier sind die acht Entscheidungen, die man kennen sollte — und was sie für Ihre Website bedeuten.",
     date: "Oktober 2026", iso: "2026-10-29",
     blocks: [
@@ -197,6 +198,7 @@ export default [
     tag: "DSA",
     t: "Der Digital Services Act betrifft nicht nur Big Tech",
     d: "Die Schlagzeilen handeln von Rekordstrafen für globale Plattformen. Doch der DSA entscheidet auch, was passiert, wenn Ihr Unternehmen Bewertungen hostet, auf einem Marktplatz verkauft oder sein Konto gesperrt wird.",
+    md: "Der DSA betrifft auch Unternehmen, die Bewertungen hosten, auf Marktplätzen verkaufen oder deren Konto gesperrt wird. Was das konkret bedeutet.",
     lead: "Die Schlagzeilen handeln von Rekordstrafen für globale Plattformen. Doch der DSA prägt auch, was passiert, wenn Ihr Unternehmen Bewertungen hostet, auf einem Marktplatz verkauft — oder eines Morgens ein gesperrtes Konto vorfindet.",
     date: "Oktober 2026", iso: "2026-10-18",
     blocks: [
@@ -257,6 +259,7 @@ export default [
     tag: "KI-VO",
     t: "Ihr Chatbot muss sagen, dass er ein Chatbot ist",
     d: "Die Transparenzpflichten der KI-Verordnung gelten seit dem 2. August 2026. Was der Digital Omnibus verschoben hat, was nicht — und was eine Unternehmenswebsite jetzt einbauen sollte.",
+    md: "Die Transparenzpflichten der KI-Verordnung gelten seit 2. August 2026. Was der Digital Omnibus verschoben hat — und was Ihre Website jetzt braucht.",
     lead: "Die Transparenzpflichten der KI-Verordnung gelten seit dem 2. August 2026. Was der Digital Omnibus verschoben hat, was nicht — und was eine Unternehmenswebsite jetzt einbauen sollte.",
     date: "Oktober 2026", iso: "2026-10-18",
     blocks: [

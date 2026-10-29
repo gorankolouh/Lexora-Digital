@@ -69,7 +69,7 @@ async function build() {
     for (const a of t.articles) {
       const langs = ready.map((x) => x.code).filter((c) => all[c].articles.some((y) => y.slug === a.slug));
       const alt = (c) => langs.includes(c) ? articleHref(all[c], a) : path(all[c], "journal");
-      const html = page({ t, key: "journal", title: `${a.t} | Lexora Digital`, desc: a.d, body: article(t, a), alt, langs, ld: articleLd(t, a), ogType: "article" });
+      const html = page({ t, key: "journal", title: (a.mt || a.t).length > 48 ? (a.mt || a.t) : `${a.mt || a.t} | Lexora Digital`, desc: a.md || a.d, body: article(t, a), alt, langs, ld: articleLd(t, a), ogType: "article" });
       await write(join(alt(l.code), "index.html"), html);
       if (l.code === langs[0]) urls.push({ alt, langs, lastmod: a.updated || a.iso });
     }
@@ -99,7 +99,7 @@ ${ready.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${SITE_URL}
 if(a.indexOf(s)<0){s=null;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length&&!s;i++){var c=String(n[i]).slice(0,2).toLowerCase();if(a.indexOf(c)>=0)s=c}}
 location.replace("/"+(s||d)+"/");})();</script>
 <style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#050605;color:#F5F7F2;font:16px/1.6 system-ui,sans-serif}a{color:#B7FF00;margin:0 10px}</style>
-</head><body><noscript><p>${ready.map((l) => `<a href="/${l.code}/" hreflang="${l.code}" lang="${l.code}">${l.native}</a>`).join("")}</p></noscript></body></html>`);
+</head><body><h1 style="font:600 20px/1.3 system-ui,sans-serif;margin:0 0 12px">Lexora Digital — Web · Law · Language · Design</h1><noscript><p>${ready.map((l) => `<a href="/${l.code}/" hreflang="${l.code}" lang="${l.code}">${l.native}</a>`).join("")}</p></noscript></body></html>`);
 
   // 404 (English, with links to every language)
   const nf = tDef.notFound;

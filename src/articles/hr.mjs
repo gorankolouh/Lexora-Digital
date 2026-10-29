@@ -75,6 +75,8 @@ export default [
     tag: "DSA",
     t: "Akt o digitalnim uslugama ne tiče se samo velikih tehnoloških tvrtki",
     d: "Naslovi govore o rekordnim kaznama za globalne platforme. No DSA određuje i što se događa kad vaša tvrtka objavljuje recenzije, prodaje na tržnici ili joj se suspendira račun.",
+    mt: "DSA se ne tiče samo velikih tehnoloških tvrtki",
+    md: "DSA određuje i što se događa kad vaša tvrtka objavljuje recenzije, prodaje na tržnici ili joj se suspendira račun. Što to znači za vas.",
     lead: "Naslovi govore o rekordnim kaznama za globalne platforme. No DSA oblikuje i ono što se događa kad vaša tvrtka objavljuje recenzije, prodaje na internetskoj tržnici — ili se jednog jutra probudi sa suspendiranim računom.",
     date: "Listopad 2026.", iso: "2026-10-18",
     blocks: [
@@ -135,6 +137,7 @@ export default [
     tag: "Akt o UI",
     t: "Vaš chatbot mora reći da je chatbot",
     d: "Obveze transparentnosti iz Akta o umjetnoj inteligenciji primjenjuju se od 2. kolovoza 2026. Što je Digital Omnibus odgodio, što nije — i što poslovna web stranica treba ugraditi već sada.",
+    md: "Obveze transparentnosti iz Akta o UI primjenjuju se od 2. kolovoza 2026. Što je Digital Omnibus odgodio — i što web stranica treba ugraditi sada.",
     lead: "Obveze transparentnosti iz Akta o umjetnoj inteligenciji primjenjuju se od 2. kolovoza 2026. Što je Digital Omnibus odgodio, što nije — i što poslovna web stranica treba ugraditi već sada.",
     date: "Listopad 2026.", iso: "2026-10-18",
     blocks: [
