@@ -30,7 +30,7 @@ const NOINDEX = new Set([]);
 async function loadDicts() {
   const all = {};
   for (const l of LANGS.filter((x) => x.ready)) all[l.code] = (await import(`./src/i18n/${l.code}.mjs`)).default;
-  for (const code in all) { all[code].__all = all; all[code].articles = (await import(`./src/articles/${code}.mjs`)).default; }
+  for (const code in all) { all[code].__all = all; all[code].articles = (await import(`./src/articles/${code}.mjs`)).default.slice().sort((a, b) => (b.iso > a.iso) - (b.iso < a.iso)); }
   // landing page texts live in src/i18n/landing.mjs; same address in every language
   for (const code in all) { all[code].pages.kits = LANDING[code]; all[code].meta.kits = LANDING[code].meta; all[code].slugs.kits = "eu-compliance-kits/"; }
   return all;
@@ -64,12 +64,14 @@ async function build() {
       await write(join(path(t, key), "index.html"), html);
       if (l.code === DEFAULT_LANG) urls.push({ alt: (c) => path(all[c], key) });
     }
-    // journal articles share their slug across languages
+    // journal articles share their slug across languages; an article may exist in only some languages
+    // (hreflang + sitemap list only those; the language switcher falls back to that language's journal)
     for (const a of t.articles) {
-      const alt = (c) => articleHref(all[c], a);
-      const html = page({ t, key: "journal", title: `${a.t} | Lexora Digital`, desc: a.d, body: article(t, a), alt, ld: articleLd(t, a), ogType: "article" });
+      const langs = ready.map((x) => x.code).filter((c) => all[c].articles.some((y) => y.slug === a.slug));
+      const alt = (c) => langs.includes(c) ? articleHref(all[c], a) : path(all[c], "journal");
+      const html = page({ t, key: "journal", title: `${a.t} | Lexora Digital`, desc: a.d, body: article(t, a), alt, langs, ld: articleLd(t, a), ogType: "article" });
       await write(join(alt(l.code), "index.html"), html);
-      if (l.code === DEFAULT_LANG) urls.push({ alt, lastmod: a.updated || a.iso });
+      if (l.code === langs[0]) urls.push({ alt, langs, lastmod: a.updated || a.iso });
     }
     // case studies share their slug across languages
     for (const item of t.home.work.items) {
@@ -110,13 +112,14 @@ location.replace("/"+(s||d)+"/");})();</script>
   }));
 
   // lastmod only where we know the real date (articles); a build-date stamp on every page teaches Google to ignore it
-  const sm = urls.flatMap(({ alt, lastmod }) => ready.map((l) => `  <url><loc>${abs(alt(l.code))}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}
-${ready.map((m) => `    <xhtml:link rel="alternate" hreflang="${m.code}" href="${abs(alt(m.code))}"/>`).join("\n")}
+  const inL = (langs) => ready.filter((l) => !langs || langs.includes(l.code));
+  const sm = urls.flatMap(({ alt, langs, lastmod }) => inL(langs).map((l) => `  <url><loc>${abs(alt(l.code))}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}
+${inL(langs).map((m) => `    <xhtml:link rel="alternate" hreflang="${m.code}" href="${abs(alt(m.code))}"/>`).join("\n")}
   </url>`)).join("\n");
   await write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sm}\n</urlset>\n`);
   await write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
-  await pingIndexNow(urls.flatMap(({ alt }) => ready.map((l) => abs(alt(l.code)))));
-  console.log(`Built ${urls.length * ready.length} pages in ${codes.join(", ")} → dist/`);
+  await pingIndexNow(urls.flatMap(({ alt, langs }) => inL(langs).map((l) => abs(alt(l.code)))));
+  console.log(`Built ${(sm.match(/<loc>/g) || []).length} pages in ${codes.join(", ")} → dist/`);
 }
 // IndexNow: tells Bing (and other IndexNow engines) about the site's URLs after each production deploy,
 // so new pages and articles are picked up within hours. Runs only on Vercel production builds; never fails the build.

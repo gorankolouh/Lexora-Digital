@@ -37,7 +37,7 @@ export function article(t, a) {
   const u = t.pages.journal.article, all = t.articles;
   const h2s = a.blocks.filter(([k]) => k === "h2").map(([, v]) => v);
   const crumbs = [[path(t, "home"), t.ui.home], [path(t, "journal"), t.nav.journal], [null, a.tag]];
-  const cta = a.slug.startsWith("gdpr") ? "check" : "contact";
+  const cta = a.cta || (a.slug.startsWith("gdpr") ? "check" : "contact");
   const meta = `<p class="a-meta rise d4"><span>${esc(u.by)} <b>Goran Kolouh</b></span><span>${esc(a.date)}</span><span>${readMins(a)} ${esc(u.min)}</span></p>`;
   const others = all.filter((x) => x.slug !== a.slug);
   return [

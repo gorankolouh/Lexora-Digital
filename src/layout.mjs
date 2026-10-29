@@ -111,10 +111,10 @@ function privacyDialog(t) {
 </dialog>`;
 }
 
-export function page({ t, key, title, desc, body, globe = false, noindex = false, alt, ld = null, ogType = "website", og = null }) {
+export function page({ t, key, title, desc, body, globe = false, noindex = false, alt, langs = null, ld = null, ogType = "website", og = null }) {
   const altFn = alt || ((code) => `/${code}/${t.__all[code].slugs[key] ?? ""}`);
   const selfPath = altFn(t.lang);
-  const alts = readyLangs().map((l) => `<link rel="alternate" hreflang="${l.code}" href="${abs(altFn(l.code))}">`).join("\n");
+  const alts = readyLangs().filter((l) => !langs || langs.includes(l.code)).map((l) => `<link rel="alternate" hreflang="${l.code}" href="${abs(altFn(l.code))}">`).join("\n");
   const xdef = key === "home" ? `\n<link rel="alternate" hreflang="x-default" href="${SITE_URL}/${DEFAULT_LANG}/">` : "";
   const org = key === "home" ? {
     "@context": "https://schema.org", "@type": "Organization", "@id": SITE_URL + "/#organization",
