@@ -180,7 +180,7 @@ ${noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" hr
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/sora-var.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
-<script>document.documentElement.classList.add("js")</script>
+<script>(function(d){d.classList.add("js");try{if(sessionStorage.getItem("lx-intro"))d.classList.add("seen");else sessionStorage.setItem("lx-intro","1")}catch(e){}})(document.documentElement)</script>
 <link rel="stylesheet" href="/assets/css/site.css?v=${V}">
 ${jsonld}
 </head>

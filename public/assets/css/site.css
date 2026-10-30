@@ -58,7 +58,8 @@ p{margin:0}
 h1,h2,h3,h4{margin:0;font-family:var(--f-display);font-weight:300;letter-spacing:-.035em;line-height:1.05;text-wrap:balance}
 ul,ol{margin:0;padding:0}
 ::selection{background:var(--lime);color:var(--bg)}
-:lang(de) :is(h1,h2,h3),:lang(nl) :is(h1,h2,h3),:lang(hr) :is(h1,h2,h3){hyphens:auto;-webkit-hyphens:auto}
+/* headings never get automatic hyphens ("Eu-ropas", "Stu-dio"); a word only wraps if it cannot fit at all */
+:is(h1,h2,h3,h4){hyphens:manual;-webkit-hyphens:manual}
 :is(h1,h2,h3,h4,p,li){overflow-wrap:break-word;min-width:0}
 
 :focus{outline:none}
@@ -955,3 +956,5 @@ html{-webkit-tap-highlight-color:transparent}
 .lp-who{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:0;margin:0}
 .lp-who li{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border:1px solid var(--line-2);border-radius:999px;color:var(--text-2);font-size:15px}
 .lp-who li svg{color:var(--lime)}
+/* page changes: the hero entrance plays once per visit; every page after that shows its text at once (no dark empty screen between pages) */
+html.js.seen :is(.rise,.lni,.hero-globe){animation:none;opacity:1;transform:none}
