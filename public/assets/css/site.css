@@ -958,3 +958,27 @@ html{-webkit-tap-highlight-color:transparent}
 .lp-who li svg{color:var(--lime)}
 /* page changes: the hero entrance plays once per visit; every page after that shows its text at once (no dark empty screen between pages) */
 html.js.seen :is(.rise,.lni,.hero-globe){animation:none;opacity:1;transform:none}
+
+/* ---------- Kit detail pages ---------- */
+.kit-cover{margin:0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 90px -40px rgba(183,255,0,.25)}
+.kit-cover img{display:block;width:100%;height:auto}
+.kit-buy .eds,.shop-kits > .eds{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.kit-buy .eds .btn,.shop-kits > .eds .btn{gap:10px}
+.kit-buy .eds .btn img,.shop-kits > .eds .btn img{width:20px;height:auto;border-radius:3px;background:#fff;padding:1px}
+.kit-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 24px;margin:32px 0 0;padding:22px 0 0;border-top:1px solid var(--line);max-width:620px}
+.kit-facts dt{font-family:var(--f-mono);font-size:var(--fs-micro);letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
+.kit-facts dd{margin:6px 0 0;font-size:15px;color:var(--text-2)}
+.kit-facts dd b{font-weight:500;color:var(--lime)}
+.kit-inside{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--gutter)}
+.kit-inside li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-top:1px solid var(--line);font-size:16px;line-height:1.55;color:var(--text-2)}
+.kit-inside li svg{flex:0 0 auto;margin-top:4px;color:var(--lime)}
+.kit-inside li strong{color:var(--text);font-weight:500}
+.kit-others{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px var(--gutter)}
+.kit-others li{display:flex;flex-direction:column;gap:2px;padding:16px 0;border-top:1px solid var(--line)}
+.kit-others .link{font-family:var(--f-display);font-size:18px;letter-spacing:-.01em}
+.shop-kits .kit-more{position:relative;z-index:4;margin-top:16px;font-size:14px}
+.kit-box{margin:36px 0 8px}
+@media (max-width:760px){
+  .kit-inside,.kit-others{grid-template-columns:minmax(0,1fr)}
+  .kit-facts{grid-template-columns:minmax(0,1fr)}
+}

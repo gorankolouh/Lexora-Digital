@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cushy Coffee Clontarf</title>
+<meta name="description" content="Website concept for Cushy Coffee, the coffee van at Clontarf Rugby Club, Dublin 3.">
+<meta property="og:title" content="Cushy Coffee Clontarf">
+<meta property="og:description" content="Coffee, toasties and açaí bowls from the little white van at Clontarf Rugby Club.">
+<meta property="og:image" content="https://lexoradigital.com/preview/cushy/img/lineup.jpg">
+<meta property="og:url" content="https://lexoradigital.com/preview/cushy/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: the van itself. White corrugated metal is the page, one black window holds the neon sign, photos sit like framed prints. Single light look by design. */
+:root{
+  --tin:#eef0ef;        /* van skin */
+  --paper:#f7f8f7;
+  --white:#ffffff;
+  --ink:#151616;
+  --ink-2:#555a59;      /* cool grey, leans toward the metal */
+  --line:rgba(21,22,22,.10);
+  --night:#060606;      /* the hatch window after dark */
+  --night-2:#141414;
+  --neon:#ffd60a;       /* the sign */
+  --neon-glow:rgba(255,206,0,.45);
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+  --r:22px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:16px/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--white)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.02em}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+section{padding-block:clamp(72px,10vw,128px)}
+.head{display:grid;gap:14px;max-width:640px;margin-bottom:clamp(32px,5vw,52px)}
+.head h2{font-size:clamp(36px,5.4vw,60px);line-height:1.02;font-weight:700}
+.head p{margin:0;color:var(--ink-2);font-size:18px;max-width:52ch}
+.mark{background:linear-gradient(transparent 62%,var(--neon) 62%,var(--neon) 92%,transparent 92%);padding:0 .08em}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.82);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;min-height:66px}
+.nav-logo{display:flex;align-items:center;justify-content:center;height:40px;padding:0 14px;border-radius:999px;background:var(--night)}
+.nav-logo img{height:26px;width:auto;filter:drop-shadow(0 0 6px var(--neon-glow))}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0 0 0 auto;padding:0}
+.nav ul a{text-decoration:none;font-size:15px;color:var(--ink-2);transition:color .2s}
+.nav ul a:hover{color:var(--ink)}
+.status{display:inline-flex;align-items:center;gap:8px;font:500 12px/1 var(--mono);letter-spacing:.04em;padding:10px 14px;border-radius:999px;background:var(--white);border:1px solid var(--line);white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:#a2a6a5;flex:none}
+.status.open .dot{background:#1fa463;animation:ping 2.4s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(31,164,99,.5)}70%,100%{box-shadow:0 0 0 7px rgba(31,164,99,0)}}
+@media (max-width:760px){.nav ul{display:none}.status{margin-left:auto}}
+
+/* hero: the van wall with the sign in its window */
+.hero{position:relative;padding-block:clamp(44px,7vw,88px) clamp(56px,8vw,104px);background:url(img/tin.jpg) center/cover var(--tin)}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:90px;background:linear-gradient(rgba(247,248,247,0),var(--paper));pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;justify-items:center;text-align:center;gap:34px}
+.sign{position:relative;width:min(100%,720px);border-radius:28px;background:var(--night);padding:clamp(26px,5vw,52px) clamp(22px,5vw,60px);
+  box-shadow:0 0 0 10px #1c1c1c,0 0 0 11px rgba(0,0,0,.25),0 40px 80px -30px rgba(0,0,0,.55),inset 0 0 80px rgba(255,200,0,.05)}
+.sign::before{content:"";position:absolute;inset:18%;border-radius:50%;background:radial-gradient(closest-side,rgba(255,200,0,.22),transparent);filter:blur(20px);opacity:0;animation:glowin 1.2s 1.9s ease-out forwards}
+.sign img{position:relative;width:100%;margin:0 auto;animation:flicker 2.2s .5s both}
+@keyframes flicker{0%{opacity:0}6%{opacity:.9}9%{opacity:.1}14%{opacity:.85}18%{opacity:.25}24%{opacity:1}100%{opacity:1}}
+@keyframes glowin{to{opacity:1}}
+.hero h1{font-size:clamp(34px,5.6vw,64px);line-height:1.02;font-weight:800;max-width:17ch}
+.hero .lede{margin:-14px 0 0;color:var(--ink-2);font-size:clamp(16px,1.8vw,19px);max-width:46ch}
+.ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:600 15px/1 var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .3s cubic-bezier(.2,.8,.2,1),background .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--night);color:#fff}
+.btn-dark:hover{box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+.btn-light{background:var(--white);border-color:var(--line);color:var(--ink)}
+.btn-neon{background:var(--neon);color:var(--ink)}
+.btn svg{width:18px;height:18px}
+
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:clamp(-40px,-4vw,-24px);position:relative;z-index:2}
+.fact{background:var(--white);padding:24px 26px;min-width:0}
+.fact b{display:block;font:700 24px/1.1 var(--display);letter-spacing:-.01em;margin-bottom:4px}
+.fact span{color:var(--ink-2);font-size:15px}
+@media (max-width:720px){.facts{grid-template-columns:1fr}}
+
+/* photos: always shown whole */
+.print{margin:0;border-radius:var(--r);overflow:hidden;background:var(--tin);box-shadow:0 1px 0 rgba(0,0,0,.04),0 24px 50px -28px rgba(0,0,0,.35)}
+.print img{width:100%;transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.print.zoom img{transform:scale(1.05)}
+.cap{display:flex;justify-content:space-between;gap:12px;margin-top:14px;font-size:15px}
+.cap b{font-weight:600}
+.cap span{color:var(--ink-2);font:400 13px/1.6 var(--mono)}
+
+/* toasties */
+.toastie-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin:44px 0 56px;padding:0;list-style:none}
+.toastie-list li{border-top:2px solid var(--ink);padding-top:16px;min-width:0}
+.toastie-list h3{font-size:22px;font-weight:700;margin-bottom:6px}
+.toastie-list p{margin:0;color:var(--ink-2);font-size:15px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,32px);align-items:start}
+.pair > div{min-width:0}
+.pair > div:nth-child(2){margin-top:clamp(0px,8vw,96px)}
+@media (max-width:860px){.toastie-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.toastie-list{grid-template-columns:1fr;gap:20px}.pair{grid-template-columns:1fr}.pair > div:nth-child(2){margin-top:0}}
+
+/* coffee */
+#coffee{background:var(--white);border-block:1px solid var(--line)}
+.coffee{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:start}
+.coffee > *{min-width:0}
+.menu{display:grid;gap:0;margin:0;padding:0;list-style:none}
+.menu li{display:flex;align-items:baseline;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);font-size:18px}
+.menu li .fill{flex:1}
+.menu li .p{font:500 16px/1 var(--mono);font-variant-numeric:tabular-nums}
+.menu li small{display:block;color:var(--ink-2);font-size:14px}
+.menu li.star .n{font-weight:600}
+.extras{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.extras span{font:500 13px/1 var(--mono);padding:10px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.protein{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding:22px 24px;border-radius:var(--r);background:var(--night);color:#fff}
+.protein b{font:700 20px/1 var(--display)}
+.protein .p{font:500 15px/1 var(--mono);color:var(--neon);margin-left:auto}
+.protein .flav{flex-basis:100%;color:#b9bdbc;font-size:15px}
+@media (max-width:860px){.coffee{grid-template-columns:1fr}}
+
+/* acai */
+.bowls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.5vw,28px);align-items:start}
+.bowls > div{min-width:0}
+.bowls > div:nth-child(2){margin-top:48px}
+.tops{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.tops span{font-size:14px;padding:9px 14px;border-radius:999px;background:var(--white);border:1px solid var(--line)}
+@media (max-width:760px){
+  .bowls{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:10px}
+  .bowls > div{flex:0 0 78%;scroll-snap-align:start}
+  .bowls > div:nth-child(2){margin-top:0}
+}
+
+/* visit: back inside the van at night */
+#visit{background:var(--night);color:#f3f3f1}
+#visit .eyebrow{color:#9a9f9e}
+#visit .head p{color:#b6bbba}
+.visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:start}
+.visit > *{min-width:0}
+#visit .print{background:var(--night-2);box-shadow:none}
+.hours{margin:0 0 34px;padding:0;list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:18px}
+.hours li .t{font:500 16px/1.6 var(--mono);font-variant-numeric:tabular-nums}
+.hours li.today{color:var(--neon)}
+.hours li.today .d::after{content:"  today";font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#9a9f9e;margin-left:10px}
+.addr{font-size:19px;line-height:1.5;margin:0 0 22px}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+#visit .btn-light{background:transparent;border-color:rgba(255,255,255,.22);color:#fff}
+
+footer{background:var(--night);color:#9a9f9e;border-top:1px solid rgba(255,255,255,.08);padding-block:56px calc(40px + env(safe-area-inset-bottom,0px))}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+footer img{width:180px;filter:drop-shadow(0 0 10px var(--neon-glow))}
+footer small{font:400 13px/1.7 var(--mono)}
+
+/* reveal: only below-the-fold elements start hidden */
+.pending{opacity:0;transform:translateY(24px)}
+.revealed{transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1)}
+
+/* phone preview */
+.pp-btn{position:fixed;right:calc(env(safe-area-inset-right,0px) + 22px);bottom:calc(env(safe-area-inset-bottom,0px) + 22px);z-index:80;display:none;align-items:center;gap:8px;min-height:46px;padding:0 18px;border-radius:999px;border:0;background:var(--night);color:#fff;font:600 14px/1 var(--body);cursor:pointer;box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
+.pp-btn svg{width:18px;height:18px}
+@media (min-width:900px){.pp-btn{display:inline-flex}}
+.in-preview .pp-btn{display:none!important}
+.pp{position:fixed;inset:0;z-index:90;background:rgba(238,240,239,.86);backdrop-filter:blur(10px);display:grid;place-items:center;padding:24px}
+.phone{position:relative;width:390px;height:min(844px,calc(100vh - 48px));border-radius:56px;padding:13px;background:#111;box-shadow:0 0 0 2px #2b2b2b,0 60px 120px -30px rgba(0,0,0,.55)}
+.phone::before{content:"";position:absolute;left:50%;top:24px;width:108px;height:30px;border-radius:20px;background:#000;transform:translateX(-50%);z-index:2}
+.phone iframe{width:100%;height:100%;border:0;border-radius:44px;background:var(--paper)}
+.pp-close{position:absolute;top:20px;right:24px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .pending{opacity:1;transform:none}
+  .print.zoom img{transform:none}
+  .sign::before{opacity:1}
+}
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="nav-logo" href="#top"><img src="img/logo.webp" alt="Cushy Coffee" width="1100" height="703"></a>
+    <ul>
+      <li><a href="#toasties">Toasties</a></li>
+      <li><a href="#coffee">Coffee</a></li>
+      <li><a href="#acai">Açaí</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <span class="status" id="status"><span class="dot"></span><span id="status-text">Opening hours</span></span>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="sign"><img src="img/logo.webp" alt="Cushy neon sign" width="1100" height="703"></div>
+    <div class="eyebrow">Clontarf Rugby Club · Castle Avenue · Dublin 3</div>
+    <h1>Coffee, toasties and açaí bowls from the little white van</h1>
+    <p class="lede">Proper coffee, hot-pressed sourdough toasties and loaded açaí bowls, served from a hatch beside the pitches.</p>
+    <div class="ctas">
+      <a class="btn btn-dark" href="#coffee">See the menu</a>
+      <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Cushy+Coffee+Clontarf+Rugby+Club+Castle+Ave+Dublin+3" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        Get directions</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="facts">
+    <div class="fact"><b>4.8 on Google</b><span>From 44 reviews</span></div>
+    <div class="fact"><b>Seats in the sun</b><span>Outdoor seating over the pitches</span></div>
+    <div class="fact"><b>Wednesday to Sunday</b><span>Wed–Fri 8–3 · Sat–Sun 9–4</span></div>
+  </div>
+</div>
+
+<main>
+<section id="toasties">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Cushy toasties</div>
+      <h2>Thick sourdough, <span class="mark">pressed hot</span></h2>
+      <p>Four toasties, made to order on the press, with the cheese still running when they reach the hatch.</p>
+    </div>
+    <figure class="print reveal"><img src="img/lineup.jpg" alt="Four toasties cut in half and lined up under the neon sign: buffalo chicken, cheese melt, chicken pesto, and ham and cheddar" width="1400" height="1314"></figure>
+    <ul class="toastie-list">
+      <li class="reveal"><h3>Buffalo Soldier</h3><p>Buffalo chicken and melted cheddar. The house favourite.</p></li>
+      <li class="reveal"><h3>Cheese melt</h3><p>A double layer of cheese, pressed until it spills.</p></li>
+      <li class="reveal"><h3>Chicken pesto</h3><p>Chicken, basil pesto and mozzarella.</p></li>
+      <li class="reveal"><h3>Ham &amp; cheddar</h3><p>Folded ham and mature cheddar.</p></li>
+    </ul>
+    <div class="pair">
+      <div class="reveal"><figure class="print"><img src="img/buffalo.jpg" alt="Buffalo chicken toastie held in tongs in front of the neon sign inside the van" width="822" height="1096" loading="lazy"></figure>
+        <div class="cap"><b>Buffalo Soldier</b><span>Inside the van</span></div></div>
+      <div class="reveal"><figure class="print"><img src="img/pesto.jpg" alt="Chicken pesto toastie on a wooden board" width="822" height="1028" loading="lazy"></figure>
+        <div class="cap"><b>Chicken pesto</b><span>Grill-marked sourdough</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="coffee">
+  <div class="wrap coffee">
+    <div>
+      <div class="head reveal">
+        <div class="eyebrow">Coffee menu</div>
+        <h2>Your usual, <span class="mark">done properly</span></h2>
+      </div>
+      <ul class="menu reveal">
+        <li class="star"><span class="n">Cushy hot chocolate<small>The one on the top of the board</small></span><span class="fill"></span><span class="p">ask</span></li>
+        <li><span class="n">Espresso</span><span class="fill"></span><span class="p">€3.00</span></li>
+        <li><span class="n">Americano</span><span class="fill"></span><span class="p">€3.40</span></li>
+        <li><span class="n">Cortado</span><span class="fill"></span><span class="p">€3.40</span></li>
+        <li><span class="n">Flat white</span><span class="fill"></span><span class="p">€3.70</span></li>
+        <li><span class="n">Cappuccino / Latte</span><span class="fill"></span><span class="p">€3.80</span></li>
+        <li><span class="n">Mocha</span><span class="fill"></span><span class="p">€4.00</span></li>
+        <li><span class="n">Iced coffee</span><span class="fill"></span><span class="p">€4.00</span></li>
+        <li><span class="n">Tea</span><span class="fill"></span><span class="p">€3.00</span></li>
+        <li><span class="n">Green / Peppermint tea</span><span class="fill"></span><span class="p">€3.20</span></li>
+      </ul>
+      <div class="extras reveal"><span>Alternative milk +30c</span><span>Syrups +50c</span><span>Extra shot +€1.00</span></div>
+      <div class="protein reveal"><b>Protein balls</b><span class="p">€3.00</span><span class="flav">Oreo, Kinder or Pistachio</span></div>
+    </div>
+    <div class="reveal">
+      <figure class="print"><img src="img/pastries.jpg" alt="Croissants, an almond croissant and cinnamon swirls on a board" width="822" height="1028" loading="lazy"></figure>
+      <div class="cap"><b>Pastries with your coffee</b><span>On the counter each morning</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="acai">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Cushy açaí bowls</div>
+      <h2>Fruit, crunch and a <span class="mark">good drizzle</span></h2>
+      <p>Regular or kids size, built to order at the hatch.</p>
+    </div>
+    <div class="bowls">
+      <div class="reveal"><figure class="print"><img src="img/acai-trio.jpg" alt="Three açaí bowls with berries and chocolate drizzle held outside the van" width="822" height="1096" loading="lazy"></figure>
+        <div class="cap"><b>Berry &amp; chocolate</b></div></div>
+      <div class="reveal"><figure class="print"><img src="img/biscoff.jpg" alt="Bowl with strawberries, banana, biscuit crumb and nut butter" width="822" height="1096" loading="lazy"></figure>
+        <div class="cap"><b>Biscoff &amp; banana</b></div></div>
+      <div class="reveal"><figure class="print"><img src="img/acai-gold.jpg" alt="Mango bowl topped with strawberries, raspberries, blueberries and biscuit crumb" width="822" height="994" loading="lazy"></figure>
+        <div class="cap"><b>Mango &amp; berries</b></div></div>
+    </div>
+    <div class="tops reveal" aria-label="Toppings">
+      <span>Strawberry</span><span>Raspberry</span><span>Blueberry</span><span>Banana</span><span>Biscoff crumb</span><span>Chocolate drizzle</span><span>Nut butter</span>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap visit">
+    <div class="reveal"><figure class="print"><img src="img/van.jpg" alt="The white corrugated Cushy Coffee van with chalkboards and flower pots beside the rugby pitches" width="822" height="1230" loading="lazy"></figure></div>
+    <div>
+      <div class="head reveal">
+        <div class="eyebrow">Find the van</div>
+        <h2>By the pitches at Clontarf RFC</h2>
+        <p>A short walk up from the Clontarf promenade. Take your coffee to the outdoor seats and watch the rugby.</p>
+      </div>
+      <ul class="hours reveal">
+        <li data-days="3,4,5"><span class="d">Wednesday – Friday</span><span class="t">8am – 3pm</span></li>
+        <li data-days="6,0"><span class="d">Saturday – Sunday</span><span class="t">9am – 4pm</span></li>
+        <li data-days="1,2"><span class="d">Monday – Tuesday</span><span class="t">Closed</span></li>
+      </ul>
+      <p class="addr reveal" id="addr">Clontarf Rugby Club, Castle Ave,<br>Clontarf East, Dublin 3, D03 K4K3</p>
+      <div class="row reveal">
+        <a class="btn btn-neon" href="https://www.google.com/maps/search/?api=1&query=Cushy+Coffee+Clontarf+Rugby+Club+Castle+Ave+Dublin+3" target="_blank" rel="noopener">Open in Maps</a>
+        <button class="btn btn-light" type="button" id="copy">Copy address</button>
+        <a class="btn btn-light" href="https://www.instagram.com/cushycoffee_/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo.webp" alt="Cushy" width="1100" height="703" loading="lazy">
+    <small>Cushy Coffee · Clontarf RFC, Castle Avenue, Dublin 3<br>@cushycoffee_ on Instagram</small>
+  </div>
+</footer>
+
+<button class="pp-btn" id="pp-open" type="button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
+  Phone preview
+</button>
+<div class="pp" id="pp" hidden>
+  <button class="btn btn-dark pp-close" id="pp-close" type="button">Close preview</button>
+  <div class="phone"><iframe id="pp-frame" title="Phone preview of the Cushy Coffee site"></iframe></div>
+</div>
+
+<script>
+(function(){
+  let inPreview=false;
+  try{ inPreview = !!(window.frameElement && window.frameElement.id==='pp-frame'); }catch(e){}
+  if (inPreview) document.documentElement.classList.add('in-preview');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* live open / closed, Dublin time */
+  const H={0:[9,16],3:[8,15],4:[8,15],5:[8,15],6:[9,16]};
+  const days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const fmt=h=>(h>12?h-12:h)+(h>=12?'pm':'am');
+  function now(){
+    const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Dublin',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+    const g=t=>p.find(x=>x.type===t).value;
+    return {d:days.indexOf(g('weekday')),m:+g('hour')*60+ +g('minute')};
+  }
+  function status(){
+    const {d,m}=now(), el=document.getElementById('status'), tx=document.getElementById('status-text'), t=H[d];
+    if(t && m>=t[0]*60 && m<t[1]*60){ el.classList.add('open'); tx.textContent='Open now · till '+fmt(t[1]); }
+    else{
+      el.classList.remove('open'); let label='';
+      if(t && m<t[0]*60) label='today '+fmt(t[0]);
+      else for(let i=1;i<8;i++){ const n=(d+i)%7; if(H[n]){ label=(i===1?'tomorrow ':days[n]+' ')+fmt(H[n][0]); break; } }
+      tx.textContent='Closed · opens '+label;
+    }
+    document.querySelectorAll('.hours li').forEach(li=>li.classList.toggle('today',li.dataset.days.split(',').includes(String(d))));
+  }
+  status(); setInterval(status,60000);
+
+  /* gentle reveal for what starts below the first screen */
+  if(!reduce && 'IntersectionObserver' in window){
+    const vh=innerHeight;
+    const els=[...document.querySelectorAll('.reveal')].filter(e=>e.getBoundingClientRect().top>vh*.92);
+    els.forEach(e=>{ e.classList.add('pending'); e.querySelectorAll('.print').forEach(p=>p.classList.add('zoom')); if(e.classList.contains('print')) e.classList.add('zoom'); });
+    const io=new IntersectionObserver(es=>es.forEach(en=>{
+      if(!en.isIntersecting) return;
+      const e=en.target; const sib=[...e.parentElement.children].filter(c=>c.classList.contains('reveal'));
+      e.style.transitionDelay=Math.min(sib.indexOf(e),3)*90+'ms';
+      e.classList.add('revealed'); e.classList.remove('pending');
+      e.classList.remove('zoom'); e.querySelectorAll('.print.zoom').forEach(p=>p.classList.remove('zoom'));
+      io.unobserve(e);
+    }),{rootMargin:'0px 0px -6% 0px'});
+    els.forEach(e=>io.observe(e));
+  }
+
+  /* copy address */
+  document.getElementById('copy').addEventListener('click',function(){
+    const btn=this, txt='Clontarf Rugby Club, Castle Ave, Clontarf East, Dublin 3, D03 K4K3';
+    const ok=()=>{ btn.textContent='Copied'; setTimeout(()=>btn.textContent='Copy address',1800); };
+    const sel=()=>{ const r=document.createRange(); r.selectNodeContents(document.getElementById('addr')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent='Address selected'; };
+    try{ navigator.clipboard.writeText(txt).then(ok,sel); }catch(e){ sel(); }
+  });
+
+  /* phone preview: this page inside a 390px phone */
+  if(inPreview) return;
+  const open=document.getElementById('pp-open'), pp=document.getElementById('pp'), frame=document.getElementById('pp-frame');
+  open.addEventListener('click',()=>{
+    if(!frame.srcdoc){
+      let html=document.documentElement.outerHTML.replace('<head>','<head><base href="'+document.baseURI+'">');
+      html=html.replace(/ (pending|revealed|zoom)(?=[ "])/g,'').replace(/ style="transition-delay:[^"]*"/g,'').replace(/<div class="pp" id="pp"[\s\S]*?<\/iframe><\/div>\s*<\/div>/,'');
+      frame.srcdoc='<!doctype html>'+html;
+    }
+    pp.hidden=false; document.getElementById('pp-close').focus();
+  });
+  const close=()=>{ pp.hidden=true; open.focus(); };
+  document.getElementById('pp-close').addEventListener('click',close);
+  pp.addEventListener('click',e=>{ if(e.target===pp) close(); });
+  pp.addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+})();
+</script>
+
+</body>
+</html>
