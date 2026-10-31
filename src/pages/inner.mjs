@@ -2,6 +2,7 @@
 import { esc, fmt, path, icon } from "../lib.mjs";
 import { SHOP, SITE_URL, CONTACT } from "../config.mjs";
 import { articleCard } from "./article.mjs";
+import { kitHref, KIT_PAGES_UI } from "./kit.mjs";
 import { pageHero, head, features, steps, faq, band, matrix, disclaimer, table, prose, form, ml, btn, art } from "../components.mjs";
 
 const sec = (inner, cls = "", id = "") => `<section class="section ${cls}"${id ? ` aria-labelledby="${id}"` : ""}><div class="wrap">${inner}</div></section>`;
@@ -272,7 +273,7 @@ export function kitCards(t) {
     const it = p.items[x.key];
     return `<article class="proj s reveal${i % 3 ? ` d${i % 3}` : ""}">
         <div class="media">${shopCover(x, it.t, "(max-width:960px) 100vw, 33vw")}</div>
-        <div class="meta"><div><p class="cat">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p>${editions(x, it)}</div></div>
+        <div class="meta"><div><p class="cat">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p>${editions(x, it)}${kitHref(t, x.key) ? `<a class="link kit-more" href="${kitHref(t, x.key)}">${esc(KIT_PAGES_UI(t).details)}<span class="sr">: ${esc(it.t)}</span> ${icon("arrow", 15, 1.8)}</a>` : ""}</div></div>
       </article>`;
   }).join("");
   return `${feat}

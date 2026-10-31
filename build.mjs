@@ -11,6 +11,7 @@ import * as P from "./src/pages/inner.mjs";
 import { article, articleHref, articleLd } from "./src/pages/article.mjs";
 import { landing, landingLd } from "./src/pages/landing.mjs";
 import LANDING from "./src/i18n/landing.mjs";
+import { kitPage, kitLd, kitText, kitHref, kitLangs, KIT_KEYS } from "./src/pages/kit.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const DIST = join(ROOT, "dist");
@@ -23,7 +24,8 @@ const PAGES = {
   privacy: { r: (t) => P.legal(t, "privacy") }, cookies: { r: (t) => P.legal(t, "cookies") },
   imprint: { r: (t) => P.legal(t, "imprint") }, accessibility: { r: (t) => P.legal(t, "accessibility") },
   // landing page for ads and social links
-  kits: { r: landing, ld: landingLd, og: { src: "/assets/img/og-kits.jpg", w: 1200, h: 630 } }
+  // its canonical points to the Templates page, so Google ranks one page for the kits instead of splitting between two
+  kits: { r: landing, ld: landingLd, og: { src: "/assets/img/og-kits.jpg", w: 1200, h: 630 }, canonical: "shop" }
 };
 const NOINDEX = new Set([]);
 
@@ -60,9 +62,9 @@ async function build() {
     for (const [key, def] of Object.entries(PAGES)) {
       const m = t.meta[key];
       if (!m) throw new Error(`Missing meta.${key} for ${l.code}`);
-      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key), ld: def.ld ? def.ld(t) : null, og: def.og });
+      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key), ld: def.ld ? def.ld(t) : null, og: def.og, canonical: def.canonical ? path(t, def.canonical) : null });
       await write(join(path(t, key), "index.html"), html);
-      if (l.code === DEFAULT_LANG) urls.push({ alt: (c) => path(all[c], key) });
+      if (l.code === DEFAULT_LANG && !def.canonical) urls.push({ alt: (c) => path(all[c], key) });
     }
     // journal articles share their slug across languages; an article may exist in only some languages
     // (hreflang + sitemap list only those; the language switcher falls back to that language's journal)
@@ -72,6 +74,16 @@ async function build() {
       const html = page({ t, key: "journal", title: (a.mt || a.t).length > 48 ? (a.mt || a.t) : `${a.mt || a.t} | Lexora Digital`, desc: a.md || a.d, body: article(t, a), alt, langs, ld: articleLd(t, a), ogType: "article" });
       await write(join(alt(l.code), "index.html"), html);
       if (l.code === langs[0]) urls.push({ alt, langs, lastmod: a.updated || a.iso });
+    }
+    // kit detail pages: only in the languages that have text in src/i18n/kitpages.mjs (hreflang + sitemap list only those)
+    for (const key of KIT_KEYS) {
+      if (!kitText(l.code, key)) continue;
+      const langs = kitLangs(key).filter((c) => all[c]);
+      const alt = (c) => langs.includes(c) ? kitHref(all[c], key) : path(all[c], "shop");
+      const k = kitText(l.code, key);
+      const html = page({ t, key: "shop", title: `${k.meta.title}`, desc: k.meta.desc, body: kitPage(t, key), alt, langs, ld: kitLd(t, key) });
+      await write(join(alt(l.code), "index.html"), html);
+      if (l.code === langs[0]) urls.push({ alt, langs });
     }
     // case studies share their slug across languages
     for (const item of t.home.work.items) {

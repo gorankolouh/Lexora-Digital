@@ -3,6 +3,8 @@ import { esc, fmt, path, abs, icon } from "../lib.mjs";
 import { SITE_URL, FOUNDER } from "../config.mjs";
 import { pageHero, band, btn, slug as slugify } from "../components.mjs";
 import { JART } from "./inner.mjs";
+import { kitBox } from "./kit.mjs";
+import { ARTICLE_KIT } from "../i18n/kitpages.mjs";
 
 export const articleHref = (t, a) => `${path(t, "journal")}${a.slug}/`;
 export const readMins = (a) => Math.max(3, Math.round(JSON.stringify(a.blocks).split(/\s+/).length / 210));
@@ -47,6 +49,7 @@ export function article(t, a) {
         <div class="a-share"><a class="link" href="${path(t, "journal")}">${icon("arrow", 15, 1.8)} ${esc(u.back)}</a></div></aside>
       <article class="prose article-body">
         ${blocks(a.blocks)}
+        ${ARTICLE_KIT[a.slug] ? kitBox(t, ARTICLE_KIT[a.slug]) : ""}
         <div class="a-cta">${btn(`${path(t, cta)}${cta === "contact" ? "#project" : ""}`, cta === "check" ? t.nav.check[0] : u.talk, true)}</div>
         <div class="author">
           <img src="/assets/img/art/founder-640.webp" width="72" height="96" alt="" loading="lazy" decoding="async">

@@ -1,4 +1,4 @@
-import { LANGS, SITE_URL, BRAND, TAGLINE, SERVICES, FORMS, PLANET_VIDEO, ORG_PROFILES, FOUNDER, DEFAULT_LANG, CONTACT } from "./config.mjs";
+import { LANGS, SITE_URL, BRAND, TAGLINE, SERVICES, FORMS, PLANET_VIDEO, ORG_PROFILES, FOUNDER, DEFAULT_LANG, CONTACT, SHOP_URL } from "./config.mjs";
 import { esc, fmt, path, abs, LOGO, icon, readyLangs } from "./lib.mjs";
 
 const V = Date.now().toString(36); // cache-busting for assets
@@ -129,7 +129,7 @@ function fillAlts(html, lang) {
 }
 export function page(o) { return fillAlts(pageRaw(o), o.t.lang); }
 
-function pageRaw({ t, key, title, desc, body, globe = false, noindex = false, alt, langs = null, ld = null, ogType = "website", og = null }) {
+function pageRaw({ t, key, title, desc, body, globe = false, noindex = false, alt, langs = null, ld = null, ogType = "website", og = null, canonical = null }) {
   const altFn = alt || ((code) => `/${code}/${t.__all[code].slugs[key] ?? ""}`);
   const selfPath = altFn(t.lang);
   const alts = readyLangs().filter((l) => !langs || langs.includes(l.code)).map((l) => `<link rel="alternate" hreflang="${l.code}" href="${abs(altFn(l.code))}">`).join("\n");
@@ -144,7 +144,7 @@ function pageRaw({ t, key, title, desc, body, globe = false, noindex = false, al
     knowsAbout: ["Web design", "Web development", "GDPR", "Cookie consent", "EU AI Act", "Digital Services Act", "Pay transparency", "Legal translation", "Business translation"],
     areaServed: { "@type": "Place", name: "Europe" },
     knowsLanguage: readyLangs().map((l) => l.code),
-    sameAs: ORG_PROFILES,
+    sameAs: [...ORG_PROFILES, SHOP_URL],
     founder: { "@type": "Person", "@id": SITE_URL + "/#founder", name: FOUNDER.name, jobTitle: FOUNDER.jobTitle, url: FOUNDER.url, sameAs: FOUNDER.profiles }
   } : null;
   const site = key === "home" ? {
@@ -162,7 +162,7 @@ function pageRaw({ t, key, title, desc, body, globe = false, noindex = false, al
 <style>html,body{background:#050605}</style>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
-${noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${abs(selfPath)}">\n${alts}${xdef}`}
+${noindex ? '<meta name="robots" content="noindex">' : canonical ? `<link rel="canonical" href="${abs(canonical)}">` : `<link rel="canonical" href="${abs(selfPath)}">\n${alts}${xdef}`}
 <meta name="theme-color" content="#050605">
 <meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="${BRAND}">
