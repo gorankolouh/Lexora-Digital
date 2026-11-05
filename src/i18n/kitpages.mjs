@@ -492,6 +492,8 @@ export default {
 export const ARTICLE_KIT = {
   "gdpr-website-legal-document": "gdpr",
   "eu-ai-act-website": "ai",
+  "ai-agents-human-judgment": "ai",
+  "ki-sicherheit-unternehmen": "ai",
   "cookie-banner-urteile": "gdpr",
   "cookiebanner-regels-ap": "gdpr"
 };
