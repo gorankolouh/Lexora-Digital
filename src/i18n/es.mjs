@@ -463,7 +463,7 @@ export default {
       hero: {
         label: "Plantillas de cumplimiento",
         h1: "Kits de cumplimiento UE, *en Notion o Word y Excel.*",
-        lead: "Kits prácticos para el RGPD, el Reglamento de IA de la UE, la transparencia retributiva y la evaluación de proveedores — para pymes, en cinco idiomas. Como plantilla de Notion o como archivos Word, Excel y PDF para descargar.",
+        lead: "Kits prácticos para el RGPD, el Reglamento de IA de la UE, la transparencia retributiva y la evaluación de proveedores — para pymes, en cinco idiomas. Como plantilla de Notion o como archivos Word, Excel y PDF para descargar. Nuevo: ediciones por país para NIS2, factura electrónica, canal de denuncias y accesibilidad.",
         cta1: "Ver el pack",
         cta2: "Ver todos los kits",
         points: ["Español, inglés, alemán, neerlandés, croata", "Plantilla de Notion o Word, Excel y PDF", "Acceso inmediato tras la compra", "Pago único, sin suscripción"]
@@ -477,7 +477,12 @@ export default {
       num: "5 kits",
       vs: "{bundle} en lugar de {full}",
       buy: "Comprar en Gumroad",
+      more: { label: "Ediciones por país", h2: "Cuatro kits más, *hechos para su país.*", lead: "NIS2, factura electrónica, canal de denuncias y accesibilidad. Estos kits son plantillas de Notion, con una edición por país: la edición española adaptada a la normativa nacional, además de una edición europea en inglés y ediciones para Alemania y Austria, Países Bajos y Croacia. Se venden por separado y no forman parte del pack." },
       items: {
+        nis2: { t: "Kit NIS2 España", s: "NIS2 · RDL 12/2018 · ENS", p: "Análisis de aplicabilidad, marco legal y autoridades, registro de medidas con correspondencia al ENS, registros de riesgos y proveedores, y registro de incidentes con plazos de 24 h, 72 h y 1 mes." },
+        einv: { t: "Kit Factura Electrónica España", s: "Crea y Crece · VERI*FACTU · FACe", p: "Análisis de obligaciones y fechas, calendario, plan de adaptación, contenido obligatorio de la factura (RD 1619/2012 ↔ EN 16931) y comparativa de programas." },
+        wb: { t: "Kit Sistema Interno de Información", s: "Ley 2/2023", p: "Lista de implantación, Responsable del Sistema, libro-registro con acuse en 7 días y respuesta en 3 meses, modelo de procedimiento y plantillas de comunicación." },
+        eaa: { t: "Kit de accesibilidad España", s: "Ley 11/2023", p: "Análisis de aplicabilidad, autoridades, la lista WCAG 2.1 AA con los 50 criterios, gestión de incidencias y plantilla de información de accesibilidad." },
         bundle: {
           t: "EU Compliance Bundle",
           s: "5 kits",
@@ -532,8 +537,8 @@ export default {
         label: "Preguntas",
         h2: "Antes de comprar.",
         items: [
-          ["¿Necesito Notion?", "No. Cada kit está disponible también en archivos Word, Excel y PDF. Para la edición de Notion basta con el plan gratuito."],
-          ["¿En qué idiomas están disponibles?", "Cada kit está disponible en español, inglés, alemán, neerlandés y croata. Usted elige su versión al pagar."],
+          ["¿Necesito Notion?", "No. Cada kit está disponible también en archivos Word, Excel y PDF. Para la edición de Notion basta con el plan gratuito. Los cuatro kits por país (NIS2, factura electrónica, canal de denuncias y accesibilidad) están disponibles por ahora solo como plantilla de Notion."],
+          ["¿En qué idiomas están disponibles?", "Cada kit está disponible en español, inglés, alemán, neerlandés y croata. Usted elige su versión al pagar. Los kits por país son productos distintos para cada país: la edición europea en inglés y ediciones nacionales para Alemania y Austria, Países Bajos, España y Croacia."],
           ["¿Cómo recibo el kit?", "El pago y el recibo se gestionan a través de Gumroad. Justo después de la compra recibe un enlace para duplicar la plantilla en su espacio de Notion, o un archivo ZIP con los archivos Word, Excel y PDF."],
           ["¿Qué diferencia hay entre las dos ediciones?", "El contenido y el precio son los mismos. La edición de Notion es un espacio conectado con vistas y campos automáticos. La edición descargable incluye documentos Word editables, un libro de Excel con los registros y plazos y controles automáticos, y PDF para imprimir."],
           ["¿Puedo usar un kit para varias empresas?", "Una compra cubre el uso dentro de una empresa. Si necesita kits para varias empresas o para sus clientes, escríbanos."],

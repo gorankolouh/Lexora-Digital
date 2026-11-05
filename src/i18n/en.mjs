@@ -464,7 +464,7 @@ export default {
       hero: {
         label: "Compliance templates",
         h1: "EU compliance kits, *in Notion or Word & Excel.*",
-        lead: "Practical kits for the GDPR, the EU AI Act, pay transparency and supplier checks — built for small and medium-sized businesses, in five languages. As a Notion template, or as Word, Excel and PDF files to download.",
+        lead: "Practical kits for the GDPR, the EU AI Act, pay transparency and supplier checks — built for small and medium-sized businesses, in five languages. As a Notion template, or as Word, Excel and PDF files to download. New: country editions for NIS2, e-invoicing, whistleblowing and accessibility.",
         cta1: "Get the bundle",
         cta2: "See all kits",
         points: ["English, German, Dutch, Spanish, Croatian", "Notion template or Word, Excel & PDF", "Instant access after purchase", "One-time payment, no subscription"]
@@ -478,7 +478,12 @@ export default {
       num: "5 kits",
       vs: "{bundle} instead of {full}",
       buy: "Buy on Gumroad",
+      more: { label: "Country editions", h2: "Four more kits, *built for your country.*", lead: "NIS2, e-invoicing, whistleblowing and the European Accessibility Act. These kits come as Notion templates, with one edition per country: the EU edition in English, plus German (Germany & Austria), Dutch, Spanish and Croatian editions adapted to national law. They are sold separately and are not part of the bundle." },
       items: {
+        nis2: { t: "EU NIS2 Compliance Kit", s: "Directive (EU) 2022/2555", p: "A scope checker, an authority directory for six countries, the Art. 21 control register, risk and supplier registers and an incident log with 24 h / 72 h / 1-month deadlines." },
+        einv: { t: "EU E-Invoicing Readiness Kit", s: "EN 16931 · Peppol · ViDA", p: "A tracker for 18 e-invoicing mandates with live countdowns, a readiness plan, the EN 16931 invoice data checklist, a provider comparison and a partner directory." },
+        wb: { t: "EU Whistleblower Channel Kit", s: "Directive (EU) 2019/1937", p: "A setup checklist, handlers and roles, a national law directory, a case register with 7-day and 3-month deadlines, a policy template and message templates." },
+        eaa: { t: "EU Accessibility Act (EAA) Compliance Kit", s: "Directive (EU) 2019/882", p: "A scope checker, an authority directory, the WCAG 2.1 AA checklist with all 50 criteria, an issue tracker and an accessibility statement template." },
         bundle: { t: "EU Compliance Bundle", s: "5 kits", p: "All five kits in one purchase: GDPR, AI compliance, AI workplace policy, pay transparency and supplier assessment." },
         gdpr: { t: "GDPR Compliance Kit", s: "GDPR", p: "A checklist with article references plus registers for processing activities, data subject requests, data breaches, processors and cookies." },
         ai: { t: "AI Compliance Toolkit", s: "EU AI Act + GDPR", p: "An AI tools registry, GDPR checkpoints, an employee AI policy, training video scripts and a training log." },
@@ -509,8 +514,8 @@ export default {
         label: "Questions",
         h2: "Before you buy.",
         items: [
-          ["Do I need Notion?", "No. Every kit is also available as Word, Excel and PDF files. For the Notion edition, the free Notion plan is enough."],
-          ["Which languages are available?", "Every kit is available in English, German, Dutch, Spanish and Croatian. You choose your edition at checkout."],
+          ["Do I need Notion?", "No. Every kit is also available as Word, Excel and PDF files. For the Notion edition, the free Notion plan is enough. The four country-edition kits (NIS2, e-invoicing, whistleblowing, accessibility) are currently available as Notion templates only."],
+          ["Which languages are available?", "Every kit is available in English, German, Dutch, Spanish and Croatian. You choose your edition at checkout. The country-edition kits are separate products per country: the EU edition in English and national editions for Germany & Austria, the Netherlands, Spain and Croatia."],
           ["How do I receive the kit?", "Payment and your receipt are handled by Gumroad. Right after purchase you get either a link to duplicate the template into your Notion workspace or a ZIP file with Word, Excel and PDF files."],
           ["What is the difference between the two editions?", "The content and the price are the same. The Notion edition is a connected workspace with views and automatic fields. The download edition gives you Word documents to edit, an Excel workbook with the registers and automatic deadlines and checks, and PDFs to print."],
           ["Can I use a kit for several companies?", "One purchase covers use within one business. If you need kits for several companies or for your clients, please contact us."],

@@ -463,7 +463,7 @@ export default {
       hero: {
         label: "Compliancetemplates",
         h1: "EU-compliancekits, *in Notion of Word & Excel.*",
-        lead: "Praktische kits voor de AVG, de EU AI Act, loontransparantie en leverancierscontroles — voor het mkb, in vijf talen. Als Notion-template of als Word-, Excel- en pdf-bestanden om te downloaden.",
+        lead: "Praktische kits voor de AVG, de EU AI Act, loontransparantie en leverancierscontroles — voor het mkb, in vijf talen. Als Notion-template of als Word-, Excel- en pdf-bestanden om te downloaden. Nieuw: landedities voor NIS2, e-facturatie, klokkenluiders en toegankelijkheid.",
         cta1: "Naar de bundel",
         cta2: "Alle kits bekijken",
         points: ["Nederlands, Engels, Duits, Spaans, Kroatisch", "Notion-template of Word, Excel & pdf", "Direct toegang na aankoop", "Eenmalige betaling, geen abonnement"]
@@ -477,7 +477,12 @@ export default {
       num: "5 kits",
       vs: "{bundle} in plaats van {full}",
       buy: "Kopen via Gumroad",
+      more: { label: "Landedities", h2: "Vier nieuwe kits, *gemaakt voor uw land.*", lead: "NIS2, e-facturatie, klokkenluiders en toegankelijkheid. Deze kits zijn er als Notion-template, met een eigen editie per land: de Nederlandse editie volgens Nederlands recht, plus een Engelse EU-editie en edities voor Duitsland & Oostenrijk, Spanje en Kroatië. Ze worden los verkocht en zitten niet in de bundel." },
       items: {
+        nis2: { t: "NIS2-kit Nederland", s: "Cyberbeveiligingswet (Cbw)", p: "Toepasselijkheidscheck, toezichthouders en CSIRT's, maatregelen-, risico- en leveranciersregister en een incidentenregister met termijnen van 24 uur, 72 uur en 1 maand." },
+        einv: { t: "E-factuurkit Nederland", s: "Peppol · EN 16931", p: "Verplichtingen en termijnen voor Nederland en buurlanden, een gereedheidsplan, de factuurvereisten-check (Wet OB ↔ EN 16931), een softwarevergelijking en handelspartners." },
+        wb: { t: "Klokkenluiderskit Nederland", s: "Wet bescherming klokkenluiders", p: "Inrichtingschecklist inclusief OR-instemming, meldfunctionarissen, een meldingenregister met termijnen van 7 dagen en 3 maanden, een model meldregeling en modelbrieven." },
+        eaa: { t: "Toegankelijkheidskit Nederland", s: "European Accessibility Act", p: "Toepasselijkheidscheck, toezichthouders, de WCAG 2.1 AA-toetslijst met alle 50 criteria, bevindingen met hertest en een model toegankelijkheidsinformatie." },
         bundle: { t: "EU Compliance Bundle", s: "5 kits", p: "Alle vijf kits in één aankoop: AVG, AI-compliance, AI-beleid op de werkvloer, loontransparantie en leveranciersbeoordeling." },
         gdpr: { t: "GDPR Compliance Kit", s: "AVG", p: "Een checklist met artikelverwijzingen plus registers voor verwerkingsactiviteiten, verzoeken van betrokkenen, datalekken, verwerkers en cookies." },
         ai: { t: "AI Compliance Toolkit", s: "EU AI Act + AVG", p: "Een register van AI-tools, AVG-controlepunten, een AI-beleid voor medewerkers, scripts voor trainingsvideo's en een trainingslogboek." },
@@ -516,8 +521,8 @@ export default {
         label: "Vragen",
         h2: "Voordat u koopt.",
         items: [
-          ["Heb ik Notion nodig?", "Nee. Elke kit is ook verkrijgbaar als Word-, Excel- en pdf-bestanden. Voor de Notion-editie is het gratis Notion-abonnement genoeg."],
-          ["Welke talen zijn er?", "Elke kit is beschikbaar in het Nederlands, Engels, Duits, Spaans en Kroatisch. U kiest uw taalversie bij het afrekenen."],
+          ["Heb ik Notion nodig?", "Nee. Elke kit is ook verkrijgbaar als Word-, Excel- en pdf-bestanden. Voor de Notion-editie is het gratis Notion-abonnement genoeg. De vier landedities (NIS2, e-facturatie, klokkenluiders, toegankelijkheid) zijn voorlopig alleen als Notion-template verkrijgbaar."],
+          ["Welke talen zijn er?", "Elke kit is beschikbaar in het Nederlands, Engels, Duits, Spaans en Kroatisch. U kiest uw taalversie bij het afrekenen. De landedities zijn aparte producten per land: de Engelse EU-editie en nationale edities voor Duitsland & Oostenrijk, Nederland, Spanje en Kroatië."],
           ["Hoe ontvang ik de kit?", "Betaling en bon lopen via Gumroad. Direct na aankoop krijgt u een link waarmee u de template naar uw Notion-workspace dupliceert, of een zip-bestand met Word-, Excel- en pdf-bestanden."],
           ["Wat is het verschil tussen de twee edities?", "Inhoud en prijs zijn gelijk. De Notion-editie is een gekoppelde workspace met weergaven en automatische velden. De downloadeditie bevat Word-documenten om te bewerken, een Excel-werkmap met de registers en automatische termijnen en controles, en pdf’s om af te drukken."],
           ["Mag ik een kit voor meerdere bedrijven gebruiken?", "Eén aankoop geldt voor gebruik binnen één bedrijf. Hebt u kits nodig voor meerdere bedrijven of voor uw klanten, neem dan contact met ons op."],

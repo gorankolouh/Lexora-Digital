@@ -670,6 +670,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/vendor-ai-supplier-kit/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/vendor-ai-supplier-kit/"/>
   </url>
+  <url><loc>https://lexoradigital.com/en/templates/eu-nis2-compliance-kit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-nis2-compliance-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/nis2-kit-deutschland-oesterreich/"/>
+  </url>
+  <url><loc>https://lexoradigital.com/de/vorlagen/nis2-kit-deutschland-oesterreich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-nis2-compliance-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/nis2-kit-deutschland-oesterreich/"/>
+  </url>
+  <url><loc>https://lexoradigital.com/en/templates/eu-e-invoicing-readiness-kit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-e-invoicing-readiness-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/e-rechnung-kit-deutschland-oesterreich/"/>
+  </url>
+  <url><loc>https://lexoradigital.com/de/vorlagen/e-rechnung-kit-deutschland-oesterreich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-e-invoicing-readiness-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/e-rechnung-kit-deutschland-oesterreich/"/>
+  </url>
+  <url><loc>https://lexoradigital.com/en/templates/eu-whistleblower-channel-kit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-whistleblower-channel-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/hinweisgeberschutz-kit-hinschg-hschg/"/>
+  </url>
+  <url><loc>https://lexoradigital.com/de/vorlagen/hinweisgeberschutz-kit-hinschg-hschg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-whistleblower-channel-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/hinweisgeberschutz-kit-hinschg-hschg/"/>
+  </url>
+  <url><loc>https://lexoradigital.com/en/templates/eu-accessibility-act-kit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-accessibility-act-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/barrierefreiheit-kit-bfsg-bafg/"/>
+  </url>
+  <url><loc>https://lexoradigital.com/de/vorlagen/barrierefreiheit-kit-bfsg-bafg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/templates/eu-accessibility-act-kit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/vorlagen/barrierefreiheit-kit-bfsg-bafg/"/>
+  </url>
   <url><loc>https://lexoradigital.com/en/work/studio-rosalie/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://lexoradigital.com/en/work/studio-rosalie/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lexoradigital.com/de/arbeiten/studio-rosalie/"/>

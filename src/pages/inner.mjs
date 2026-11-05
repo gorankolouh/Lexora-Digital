@@ -1,6 +1,6 @@
 // Inner pages — all built from the shared components so every page follows one system.
 import { esc, fmt, path, icon } from "../lib.mjs";
-import { SHOP, SITE_URL, CONTACT } from "../config.mjs";
+import { SHOP, SHOP_NEW, kitUrl, SITE_URL, CONTACT } from "../config.mjs";
 import { articleCard } from "./article.mjs";
 import { kitHref, KIT_PAGES_UI } from "./kit.mjs";
 import { pageHero, head, features, steps, faq, band, matrix, disclaimer, table, prose, form, ml, btn, art } from "../components.mjs";
@@ -279,6 +279,17 @@ export function kitCards(t) {
   return `${feat}
       <div class="strip">${cards}</div>`;
 }
+/* Country-edition kits (Notion only): each language page links to that country's product. */
+export function newKitCards(t) {
+  const p = t.pages.shop;
+  return `<div class="strip">${SHOP_NEW.map((x, i) => {
+    const it = p.items[x.key], u = kitUrl(x, t.lang);
+    return `<article class="proj s reveal${i % 3 ? ` d${i % 3}` : ""}">
+        <div class="media">${shopCover(x, it.t, "(max-width:960px) 100vw, 33vw")}</div>
+        <div class="meta"><div><p class="cat">${esc(it.s)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:8px;max-width:46ch">${fmt(it.p)}</p><p class="price-line"><b>${esc(money(t, x.price))}</b> · ${esc(p.buy)}</p><div class="eds"><a class="btn btn-lime btn-sm" href="${u}" rel="noopener" aria-label="${esc(`${p.buy}: ${it.t}, ${p.edNotion} (${money(t, x.price)})`)}"><img src="/assets/img/shop/notion-64.png" width="62" height="64" alt="">${esc(p.edNotion)}</a></div>${kitHref(t, x.key) ? `<a class="link kit-more" href="${kitHref(t, x.key)}">${esc(KIT_PAGES_UI(t).details)}<span class="sr">: ${esc(it.t)}</span> ${icon("arrow", 15, 1.8)}</a>` : ""}</div></div>
+      </article>`;
+  }).join("")}</div>`;
+}
 export function shop(t) {
   const p = t.pages.shop, vs = shopPrices(t);
   const [bundle] = SHOP;
@@ -289,6 +300,10 @@ export function shop(t) {
     `<section class="section rule shop-kits" id="kits" aria-labelledby="s1"><div class="wrap">
       ${head({ label: p.kits.label, h2: p.kits.h2, lead: p.kits.lead, id: "s1" })}
       ${kitCards(t)}
+    </div></section>`,
+    `<section class="section rule shop-kits" id="country-kits" aria-labelledby="s1b"><div class="wrap">
+      ${head({ label: p.more.label, h2: p.more.h2, lead: p.more.lead, id: "s1b" })}
+      ${newKitCards(t)}
     </div></section>`,
     sec(`${head({ label: p.how.label, h2: p.how.h2, lead: p.how.lead, id: "s2" })}${steps(p.how.steps)}`, "trust", "s2"),
     sec(`${head({ label: p.bounds.label, h2: p.bounds.h2, id: "s3" })}
@@ -306,13 +321,13 @@ export function shopLd(t) {
   const p = t.pages.shop;
   return {
     "@context": "https://schema.org", "@type": "ItemList", name: p.hero.label,
-    itemListElement: SHOP.map((x, i) => ({
+    itemListElement: [...SHOP, ...SHOP_NEW].map((x, i) => ({
       "@type": "ListItem", position: i + 1,
       item: {
         "@type": "Product", name: p.items[x.key].t, description: p.items[x.key].p.replace(/[*~]/g, ""),
         image: `${SITE_URL}/assets/img/shop/ed/${x.img || x.key}-1600.webp`,
         brand: { "@type": "Brand", name: "Lexora Digital" },
-        offers: [x.url, x.dl].map((u) => ({ "@type": "Offer", price: x.price.toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", url: u }))
+        offers: (x.urls ? [kitUrl(x, t.lang)] : [x.url, x.dl]).map((u) => ({ "@type": "Offer", price: x.price.toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", url: u }))
       }
     }))
   };
