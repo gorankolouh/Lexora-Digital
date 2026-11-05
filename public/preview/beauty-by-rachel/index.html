@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Beauty by Rachel</title>
+<meta name="description" content="Website preview for Beauty by Rachel, Newell Beach.">
+<link rel="icon" href="/preview/beauty-by-rachel/assets/logo.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style>
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preload" as="image" href="/preview/beauty-by-rachel/assets/hero-poster.jpg" fetchpriority="high">
+<style>
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(/preview/beauty-by-rachel/assets/fonts/cormorant-garamond-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(/preview/beauty-by-rachel/assets/fonts/cormorant-garamond-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(/preview/beauty-by-rachel/assets/fonts/cormorant-garamond-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:swap;src:url(/preview/beauty-by-rachel/assets/fonts/cormorant-garamond-latin-500-italic.woff2) format('woff2')}
+@font-face{font-family:'Jost';font-style:normal;font-weight:300;font-display:swap;src:url(/preview/beauty-by-rachel/assets/fonts/jost-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:swap;src:url(/preview/beauty-by-rachel/assets/fonts/jost-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Jost';font-style:normal;font-weight:500;font-display:swap;src:url(/preview/beauty-by-rachel/assets/fonts/jost-latin-500-normal.woff2) format('woff2')}
+/* Layout: fixed translucent header over a full-bleed video hero, then calm editorial bands
+   alternating warm white and cream, hairline rules instead of cards. Single light look by design. */
+:root{
+  --warm-white:#FAF7F2;
+  --cream:#F1E9DD;
+  --sand:#E3D5C1;
+  --oak:#C9A57A;
+  --terracotta:#C27A5E;
+  --terracotta-deep:#A65F45;   /* button fill: AA contrast with white text */
+  --terracotta-ink:#8F4F38;
+  --blush:#E8C9BC;
+  --espresso:#4A3B32;
+  --espresso-deep:#3A2E27;     /* contrast band + footer */
+  --on-dark:#F1E9DD;
+  --on-dark-muted:#CBBBA8;
+  --muted:#6E5D51;
+  --error:#9A3B2A;
+  --white:#FFFFFF;
+
+  --font-display:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --font-text:"Jost","Helvetica Neue",Arial,sans-serif;
+
+  --gutter-l:max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r:max(16px, env(safe-area-inset-right, 0px));
+  --max:1180px;
+  --header-h:76px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  color-scheme:light;
+}
+@media (min-width:720px){ :root{ --gutter-l:max(32px, env(safe-area-inset-left, 0px)); --gutter-r:max(32px, env(safe-area-inset-right, 0px)); } }
+@media (min-width:1080px){ :root{ --gutter-l:max(48px, env(safe-area-inset-left, 0px)); --gutter-r:max(48px, env(safe-area-inset-right, 0px)); --header-h:84px; } }
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(var(--header-h) + 16px)}
+@media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+body{
+  margin:0;
+  background:var(--warm-white); color:var(--espresso);
+  font-family:var(--font-text); font-weight:400; font-size:1.0625rem; line-height:1.65;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--warm-white)}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:500;line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.005em}
+p{margin:0}
+.wrap{max-width:var(--max);margin-inline:auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+.eyebrow{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--muted)}
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--espresso);color:var(--warm-white);padding:12px 18px}
+.skip:focus{left:16px;top:calc(env(safe-area-inset-top,0px) + 12px)}
+:focus-visible{outline:2px solid var(--terracotta-deep);outline-offset:3px;border-radius:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:0 1.6em;
+  font:500 .8125rem/1 var(--font-text);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  border:1px solid transparent;border-radius:999px;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);
+}
+.btn-primary{background:var(--terracotta-deep);color:var(--white)}
+.btn-primary:hover{background:var(--terracotta-ink)}
+.btn-ghost{background:transparent;color:var(--espresso);border-color:rgba(74,59,50,.35)}
+.btn-ghost:hover{border-color:var(--espresso);background:rgba(250,247,242,.6)}
+.text-link{
+  font:500 .8125rem/1 var(--font-text);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  display:inline-flex;align-items:center;gap:.6em;min-height:48px;padding:0 .25em;
+  background:linear-gradient(currentColor,currentColor) left calc(50% + .85em)/100% 1px no-repeat;
+}
+.text-link:hover{color:var(--terracotta-ink)}
+
+/* Header */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  padding-top:env(safe-area-inset-top,0px);
+  background:rgba(250,247,242,.72);
+  -webkit-backdrop-filter:blur(10px) saturate(1.1);backdrop-filter:blur(10px) saturate(1.1);
+  border-bottom:1px solid transparent;
+  transition:background-color .3s var(--ease),border-color .3s var(--ease);
+}
+.site-header.is-scrolled,.site-header.menu-open{background:rgba(250,247,242,.97);border-bottom-color:var(--sand)}
+.header-inner{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:block;flex-shrink:0;line-height:0}
+.brand img{width:150px;height:auto}
+@media (min-width:1080px){ .brand img{width:172px} }
+.brand .wordmark{display:none;font:italic 500 1.6rem/1 var(--font-display)}
+.brand.logo-failed img{display:none}.brand.logo-failed .wordmark{display:block}
+.nav{display:none;align-items:center;gap:36px}
+.nav a.nav-link{font-size:.9375rem;text-decoration:none;padding:10px 0;position:relative}
+.nav a.nav-link::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav a.nav-link:hover::after{transform:scaleX(1)}
+.nav .btn{min-height:44px;padding:0 1.3em}
+@media (min-width:920px){ .nav{display:flex} .menu-toggle{display:none!important} }
+.menu-toggle{
+  display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 4px 0 12px;
+  background:none;border:0;color:var(--espresso);cursor:pointer;
+  font:500 .8125rem/1 var(--font-text);letter-spacing:.14em;text-transform:uppercase;
+}
+.menu-lines{position:relative;width:22px;height:12px}
+.menu-lines::before,.menu-lines::after{content:"";position:absolute;left:0;right:0;height:1.5px;background:currentColor;transition:transform .3s var(--ease),top .3s var(--ease)}
+.menu-lines::before{top:0}.menu-lines::after{top:10px}
+.menu-toggle[aria-expanded="true"] .menu-lines::before{top:5px;transform:rotate(45deg)}
+.menu-toggle[aria-expanded="true"] .menu-lines::after{top:5px;transform:rotate(-45deg)}
+.mobile-menu{border-top:1px solid var(--sand);padding-block:12px 28px}
+.mobile-menu ul{list-style:none;margin:0;padding:0}
+.mobile-menu li a{display:block;padding:14px 0;font:500 1.75rem/1.2 var(--font-display);text-decoration:none;border-bottom:1px solid var(--sand)}
+.mobile-menu .btn{margin-top:24px;width:100%}
+@media (min-width:920px){ .mobile-menu{display:none!important} }
+
+/* Hero */
+.hero{position:relative;min-height:max(560px, min(86vh, 820px));display:flex;align-items:flex-end;overflow:hidden;background:var(--cream)}
+@media (min-width:720px){ .hero{align-items:center} }
+.hero-media,.hero-media video,.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-media video,.hero-media img{object-position:62% 50%}
+.hero-media .hero-still{opacity:0;transition:opacity .4s}
+.hero.use-still .hero-still{opacity:1}
+.hero.use-still video{visibility:hidden}
+.hero-overlay{position:absolute;inset:0;
+  background:linear-gradient(0deg, rgba(250,247,242,.94) 0%, rgba(250,247,242,.78) 32%, rgba(250,247,242,.15) 62%, rgba(250,247,242,.35) 100%);
+}
+@media (min-width:720px){
+  .hero-overlay{background:linear-gradient(90deg, rgba(250,247,242,.88) 0%, rgba(250,247,242,.66) 34%, rgba(250,247,242,.08) 62%, rgba(250,247,242,0) 100%)}
+}
+.hero-content{position:relative;width:100%;padding-block:calc(var(--header-h) + 48px) 56px}
+@media (min-width:720px){ .hero-content{padding-block:calc(var(--header-h) + 40px) 72px} }
+.hero-copy{max-width:34rem}
+.hero .eyebrow{color:var(--espresso);opacity:.8}
+.hero h1{font-size:clamp(2.9rem, 8.5vw, 5.6rem);font-weight:400;margin-top:18px;line-height:1.02}
+.hero h1 em{font-style:italic}
+.hero-lede{font-size:clamp(1.0625rem, 2.2vw, 1.25rem);margin-top:20px;max-width:26rem;font-weight:400}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:34px}
+.video-toggle{
+  position:absolute;z-index:2;right:max(16px, calc(env(safe-area-inset-right,0px) + 16px));bottom:16px;
+  width:44px;height:44px;border-radius:50%;border:1px solid rgba(74,59,50,.3);background:rgba(250,247,242,.75);
+  color:var(--espresso);cursor:pointer;display:grid;place-items:center;transition:background-color .2s
+}
+@media (min-width:720px){ .video-toggle{right:max(24px, calc(env(safe-area-inset-right,0px) + 24px));bottom:24px} }
+.video-toggle:hover{background:var(--warm-white)}
+.video-toggle .icon-pause{display:flex;gap:4px}
+.video-toggle .icon-pause i{display:block;width:3px;height:13px;background:currentColor;border-radius:1px}
+.video-toggle .icon-play{display:none;width:0;height:0;border-left:11px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+.video-toggle.is-paused .icon-pause{display:none}.video-toggle.is-paused .icon-play{display:block}
+.hero.use-still.no-video .video-toggle{display:none}
+@media (prefers-reduced-motion:no-preference){
+  .hero-copy > *{animation:rise .9s var(--ease) both}
+  .hero-copy > *:nth-child(2){animation-delay:.08s}
+  .hero-copy > *:nth-child(3){animation-delay:.16s}
+  .hero-copy > *:nth-child(4){animation-delay:.24s}
+}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* Sections */
+.band{padding-block:clamp(72px, 10vw, 128px)}
+.band-cream{background:var(--cream)}
+.section-head{display:grid;gap:16px;max-width:40rem}
+.section-head h2{font-size:clamp(2.25rem, 5vw, 3.5rem);font-weight:400}
+.section-head p.lede{color:var(--muted);max-width:34rem}
+
+/* Treatments */
+.treatments-layout{display:grid;gap:48px}
+@media (min-width:960px){ .treatments-layout{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:72px;align-items:start}
+  .treatments-layout .section-head{position:sticky;top:calc(var(--header-h) + 40px)} }
+.treatment-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--sand)}
+.treatment{display:grid;gap:10px;padding-block:28px;border-bottom:1px solid var(--sand)}
+@media (min-width:640px){ .treatment{grid-template-columns:minmax(0,1fr) auto;column-gap:40px;align-items:end} }
+.treatment h3{font-size:clamp(1.65rem, 3vw, 2.1rem)}
+.treatment p{color:var(--muted);max-width:34rem;margin-top:8px}
+.treatment .book-btn{
+  justify-self:start;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 2px;
+  background:none;border:0;color:var(--terracotta-ink);cursor:pointer;
+  font:500 .8125rem/1 var(--font-text);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;
+}
+.book-btn .arrow{display:inline-block;width:22px;height:1px;background:currentColor;position:relative;transition:width .3s var(--ease)}
+.book-btn .arrow::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.book-btn:hover .arrow{width:32px}
+.book-btn:hover{color:var(--espresso)}
+
+/* About */
+.about-layout{display:grid;gap:44px;align-items:center}
+@media (min-width:880px){ .about-layout{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:80px} }
+.portrait{
+  position:relative;aspect-ratio:4/5;max-width:100%;width:100%;max-height:640px;
+  background:var(--sand);display:grid;place-items:center;text-align:center;overflow:hidden
+}
+.portrait::before{content:"";position:absolute;inset:14px;border:1px solid rgba(74,59,50,.22)}
+.portrait .ph-label{position:relative;padding:24px;display:grid;gap:8px;max-width:20rem}
+.portrait .ph-label strong{font:italic 500 1.6rem/1.2 var(--font-display)}
+.portrait .ph-label span{font-size:.875rem;color:var(--muted)}
+.about-copy h2{font-size:clamp(2.25rem, 5vw, 3.5rem);font-weight:400;margin-top:14px}
+.about-copy .intro{font:400 clamp(1.35rem, 2.6vw, 1.7rem)/1.35 var(--font-display);margin-top:24px;max-width:32rem}
+.about-copy .body{display:grid;gap:16px;margin-top:22px;max-width:34rem}
+.ph{
+  display:block;padding:14px 16px 14px;border:1px dashed var(--oak);background:rgba(250,247,242,.6);
+  color:var(--muted);font-size:.975rem
+}
+.ph::before{content:"Placeholder · edit";display:block;font-size:.6875rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:var(--terracotta-ink);margin-bottom:6px}
+.cred{display:grid;gap:6px;padding-block:16px;border-block:1px solid var(--sand)}
+.cred span:last-child{font:500 1.5rem/1.2 var(--font-display)}
+.about-meta{margin-top:30px;padding-top:22px;border-top:1px solid var(--sand);display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center}
+
+/* Salon experience */
+.salon-grid{display:grid;gap:16px;margin-top:48px}
+@media (min-width:760px){ .salon-grid{grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:24px;align-items:stretch} }
+.salon-grid figure{margin:0;display:grid;gap:12px;min-width:0}
+.salon-grid .frame{overflow:hidden;background:var(--sand);aspect-ratio:822/400}
+.salon-grid .frame.tall{aspect-ratio:4/5}
+@media (min-width:760px){ .salon-grid .frame,.salon-grid .frame.tall{aspect-ratio:auto;height:100%;min-height:420px} .salon-grid figure{grid-template-rows:1fr auto} }
+.salon-grid img{width:100%;height:100%;object-fit:cover}
+.salon-grid .tall img{object-position:50% 12%}
+.salon-grid .frame.tall{background:var(--white)}
+figcaption{font-size:.8125rem;color:var(--muted);letter-spacing:.02em}
+.salon-notes{display:grid;gap:28px;margin-top:56px;padding-top:36px;border-top:1px solid var(--sand)}
+@media (min-width:760px){ .salon-notes{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px} }
+.salon-notes h3{font-size:1.6rem}
+.salon-notes p{color:var(--muted);margin-top:8px}
+
+/* Booking */
+.booking-layout{display:grid;gap:44px}
+@media (min-width:960px){ .booking-layout{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:72px;align-items:start} }
+.booking-aside{display:grid;gap:18px}
+.booking-aside .steps{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:14px;border-top:1px solid var(--sand);padding-top:20px}
+.booking-aside .steps li{display:grid;grid-template-columns:28px 1fr;gap:10px;color:var(--muted);font-size:.975rem}
+.booking-aside .steps b{font:500 1.15rem/1.3 var(--font-display);color:var(--terracotta-ink)}
+.panel{background:var(--warm-white);border:1px solid var(--sand);padding:clamp(22px, 4vw, 44px)}
+form{display:grid;gap:22px}
+.field{display:grid;gap:8px;min-width:0}
+.field-row{display:grid;gap:22px}
+@media (min-width:600px){ .field-row{grid-template-columns:1fr 1fr} }
+label,.legend{font-size:.875rem;font-weight:500;letter-spacing:.02em}
+.opt{font-weight:400;color:var(--muted)}
+input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea{
+  width:100%;min-height:52px;padding:12px 14px;font:400 1rem/1.4 var(--font-text);color:var(--espresso);
+  background:var(--white);border:1px solid #CDBBA4;border-radius:2px;appearance:none;-webkit-appearance:none;
+  transition:border-color .2s,box-shadow .2s
+}
+input[type=date]{min-width:0;display:block}
+input[type=date]::-webkit-date-and-time-value{text-align:left}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--espresso) 50%),linear-gradient(135deg,var(--espresso) 50%,transparent 50%);
+  background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:44px}
+textarea{min-height:120px;resize:vertical}
+input:hover,select:hover,textarea:hover{border-color:var(--oak)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--espresso);box-shadow:0 0 0 3px rgba(194,122,94,.28)}
+[aria-invalid="true"]{border-color:var(--error)!important}
+.hint{font-size:.8125rem;color:var(--muted)}
+.error{font-size:.8125rem;color:var(--error);font-weight:500}
+.error:empty{display:none}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1px solid #CDBBA4;border-radius:999px;background:var(--white);font-size:.9375rem;transition:background-color .2s,border-color .2s,color .2s}
+.chip input:hover + span{border-color:var(--oak)}
+.chip input:checked + span{background:var(--espresso);border-color:var(--espresso);color:var(--warm-white)}
+.chip input:focus-visible + span{outline:2px solid var(--terracotta-deep);outline-offset:3px}
+fieldset[aria-invalid="true"] .chip span{border-color:var(--error)}
+.select-flash{animation:flash 1.4s var(--ease)}
+@keyframes flash{0%,40%{box-shadow:0 0 0 4px rgba(194,122,94,.45)}100%{box-shadow:0 0 0 0 rgba(194,122,94,0)}}
+.form-foot{display:grid;gap:14px;padding-top:8px;border-top:1px solid var(--sand)}
+.demo-note{font-size:.8125rem;color:var(--muted);display:flex;gap:10px;align-items:baseline;padding-top:14px}
+.demo-note::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--terracotta);transform:translateY(-1px)}
+.form-foot .btn{width:100%}
+@media (min-width:600px){ .form-foot .btn{width:auto;justify-self:start} }
+.form-alert{font-size:.9rem;color:var(--error);font-weight:500}
+.form-alert:empty{display:none}
+
+/* Summary */
+.summary h3{font-size:clamp(1.9rem, 4vw, 2.4rem);font-weight:400}
+.summary h3:focus{outline:none}
+.summary .status{margin-top:12px;color:var(--muted);max-width:34rem}
+.summary dl{margin:28px 0 0;display:grid;border-top:1px solid var(--sand)}
+.summary dl div{display:grid;gap:4px;padding-block:14px;border-bottom:1px solid var(--sand)}
+@media (min-width:600px){ .summary dl div{grid-template-columns:11rem minmax(0,1fr);gap:16px} }
+.summary dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;padding-top:3px}
+.summary dd{margin:0;overflow-wrap:anywhere;white-space:pre-line}
+.summary .actions{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:30px;align-items:center}
+@media (prefers-reduced-motion:no-preference){ .summary:not([hidden]){animation:rise .6s var(--ease) both} }
+
+/* Visit */
+.visit-layout{display:grid;gap:44px}
+@media (min-width:880px){ .visit-layout{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:80px;align-items:start} }
+.visit-place{font:400 clamp(2.4rem, 6vw, 4rem)/1.02 var(--font-display);margin-top:14px}
+.visit-place em{display:block;font-style:italic;color:var(--muted);font-size:.5em;margin-top:10px}
+.details{margin:0;display:grid;border-top:1px solid var(--sand)}
+.details > div{display:grid;gap:4px;padding-block:18px;border-bottom:1px solid var(--sand)}
+@media (min-width:600px){ .details > div{grid-template-columns:9rem minmax(0,1fr);gap:20px;align-items:baseline} }
+.details dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.details dd{margin:0;overflow-wrap:anywhere}
+.details dd a{text-decoration-color:var(--oak);text-underline-offset:4px}
+.details dd a:hover{color:var(--terracotta-ink)}
+.pending{display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border:1px dashed var(--oak);border-radius:999px;font-size:.875rem;color:var(--muted)}
+.hours{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.hours li{display:flex;justify-content:space-between;gap:16px;max-width:20rem;font-variant-numeric:tabular-nums}
+
+/* Footer */
+.site-footer{background:var(--cream);border-top:1px solid var(--sand);padding-block:56px calc(36px + env(safe-area-inset-bottom,0px))}
+.footer-inner{display:grid;gap:32px;justify-items:start}
+@media (min-width:760px){ .footer-inner{grid-template-columns:auto 1fr;align-items:center} .footer-nav{justify-self:end} }
+.footer-inner .brand img{width:180px}
+.footer-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 28px}
+.footer-nav a{font-size:.9375rem;text-decoration:none;display:inline-block;padding:8px 0}
+.footer-nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.footer-base{grid-column:1/-1;width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:24px;border-top:1px solid var(--sand);font-size:.8125rem;color:var(--muted)}
+
+/* Phone: show the whole 16:9 video above the headline */
+@media (max-width:719px){
+  .hero{display:block;min-height:0;background:var(--warm-white)}
+  .hero-media{position:relative;width:100%;aspect-ratio:16/9;margin-top:var(--header-h)}
+  .hero-media video,.hero-media img{object-position:50% 50%}
+  .hero-overlay{display:none}
+  .hero-content{padding-block:30px 52px}
+  .hero h1{margin-top:12px}
+  .video-toggle{top:calc(var(--header-h) + 56.25vw - 54px);bottom:auto;right:max(12px, calc(env(safe-area-inset-right,0px) + 12px))}
+}
+
+/* Hero badge: slow rotating ring */
+.hero-badge{display:none;position:absolute;z-index:1;right:calc(var(--gutter-r) + 72px);bottom:64px;width:150px;height:150px}
+@media (min-width:960px){ .hero-badge{display:block} }
+.hero-badge svg{width:100%;height:100%;overflow:visible}
+.hero-badge text{font:500 11.5px var(--font-text);letter-spacing:.32em;fill:var(--espresso);text-transform:uppercase}
+.hero-badge .ring{transform-origin:50% 50%}
+@media (prefers-reduced-motion:no-preference){ .hero-badge .ring{animation:spin 48s linear infinite} }
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-badge .mark{position:absolute;inset:0;display:grid;place-items:center}
+.hero-badge .mark span{width:62px;height:62px;border-radius:50%;background:rgba(250,247,242,.88);border:1px solid rgba(74,59,50,.25);display:grid;place-items:center;font:italic 500 2rem/1 var(--font-display);color:var(--espresso);padding-bottom:4px}
+
+/* Ribbon */
+.ribbon{background:var(--espresso-deep);color:var(--on-dark);overflow:hidden;padding-block:18px;border-block:1px solid #2E241E}
+.ribbon-track{display:flex;width:max-content;align-items:center}
+.ribbon-track span{font:italic 400 clamp(1.25rem,2.4vw,1.6rem)/1 var(--font-display);white-space:nowrap;padding-inline:28px}
+.ribbon-track i{width:5px;height:5px;border-radius:50%;background:var(--oak);flex:none}
+@media (prefers-reduced-motion:no-preference){ .ribbon-track{animation:drift 60s linear infinite} .ribbon:hover .ribbon-track{animation-play-state:paused} }
+@keyframes drift{to{transform:translateX(-50%)}}
+
+/* Dark contrast band */
+.band-dark{background:var(--espresso-deep);color:var(--on-dark)}
+.band-dark .eyebrow{color:var(--on-dark-muted)}
+.band-dark .section-head p.lede{color:var(--on-dark-muted)}
+.band-dark :focus-visible{outline-color:var(--blush)}
+.work-head{display:grid;gap:28px;align-items:end}
+@media (min-width:880px){ .work-head{grid-template-columns:minmax(0,1fr) auto} }
+.c-btn .icon-pause{display:flex;gap:4px}.c-btn.is-paused .icon-pause{display:none}.carousel{margin-top:44px;position:relative}
+.track{list-style:none;margin:0;padding:0;display:grid;outline-offset:6px}
+.slide{grid-area:1/1;min-width:0;opacity:0;visibility:hidden;transition:opacity .7s var(--ease),visibility 0s linear .7s}
+.slide.is-active{opacity:1;visibility:visible;transition:opacity .7s var(--ease),visibility 0s}
+@media (prefers-reduced-motion:no-preference){
+  .slide .shot img{transform:scale(1.04);transition:transform 3.2s linear}
+  .slide.is-active .shot img{transform:scale(1)}
+}
+.dots{display:flex;gap:4px;margin-top:18px;flex-wrap:wrap}
+.dot{width:44px;height:44px;display:grid;place-items:center;background:none;border:0;cursor:pointer;padding:0}
+.dot span{display:block;width:28px;height:2px;background:rgba(241,233,221,.25);transition:background-color .3s}
+.dot[aria-current="true"] span{background:var(--oak)}
+.dot:hover span{background:var(--on-dark-muted)}
+.pair{display:grid;gap:6px;margin:0}
+@media (min-width:640px){ .pair{grid-template-columns:1fr 1fr;gap:6px} }
+.shot{position:relative;margin:0;overflow:hidden;aspect-ratio:2/1;background:#2E241E}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.tag{position:absolute;left:14px;top:14px;padding:7px 12px 6px;background:rgba(58,46,39,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:var(--on-dark);font:500 .6875rem/1 var(--font-text);letter-spacing:.2em;text-transform:uppercase}
+.shot.after .tag{background:rgba(250,247,242,.9);color:var(--espresso)}
+.slide-cap{display:flex;justify-content:space-between;gap:16px;margin-top:16px;color:var(--on-dark-muted);font-size:.875rem}
+.progress{margin-top:6px;height:1px;background:rgba(241,233,221,.18);position:relative;overflow:hidden}
+.progress span{position:absolute;inset:0;background:var(--oak);transform-origin:left;transform:scaleX(0)}
+.progress.run span{animation:fill var(--dur,6s) linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+.work-foot{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;margin-top:36px}
+.work-foot p{color:var(--on-dark-muted);font-size:.9375rem;max-width:30rem}
+.btn-light{background:var(--on-dark);color:var(--espresso-deep)}
+.btn-light:hover{background:var(--white)}
+
+/* Image polish */
+.salon-grid .frame img{transition:transform 1.6s var(--ease)}
+.salon-grid figure:hover .frame img{transform:scale(1.035)}
+
+/* Dark footer */
+.site-footer{background:var(--espresso-deep);color:var(--on-dark);border-top:0}
+.site-footer .footer-base{border-top-color:rgba(241,233,221,.16);color:var(--on-dark-muted)}
+.site-footer :focus-visible{outline-color:var(--blush)}
+
+/* Scroll reveal (scroll-driven, visible wherever unsupported) */
+@supports (animation-timeline: view()){
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+  }
+}
+@keyframes reveal{from{opacity:.2;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){ *,*::before,*::after{animation:none!important;transition:none!important} }
+
+/* Preview palette switch */
+.palette-switch{position:fixed;z-index:45;left:max(16px, calc(env(safe-area-inset-left,0px) + 16px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:4px;padding:4px;border-radius:999px;background:rgba(255,255,255,.92);border:1px solid var(--sand);box-shadow:0 6px 24px rgba(0,0,0,.08);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:500 .6875rem/1 var(--font-text);letter-spacing:.14em;text-transform:uppercase}
+.palette-switch span{padding:0 8px 0 10px;color:var(--muted)}
+.palette-switch a{display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:0 12px;border-radius:999px;text-decoration:none;color:var(--espresso)}
+.palette-switch a i{width:10px;height:10px;border-radius:50%;display:block}
+.palette-switch a[aria-current="page"]{background:var(--espresso);color:var(--warm-white)}
+@media (max-width:420px){ .palette-switch span{display:none} }
+</style>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Beauty by Rachel, back to top">
+      <img src="/preview/beauty-by-rachel/assets/logo.png" alt="Beauty by Rachel" width="900" height="257" onerror="this.parentElement.classList.add('logo-failed')">
+      <span class="wordmark" aria-hidden="true">Beauty by Rachel</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-link" href="#treatments">Treatments</a>
+      <a class="nav-link" href="#work">Her work</a>
+      <a class="nav-link" href="#about">About Rachel</a>
+      <a class="nav-link" href="#visit">Visit</a>
+      <a class="btn btn-primary" href="#book">Request an appointment</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+      <span id="menuLabel">Menu</span><span class="menu-lines" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="mobile-menu wrap" id="mobileMenu" hidden>
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#work">Her work</a></li>
+        <li><a href="#about">About Rachel</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <a class="btn btn-primary" href="#book">Request an appointment</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="heroTitle">
+    <div class="hero-media" aria-hidden="true">
+      <img class="hero-still" src="/preview/beauty-by-rachel/assets/hero-poster.jpg" alt="" width="1280" height="720" fetchpriority="high">
+      <video id="heroVideo" muted loop playsinline preload="metadata" poster="/preview/beauty-by-rachel/assets/hero-poster.jpg">
+        <source src="/preview/beauty-by-rachel/assets/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="wrap hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">Newell Beach · Far North Queensland</p>
+        <h1 id="heroTitle">A little time <em>for you.</em></h1>
+        <p class="hero-lede">Personalised beauty treatments in Newell Beach.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">Request an appointment</a>
+          <a class="text-link" href="#treatments">Explore treatments</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><defs><path id="ring" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+        <g class="ring"><text><textPath href="#ring" textLength="500" lengthAdjust="spacing">Beauty by Rachel · Newell Beach · Queensland ·</textPath></text></g>
+      </svg>
+      <div class="mark"><span>R</span></div>
+    </div>
+    <button class="video-toggle" id="videoToggle" type="button" aria-label="Pause background video">
+      <span class="icon-pause" aria-hidden="true"><i></i><i></i></span>
+      <span class="icon-play" aria-hidden="true"></span>
+    </button>
+  </section>
+
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <span>Facials and peels</span><i></i><span>Manicure and pedicure</span><i></i><span>Waxing</span><i></i><span>Spray tanning</span><i></i><span>Brow treatments and tinting</span><i></i><span>Cosmetic tattooing</span><i></i>
+      <span>Facials and peels</span><i></i><span>Manicure and pedicure</span><i></i><span>Waxing</span><i></i><span>Spray tanning</span><i></i><span>Brow treatments and tinting</span><i></i><span>Cosmetic tattooing</span><i></i>
+    </div>
+  </div>
+
+  <section class="band" id="treatments" aria-labelledby="treatmentsTitle">
+    <div class="wrap treatments-layout">
+      <div class="section-head reveal">
+        <p class="eyebrow">Treatments</p>
+        <h2 id="treatmentsTitle">Care for skin, brows, hands and feet</h2>
+        <p class="lede">Choose a treatment to start your request. If you're not sure what you need, pick the closest one and mention it in your message.</p>
+      </div>
+      <ul class="treatment-list">
+        <li class="treatment reveal">
+          <div>
+            <h3>Facials and peels</h3>
+            <p>Time out on the treatment bed while your skin is cleansed and cared for. Rachel will talk through your options so the treatment suits you on the day.</p>
+          </div>
+          <button class="book-btn" type="button" data-treatment="Facials and peels">Request <span class="arrow" aria-hidden="true"></span><span class="sr-only"> facials and peels</span></button>
+        </li>
+        <li class="treatment reveal">
+          <div>
+            <h3>Manicure and pedicure</h3>
+            <p>Hands and feet tidied, shaped and finished the way you like, whether it's an everyday refresh or colour for an occasion.</p>
+          </div>
+          <button class="book-btn" type="button" data-treatment="Manicure and pedicure">Request <span class="arrow" aria-hidden="true"></span><span class="sr-only"> manicure and pedicure</span></button>
+        </li>
+        <li class="treatment reveal">
+          <div>
+            <h3>Waxing</h3>
+            <p>Face and body waxing in a private, relaxed room, with care taken from start to finish.</p>
+          </div>
+          <button class="book-btn" type="button" data-treatment="Waxing">Request <span class="arrow" aria-hidden="true"></span><span class="sr-only"> waxing</span></button>
+        </li>
+        <li class="treatment reveal">
+          <div>
+            <h3>Spray tanning</h3>
+            <p>An even, natural-looking colour without time in the sun. Ask about preparation when you request your appointment.</p>
+          </div>
+          <button class="book-btn" type="button" data-treatment="Spray tanning">Request <span class="arrow" aria-hidden="true"></span><span class="sr-only"> spray tanning</span></button>
+        </li>
+        <li class="treatment reveal">
+          <div>
+            <h3>Brow treatments and tinting</h3>
+            <p>Brows shaped and tinted to suit your face and the look you're after.</p>
+          </div>
+          <button class="book-btn" type="button" data-treatment="Brow treatments and tinting">Request <span class="arrow" aria-hidden="true"></span><span class="sr-only"> brow treatments and tinting</span></button>
+        </li>
+        <li class="treatment reveal">
+          <div>
+            <h3>Cosmetic tattooing</h3>
+            <p>A considered, longer-lasting treatment, talked through with you first so you know what to expect before anything begins.</p>
+          </div>
+          <button class="book-btn" type="button" data-treatment="Cosmetic tattooing">Request <span class="arrow" aria-hidden="true"></span><span class="sr-only"> cosmetic tattooing</span></button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-dark" id="work" aria-labelledby="workTitle">
+    <div class="wrap">
+      <div class="work-head reveal">
+        <div class="section-head">
+          <p class="eyebrow">Her work</p>
+          <h2 id="workTitle">Brows, before <em>and after</em></h2>
+          <p class="lede">Real results from Rachel's treatment room.</p>
+        </div>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Before and after brow gallery">
+        <ul class="track" id="workTrack" aria-live="off">
+          <li class="slide" aria-roledescription="slide" aria-label="1 of 6">
+            <div class="pair">
+              <figure class="shot"><img src="/preview/beauty-by-rachel/assets/work-1-before.webp" alt="Client's brows before treatment, photo 1" width="800" height="393"><figcaption class="tag">Before</figcaption></figure>
+              <figure class="shot after"><img src="/preview/beauty-by-rachel/assets/work-1-after.webp" alt="The same client's brows after treatment by Rachel, photo 1" width="800" height="393"><figcaption class="tag">After</figcaption></figure>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="slide" aria-label="2 of 6">
+            <div class="pair">
+              <figure class="shot"><img src="/preview/beauty-by-rachel/assets/work-2-before.webp" alt="Client's brows before treatment, photo 2" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">Before</figcaption></figure>
+              <figure class="shot after"><img src="/preview/beauty-by-rachel/assets/work-2-after.webp" alt="The same client's brows after treatment by Rachel, photo 2" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">After</figcaption></figure>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="slide" aria-label="3 of 6">
+            <div class="pair">
+              <figure class="shot"><img src="/preview/beauty-by-rachel/assets/work-3-before.webp" alt="Client's brows before treatment, photo 3" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">Before</figcaption></figure>
+              <figure class="shot after"><img src="/preview/beauty-by-rachel/assets/work-3-after.webp" alt="The same client's brows after treatment by Rachel, photo 3" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">After</figcaption></figure>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="slide" aria-label="4 of 6">
+            <div class="pair">
+              <figure class="shot"><img src="/preview/beauty-by-rachel/assets/work-4-before.webp" alt="Client's brows before treatment, photo 4" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">Before</figcaption></figure>
+              <figure class="shot after"><img src="/preview/beauty-by-rachel/assets/work-4-after.webp" alt="The same client's brows after treatment by Rachel, photo 4" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">After</figcaption></figure>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="slide" aria-label="5 of 6">
+            <div class="pair">
+              <figure class="shot"><img src="/preview/beauty-by-rachel/assets/work-5-before.webp" alt="Client's brows before treatment, photo 5" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">Before</figcaption></figure>
+              <figure class="shot after"><img src="/preview/beauty-by-rachel/assets/work-5-after.webp" alt="The same client's brows after treatment by Rachel, photo 5" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">After</figcaption></figure>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="slide" aria-label="6 of 6">
+            <div class="pair">
+              <figure class="shot"><img src="/preview/beauty-by-rachel/assets/work-6-before.webp" alt="Client's brows before treatment, photo 6" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">Before</figcaption></figure>
+              <figure class="shot after"><img src="/preview/beauty-by-rachel/assets/work-6-after.webp" alt="The same client's brows after treatment by Rachel, photo 6" width="800" height="393" loading="lazy" decoding="async"><figcaption class="tag">After</figcaption></figure>
+            </div>
+          </li>
+        </ul>
+        <div class="dots" id="workDots" role="group" aria-label="Choose a photo"></div>
+        <div class="progress" id="workProgress" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="work-foot">
+        <p>Every brow is shaped to suit the face it belongs to.</p>
+        <button class="btn btn-light" type="button" data-treatment="Brow treatments and tinting">Request a brow appointment</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-cream" id="about" aria-labelledby="aboutTitle">
+    <div class="wrap about-layout reveal">
+      <div class="portrait" role="img" aria-label="Space for a portrait of Rachel">
+        <div class="ph-label">
+          <strong>Portrait of Rachel</strong>
+          <span>Add a natural, well-lit photo here, ideally in the salon. Portrait format, about 1200 × 1500 px.</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">About Rachel</p>
+        <h2 id="aboutTitle">Hello, I'm Rachel</h2>
+        <p class="intro">Beauty by Rachel is my salon in Newell Beach, where every appointment is with me.</p>
+        <div class="body">
+          <p class="ph">Rachel's introduction in her own words: how she started in beauty, what she enjoys about her work, and what clients can expect when they walk in. Two or three short sentences.</p>
+          <p class="cred"><span class="eyebrow">Qualified</span><span>CIDESCO International Diploma</span></p>
+          <p class="ph">Any further training or qualifications Rachel would like listed.</p>
+        </div>
+        <div class="about-meta">
+          <a class="btn btn-ghost" href="#book">Request an appointment</a>
+          <span class="hint" id="aboutInsta"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="salon" aria-labelledby="salonTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The salon</p>
+        <h2 id="salonTitle">A quiet room, made for you</h2>
+        <p class="lede">Soft light, warm textures and time to talk about what you'd like. Your appointment is yours alone.</p>
+      </div>
+      <div class="salon-grid reveal">
+        <figure>
+          <div class="frame"><img src="/preview/beauty-by-rachel/assets/salon-room.webp" alt="Treatment corner in the salon: a cream armchair with knitted throw and cushions beside a white shelf of tools and products" width="822" height="400" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('img-missing');this.remove()"></div>
+          <figcaption>Inside the salon</figcaption>
+        </figure>
+        <figure>
+          <div class="frame tall"><img src="/preview/beauty-by-rachel/assets/salon-detail.webp" alt="Rachel's CIDESCO International Diploma, framed on the salon wall" width="875" height="1798" loading="lazy" decoding="async" onerror="this.closest('figure').classList.add('img-missing');this.remove()"></div>
+          <figcaption>CIDESCO International Diploma, on the salon wall</figcaption>
+        </figure>
+      </div>
+      <div class="salon-notes reveal">
+        <div><h3>Private</h3><p>A calm, closed room, so you can switch off and relax.</p></div>
+        <div><h3>Personal</h3><p>Your treatment is planned around you, with time to ask questions.</p></div>
+        <div><h3>Unhurried</h3><p>Come in, settle in and take a little time for yourself.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-cream" id="book" aria-labelledby="bookTitle">
+    <div class="wrap booking-layout">
+      <div class="booking-aside">
+        <p class="eyebrow">Appointments</p>
+        <h2 id="bookTitle" style="font-size:clamp(2.25rem,5vw,3.5rem);font-weight:400">Request an appointment</h2>
+        <p style="color:var(--muted);max-width:30rem">Tell Rachel what you'd like and when suits you best. Requests aren't confirmed bookings. Rachel gets in touch to arrange a time.</p>
+        <ol class="steps">
+          <li><b>1</b><span>Choose a treatment and your preferred day.</span></li>
+          <li><b>2</b><span>Leave your details so Rachel can reply.</span></li>
+          <li><b>3</b><span>Rachel contacts you to confirm a time that works.</span></li>
+        </ol>
+      </div>
+
+      <div class="panel">
+        <form id="bookingForm" novalidate>
+          <div class="field">
+            <label for="treatment">Treatment</label>
+            <select id="treatment" name="treatment" required aria-describedby="treatmentError">
+              <option value="">Select a treatment</option>
+              <option>Facials and peels</option>
+              <option>Manicure and pedicure</option>
+              <option>Waxing</option>
+              <option>Spray tanning</option>
+              <option>Brow treatments and tinting</option>
+              <option>Cosmetic tattooing</option>
+              <option>Not sure yet</option>
+            </select>
+            <p class="error" id="treatmentError"></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date" required aria-describedby="dateHint dateError">
+              <p class="hint" id="dateHint">Choose today or a later date.</p>
+              <p class="error" id="dateError"></p>
+            </div>
+            <fieldset class="field" id="timeGroup" aria-describedby="timeError">
+              <legend class="legend">Preferred time of day</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="time" value="Morning" id="timeMorning" required><span>Morning</span></label>
+                <label class="chip"><input type="radio" name="time" value="Afternoon" id="timeAfternoon"><span>Afternoon</span></label>
+                <label class="chip"><input type="radio" name="time" value="No preference" id="timeAny"><span>No preference</span></label>
+              </div>
+              <p class="error" id="timeError"></p>
+            </fieldset>
+          </div>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="nameError">
+            <p class="error" id="nameError"></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="emailError">
+              <p class="error" id="emailError"></p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="opt">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="phoneError">
+              <p class="error" id="phoneError"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message <span class="opt">(optional)</span></label>
+            <textarea id="message" name="message" rows="4" aria-describedby="messageHint"></textarea>
+            <p class="hint" id="messageHint">Anything Rachel should know, such as a first visit or an occasion.</p>
+          </div>
+
+          <div class="form-foot">
+            <p class="demo-note">Demo booking form — no request will be sent.</p>
+            <p class="form-alert" id="formAlert" role="alert"></p>
+            <button class="btn btn-primary" type="submit">Preview appointment request</button>
+          </div>
+        </form>
+
+        <div class="summary" id="summary" hidden>
+          <p class="eyebrow">Request preview</p>
+          <h3 id="summaryTitle" tabindex="-1" style="margin-top:12px">Here's what you entered</h3>
+          <p class="status" role="status">Your appointment request preview is ready. This demo has not sent or booked anything.</p>
+          <dl id="summaryList"></dl>
+          <div class="actions">
+            <button class="btn btn-primary" type="button" id="editBtn">Edit details</button>
+            <button class="text-link" type="button" id="resetBtn" style="background-color:transparent;border:0;cursor:pointer;color:var(--espresso)">Start again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="visit" aria-labelledby="visitTitle">
+    <div class="wrap visit-layout">
+      <div>
+        <p class="eyebrow" id="visitTitle">Visit</p>
+        <p class="visit-place">Newell Beach<em>Queensland, Australia</em></p>
+      </div>
+      <dl class="details" id="details">
+        <div><dt>Address</dt><dd data-field="address"></dd></div>
+        <div><dt>Opening hours</dt><dd data-field="hours"></dd></div>
+        <div><dt>Phone</dt><dd data-field="phone"></dd></div>
+        <div><dt>Email</dt><dd data-field="email"></dd></div>
+        <div><dt>Instagram</dt><dd data-field="instagram"></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<nav class="palette-switch" aria-label="Colour option for this preview"><span>Colour</span><a href="/preview/beauty-by-rachel/" aria-current="page"><i style="background:#A65F45"></i>Terracotta</a><a href="/preview/beauty-by-rachel/taupe/" ><i style="background:#7A6253"></i>Taupe</a></nav>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a class="brand" href="#top" aria-label="Beauty by Rachel, back to top">
+      <img src="/preview/beauty-by-rachel/assets/logo-light.png" alt="Beauty by Rachel" width="900" height="257" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('logo-failed')">
+      <span class="wordmark" aria-hidden="true">Beauty by Rachel</span>
+    </a>
+    <nav class="footer-nav" aria-label="Footer">
+      <ul>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#work">Her work</a></li>
+        <li><a href="#about">About Rachel</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#book">Request an appointment</a></li>
+      </ul>
+    </nav>
+    <div class="footer-base">
+      <span>© <span id="year">2026</span> Beauty by Rachel · Newell Beach, QLD</span>
+      <span>Website preview</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   BUSINESS DETAILS — edit here.
+   Leave a value as null to show a neat "to be confirmed" placeholder.
+   Links (phone, email, Instagram) only become active once a value is set.
+   ========================================================================== */
+const CONFIG = {
+  address:   null,                        // e.g. "Shop 2, 12 Example St, Newell Beach QLD 4873"
+  hours:     null,                        // e.g. [["Tuesday","9am – 5pm"],["Saturday","9am – 3pm"]]
+  phone:     null,                        // e.g. "0400 000 000"
+  email:     null,                        // e.g. "hello@example.com.au"
+  instagram: "beauty_by_rachel_rebecca"   // handle without the @
+};
+/* Assets live in /assets: logo.png, hero.mp4, hero-poster.jpg, salon-room.webp, salon-detail.webp.
+   Replace a file with one of the same name to swap it. */
+
+(function(){
+  const $ = (s, r=document) => r.querySelector(s);
+  const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  /* ---- Header state ---- */
+  const header = $('#siteHeader');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---- Mobile menu ---- */
+  const toggle = $('#menuToggle'), menu = $('#mobileMenu'), label = $('#menuLabel');
+  function setMenu(open, returnFocus){
+    toggle.setAttribute('aria-expanded', String(open));
+    menu.hidden = !open; label.textContent = open ? 'Close' : 'Menu';
+    header.classList.toggle('menu-open', open);
+    if(!open && returnFocus) toggle.focus();
+  }
+  toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+  $$('a', menu).forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape' && !menu.hidden) setMenu(false, true); });
+  window.addEventListener('resize', () => { if(window.innerWidth >= 920 && !menu.hidden) setMenu(false); });
+
+  /* ---- Hero video ---- */
+  const hero = $('.hero'), video = $('#heroVideo'), vbtn = $('#videoToggle');
+  function setPausedUI(paused){
+    vbtn.classList.toggle('is-paused', paused);
+    vbtn.setAttribute('aria-label', paused ? 'Play background video' : 'Pause background video');
+  }
+  function useStill(noVideo){ hero.classList.add('use-still'); if(noVideo) hero.classList.add('no-video'); setPausedUI(true); }
+  function tryPlay(){
+    hero.classList.remove('use-still');
+    const p = video.play();
+    if(p && p.catch) p.catch(() => useStill(false));
+    setPausedUI(false);
+  }
+  video.addEventListener('error', () => useStill(true), true);
+  const src = video.querySelector('source');
+  if(src) src.addEventListener('error', () => useStill(true));
+  if(window.matchMedia('(max-width:719px)').matches && src){ src.src = '/preview/beauty-by-rachel/assets/hero-full.mp4'; video.load(); }
+  if(reduceMotion.matches){ video.removeAttribute('autoplay'); useStill(false); }
+  else { tryPlay(); }
+  vbtn.addEventListener('click', () => {
+    if(video.paused){ tryPlay(); }
+    else { video.pause(); setPausedUI(true); }
+  });
+  reduceMotion.addEventListener && reduceMotion.addEventListener('change', e => { if(e.matches){ video.pause(); useStill(false); } });
+
+  /* ---- Treatment preselect ---- */
+  const form = $('#bookingForm'), select = $('#treatment');
+  $$('[data-treatment]').forEach(btn => btn.addEventListener('click', () => {
+    showForm();
+    select.value = btn.dataset.treatment;
+    clearError(select);
+    $('#book').scrollIntoView({behavior: reduceMotion.matches ? 'auto' : 'smooth', block:'start'});
+    setTimeout(() => {
+      select.focus({preventScroll:true});
+      select.classList.remove('select-flash'); void select.offsetWidth; select.classList.add('select-flash');
+    }, reduceMotion.matches ? 0 : 450);
+  }));
+
+  /* ---- Date: no past dates ---- */
+  const dateInput = $('#date');
+  function todayISO(){ const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0,10); }
+  dateInput.min = todayISO();
+
+  /* ---- Validation ---- */
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  function setError(el, msg){
+    const id = el.id === 'timeGroup' ? 'timeError' : el.id + 'Error';
+    const out = document.getElementById(id);
+    if(out) out.textContent = msg;
+    el.setAttribute('aria-invalid', 'true');
+  }
+  function clearError(el){
+    const id = el.id === 'timeGroup' ? 'timeError' : el.id + 'Error';
+    const out = document.getElementById(id);
+    if(out) out.textContent = '';
+    el.removeAttribute('aria-invalid');
+  }
+  const checks = {
+    treatment: () => select.value ? '' : 'Please choose a treatment, or select "Not sure yet".',
+    date: () => {
+      const v = dateInput.value;
+      if(!v) return 'Please choose a preferred date.';
+      if(v < todayISO()) return 'That date has passed. Please choose today or a later date.';
+      return '';
+    },
+    timeGroup: () => form.querySelector('input[name="time"]:checked') ? '' : 'Please choose a time of day, or "No preference".',
+    name: () => $('#name').value.trim().length >= 2 ? '' : 'Please enter your full name.',
+    email: () => {
+      const v = $('#email').value.trim();
+      if(!v) return 'Please enter your email so Rachel can reply.';
+      return emailRe.test(v) ? '' : 'That email doesn’t look quite right. Check it includes @ and a domain, like name@example.com.';
+    },
+    phone: () => {
+      const v = $('#phone').value.trim();
+      if(!v) return '';
+      return /^[+()\d\s-]{8,20}$/.test(v) && (v.match(/\d/g)||[]).length >= 8 ? '' : 'Please enter a phone number with at least 8 digits, or leave it blank.';
+    }
+  };
+  function validateField(id){
+    const el = document.getElementById(id);
+    const msg = checks[id]();
+    msg ? setError(el, msg) : clearError(el);
+    return !msg;
+  }
+  ['treatment','date','name','email','phone'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('blur', () => { if(el.value || el.hasAttribute('aria-invalid')) validateField(id); });
+    el.addEventListener('input', () => { if(el.hasAttribute('aria-invalid')) validateField(id); });
+    el.addEventListener('change', () => { if(el.hasAttribute('aria-invalid')) validateField(id); });
+  });
+  $$('input[name="time"]').forEach(r => r.addEventListener('change', () => clearError($('#timeGroup'))));
+
+  /* ---- Submit → summary ---- */
+  const summary = $('#summary'), list = $('#summaryList'), alertBox = $('#formAlert');
+  function fmtDate(v){
+    const [y,m,d] = v.split('-').map(Number);
+    return new Date(y, m-1, d).toLocaleDateString('en-AU', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
+  }
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const order = ['treatment','date','timeGroup','name','email','phone'];
+    const bad = order.filter(id => !validateField(id));
+    if(bad.length){
+      alertBox.textContent = bad.length === 1 ? 'One field needs attention.' : bad.length + ' fields need attention.';
+      const first = document.getElementById(bad[0]);
+      (bad[0] === 'timeGroup' ? first.querySelector('input') : first).focus();
+      return;
+    }
+    alertBox.textContent = '';
+    const rows = [
+      ['Treatment', select.value],
+      ['Preferred date', fmtDate(dateInput.value)],
+      ['Time of day', form.querySelector('input[name="time"]:checked').value],
+      ['Name', $('#name').value.trim()],
+      ['Email', $('#email').value.trim()],
+      ['Phone', $('#phone').value.trim() || 'Not provided'],
+      ['Message', $('#message').value.trim() || 'None']
+    ];
+    list.replaceChildren(...rows.map(([k,v]) => {
+      const div = document.createElement('div');
+      const dt = document.createElement('dt'); dt.textContent = k;
+      const dd = document.createElement('dd'); dd.textContent = v;
+      div.append(dt, dd); return div;
+    }));
+    form.hidden = true; summary.hidden = false;
+    $('#book').scrollIntoView({behavior: reduceMotion.matches ? 'auto' : 'smooth', block:'start'});
+    $('#summaryTitle').focus({preventScroll:true});
+  });
+  function showForm(){ summary.hidden = true; form.hidden = false; }
+  $('#editBtn').addEventListener('click', () => { showForm(); select.focus(); });
+  $('#resetBtn').addEventListener('click', () => {
+    form.reset(); list.replaceChildren();
+    $$('[aria-invalid]', form).forEach(clearError);
+    showForm(); select.focus();
+  });
+
+  /* ---- Visit details from CONFIG ---- */
+  function pending(text){ const s = document.createElement('span'); s.className = 'pending'; s.textContent = text; return s; }
+  function link(href, text, external){
+    const a = document.createElement('a'); a.href = href; a.textContent = text;
+    if(external){ a.target = '_blank'; a.rel = 'noopener'; }
+    return a;
+  }
+  const fill = {
+    address: () => CONFIG.address ? document.createTextNode(CONFIG.address) : pending('Exact address to be confirmed'),
+    hours: () => {
+      if(!Array.isArray(CONFIG.hours) || !CONFIG.hours.length) return pending('Opening hours to be confirmed');
+      const ul = document.createElement('ul'); ul.className = 'hours';
+      CONFIG.hours.forEach(([day, time]) => { const li = document.createElement('li'); const a = document.createElement('span'); a.textContent = day; const b = document.createElement('span'); b.textContent = time; li.append(a,b); ul.append(li); });
+      return ul;
+    },
+    phone: () => CONFIG.phone ? link('tel:' + CONFIG.phone.replace(/[^\d+]/g,''), CONFIG.phone) : pending('Phone number to be added'),
+    email: () => CONFIG.email ? link('mailto:' + CONFIG.email, CONFIG.email) : pending('Email address to be added'),
+    instagram: () => CONFIG.instagram ? link('https://www.instagram.com/' + CONFIG.instagram + '/', '@' + CONFIG.instagram, true) : pending('Instagram to be added')
+  };
+  $$('[data-field]').forEach(dd => dd.replaceChildren(fill[dd.dataset.field]()));
+  if(CONFIG.instagram){
+    const span = $('#aboutInsta');
+    span.append('Follow along on Instagram ', link('https://www.instagram.com/' + CONFIG.instagram + '/', '@' + CONFIG.instagram, true));
+  }
+  /* ---- Before/after slideshow: crossfades automatically ---- */
+  (function(){
+    const track = $('#workTrack'); if(!track) return;
+    const slides = $$('.slide', track), prog = $('#workProgress'), dotsBox = $('#workDots');
+    const DUR = 2500; let idx = 0, timer = null, visible = false;
+    const dots = slides.map((s,i) => {
+      const d = document.createElement('button'); d.type = 'button'; d.className = 'dot';
+      d.setAttribute('aria-label', 'Show before and after photo ' + (i+1)); d.innerHTML = '<span></span>';
+      d.addEventListener('click', () => { show(i); restart(); }); dotsBox.append(d); return d;
+    });
+    function warm(i){ $$('img', slides[i % slides.length]).forEach(img => { img.loading = 'eager'; }); }
+    function show(i){
+      idx = (i + slides.length) % slides.length;
+      slides.forEach((s,k) => { const on = k === idx; s.classList.toggle('is-active', on); s.setAttribute('aria-hidden', String(!on)); });
+      dots.forEach((d,k) => d.setAttribute('aria-current', String(k === idx)));
+      warm(idx + 1);
+    }
+    function stop(){ clearTimeout(timer); timer = null; prog.classList.remove('run'); }
+    function restart(){
+      stop(); if(!visible) return;
+      prog.style.setProperty('--dur', DUR + 'ms'); void prog.offsetWidth; prog.classList.add('run');
+      timer = setTimeout(() => { show(idx + 1); restart(); }, DUR);
+    }
+    let x0 = null;
+    track.addEventListener('pointerdown', e => { x0 = e.clientX; });
+    track.addEventListener('pointerup', e => { if(x0 === null) return; const dx = e.clientX - x0; x0 = null; if(Math.abs(dx) > 40){ show(idx + (dx < 0 ? 1 : -1)); restart(); } });
+    track.style.touchAction = 'pan-y';
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(es => es.forEach(e => {
+        if(e.isIntersecting) slides.forEach((_,i) => warm(i));
+        visible = e.isIntersecting; restart();
+      }), {threshold:.15, rootMargin:'300px 0px'}).observe(track);
+    } else { visible = true; slides.forEach((_,i) => warm(i)); }
+    document.addEventListener('visibilitychange', () => { visible = !document.hidden; restart(); });
+    show(0); restart();
+  })();
+
+  $('#year').textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
