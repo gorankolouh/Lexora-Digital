@@ -53,6 +53,14 @@ export const SHOP_NEW = [
   { key: "wb", price: 29.99, urls: { en: GR + "eu-whistleblower-kit", de: GR + "hinweisgeberschutz-kit-hinschg-hschg", nl: GR + "klokkenluiderskit-nederland-wbk", es: GR + "kit-sistema-interno-informacion-ley-2-2023", hr: GR + "kit-prijava-nepravilnosti-hrvatska" } },
   { key: "eaa", price: 29.99, urls: { en: GR + "eu-accessibility-act-kit", de: GR + "barrierefreiheit-kit-bfsg-bafg", nl: GR + "toegankelijkheidskit-nederland-eaa", es: GR + "kit-accesibilidad-espana-ley-11-2023", hr: GR + "kit-pristupacnosti-hrvatska" } }
 ];
+// BOOKS — print handbooks by Goran Kolouh, sold on Amazon (KDP paperback). Plain links, no Amazon script or image is loaded.
+// Each language page sends buyers to the nearest Amazon store; the German book always goes to amazon.de (its market).
+// To show the real cover instead of the drawn one, put <img>-600.webp in public/assets/img/books/ and set img on the book.
+export const BOOKS = [
+  { key: "en", asin: "B0HQBT2PTY", year: "2027", store: { en: "com", de: "de", nl: "nl", es: "es", hr: "de" } },
+  { key: "de", asin: "B0HQ12K5GF", year: "2027", store: { en: "de", de: "de", nl: "de", es: "de", hr: "de" } }
+];
+export const bookUrl = (b, lang) => `https://www.amazon.${b.store[lang] || "com"}/dp/${b.asin}`;
 /* the buy link for a kit in a given language (country editions pick their own product) */
 export const kitUrl = (x, lang) => x.urls ? (x.urls[lang] || x.urls.en) : x.url;
 

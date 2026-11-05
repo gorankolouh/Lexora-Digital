@@ -1,6 +1,6 @@
 // Inner pages — all built from the shared components so every page follows one system.
 import { esc, fmt, path, icon } from "../lib.mjs";
-import { SHOP, SHOP_NEW, kitUrl, SITE_URL, CONTACT } from "../config.mjs";
+import { SHOP, SHOP_NEW, kitUrl, BOOKS, bookUrl, SITE_URL, CONTACT, FOUNDER } from "../config.mjs";
 import { articleCard } from "./article.mjs";
 import { kitHref, KIT_PAGES_UI } from "./kit.mjs";
 import { pageHero, head, features, steps, faq, band, matrix, disclaimer, table, prose, form, ml, btn, art } from "../components.mjs";
@@ -290,6 +290,22 @@ export function newKitCards(t) {
       </article>`;
   }).join("")}</div>`;
 }
+/* Books: the two print handbooks, linking to Amazon. The cover is drawn in HTML/CSS unless a cover image is set. */
+export function bookCards(t) {
+  const b = t.pages.shop.books;
+  const list = t.lang === "de" ? [...BOOKS].reverse() : BOOKS;
+  return `<div class="books">${list.map((x, i) => {
+    const it = b.items[x.key], u = bookUrl(x, t.lang);
+    const cover = x.img
+      ? `<img src="/assets/img/books/${x.img}-600.webp" width="600" height="848" alt="${esc(it.t)}" loading="lazy" decoding="async">`
+      : `<div class="book-cover" aria-hidden="true"><span class="bc-ed">${esc(it.ed)}</span><span class="bc-t">${esc(it.cover)}</span><span class="bc-s">${esc(it.s)}</span><span class="bc-a">${esc(FOUNDER.name)}<i>Lexora Digital</i></span></div>`;
+    return `<article class="book reveal${i ? " d1" : ""}">
+        <a class="book-media" href="${u}" rel="noopener" tabindex="-1" aria-hidden="true">${cover}</a>
+        <div class="book-body"><p class="cat">${esc(it.lang)} · ${esc(b.format)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:10px;max-width:52ch">${fmt(it.p)}</p>
+        <div class="eds"><a class="btn btn-lime btn-sm" href="${u}" rel="noopener" aria-label="${esc(`${b.buy}: ${it.t}`)}">${icon("arrow", 16, 2)}${esc(b.buy)}</a></div></div>
+      </article>`;
+  }).join("")}</div>`;
+}
 export function shop(t) {
   const p = t.pages.shop, vs = shopPrices(t);
   const [bundle] = SHOP;
@@ -304,6 +320,10 @@ export function shop(t) {
     `<section class="section rule shop-kits" id="country-kits" aria-labelledby="s1b"><div class="wrap">
       ${head({ label: p.more.label, h2: p.more.h2, lead: p.more.lead, id: "s1b" })}
       ${newKitCards(t)}
+    </div></section>`,
+    `<section class="section rule shop-kits" id="books" aria-labelledby="s1c"><div class="wrap">
+      ${head({ label: p.books.label, h2: p.books.h2, lead: p.books.lead, id: "s1c" })}
+      ${bookCards(t)}
     </div></section>`,
     sec(`${head({ label: p.how.label, h2: p.how.h2, lead: p.how.lead, id: "s2" })}${steps(p.how.steps)}`, "trust", "s2"),
     sec(`${head({ label: p.bounds.label, h2: p.bounds.h2, id: "s3" })}
@@ -329,7 +349,10 @@ export function shopLd(t) {
         brand: { "@type": "Brand", name: "Lexora Digital" },
         offers: (x.urls ? [kitUrl(x, t.lang)] : [x.url, x.dl]).map((u) => ({ "@type": "Offer", price: x.price.toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", url: u }))
       }
-    }))
+    })).concat(BOOKS.map((x, i) => ({
+      "@type": "ListItem", position: SHOP.length + SHOP_NEW.length + i + 1,
+      item: { "@type": "Book", name: p.books.items[x.key].t, author: { "@type": "Person", name: FOUNDER.name }, bookFormat: "https://schema.org/Paperback", inLanguage: x.key, publisher: { "@type": "Organization", name: "Lexora Digital" }, url: bookUrl(x, t.lang) }
+    })))
   };
 }
 

@@ -479,6 +479,11 @@ export default {
       vs: "{bundle} instead of {full}",
       buy: "Buy on Gumroad",
       more: { label: "Country editions", h2: "Four more kits, *built for your country.*", lead: "NIS2, e-invoicing, whistleblowing and the European Accessibility Act. These kits come as Notion templates, with one edition per country: the EU edition in English, plus German (Germany & Austria), Dutch, Spanish and Croatian editions adapted to national law. They are sold separately and are not part of the bundle." },
+      books: { label: "Books", h2: "The handbooks, *in print.*", lead: "Everything behind the kits, explained in one book: the EU rules small and medium-sized businesses deal with today, with checklists, forms and templates. Paperback, available on Amazon.", format: "Paperback", buy: "Buy on Amazon",
+        items: {
+          en: { t: "The European Business Compliance Handbook: 2027 Edition", cover: "The European Business Compliance Handbook", ed: "2027 Edition", lang: "English", s: "GDPR · AI Act · NIS2 · DSA · Accessibility · Whistleblowing · E-invoicing · Pay transparency", p: "A practical guide to eight areas of EU law for businesses across Europe, with checklists, forms and templates you can put to work." },
+          de: { t: "Compliance-Handbuch für KMU", cover: "Compliance-Handbuch für KMU", ed: "Ausgabe 2027", lang: "German", s: "DSGVO · KI-Verordnung · NIS2 · DSA · Barrierefreiheit · Hinweisgeberschutz · E-Rechnung · Entgelttransparenz", p: "The German edition, written for businesses in **Germany and Austria**: the same eight areas, explained against national law, with checklists, forms and templates." }
+        } },
       items: {
         nis2: { t: "EU NIS2 Compliance Kit", s: "Directive (EU) 2022/2555", p: "A scope checker, an authority directory for six countries, the Art. 21 control register, risk and supplier registers and an incident log with 24 h / 72 h / 1-month deadlines." },
         einv: { t: "EU E-Invoicing Readiness Kit", s: "EN 16931 · Peppol · ViDA", p: "A tracker for 18 e-invoicing mandates with live countdowns, a readiness plan, the EN 16931 invoice data checklist, a provider comparison and a partner directory." },
