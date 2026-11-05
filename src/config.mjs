@@ -55,10 +55,10 @@ export const SHOP_NEW = [
 ];
 // BOOKS — print handbooks by Goran Kolouh, sold on Amazon (KDP paperback). Plain links, no Amazon script or image is loaded.
 // Each language page sends buyers to the nearest Amazon store; the German book always goes to amazon.de (its market).
-// To show the real cover instead of the drawn one, put <img>-600.webp in public/assets/img/books/ and set img on the book.
+// Covers: public/assets/img/books/<img>-600.webp and -1200.webp (front cover cut from the KDP cover PDF). Without img, a cover is drawn in CSS.
 export const BOOKS = [
-  { key: "en", asin: "B0HQBT2PTY", year: "2027", store: { en: "com", de: "de", nl: "nl", es: "es", hr: "de" } },
-  { key: "de", asin: "B0HQ12K5GF", year: "2027", store: { en: "de", de: "de", nl: "de", es: "de", hr: "de" } }
+  { key: "en", img: "handbook-en", asin: "B0HQBT2PTY", year: "2027", store: { en: "com", de: "de", nl: "nl", es: "es", hr: "de" } },
+  { key: "de", img: "handbook-de", asin: "B0HQ12K5GF", year: "2027", store: { en: "de", de: "de", nl: "de", es: "de", hr: "de" } }
 ];
 export const bookUrl = (b, lang) => `https://www.amazon.${b.store[lang] || "com"}/dp/${b.asin}`;
 /* the buy link for a kit in a given language (country editions pick their own product) */

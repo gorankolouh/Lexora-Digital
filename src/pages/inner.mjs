@@ -297,10 +297,10 @@ export function bookCards(t) {
   return `<div class="books">${list.map((x, i) => {
     const it = b.items[x.key], u = bookUrl(x, t.lang);
     const cover = x.img
-      ? `<img src="/assets/img/books/${x.img}-600.webp" width="600" height="848" alt="${esc(it.t)}" loading="lazy" decoding="async">`
+      ? `<img src="/assets/img/books/${x.img}-600.webp" srcset="/assets/img/books/${x.img}-600.webp 600w, /assets/img/books/${x.img}-1200.webp 1200w" sizes="(max-width:520px) 40vw, (max-width:960px) 42vw, 22vw" width="600" height="848" alt="${esc(it.t)}" loading="lazy" decoding="async">`
       : `<div class="book-cover" aria-hidden="true"><span class="bc-ed">${esc(it.ed)}</span><span class="bc-t">${esc(it.cover)}</span><span class="bc-s">${esc(it.s)}</span><span class="bc-a">${esc(FOUNDER.name)}<i>Lexora Digital</i></span></div>`;
     return `<article class="book reveal${i ? " d1" : ""}">
-        <a class="book-media" href="${u}" rel="noopener" tabindex="-1" aria-hidden="true">${cover}</a>
+        <a class="book-media" href="${u}" rel="noopener" tabindex="-1">${cover}</a>
         <div class="book-body"><p class="cat">${esc(it.lang)} · ${esc(b.format)}</p><h3 class="h3">${esc(it.t)}</h3><p class="small dim" style="margin-top:10px;max-width:52ch">${fmt(it.p)}</p>
         <div class="eds"><a class="btn btn-lime btn-sm" href="${u}" rel="noopener" aria-label="${esc(`${b.buy}: ${it.t}`)}">${icon("arrow", 16, 2)}${esc(b.buy)}</a></div></div>
       </article>`;
