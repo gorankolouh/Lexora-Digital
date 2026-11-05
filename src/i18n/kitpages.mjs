@@ -494,6 +494,8 @@ export const ARTICLE_KIT = {
   "eu-ai-act-website": "ai",
   "ai-agents-human-judgment": "ai",
   "ki-sicherheit-unternehmen": "ai",
+  "bfsg-website-barrierefrei-pflicht": "eaa",
+  "avg-fouten-mkb-website": "gdpr",
   "cookie-banner-urteile": "gdpr",
   "cookiebanner-regels-ap": "gdpr"
 };

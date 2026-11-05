@@ -1,6 +1,95 @@
 // Journal-Artikel — Deutsch
 export default [
   {
+    slug: "bfsg-website-barrierefrei-pflicht",
+    tag: "BFSG",
+    t: "Muss meine Website barrierefrei sein? Das BFSG für kleine Unternehmen",
+    mt: "Muss meine Website barrierefrei sein? BFSG für KMU",
+    d: "Seit dem 28. Juni 2025 gilt das Barrierefreiheitsstärkungsgesetz. Wer betroffen ist, wer ausgenommen ist, was die Marktüberwachung prüft — und was Sie bei einer Abmahnung tun.",
+    lead: "Seit dem 28. Juni 2025 müssen viele Onlineshops und digitale Dienstleistungen barrierefrei sein. Die Marktüberwachung arbeitet, Abmahnungen laufen — und viele Unternehmen wissen noch immer nicht, ob sie überhaupt betroffen sind. Hier sind die Antworten.",
+    date: "November 2026", iso: "2026-11-05",
+    blocks: [
+      ["p", "Das Barrierefreiheitsstärkungsgesetz (BFSG) setzt den European Accessibility Act der EU in deutsches Recht um. Es soll Menschen mit Behinderungen, aber auch älteren Menschen den Zugang zu digitalen Angeboten sichern — vom Warenkorb bis zur Terminbuchung."],
+      ["p", "Die gute Nachricht vorweg: Nicht jede Website ist betroffen. Die weniger gute: Wer betroffen ist und nichts unternimmt, riskiert inzwischen konkret Post von der Behörde oder einem Anwalt."],
+      ["quote", "Barrierefreiheit ist keine Zusatzfunktion. Sie ist die Frage, ob alle Ihre Kunden bei Ihnen kaufen können."],
+
+      ["h2", "Kurz gesagt"],
+      ["check", [
+        "Betroffen sind vor allem Websites und Apps, über die **Verbraucher einen Vertrag abschließen** — Onlineshops, Buchungs- und Bestellstrecken.",
+        "**Kleinstunternehmen** mit weniger als 10 Beschäftigten und höchstens 2 Mio. Euro Jahresumsatz oder Bilanzsumme sind bei Dienstleistungen ausgenommen.",
+        "Der technische Maßstab ist **WCAG 2.1 Stufe AA** (über die Norm EN 301 549).",
+        "Sie brauchen **Informationen zur Barrierefreiheit** auf der Website, die die zuständige Marktüberwachungsbehörde nennen.",
+        "**Overlay-Widgets** machen eine Website nicht barrierefrei."
+      ]],
+
+      ["h2", "Für wen gilt das BFSG?"],
+      ["p", "Entscheidend ist, ob Ihre Website auf einen **Vertragsabschluss mit Verbrauchern** hinausläuft. Typischerweise erfasst sind:"],
+      ["ul", [
+        "Onlineshops und Marktplätze — inklusive Warenkorb, Checkout und Kundenkonto;",
+        "Online-Terminbuchungen, etwa beim Friseur, in der Praxis oder im Hotel;",
+        "Registrierungen, die nötig sind, um einen Dienst zu nutzen;",
+        "Apps, über die Verträge geschlossen werden."
+      ]],
+      ["p", "In der Regel **nicht** erfasst sind reine Informationsseiten ohne Bestell- oder Buchungsfunktion, private Blogs und Angebote, die sich technisch nachweisbar nur an Geschäftskunden richten. Ein einfaches Kontaktformular gilt als Grauzone — wer es zur Anbahnung von Verträgen nutzt, sollte es vorsorglich barrierefrei gestalten."],
+
+      ["h2", "Die Ausnahme für Kleinstunternehmen"],
+      ["p", "Dienstleister mit **weniger als zehn Beschäftigten** und **höchstens 2 Mio. Euro** Jahresumsatz oder Jahresbilanzsumme sind von den Anforderungen an Dienstleistungen befreit. Beide Bedingungen müssen erfüllt sein."],
+      ["p", "Zwei Einschränkungen werden oft übersehen: Die Ausnahme gilt nur für Dienstleistungen, nicht für Hersteller von Produkten. Und wer wächst, kann aus der Ausnahme herausfallen — die Schwelle sollte man jährlich prüfen."],
+
+      ["h2", "Was technisch verlangt wird"],
+      ["p", "Das Gesetz selbst nennt keine Einzelheiten. In der Praxis gilt die europäische Norm EN 301 549, die auf die **WCAG 2.1 Stufe AA** verweist. Die häufigsten Baustellen auf kleinen Websites sind überschaubar:"],
+      ["ul", [
+        "**Kontraste:** Text muss sich ausreichend vom Hintergrund abheben — hellgraue Schrift auf Weiß fällt regelmäßig durch.",
+        "**Tastaturbedienung:** Jede Funktion, auch Menü, Cookie-Banner und Checkout, muss ohne Maus erreichbar sein.",
+        "**Alternativtexte:** Bilder, die Inhalt transportieren, brauchen eine Beschreibung für Screenreader.",
+        "**Formulare:** Jedes Feld braucht eine sichtbare, verknüpfte Beschriftung und verständliche Fehlermeldungen.",
+        "**Struktur:** Saubere Überschriften, beschreibende Linktexte, Untertitel für Videos."
+      ]],
+      ["p", "Barrierefreiheit lässt sich am günstigsten beim Bau einer Website umsetzen. Nachträglich wird es fast immer teurer — vor allem, wenn Theme oder Shop-System selbst die Probleme verursachen."],
+
+      ["h2", "Die Erklärung zur Barrierefreiheit"],
+      ["p", "Betroffene Unternehmen müssen Informationen bereitstellen, wie ihr Angebot die Anforderungen erfüllt (§ 14 BFSG mit Anlage 3). Diese Informationen müssen selbst barrierefrei und leicht auffindbar sein und die zuständige Marktüberwachungsbehörde nennen. Üblich ist eine eigene Seite „Erklärung zur Barrierefreiheit“, verlinkt im Footer neben Impressum und Datenschutz."],
+      ["p", "Gar keine Informationen bereitzustellen ist ein formaler Verstoß — und einer, der von außen leicht zu erkennen ist."],
+
+      ["h2", "Wer kontrolliert — und was droht"],
+      ["p", "Zuständig ist die gemeinsame **Marktüberwachungsstelle der Länder für die Barrierefreiheit (MLBF)** in Magdeburg, die seit dem 26. September 2025 arbeitet. Sie geht vorrangig Beschwerden nach und nutzt für Websites automatisierte Vorprüfungen."],
+      ["p", "Das Verfahren ist gestuft: Zuerst kommt eine Aufforderung zur Nachbesserung mit Frist, dann kann die Behörde anordnen, den Dienst einzustellen, und erst danach droht ein Bußgeld von **bis zu 100.000 Euro**. Bis Juli 2026 waren keine öffentlichen Bußgelder nach dem BFSG dokumentiert."],
+
+      ["h2", "Abmahnungen: was gerade passiert"],
+      ["p", "Parallel sind zwei Abmahnwellen bekannt geworden. Eine erste ab August 2025 mit eher pauschalen Vorwürfen und Forderungen um 600 Euro; eine zweite seit Februar 2026, die sich auf Prüfberichte stützt und rund 2.700 Euro je Schreiben verlangt."],
+      ["p", "Ob Wettbewerber BFSG-Verstöße überhaupt abmahnen dürfen, ist rechtlich offen: Bisher hat kein veröffentlichtes Urteil entschieden, dass die BFSG-Pflichten Marktverhaltensregeln im Sinne von § 3a UWG sind. Viele Fachleute halten die Schreiben deshalb für angreifbar."],
+      ["p", "Trotzdem gilt: Eine Abmahnung nie ignorieren, nicht ungeprüft unterschreiben und Fristen ernst nehmen. Lassen Sie das Schreiben von einer Anwältin oder einem Anwalt prüfen — und nutzen Sie die Gelegenheit, die tatsächlichen Mängel zu beheben."],
+
+      ["h2", "Warum Overlay-Tools nicht helfen"],
+      ["p", "Die häufigste Schnelllösung sind Overlay-Widgets: ein Symbol, das eine Leiste mit Schriftgrößen- und Kontrastreglern über die Website legt und Konformität „per Klick“ verspricht. Prüfstellen von Bund und Ländern kommen regelmäßig zu dem Ergebnis, dass solche Tools die Anforderungen nicht erfüllen. Fehlende Alternativtexte, unbeschriftete Formularfelder oder eine nicht bedienbare Navigation bleiben fehlerhaft — das Overlay legt sich nur darüber."],
+
+      ["h2", "Übergangsfristen und Österreich"],
+      ["p", "Für Dienstleistungsverträge, die vor dem 28. Juni 2025 geschlossen wurden, gibt es eine Übergangsfrist bis zum 27. Juni 2030 (§ 38 BFSG). Einem laufenden Onlineshop hilft das kaum: Jede neue Bestellung ist ein neuer Vertrag."],
+      ["p", "In Österreich gilt mit dem Barrierefreiheitsgesetz (BaFG) eine eigene Umsetzung derselben EU-Richtlinie, mit vergleichbarem Anwendungsbereich und eigener Behörde. Wer in beide Länder verkauft, sollte beide Regelwerke im Blick haben."],
+
+      ["h2", "Checkliste für Ihre Website"],
+      ["check", [
+        "Klären Sie, ob Ihre Website auf Verträge mit Verbrauchern hinausläuft — und ob Sie unter die Kleinstunternehmen-Ausnahme fallen.",
+        "Lassen Sie Ihre wichtigsten Seiten gegen WCAG 2.1 AA prüfen: Startseite, Produkt- oder Leistungsseiten, Formular, Checkout.",
+        "Testen Sie selbst: Kommen Sie nur mit der Tab-Taste durch den gesamten Kaufprozess?",
+        "Beheben Sie Kontraste, Alternativtexte und Formularbeschriftungen zuerst — sie machen den Großteil der Mängel aus.",
+        "Veröffentlichen Sie eine Erklärung zur Barrierefreiheit mit Nennung der MLBF und verlinken Sie sie im Footer.",
+        "Verzichten Sie auf Overlay-Widgets als Ersatz für echte Barrierefreiheit.",
+        "Dokumentieren Sie, was Sie geprüft und behoben haben — das hilft bei Behördenanfragen und Abmahnungen."
+      ]],
+
+      ["h2", "Worauf es ankommt"],
+      ["p", "Das BFSG wird oft als weitere Bürokratie wahrgenommen. Dabei geht es um etwas sehr Praktisches: Fast jeder zehnte Mensch in Deutschland ist schwerbehindert, und viele mehr sehen schlechter oder nutzen das Smartphone mit einer Hand. Eine Website, die alle bedienen können, ist nicht nur rechtssicherer — sie verkauft auch besser."],
+      ["note", "Sie möchten wissen, ob Ihre Website unter das BFSG fällt und wo sie nachbessern muss? Wir prüfen sie und setzen die Barrierefreiheit technisch um — **nehmen Sie Kontakt auf**."]
+    ],
+    sources: [
+      ["Barrierefreiheitsstärkungsgesetz (BFSG) — Gesetzestext", "https://www.gesetze-im-internet.de/bfsg/"],
+      ["IHK Region Stuttgart — Barrierefreie Webseiten und Onlineshops", "https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/it-recht/barrierefreie-webseiten"],
+      ["ITMR Legal — BFSG 2026: MLBF-Prüfung und Abmahnung", "https://itmr-legal.de/blog/bfsg"],
+      ["D!E mit Ausrufezeichen — Zwei Abmahnwellen laufen (September 2026)", "https://die-mit-ausrufezeichen.de/bfsg-abmahnung-barrierefreiheit-website/"]
+    ]
+  },
+  {
     slug: "ki-sicherheit-unternehmen",
     tag: "KI-Sicherheit",
     t: "Wenn Daten zu Befehlen werden: KI-Sicherheit für Unternehmen",

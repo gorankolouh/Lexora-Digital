@@ -1,6 +1,84 @@
 // Journal-artikelen — Nederlands
 export default [
   {
+    slug: "avg-fouten-mkb-website",
+    tag: "AVG",
+    cta: "check",
+    t: "De 10 meest gemaakte AVG-fouten op mkb-websites",
+    mt: "De 10 meest gemaakte AVG-fouten op mkb-websites",
+    d: "Van een verouderde privacyverklaring tot een tracking pixel zonder toestemming: de AVG-fouten die wij het vaakst zien op websites van kleine bedrijven — en hoe u ze oplost.",
+    lead: "De meeste mkb-websites overtreden de AVG niet uit onwil, maar omdat niemand er goed naar heeft gekeken. Dit zijn de tien fouten die wij het vaakst tegenkomen — en hoe u ze meestal in een middag oplost.",
+    date: "november 2026", iso: "2026-11-05",
+    blocks: [
+      ["p", "De Autoriteit Persoonsgegevens (AP) controleert websites steeds actiever, vooral op cookiebanners. Tegelijk wil de AP het mkb juist helpen: in september 2026 publiceerde zij kant-en-klare sjablonen voor een privacyverklaring en een verwerkingsregister. De boodschap is duidelijk: de basis op orde hebben is haalbaar, en er is weinig excuus meer om het niet te doen."],
+      ["p", "Hieronder de tien fouten die wij het vaakst zien, van de meest zichtbare tot de meest vergeten."],
+      ["quote", "De meeste AVG-problemen op een website zijn geen juridische raadsels, maar vergeten instellingen."],
+
+      ["h2", "1. Geen of een verouderde privacyverklaring"],
+      ["p", "Veel websites hebben een privacyverklaring die ooit is gekopieerd van een andere site, of die niet meer klopt sinds er een nieuwsbrief, chatfunctie of webshop bij kwam. Artikel 13 AVG vraagt dat u in begrijpelijke taal uitlegt welke gegevens u verwerkt, waarom, op welke grondslag, met wie u ze deelt en hoe lang u ze bewaart."],
+      ["p", "**Oplossing:** gebruik het sjabloon van de AP als basis, vul het in op basis van wat uw website écht doet, en zet de link zichtbaar in de footer."],
+
+      ["h2", "2. Een cookiebanner zonder echte weigerknop"],
+      ["p", "Een banner met alleen „Accepteren” en een verstopte link naar „Instellingen” is precies waar de AP nu op handhaaft. Weigeren moet even makkelijk zijn als accepteren, en vakjes mogen niet vooraf aangevinkt staan. Wij schreven er een apart artikel over: Cookiebanner-regels 2026."],
+      ["p", "**Oplossing:** een weigerknop naast „Accepteren”, op dezelfde laag en even duidelijk."],
+
+      ["h2", "3. Trackers die laden vóór toestemming"],
+      ["p", "Nog vaker dan een slechte banner zien we een banner die er goed uitziet, terwijl analytics- en marketingscripts al laden voordat de bezoeker iets heeft gekozen. Dan is de toestemming achteraf waardeloos."],
+      ["p", "**Oplossing:** test uw website in een privévenster met de ontwikkelaarstools open. Wordt er vóór uw klik al iets naar Google, Meta of LinkedIn gestuurd? Dan moet de configuratie anders."],
+
+      ["h2", "4. Tracking pixels zonder toestemming"],
+      ["p", "De Meta-pixel, de LinkedIn Insight Tag en vergelijkbare pixels worden vaak „even” toegevoegd door een marketingbureau. De AP is daar duidelijk over: tracking pixels verwerken vaak persoonsgegevens en vallen onder dezelfde regels als cookies. Extra riskant is een pixel op een pagina met een contact- of aanvraagformulier, omdat er dan gevoelige informatie kan meelopen."],
+      ["p", "**Oplossing:** pixels alleen na toestemming, nooit op pagina’s met formulieren over gezondheid, financiën of andere gevoelige onderwerpen."],
+
+      ["h2", "5. Een contactformulier dat te veel vraagt"],
+      ["p", "Geboortedatum, telefoonnummer, adres — allemaal verplichte velden voor een simpele vraag. Het beginsel van dataminimalisatie (artikel 5 AVG) zegt: vraag alleen wat u nodig hebt. En verstuur formulieren altijd via een beveiligde verbinding (https)."],
+      ["p", "**Oplossing:** maak alleen naam, e-mail en bericht verplicht. Al het andere is optioneel of kan weg."],
+
+      ["h2", "6. Geen verwerkersovereenkomst"],
+      ["p", "Uw hostingpartij, formulierdienst, nieuwsbrieftool, boekingssysteem en chatwidget verwerken persoonsgegevens voor u. Met elk van hen hebt u een verwerkersovereenkomst nodig (artikel 28 AVG). Bij grote aanbieders zit die vaak in de algemene voorwaarden of moet u hem in uw account accepteren — maar u moet weten dat hij er is."],
+      ["p", "**Oplossing:** maak een lijst van alle diensten achter uw website en controleer per dienst of er een verwerkersovereenkomst is."],
+
+      ["h2", "7. Geen verwerkingsregister"],
+      ["p", "Veel ondernemers denken dat een register van verwerkingsactiviteiten (artikel 30 AVG) alleen voor grote bedrijven geldt. De uitzondering voor organisaties onder de 250 medewerkers is in de praktijk heel smal: wie structureel klant- of personeelsgegevens verwerkt, heeft meestal wél een register nodig."],
+      ["p", "**Oplossing:** gebruik het sjabloon van de AP. Het register is meteen de basis voor uw privacyverklaring — en helpt u bij een datalek snel te zien welke gegevens geraakt zijn."],
+
+      ["h2", "8. Gegevens eindeloos bewaren"],
+      ["p", "Formulierberichten die al jaren in een mailbox staan, oude offerteaanvragen in het CMS, nieuwsbriefadressen van mensen die zich lang geleden hebben afgemeld. De AVG zegt: niet langer bewaren dan nodig."],
+      ["p", "**Oplossing:** leg per soort gegevens een bewaartermijn vast, zet die in uw privacyverklaring en ruim één keer per jaar op."],
+
+      ["h2", "9. Geen plan voor een datalek"],
+      ["p", "Een gehackt formulier, een gestolen laptop, een mail naar de verkeerde ontvanger: een datalek moet u in veel gevallen binnen 72 uur melden bij de AP. Hoe serieus dat is, bleek toen de AP Booking.com een boete van € 475.000 gaf, omdat het bedrijf een datalek ruim drie weken te laat had gemeld."],
+      ["p", "**Oplossing:** een korte procedure van één pagina — wie beslist, wie meldt, waar de meldingen worden vastgelegd — en een intern datalekregister."],
+
+      ["h2", "10. Verzoeken van klanten laten liggen"],
+      ["p", "Iemand vraagt welke gegevens u van hem hebt, of vraagt om verwijdering. U hebt daar in principe één maand voor (artikel 12 AVG). In de praktijk belandt zo’n mail vaak ongelezen in een algemene inbox."],
+      ["p", "**Oplossing:** noem in uw privacyverklaring één vast adres voor privacyverzoeken en spreek af wie ze binnen welke termijn afhandelt."],
+
+      ["h2", "Snelle checklist"],
+      ["check", [
+        "Privacyverklaring actueel en zichtbaar in de footer.",
+        "Weigerknop naast „Accepteren” in de cookiebanner.",
+        "Geen trackers of pixels vóór toestemming.",
+        "Contactformulier vraagt alleen wat nodig is, via https.",
+        "Verwerkersovereenkomst met elke dienst achter de website.",
+        "Verwerkingsregister ingevuld (sjabloon AP).",
+        "Bewaartermijnen vastgelegd en toegepast.",
+        "Procedure voor datalekken en privacyverzoeken."
+      ]],
+
+      ["h2", "Waar het om draait"],
+      ["p", "De maximale AVG-boete van € 20 miljoen of 4 % van de wereldwijde omzet is voor de meeste kleine bedrijven geen realistisch scenario. Een brief van de AP, een klacht van een klant of verloren vertrouwen wel. Het goede nieuws: bijna alle fouten in dit artikel zijn met een paar uur werk op te lossen — en een website die netjes met gegevens omgaat, straalt ook professionaliteit uit."],
+      ["note", "Wilt u weten welke van deze fouten op uw website voorkomen? Onze AVG- en cookiecheck brengt ze in kaart en lost ze ook echt op — **vraag de check aan**."]
+    ],
+    sources: [
+      ["AVG — Verordening (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"],
+      ["Autoriteit Persoonsgegevens — AP onderzoekt websites vanwege misleidende cookiebanner", "https://www.autoriteitpersoonsgegevens.nl/actueel/ap-onderzoekt-websites-vanwege-misleidende-cookiebanner"],
+      ["Autoriteit Persoonsgegevens — Tracking pixel (EN)", "https://www.autoriteitpersoonsgegevens.nl/en/node/5373/tracking-pixel"],
+      ["NJB — AP publiceert sjablonen voor verwerkingsregister en privacyverklaring (september 2026)", "https://www.njb.nl/nieuws/autoriteit-persoonsgegevens-publiceert-sjablonen-voor-verwerkingsregister-en-privacyverklaring/"],
+      ["Fieldfisher — Dutch DPA fines Booking.com for late reporting of data breach (EN)", "https://www.fieldfisher.com/en/insights/dutch-data-protection-authority-fines-booking-com"]
+    ]
+  },
+  {
     slug: "cookiebanner-regels-ap",
     tag: "Cookies",
     cta: "check",
