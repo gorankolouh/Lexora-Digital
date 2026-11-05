@@ -463,7 +463,7 @@ export default {
       hero: {
         label: "Compliance-Vorlagen",
         h1: "EU-Compliance-Kits, *in Notion oder Word & Excel.*",
-        lead: "Praxisnahe Kits für DSGVO, EU AI Act, Entgelttransparenz und Lieferantenprüfung — für kleine und mittlere Unternehmen, in fünf Sprachen. Als Notion-Vorlage oder als Word-, Excel- und PDF-Dateien zum Herunterladen.",
+        lead: "Praxisnahe Kits für DSGVO, EU AI Act, Entgelttransparenz und Lieferantenprüfung — für kleine und mittlere Unternehmen, in fünf Sprachen. Als Notion-Vorlage oder als Word-, Excel- und PDF-Dateien zum Herunterladen. Neu: Länderausgaben für NIS2, E-Rechnung, Hinweisgeberschutz und Barrierefreiheit.",
         cta1: "Zum Bundle",
         cta2: "Alle Kits ansehen",
         points: ["Deutsch, Englisch, Niederländisch, Spanisch, Kroatisch", "Notion-Vorlage oder Word, Excel & PDF", "Sofortiger Zugang nach dem Kauf", "Einmalzahlung, kein Abo"]
@@ -481,7 +481,12 @@ export default {
       num: "5 Kits",
       vs: "{bundle} statt {full}",
       buy: "Bei Gumroad kaufen",
+      more: { label: "Länderausgaben", h2: "Vier weitere Kits, *für Ihr Land gebaut.*", lead: "NIS2, E-Rechnung, Hinweisgeberschutz und Barrierefreiheit. Diese Kits gibt es als Notion-Vorlage, mit einer eigenen Ausgabe je Land: die deutschsprachige Ausgabe für Deutschland und Österreich, dazu eine englische EU-Ausgabe sowie Ausgaben für die Niederlande, Spanien und Kroatien. Sie werden einzeln verkauft und sind nicht Teil des Bundles." },
       items: {
+        nis2: { t: "NIS2-Compliance-Kit Deutschland & Österreich", s: "BSIG · NISG 2026", p: "Betroffenheitsprüfung für DE und AT, Behördenverzeichnis, Maßnahmenregister nach § 30 BSIG, Risiko- und Lieferantenregister und ein Vorfallregister mit 24-h-, 72-h- und 1-Monats-Fristen." },
+        einv: { t: "E-Rechnungs-Kit Deutschland & Österreich", s: "XRechnung · ZUGFeRD · Peppol", p: "Betroffenheits-Check inkl. 800.000-€-Grenze, Pflichten und Fristen, Umsetzungsplan, Pflichtangaben-Check (UStG ↔ EN 16931) und Software-Vergleich." },
+        wb: { t: "Hinweisgeberschutz-Kit HinSchG & HSchG", s: "HinSchG · HSchG", p: "Einrichtungs-Checkliste, Meldestelle und Zuständigkeiten, Fallregister mit 7-Tage- und 3-Monats-Fristen, Muster-Hinweisgeberrichtlinie und Mustertexte für die Meldestelle." },
+        eaa: { t: "Barrierefreiheits-Kit BFSG & BaFG", s: "BFSG · BaFG", p: "Anwendungsbereich prüfen, Behörden und Anlaufstellen, WCAG-2.1-AA-Prüfkatalog mit allen 50 Kriterien, Mängelliste, Mustervorlage zur Barrierefreiheit und Abmahnungs-Checkliste." },
         bundle: { t: "EU Compliance Bundle", s: "5 Kits", p: "Alle fünf Kits in einem Kauf: DSGVO, KI-Compliance, KI-Richtlinie am Arbeitsplatz, Entgelttransparenz und Lieferantenprüfung." },
         gdpr: { t: "GDPR Compliance Kit", s: "DSGVO", p: "Checkliste mit Artikelverweisen sowie Register für Verarbeitungstätigkeiten, Betroffenenanfragen, Datenpannen, Auftragsverarbeiter und Cookies." },
         ai: { t: "AI Compliance Toolkit", s: "EU AI Act + DSGVO", p: "KI-Tool-Register, DSGVO-Prüfpunkte, eine KI-Richtlinie für Mitarbeitende, Skripte für Schulungsvideos und ein Schulungsnachweis." },
@@ -516,8 +521,8 @@ export default {
         label: "Fragen",
         h2: "Vor dem Kauf.",
         items: [
-          ["Brauche ich Notion?", "Nein. Jedes Kit gibt es auch als Word-, Excel- und PDF-Dateien. Für die Notion-Ausgabe reicht der kostenlose Notion-Tarif."],
-          ["Welche Sprachen gibt es?", "Jedes Kit gibt es auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch. Die Sprachversion wählen Sie beim Kauf."],
+          ["Brauche ich Notion?", "Nein. Jedes Kit gibt es auch als Word-, Excel- und PDF-Dateien. Für die Notion-Ausgabe reicht der kostenlose Notion-Tarif. Die vier Länderausgaben (NIS2, E-Rechnung, Hinweisgeberschutz, Barrierefreiheit) gibt es derzeit nur als Notion-Vorlage."],
+          ["Welche Sprachen gibt es?", "Jedes Kit gibt es auf Deutsch, Englisch, Niederländisch, Spanisch und Kroatisch. Die Sprachversion wählen Sie beim Kauf. Die Länderausgaben sind eigene Produkte je Land: die englische EU-Ausgabe und nationale Ausgaben für Deutschland & Österreich, die Niederlande, Spanien und Kroatien."],
           ["Wie erhalte ich das Kit?", "Zahlung und Beleg laufen über Gumroad. Direkt nach dem Kauf erhalten Sie entweder einen Link, mit dem Sie die Vorlage in Ihren Notion-Workspace duplizieren, oder eine ZIP-Datei mit Word-, Excel- und PDF-Dateien."],
           ["Was ist der Unterschied zwischen den beiden Ausgaben?", "Inhalt und Preis sind gleich. Die Notion-Ausgabe ist ein verknüpfter Workspace mit Ansichten und automatischen Feldern. Die Download-Ausgabe enthält Word-Dokumente zum Bearbeiten, eine Excel-Arbeitsmappe mit den Registern sowie automatischen Fristen und Prüfungen und PDFs zum Ausdrucken."],
           ["Kann ich ein Kit für mehrere Unternehmen nutzen?", "Ein Kauf gilt für die Nutzung in einem Unternehmen. Wenn Sie Kits für mehrere Unternehmen oder für Ihre Kunden brauchen, schreiben Sie uns."],

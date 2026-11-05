@@ -463,7 +463,7 @@ export default {
       hero: {
         label: "Predlošci za usklađenost",
         h1: "Kitovi za EU usklađenost, *u Notionu ili Wordu i Excelu.*",
-        lead: "Praktični kitovi za GDPR, EU Akt o umjetnoj inteligenciji, transparentnost plaća i provjeru dobavljača — za mala i srednja poduzeća, na pet jezika. Kao Notion predložak ili kao Word, Excel i PDF datoteke za preuzimanje.",
+        lead: "Praktični kitovi za GDPR, EU Akt o umjetnoj inteligenciji, transparentnost plaća i provjeru dobavljača — za mala i srednja poduzeća, na pet jezika. Kao Notion predložak ili kao Word, Excel i PDF datoteke za preuzimanje. Novo: nacionalna izdanja za NIS2, eRačun, prijavu nepravilnosti i pristupačnost.",
         cta1: "Paket svih kitova",
         cta2: "Pogledajte sve kitove",
         points: ["Hrvatski, engleski, njemački, nizozemski, španjolski", "Notion predložak ili Word, Excel i PDF", "Pristup odmah nakon kupnje", "Jednokratno plaćanje, bez pretplate"]
@@ -477,7 +477,12 @@ export default {
       num: "5 kitova",
       vs: "{bundle} umjesto {full}",
       buy: "Kupi na Gumroadu",
+      more: { label: "Nacionalna izdanja", h2: "Još četiri kita, *izrađena za Vašu zemlju.*", lead: "NIS2, eRačun, prijava nepravilnosti i pristupačnost. Ovi kitovi su Notion predlošci, s posebnim izdanjem za svaku zemlju: hrvatsko izdanje usklađeno s domaćim propisima, uz englesko EU izdanje te izdanja za Njemačku i Austriju, Nizozemsku i Španjolsku. Prodaju se zasebno i nisu dio paketa." },
       items: {
+        nis2: { t: "NIS2 kit Hrvatska", s: "Zakon o kibernetičkoj sigurnosti", p: "Provjera primjene, nadležna tijela i CSIRT, registri mjera, rizika i dobavljača te registar incidenata s rokovima od 24 h, 72 h i 30 dana." },
+        einv: { t: "Kit eRačun Hrvatska", s: "Fiskalizacija 2.0", p: "Analiza obveza s automatskim rokovima, kalendar obveza, plan prilagodbe, obvezni elementi eRačuna (PDV ↔ EN 16931) i usporedba rješenja." },
+        wb: { t: "Kit za prijavu nepravilnosti", s: "ZZPN", p: "Lista za uspostavu sustava, povjerljiva osoba i uloge, evidencija prijava s automatskim rokovima, model općeg akta i predlošci dopisa prijavitelju." },
+        eaa: { t: "Kit pristupačnosti Hrvatska", s: "Zakon o pristupačnosti (NN 89/2025)", p: "Provjera primjene, propisi i tijela, kontrolna lista WCAG 2.1 AA sa svih 50 kriterija, praćenje nedostataka i predložak informacija o pristupačnosti." },
         bundle: {
           t: "EU Compliance Bundle",
           s: "5 kitova",
@@ -520,8 +525,8 @@ export default {
         label: "Pitanja",
         h2: "Prije kupnje.",
         items: [
-          ["Trebam li Notion?", "Ne. Svaki kit dostupan je i kao Word, Excel i PDF datoteke. Za Notion verziju dovoljan je besplatni Notion paket."],
-          ["Na kojim su jezicima dostupni?", "Svaki kit dostupan je na hrvatskom, engleskom, njemačkom, nizozemskom i španjolskom. Jezičnu verziju birate pri plaćanju."],
+          ["Trebam li Notion?", "Ne. Svaki kit dostupan je i kao Word, Excel i PDF datoteke. Za Notion verziju dovoljan je besplatni Notion paket. Četiri nacionalna izdanja (NIS2, eRačun, prijava nepravilnosti, pristupačnost) zasad su dostupna samo kao Notion predložak."],
+          ["Na kojim su jezicima dostupni?", "Svaki kit dostupan je na hrvatskom, engleskom, njemačkom, nizozemskom i španjolskom. Jezičnu verziju birate pri plaćanju. Nacionalna izdanja zasebni su proizvodi za svaku zemlju: englesko EU izdanje te izdanja za Njemačku i Austriju, Nizozemsku, Španjolsku i Hrvatsku."],
           ["Kako dobivam kit?", "Plaćanje i potvrdu o kupnji obrađuje Gumroad. Odmah nakon kupnje dobivate poveznicu za dupliciranje predloška u svoj Notion workspace ili ZIP datoteku s Word, Excel i PDF datotekama."],
           ["Koja je razlika između dviju verzija?", "Sadržaj i cijena su isti. Notion verzija je povezani workspace s prikazima i automatskim poljima. Verzija za preuzimanje sadrži Word dokumente za uređivanje, Excel radnu knjigu s evidencijama, automatskim rokovima i provjerama te PDF-ove za ispis."],
           ["Mogu li kit koristiti za više poduzeća?", "Jedna kupnja vrijedi za korištenje unutar jednog poduzeća. Ako trebate kitove za više poduzeća ili za svoje klijente, javite nam se."],

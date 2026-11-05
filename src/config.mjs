@@ -44,6 +44,17 @@ export const SHOP = [
   { key: "pay", url: GR + "pay-transparency-kit", dl: GR + "pay-transparency-kit-download", price: 29.99 },
   { key: "vendor", url: GR + "vendor-ai-supplier-kit", dl: GR + "vendor-ai-supplier-kit-download", price: 29.99 }
 ];
+// SHOP_NEW — country-edition kits, Notion only (no download edition yet, not part of the bundle).
+// Each language page links to that country's own Gumroad product: en = EU edition, de = Germany & Austria,
+// nl = Netherlands, es = Spain, hr = Croatia. `urls` replaces `url`; there is no `dl`.
+export const SHOP_NEW = [
+  { key: "nis2", price: 29.99, urls: { en: GR + "eu-nis2-kit", de: GR + "nis2-kit-deutschland-oesterreich", nl: GR + "nis2-kit-nederland-cbw", es: GR + "kit-nis2-espana", hr: GR + "nis2-kit-hrvatska" } },
+  { key: "einv", price: 29.99, urls: { en: GR + "eu-e-invoicing-kit", de: GR + "e-rechnung-kit-deutschland-oesterreich", nl: GR + "e-factuurkit-nederland", es: GR + "kit-factura-electronica-espana", hr: GR + "kit-eracun-hrvatska-fiskalizacija-2" } },
+  { key: "wb", price: 29.99, urls: { en: GR + "eu-whistleblower-kit", de: GR + "hinweisgeberschutz-kit-hinschg-hschg", nl: GR + "klokkenluiderskit-nederland-wbk", es: GR + "kit-sistema-interno-informacion-ley-2-2023", hr: GR + "kit-prijava-nepravilnosti-hrvatska" } },
+  { key: "eaa", price: 29.99, urls: { en: GR + "eu-accessibility-act-kit", de: GR + "barrierefreiheit-kit-bfsg-bafg", nl: GR + "toegankelijkheidskit-nederland-eaa", es: GR + "kit-accesibilidad-espana-ley-11-2023", hr: GR + "kit-pristupacnosti-hrvatska" } }
+];
+/* the buy link for a kit in a given language (country editions pick their own product) */
+export const kitUrl = (x, lang) => x.urls ? (x.urls[lang] || x.urls.en) : x.url;
 
 export const LANGS = [
   { code: "en", native: "English", ready: true },
