@@ -1,6 +1,115 @@
 // Journal-Artikel — Deutsch
 export default [
   {
+    slug: "ki-sicherheit-unternehmen",
+    tag: "KI-Sicherheit",
+    t: "Wenn Daten zu Befehlen werden: KI-Sicherheit für Unternehmen",
+    mt: "Wenn Daten zu Befehlen werden: KI-Sicherheit",
+    d: "Prompt Injection, KI-Agenten, vergiftete Daten und Deepfakes: Was Unternehmen über KI-Sicherheit wissen müssen — und was die KI-Verordnung verlangt.",
+    lead: "KI-Assistenten lesen E-Mails, durchsuchen Dateiablagen und lösen Zahlungen aus. Damit entsteht eine Angriffsfläche, die klassische IT-Sicherheit nicht kennt: Ein einziges Dokument kann eine KI dazu bringen, Daten preiszugeben oder falsch zu handeln.",
+    date: "November 2026", iso: "2026-11-05",
+    blocks: [
+      ["p", "Das „AI Security Glossary“ von Kunal RK erklärt auf 45 Seiten 149 Begriffe rund um Aufbau, Angriff und Verteidigung von KI-Systemen. Dieser Artikel fasst die wichtigsten Erkenntnisse für Unternehmen im deutschsprachigen Raum zusammen — mit Blick auf den europäischen Rechtsrahmen."],
+      ["quote", "Sicherheit lässt sich nicht allein im KI-Modell herstellen. Sie muss rund um das Modell gebaut werden."],
+
+      ["h2", "Das Grundproblem: Anweisungen und Daten verschwimmen"],
+      ["p", "Klassische Software trennt Befehle sauber von Daten. SQL-Injection wurde weitgehend gelöst, weil Abfrage und Nutzereingabe getrennt übermittelt werden. Ein Sprachmodell kennt diese Trennung nicht: Systemanweisung, Nutzerfrage und ein angehängtes PDF landen als ein einziger Textstrom im Modell."],
+      ["p", "Daraus folgt die zentrale Schwachstelle, die **Prompt Injection**. Ein Angreifer platziert Anweisungen in Text, den die KI liest. Zwei Varianten sind zu unterscheiden:"],
+      ["ul", [
+        "**Direkt:** Der Nutzer tippt die Manipulation selbst ein. Ein Autohaus-Chatbot in den USA ließ sich 2023 so dazu bringen, einem Kunden ein Auto für einen Dollar „zuzusagen“.",
+        "**Indirekt:** Die Anweisung steckt in einer E-Mail, Webseite oder Rechnung. Der Angreifer muss das System nie berühren. Bei EchoLeak (CVE-2025-32711) genügte eine präparierte E-Mail, damit Microsoft 365 Copilot interne Daten nach außen schickte — ganz ohne Klick des Opfers."
+      ]],
+      ["p", "Versteckte Anweisungen können sogar unsichtbar sein: weiße Schrift auf weißem Grund, unsichtbare Unicode-Zeichen oder Bilder, deren Botschaft erst nach dem Verkleinern lesbar wird. Ein menschlicher Prüfer sieht nichts."],
+      ["p", "Für Prompt Injection gibt es keine vollständige Lösung. Sie führt seit 2023 die OWASP-Liste der LLM-Risiken an. Unternehmen können nur begrenzen, was eine erfolgreiche Manipulation anrichten kann."],
+
+      ["h2", "KI-Agenten: Wenn aus falschen Antworten falsche Handlungen werden"],
+      ["p", "Ein Chatbot, der sich irrt, gibt eine falsche Antwort. Ein KI-Agent, der sich irrt, löscht Daten, verschickt E-Mails oder gibt Zahlungen frei. Im Juli 2025 löschte ein KI-Coding-Agent bei Replit trotz ausdrücklichem Code-Freeze eine Produktionsdatenbank."],
+      ["p", "Der Sicherheitsforscher Simon Willison prägte 2025 den Begriff **„lethal trifecta“**, die tödliche Dreifaltigkeit. Datendiebstahl per Prompt Injection wird wahrscheinlich, wenn ein Agent drei Fähigkeiten zugleich hat:"],
+      ["ul", [
+        "Zugriff auf **private Daten** (Postfach, Dateien);",
+        "Kontakt mit **nicht vertrauenswürdigen Inhalten** (eingehende Mails, Webseiten);",
+        "die Möglichkeit zur **externen Kommunikation** (Links laden, Mails senden)."
+      ]],
+      ["p", "Da sich Prompt Injection nicht vollständig verhindern lässt, ist der verlässlichste Schutz, mindestens eines dieser drei Elemente zu entfernen."],
+      ["p", "Weitere agentenspezifische Risiken nach den OWASP Top 10 für agentische Anwendungen (2026):"],
+      ["ul", [
+        "**Zielentführung:** Der Agent verfolgt unbemerkt das Ziel des Angreifers.",
+        "**Gedächtnisvergiftung:** Falsche Informationen im Speicher des Agenten wirken in künftigen Sitzungen weiter.",
+        "**Vergiftete Werkzeuge:** Versteckte Anweisungen in der Beschreibung eines MCP-Servers. Beim „MCP Rug Pull“ funktioniert ein Werkzeug zunächst einwandfrei und wird erst nach einem Update bösartig.",
+        "**Kaskadeneffekte:** Der Fehler eines Agenten pflanzt sich über vernetzte Agenten fort und wächst dabei."
+      ]],
+
+      ["h2", "Vergiftete Daten und eine unsichere Lieferkette"],
+      ["p", "KI lernt aus Daten — wer die Daten manipuliert, steuert das Verhalten. Solche Angriffe können Monate vor dem Einsatz stattfinden und trotzdem jeden Test vor der Inbetriebnahme bestehen."],
+      ["ul", [
+        "**Datenvergiftung:** Forscher zeigten 2023, dass sich gängige Web-Datensätze für rund 60 US-Dollar vergiften ließen, indem man abgelaufene Domains kaufte, auf die diese Datensätze verwiesen.",
+        "**Hintertüren:** Eine Studie von Anthropic, dem britischen AI Security Institute und dem Alan Turing Institute fand 2025, dass etwa 250 präparierte Dokumente genügten, um Modelle jeder getesteten Größe mit einem versteckten Auslöser zu versehen.",
+        "**RAG-Vergiftung:** Wer eine Wiki-Seite oder einen geteilten Ordner bearbeiten kann, den der KI-Assistent durchsucht, beeinflusst dessen Antworten für alle Nutzer.",
+        "**Schädliche Modelldateien:** 2024 fand JFrog rund 100 Modelle auf Hugging Face, die beim Laden Schadcode ausführten.",
+        "**„Slopsquatting“:** KI-Assistenten empfehlen Software-Pakete, die es nicht gibt. Angreifer registrieren genau diese Namen mit Schadcode."
+      ]],
+      ["p", "Hinzu kommt **Schatten-KI**: Tools, die Mitarbeitende ohne Freigabe nutzen. 2023 kopierten Samsung-Ingenieure vertraulichen Quellcode in ChatGPT. Verbote drängen die Nutzung erfahrungsgemäß nur in den Untergrund; freigegebene Alternativen wirken besser."],
+      ["p", "Auch bestehende Dienstleister gehören in den Blick. Schaltet etwa ein CRM-Anbieter eine KI-Funktion frei, fließen Kundendaten womöglich an einen Modellanbieter, den Ihr Vertrag nicht abdeckt."],
+
+      ["h2", "KI als Werkzeug der Angreifer"],
+      ["p", "KI wird nicht nur angegriffen, sie greift auch an. Die Ziele sind gewöhnliche Menschen und Prozesse; KI macht die Angriffe schneller, billiger und glaubwürdiger."],
+      ["ul", [
+        "**Deepfakes:** 2024 überwies ein Mitarbeiter des Ingenieurbüros Arup in Hongkong rund 25 Millionen US-Dollar nach einer Videokonferenz, in der der Finanzchef und weitere Kollegen vollständig gefälscht waren.",
+        "**Stimmklone:** Bereits 2019 überwies ein britisches Energieunternehmen 220.000 Euro nach einem Anruf, der wie der Chef der deutschen Muttergesellschaft klang.",
+        "**KI-Phishing:** Rechtschreibfehler sind kein Warnsignal mehr. Nachrichten sind fließend, in jeder Sprache und persönlich zugeschnitten.",
+        "**Synthetische Identitäten:** 2024 stellte die Sicherheitsfirma KnowBe4 einen nordkoreanischen Agenten als Software-Entwickler ein — mit gestohlener Identität und KI-bearbeitetem Foto."
+      ]],
+      ["p", "Die Konsequenz: Ein Gesicht oder eine Stimme zu erkennen, ist kein Identitätsnachweis mehr. Zahlungs- und Zugriffsfreigaben brauchen eine Bestätigung über einen zweiten, unabhängigen Kanal."],
+
+      ["h2", "Abwehr in Schichten"],
+      ["p", "Keine einzelne Maßnahme hält alle Angriffe auf. Jede Schicht versagt manchmal — gemeinsam machen sie aus einem wahrscheinlichen Vorfall einen unwahrscheinlichen. Die meisten Schutzmaßnahmen liegen dabei außerhalb des Modells:"],
+      ["ul", [
+        "**Identität und Zugriff:** eigene Identitäten für Agenten und minimale Rechte — das begrenzt den möglichen Schaden.",
+        "**Eingangskontrolle:** Filter für Injection-Versuche und versteckten Text fangen bekannte, einfache Angriffe ab.",
+        "**Modell:** Anweisungshierarchie und adversariales Training senken die Erfolgsquote, aber nicht auf null.",
+        "**Ausgangskontrolle:** externe Bilder und Links entfernen, menschliche Freigabe vor dem Versand — die letzte Prüfung vor dem Schaden.",
+        "**Eindämmung:** Sandbox, Ratenbegrenzung und Notabschaltung halten einen kompromittierten Agenten in Schach."
+      ]],
+      ["p", "Über allem stehen Protokollierung und regelmäßiges **Red Teaming**: gezielte Angriffstests auf das gesamte System mit seinen echten Werkzeugen und Rechten. Weil KI nicht immer gleich antwortet, sollten Ergebnisse als Erfolgsquote über viele Durchläufe berichtet werden, nicht als „bestanden“ oder „nicht bestanden“."],
+      ["p", "Auch der Mensch in der Schleife schützt nur, wenn er Zeit, Informationen und echte Befugnis hat, Nein zu sagen. Ein bloßes Abnicken ist keine Aufsicht."],
+
+      ["h2", "Der Rechtsrahmen"],
+      ["p", "Die **KI-Verordnung der EU** (Verordnung (EU) 2024/1689) ist seit dem 1. August 2024 in Kraft. Sie gilt auch für Unternehmen außerhalb der EU, wenn ihre KI-Systeme oder deren Ergebnisse in der EU genutzt werden. Bußgelder reichen bis zu 35 Mio. Euro oder 7 % des weltweiten Jahresumsatzes."],
+      ["ul", [
+        "**Verbotene Praktiken** wie Social Scoring gelten seit dem 2. Februar 2025.",
+        "**Allzweck-KI-Modelle** unterliegen seit dem 2. August 2025 eigenen Pflichten. Der Digital-Omnibus hat den Zeitplan für die Hochrisiko-Pflichten verschoben.",
+        "**Hochrisiko-Systeme** nach Anhang III — etwa in Personalauswahl, Kreditwürdigkeitsprüfung oder Bildung — brauchen Risikomanagement, Daten-Governance, Protokollierung, menschliche Aufsicht und nach Art. 15 angemessene Genauigkeit, Robustheit und Cybersicherheit.",
+        "**Schwerwiegende Vorfälle** müssen Anbieter von Hochrisiko-Systemen nach Art. 73 den Behörden melden."
+      ]],
+      ["p", "Besonders praxisrelevant ist die Unterscheidung zwischen **Anbieter** und **Betreiber**. Der Anbieter entwickelt das System und bringt es unter eigenem Namen auf den Markt; der Betreiber nutzt es beruflich. Die meisten Pflichten treffen den Anbieter. Wer ein Hochrisiko-System aber wesentlich verändert oder unter eigenem Namen vertreibt, wird selbst zum Anbieter."],
+      ["p", "Neben der Verordnung setzen sich Normen durch: **ISO/IEC 42001** ist die zertifizierbare Norm für KI-Managementsysteme und passt zu einem bestehenden ISO/IEC-27001-Programm; **ISO/IEC 27090** liefert seit Oktober 2026 Leitlinien zu Sicherheitsbedrohungen für KI. Die OWASP-Listen und MITRE ATLAS bieten technischen Teams ein gemeinsames Vokabular."],
+      ["p", "Und die Haftung bleibt beim Unternehmen: Ein kanadisches Tribunal verurteilte Air Canada 2024, weil der Website-Chatbot eine nicht existierende Erstattungsregel erfunden hatte. „Das hat der Chatbot gesagt“ ist keine Verteidigung."],
+
+      ["h2", "Checkliste für Unternehmen"],
+      ["check", [
+        "Ein KI-Inventar anlegen: jedes KI-System, jeden Agenten und jede KI-Funktion bei Lieferanten — mit Verantwortlichem, Zweck, Daten, Risikostufe und Rolle (Anbieter oder Betreiber).",
+        "Agenten nur die Rechte geben, die ihre Aufgabe erfordert, und eine eigene, widerrufbare Identität.",
+        "Die Dreifaltigkeit prüfen: private Daten, fremde Inhalte, externe Kommunikation — mindestens eines davon entfernen.",
+        "Externe Bilder und Links in KI-Antworten blockieren oder über einen Proxy leiten.",
+        "Zahlungen, Löschungen und Vertragsschritte nur nach menschlicher Freigabe.",
+        "Modelle nur aus geprüften Quellen laden, Versionen festschreiben, MCP-Server nach jedem Update neu bewerten.",
+        "Keine Zahlung allein auf Basis eines Anrufs oder Videocalls — immer über einen zweiten Kanal bestätigen.",
+        "Eine KI-Nutzungsrichtlinie einführen: welche Tools freigegeben sind und welche Daten hinein dürfen.",
+        "Regelmäßig testen und eine Notabschaltung bereithalten — und vor dem Ernstfall ausprobieren."
+      ]],
+
+      ["h2", "Worauf es ankommt"],
+      ["p", "KI-Sicherheit ist weniger eine Frage des perfekten Modells als der Architektur drumherum. Wer Rechte begrenzt, Schutzschichten aufbaut und Verantwortlichkeiten klar festlegt, kann KI produktiv einsetzen — und bleibt auch dann handlungsfähig, wenn eine Manipulation gelingt."],
+      ["note", "Sie setzen KI-Assistenten oder Agenten im Unternehmen ein? Wir unterstützen Sie bei Dokumentation, Datenschutz und der technischen Umsetzung nach KI-Verordnung und DSGVO — **nehmen Sie Kontakt auf**."]
+    ],
+    sources: [
+      ["KI-Verordnung — Verordnung (EU) 2024/1689 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"],
+      ["OWASP GenAI Security Project — Top 10 für LLM- und agentische Anwendungen (EN)", "https://genai.owasp.org/"],
+      ["MITRE ATLAS — Angriffstechniken gegen KI-Systeme (EN)", "https://atlas.mitre.org/"],
+      ["ISO/IEC 42001 — KI-Managementsysteme (EN)", "https://www.iso.org/standard/42001"]
+    ]
+  },
+  {
     slug: "cookie-banner-urteile",
     tag: "Cookies",
     cta: "check",
