@@ -478,6 +478,11 @@ export default {
       vs: "{bundle} umjesto {full}",
       buy: "Kupi na Gumroadu",
       more: { label: "Nacionalna izdanja", h2: "Još četiri kita, *izrađena za Vašu zemlju.*", lead: "NIS2, eRačun, prijava nepravilnosti i pristupačnost. Ovi kitovi su Notion predlošci, s posebnim izdanjem za svaku zemlju: hrvatsko izdanje usklađeno s domaćim propisima, uz englesko EU izdanje te izdanja za Njemačku i Austriju, Nizozemsku i Španjolsku. Prodaju se zasebno i nisu dio paketa." },
+      books: { label: "Knjige", h2: "Priručnici, *u tisku.*", lead: "Sve što stoji iza kitova, objašnjeno u jednoj knjizi: pravila EU-a s kojima mala i srednja poduzeća danas rade, s kontrolnim popisima, obrascima i predlošcima. Meki uvez, na Amazonu.", format: "Meki uvez", buy: "Kupi na Amazonu",
+        items: {
+          en: { t: "The European Business Compliance Handbook: 2027 Edition", cover: "The European Business Compliance Handbook", ed: "2027 Edition", lang: "Engleski", s: "GDPR · AI Act · NIS2 · DSA · Accessibility · Whistleblowing · E-invoicing · Pay transparency", p: "Deset poglavlja, od GDPR-a i Akta o umjetnoj inteligenciji do NIS2 i eRačuna, s 52 praktične evidencije, kontrolnim popisima i oglednim tekstovima za poduzeća diljem Europe." },
+          de: { t: "Compliance-Handbuch für KMU", cover: "Compliance-Handbuch für KMU", ed: "Ausgabe 2027", lang: "Njemački", s: "DSGVO · KI-Verordnung · NIS2 · DSA · Barrierefreiheit · Hinweisgeberschutz · E-Rechnung · Entgelttransparenz", p: "Njemačko izdanje za poduzeća u **Njemačkoj i Austriji**: iste teme, objašnjene prema nacionalnom pravu." }
+        } },
       items: {
         nis2: { t: "NIS2 kit Hrvatska", s: "Zakon o kibernetičkoj sigurnosti", p: "Provjera primjene, nadležna tijela i CSIRT, registri mjera, rizika i dobavljača te registar incidenata s rokovima od 24 h, 72 h i 30 dana." },
         einv: { t: "Kit eRačun Hrvatska", s: "Fiskalizacija 2.0", p: "Analiza obveza s automatskim rokovima, kalendar obveza, plan prilagodbe, obvezni elementi eRačuna (PDV ↔ EN 16931) i usporedba rješenja." },

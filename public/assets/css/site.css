@@ -982,3 +982,22 @@ html.js.seen :is(.rise,.lni,.hero-globe){animation:none;opacity:1;transform:none
   .kit-inside,.kit-others{grid-template-columns:minmax(0,1fr)}
   .kit-facts{grid-template-columns:minmax(0,1fr)}
 }
+
+/* Books (print handbooks on Amazon) */
+.books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(32px,4vw,56px)}
+.book{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,2.4vw,32px);align-items:center}
+.book-media{display:block;border-radius:6px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.55),0 0 0 1px var(--line-2);transition:transform var(--t-med) var(--ease-out)}
+.book:hover .book-media{transform:translateY(-4px) rotate(-1deg)}
+.book-media img{display:block;width:100%;height:auto}
+.book-cover{aspect-ratio:600/848;display:flex;flex-direction:column;padding:9% 9% 8%;background:radial-gradient(120% 70% at 80% 100%,rgba(183,255,0,.16),transparent 60%),#050605;border-left:4px solid var(--lime)}
+.book-cover .bc-ed{font-family:var(--f-mono);font-size:clamp(7px,.7vw,9.5px);letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
+.book-cover .bc-t{margin-top:10%;font-weight:600;font-size:clamp(17px,1.8vw,25px);line-height:1.05;letter-spacing:-.03em;color:var(--text)}
+.book-cover .bc-s{margin-top:7%;font-family:var(--f-mono);font-size:clamp(7px,.68vw,9px);line-height:1.6;color:var(--text-2)}
+.book-cover .bc-a{margin-top:auto;font-size:clamp(9px,.85vw,12px);font-weight:600;color:var(--text)}
+.book-cover .bc-a i{display:block;font-style:normal;font-family:var(--f-mono);font-weight:400;font-size:.8em;color:var(--lime);margin-top:3px}
+.book-body .eds{margin-top:20px}
+@media (max-width:960px){.books{grid-template-columns:1fr}}
+@media (max-width:520px){.book{grid-template-columns:minmax(0,2fr) minmax(0,3fr);align-items:start}}
+.book .cat{font-family:var(--f-mono);font-size:var(--fs-micro);letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
+.book h3{margin-top:8px}
+@media (max-width:520px){.book-cover .bc-s{display:none}.book-cover .bc-t{font-size:15px}}

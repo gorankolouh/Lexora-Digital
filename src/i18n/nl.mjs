@@ -478,6 +478,11 @@ export default {
       vs: "{bundle} in plaats van {full}",
       buy: "Kopen via Gumroad",
       more: { label: "Landedities", h2: "Vier nieuwe kits, *gemaakt voor uw land.*", lead: "NIS2, e-facturatie, klokkenluiders en toegankelijkheid. Deze kits zijn er als Notion-template, met een eigen editie per land: de Nederlandse editie volgens Nederlands recht, plus een Engelse EU-editie en edities voor Duitsland & Oostenrijk, Spanje en Kroatië. Ze worden los verkocht en zitten niet in de bundel." },
+      books: { label: "Boeken", h2: "De handboeken, *op papier.*", lead: "Alles achter de kits, uitgelegd in één boek: de EU-regels waar kleine en middelgrote bedrijven vandaag mee werken, met checklists, formulieren en sjablonen. Als paperback bij Amazon.", format: "Paperback", buy: "Kopen bij Amazon",
+        items: {
+          en: { t: "The European Business Compliance Handbook: 2027 Edition", cover: "The European Business Compliance Handbook", ed: "2027 Edition", lang: "Engels", s: "GDPR · AI Act · NIS2 · DSA · Accessibility · Whistleblowing · E-invoicing · Pay transparency", p: "Tien hoofdstukken, van de AVG en de AI-verordening tot NIS2 en e-facturatie, met 52 praktische registers, checklists en modelteksten voor bedrijven in heel Europa." },
+          de: { t: "Compliance-Handbuch für KMU", cover: "Compliance-Handbuch für KMU", ed: "Ausgabe 2027", lang: "Duits", s: "DSGVO · KI-Verordnung · NIS2 · DSA · Barrierefreiheit · Hinweisgeberschutz · E-Rechnung · Entgelttransparenz", p: "De Duitse editie voor bedrijven in **Duitsland en Oostenrijk**: dezelfde onderwerpen, uitgelegd naar nationaal recht." }
+        } },
       items: {
         nis2: { t: "NIS2-kit Nederland", s: "Cyberbeveiligingswet (Cbw)", p: "Toepasselijkheidscheck, toezichthouders en CSIRT's, maatregelen-, risico- en leveranciersregister en een incidentenregister met termijnen van 24 uur, 72 uur en 1 maand." },
         einv: { t: "E-factuurkit Nederland", s: "Peppol · EN 16931", p: "Verplichtingen en termijnen voor Nederland en buurlanden, een gereedheidsplan, de factuurvereisten-check (Wet OB ↔ EN 16931), een softwarevergelijking en handelspartners." },
