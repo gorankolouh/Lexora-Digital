@@ -49,6 +49,47 @@ export const BOOKS = {
   }
 };
 
+BOOKS["de-handbuch-2027"] = {
+  lang: "de",
+  slug: "handbuch-2027/",
+  dir: "/downloads/handbuch-2027/de/",
+  zip: "Excel-Arbeitsmappen_Kapitel-1-10_DE.zip",
+  meta: { title: "Excel-Arbeitsmappen zum Compliance-Handbuch für KMU 2027 | Lexora Digital",
+          desc: "Kostenlose Excel-Arbeitsmappen für Leserinnen und Leser des Compliance-Handbuchs für KMU, Ausgabe 2027: eine Arbeitsmappe je Kapitel, mit automatischen Fristen." },
+  label: "Zum Buch",
+  h1: "Excel-*Arbeitsmappen* zum Buch",
+  lead: "Kostenlos für Leserinnen und Leser des **Compliance-Handbuchs für KMU — Ausgabe 2027**. Eine Arbeitsmappe je Kapitel, ein Blatt je Formular aus dem Buch.",
+  zipCta: "Alle 10 Arbeitsmappen herunterladen (ZIP)",
+  listH: "Download je Kapitel",
+  listLead: "Jede Datei öffnet sich in Microsoft Excel oder LibreOffice Calc. Ohne Anmeldung, ohne Tracking.",
+  insideH: "Das steckt in jeder Arbeitsmappe",
+  inside: [
+    "**Ein Blatt je Formular** aus dem Buch, mit denselben Spalten – Buch und Arbeitsmappe passen zusammen.",
+    "**Beispielzeilen** aus dem Buch, damit Sie sehen, wie ein guter Eintrag aussieht – einfach überschreiben oder löschen.",
+    "**Automatische Berechnungen** in den grauen Spalten: Fristen nach DSGVO, HinSchG und NIS2, Risikostufen, Entgeltlücke, Ampeln für Überfälliges.",
+    "**Vorbereitete Kataloge**: NIS2-Maßnahmen, WCAG-Prüfkatalog, Einrichtungs- und Umsetzungs-Checklisten, E-Rechnungs-Pflichtangaben.",
+    "**Auswahllisten und Warnfarben** – Rot für überfällig, Gelb für fällig in den nächsten 30 Tagen.",
+    "Ein **Übersichtsblatt** mit Legende und Links zu allen Blättern."
+  ],
+  chapters: [
+    ["Kapitel-01_DSGVO.xlsx", "1 · DSGVO-Compliance-Kit", "Verarbeitungsverzeichnis, Betroffenenanfragen, Datenpannen, Auftragsverarbeiter, Cookie-Audit"],
+    ["Kapitel-02_Dienstleister-KI-Anbieter.xlsx", "2 · Dienstleister- & KI-Anbieterprüfung", "Dienstleisterverzeichnis und Prüfprotokoll"],
+    ["Kapitel-03_KI-Compliance.xlsx", "3 · KI-Compliance-Toolkit", "KI-Tool-Register, DSGVO-Prüfpunkte, Schulungsnachweis, Vorfälle, Freigabe"],
+    ["Kapitel-04_KI-Richtlinie.xlsx", "4 · KI-Richtlinien-Paket", "KI-Tool-Anträge, Schulungen und Bestätigungen"],
+    ["Kapitel-05_Entgelttransparenz.xlsx", "5 · Entgelttransparenz-Kit", "Entgeltbänder, Entgeltdaten, Entgeltlücken-Rechner, Auskunftsersuchen, Checkliste"],
+    ["Kapitel-06_Hinweisgeberschutz.xlsx", "6 · Hinweisgeberschutz-Kit", "Einrichtungs-Checkliste, Meldestelle, Rechtslage, Fallregister"],
+    ["Kapitel-07_NIS2.xlsx", "7 · NIS2-Compliance-Kit", "Betroffenheit, Behörden, Rollen, Maßnahmen, Risiken, Lieferanten, Vorfälle, Nachweise"],
+    ["Kapitel-08_Barrierefreiheit.xlsx", "8 · Barrierefreiheits-Kit", "Anwendungsbereich, Behörden, digitale Angebote, WCAG-Katalog, Mängel, Rückmeldungen"],
+    ["Kapitel-09_Digital-Services-Act.xlsx", "9 · DSA-Kit", "Betroffenheits-Check, Meldungen & Entscheidungen, Kontaktstellen"],
+    ["Kapitel-10_E-Rechnung.xlsx", "10 · E-Rechnungs-Kit", "Betroffenheit, Pflichten & Fristen, Umsetzungsplan, Pflichtangaben, Software, Partner"]
+  ],
+  bandH: "Lieber umsetzen lassen?",
+  bandLead: "Lexora Digital setzt die Anforderungen für Ihr Unternehmen um – Websites, DSGVO- und Cookie-Korrekturen, Übersetzungen für EU-Märkte.",
+  bandCta: "Kontakt aufnehmen",
+  bandAlt: "Compliance-Kits",
+  disclaimer: "Die Arbeitsmappen sind Organisationswerkzeuge und ersetzen keine Rechtsberatung. Gesetze, Fristen und Behördenpraxis ändern sich – prüfen Sie vor wichtigen Entscheidungen den aktuellen Stand."
+};
+
 export function bookPage(t, key, sizes) {
   const b = BOOKS[key];
   const crumbs = [[path(t, "home"), t.ui.home], [null, b.label]];
