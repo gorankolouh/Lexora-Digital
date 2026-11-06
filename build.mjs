@@ -12,6 +12,7 @@ import { article, articleHref, articleLd } from "./src/pages/article.mjs";
 import { landing, landingLd } from "./src/pages/landing.mjs";
 import LANDING from "./src/i18n/landing.mjs";
 import { kitPage, kitLd, kitText, kitHref, kitLangs, KIT_KEYS } from "./src/pages/kit.mjs";
+import { BOOKS, bookPage } from "./src/pages/book.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const DIST = join(ROOT, "dist");
@@ -84,6 +85,14 @@ async function build() {
       const html = page({ t, key: "shop", title: `${k.meta.title}`, desc: k.meta.desc, body: kitPage(t, key), alt, langs, ld: kitLd(t, key) });
       await write(join(alt(l.code), "index.html"), html);
       if (l.code === langs[0]) urls.push({ alt, langs });
+    }
+    // book companion download pages (noindex, not in the sitemap): only in the book's own language
+    for (const [key, b] of Object.entries(BOOKS)) {
+      if (b.lang !== l.code) continue;
+      const sizes = {};
+      for (const f of await fs.readdir(join(ROOT, "public", b.dir))) sizes[f] = (await fs.stat(join(ROOT, "public", b.dir, f))).size;
+      const alt = (c) => c === b.lang ? `/${b.lang}/${b.slug}` : path(all[c], "shop");
+      await write(join(alt(l.code), "index.html"), page({ t, key: "shop", title: b.meta.title, desc: b.meta.desc, body: bookPage(t, key, sizes), alt, langs: [b.lang], noindex: true }));
     }
     // case studies share their slug across languages
     for (const item of t.home.work.items) {
