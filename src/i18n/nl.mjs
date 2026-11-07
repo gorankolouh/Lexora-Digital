@@ -20,11 +20,11 @@ export default {
     creative: ["Creatieve diensten", "Identiteit, grafisch werk, mediabewerking", "Aa"]
   },
   meta: {
-    home: { title: "Lexora Digital — studio voor web, recht, taal & design", desc: "Onafhankelijke digitale studio voor websites, AVG- en cookiecompliance, vertalingen en design — voor bedrijven in heel Europa, in vijf talen." },
+    home: { title: "Lexora Digital — websites, AVG-compliance & vertalingen", desc: "Onafhankelijke digitale studio voor websites, AVG- en cookiecompliance, vertalingen en design — voor bedrijven in heel Europa, in vijf talen." },
     web: { title: "Webdesign & webontwikkeling — Lexora Digital", desc: "Websites en landingspagina's op maat voor het mkb. Startwebsite vanaf € 99, responsive, privacyvriendelijk en live op uw eigen domein." },
-    compliance: { title: "Digitale compliance: AVG, cookies & EU-regels — Lexora Digital", desc: "Praktische hulp bij de AVG, cookietoestemming en privacyverklaringen voor bedrijfswebsites — informatie en uitvoering, geen juridisch advies." },
-    check: { title: "Gratis AVG- & cookiecheck — opgelost vanaf € 99 | Lexora Digital", desc: "GDPR, Cookies & Co.: een gratis check van toestemming, tracking en juridische pagina's op uw website. Vinden we problemen, dan lossen we ze op vanaf € 99." },
-    language: { title: "Vertalingen Engels, Duits, Nederlands, Spaans & Kroatisch", desc: "Vertaling van websites, zakelijke en juridische teksten tussen Engels, Duits, Nederlands, Spaans en Kroatisch — nauwkeurig en natuurlijk geformuleerd." },
+    compliance: { title: "Digitale compliance: AVG, cookies & EU-regels", desc: "Praktische hulp bij de AVG, cookietoestemming en privacyverklaringen voor bedrijfswebsites — informatie en uitvoering, geen juridisch advies." },
+    check: { title: "Gratis AVG- & cookiecheck — opgelost vanaf € 99", desc: "GDPR, Cookies & Co.: een gratis check van toestemming, tracking en juridische pagina's op uw website. Vinden we problemen, dan lossen we ze op vanaf € 99." },
+    language: { title: "Juridische & zakelijke vertalingen: Engels, Duits, Nederlands", desc: "Vertaling van websites, zakelijke en juridische teksten tussen Engels, Duits, Nederlands, Spaans en Kroatisch — nauwkeurig en natuurlijk geformuleerd." },
     creative: { title: "Creatieve diensten: identiteit & ontwerp — Lexora Digital", desc: "Visuele identiteit, merkmiddelen, grafisch ontwerp en geselecteerde foto-, video-, audio- en stembewerking voor bedrijven." },
     work: { title: "Werk — conceptprojecten | Lexora Digital", desc: "Websiteconcepten voor beauty, vakmensen en autobedrijven — complete, responsive ontwerpen die laten zien hoe Lexora Digital werkt." },
     journal: { title: "Journal — gidsen over AVG, DSA en AI Act | Lexora Digital", desc: "Heldere gidsen over de Europese regels voor bedrijfswebsites: AVG en cookies, de Digital Services Act en de EU AI Act." },

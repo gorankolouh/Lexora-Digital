@@ -21,11 +21,11 @@ export default {
     creative: ["Creative Services", "Identity, graphics, media editing", "Aa"]
   },
   meta: {
-    home: { title: "Lexora Digital — Web, Law, Language & Design Studio", desc: "Independent digital studio for websites, GDPR and cookie compliance, translation and design — for businesses across Europe, in five languages." },
+    home: { title: "Lexora Digital — Websites, GDPR Compliance & Translation", desc: "Independent digital studio for websites, GDPR and cookie compliance, translation and design — for businesses across Europe, in five languages." },
     web: { title: "Web Design & Development — Lexora Digital", desc: "Custom websites and landing pages for small and medium-sized businesses. Starter website from €99, responsive, privacy-friendly and launched on your domain." },
     compliance: { title: "Digital Compliance: GDPR, Cookies & EU Rules — Lexora Digital", desc: "Practical help with GDPR, cookie consent, privacy notices and EU digital rules for business websites — information and implementation, not legal advice." },
-    check: { title: "Free GDPR & Cookie Check — We Fix It from €99 | Lexora Digital", desc: "GDPR, Cookies & Co.: a free check of your website's consent, tracking and legal pages. If we find issues, we fix them from €99." },
-    language: { title: "Translation: English, German, Dutch, Spanish & Croatian", desc: "Business, legal and website translation between English, German, Dutch, Spanish and Croatian — with a focus on clear, natural language." },
+    check: { title: "Free GDPR & Cookie Website Check — Fixes from €99", desc: "GDPR, Cookies & Co.: a free check of your website's consent, tracking and legal pages. If we find issues, we fix them from €99." },
+    language: { title: "Legal & Business Translation: English, German, Dutch, Croatian", desc: "Business, legal and website translation between English, German, Dutch, Spanish and Croatian — with a focus on clear, natural language." },
     creative: { title: "Creative Services: Identity & Graphic Design — Lexora Digital", desc: "Visual identity, brand assets, graphic design and selected photo, video, audio and voice editing for businesses." },
     work: { title: "Work — Concept Projects | Lexora Digital", desc: "Website concepts for beauty, trades and automotive businesses — complete, responsive designs that show how Lexora Digital works." },
     journal: { title: "Journal — Guides to GDPR, the DSA and the AI Act | Lexora Digital", desc: "Plain-language guides to the European rules that shape business websites: GDPR and cookies, the Digital Services Act and the EU AI Act." },
@@ -35,7 +35,7 @@ export default {
     cookies: { title: "Cookie Policy — Lexora Digital", desc: "This website uses no tracking or advertising cookies. Here is exactly what is stored and why." },
     imprint: { title: "Legal Notice — Lexora Digital", desc: "Provider information for lexoradigital.com." },
     shop: {
-      title: "GDPR & AI Act Templates for Notion, Word & Excel — Lexora Digital",
+      title: "GDPR & AI Act Templates for Notion, Word & Excel",
       desc: "Ready-to-use kits for the GDPR, EU AI Act, AI workplace policies, pay transparency and supplier checks — Notion or Word, Excel & PDF, in five languages."
     },
     accessibility: { title: "Accessibility Statement — Lexora Digital", desc: "Our accessibility goals for this website, known limitations and how to give feedback." }

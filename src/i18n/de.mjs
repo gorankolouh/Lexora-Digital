@@ -20,11 +20,11 @@ export default {
     creative: ["Kreativleistungen", "Identität, Grafik, Medienbearbeitung", "Aa"]
   },
   meta: {
-    home: { title: "Lexora Digital — Studio für Web, Recht, Sprache & Design", desc: "Unabhängiges Digitalstudio für Websites, DSGVO- und Cookie-Compliance, Übersetzungen und Design — für Unternehmen in ganz Europa, in fünf Sprachen." },
+    home: { title: "Lexora Digital — Websites, DSGVO & Übersetzungen für Europa", desc: "Unabhängiges Digitalstudio für Websites, DSGVO- und Cookie-Compliance, Übersetzungen und Design — für Unternehmen in ganz Europa, in fünf Sprachen." },
     web: { title: "Webdesign & Webentwicklung — Lexora Digital", desc: "Individuelle Websites und Landingpages für kleine und mittlere Unternehmen. Ab 99 €, responsiv, datenschutzfreundlich und auf Ihrer Domain live." },
-    compliance: { title: "Digitale Compliance: DSGVO, Cookies & EU-Recht — Lexora Digital", desc: "Praktische Hilfe bei DSGVO, Cookie-Einwilligung und Datenschutzerklärung für Unternehmenswebsites — Information und Umsetzung, keine Rechtsberatung." },
+    compliance: { title: "Digitale Compliance: DSGVO, Cookies & EU-Recht umsetzen", desc: "Praktische Hilfe bei DSGVO, Cookie-Einwilligung und Datenschutzerklärung für Unternehmenswebsites — Information und Umsetzung, keine Rechtsberatung." },
     check: { title: "Kostenloser DSGVO- & Cookie-Check — Behebung ab 99 €", desc: "GDPR, Cookies & Co.: kostenloser Check von Einwilligung, Tracking und Rechtstexten Ihrer Website. Finden wir Mängel, beheben wir sie ab 99 €." },
-    language: { title: "Übersetzungen Deutsch, Englisch, Niederländisch, Kroatisch", desc: "Übersetzung von Websites, Geschäfts- und Rechtstexten zwischen Englisch, Deutsch, Niederländisch, Spanisch und Kroatisch — präzise und natürlich formuliert." },
+    language: { title: "Fachübersetzungen Recht & Business: DE, EN, NL, ES, HR", desc: "Übersetzung von Websites, Geschäfts- und Rechtstexten zwischen Englisch, Deutsch, Niederländisch, Spanisch und Kroatisch — präzise und natürlich formuliert." },
     creative: { title: "Kreativleistungen: Identität & Grafikdesign — Lexora Digital", desc: "Visuelle Identität, Markenmaterialien, Grafikdesign sowie ausgewählte Foto-, Video-, Audio- und Sprachbearbeitung für Unternehmen." },
     work: { title: "Arbeiten — Konzeptprojekte | Lexora Digital", desc: "Website-Konzepte für Beauty, Handwerk und Kfz-Betriebe — vollständige, responsive Designs, die zeigen, wie Lexora Digital arbeitet." },
     journal: { title: "Journal — Leitfäden zu DSGVO, DSA und AI Act | Lexora Digital", desc: "Verständliche Leitfäden zu den europäischen Regeln für Unternehmenswebsites: DSGVO und Cookies, Digital Services Act und EU AI Act." },
@@ -34,7 +34,7 @@ export default {
     cookies: { title: "Cookie-Richtlinie — Lexora Digital", desc: "Diese Website verwendet keine Tracking- oder Werbe-Cookies. Hier steht genau, was gespeichert wird und warum." },
     imprint: { title: "Impressum — Lexora Digital", desc: "Anbieterkennzeichnung für lexoradigital.com." },
     shop: {
-      title: "DSGVO- & AI-Act-Vorlagen für Notion & Word — Lexora Digital",
+      title: "DSGVO- & AI-Act-Vorlagen für Notion, Word & Excel",
       desc: "Vorlagen für DSGVO, AI Act, KI-Richtlinien, Entgelttransparenz und Lieferantenprüfung — als Notion-Vorlage oder Word, Excel & PDF, in fünf Sprachen."
     },
     accessibility: { title: "Erklärung zur Barrierefreiheit — Lexora Digital", desc: "Unsere Ziele zur Barrierefreiheit dieser Website, bekannte Einschränkungen und wie Sie uns Rückmeldung geben." }

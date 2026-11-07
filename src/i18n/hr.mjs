@@ -20,11 +20,11 @@ export default {
     creative: ["Kreativne usluge", "Identitet, grafika, obrada medija", "Aa"]
   },
   meta: {
-    home: { title: "Lexora Digital — studio za web, pravo, jezik i dizajn", desc: "Neovisni digitalni studio za web stranice, usklađenost s GDPR-om i pravilima o kolačićima, prijevode i dizajn — za tvrtke diljem Europe, na pet jezika." },
+    home: { title: "Lexora Digital — izrada web stranica, GDPR i prijevodi", desc: "Neovisni digitalni studio za web stranice, usklađenost s GDPR-om i pravilima o kolačićima, prijevode i dizajn — za tvrtke diljem Europe, na pet jezika." },
     web: { title: "Izrada web stranica — Lexora Digital", desc: "Web stranice i landing stranice po mjeri za mala i srednja poduzeća. Od 99 €, prilagođene mobitelima, poštuju privatnost i objavljene na Vašoj domeni." },
     compliance: { title: "Digitalna usklađenost: GDPR i kolačići — Lexora Digital", desc: "Praktična pomoć s GDPR-om, privolom za kolačiće i izjavama o privatnosti za poslovne web stranice — informacije i provedba, ne pravni savjet." },
     check: { title: "Besplatna provjera GDPR-a i kolačića — Lexora Digital", desc: "GDPR, Cookies & Co.: besplatna provjera privole, praćenja i pravnih stranica Vaše web stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 €." },
-    language: { title: "Prijevodi: engleski, njemački, nizozemski, španjolski, hrvatski", desc: "Prijevod web stranica, poslovnih i pravnih tekstova između engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — precizno i prirodno." },
+    language: { title: "Pravni i poslovni prijevodi: engleski, njemački, nizozemski", desc: "Prijevod web stranica, poslovnih i pravnih tekstova između engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — precizno i prirodno." },
     creative: { title: "Kreativne usluge: identitet i grafički dizajn — Lexora Digital", desc: "Vizualni identitet, materijali brenda, grafički dizajn te odabrana obrada fotografija, videa, zvuka i glasa za tvrtke." },
     work: { title: "Radovi — konceptualni projekti | Lexora Digital", desc: "Koncepti web stranica za kozmetiku, obrtnike i autoservise — cjeloviti, prilagodljivi dizajni koji pokazuju kako Lexora Digital radi." },
     journal: { title: "Journal — vodiči o GDPR-u, DSA-u i Aktu o UI | Lexora Digital", desc: "Razumljivi vodiči o europskim pravilima za poslovne web stranice: GDPR i kolačići, Akt o digitalnim uslugama i Akt EU-a o umjetnoj inteligenciji." },

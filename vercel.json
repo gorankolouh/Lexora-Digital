@@ -40,6 +40,59 @@
   ],
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^de(?:[-_][A-Za-z0-9]+)?(?:[,;].*)?$"
+        }
+      ],
+      "destination": "/de/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^nl(?:[-_][A-Za-z0-9]+)?(?:[,;].*)?$"
+        }
+      ],
+      "destination": "/nl/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^es(?:[-_][A-Za-z0-9]+)?(?:[,;].*)?$"
+        }
+      ],
+      "destination": "/es/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^hr(?:[-_][A-Za-z0-9]+)?(?:[,;].*)?$"
+        }
+      ],
+      "destination": "/hr/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
       "source": "/kits",
       "destination": "/en/eu-compliance-kits/",
       "permanent": false

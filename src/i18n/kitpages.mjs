@@ -38,7 +38,7 @@ export default {
       },
       einv: {
         slug: "eu-e-invoicing-readiness-kit",
-        meta: { title: "EU E-Invoicing Readiness Kit — Notion Template (EN 16931, Peppol, ViDA)", desc: "Track 18 EU e-invoicing mandates with live countdowns, plan your readiness, check the EN 16931 core fields and compare providers. Notion template, €29.99." },
+        meta: { title: "EU E-Invoicing Readiness Kit — Peppol & EN 16931 Template", desc: "Track 18 EU e-invoicing mandates with live countdowns, plan your readiness, check the EN 16931 core fields and compare providers. Notion template, €29.99." },
         label: "E-invoicing · EN 16931 · ViDA",
         h1: "EU E-Invoicing Readiness Kit: *one plan for every mandate.*",
         lead: "Belgium and Croatia switched in 2026, France and Poland are rolling out, Germany, Spain and the Netherlands follow, and ViDA arrives in 2030. This kit shows which mandates apply to you and gets your business ready.",
@@ -61,7 +61,7 @@ export default {
       },
       wb: {
         slug: "eu-whistleblower-channel-kit",
-        meta: { title: "EU Whistleblower Channel Kit — Notion Template for Employers with 50+ Staff", desc: "Set up an internal reporting channel under Directive (EU) 2019/1937: setup checklist, case register with 7-day and 3-month deadlines, policy and letter templates. €29.99." },
+        meta: { title: "EU Whistleblower Channel Kit — Template for 50+ Staff", desc: "Set up an internal reporting channel under Directive (EU) 2019/1937: setup checklist, case register with 7-day and 3-month deadlines, policy and letter templates. €29.99." },
         label: "Whistleblowing · Directive (EU) 2019/1937",
         h1: "EU Whistleblower Channel Kit: *set it up, handle every report on time.*",
         lead: "Every employer with 50 or more workers needs an internal reporting channel under the EU Whistleblower Directive. This kit helps you set it up properly and handle every report on time.",
@@ -84,7 +84,7 @@ export default {
       },
       eaa: {
         slug: "eu-accessibility-act-kit",
-        meta: { title: "European Accessibility Act (EAA) Compliance Kit — WCAG 2.1 AA Notion Template", desc: "EAA toolkit for online shops and digital services: scope checker, WCAG 2.1 AA audit checklist (50 criteria), issue tracker and accessibility statement template. €29.99." },
+        meta: { title: "European Accessibility Act Kit — WCAG 2.1 AA Template", desc: "EAA toolkit for online shops and digital services: scope checker, WCAG 2.1 AA audit checklist (50 criteria), issue tracker and accessibility statement template. €29.99." },
         label: "EAA · Directive (EU) 2019/882",
         h1: "European Accessibility Act Kit: *from scope check to published statement.*",
         lead: "Since 28 June 2025 the European Accessibility Act applies to online shops, banking, e-books, transport and many other services. This kit gives you a clear process from scope check to published statement.",
@@ -108,7 +108,7 @@ export default {
       },
       gdpr: {
         slug: "gdpr-compliance-kit",
-        meta: { title: "GDPR Compliance Kit for Small Businesses — Templates & Registers", desc: "GDPR templates for SMEs: Art. 30 records, data subject request and breach logs with automatic deadlines, processor and cookie registers. Notion or Word & Excel. €29.99." },
+        meta: { title: "GDPR Compliance Kit for Small Businesses — Templates", desc: "GDPR templates for SMEs: Art. 30 records, data subject request and breach logs with automatic deadlines, processor and cookie registers. Notion or Word & Excel. €29.99." },
         label: "GDPR · Regulation (EU) 2016/679",
         h1: "GDPR Compliance Kit *for small businesses.*",
         lead: "The GDPR expects you to keep records and to prove compliance. This kit gives you the registers, deadlines and checklist to do it, without hiring a consultant.",
@@ -189,7 +189,7 @@ export default {
       },
       pay: {
         slug: "pay-transparency-kit",
-        meta: { title: "EU Pay Transparency Directive Kit for SMEs — Templates & Gap Calculator", desc: "Prepare for Directive (EU) 2023/970: pay policy, job architecture and pay ranges, pay gap calculator, 2-month request log and ready-to-use texts. Notion or Word & Excel." },
+        meta: { title: "EU Pay Transparency Kit for SMEs — Pay Gap Calculator", desc: "Prepare for Directive (EU) 2023/970: pay policy, job architecture and pay ranges, pay gap calculator, 2-month request log and ready-to-use texts. Notion or Word & Excel." },
         label: "Directive (EU) 2023/970",
         h1: "EU Pay Transparency Kit *for SMEs.*",
         lead: "The Pay Transparency Directive changes how employers set and talk about pay: pay ranges for candidates, no questions about pay history, answers to pay requests within two months, and pay gap reporting for larger employers. This kit helps you prepare.",
@@ -217,7 +217,7 @@ export default {
       },
       vendor: {
         slug: "vendor-ai-supplier-kit",
-        meta: { title: "Vendor & AI Supplier Assessment Kit — GDPR Questionnaire & DPA Checklist", desc: "Check suppliers and AI tools before you sign: supplier questionnaire, Art. 28 DPA checklist, supplier register and assessment log. GDPR, AI Act, NIS2. Notion or Word & Excel." },
+        meta: { title: "Vendor & AI Supplier Checklist — GDPR & DPA Template", desc: "Check suppliers and AI tools before you sign: supplier questionnaire, Art. 28 DPA checklist, supplier register and assessment log. GDPR, AI Act, NIS2. Notion or Word & Excel." },
         label: "GDPR + EU AI Act",
         h1: "Vendor & AI Supplier Assessment Kit: *check before you sign.*",
         lead: "Every supplier that touches your data, and every AI tool your team uses, is your responsibility under the GDPR. This kit gives you a structured way to check them before you sign, and to document that you did.",
@@ -256,7 +256,7 @@ export default {
     kits: {
       nis2: {
         slug: "nis2-kit-deutschland-oesterreich",
-        meta: { title: "NIS2-Kit Deutschland & Österreich — BSIG & NISG 2026 als Notion-Vorlage", desc: "NIS2 umsetzen: Betroffenheitsprüfung für DE und AT, Maßnahmen nach § 30 BSIG, Register und Vorfallmeldungen mit automatischen Fristen. Notion-Vorlage, 29,99 €." },
+        meta: { title: "NIS2-Kit Deutschland & Österreich — BSIG & NISG Vorlage", desc: "NIS2 umsetzen: Betroffenheitsprüfung für DE und AT, Maßnahmen nach § 30 BSIG, Register und Vorfallmeldungen mit automatischen Fristen. Notion-Vorlage, 29,99 €." },
         label: "NIS2 · BSIG · NISG 2026",
         h1: "NIS2-Compliance-Kit *für Deutschland und Österreich.*",
         lead: "Seit dem 6. Dezember 2025 gilt in Deutschland das neue BSI-Gesetz, in Österreich seit 1. Oktober 2026 das NISG 2026. Tausende Unternehmen müssen sich registrieren, Maßnahmen umsetzen und Vorfälle binnen 24 Stunden melden.",
@@ -280,7 +280,7 @@ export default {
       },
       einv: {
         slug: "e-rechnung-kit-deutschland-oesterreich",
-        meta: { title: "E-Rechnungs-Kit Deutschland & Österreich — XRechnung & ZUGFeRD als Notion-Vorlage", desc: "E-Rechnungspflicht vorbereiten: Betroffenheits-Check mit 800.000-€-Grenze, Fristen, Umsetzungsplan, Pflichtangaben-Check und Software-Vergleich. Notion-Vorlage, 29,99 €." },
+        meta: { title: "E-Rechnung Vorlage: XRechnung & ZUGFeRD (DE & AT)", desc: "E-Rechnungspflicht vorbereiten: Betroffenheits-Check mit 800.000-€-Grenze, Fristen, Umsetzungsplan, Pflichtangaben-Check und Software-Vergleich. Notion-Vorlage, 29,99 €." },
         label: "E-Rechnung · XRechnung · ZUGFeRD",
         h1: "E-Rechnungs-Kit *für Deutschland und Österreich.*",
         lead: "Seit 2025 müssen alle Unternehmen in Deutschland E-Rechnungen empfangen können. Ab 1. Januar 2027 müssen Unternehmen mit mehr als 800.000 € Umsatz XRechnung oder ZUGFeRD ausstellen, ab 2028 alle. Das Kit berücksichtigt bereits das BMF-Schreiben vom 15.10.2026.",
@@ -304,7 +304,7 @@ export default {
       },
       wb: {
         slug: "hinweisgeberschutz-kit-hinschg-hschg",
-        meta: { title: "Hinweisgeberschutz-Kit HinSchG & HSchG — Interne Meldestelle als Notion-Vorlage", desc: "Interne Meldestelle einrichten: Checkliste, Fallregister mit 7-Tage- und 3-Monats-Fristen, Muster-Hinweisgeberrichtlinie und Mustertexte für DE und AT. 29,99 €." },
+        meta: { title: "Hinweisgeberschutz-Kit: Interne Meldestelle nach HinSchG", desc: "Interne Meldestelle einrichten: Checkliste, Fallregister mit 7-Tage- und 3-Monats-Fristen, Muster-Hinweisgeberrichtlinie und Mustertexte für DE und AT. 29,99 €." },
         label: "HinSchG · HSchG",
         h1: "Hinweisgeberschutz-Kit: *Meldestelle einrichten, Fristen einhalten.*",
         lead: "Ab 50 Beschäftigten ist eine interne Meldestelle Pflicht, nach dem HinSchG in Deutschland und dem HSchG in Österreich. Dieses Kit hilft, die Meldestelle sauber aufzusetzen und jede Meldung fristgerecht zu bearbeiten.",
@@ -327,7 +327,7 @@ export default {
       },
       eaa: {
         slug: "barrierefreiheit-kit-bfsg-bafg",
-        meta: { title: "Barrierefreiheits-Kit BFSG & BaFG — WCAG-2.1-AA-Prüfkatalog als Notion-Vorlage", desc: "BFSG und BaFG umsetzen: Anwendungsbereich prüfen, WCAG-2.1-AA-Prüfkatalog mit 50 Kriterien, Mängelliste und Mustervorlage zur Barrierefreiheit. 29,99 €." },
+        meta: { title: "BFSG Barrierefreiheit Vorlage — WCAG-2.1-AA-Prüfkatalog", desc: "BFSG und BaFG umsetzen: Anwendungsbereich prüfen, WCAG-2.1-AA-Prüfkatalog mit 50 Kriterien, Mängelliste und Mustervorlage zur Barrierefreiheit. 29,99 €." },
         label: "BFSG · BaFG",
         h1: "Barrierefreiheits-Kit *nach BFSG und BaFG.*",
         lead: "Seit dem 28. Juni 2025 gelten in Deutschland das Barrierefreiheitsstärkungsgesetz und in Österreich das Barrierefreiheitsgesetz. Onlineshops und digitale Dienste müssen barrierefrei sein. Dieses Kit führt Sie von der Prüfung bis zur veröffentlichten Information zur Barrierefreiheit.",
@@ -379,7 +379,7 @@ export default {
       },
       ai: {
         slug: "ai-compliance-toolkit",
-        meta: { title: "AI-Act-Toolkit für KMU — KI-Register, KI-Richtlinie & Schulung", desc: "EU AI Act und DSGVO: Register für KI-Tools mit Risikoklassen, DSGVO-Prüfpunkte, KI-Richtlinie für Beschäftigte, Schulungsskripte und Nachweis der KI-Kompetenz. Notion oder Word & Excel." },
+        meta: { title: "AI-Act-Toolkit für KMU — KI-Register & KI-Kompetenz", desc: "EU AI Act und DSGVO: Register für KI-Tools mit Risikoklassen, DSGVO-Prüfpunkte, KI-Richtlinie für Beschäftigte, Schulungsskripte und Nachweis der KI-Kompetenz. Notion oder Word & Excel." },
         label: "EU AI Act + DSGVO",
         h1: "AI-Compliance-Toolkit: *EU AI Act + DSGVO.*",
         lead: "Ihr Team nutzt längst ChatGPT, Copilot und andere KI-Tools. Nach dem EU AI Act müssen Unternehmen schon jetzt für ausreichende KI-Kompetenz ihrer Beschäftigten sorgen. Mit diesem Toolkit haben Sie das an einem Nachmittag im Griff.",
@@ -432,7 +432,7 @@ export default {
       },
       pay: {
         slug: "pay-transparency-kit",
-        meta: { title: "Entgelttransparenz-Richtlinie: Kit für KMU mit Vorlagen & Lückenrechner", desc: "Vorbereitung auf die Richtlinie (EU) 2023/970: Vergütungsrichtlinie, Stellenbewertung und Gehaltsbänder, Entgeltlücken-Rechner, Auskunftsanfragen mit Frist und Mustertexte." },
+        meta: { title: "Entgelttransparenz Vorlage für KMU — mit Lückenrechner", desc: "Vorbereitung auf die Richtlinie (EU) 2023/970: Vergütungsrichtlinie, Stellenbewertung und Gehaltsbänder, Entgeltlücken-Rechner, Auskunftsanfragen mit Frist und Mustertexte." },
         label: "Richtlinie (EU) 2023/970",
         h1: "Entgelttransparenz-Kit *für KMU.*",
         lead: "Die Entgelttransparenz-Richtlinie verändert, wie Arbeitgeber Gehälter festlegen und darüber sprechen: Gehaltsspannen für Bewerber, keine Fragen nach dem bisherigen Gehalt, Antworten auf Auskunftsanfragen innerhalb von zwei Monaten und Berichte über das Entgeltgefälle für größere Arbeitgeber.",
@@ -460,7 +460,7 @@ export default {
       },
       vendor: {
         slug: "vendor-ai-supplier-kit",
-        meta: { title: "Lieferanten- & KI-Dienstleister-Prüfung — DSGVO-Fragebogen & AV-Checkliste", desc: "Dienstleister und KI-Tools vor Vertragsschluss prüfen: Fragebogen, Checkliste für AV-Verträge nach Art. 28, Lieferantenregister und Prüfprotokoll. DSGVO, AI Act, NIS2." },
+        meta: { title: "Dienstleister-Prüfung: DSGVO-Fragebogen & AV-Checkliste", desc: "Dienstleister und KI-Tools vor Vertragsschluss prüfen: Fragebogen, Checkliste für AV-Verträge nach Art. 28, Lieferantenregister und Prüfprotokoll. DSGVO, AI Act, NIS2." },
         label: "DSGVO + EU AI Act",
         h1: "Lieferanten- & KI-Prüfungs-Kit: *prüfen, bevor Sie unterschreiben.*",
         lead: "Jeder Dienstleister, der mit Ihren Daten arbeitet, und jedes KI-Tool Ihres Teams liegt nach der DSGVO in Ihrer Verantwortung. Dieses Kit gibt Ihnen ein strukturiertes Verfahren, um sie vor Vertragsschluss zu prüfen und das zu dokumentieren.",
