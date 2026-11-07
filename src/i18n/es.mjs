@@ -20,11 +20,11 @@ export default {
     creative: ["Servicios creativos", "Identidad, gráfica, edición multimedia", "Aa"]
   },
   meta: {
-    home: { title: "Lexora Digital — estudio de web, derecho, idiomas y diseño", desc: "Estudio digital independiente de webs, cumplimiento del RGPD y de cookies, traducción y diseño — para empresas de toda Europa, en cinco idiomas." },
+    home: { title: "Lexora Digital — webs, RGPD y traducciones para Europa", desc: "Estudio digital independiente de webs, cumplimiento del RGPD y de cookies, traducción y diseño — para empresas de toda Europa, en cinco idiomas." },
     web: { title: "Diseño y desarrollo web — Lexora Digital", desc: "Webs y landing pages a medida para pymes. Web básica desde 99 €, adaptable a móviles, respetuosa con la privacidad y publicada en su dominio." },
     compliance: { title: "Cumplimiento digital: RGPD, cookies y normas UE — Lexora Digital", desc: "Ayuda práctica con el RGPD, las cookies y la política de privacidad de su web — información e implementación, no asesoramiento jurídico." },
     check: { title: "Revisión RGPD y cookies gratuita, corrección desde 99 €", desc: "GDPR, Cookies & Co.: revisión gratuita del consentimiento, el seguimiento y los textos legales de su web. Si encontramos problemas, los corregimos desde 99 €." },
-    language: { title: "Traducciones: inglés, alemán, neerlandés, español y croata", desc: "Traducción de webs, documentos empresariales y textos jurídicos entre inglés, alemán, neerlandés, español y croata — precisa y natural." },
+    language: { title: "Traducción jurídica y empresarial: inglés, alemán, neerlandés", desc: "Traducción de webs, documentos empresariales y textos jurídicos entre inglés, alemán, neerlandés, español y croata — precisa y natural." },
     creative: { title: "Servicios creativos: identidad y diseño gráfico — Lexora Digital", desc: "Identidad visual, materiales de marca, diseño gráfico y edición seleccionada de foto, vídeo, audio y voz para empresas." },
     work: { title: "Proyectos — proyectos conceptuales | Lexora Digital", desc: "Conceptos de web para estética, oficios y talleres de automoción — diseños completos y adaptables que muestran cómo trabaja Lexora Digital." },
     journal: { title: "Journal — guías sobre RGPD, DSA y Ley de IA | Lexora Digital", desc: "Guías claras sobre las normas europeas que afectan a las webs de empresa: RGPD y cookies, la Ley de Servicios Digitales y la Ley de IA de la UE." },
