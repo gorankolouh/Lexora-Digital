@@ -27,7 +27,7 @@ export default {
     check: { title: "Free GDPR & Cookie Website Check — Fixes from €99", desc: "GDPR, Cookies & Co.: a free check of your website's consent, tracking and legal pages. If we find issues, we fix them from €99." },
     language: { title: "Legal & Business Translation: English, German, Dutch, Croatian", desc: "Business, legal and website translation between English, German, Dutch, Spanish and Croatian — with a focus on clear, natural language." },
     creative: { title: "Creative Services: Identity & Graphic Design — Lexora Digital", desc: "Visual identity, brand assets, graphic design and selected photo, video, audio and voice editing for businesses." },
-    work: { title: "Work — Concept Projects | Lexora Digital", desc: "Website concepts for beauty, trades and automotive businesses — complete, responsive designs that show how Lexora Digital works." },
+    work: { title: "Work — Selected Website Projects | Lexora Digital", desc: "Websites designed and built by Lexora Digital: a legal non-profit, a London production agency and a visa and relocation service." },
     journal: { title: "Journal — Guides to GDPR, the DSA and the AI Act | Lexora Digital", desc: "Plain-language guides to the European rules that shape business websites: GDPR and cookies, the Digital Services Act and the EU AI Act." },
     about: { title: "About — Lexora Digital", desc: "An independent digital studio combining web design, practical knowledge of European digital rules, translation and creative work." },
     contact: { title: "Contact — Lexora Digital", desc: "Tell us about your project: websites, design, GDPR and cookie compliance or translation. We reply in your language." },
@@ -86,19 +86,19 @@ export default {
     focus: { label: "In focus", h2: "Three services, *one standard.*", lead: "Websites, GDPR and cookie compliance, and translation — each built with the same care for detail.", tile: ["GDPR & EU Compliance", "Free website check"] },
     work: {
       label: "Selected work",
-      h2: "Concept projects, built to the standard of real ones.",
-      p: "Each concept is a complete, responsive website designed for a specific kind of business. They demonstrate our approach — they are not commissioned client work.",
-      all: "View all work", badge: "Concept", count: "3 concepts · more in preparation", cta: "View case study",
+      h2: "Real projects, built with care.",
+      p: "Three websites we designed and built — for a legal initiative, a production agency and a small service business. Each one is real work, not a template.",
+      all: "View all work", badge: "Real project", count: "3 projects · more in preparation", cta: "View case study",
       items: [
-        { slug: "studio-rosalie", img: "rosalie", cat: "Beauty & personal care", title: "Studio Rosalie",
-          p: "A calm, premium one-page site for a beauty studio: warm rosé palette, editorial serif typography and a structure built around booking an appointment.",
-          svc: ["Web design", "Visual direction", "Responsive build"], alt: "Studio Rosalie beauty salon website concept on desktop and mobile" },
-        { slug: "mustermann-sanitaer", img: "mustermann", cat: "Trades & home services", title: "Mustermann Sanitär",
-          p: "A clear, trustworthy site for a plumbing and heating business, built around one goal: getting the phone to ring.",
-          svc: ["Web design", "Responsive build", "Conversion structure"], alt: "Plumbing and heating company website concept on desktop and mobile" },
-        { slug: "kfz-werkstatt", img: "kfz", cat: "Automotive & repair", title: "Kfz-Werkstatt",
-          p: "A bold, technical look for an independent car repair workshop, with services, trust points and appointment requests up front.",
-          svc: ["Web design", "Art direction", "Responsive build"], alt: "Car repair workshop website concept on desktop and mobile" }
+        { slug: "equalfaith-europe", img: "equalfaith", cat: "Legal & non-profit", title: "EqualFaith Europe",
+          p: "A serious, document-led website for a European legal initiative: editorial serif typography, a restrained navy and gold palette, and a structure built around published legal work.",
+          svc: ["Web design", "Content structure", "Responsive build"], alt: "EqualFaith Europe website on desktop and mobile" },
+        { slug: "production-hub", img: "production-hub", cat: "Agency & media", title: "Production Hub",
+          p: "A bold, dark website for a London production agency: strong headlines, cinematic colour and ten services presented as one team.",
+          svc: ["Web design", "Art direction", "Responsive build"], alt: "Production Hub agency website on desktop and mobile" },
+        { slug: "visabridge", img: "visabridge", cat: "Small business & services", title: "VisaBridge",
+          p: "A clear, friendly website for a visa and relocation service: plain language, a five-step process and one request form that leads to a fixed-price offer.",
+          svc: ["Web design", "Conversion structure", "Responsive build"], alt: "VisaBridge visa and relocation website on desktop and mobile" }
       ]
     },
     trust: {
@@ -183,7 +183,7 @@ export default {
 
   pages: {
     web: {
-      hero: { label: "Web design & development", h1: "Websites that make your business *easier to trust.*", lead: "From a focused one-page website to a custom multi-page site — designed with care, built to work on every screen, and launched with a clear handover.", cta1: "Start a website project", cta2: "See concept projects" },
+      hero: { label: "Web design & development", h1: "Websites that make your business *easier to trust.*", lead: "From a focused one-page website to a custom multi-page site — designed with care, built to work on every screen, and launched with a clear handover.", cta1: "Start a website project", cta2: "See our projects" },
       what: {
         label: "What we build", h2: "Everything a business website needs. Nothing it doesn't.", lead: "We design and develop websites that are fast, readable, privacy-friendly and easy to maintain.",
         items: [
@@ -215,7 +215,7 @@ export default {
           { g: "→", t: "Maintenance", p: "Updates and changes after launch are not included in a package. We offer them on request, at a quoted price." }
         ]
       },
-      work: { label: "Concept projects", h2: "How our websites look in practice." },
+      work: { label: "Selected projects", h2: "How our websites look in practice." },
       band: { h2: "Ready for a website that *works properly?*", lead: "Tell us about your business and what the website should achieve." }
     },
 
@@ -356,7 +356,7 @@ export default {
     },
 
     creative: {
-      hero: { label: "Creative services", h1: "Visual work with a *clear point of view.*", lead: "Identity, graphics and media editing for businesses that want to look as good as their work — consistent across the website, print and social media.", cta1: "Discuss a creative project", cta2: "See concept projects" },
+      hero: { label: "Creative services", h1: "Visual work with a *clear point of view.*", lead: "Identity, graphics and media editing for businesses that want to look as good as their work — consistent across the website, print and social media.", cta1: "Discuss a creative project", cta2: "See our projects" },
       services: {
         label: "What we offer", h2: "Selected creative services.", lead: "Focused services that support your website and your brand.",
         items: [
@@ -376,48 +376,48 @@ export default {
           ["Clear scope", "Every creative project has an agreed scope and price before we start."]
         ]
       },
-      work: { label: "Concept projects", h2: "Art direction in practice." },
+      work: { label: "Selected projects", h2: "Art direction in practice." },
       band: { h2: "Let's give your brand a *clear look.*", lead: "Tell us what you need and where it will be used." }
     },
 
     work: {
-      hero: { label: "Work", h1: "Concept projects, *built to the standard of real ones.*", lead: "Each concept is a complete, responsive website designed for a specific kind of business. They show how we work — they are not commissioned client projects." },
+      hero: { label: "Work", h1: "Real projects, *built with care.*", lead: "Websites we designed and built for a legal non-profit, a London production agency and a small service business — each with its own tone, structure and audience." },
       filter: "Filter by industry", all: "All", empty: "No projects in this category yet.",
-      soon: { label: "In preparation", items: ["Holiday accommodation", "Professional services", "Creative & digital projects"], p: "New concepts are added as they are completed." },
-      band: { h2: "Want a website like this *for your business?*", lead: "Every concept can be adapted to a real business — with your content, your brand and your languages." }
+      soon: { label: "In preparation", items: ["Holiday accommodation", "Professional services", "Creative & digital projects"], p: "New projects are added as they are completed." },
+      band: { h2: "Want a website like this *for your business?*", lead: "Every project starts from your business — your content, your brand and your languages." }
     },
 
     caseUi: {
       overview: "Overview", goals: "Business goals", approach: "Design approach", system: "Design system", palette: "Colour palette", type2: "Typography",
-      roles: { display: "Headings", body: "Body text", both: "Headings & body" },
-      type: "Type", sector: "Industry", services: "Services shown", lang: "Language",
+      roles: { display: "Headings", body: "Body text", both: "Headings & body", mono: "Labels & references" },
+      type: "Type", sector: "Industry", services: "Services", lang: "Language",
       desk: "Desktop — homepage sections", mob: "Mobile — the layout is recomposed for small screens, not just scaled down.",
-      deskAlt: "%s website concept — desktop view of the homepage", mobAlt: "%s website concept — mobile view",
-      note: "This is a concept project created by Lexora Digital to demonstrate our approach. Names, contact details and texts in square brackets are placeholders.",
+      deskAlt: "%s website — desktop view of the homepage", mobAlt: "%s website — mobile view",
+      note: "Screenshots show the website as built by Lexora Digital. Some personal details have been removed from the previews.",
       next: "Next project", cta: "Discuss a similar website",
       band: { h2: "Want a website like this *for your business?*", lead: "We adapt the approach to your business, your content and your languages." }
     },
     cases: {
-      "studio-rosalie": {
-        lead: "A calm, premium one-page website concept for a beauty studio — designed to make booking an appointment the obvious next step.", lang: "German",
-        svc: ["Web design", "Visual direction", "Responsive build"],
-        overview: "Studio Rosalie is a concept for an independent beauty studio offering facials, lashes, brows and nail design. The site needed to feel personal and premium at the same time — and to work as well on a phone as on a laptop.",
-        goals: ["Make the studio feel welcoming and high-quality at first glance", "Present services and prices clearly", "Make booking an appointment the obvious next step", "Introduce the owner personally to build trust"],
-        approach: ["A warm rosé and burgundy palette replaces the usual pink, with an editorial serif for headings and a clean sans-serif for reading.", "Photography of the studio, the work and the owner carries the page. The layout gives each image room, and booking buttons stay visible without being pushy."]
+      "equalfaith-europe": {
+        lead: "A serious, editorial website for a civil-society initiative working on the enforcement of EU anti-discrimination law — built so that legal work is easy to find, read and cite.", lang: "English",
+        svc: ["Web design", "Content structure", "Responsive build"],
+        overview: "EqualFaith Europe researches, drafts and files legal submissions on EU anti-discrimination law, digital rights and AI. The website had to carry long, formal content without feeling heavy — and to read as credible to regulators, journalists and supporters alike.",
+        goals: ["Look credible to institutions and the press at first glance", "Make complaints, submissions and briefings easy to find and download", "Explain a complex mission in plain language", "Be open about funding, status and governance"],
+        approach: ["A paper-white background, deep navy and a muted gold accent give the site the calm of a legal publication. Headings are set in a classic serif, body text in a clean sans-serif, and references in a monospace face, like citations.", "Publications, priorities, transparency, articles and a book page share one strict grid. Each filing is shown with its legal basis and status, so the work speaks for itself."]
       },
-      "mustermann-sanitaer": {
-        lead: "A clear, trustworthy website concept for a plumbing and heating business — built around one goal: getting the phone to ring.", lang: "German",
-        svc: ["Web design", "Responsive build", "Conversion structure"],
-        overview: "Mustermann Sanitär is a concept for a master plumbing business offering bathrooms, plumbing and heating. Customers often arrive with a problem and a phone in their hand, so speed and clarity matter more than anything else.",
-        goals: ["Show competence and reliability immediately", "Put the phone number and emergency service within one tap", "Explain services in plain language", "Build trust with real photos of the team and the work"],
-        approach: ["A navy and warm orange palette signals reliability and action. The phone number is the primary button everywhere, and on mobile a fixed call bar keeps it in reach.", "Service cards, trust points and a short review section answer the usual questions before the customer has to ask."]
-      },
-      "kfz-werkstatt": {
-        lead: "A bold, technical website concept for an independent car repair workshop, with services, trust points and appointment requests up front.", lang: "German",
+      "production-hub": {
+        lead: "A bold, cinematic one-page website for a London-based full-service production agency — video, audio, web and marketing presented as one team.", lang: "English",
         svc: ["Web design", "Art direction", "Responsive build"],
-        overview: "This concept presents an independent car repair workshop as modern and competent — without the usual stock-photo look of the industry.",
-        goals: ["Look professional and technically competent", "Present the main services at a glance", "Make appointment requests easy", "Build trust without invented certifications or reviews"],
-        approach: ["Deep navy and signal orange with a condensed typeface give the site the confident, technical feel of a workshop. Real-looking workshop photography carries the story.", "A clear service grid, four trust points and a simple appointment form make the next step obvious on every screen."]
+        overview: "Production Hub offers ten services, from video editing and podcasts to web development and digital marketing. The website needed to make that range feel like one confident offer rather than a long list — and to look like the work of a studio that produces things properly.",
+        goals: ["Make a strong impression on the first screen", "Present ten services without overwhelming the visitor", "Show the people and the place behind the agency", "Lead clearly to a project enquiry"],
+        approach: ["A near-black stage with red, royal blue and gold accents nods to the agency's British roots without turning into a flag. Heavy Archivo headlines do the talking; Inter keeps the details readable.", "The page moves like a showreel: a hero with a studio portrait, key figures, a colourful service grid, reasons to choose the agency, the process and a short enquiry form."]
+      },
+      "visabridge": {
+        lead: "A clear, reassuring website for a visa, immigration and relocation service — built to turn a stressful question into one simple request.", lang: "English",
+        svc: ["Web design", "Conversion structure", "Responsive build"],
+        overview: "VisaBridge helps people with visas, residency and relocation across Europe and Asia. Visitors arrive with a stressful question, so the site had to answer three things quickly: can you help me, how does it work, and what will it cost.",
+        goals: ["Explain the service in plain language, without legal jargon", "Show the process in five clear steps", "Make the price promise visible before any commitment", "Turn interest into a request with one short form"],
+        approach: ["A white and soft-blue palette with deep navy text feels calm and official without being cold. Rounded cards, checklists and generous spacing make long content easy to scan on a phone.", "The request button stays within reach on every screen, a WhatsApp shortcut is always visible, and the legal pages — privacy, cookies, terms and disclaimer — are part of the build, not an afterthought."]
       }
     },
 
@@ -606,7 +606,7 @@ export default {
         ["h2", "What we have done"],
         ["ul", ["Semantic page structure with headings, landmarks and a skip link", "Full keyboard navigation with visible focus indicators", "Text contrast checked against WCAG AA", "Animations reduced or switched off when your device asks for reduced motion", "Forms with visible labels and clear error messages", "Descriptive text alternatives for images"]],
         ["h2", "Known limitations"],
-        ["ul", ["The animated planet is decorative and hidden from screen readers.", "Concept project screenshots contain small text that is described in the surrounding text rather than read out in full."]],
+        ["ul", ["The animated planet is decorative and hidden from screen readers.", "Project screenshots contain small text that is described in the surrounding text rather than read out in full."]],
         ["h2", "Feedback"],
         ["p", "If you find a barrier on this website, please tell us at info@lexoradigital.com. We will reply and work on a solution."],
         ["h2", "Status"],

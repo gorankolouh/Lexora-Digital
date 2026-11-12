@@ -26,7 +26,7 @@ export default {
     check: { title: "Kostenloser DSGVO- & Cookie-Check — Behebung ab 99 €", desc: "GDPR, Cookies & Co.: kostenloser Check von Einwilligung, Tracking und Rechtstexten Ihrer Website. Finden wir Mängel, beheben wir sie ab 99 €." },
     language: { title: "Fachübersetzungen Recht & Business: DE, EN, NL, ES, HR", desc: "Übersetzung von Websites, Geschäfts- und Rechtstexten zwischen Englisch, Deutsch, Niederländisch, Spanisch und Kroatisch — präzise und natürlich formuliert." },
     creative: { title: "Kreativleistungen: Identität & Grafikdesign — Lexora Digital", desc: "Visuelle Identität, Markenmaterialien, Grafikdesign sowie ausgewählte Foto-, Video-, Audio- und Sprachbearbeitung für Unternehmen." },
-    work: { title: "Arbeiten — Konzeptprojekte | Lexora Digital", desc: "Website-Konzepte für Beauty, Handwerk und Kfz-Betriebe — vollständige, responsive Designs, die zeigen, wie Lexora Digital arbeitet." },
+    work: { title: "Arbeiten — Ausgewählte Website-Projekte | Lexora Digital", desc: "Websites, gestaltet und umgesetzt von Lexora Digital: eine juristische Non-Profit-Initiative, eine Londoner Produktionsagentur und ein Visa- und Relocation-Service." },
     journal: { title: "Journal — Leitfäden zu DSGVO, DSA und AI Act | Lexora Digital", desc: "Verständliche Leitfäden zu den europäischen Regeln für Unternehmenswebsites: DSGVO und Cookies, Digital Services Act und EU AI Act." },
     about: { title: "Über uns — Lexora Digital", desc: "Ein unabhängiges Digitalstudio, das Webdesign, praktisches Wissen über europäisches Digitalrecht, Übersetzung und Gestaltung verbindet." },
     contact: { title: "Kontakt — Lexora Digital", desc: "Erzählen Sie uns von Ihrem Projekt: Website, Design, DSGVO- und Cookie-Compliance oder Übersetzung. Wir antworten in Ihrer Sprache." },
@@ -85,19 +85,19 @@ export default {
     focus: { label: "Im Fokus", h2: "Drei Leistungen, *ein Anspruch.*", lead: "Websites, DSGVO- und Cookie-Compliance und Übersetzungen — jede mit derselben Sorgfalt im Detail.", tile: ["DSGVO & EU-Compliance", "Kostenloser Website-Check"] },
     work: {
       label: "Ausgewählte Arbeiten",
-      h2: "Konzeptprojekte, gebaut nach dem Standard echter Projekte.",
-      p: "Jedes Konzept ist eine vollständige, responsive Website für eine bestimmte Art von Unternehmen. Sie zeigen unsere Arbeitsweise — es sind keine beauftragten Kundenprojekte.",
-      all: "Alle Arbeiten", badge: "Konzept", count: "3 Konzepte · weitere in Vorbereitung", cta: "Fallstudie ansehen",
+      h2: "Echte Projekte, mit Sorgfalt umgesetzt.",
+      p: "Drei Websites, die wir gestaltet und umgesetzt haben — für eine juristische Initiative, eine Produktionsagentur und ein kleines Dienstleistungsunternehmen. Jede ist echte Arbeit, keine Vorlage.",
+      all: "Alle Arbeiten", badge: "Echtes Projekt", count: "3 Projekte · weitere in Vorbereitung", cta: "Fallstudie ansehen",
       items: [
-        { slug: "studio-rosalie", img: "rosalie", cat: "Beauty & Kosmetik", title: "Studio Rosalie",
-          p: "Eine ruhige, hochwertige One-Page-Website für ein Kosmetikstudio: warme Rosé-Töne, editoriale Serifenschrift und ein Aufbau, der zur Terminbuchung führt.",
-          svc: ["Webdesign", "Visuelle Richtung", "Responsive Umsetzung"], alt: "Website-Konzept für das Kosmetikstudio Studio Rosalie auf Desktop und Smartphone" },
-        { slug: "mustermann-sanitaer", img: "mustermann", cat: "Handwerk & Haustechnik", title: "Mustermann Sanitär",
-          p: "Eine klare, vertrauenswürdige Website für einen Sanitär- und Heizungsbetrieb — mit einem Ziel: dass das Telefon klingelt.",
-          svc: ["Webdesign", "Responsive Umsetzung", "Conversion-Struktur"], alt: "Website-Konzept für einen Sanitär- und Heizungsbetrieb auf Desktop und Smartphone" },
-        { slug: "kfz-werkstatt", img: "kfz", cat: "Kfz & Reparatur", title: "Kfz-Werkstatt",
-          p: "Ein kräftiger, technischer Auftritt für eine freie Kfz-Werkstatt — mit Leistungen, Vertrauenspunkten und Terminanfrage gleich zu Beginn.",
-          svc: ["Webdesign", "Art Direction", "Responsive Umsetzung"], alt: "Website-Konzept für eine Kfz-Werkstatt auf Desktop und Smartphone" }
+        { slug: "equalfaith-europe", img: "equalfaith", cat: "Recht & Non-Profit", title: "EqualFaith Europe",
+          p: "Eine seriöse, dokumentenorientierte Website für eine europäische Rechtsinitiative: redaktionelle Serifenschrift, eine zurückhaltende Palette aus Marineblau und Gold und eine Struktur rund um veröffentlichte juristische Arbeit.",
+          svc: ["Webdesign", "Inhaltsstruktur", "Responsive Umsetzung"], alt: "Website von EqualFaith Europe auf Desktop und Smartphone" },
+        { slug: "production-hub", img: "production-hub", cat: "Agentur & Medien", title: "Production Hub",
+          p: "Eine mutige, dunkle Website für eine Londoner Produktionsagentur: starke Überschriften, filmische Farben und zehn Leistungen, präsentiert als ein Team.",
+          svc: ["Webdesign", "Art Direction", "Responsive Umsetzung"], alt: "Website der Agentur Production Hub auf Desktop und Smartphone" },
+        { slug: "visabridge", img: "visabridge", cat: "Kleinunternehmen & Dienstleistung", title: "VisaBridge",
+          p: "Eine klare, freundliche Website für einen Visa- und Relocation-Service: einfache Sprache, ein Ablauf in fünf Schritten und ein Anfrageformular, das zu einem Festpreisangebot führt.",
+          svc: ["Webdesign", "Conversion-Struktur", "Responsive Umsetzung"], alt: "Website des Visa- und Relocation-Service VisaBridge auf Desktop und Smartphone" }
       ]
     },
     trust: {
@@ -182,7 +182,7 @@ export default {
 
   pages: {
     web: {
-      hero: { label: "Webdesign & Entwicklung", h1: "Websites, denen man *leichter vertraut.*", lead: "Von der fokussierten One-Page-Website bis zur individuellen Website mit mehreren Seiten — sorgfältig gestaltet, für jeden Bildschirm gebaut und mit klarer Übergabe veröffentlicht.", cta1: "Website-Projekt starten", cta2: "Konzeptprojekte ansehen" },
+      hero: { label: "Webdesign & Entwicklung", h1: "Websites, denen man *leichter vertraut.*", lead: "Von der fokussierten One-Page-Website bis zur individuellen Website mit mehreren Seiten — sorgfältig gestaltet, für jeden Bildschirm gebaut und mit klarer Übergabe veröffentlicht.", cta1: "Website-Projekt starten", cta2: "Projekte ansehen" },
       what: {
         label: "Was wir bauen", h2: "Alles, was eine Unternehmenswebsite braucht. Nichts darüber hinaus.", lead: "Wir gestalten und entwickeln Websites, die schnell, gut lesbar, datenschutzfreundlich und leicht zu pflegen sind.",
         items: [
@@ -214,7 +214,7 @@ export default {
           { g: "→", t: "Wartung", p: "Updates und Änderungen nach dem Launch sind nicht im Paket enthalten. Wir bieten sie auf Anfrage zu einem vorab genannten Preis an." }
         ]
       },
-      work: { label: "Konzeptprojekte", h2: "So sehen unsere Websites in der Praxis aus." },
+      work: { label: "Ausgewählte Projekte", h2: "So sehen unsere Websites in der Praxis aus." },
       band: { h2: "Bereit für eine Website, die *richtig funktioniert?*", lead: "Erzählen Sie uns von Ihrem Unternehmen und davon, was die Website leisten soll." }
     },
 
@@ -355,7 +355,7 @@ export default {
     },
 
     creative: {
-      hero: { label: "Kreativleistungen", h1: "Gestaltung mit *klarer Haltung.*", lead: "Identität, Grafik und Medienbearbeitung für Unternehmen, die so gut aussehen wollen wie ihre Arbeit — einheitlich auf Website, Print und Social Media.", cta1: "Kreativprojekt besprechen", cta2: "Konzeptprojekte ansehen" },
+      hero: { label: "Kreativleistungen", h1: "Gestaltung mit *klarer Haltung.*", lead: "Identität, Grafik und Medienbearbeitung für Unternehmen, die so gut aussehen wollen wie ihre Arbeit — einheitlich auf Website, Print und Social Media.", cta1: "Kreativprojekt besprechen", cta2: "Projekte ansehen" },
       services: {
         label: "Was wir anbieten", h2: "Ausgewählte Kreativleistungen.", lead: "Fokussierte Leistungen, die Ihre Website und Ihre Marke unterstützen.",
         items: [
@@ -375,48 +375,48 @@ export default {
           ["Klarer Umfang", "Jedes Kreativprojekt hat vor Beginn einen vereinbarten Umfang und Preis."]
         ]
       },
-      work: { label: "Konzeptprojekte", h2: "Art Direction in der Praxis." },
+      work: { label: "Ausgewählte Projekte", h2: "Art Direction in der Praxis." },
       band: { h2: "Geben wir Ihrer Marke *einen klaren Auftritt.*", lead: "Erzählen Sie uns, was Sie brauchen und wo es eingesetzt wird." }
     },
 
     work: {
-      hero: { label: "Arbeiten", h1: "Konzeptprojekte, *gebaut nach dem Standard echter Projekte.*", lead: "Jedes Konzept ist eine vollständige, responsive Website für eine bestimmte Art von Unternehmen. Sie zeigen, wie wir arbeiten — es sind keine beauftragten Kundenprojekte." },
+      hero: { label: "Arbeiten", h1: "Echte Projekte, *mit Sorgfalt umgesetzt.*", lead: "Websites, die wir für eine juristische Non-Profit-Initiative, eine Londoner Produktionsagentur und ein kleines Dienstleistungsunternehmen gestaltet und umgesetzt haben — jede mit eigenem Ton, eigener Struktur und eigener Zielgruppe." },
       filter: "Nach Branche filtern", all: "Alle", empty: "In dieser Kategorie gibt es noch keine Projekte.",
-      soon: { label: "In Vorbereitung", items: ["Ferienunterkünfte", "Freie Berufe & Dienstleister", "Kreativ- & Digitalprojekte"], p: "Neue Konzepte kommen hinzu, sobald sie fertig sind." },
-      band: { h2: "Eine Website wie diese *für Ihr Unternehmen?*", lead: "Jedes Konzept lässt sich auf ein echtes Unternehmen übertragen — mit Ihren Inhalten, Ihrer Marke und Ihren Sprachen." }
+      soon: { label: "In Vorbereitung", items: ["Ferienunterkünfte", "Freie Berufe & Dienstleister", "Kreativ- & Digitalprojekte"], p: "Neue Projekte kommen hinzu, sobald sie fertig sind." },
+      band: { h2: "Eine Website wie diese *für Ihr Unternehmen?*", lead: "Jedes Projekt beginnt bei Ihrem Unternehmen — mit Ihren Inhalten, Ihrer Marke und Ihren Sprachen." }
     },
 
     caseUi: {
       overview: "Überblick", goals: "Unternehmensziele", approach: "Gestaltungsansatz", system: "Designsystem", palette: "Farbpalette", type2: "Typografie",
-      roles: { display: "Überschriften", body: "Fließtext", both: "Überschriften & Fließtext" },
-      type: "Art", sector: "Branche", services: "Gezeigte Leistungen", lang: "Sprache",
+      roles: { display: "Überschriften", body: "Fließtext", both: "Überschriften & Fließtext", mono: "Labels & Verweise" },
+      type: "Art", sector: "Branche", services: "Leistungen", lang: "Sprache",
       desk: "Desktop — Abschnitte der Startseite", mob: "Mobil — das Layout wird für kleine Bildschirme neu komponiert, nicht nur verkleinert.",
-      deskAlt: "Website-Konzept %s — Desktop-Ansicht der Startseite", mobAlt: "Website-Konzept %s — mobile Ansicht",
-      note: "Dies ist ein Konzeptprojekt von Lexora Digital, das unsere Arbeitsweise zeigt. Namen, Kontaktdaten und Texte in eckigen Klammern sind Platzhalter.",
+      deskAlt: "Website %s — Desktop-Ansicht der Startseite", mobAlt: "Website %s — mobile Ansicht",
+      note: "Die Screenshots zeigen die Website, wie Lexora Digital sie umgesetzt hat. Einige persönliche Angaben wurden in den Vorschauen entfernt.",
       next: "Nächstes Projekt", cta: "Ähnliche Website besprechen",
       band: { h2: "Eine Website wie diese *für Ihr Unternehmen?*", lead: "Wir übertragen den Ansatz auf Ihr Unternehmen, Ihre Inhalte und Ihre Sprachen." }
     },
     cases: {
-      "studio-rosalie": {
-        lead: "Ein ruhiges, hochwertiges One-Page-Website-Konzept für ein Kosmetikstudio — gestaltet, damit die Terminbuchung der naheliegende nächste Schritt ist.", lang: "Deutsch",
-        svc: ["Webdesign", "Visuelle Richtung", "Responsive Umsetzung"],
-        overview: "Studio Rosalie ist ein Konzept für ein unabhängiges Kosmetikstudio mit Gesichtsbehandlungen, Wimpern, Brauen und Nageldesign. Die Website sollte zugleich persönlich und hochwertig wirken — und auf dem Smartphone genauso gut funktionieren wie auf dem Laptop.",
-        goals: ["Das Studio auf den ersten Blick einladend und hochwertig zeigen", "Leistungen und Preise klar darstellen", "Die Terminbuchung zum naheliegenden nächsten Schritt machen", "Die Inhaberin persönlich vorstellen, um Vertrauen aufzubauen"],
-        approach: ["Eine warme Rosé- und Bordeaux-Palette ersetzt das übliche Pink, mit einer editorialen Serifenschrift für Überschriften und einer klaren Grotesk zum Lesen.", "Fotos des Studios, der Arbeit und der Inhaberin tragen die Seite. Das Layout gibt jedem Bild Raum, und die Buchungsbuttons bleiben sichtbar, ohne aufdringlich zu sein."]
+      "equalfaith-europe": {
+        lead: "Eine seriöse, redaktionelle Website für eine zivilgesellschaftliche Initiative zur Durchsetzung des EU-Antidiskriminierungsrechts — so gebaut, dass juristische Arbeit leicht zu finden, zu lesen und zu zitieren ist.", lang: "Englisch",
+        svc: ["Webdesign", "Inhaltsstruktur", "Responsive Umsetzung"],
+        overview: "EqualFaith Europe recherchiert, verfasst und reicht juristische Eingaben zu EU-Antidiskriminierungsrecht, digitalen Rechten und KI ein. Die Website musste lange, formale Inhalte tragen, ohne schwer zu wirken — und für Behörden, Journalistinnen und Journalisten sowie Unterstützende gleichermaßen glaubwürdig sein.",
+        goals: ["Auf den ersten Blick glaubwürdig für Institutionen und Presse wirken", "Beschwerden, Eingaben und Briefings leicht auffindbar und herunterladbar machen", "Eine komplexe Mission in klarer Sprache erklären", "Offen über Finanzierung, Status und Organisation informieren"],
+        approach: ["Ein papierweißer Hintergrund, tiefes Marineblau und ein gedämpfter Goldton geben der Website die Ruhe einer juristischen Publikation. Überschriften stehen in einer klassischen Serifenschrift, Fließtext in einer klaren Serifenlosen und Verweise in einer Monospace-Schrift, wie Zitate.", "Publikationen, Schwerpunkte, Transparenz, Artikel und eine Buchseite teilen sich ein strenges Raster. Jede Eingabe wird mit Rechtsgrundlage und Status gezeigt — die Arbeit spricht für sich."]
       },
-      "mustermann-sanitaer": {
-        lead: "Ein klares, vertrauenswürdiges Website-Konzept für einen Sanitär- und Heizungsbetrieb — mit einem Ziel: dass das Telefon klingelt.", lang: "Deutsch",
-        svc: ["Webdesign", "Responsive Umsetzung", "Conversion-Struktur"],
-        overview: "Mustermann Sanitär ist ein Konzept für einen Meisterbetrieb für Bad, Sanitär und Heizung. Kunden kommen oft mit einem Problem und dem Telefon in der Hand — Geschwindigkeit und Klarheit zählen mehr als alles andere.",
-        goals: ["Kompetenz und Zuverlässigkeit sofort zeigen", "Telefonnummer und Notdienst mit einem Tipp erreichbar machen", "Leistungen verständlich erklären", "Vertrauen mit echten Fotos von Team und Arbeit aufbauen"],
-        approach: ["Eine Palette aus Marineblau und warmem Orange steht für Verlässlichkeit und Handeln. Die Telefonnummer ist überall der Haupt-Button, auf dem Smartphone hält eine feste Anrufleiste sie in Reichweite.", "Leistungskarten, Vertrauenspunkte und ein kurzer Bewertungsbereich beantworten die üblichen Fragen, bevor der Kunde sie stellen muss."]
-      },
-      "kfz-werkstatt": {
-        lead: "Ein kräftiges, technisches Website-Konzept für eine freie Kfz-Werkstatt — mit Leistungen, Vertrauenspunkten und Terminanfrage gleich zu Beginn.", lang: "Deutsch",
+      "production-hub": {
+        lead: "Eine mutige, filmische One-Page-Website für eine Londoner Full-Service-Produktionsagentur — Video, Audio, Web und Marketing, präsentiert als ein Team.", lang: "Englisch",
         svc: ["Webdesign", "Art Direction", "Responsive Umsetzung"],
-        overview: "Dieses Konzept präsentiert eine freie Kfz-Werkstatt modern und kompetent — ohne den branchenüblichen Stockfoto-Look.",
-        goals: ["Professionell und technisch kompetent wirken", "Die wichtigsten Leistungen auf einen Blick zeigen", "Terminanfragen einfach machen", "Vertrauen ohne erfundene Zertifikate oder Bewertungen aufbauen"],
-        approach: ["Tiefes Marineblau und Signalorange mit einer schmalen Schrift geben der Website das selbstbewusste, technische Gefühl einer Werkstatt. Realistische Werkstattfotos erzählen die Geschichte.", "Ein klares Leistungsraster, vier Vertrauenspunkte und ein einfaches Terminformular machen den nächsten Schritt auf jedem Bildschirm offensichtlich."]
+        overview: "Production Hub bietet zehn Leistungen an, von Videoschnitt und Podcasts bis zu Webentwicklung und digitalem Marketing. Die Website sollte diese Bandbreite wie ein einziges, selbstbewusstes Angebot wirken lassen statt wie eine lange Liste — und aussehen wie die Arbeit eines Studios, das Dinge ordentlich produziert.",
+        goals: ["Schon auf dem ersten Bildschirm einen starken Eindruck hinterlassen", "Zehn Leistungen zeigen, ohne zu überfordern", "Die Menschen und den Ort hinter der Agentur zeigen", "Klar zur Projektanfrage führen"],
+        approach: ["Eine fast schwarze Bühne mit Akzenten in Rot, Königsblau und Gold verweist auf die britischen Wurzeln der Agentur, ohne zur Flagge zu werden. Kräftige Archivo-Überschriften führen das Wort; Inter hält die Details lesbar.", "Die Seite läuft ab wie ein Showreel: ein Hero mit Studioporträt, Kennzahlen, ein farbiges Leistungsraster, Gründe für die Agentur, der Ablauf und ein kurzes Anfrageformular."]
+      },
+      "visabridge": {
+        lead: "Eine klare, beruhigende Website für einen Visa-, Einwanderungs- und Relocation-Service — gebaut, um aus einer belastenden Frage eine einfache Anfrage zu machen.", lang: "Englisch",
+        svc: ["Webdesign", "Conversion-Struktur", "Responsive Umsetzung"],
+        overview: "VisaBridge unterstützt Menschen bei Visa, Aufenthalt und Umzug in Europa und Asien. Besucherinnen und Besucher kommen mit einer belastenden Frage, deshalb musste die Website drei Dinge schnell beantworten: Können Sie mir helfen, wie läuft es ab und was kostet es?",
+        goals: ["Die Leistung in klarer Sprache erklären, ohne Juristendeutsch", "Den Ablauf in fünf klaren Schritten zeigen", "Das Preisversprechen sichtbar machen, bevor man sich festlegt", "Interesse mit einem kurzen Formular in eine Anfrage verwandeln"],
+        approach: ["Eine Palette aus Weiß und sanftem Blau mit tiefblauem Text wirkt ruhig und offiziell, ohne kühl zu sein. Abgerundete Karten, Checklisten und großzügige Abstände machen lange Inhalte auf dem Smartphone leicht erfassbar.", "Der Anfrage-Button bleibt auf jedem Bildschirm in Reichweite, eine WhatsApp-Verknüpfung ist immer sichtbar, und die Rechtsseiten — Datenschutz, Cookies, AGB und Haftungsausschluss — sind Teil der Umsetzung, kein Nachgedanke."]
       }
     },
 
@@ -613,7 +613,7 @@ export default {
         ["h2", "Was wir umgesetzt haben"],
         ["ul", ["Semantische Seitenstruktur mit Überschriften, Landmarks und Sprunglink", "Vollständige Tastaturbedienung mit sichtbarem Fokus", "Textkontraste nach WCAG AA geprüft", "Animationen werden reduziert oder abgeschaltet, wenn Ihr Gerät reduzierte Bewegung anfordert", "Formulare mit sichtbaren Beschriftungen und klaren Fehlermeldungen", "Beschreibende Alternativtexte für Bilder"]],
         ["h2", "Bekannte Einschränkungen"],
-        ["ul", ["Der animierte Planet ist dekorativ und für Screenreader ausgeblendet.", "Screenshots der Konzeptprojekte enthalten kleine Texte, die im umgebenden Text beschrieben und nicht vollständig vorgelesen werden."]],
+        ["ul", ["Der animierte Planet ist dekorativ und für Screenreader ausgeblendet.", "Projekt-Screenshots enthalten kleine Texte, die im umgebenden Text beschrieben und nicht vollständig vorgelesen werden."]],
         ["h2", "Feedback"],
         ["p", "Wenn Sie auf dieser Website auf eine Barriere stoßen, schreiben Sie uns bitte an info@lexoradigital.com. Wir antworten und arbeiten an einer Lösung."],
         ["h2", "Stand"],

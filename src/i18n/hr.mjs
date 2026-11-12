@@ -26,7 +26,7 @@ export default {
     check: { title: "Besplatna provjera GDPR-a i kolačića — Lexora Digital", desc: "GDPR, Cookies & Co.: besplatna provjera privole, praćenja i pravnih stranica Vaše web stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 €." },
     language: { title: "Pravni i poslovni prijevodi: engleski, njemački, nizozemski", desc: "Prijevod web stranica, poslovnih i pravnih tekstova između engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — precizno i prirodno." },
     creative: { title: "Kreativne usluge: identitet i grafički dizajn — Lexora Digital", desc: "Vizualni identitet, materijali brenda, grafički dizajn te odabrana obrada fotografija, videa, zvuka i glasa za tvrtke." },
-    work: { title: "Radovi — konceptualni projekti | Lexora Digital", desc: "Koncepti web stranica za kozmetiku, obrtnike i autoservise — cjeloviti, prilagodljivi dizajni koji pokazuju kako Lexora Digital radi." },
+    work: { title: "Radovi — odabrani web projekti | Lexora Digital", desc: "Web stranice koje je dizajnirala i izradila Lexora Digital: pravna neprofitna inicijativa, londonska produkcijska agencija i servis za vize i preseljenje." },
     journal: { title: "Journal — vodiči o GDPR-u, DSA-u i Aktu o UI | Lexora Digital", desc: "Razumljivi vodiči o europskim pravilima za poslovne web stranice: GDPR i kolačići, Akt o digitalnim uslugama i Akt EU-a o umjetnoj inteligenciji." },
     about: { title: "O nama — Lexora Digital", desc: "Neovisni digitalni studio koji spaja web dizajn, praktično znanje o europskim digitalnim pravilima, prevođenje i kreativni rad." },
     contact: { title: "Kontakt — Lexora Digital", desc: "Recite nam o svom projektu: web stranica, dizajn, usklađenost s GDPR-om i kolačićima ili prijevod. Odgovaramo na Vašem jeziku." },
@@ -85,19 +85,19 @@ export default {
     focus: { label: "U fokusu", h2: "Tri usluge, *jedan standard.*", lead: "Web stranice, usklađenost s GDPR-om i pravilima o kolačićima te prijevodi — svaka s jednakom pažnjom prema detaljima.", tile: ["GDPR i EU usklađenost", "Besplatna provjera web stranice"] },
     work: {
       label: "Odabrani radovi",
-      h2: "Konceptualni projekti, izrađeni po standardu pravih.",
-      p: "Svaki koncept je cjelovita, prilagodljiva web stranica za određenu vrstu tvrtke. Pokazuju naš pristup — nisu naručeni projekti klijenata.",
-      all: "Svi radovi", badge: "Koncept", count: "3 koncepta · još u pripremi", cta: "Pogledajte studiju slučaja",
+      h2: "Stvarni projekti, izrađeni s pažnjom.",
+      p: "Tri web stranice koje smo dizajnirali i izradili — za pravnu inicijativu, produkcijsku agenciju i malu uslužnu tvrtku. Svaka je stvaran rad, a ne predložak.",
+      all: "Svi radovi", badge: "Stvarni projekt", count: "3 projekta · još u pripremi", cta: "Pogledajte studiju slučaja",
       items: [
-        { slug: "studio-rosalie", img: "rosalie", cat: "Kozmetika i njega", title: "Studio Rosalie",
-          p: "Smirena, elegantna web stranica na jednoj stranici za kozmetički salon: tople ružičaste nijanse, urednička tipografija sa serifima i struktura usmjerena na rezervaciju termina.",
-          svc: ["Web dizajn", "Vizualni smjer", "Prilagodljiva izrada"], alt: "Koncept web stranice kozmetičkog salona Studio Rosalie na računalu i mobitelu" },
-        { slug: "mustermann-sanitaer", img: "mustermann", cat: "Obrt i kućne usluge", title: "Mustermann Sanitär",
-          p: "Jasna, pouzdana web stranica za vodoinstalatersku i plinoinstalatersku tvrtku, izgrađena oko jednog cilja: da telefon zazvoni.",
-          svc: ["Web dizajn", "Prilagodljiva izrada", "Struktura za konverziju"], alt: "Koncept web stranice vodoinstalaterske tvrtke na računalu i mobitelu" },
-        { slug: "kfz-werkstatt", img: "kfz", cat: "Automobili i popravci", title: "Kfz-Werkstatt",
-          p: "Snažan, tehnički izgled za neovisni autoservis, s uslugama, točkama povjerenja i zahtjevom za termin odmah na početku.",
-          svc: ["Web dizajn", "Umjetničko vodstvo", "Prilagodljiva izrada"], alt: "Koncept web stranice autoservisa na računalu i mobitelu" }
+        { slug: "equalfaith-europe", img: "equalfaith", cat: "Pravo i neprofitni sektor", title: "EqualFaith Europe",
+          p: "Ozbiljna web stranica usmjerena na dokumente za europsku pravnu inicijativu: urednička serifna tipografija, suzdržana paleta tamnoplave i zlatne te struktura izgrađena oko objavljenog pravnog rada.",
+          svc: ["Web dizajn", "Struktura sadržaja", "Responzivna izrada"], alt: "Web stranica EqualFaith Europe na računalu i mobitelu" },
+        { slug: "production-hub", img: "production-hub", cat: "Agencija i mediji", title: "Production Hub",
+          p: "Odvažna, tamna web stranica za londonsku produkcijsku agenciju: snažni naslovi, filmske boje i deset usluga predstavljenih kao jedan tim.",
+          svc: ["Web dizajn", "Umjetničko vodstvo", "Responzivna izrada"], alt: "Web stranica agencije Production Hub na računalu i mobitelu" },
+        { slug: "visabridge", img: "visabridge", cat: "Mala tvrtka i usluge", title: "VisaBridge",
+          p: "Jasna, pristupačna web stranica za servis za vize i preseljenje: jednostavan jezik, proces u pet koraka i jedan obrazac za zahtjev koji vodi do ponude s fiksnom cijenom.",
+          svc: ["Web dizajn", "Struktura konverzije", "Responzivna izrada"], alt: "Web stranica servisa za vize i preseljenje VisaBridge na računalu i mobitelu" }
       ]
     },
     trust: {
@@ -182,7 +182,7 @@ export default {
 
   pages: {
     web: {
-      hero: { label: "Web dizajn i razvoj", h1: "Web stranice kojima se *lakše vjeruje.*", lead: "Od usmjerene web stranice na jednoj stranici do web stranice po mjeri s više stranica — pažljivo dizajnirane, izrađene za svaki zaslon i objavljene uz jasnu primopredaju.", cta1: "Pokrenite web projekt", cta2: "Pogledajte konceptualne projekte" },
+      hero: { label: "Web dizajn i razvoj", h1: "Web stranice kojima se *lakše vjeruje.*", lead: "Od usmjerene web stranice na jednoj stranici do web stranice po mjeri s više stranica — pažljivo dizajnirane, izrađene za svaki zaslon i objavljene uz jasnu primopredaju.", cta1: "Pokrenite web projekt", cta2: "Pogledajte naše projekte" },
       what: {
         label: "Što izrađujemo", h2: "Sve što poslovnoj web stranici treba. Ništa suvišno.", lead: "Dizajniramo i razvijamo web stranice koje su brze, čitljive, prijateljske prema privatnosti i jednostavne za održavanje.",
         items: [
@@ -214,7 +214,7 @@ export default {
           { g: "→", t: "Održavanje", p: "Ažuriranja i izmjene nakon objave nisu uključeni u pakete. Nudimo ih na upit, po unaprijed navedenoj cijeni." }
         ]
       },
-      work: { label: "Konceptualni projekti", h2: "Ovako naše web stranice izgledaju u praksi." },
+      work: { label: "Odabrani projekti", h2: "Ovako naše web stranice izgledaju u praksi." },
       band: { h2: "Spremni za web stranicu koja *radi kako treba?*", lead: "Recite nam nešto o svojoj tvrtki i što web stranica treba postići." }
     },
 
@@ -355,7 +355,7 @@ export default {
     },
 
     creative: {
-      hero: { label: "Kreativne usluge", h1: "Vizualni rad s *jasnim stavom.*", lead: "Identitet, grafika i obrada medija za tvrtke koje žele izgledati jednako dobro kao njihov rad — dosljedno na webu, u tisku i na društvenim mrežama.", cta1: "Razgovarajmo o kreativnom projektu", cta2: "Pogledajte konceptualne projekte" },
+      hero: { label: "Kreativne usluge", h1: "Vizualni rad s *jasnim stavom.*", lead: "Identitet, grafika i obrada medija za tvrtke koje žele izgledati jednako dobro kao njihov rad — dosljedno na webu, u tisku i na društvenim mrežama.", cta1: "Razgovarajmo o kreativnom projektu", cta2: "Pogledajte naše projekte" },
       services: {
         label: "Što nudimo", h2: "Odabrane kreativne usluge.", lead: "Usmjerene usluge koje podržavaju Vašu web stranicu i Vaš brend.",
         items: [
@@ -375,48 +375,48 @@ export default {
           ["Jasan opseg", "Svaki kreativni projekt ima dogovoren opseg i cijenu prije početka."]
         ]
       },
-      work: { label: "Konceptualni projekti", h2: "Umjetničko vodstvo u praksi." },
+      work: { label: "Odabrani projekti", h2: "Umjetničko vodstvo u praksi." },
       band: { h2: "Dajmo Vašem brendu *jasan izgled.*", lead: "Recite nam što Vam treba i gdje će se koristiti." }
     },
 
     work: {
-      hero: { label: "Radovi", h1: "Konceptualni projekti, *izrađeni po standardu pravih.*", lead: "Svaki koncept je cjelovita, prilagodljiva web stranica za određenu vrstu tvrtke. Pokazuju kako radimo — nisu naručeni projekti klijenata." },
+      hero: { label: "Radovi", h1: "Stvarni projekti, *izrađeni s pažnjom.*", lead: "Web stranice koje smo dizajnirali i izradili za pravnu neprofitnu inicijativu, londonsku produkcijsku agenciju i malu uslužnu tvrtku — svaka s vlastitim tonom, strukturom i publikom." },
       filter: "Filtriraj po djelatnosti", all: "Svi", empty: "U ovoj kategoriji još nema projekata.",
-      soon: { label: "U pripremi", items: ["Smještaj za odmor", "Stručne usluge", "Kreativni i digitalni projekti"], p: "Nove koncepte dodajemo čim budu gotovi." },
-      band: { h2: "Ovakva web stranica *za Vašu tvrtku?*", lead: "Svaki koncept može se prilagoditi stvarnoj tvrtki — s Vašim sadržajem, brendom i jezicima." }
+      soon: { label: "U pripremi", items: ["Smještaj za odmor", "Stručne usluge", "Kreativni i digitalni projekti"], p: "Nove projekte dodajemo čim budu gotovi." },
+      band: { h2: "Ovakva web stranica *za Vašu tvrtku?*", lead: "Svaki projekt polazi od Vaše tvrtke — s Vašim sadržajem, brendom i jezicima." }
     },
 
     caseUi: {
       overview: "Pregled", goals: "Poslovni ciljevi", approach: "Pristup dizajnu", system: "Sustav dizajna", palette: "Paleta boja", type2: "Tipografija",
-      roles: { display: "Naslovi", body: "Tekst", both: "Naslovi i tekst" },
-      type: "Vrsta", sector: "Djelatnost", services: "Prikazane usluge", lang: "Jezik",
+      roles: { display: "Naslovi", body: "Tekst", both: "Naslovi i tekst", mono: "Oznake i reference" },
+      type: "Vrsta", sector: "Djelatnost", services: "Usluge", lang: "Jezik",
       desk: "Računalo — odjeljci početne stranice", mob: "Mobitel — raspored se za male zaslone slaže iznova, a ne samo smanjuje.",
-      deskAlt: "Koncept web stranice %s — prikaz početne stranice na računalu", mobAlt: "Koncept web stranice %s — prikaz na mobitelu",
-      note: "Ovo je konceptualni projekt tvrtke Lexora Digital koji pokazuje naš pristup. Imena, kontaktni podaci i tekstovi u uglatim zagradama su rezervirana mjesta.",
+      deskAlt: "Web stranica %s — prikaz početne stranice na računalu", mobAlt: "Web stranica %s — prikaz na mobitelu",
+      note: "Snimke zaslona prikazuju web stranicu kako ju je izradila Lexora Digital. Neki osobni podaci uklonjeni su iz pretpregleda.",
       next: "Sljedeći projekt", cta: "Razgovarajmo o sličnoj web stranici",
       band: { h2: "Ovakva web stranica *za Vašu tvrtku?*", lead: "Pristup prilagođavamo Vašoj tvrtki, sadržaju i jezicima." }
     },
     cases: {
-      "studio-rosalie": {
-        lead: "Smiren, elegantan koncept web stranice na jednoj stranici za kozmetički salon — osmišljen tako da rezervacija termina bude prirodan sljedeći korak.", lang: "Njemački",
-        svc: ["Web dizajn", "Vizualni smjer", "Prilagodljiva izrada"],
-        overview: "Studio Rosalie koncept je za neovisni kozmetički salon koji nudi tretmane lica, trepavice, obrve i dizajn noktiju. Stranica je trebala djelovati osobno i vrhunski u isto vrijeme — te jednako dobro raditi na mobitelu i na prijenosnom računalu.",
-        goals: ["Na prvi pogled pokazati salon kao ugodan i kvalitetan", "Jasno predstaviti usluge i cijene", "Učiniti rezervaciju termina prirodnim sljedećim korakom", "Osobno predstaviti vlasnicu radi izgradnje povjerenja"],
-        approach: ["Topla paleta pepeljasto ružičaste i bordo boje zamjenjuje uobičajenu ružičastu, uz uredničku serifnu tipografiju za naslove i čist sans-serif za čitanje.", "Fotografije salona, rada i vlasnice nose stranicu. Raspored svakoj slici daje prostor, a gumbi za rezervaciju ostaju vidljivi, ali nenametljivi."]
+      "equalfaith-europe": {
+        lead: "Ozbiljna, urednički oblikovana web stranica za inicijativu civilnog društva koja radi na provedbi antidiskriminacijskog prava EU-a — izrađena tako da je pravni rad lako pronaći, pročitati i citirati.", lang: "Engleski",
+        svc: ["Web dizajn", "Struktura sadržaja", "Responzivna izrada"],
+        overview: "EqualFaith Europe istražuje, sastavlja i podnosi pravne podneske o antidiskriminacijskom pravu EU-a, digitalnim pravima i umjetnoj inteligenciji. Web stranica morala je nositi duge, formalne sadržaje, a da ne djeluje teško — i biti vjerodostojna regulatorima, novinarima i podupirateljima.",
+        goals: ["Na prvi pogled djelovati vjerodostojno institucijama i medijima", "Olakšati pronalaženje i preuzimanje pritužbi, podnesaka i sažetaka", "Objasniti složenu misiju jednostavnim jezikom", "Otvoreno govoriti o financiranju, statusu i upravljanju"],
+        approach: ["Pozadina boje papira, duboka tamnoplava i prigušeni zlatni naglasak daju stranici mir pravne publikacije. Naslovi su u klasičnom serifnom pismu, tekst u čistom bezserifnom, a reference u pismu fiksne širine, poput citata.", "Publikacije, prioriteti, transparentnost, članci i stranica o knjizi dijele jednu strogu mrežu. Svaki podnesak prikazan je s pravnom osnovom i statusom, tako da rad govori sam za sebe."]
       },
-      "mustermann-sanitaer": {
-        lead: "Jasan, pouzdan koncept web stranice za vodoinstalatersku i plinoinstalatersku tvrtku — izgrađen oko jednog cilja: da telefon zazvoni.", lang: "Njemački",
-        svc: ["Web dizajn", "Prilagodljiva izrada", "Struktura za konverziju"],
-        overview: "Mustermann Sanitär koncept je za majstorsku obrtničku tvrtku za kupaonice, vodoinstalacije i grijanje. Kupci često dolaze s problemom i telefonom u ruci, pa su brzina i jasnoća važnije od svega.",
-        goals: ["Odmah pokazati stručnost i pouzdanost", "Telefon i hitnu službu učiniti dostupnima jednim dodirom", "Objasniti usluge jednostavnim jezikom", "Graditi povjerenje stvarnim fotografijama tima i rada"],
-        approach: ["Paleta tamnoplave i tople narančaste boje odaje pouzdanost i djelovanje. Broj telefona glavni je gumb posvuda, a na mobitelu ga fiksna traka za poziv drži nadohvat ruke.", "Kartice usluga, točke povjerenja i kratak odjeljak s recenzijama odgovaraju na uobičajena pitanja prije nego što ih kupac postavi."]
+      "production-hub": {
+        lead: "Odvažna, filmska web stranica na jednoj stranici za londonsku produkcijsku agenciju s punom uslugom — video, audio, web i marketing predstavljeni kao jedan tim.", lang: "Engleski",
+        svc: ["Web dizajn", "Umjetničko vodstvo", "Responzivna izrada"],
+        overview: "Production Hub nudi deset usluga, od montaže videa i podcasta do web razvoja i digitalnog marketinga. Web stranica trebala je taj raspon prikazati kao jednu samouvjerenu ponudu, a ne kao dugačak popis — i izgledati kao rad studija koji stvari producira kako treba.",
+        goals: ["Ostaviti snažan dojam već na prvom zaslonu", "Predstaviti deset usluga bez zatrpavanja posjetitelja", "Pokazati ljude i mjesto iza agencije", "Jasno voditi do upita za projekt"],
+        approach: ["Gotovo crna pozornica s naglascima crvene, kraljevsko plave i zlatne upućuje na britanske korijene agencije, a da se ne pretvori u zastavu. Snažni naslovi u pismu Archivo vode riječ; Inter održava detalje čitljivima.", "Stranica teče poput showreela: uvodni dio s portretom iz studija, ključne brojke, šarena mreža usluga, razlozi za odabir agencije, proces i kratak obrazac za upit."]
       },
-      "kfz-werkstatt": {
-        lead: "Snažan, tehnički koncept web stranice za neovisni autoservis, s uslugama, točkama povjerenja i zahtjevom za termin odmah na početku.", lang: "Njemački",
-        svc: ["Web dizajn", "Umjetničko vodstvo", "Prilagodljiva izrada"],
-        overview: "Ovaj koncept predstavlja neovisni autoservis kao moderan i stručan — bez uobičajenog izgleda generičkih fotografija iz te djelatnosti.",
-        goals: ["Djelovati profesionalno i tehnički stručno", "Prikazati glavne usluge na prvi pogled", "Olakšati zahtjeve za termin", "Graditi povjerenje bez izmišljenih certifikata ili recenzija"],
-        approach: ["Duboka tamnoplava i signalna narančasta uz zbijeni font daju stranici samouvjeren, tehnički dojam radionice. Realistične fotografije radionice pričaju priču.", "Jasna mreža usluga, četiri točke povjerenja i jednostavan obrazac za termin čine sljedeći korak očitim na svakom zaslonu."]
+      "visabridge": {
+        lead: "Jasna, umirujuća web stranica za servis za vize, imigraciju i preseljenje — izrađena da stresno pitanje pretvori u jedan jednostavan zahtjev.", lang: "Engleski",
+        svc: ["Web dizajn", "Struktura konverzije", "Responzivna izrada"],
+        overview: "VisaBridge pomaže ljudima s vizama, boravkom i preseljenjem u Europi i Aziji. Posjetitelji dolaze sa stresnim pitanjem, pa je stranica morala brzo odgovoriti na tri stvari: možete li mi pomoći, kako to funkcionira i koliko košta?",
+        goals: ["Objasniti uslugu jednostavnim jezikom, bez pravnog žargona", "Prikazati proces u pet jasnih koraka", "Učiniti obećanje o cijeni vidljivim prije bilo kakve obveze", "Pretvoriti interes u zahtjev jednim kratkim obrascem"],
+        approach: ["Paleta bijele i nježno plave s tamnoplavim tekstom djeluje mirno i službeno, a da nije hladna. Zaobljene kartice, kontrolni popisi i velikodušni razmaci čine dug sadržaj lako preglednim na mobitelu.", "Gumb za zahtjev ostaje nadohvat ruke na svakom zaslonu, prečac za WhatsApp uvijek je vidljiv, a pravne stranice — privatnost, kolačići, uvjeti i odricanje od odgovornosti — dio su izrade, a ne naknadna misao."]
       }
     },
 
@@ -617,7 +617,7 @@ export default {
         ["h2", "Što smo učinili"],
         ["ul", ["Semantička struktura s naslovima, orijentirima i poveznicom za preskakanje na sadržaj", "Potpuno upravljanje tipkovnicom s vidljivim fokusom", "Kontrast teksta provjeren prema WCAG AA", "Animacije se smanjuju ili isključuju kada Vaš uređaj traži smanjeno kretanje", "Obrasci s vidljivim oznakama i jasnim porukama o pogreškama", "Opisni alternativni tekstovi za slike"]],
         ["h2", "Poznata ograničenja"],
-        ["ul", ["Animirani planet je ukrasni element i skriven je od čitača zaslona.", "Snimke zaslona konceptualnih projekata sadrže sitan tekst koji je opisan u okolnom tekstu, a ne čita se u cijelosti."]],
+        ["ul", ["Animirani planet je ukrasni element i skriven je od čitača zaslona.", "Snimke zaslona projekata sadrže sitan tekst koji je opisan u okolnom tekstu, a ne čita se u cijelosti."]],
         ["h2", "Povratne informacije"],
         ["p", "Ako na ovoj web stranici naiđete na prepreku, javite nam na info@lexoradigital.com. Odgovorit ćemo i raditi na rješenju."],
         ["h2", "Stanje"],
