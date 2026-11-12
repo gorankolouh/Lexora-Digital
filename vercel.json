@@ -151,6 +151,11 @@
       "source": "/hr/kits/",
       "destination": "/hr/eu-compliance-kits/",
       "permanent": false
+    },
+    {
+      "source": "/:lang/:section/:slug(studio-rosalie|mustermann-sanitaer|kfz-werkstatt)",
+      "destination": "/:lang/:section/",
+      "permanent": true
     }
   ]
 }

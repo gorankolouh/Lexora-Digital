@@ -26,7 +26,7 @@ export default {
     check: { title: "Gratis AVG- & cookiecheck — opgelost vanaf € 99", desc: "GDPR, Cookies & Co.: een gratis check van toestemming, tracking en juridische pagina's op uw website. Vinden we problemen, dan lossen we ze op vanaf € 99." },
     language: { title: "Juridische & zakelijke vertalingen: Engels, Duits, Nederlands", desc: "Vertaling van websites, zakelijke en juridische teksten tussen Engels, Duits, Nederlands, Spaans en Kroatisch — nauwkeurig en natuurlijk geformuleerd." },
     creative: { title: "Creatieve diensten: identiteit & ontwerp — Lexora Digital", desc: "Visuele identiteit, merkmiddelen, grafisch ontwerp en geselecteerde foto-, video-, audio- en stembewerking voor bedrijven." },
-    work: { title: "Werk — conceptprojecten | Lexora Digital", desc: "Websiteconcepten voor beauty, vakmensen en autobedrijven — complete, responsive ontwerpen die laten zien hoe Lexora Digital werkt." },
+    work: { title: "Werk — geselecteerde websiteprojecten | Lexora Digital", desc: "Websites ontworpen en gebouwd door Lexora Digital: een juridische non-profit, een Londens productiebureau en een visum- en relocatieservice." },
     journal: { title: "Journal — gidsen over AVG, DSA en AI Act | Lexora Digital", desc: "Heldere gidsen over de Europese regels voor bedrijfswebsites: AVG en cookies, de Digital Services Act en de EU AI Act." },
     about: { title: "Over ons — Lexora Digital", desc: "Een onafhankelijke digitale studio die webdesign, praktische kennis van Europese digitale regels, vertaling en creatief werk combineert." },
     contact: { title: "Contact — Lexora Digital", desc: "Vertel ons over uw project: website, design, AVG- en cookiecompliance of vertaling. Wij antwoorden in uw taal." },
@@ -85,19 +85,19 @@ export default {
     focus: { label: "Uitgelicht", h2: "Drie diensten, *één standaard.*", lead: "Websites, AVG- en cookiecompliance en vertalingen — allemaal met dezelfde aandacht voor detail.", tile: ["AVG & EU-compliance", "Gratis websitecheck"] },
     work: {
       label: "Geselecteerd werk",
-      h2: "Conceptprojecten, gebouwd volgens de standaard van echte projecten.",
-      p: "Elk concept is een complete, responsive website voor een specifiek soort bedrijf. Ze laten onze aanpak zien — het zijn geen opdrachten van klanten.",
-      all: "Al het werk", badge: "Concept", count: "3 concepten · meer in voorbereiding", cta: "Bekijk de case",
+      h2: "Echte projecten, met zorg gebouwd.",
+      p: "Drie websites die we hebben ontworpen en gebouwd — voor een juridisch initiatief, een productiebureau en een kleine dienstverlener. Elk is echt werk, geen template.",
+      all: "Al het werk", badge: "Echt project", count: "3 projecten · meer in voorbereiding", cta: "Bekijk de case",
       items: [
-        { slug: "studio-rosalie", img: "rosalie", cat: "Beauty & verzorging", title: "Studio Rosalie",
-          p: "Een rustige, hoogwaardige onepager voor een schoonheidssalon: warm rosé, redactionele schreeflettertypes en een opbouw die naar het boeken van een afspraak leidt.",
-          svc: ["Webdesign", "Visuele richting", "Responsive bouw"], alt: "Websiteconcept voor schoonheidssalon Studio Rosalie op desktop en mobiel" },
-        { slug: "mustermann-sanitaer", img: "mustermann", cat: "Vakmensen & installatie", title: "Mustermann Sanitär",
-          p: "Een heldere, betrouwbare website voor een loodgieters- en verwarmingsbedrijf, gebouwd rond één doel: dat de telefoon gaat.",
-          svc: ["Webdesign", "Responsive bouw", "Conversiestructuur"], alt: "Websiteconcept voor een loodgieters- en verwarmingsbedrijf op desktop en mobiel" },
-        { slug: "kfz-werkstatt", img: "kfz", cat: "Auto & reparatie", title: "Kfz-Werkstatt",
-          p: "Een krachtige, technische uitstraling voor een onafhankelijke autogarage, met diensten, vertrouwenspunten en afspraakaanvragen vooraan.",
-          svc: ["Webdesign", "Art direction", "Responsive bouw"], alt: "Websiteconcept voor een autogarage op desktop en mobiel" }
+        { slug: "equalfaith-europe", img: "equalfaith", cat: "Juridisch & non-profit", title: "EqualFaith Europe",
+          p: "Een serieuze, documentgerichte website voor een Europees juridisch initiatief: redactionele schreefletters, een ingetogen palet van marineblauw en goud en een structuur rond gepubliceerd juridisch werk.",
+          svc: ["Webdesign", "Contentstructuur", "Responsive bouw"], alt: "Website van EqualFaith Europe op desktop en mobiel" },
+        { slug: "production-hub", img: "production-hub", cat: "Bureau & media", title: "Production Hub",
+          p: "Een gedurfde, donkere website voor een Londens productiebureau: sterke koppen, filmische kleuren en tien diensten gepresenteerd als één team.",
+          svc: ["Webdesign", "Art direction", "Responsive bouw"], alt: "Website van bureau Production Hub op desktop en mobiel" },
+        { slug: "visabridge", img: "visabridge", cat: "Kleinbedrijf & dienstverlening", title: "VisaBridge",
+          p: "Een heldere, vriendelijke website voor een visum- en relocatieservice: gewone taal, een proces in vijf stappen en één aanvraagformulier dat naar een aanbod met vaste prijs leidt.",
+          svc: ["Webdesign", "Conversiestructuur", "Responsive bouw"], alt: "Website van visum- en relocatieservice VisaBridge op desktop en mobiel" }
       ]
     },
     trust: {
@@ -182,7 +182,7 @@ export default {
 
   pages: {
     web: {
-      hero: { label: "Webdesign & ontwikkeling", h1: "Websites die *vertrouwen wekken.*", lead: "Van een gerichte onepager tot een website op maat met meerdere pagina's — zorgvuldig ontworpen, gebouwd voor elk scherm en gelanceerd met een duidelijke overdracht.", cta1: "Websiteproject starten", cta2: "Bekijk conceptprojecten" },
+      hero: { label: "Webdesign & ontwikkeling", h1: "Websites die *vertrouwen wekken.*", lead: "Van een gerichte onepager tot een website op maat met meerdere pagina's — zorgvuldig ontworpen, gebouwd voor elk scherm en gelanceerd met een duidelijke overdracht.", cta1: "Websiteproject starten", cta2: "Bekijk onze projecten" },
       what: {
         label: "Wat wij bouwen", h2: "Alles wat een bedrijfswebsite nodig heeft. Niets meer.", lead: "Wij ontwerpen en bouwen websites die snel, leesbaar, privacyvriendelijk en makkelijk te onderhouden zijn.",
         items: [
@@ -214,7 +214,7 @@ export default {
           { g: "→", t: "Onderhoud", p: "Updates en wijzigingen na de lancering vallen niet onder een pakket. We bieden ze op aanvraag aan, tegen een vooraf genoemde prijs." }
         ]
       },
-      work: { label: "Conceptprojecten", h2: "Zo zien onze websites eruit in de praktijk." },
+      work: { label: "Geselecteerde projecten", h2: "Zo zien onze websites eruit in de praktijk." },
       band: { h2: "Klaar voor een website die *goed werkt?*", lead: "Vertel ons over uw bedrijf en wat de website moet bereiken." }
     },
 
@@ -355,7 +355,7 @@ export default {
     },
 
     creative: {
-      hero: { label: "Creatieve diensten", h1: "Visueel werk met *een duidelijke visie.*", lead: "Identiteit, grafisch werk en mediabewerking voor bedrijven die er net zo goed uit willen zien als hun werk — consistent op website, print en sociale media.", cta1: "Creatief project bespreken", cta2: "Bekijk conceptprojecten" },
+      hero: { label: "Creatieve diensten", h1: "Visueel werk met *een duidelijke visie.*", lead: "Identiteit, grafisch werk en mediabewerking voor bedrijven die er net zo goed uit willen zien als hun werk — consistent op website, print en sociale media.", cta1: "Creatief project bespreken", cta2: "Bekijk onze projecten" },
       services: {
         label: "Wat we bieden", h2: "Geselecteerde creatieve diensten.", lead: "Gerichte diensten die uw website en uw merk ondersteunen.",
         items: [
@@ -375,48 +375,48 @@ export default {
           ["Duidelijke scope", "Elk creatief project heeft vooraf een afgesproken scope en prijs."]
         ]
       },
-      work: { label: "Conceptprojecten", h2: "Art direction in de praktijk." },
+      work: { label: "Geselecteerde projecten", h2: "Art direction in de praktijk." },
       band: { h2: "Laten we uw merk *een heldere uitstraling geven.*", lead: "Vertel ons wat u nodig heeft en waar het gebruikt wordt." }
     },
 
     work: {
-      hero: { label: "Werk", h1: "Conceptprojecten, *gebouwd volgens de standaard van echte projecten.*", lead: "Elk concept is een complete, responsive website voor een specifiek soort bedrijf. Ze laten zien hoe we werken — het zijn geen opdrachten van klanten." },
+      hero: { label: "Werk", h1: "Echte projecten, *met zorg gebouwd.*", lead: "Websites die we hebben ontworpen en gebouwd voor een juridische non-profit, een Londens productiebureau en een kleine dienstverlener — elk met een eigen toon, structuur en doelgroep." },
       filter: "Filter op branche", all: "Alles", empty: "Nog geen projecten in deze categorie.",
-      soon: { label: "In voorbereiding", items: ["Vakantieverblijven", "Zakelijke dienstverlening", "Creatieve & digitale projecten"], p: "Nieuwe concepten worden toegevoegd zodra ze klaar zijn." },
-      band: { h2: "Een website zoals deze *voor uw bedrijf?*", lead: "Elk concept kan worden aangepast aan een echt bedrijf — met uw content, uw merk en uw talen." }
+      soon: { label: "In voorbereiding", items: ["Vakantieverblijven", "Zakelijke dienstverlening", "Creatieve & digitale projecten"], p: "Nieuwe projecten worden toegevoegd zodra ze klaar zijn." },
+      band: { h2: "Een website zoals deze *voor uw bedrijf?*", lead: "Elk project begint bij uw bedrijf — met uw content, uw merk en uw talen." }
     },
 
     caseUi: {
       overview: "Overzicht", goals: "Bedrijfsdoelen", approach: "Ontwerpaanpak", system: "Designsysteem", palette: "Kleurenpalet", type2: "Typografie",
-      roles: { display: "Koppen", body: "Lopende tekst", both: "Koppen & lopende tekst" },
-      type: "Type", sector: "Branche", services: "Getoonde diensten", lang: "Taal",
+      roles: { display: "Koppen", body: "Lopende tekst", both: "Koppen & lopende tekst", mono: "Labels & verwijzingen" },
+      type: "Type", sector: "Branche", services: "Diensten", lang: "Taal",
       desk: "Desktop — secties van de homepage", mob: "Mobiel — de lay-out wordt opnieuw opgebouwd voor kleine schermen, niet alleen verkleind.",
-      deskAlt: "Websiteconcept %s — desktopweergave van de homepage", mobAlt: "Websiteconcept %s — mobiele weergave",
-      note: "Dit is een conceptproject van Lexora Digital om onze aanpak te laten zien. Namen, contactgegevens en teksten tussen vierkante haken zijn placeholders.",
+      deskAlt: "Website %s — desktopweergave van de homepage", mobAlt: "Website %s — mobiele weergave",
+      note: "De screenshots tonen de website zoals Lexora Digital die heeft gebouwd. Enkele persoonlijke gegevens zijn uit de previews verwijderd.",
       next: "Volgend project", cta: "Een vergelijkbare website bespreken",
       band: { h2: "Een website zoals deze *voor uw bedrijf?*", lead: "We passen de aanpak aan uw bedrijf, uw content en uw talen aan." }
     },
     cases: {
-      "studio-rosalie": {
-        lead: "Een rustig, hoogwaardig onepager-concept voor een schoonheidssalon — ontworpen om het boeken van een afspraak de logische volgende stap te maken.", lang: "Duits",
-        svc: ["Webdesign", "Visuele richting", "Responsive bouw"],
-        overview: "Studio Rosalie is een concept voor een onafhankelijke schoonheidssalon met gezichtsbehandelingen, wimpers, wenkbrauwen en nageldesign. De site moest persoonlijk én hoogwaardig aanvoelen — en op een telefoon net zo goed werken als op een laptop.",
-        goals: ["De salon direct uitnodigend en hoogwaardig laten overkomen", "Diensten en prijzen helder presenteren", "Het boeken van een afspraak de logische volgende stap maken", "De eigenaar persoonlijk voorstellen om vertrouwen op te bouwen"],
-        approach: ["Een warm palet van rosé en bordeaux vervangt het gebruikelijke roze, met een redactionele schreefletter voor koppen en een strakke schreefloze letter om te lezen.", "Foto's van de salon, het werk en de eigenaar dragen de pagina. De lay-out geeft elk beeld ruimte en de boekknoppen blijven zichtbaar zonder opdringerig te zijn."]
+      "equalfaith-europe": {
+        lead: "Een serieuze, redactionele website voor een maatschappelijk initiatief dat werkt aan de handhaving van het EU-antidiscriminatierecht — zo gebouwd dat juridisch werk makkelijk te vinden, te lezen en te citeren is.", lang: "Engels",
+        svc: ["Webdesign", "Contentstructuur", "Responsive bouw"],
+        overview: "EqualFaith Europe onderzoekt, schrijft en dient juridische stukken in over EU-antidiscriminatierecht, digitale rechten en AI. De website moest lange, formele content dragen zonder zwaar aan te voelen — en geloofwaardig overkomen bij toezichthouders, journalisten en supporters.",
+        goals: ["Op het eerste gezicht geloofwaardig zijn voor instellingen en pers", "Klachten, indieningen en briefings makkelijk vindbaar en downloadbaar maken", "Een complexe missie in gewone taal uitleggen", "Open zijn over financiering, status en bestuur"],
+        approach: ["Een papierwitte achtergrond, diep marineblauw en een gedempt goudaccent geven de site de rust van een juridische publicatie. Koppen staan in een klassieke schreefletter, lopende tekst in een heldere schreefloze letter en verwijzingen in een monospace-letter, als citaten.", "Publicaties, prioriteiten, transparantie, artikelen en een boekpagina delen één strak grid. Elk stuk wordt getoond met rechtsgrond en status, zodat het werk voor zichzelf spreekt."]
       },
-      "mustermann-sanitaer": {
-        lead: "Een helder, betrouwbaar websiteconcept voor een loodgieters- en verwarmingsbedrijf — gebouwd rond één doel: dat de telefoon gaat.", lang: "Duits",
-        svc: ["Webdesign", "Responsive bouw", "Conversiestructuur"],
-        overview: "Mustermann Sanitär is een concept voor een erkend installatiebedrijf voor badkamers, sanitair en verwarming. Klanten komen vaak met een probleem en een telefoon in de hand, dus snelheid en duidelijkheid gaan voor alles.",
-        goals: ["Direct vakmanschap en betrouwbaarheid laten zien", "Telefoonnummer en noodservice binnen één tik bereikbaar maken", "Diensten in begrijpelijke taal uitleggen", "Vertrouwen opbouwen met echte foto's van team en werk"],
-        approach: ["Een palet van marineblauw en warm oranje staat voor betrouwbaarheid en actie. Het telefoonnummer is overal de hoofdknop, en op mobiel houdt een vaste belbalk het binnen bereik.", "Dienstkaarten, vertrouwenspunten en een korte reviewsectie beantwoorden de gebruikelijke vragen voordat de klant ze hoeft te stellen."]
-      },
-      "kfz-werkstatt": {
-        lead: "Een krachtig, technisch websiteconcept voor een onafhankelijke autogarage, met diensten, vertrouwenspunten en afspraakaanvragen vooraan.", lang: "Duits",
+      "production-hub": {
+        lead: "Een gedurfde, filmische onepager voor een full-service productiebureau uit Londen — video, audio, web en marketing gepresenteerd als één team.", lang: "Engels",
         svc: ["Webdesign", "Art direction", "Responsive bouw"],
-        overview: "Dit concept presenteert een onafhankelijke autogarage als modern en deskundig — zonder de gebruikelijke stockfoto-uitstraling van de branche.",
-        goals: ["Professioneel en technisch deskundig overkomen", "De belangrijkste diensten in één oogopslag tonen", "Afspraakaanvragen eenvoudig maken", "Vertrouwen opbouwen zonder verzonnen certificaten of reviews"],
-        approach: ["Diep marineblauw en signaaloranje met een smalle letter geven de site de zelfverzekerde, technische sfeer van een werkplaats. Realistische werkplaatsfoto's vertellen het verhaal.", "Een helder dienstenraster, vier vertrouwenspunten en een eenvoudig afspraakformulier maken de volgende stap op elk scherm duidelijk."]
+        overview: "Production Hub biedt tien diensten aan, van videomontage en podcasts tot webontwikkeling en digitale marketing. De website moest dat brede aanbod laten voelen als één zelfverzekerd geheel in plaats van een lange lijst — en eruitzien als het werk van een studio die dingen goed produceert.",
+        goals: ["Meteen op het eerste scherm een sterke indruk maken", "Tien diensten tonen zonder de bezoeker te overladen", "De mensen en de plek achter het bureau laten zien", "Duidelijk naar een projectaanvraag leiden"],
+        approach: ["Een bijna zwart podium met accenten in rood, koningsblauw en goud verwijst naar de Britse wortels van het bureau zonder een vlag te worden. Zware Archivo-koppen voeren het woord; Inter houdt de details leesbaar.", "De pagina loopt als een showreel: een hero met studioportret, kerncijfers, een kleurrijk dienstenraster, redenen om voor het bureau te kiezen, het proces en een kort aanvraagformulier."]
+      },
+      "visabridge": {
+        lead: "Een heldere, geruststellende website voor een visum-, immigratie- en relocatieservice — gebouwd om van een stressvolle vraag één eenvoudige aanvraag te maken.", lang: "Engels",
+        svc: ["Webdesign", "Conversiestructuur", "Responsive bouw"],
+        overview: "VisaBridge helpt mensen met visa, verblijf en verhuizen in Europa en Azië. Bezoekers komen met een stressvolle vraag, dus de site moest drie dingen snel beantwoorden: kunt u mij helpen, hoe werkt het en wat kost het?",
+        goals: ["De dienst in gewone taal uitleggen, zonder juridisch jargon", "Het proces in vijf duidelijke stappen tonen", "De prijsbelofte zichtbaar maken voordat iemand zich vastlegt", "Interesse omzetten in een aanvraag met één kort formulier"],
+        approach: ["Een palet van wit en zacht blauw met diepblauwe tekst voelt rustig en officieel zonder kil te zijn. Afgeronde kaarten, checklists en ruime witruimte maken lange content makkelijk scanbaar op een telefoon.", "De aanvraagknop blijft op elk scherm binnen bereik, een WhatsApp-snelkoppeling is altijd zichtbaar, en de juridische pagina's — privacy, cookies, voorwaarden en disclaimer — horen bij de bouw en zijn geen bijzaak."]
       }
     },
 
@@ -613,7 +613,7 @@ export default {
         ["h2", "Wat we hebben gedaan"],
         ["ul", ["Semantische paginastructuur met koppen, landmarks en een skiplink", "Volledige toetsenbordbediening met zichtbare focus", "Tekstcontrast gecontroleerd volgens WCAG AA", "Animaties worden beperkt of uitgeschakeld als uw apparaat om minder beweging vraagt", "Formulieren met zichtbare labels en duidelijke foutmeldingen", "Beschrijvende alternatieve teksten voor afbeeldingen"]],
         ["h2", "Bekende beperkingen"],
-        ["ul", ["De geanimeerde planeet is decoratief en verborgen voor schermlezers.", "Screenshots van conceptprojecten bevatten kleine tekst die in de omringende tekst wordt beschreven en niet volledig wordt voorgelezen."]],
+        ["ul", ["De geanimeerde planeet is decoratief en verborgen voor schermlezers.", "Screenshots van projecten bevatten kleine tekst die in de omringende tekst wordt beschreven en niet volledig wordt voorgelezen."]],
         ["h2", "Feedback"],
         ["p", "Stuit u op deze website op een barrière, laat het ons weten via info@lexoradigital.com. We antwoorden en werken aan een oplossing."],
         ["h2", "Status"],

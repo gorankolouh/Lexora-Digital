@@ -10,7 +10,7 @@
 | Inter | rsms.me/inter | SIL Open Font License 1.1 |
 | Instrument Serif Italic | Google Fonts / github.com/google/fonts | SIL Open Font License 1.1 |
 | IBM Plex Mono | Google Fonts / github.com/google/fonts | SIL Open Font License 1.1 |
-| Portfolio covers (`public/assets/img/work/*`) | Screenshots of Lexora's own demo concepts; photos generated for Lexora | Owned by Lexora Digital |
+| Portfolio covers (`public/assets/img/work/*`) | Screenshots of websites built by Lexora Digital (EqualFaith Europe, Production Hub, VisaBridge) | Owned by Lexora Digital |
 | Journal artwork | Original inline SVG | Owned by Lexora Digital |
 
 All fonts are self-hosted (no requests to Google Fonts or other third parties).

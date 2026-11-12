@@ -226,9 +226,9 @@ export function caseStudy(t, slug) {
   ].join("\n");
 }
 export const CASES = {
-  "studio-rosalie": { palette: ["#FFF7F5", "#E8C9C8", "#B66D78", "#702F43", "#351D29"], fonts: [["Playfair Display", "display"], ["Manrope", "body"]], pageH: 2600 },
-  "mustermann-sanitaer": { palette: ["#0F2A44", "#42566B", "#F4F7FA", "#E8F2FC", "#F28C28"], fonts: [["Plus Jakarta Sans", "both"]], pageH: 2600 },
-  "kfz-werkstatt": { palette: ["#101B2D", "#202833", "#F47B20", "#F1F3F5", "#9BA5B1"], fonts: [["Barlow Condensed", "display"], ["Barlow", "body"]], pageH: 2600 }
+  "equalfaith-europe": { palette: ["#F3F4EF", "#161B2E", "#C9A15C", "#8B3A3A", "#6B6D74"], fonts: [["Libre Caslon Text", "display"], ["IBM Plex Sans", "body"], ["IBM Plex Mono", "mono"]], pageH: 2534 },
+  "production-hub": { palette: ["#0A0A0B", "#131316", "#C8102E", "#1C3FAE", "#C9A24A"], fonts: [["Archivo", "display"], ["Inter", "body"]], pageH: 2600 },
+  "visabridge": { palette: ["#0B2A55", "#0B5CAD", "#0384A3", "#F2F6FB", "#E3E9F3"], fonts: [["System UI", "both"]], pageH: 2600 }
 };
 
 /* ---------------- Journal ---------------- */
