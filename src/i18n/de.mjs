@@ -82,7 +82,7 @@ export default {
           tags: ["Visuelle Identität", "Markenmaterialien", "Grafikdesign", "Foto & Video", "Audio & Stimme"], link: "Kreativleistungen" }
       ]
     },
-    focus: { label: "Im Fokus", h2: "Drei Leistungen, *ein Anspruch.*", lead: "Websites, DSGVO- und Cookie-Compliance und Übersetzungen — jede mit derselben Sorgfalt im Detail." },
+    focus: { label: "Im Fokus", h2: "Drei Leistungen, *ein Anspruch.*", lead: "Websites, DSGVO- und Cookie-Compliance und Übersetzungen — jede mit derselben Sorgfalt im Detail.", tile: ["DSGVO & EU-Compliance", "Kostenloser Website-Check"] },
     work: {
       label: "Ausgewählte Arbeiten",
       h2: "Konzeptprojekte, gebaut nach dem Standard echter Projekte.",

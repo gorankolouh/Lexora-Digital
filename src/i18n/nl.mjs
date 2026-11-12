@@ -82,7 +82,7 @@ export default {
           tags: ["Visuele identiteit", "Merkmiddelen", "Grafisch ontwerp", "Foto & video", "Audio & stem"], link: "Creatieve diensten" }
       ]
     },
-    focus: { label: "Uitgelicht", h2: "Drie diensten, *één standaard.*", lead: "Websites, AVG- en cookiecompliance en vertalingen — allemaal met dezelfde aandacht voor detail." },
+    focus: { label: "Uitgelicht", h2: "Drie diensten, *één standaard.*", lead: "Websites, AVG- en cookiecompliance en vertalingen — allemaal met dezelfde aandacht voor detail.", tile: ["AVG & EU-compliance", "Gratis websitecheck"] },
     work: {
       label: "Geselecteerd werk",
       h2: "Conceptprojecten, gebouwd volgens de standaard van echte projecten.",

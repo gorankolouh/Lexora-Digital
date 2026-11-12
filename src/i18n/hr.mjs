@@ -82,7 +82,7 @@ export default {
           tags: ["Vizualni identitet", "Materijali brenda", "Grafički dizajn", "Foto i video", "Zvuk i glas"], link: "Kreativne usluge" }
       ]
     },
-    focus: { label: "U fokusu", h2: "Tri usluge, *jedan standard.*", lead: "Web stranice, usklađenost s GDPR-om i pravilima o kolačićima te prijevodi — svaka s jednakom pažnjom prema detaljima." },
+    focus: { label: "U fokusu", h2: "Tri usluge, *jedan standard.*", lead: "Web stranice, usklađenost s GDPR-om i pravilima o kolačićima te prijevodi — svaka s jednakom pažnjom prema detaljima.", tile: ["GDPR i EU usklađenost", "Besplatna provjera web stranice"] },
     work: {
       label: "Odabrani radovi",
       h2: "Konceptualni projekti, izrađeni po standardu pravih.",
