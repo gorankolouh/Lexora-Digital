@@ -80,9 +80,10 @@ export default function home(t) {
 </section>`;
 
   const fc = h.focus;
+  const tileText = (key) => (key === "check" && fc.tile) || t.nav[key];
   const tile = (key, img, cls) => `<a class="ftile ${cls} reveal" href="${path(t, key)}">
       <div class="media"><img src="/assets/img/art/${img}-900.webp" srcset="/assets/img/art/${img}-900.webp 900w, /assets/img/art/${img}-1536.webp 1536w" sizes="(max-width:960px) 100vw, ${cls === "big" ? "60vw" : "40vw"}" width="1536" height="1024" alt="" loading="lazy" decoding="async"></div>
-      <div class="fmeta"><span class="glyph" aria-hidden="true">${esc(t.nav[key][2])}</span><div><h3>${esc(t.nav[key][0])}</h3><p>${esc(t.nav[key][1])}</p></div><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
+      <div class="fmeta"><span class="glyph" aria-hidden="true">${esc(t.nav[key][2])}</span><div><h3>${esc(tileText(key)[0])}</h3><p>${esc(tileText(key)[1])}</p></div><span class="go" aria-hidden="true">${icon("arrowUR", 18, 1.8)}</span></div>
     </a>`;
   const focus = `<section class="section rule" aria-labelledby="fc-h">
   <div class="wrap">

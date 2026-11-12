@@ -83,7 +83,7 @@ export default {
           tags: ["Visual identity", "Brand assets", "Graphic design", "Photo & video", "Audio & voice"], link: "Creative services" }
       ]
     },
-    focus: { label: "In focus", h2: "Three services, *one standard.*", lead: "Websites, GDPR and cookie compliance, and translation — each built with the same care for detail." },
+    focus: { label: "In focus", h2: "Three services, *one standard.*", lead: "Websites, GDPR and cookie compliance, and translation — each built with the same care for detail.", tile: ["GDPR & EU Compliance", "Free website check"] },
     work: {
       label: "Selected work",
       h2: "Concept projects, built to the standard of real ones.",

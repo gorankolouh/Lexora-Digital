@@ -82,7 +82,7 @@ export default {
           tags: ["Identidad visual", "Materiales de marca", "Diseño gráfico", "Foto y vídeo", "Audio y voz"], link: "Servicios creativos" }
       ]
     },
-    focus: { label: "En detalle", h2: "Tres servicios, *un mismo nivel.*", lead: "Webs, cumplimiento del RGPD y de cookies, y traducción — todos con el mismo cuidado por el detalle." },
+    focus: { label: "En detalle", h2: "Tres servicios, *un mismo nivel.*", lead: "Webs, cumplimiento del RGPD y de cookies, y traducción — todos con el mismo cuidado por el detalle.", tile: ["RGPD y cumplimiento UE", "Revisión gratuita de su web"] },
     work: {
       label: "Proyectos seleccionados",
       h2: "Proyectos conceptuales, hechos con el nivel de los reales.",
