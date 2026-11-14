@@ -21,7 +21,7 @@ export default {
   },
   meta: {
     home: { title: "Lexora Digital — websites, AVG-compliance & vertalingen", desc: "Onafhankelijke digitale studio voor websites, AVG- en cookiecompliance, vertalingen en design — voor bedrijven in heel Europa, in vijf talen." },
-    web: { title: "Webdesign & webontwikkeling — Lexora Digital", desc: "Websites en landingspagina's op maat voor het mkb. Startwebsite vanaf € 99, responsive, privacyvriendelijk en live op uw eigen domein." },
+    web: { title: "Webdesign voor het mkb — AVG-proof websites vanaf € 99", desc: "Websites en landingspagina's op maat voor het mkb. Startwebsite vanaf € 99, responsive, privacyvriendelijk en live op uw eigen domein." },
     compliance: { title: "Digitale compliance: AVG, cookies & EU-regels", desc: "Praktische hulp bij de AVG, cookietoestemming en privacyverklaringen voor bedrijfswebsites — informatie en uitvoering, geen juridisch advies." },
     check: { title: "Gratis AVG- & cookiecheck — opgelost vanaf € 99", desc: "GDPR, Cookies & Co.: een gratis check van toestemming, tracking en juridische pagina's op uw website. Vinden we problemen, dan lossen we ze op vanaf € 99." },
     language: { title: "Juridische & zakelijke vertalingen: Engels, Duits, Nederlands", desc: "Vertaling van websites, zakelijke en juridische teksten tussen Engels, Duits, Nederlands, Spaans en Kroatisch — nauwkeurig en natuurlijk geformuleerd." },
@@ -43,7 +43,7 @@ export default {
   home: {
     hero: {
       eyebrow: "Onafhankelijke digitale studio · Europa & verder",
-      h1: ["Digitale aanwezigheid.", "Ontworpen met *een doel.*"],
+      h1: ["Websites, AVG & vertaling.", "Gemaakt voor *Europa.*"],
       lead: "Wij bouwen verfijnde websites, maken ze AVG- en cookieproof, vertalen ze in vijf talen en brengen creatieve ideeën tot leven — met heldere communicatie over grenzen heen.",
       cta1: "Bekijk ons werk", cta2: "Bespreek uw project",
       langs: "Wij werken in"

@@ -3,7 +3,7 @@
 import { promises as fs } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { SITE_URL, LANGS, DEFAULT_LANG } from "./src/config.mjs";
+import { SITE_URL, LANGS, DEFAULT_LANG, SERVICES } from "./src/config.mjs";
 import { page, globeCanvas } from "./src/layout.mjs";
 import { esc, fmt, path, abs, icon } from "./src/lib.mjs";
 import home from "./src/pages/home.mjs";
@@ -29,6 +29,28 @@ const PAGES = {
   kits: { r: landing, ld: landingLd, og: { src: "/assets/img/og-kits.jpg", w: 1200, h: 630 }, canonical: "shop" }
 };
 const NOINDEX = new Set([]);
+
+// Structured data: breadcrumbs on every inner page, and a Service description on each service page
+const crumbLd = (items) => ({ "@context": "https://schema.org", "@type": "BreadcrumbList",
+  itemListElement: items.map(([href, name], i) => ({ "@type": "ListItem", position: i + 1, name, item: abs(href) })) });
+const LEGAL = new Set(["privacy", "cookies", "imprint", "accessibility"]);
+const navName = (t, key) => LEGAL.has(key) ? t.footer[key] : Array.isArray(t.nav[key]) ? t.nav[key][0] : t.nav[key];
+const PRICED = new Set(["web", "check"]); // services with a public "from €99" price
+function serviceLd(t, key) {
+  const m = t.meta[key];
+  return { "@context": "https://schema.org", "@type": "Service", name: t.nav[key][0], serviceType: t.nav[key][0], description: m.desc,
+    url: abs(path(t, key)), inLanguage: t.lang, areaServed: { "@type": "Place", name: "Europe" },
+    availableLanguage: LANGS.filter((l) => l.ready).map((l) => l.code),
+    provider: { "@type": "Organization", "@id": SITE_URL + "/#organization", name: "Lexora Digital", url: SITE_URL + "/" },
+    ...(PRICED.has(key) ? { offers: { "@type": "Offer", priceCurrency: "EUR", priceSpecification: { "@type": "PriceSpecification", minPrice: 99, priceCurrency: "EUR" } } } : {}) };
+}
+function pageLd(t, key, def) {
+  if (key === "home" || def.canonical) return def.ld ? def.ld(t) : null;
+  const out = [crumbLd([[path(t, "home"), t.ui.home], [path(t, key), navName(t, key)]])];
+  if (SERVICES.includes(key)) out.push(serviceLd(t, key));
+  if (def.ld) out.push(def.ld(t));
+  return out;
+}
 
 async function loadDicts() {
   const all = {};
@@ -63,7 +85,7 @@ async function build() {
     for (const [key, def] of Object.entries(PAGES)) {
       const m = t.meta[key];
       if (!m) throw new Error(`Missing meta.${key} for ${l.code}`);
-      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key), ld: def.ld ? def.ld(t) : null, og: def.og, canonical: def.canonical ? path(t, def.canonical) : null });
+      const html = page({ t, key, title: m.title, desc: m.desc, body: def.r(t), globe: !!def.globe, noindex: NOINDEX.has(key), ld: pageLd(t, key, def), og: def.og, canonical: def.canonical ? path(t, def.canonical) : null });
       await write(join(path(t, key), "index.html"), html);
       if (l.code === DEFAULT_LANG && !def.canonical) urls.push({ alt: (c) => path(all[c], key) });
     }
@@ -72,7 +94,8 @@ async function build() {
     for (const a of t.articles) {
       const langs = ready.map((x) => x.code).filter((c) => all[c].articles.some((y) => y.slug === a.slug));
       const alt = (c) => langs.includes(c) ? articleHref(all[c], a) : path(all[c], "journal");
-      const html = page({ t, key: "journal", title: (a.mt || a.t).length > 48 ? (a.mt || a.t) : `${a.mt || a.t} | Lexora Digital`, desc: a.md || a.d, body: article(t, a), alt, langs, ld: articleLd(t, a), ogType: "article" });
+      const html = page({ t, key: "journal", title: (a.mt || a.t).length > 48 ? (a.mt || a.t) : `${a.mt || a.t} | Lexora Digital`, desc: a.md || a.d, body: article(t, a), alt, langs, ogType: "article",
+        ld: [articleLd(t, a), crumbLd([[path(t, "home"), t.ui.home], [path(t, "journal"), t.nav.journal], [alt(l.code), a.t]])] });
       await write(join(alt(l.code), "index.html"), html);
       if (l.code === langs[0]) urls.push({ alt, langs, lastmod: a.updated || a.iso });
     }
@@ -99,7 +122,8 @@ async function build() {
       const alt = (c) => `${path(all[c], "work")}${item.slug}/`;
       const c = t.pages.cases[item.slug];
       const html = page({ t, key: "work", title: `${item.title} — ${t.home.work.badge} · ${t.nav.work} · Lexora Digital`, desc: c.lead.replace(/[*~]/g, ""), body: P.caseStudy(t, item.slug), alt,
-        ld: { "@context": "https://schema.org", "@type": "CreativeWork", name: item.title, genre: item.cat, inLanguage: t.lang, creator: { "@type": "Organization", name: "Lexora Digital" } } });
+        ld: [{ "@context": "https://schema.org", "@type": "CreativeWork", name: item.title, genre: item.cat, inLanguage: t.lang, creator: { "@type": "Organization", name: "Lexora Digital" } },
+          crumbLd([[path(t, "home"), t.ui.home], [path(t, "work"), t.nav.work], [alt(l.code), item.title]])] });
       await write(join(alt(l.code), "index.html"), html);
       if (l.code === DEFAULT_LANG) urls.push({ alt });
     }

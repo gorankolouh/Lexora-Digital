@@ -21,7 +21,7 @@ export default {
   },
   meta: {
     home: { title: "Lexora Digital — webs, RGPD y traducciones para Europa", desc: "Estudio digital independiente de webs, cumplimiento del RGPD y de cookies, traducción y diseño — para empresas de toda Europa, en cinco idiomas." },
-    web: { title: "Diseño y desarrollo web — Lexora Digital", desc: "Webs y landing pages a medida para pymes. Web básica desde 99 €, adaptable a móviles, respetuosa con la privacidad y publicada en su dominio." },
+    web: { title: "Diseño web para pymes — webs conformes al RGPD desde 99 €", desc: "Webs y landing pages a medida para pymes. Web básica desde 99 €, adaptable a móviles, respetuosa con la privacidad y publicada en su dominio." },
     compliance: { title: "Cumplimiento digital: RGPD, cookies y normas UE — Lexora Digital", desc: "Ayuda práctica con el RGPD, las cookies y la política de privacidad de su web — información e implementación, no asesoramiento jurídico." },
     check: { title: "Revisión RGPD y cookies gratuita, corrección desde 99 €", desc: "GDPR, Cookies & Co.: revisión gratuita del consentimiento, el seguimiento y los textos legales de su web. Si encontramos problemas, los corregimos desde 99 €." },
     language: { title: "Traducción jurídica y empresarial: inglés, alemán, neerlandés", desc: "Traducción de webs, documentos empresariales y textos jurídicos entre inglés, alemán, neerlandés, español y croata — precisa y natural." },
@@ -43,7 +43,7 @@ export default {
   home: {
     hero: {
       eyebrow: "Estudio digital independiente · Europa y más allá",
-      h1: ["Presencia digital.", "Diseñada con *propósito.*"],
+      h1: ["Webs, RGPD y traducción.", "Hechas para *Europa.*"],
       lead: "Creamos webs cuidadas, las adaptamos al RGPD y a la normativa de cookies, las traducimos a cinco idiomas y damos vida a ideas creativas — con una comunicación clara más allá de las fronteras.",
       cta1: "Ver nuestros proyectos", cta2: "Hablemos de su proyecto",
       langs: "Trabajamos en"

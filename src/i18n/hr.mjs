@@ -21,7 +21,7 @@ export default {
   },
   meta: {
     home: { title: "Lexora Digital — izrada web stranica, GDPR i prijevodi", desc: "Neovisni digitalni studio za web stranice, usklađenost s GDPR-om i pravilima o kolačićima, prijevode i dizajn — za tvrtke diljem Europe, na pet jezika." },
-    web: { title: "Izrada web stranica — Lexora Digital", desc: "Web stranice i landing stranice po mjeri za mala i srednja poduzeća. Od 99 €, prilagođene mobitelima, poštuju privatnost i objavljene na Vašoj domeni." },
+    web: { title: "Izrada web stranica za tvrtke — GDPR usklađene, od 99 €", desc: "Web stranice i landing stranice po mjeri za mala i srednja poduzeća. Od 99 €, prilagođene mobitelima, poštuju privatnost i objavljene na Vašoj domeni." },
     compliance: { title: "Digitalna usklađenost: GDPR i kolačići — Lexora Digital", desc: "Praktična pomoć s GDPR-om, privolom za kolačiće i izjavama o privatnosti za poslovne web stranice — informacije i provedba, ne pravni savjet." },
     check: { title: "Besplatna provjera GDPR-a i kolačića — Lexora Digital", desc: "GDPR, Cookies & Co.: besplatna provjera privole, praćenja i pravnih stranica Vaše web stranice. Ako pronađemo nedostatke, ispravljamo ih po cijeni od 99 €." },
     language: { title: "Pravni i poslovni prijevodi: engleski, njemački, nizozemski", desc: "Prijevod web stranica, poslovnih i pravnih tekstova između engleskog, njemačkog, nizozemskog, španjolskog i hrvatskog — precizno i prirodno." },
@@ -43,7 +43,7 @@ export default {
   home: {
     hero: {
       eyebrow: "Neovisni digitalni studio · Europa i šire",
-      h1: ["Digitalna prisutnost.", "Oblikovana sa *svrhom.*"],
+      h1: ["Web stranice, GDPR i prijevodi.", "Izrađeno za *Europu.*"],
       lead: "Izrađujemo promišljene web stranice, usklađujemo ih s GDPR-om i pravilima o kolačićima, prevodimo ih na pet jezika i ostvarujemo kreativne ideje — uz jasnu komunikaciju preko granica.",
       cta1: "Pogledajte naše radove", cta2: "Razgovarajmo o projektu",
       langs: "Radimo na"

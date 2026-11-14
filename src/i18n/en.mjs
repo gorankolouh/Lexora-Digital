@@ -22,7 +22,7 @@ export default {
   },
   meta: {
     home: { title: "Lexora Digital — Websites, GDPR Compliance & Translation", desc: "Independent digital studio for websites, GDPR and cookie compliance, translation and design — for businesses across Europe, in five languages." },
-    web: { title: "Web Design & Development — Lexora Digital", desc: "Custom websites and landing pages for small and medium-sized businesses. Starter website from €99, responsive, privacy-friendly and launched on your domain." },
+    web: { title: "Web Design for Small Businesses — GDPR-Ready, from €99", desc: "Custom websites and landing pages for small and medium-sized businesses. Starter website from €99, responsive, privacy-friendly and launched on your domain." },
     compliance: { title: "Digital Compliance: GDPR, Cookies & EU Rules — Lexora Digital", desc: "Practical help with GDPR, cookie consent, privacy notices and EU digital rules for business websites — information and implementation, not legal advice." },
     check: { title: "Free GDPR & Cookie Website Check — Fixes from €99", desc: "GDPR, Cookies & Co.: a free check of your website's consent, tracking and legal pages. If we find issues, we fix them from €99." },
     language: { title: "Legal & Business Translation: English, German, Dutch, Croatian", desc: "Business, legal and website translation between English, German, Dutch, Spanish and Croatian — with a focus on clear, natural language." },
@@ -44,7 +44,7 @@ export default {
   home: {
     hero: {
       eyebrow: "Independent digital studio · Europe & beyond",
-      h1: ["Digital presence.", "Designed with *purpose.*"],
+      h1: ["Websites, GDPR & translation.", "Built for *Europe.*"],
       lead: "We build sophisticated websites, make them GDPR and cookie compliant, translate them into five languages and bring creative ideas to life — with clear communication across borders.",
       cta1: "Explore our work", cta2: "Discuss your project",
       langs: "Working in"

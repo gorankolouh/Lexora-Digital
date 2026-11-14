@@ -490,6 +490,8 @@ export default {
 
 // Journal article → the kit it should point to (articles without an entry show no kit box)
 export const ARTICLE_KIT = {
+  "datenschutzerklaerung-kopieren": "gdpr",
+  "copy-privacy-policy": "gdpr",
   "gdpr-website-legal-document": "gdpr",
   "eu-ai-act-website": "ai",
   "ai-agents-human-judgment": "ai",

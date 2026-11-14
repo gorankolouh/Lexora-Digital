@@ -1,6 +1,78 @@
 // Journal articles — English. Block types: p, h2, h3, ul, quote, note, check (checklist).
 export default [
   {
+    slug: "copy-privacy-policy",
+    tag: "GDPR",
+    cta: "check",
+    t: "Can you copy another website's privacy policy?",
+    mt: "Can You Copy a Privacy Policy? The Risks Under EU Law",
+    d: "Short answer: no. Why privacy policies can be protected by copyright, why a copied policy is almost always wrong under the GDPR, and how to get one that fits your website in six steps.",
+    lead: "Copy a competitor's privacy policy, swap in your company name, done? It saves ten minutes and can cost far more. Here is what copyright law and the GDPR say, and how to quickly get a privacy policy that actually matches your website.",
+    date: "November 2026", iso: "2026-11-14",
+    blocks: [
+      ["p", "Anyone launching a website knows the temptation. The privacy policy is the last missing page, a competitor has a nice one, so it gets copied: new name, new address, publish. This is exactly how businesses end up with legal letters, and with privacy policies that describe someone else's website."],
+      ["quote", "A privacy policy describes your data processing, not somebody else's."],
+
+      ["h2", "The short answer"],
+      ["check", [
+        "Copying another website's privacy policy **word for word is generally not allowed**. Legal texts can be protected by copyright.",
+        "Even where copyright doesn't apply, a copied policy is **almost always factually wrong**, because it lists another site's tools. An inaccurate privacy notice breaches the GDPR.",
+        "**Free templates and generators are fine**, but only on their terms, which often include a visible credit link.",
+        "The only safe policy is one that reflects **your actual services, forms and processes** and is kept up to date."
+      ]],
+
+      ["h2", "Risk 1: copyright"],
+      ["p", "Privacy policies look like forms, but they aren't. Whoever writes one decides on structure, selection and wording, and Article 12 GDPR demands exactly that effort: information must be concise, transparent and written in clear and plain language. Under EU law, a text is protected when it is the author's own intellectual creation, a standard set by the Court of Justice in Infopaq (C-5/08)."],
+      ["p", "German courts have applied this to privacy policies. In 2023 the Higher Regional Court of Munich (OLG München, decision of 3 March 2023, 6 W 1491/22) held, after a summary review, that the privacy policy in question was a copyright-protected literary work. The case is a common one: a provider offered a **free template** on condition that users display a credit link. The website owner used it without the link, and the provider claimed a licence fee. The template itself was fine. Ignoring the licence condition was the problem."],
+      ["p", "The usual consequences of infringement are a cease-and-desist demand, damages (often calculated as a retroactive licence fee) and the other side's legal costs. Not every standard sentence is protected, and the mandatory information itself belongs to no one. What is protected is the specific wording and arrangement of a text."],
+
+      ["h2", "Risk 2: the copied policy is wrong"],
+      ["p", "The bigger problem is usually the content. Article 13 GDPR requires information about **your** processing, including:"],
+      ["ul", [
+        "the identity and contact details of the controller and, where applicable, the data protection officer",
+        "the purposes and legal basis of each processing activity, including the legitimate interests relied on",
+        "the recipients, such as your host, newsletter tool, booking system or payment provider",
+        "transfers to non-EU countries such as the US, and the safeguards used",
+        "how long data is kept, or the criteria for deciding",
+        "the data subject's rights, the right to withdraw consent and the right to complain to a supervisory authority"
+      ]],
+      ["p", "A copied policy describes another website. The typical result: it mentions Google Analytics you don't use while your Meta Pixel is missing, names the wrong host, leaves out your contact form or booking tool, and lists retention periods that don't match what you do."],
+      ["p", "That means mandatory information is missing or false. Data protection authorities can act on it, and breaches of the transparency rules fall under the higher fine bracket of Article 83(5) GDPR (up to €20 million or 4% of worldwide annual turnover). For small businesses fines are usually far lower, or authorities simply order a fix, but the bracket shows how seriously the law treats transparency."],
+      ["p", "In Germany there is a second front. On 27 March 2025 the Federal Court of Justice (BGH, I ZR 186/17 and others) confirmed that consumer associations and competitors can pursue GDPR breaches through unfair-competition claims, and that the information duties in Articles 12 and 13 GDPR are market-conduct rules. For businesses selling into the German market, an inaccurate privacy policy is therefore more than a regulatory issue."],
+
+      ["h2", "What about templates, generators or AI?"],
+      ["p", "Templates and generators from law firms and specialist providers are a legitimate route, especially for small websites. Read the **licence terms**: free use is often tied to a visible credit or limited to your own site. Remove the credit and you are in the same position as the website owner in the Munich case."],
+      ["p", "A generator also only knows your website as well as you answer its questions. Tick every box to be safe, or forget a service, and you are back to a policy that doesn't match reality."],
+      ["p", "And AI? A chatbot will write a privacy policy in seconds. The core problem remains: it doesn't know which services your website loads, it tends to fill gaps with plausible but wrong details, and it can reproduce wording from other people's templates. Useful as a draft, never as a finished text."],
+
+      ["h2", "Six steps to a privacy policy that fits"],
+      ["check", [
+        "**Take inventory.** Which services does your website actually load? Hosting, fonts, maps, videos, analytics, forms, newsletter, chat, shop and payments. Your browser's developer tools (the “Network” tab) show which external servers are contacted when a page loads.",
+        "**Describe each service.** Purpose, legal basis, recipient, international transfers and retention period.",
+        "**Use a reputable template with a valid licence.** A template or generator is fine if you meet its conditions, such as keeping the credit link.",
+        "**Check it against your website.** The cookie banner, forms and embedded content must match the policy. If it says “no analytics cookies”, none may be set.",
+        "**Keep it current.** Every new tool or form goes into the policy straight away. A “last updated” date helps you and your visitors.",
+        "**Get it reviewed when in doubt.** For a binding legal assessment of your specific case, a lawyer is the right person to ask."
+      ]],
+
+      ["h2", "Frequently asked questions"],
+      ["h3", "Can I reuse a few sentences from another policy?"],
+      ["p", "Short, purely factual standard sentences and the legally required information are generally not protected. Stitching together whole paragraphs from several policies raises the risk and rarely produces a coherent text. A properly licensed template plus your own details works better."],
+      ["h3", "I copied my privacy policy. What should I do now?"],
+      ["p", "Replace it with your own accurate policy as soon as possible. If you have already received a legal letter, don't ignore it: note the deadline, and don't sign a pre-written cease-and-desist declaration without having it checked by a lawyer."],
+      ["h3", "Does the same apply to terms and conditions and the legal notice?"],
+      ["p", "The principle is the same. Terms and conditions can also be protected by copyright. A legal notice (in Germany, the Impressum under § 5 DDG) consists mostly of mandatory facts, so copying gains you little, and wrong details there are a separate risk."],
+
+      ["note", "Not sure your privacy policy matches your website? Our **free GDPR & cookie check** compares it with the services your website actually loads, and we fix any issues from €99."]
+    ],
+    sources: [
+      ["OLG München, decision of 3 March 2023 – 6 W 1491/22: copyright protection of privacy policies (German, gesetze-bayern.de)", "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-24700"],
+      ["CJEU, Infopaq International, C-5/08 (EUR-Lex)", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62008CJ0005"],
+      ["BGH press release no. 59/2025 on the judgments of 27 March 2025 (German)", "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025059.html"],
+      ["GDPR – Regulation (EU) 2016/679, Articles 12, 13 and 83 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"]
+    ]
+  },
+  {
     slug: "ai-chats-court-company-data",
     tag: "AI & GDPR",
     t: "Your Team's AI Chats Could End Up in Court",

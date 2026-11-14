@@ -21,7 +21,7 @@ export default {
   },
   meta: {
     home: { title: "Lexora Digital — Websites, DSGVO & Übersetzungen für Europa", desc: "Unabhängiges Digitalstudio für Websites, DSGVO- und Cookie-Compliance, Übersetzungen und Design — für Unternehmen in ganz Europa, in fünf Sprachen." },
-    web: { title: "Webdesign & Webentwicklung — Lexora Digital", desc: "Individuelle Websites und Landingpages für kleine und mittlere Unternehmen. Ab 99 €, responsiv, datenschutzfreundlich und auf Ihrer Domain live." },
+    web: { title: "Webdesign für KMU — DSGVO-konforme Websites ab 99 €", desc: "Individuelle Websites und Landingpages für kleine und mittlere Unternehmen. Ab 99 €, responsiv, datenschutzfreundlich und auf Ihrer Domain live." },
     compliance: { title: "Digitale Compliance: DSGVO, Cookies & EU-Recht umsetzen", desc: "Praktische Hilfe bei DSGVO, Cookie-Einwilligung und Datenschutzerklärung für Unternehmenswebsites — Information und Umsetzung, keine Rechtsberatung." },
     check: { title: "Kostenloser DSGVO- & Cookie-Check — Behebung ab 99 €", desc: "GDPR, Cookies & Co.: kostenloser Check von Einwilligung, Tracking und Rechtstexten Ihrer Website. Finden wir Mängel, beheben wir sie ab 99 €." },
     language: { title: "Fachübersetzungen Recht & Business: DE, EN, NL, ES, HR", desc: "Übersetzung von Websites, Geschäfts- und Rechtstexten zwischen Englisch, Deutsch, Niederländisch, Spanisch und Kroatisch — präzise und natürlich formuliert." },
@@ -43,7 +43,7 @@ export default {
   home: {
     hero: {
       eyebrow: "Unabhängiges Digitalstudio · Europa & darüber hinaus",
-      h1: ["Digitale Präsenz.", "Gestaltet mit *Bedacht.*"],
+      h1: ["Websites, DSGVO & Übersetzung.", "Gemacht für *Europa.*"],
       lead: "Wir entwickeln anspruchsvolle Websites, machen sie DSGVO- und cookie-konform, übersetzen sie in fünf Sprachen und setzen kreative Ideen um — mit klarer Kommunikation über Grenzen hinweg.",
       cta1: "Unsere Arbeiten ansehen", cta2: "Projekt besprechen",
       langs: "Wir arbeiten auf"

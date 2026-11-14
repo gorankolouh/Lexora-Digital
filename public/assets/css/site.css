@@ -1001,3 +1001,6 @@ html.js.seen :is(.rise,.lni,.hero-globe){animation:none;opacity:1;transform:none
 .book .cat{font-family:var(--f-mono);font-size:var(--fs-micro);letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
 .book h3{margin-top:8px}
 @media (max-width:520px){.book-cover .bc-s{display:none}.book-cover .bc-t{font-size:15px}}
+
+/* home hero: keyword headline is longer than the old slogan, so it runs a size smaller */
+#hero-h{font-size:clamp(40px,4.7vw,74px)}

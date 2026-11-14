@@ -1,6 +1,81 @@
 // Journal-Artikel — Deutsch
 export default [
   {
+    slug: "datenschutzerklaerung-kopieren",
+    tag: "DSGVO",
+    cta: "check",
+    t: "Darf man eine Datenschutzerklärung kopieren?",
+    mt: "Datenschutzerklärung kopieren: Erlaubt? Risiken & Alternativen",
+    d: "Kurze Antwort: nein. Warum fremde Datenschutzerklärungen urheberrechtlich geschützt sein können, warum eine kopierte Erklärung fast immer falsch ist – und wie Sie es in sechs Schritten richtig machen.",
+    lead: "Eine fremde Datenschutzerklärung kopieren, den Namen austauschen, fertig? Das spart zehn Minuten und kann teuer werden. Hier ist, was das Urheberrecht und die DSGVO dazu sagen und wie Sie schnell zu einer Erklärung kommen, die wirklich zu Ihrer Website passt.",
+    date: "November 2026", iso: "2026-11-14",
+    blocks: [
+      ["p", "Wer eine neue Website online stellt, kennt die Versuchung: Die Datenschutzerklärung fehlt noch, die Konkurrenz hat eine schöne, also wird sie übernommen. Firmenname und Adresse angepasst, Seite veröffentlicht. Genau so entstehen Abmahnungen und Datenschutzerklärungen, die mit der eigenen Website nichts zu tun haben."],
+      ["quote", "Eine Datenschutzerklärung beschreibt Ihre Datenverarbeitung, nicht die eines anderen."],
+
+      ["h2", "Kurz gesagt"],
+      ["check", [
+        "Eine fremde Datenschutzerklärung **1:1 zu übernehmen ist in aller Regel unzulässig**. Rechtstexte können urheberrechtlich geschützt sein.",
+        "Auch ohne Urheberrecht ist eine kopierte Erklärung **fast immer inhaltlich falsch**, weil sie die Tools einer anderen Website beschreibt. Eine falsche Erklärung ist ein Verstoß gegen die DSGVO.",
+        "**Kostenlose Muster und Generatoren sind erlaubt**, aber nur zu ihren Bedingungen, oft mit Pflicht zum Quellenhinweis.",
+        "Sicher ist nur eine Erklärung, die **Ihre tatsächlichen Dienste, Formulare und Abläufe** abbildet und aktuell gehalten wird."
+      ]],
+
+      ["h2", "Risiko 1: Das Urheberrecht"],
+      ["p", "Datenschutzerklärungen wirken wie Formulare, sind es aber nicht. Wer sie schreibt, entscheidet über Aufbau, Auswahl und Formulierung, und genau das verlangt Art. 12 DSGVO: Die Informationen sollen präzise, verständlich und in klarer, einfacher Sprache sein. Darin steckt eigene geistige Arbeit."],
+      ["p", "Das Oberlandesgericht München hat das 2023 bestätigt (Beschluss vom 3. März 2023, Az. 6 W 1491/22). Nach summarischer Prüfung ging das Gericht davon aus, dass die betroffene Datenschutzerklärung ein urheberrechtlich geschütztes Sprachwerk nach § 2 Abs. 1 Nr. 1, Abs. 2 UrhG ist. Die Vorinstanz war das Landgericht München I (Urteil vom 7. September 2022, Az. 44 O 13813/21)."],
+      ["p", "Der Fall ist typisch: Ein Anbieter stellte ein **kostenloses Muster** bereit, erlaubte die Nutzung aber nur mit einem sichtbaren Quellenhinweis. Der Websitebetreiber nutzte das Muster ohne Hinweis, und der Anbieter verlangte eine Lizenzgebühr. Das Problem war also nicht das Muster, sondern dass die Lizenzbedingung nicht eingehalten wurde."],
+      ["p", "Was bei einer Urheberrechtsverletzung droht, regelt § 97 UrhG: Unterlassung, Schadensersatz, in der Praxis meist als nachträgliche Lizenzgebühr berechnet, dazu die Anwaltskosten der Abmahnung (§ 97a UrhG). Wichtig zur Einordnung: Nicht jeder einzelne Standardsatz ist geschützt. Die gesetzlichen Pflichtangaben selbst gehören niemandem. Geschützt ist die konkrete Formulierung und Gestaltung eines Textes, und ob die Schutzschwelle erreicht ist, entscheidet im Streitfall das Gericht."],
+
+      ["h2", "Risiko 2: Die kopierte Erklärung stimmt nicht"],
+      ["p", "Das größere Problem ist meist nicht das Urheberrecht, sondern der Inhalt. Art. 13 DSGVO verlangt Informationen über **Ihre** Datenverarbeitung, unter anderem:"],
+      ["ul", [
+        "Name und Kontaktdaten des Verantwortlichen, gegebenenfalls des Datenschutzbeauftragten",
+        "Zwecke und Rechtsgrundlage jeder Verarbeitung, bei berechtigten Interessen auch welche",
+        "Empfänger der Daten, zum Beispiel Hosting, Newsletter-Tool, Terminbuchung oder Zahlungsanbieter",
+        "Übermittlungen in Drittländer wie die USA und auf welcher Grundlage sie erfolgen",
+        "Speicherdauer oder die Kriterien dafür",
+        "die Rechte der Betroffenen, das Widerrufsrecht bei Einwilligungen und das Beschwerderecht bei einer Aufsichtsbehörde"
+      ]],
+      ["p", "Eine fremde Erklärung beschreibt die Dienste einer anderen Website. Typische Folgen: Google Analytics wird genannt, obwohl Sie es nicht nutzen, während Ihr Meta-Pixel fehlt. Der Hoster ist falsch, das Kontaktformular oder das Buchungstool kommt nicht vor, die Speicherfristen passen nicht, und als Aufsichtsbehörde steht die eines anderen Bundeslands."],
+      ["p", "Damit fehlen Pflichtinformationen oder sie sind falsch. Die Datenschutzbehörden können dagegen vorgehen; Verstöße gegen die Informationspflichten fallen unter den höheren Bußgeldrahmen des Art. 83 Abs. 5 DSGVO (bis zu 20 Mio. Euro oder 4 % des weltweiten Jahresumsatzes). Bei kleinen Unternehmen bleibt es in der Praxis meist bei deutlich geringeren Beträgen oder einer Anordnung, der Rahmen zeigt aber, wie ernst der Gesetzgeber Transparenz nimmt."],
+      ["p", "Hinzu kommt das Wettbewerbsrecht. Der Bundesgerichtshof hat am 27. März 2025 entschieden (u. a. Az. I ZR 186/17), dass Verbraucherverbände und Mitbewerber Datenschutzverstöße zivilrechtlich verfolgen können; die Informationspflichten aus Art. 12 und 13 DSGVO gelten als Marktverhaltensregeln im Sinne von § 3a UWG. Eine gewisse Entlastung gibt es für kleinere Unternehmen: Mitbewerber können für Abmahnungen wegen DSGVO-Verstößen gegen Unternehmen mit in der Regel weniger als 250 Beschäftigten keine Abmahnkosten verlangen (§ 13 Abs. 4 Nr. 2 UWG). Der Unterlassungsanspruch selbst bleibt aber bestehen."],
+
+      ["h2", "Und Muster, Generatoren oder KI?"],
+      ["p", "Muster und Generatoren von Kanzleien und spezialisierten Anbietern sind ein legitimer Weg, gerade für kleine Websites. Lesen Sie aber die **Lizenzbedingungen**: Häufig ist die kostenlose Nutzung an einen sichtbaren Quellenhinweis gebunden oder auf die eigene Website beschränkt. Wer den Hinweis entfernt, landet in derselben Lage wie im Münchner Fall."],
+      ["p", "Außerdem kennt ein Generator Ihre Website nur so gut, wie Sie seine Fragen beantworten. Wer vorsichtshalber alles ankreuzt oder einen Dienst vergisst, bekommt wieder eine Erklärung, die nicht stimmt."],
+      ["p", "Und KI? Ein Chatbot schreibt Ihnen in Sekunden eine Datenschutzerklärung. Das Grundproblem bleibt: Er weiß nicht, welche Dienste Ihre Website lädt, ergänzt gern plausible, aber falsche Angaben und kann Formulierungen aus fremden Vorlagen wiedergeben. Als Entwurf brauchbar, ungeprüft veröffentlichen sollten Sie ihn nicht."],
+
+      ["h2", "In sechs Schritten zur passenden Datenschutzerklärung"],
+      ["check", [
+        "**Bestandsaufnahme machen.** Welche Dienste lädt Ihre Website tatsächlich? Hosting, Schriftarten, Karten, Videos, Analyse, Formulare, Newsletter, Chat, Shop und Zahlung. Die Entwicklertools Ihres Browsers (Reiter „Netzwerk“) zeigen, welche externen Server beim Seitenaufruf angefragt werden.",
+        "**Jeden Dienst beschreiben.** Zweck, Rechtsgrundlage, Empfänger, Drittlandübermittlung und Speicherdauer.",
+        "**Seriöse Vorlage mit gültiger Lizenz nutzen.** Muster oder Generator ist in Ordnung, wenn Sie die Bedingungen einhalten, zum Beispiel den Quellenhinweis.",
+        "**Mit der Website abgleichen.** Cookie-Banner, Formulare und eingebettete Inhalte müssen zur Erklärung passen. Steht dort „keine Analyse-Cookies“, darf auch keines gesetzt werden.",
+        "**Aktuell halten.** Jedes neue Tool, jedes neue Formular gehört sofort in die Erklärung. Ein Stand-Datum hilft Ihnen und Ihren Besuchern.",
+        "**Bei Unsicherheit prüfen lassen.** Für eine verbindliche rechtliche Bewertung im Einzelfall ist eine Anwältin oder ein Anwalt die richtige Adresse."
+      ]],
+
+      ["h2", "Häufige Fragen"],
+      ["h3", "Darf ich einzelne Sätze aus einer fremden Erklärung übernehmen?"],
+      ["p", "Kurze, rein sachliche Standardsätze und die gesetzlichen Pflichtangaben sind in der Regel nicht geschützt. Wer aber ganze Absätze aus mehreren Erklärungen zusammenstückelt, erhöht das Risiko und bekommt selten ein stimmiges Ganzes. Besser: eine saubere Vorlage mit Lizenz und Ihre eigenen Angaben."],
+      ["h3", "Ich habe meine Datenschutzerklärung kopiert. Was jetzt?"],
+      ["p", "Ersetzen Sie sie so bald wie möglich durch eine eigene, zutreffende Erklärung. Kommt bereits eine Abmahnung, gilt: nicht ignorieren, Fristen notieren und eine vorformulierte Unterlassungserklärung nicht ungeprüft unterschreiben, sondern anwaltlich prüfen lassen."],
+      ["h3", "Gilt das auch für Impressum und AGB?"],
+      ["p", "Das Prinzip ist dasselbe. Auch AGB können urheberrechtlich geschützt sein. Das Impressum besteht überwiegend aus Pflichtangaben nach § 5 Digitale-Dienste-Gesetz (DDG), hier bringt Kopieren wenig. Falsche oder fehlende Angaben sind dort ein eigenes Risiko."],
+
+      ["note", "Unsicher, ob Ihre Datenschutzerklärung zu Ihrer Website passt? Im **kostenlosen DSGVO- & Cookie-Check** gleichen wir sie mit den Diensten ab, die Ihre Website tatsächlich lädt, und beheben Mängel ab 99 €. Ausführlicher erklärt das unser *Compliance-Handbuch für KMU*."]
+    ],
+    sources: [
+      ["OLG München, Beschluss vom 03.03.2023 – 6 W 1491/22: Werkqualität von Datenschutzerklärungen (gesetze-bayern.de)", "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-24700"],
+      ["BGH, Pressemitteilung Nr. 59/2025 zu den Urteilen vom 27.03.2025 – I ZR 186/17, I ZR 222/19, I ZR 223/19", "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025059.html"],
+      ["DSGVO – Verordnung (EU) 2016/679, Art. 12, 13 und 83 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de"],
+      ["§ 97 UrhG – Anspruch auf Unterlassung und Schadensersatz (gesetze-im-internet.de)", "https://www.gesetze-im-internet.de/urhg/__97.html"],
+      ["§ 13 UWG – Abmahnung, Unterlassungsverpflichtung, Haftung (gesetze-im-internet.de)", "https://www.gesetze-im-internet.de/uwg_2004/__13.html"],
+      ["§ 5 DDG – Allgemeine Informationspflichten (gesetze-im-internet.de)", "https://www.gesetze-im-internet.de/ddg/__5.html"]
+    ]
+  },
+  {
     slug: "ai-chats-court-company-data",
     tag: "KI & DSGVO",
     t: "Wenn KI-Chats vor Gericht landen",

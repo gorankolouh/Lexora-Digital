@@ -151,7 +151,7 @@ function pageRaw({ t, key, title, desc, body, globe = false, noindex = false, al
     "@context": "https://schema.org", "@type": "WebSite", "@id": SITE_URL + "/#website", name: BRAND, url: SITE_URL + "/",
     inLanguage: readyLangs().map((l) => l.code), publisher: { "@id": SITE_URL + "/#organization" }
   } : null;
-  const jsonld = [org, site, ld].filter(Boolean).map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n");
+  const jsonld = [org, site, ...[].concat(ld || [])].filter(Boolean).map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n");
   const formCfg = `<script>window.LEXORA_FORMS=${JSON.stringify(FORMS)};window.LEXORA_I18N=${JSON.stringify(t.form.js)};</script>`;
   return `<!doctype html>
 <html lang="${t.lang}">
