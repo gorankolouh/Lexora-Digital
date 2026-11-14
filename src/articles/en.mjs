@@ -1,6 +1,58 @@
 // Journal articles — English. Block types: p, h2, h3, ul, quote, note, check (checklist).
 export default [
   {
+    slug: "ai-chats-court-company-data",
+    tag: "AI & GDPR",
+    t: "Your Team's AI Chats Could End Up in Court",
+    mt: "Your Team's AI Chats Could End Up in Court",
+    d: "A US court ordered OpenAI to hand over 20 million ChatGPT conversations. What that means for European SMEs — and five steps to protect your company data.",
+    lead: "Most businesses treat AI chats like thinking out loud. Legally, they are closer to emails sitting on someone else's server — and a US court has just shown that they can be demanded in litigation.",
+    date: "November 2026", iso: "2026-11-14",
+    blocks: [
+      ["p", "In January 2026, a US federal judge upheld an order requiring OpenAI to hand over 20 million ChatGPT conversations to the New York Times and other publishers in a copyright lawsuit. The logs were de-identified and shared under a protective order. Still, the message for every business is clear: what your team types into an AI tool is a record, and records can be demanded."],
+      ["quote", "Treat AI chats as business records today — whichever way the courts go."],
+
+      ["h2", "The legal gap nobody planned for"],
+      ["p", "In a new paper for the Journal of Free Speech Law, Caroline De Cock puts her finger on the problem. Human rights law has long protected two spaces. One is your inner thoughts, the *forum internum*, protected absolutely. The other is what you say in public, the *forum externum*, which the state may limit for good reasons."],
+      ["p", "That split worked while thinking left no trace. Today people draft, test ideas and voice half-formed worries in a chatbot. Every one of those steps is stored by a provider and can be requested in litigation."],
+      ["p", "De Cock proposes a third space between thought and speech: the **forum interstitiale**. It would cover provisional, unshared steps in someone's reasoning — a search, a draft, an argument tried out and dropped. Courts, she argues, ask the wrong question when they ask whether a chatbot is \"like\" a lawyer or a therapist. The better question is what the person was doing. Usually, they were thinking."],
+      ["p", "It is a strong argument, but for now it remains a proposal. No court or legislature has adopted it. Until one does, businesses have to plan for the law as it stands."],
+
+      ["h2", "Why this matters for a European SME"],
+      ["p", "A US copyright case may seem far from a consultancy in Cologne or a logistics firm in Rotterdam. In practice it touches you in four ways."],
+      ["ul", [
+        "**Your data sits with US providers.** Most popular AI tools are run by US companies. Their logs can become evidence in US proceedings, whatever your EU contract says about confidentiality.",
+        "**The GDPR applies to what employees paste in.** Client names, CVs and health details typed into a chatbot are personal data. You need a legal basis, a processor agreement where the provider acts as processor, and a clear retention period (Articles 5, 28 and 32 GDPR).",
+        "**Trade secrets need reasonable steps.** Under the EU Trade Secrets Directive (2016/943), information only counts as a trade secret if you take reasonable steps to keep it secret. Letting staff paste pricing models or source code into consumer chatbots weakens that position.",
+        "**The AI Act expects AI literacy.** Since February 2025, organisations that use AI systems must take measures to build AI literacy among the people who use them (Article 4). A written AI-use policy is the simplest way to show it."
+      ]],
+
+      ["h2", "The commercial risk, in plain terms"],
+      ["p", "The danger is rarely one dramatic leak. It is the slow build-up of sensitive material in places you do not control: a sales manager drafting a tender, an HR officer summarising a dismissal file, a founder asking for a second opinion on a contract."],
+      ["p", "If a dispute arises, the other side will ask where your documents live. \"In our employees' chatbot histories\" is not an answer you want to give."],
+
+      ["h2", "Five steps to take this quarter"],
+      ["check", [
+        "**Write a one-page AI-use policy.** Approved tools, what may never be entered (client personal data, trade secrets, legal files) and who to ask when unsure.",
+        "**Use business accounts, not personal ones.** Team and enterprise plans usually offer processor agreements, admin controls and opt-outs from model training. Check each provider's terms.",
+        "**Set retention to the minimum.** Turn off chat history where you can, or set short automatic deletion. De Cock's advice to AI providers applies to you too: keep less.",
+        "**Separate identity from content.** Where possible, use tools or settings that pseudonymise users, so a disclosed log does not point straight to a named employee or client.",
+        "**Train your team once, then remind them.** A 30-minute session on what not to paste covers the AI-literacy duty and prevents most problems."
+      ]],
+
+      ["h2", "The point"],
+      ["p", "The law may one day recognise that a conversation with an AI is part of how we think, and deserves strong protection. De Cock makes a persuasive case that it should. But no business should bet its client data on a legal theory that does not yet exist."],
+      ["note", "Need an AI-use policy or a GDPR check of the AI tools your team uses? Our *Compliance-Handbuch für KMU* covers GDPR, the AI Act, NIS2 and the DSA — and we set it up for you in practice. **Get in touch**."]
+    ],
+    sources: [
+      ["Cybersecurity News — Judge orders OpenAI to release 20 million anonymised ChatGPT chats (Jan 2026)", "https://cybersecuritynews.com/openai-20-million-chatgpt-chats/"],
+      ["eWeek — OpenAI ordered to hand over 20M ChatGPT logs", "https://www.eweek.com/news/openai-chatgpt-logs-new-york-times-copyright-mdl/"],
+      ["GDPR — Regulation (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj"],
+      ["Trade Secrets Directive — Directive (EU) 2016/943 (EUR-Lex)", "https://eur-lex.europa.eu/eli/dir/2016/943/oj"],
+      ["AI Act — Regulation (EU) 2024/1689 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"]
+    ]
+  },
+  {
     slug: "ai-agents-human-judgment",
     tag: "AI",
     t: "Who Holds the Anchor? Why AI Agents Still Need Human Judgment",

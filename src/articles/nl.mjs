@@ -1,6 +1,58 @@
 // Journal-artikelen — Nederlands
 export default [
   {
+    slug: "ai-chats-court-company-data",
+    tag: "AI & AVG",
+    t: "Uw AI-chats kunnen in de rechtbank belanden",
+    mt: "AI-chats in de rechtbank: wat betekent dat voor het mkb?",
+    d: "Een Amerikaanse rechter liet OpenAI 20 miljoen ChatGPT-gesprekken overdragen. Wat dat betekent voor het Europese mkb – en vijf stappen om uw bedrijfsgegevens te beschermen.",
+    lead: "Veel bedrijven behandelen AI-chats als hardop denken. Juridisch lijken ze meer op e-mails op de server van een ander – en een Amerikaanse rechter heeft net laten zien dat ze in een procedure kunnen worden opgevraagd.",
+    date: "november 2026", iso: "2026-11-14",
+    blocks: [
+      ["p", "In januari 2026 bevestigde een Amerikaanse federale rechter een bevel: OpenAI moet 20 miljoen ChatGPT-gesprekken overdragen aan de New York Times en andere uitgevers, in een zaak over auteursrecht. De logs waren geanonimiseerd en werden gedeeld onder een beschermingsbevel. Toch is de boodschap voor elk bedrijf duidelijk: wat uw team in een AI-tool typt, is een vastlegging. En vastleggingen kunnen worden opgevraagd."],
+      ["quote", "Behandel AI-chats vandaag al als bedrijfsdocumenten – hoe de rechter later ook beslist."],
+
+      ["h2", "Een juridisch gat waar niemand op rekende"],
+      ["p", "In een nieuw artikel in het Journal of Free Speech Law legt Caroline De Cock de vinger op de zere plek. Mensenrechten beschermen van oudsher twee ruimtes. De eerste zijn uw gedachten, het *forum internum*, absoluut beschermd. De tweede is wat u in het openbaar zegt, het *forum externum*, dat de staat om goede redenen mag beperken."],
+      ["p", "Die tweedeling werkte zolang denken geen sporen naliet. Vandaag schrijven mensen concepten, testen ze ideeën en uiten ze halfafgemaakte zorgen in een chatbot. Elk van die stappen wordt bij een aanbieder opgeslagen en kan in een procedure worden opgevraagd."],
+      ["p", "De Cock stelt een derde ruimte voor tussen gedachte en uiting: het **forum interstitiale**. Dat zou voorlopige, niet-gedeelde denkstappen beschermen – een zoekopdracht, een concept, een argument dat u uitprobeert en weer laat vallen. Volgens haar stellen rechters de verkeerde vraag als ze nagaan of een chatbot \"lijkt op\" een advocaat of therapeut. De betere vraag is wat de persoon aan het doen was. Meestal: nadenken."],
+      ["p", "Het is een sterk argument, maar voorlopig blijft het een voorstel. Geen rechter of wetgever heeft het overgenomen. Tot dat gebeurt, moeten bedrijven plannen met het recht zoals het nu is."],
+
+      ["h2", "Waarom dit relevant is voor het Europese mkb"],
+      ["p", "Een Amerikaanse auteursrechtzaak lijkt ver af te staan van een adviesbureau in Utrecht of een transportbedrijf in Rotterdam. In de praktijk raakt het u op vier manieren."],
+      ["ul", [
+        "**Uw gegevens staan bij Amerikaanse aanbieders.** De meeste bekende AI-tools worden door Amerikaanse bedrijven aangeboden. Hun logs kunnen bewijs worden in Amerikaanse procedures, wat uw Europese contract ook zegt over vertrouwelijkheid.",
+        "**De AVG geldt ook voor wat medewerkers invoeren.** Klantnamen, cv's of gezondheidsgegevens in een chatbot zijn persoonsgegevens. U hebt een grondslag nodig, een verwerkersovereenkomst als de aanbieder verwerker is, en een duidelijke bewaartermijn (artikelen 5, 28 en 32 AVG).",
+        "**Bedrijfsgeheimen vragen om redelijke maatregelen.** Volgens de Wet bescherming bedrijfsgeheimen, die EU-richtlijn 2016/943 omzet, is informatie alleen beschermd als u redelijke maatregelen neemt om haar geheim te houden. Wie medewerkers prijsmodellen of broncode in consumentenchatbots laat plakken, verzwakt die positie.",
+        "**De AI-verordening vraagt AI-geletterdheid.** Sinds februari 2025 moeten organisaties die AI-systemen gebruiken maatregelen nemen om de AI-geletterdheid van hun personeel op te bouwen (artikel 4). Een schriftelijk AI-beleid is het eenvoudigste bewijs."
+      ]],
+
+      ["h2", "Het commerciële risico, helder gezegd"],
+      ["p", "Het gevaar is zelden één spectaculair datalek. Het is de langzame opeenstapeling van gevoelige informatie op plekken die u niet beheert: de salesmanager die een offerte schrijft, de HR-medewerker die een ontslagdossier samenvat, de oprichter die een second opinion over een contract vraagt."],
+      ["p", "Ontstaat er een geschil, dan vraagt de wederpartij waar uw documenten staan. \"In de chatgeschiedenis van onze medewerkers\" is geen antwoord dat u wilt geven."],
+
+      ["h2", "Vijf stappen voor dit kwartaal"],
+      ["check", [
+        "**Schrijf een AI-beleid van één pagina.** Toegestane tools, wat nooit mag worden ingevoerd (persoonsgegevens van klanten, bedrijfsgeheimen, juridische dossiers) en bij wie men terechtkan bij twijfel.",
+        "**Gebruik zakelijke accounts, geen privéaccounts.** Team- en enterpriseabonnementen bieden meestal een verwerkersovereenkomst, beheerinstellingen en uitsluiting van modeltraining. Controleer de voorwaarden van elke aanbieder.",
+        "**Beperk de bewaartermijn.** Zet de chatgeschiedenis uit waar dat kan, of stel automatische verwijdering op korte termijn in. Het advies van De Cock aan AI-aanbieders geldt ook voor u: bewaar minder.",
+        "**Scheid identiteit en inhoud.** Gebruik waar mogelijk tools of instellingen die gebruikers pseudonimiseren, zodat een vrijgegeven log niet direct naar een bij naam bekende medewerker of klant leidt.",
+        "**Train uw team één keer en herinner het regelmatig.** Een sessie van 30 minuten over wat niet in een chatbot hoort, dekt de plicht tot AI-geletterdheid en voorkomt de meeste problemen."
+      ]],
+
+      ["h2", "Waar het om draait"],
+      ["p", "Misschien erkent het recht ooit dat een gesprek met een AI deel is van hoe wij denken, en sterke bescherming verdient. De Cock onderbouwt overtuigend waarom dat zo zou moeten zijn. Maar geen bedrijf zou zijn klantgegevens moeten inzetten op een juridische theorie die nog niet bestaat."],
+      ["note", "Een AI-beleid nodig, of een AVG-check van de AI-tools die uw team gebruikt? Wij helpen u met AVG, AI-verordening, NIS2 en DSA – praktisch en in uw taal. **Neem contact op**."]
+    ],
+    sources: [
+      ["Cybersecurity News — Rechter beveelt OpenAI 20 miljoen geanonimiseerde ChatGPT-chats vrij te geven (EN, jan. 2026)", "https://cybersecuritynews.com/openai-20-million-chatgpt-chats/"],
+      ["eWeek — OpenAI ordered to hand over 20M ChatGPT logs (EN)", "https://www.eweek.com/news/openai-chatgpt-logs-new-york-times-copyright-mdl/"],
+      ["AVG — Verordening (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=nl"],
+      ["Richtlijn bedrijfsgeheimen — Richtlijn (EU) 2016/943 (EUR-Lex)", "https://eur-lex.europa.eu/eli/dir/2016/943/oj?locale=nl"],
+      ["AI-verordening — Verordening (EU) 2024/1689 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=nl"]
+    ]
+  },
+  {
     slug: "avg-fouten-mkb-website",
     tag: "AVG",
     cta: "check",

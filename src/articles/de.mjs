@@ -1,6 +1,58 @@
 // Journal-Artikel — Deutsch
 export default [
   {
+    slug: "ai-chats-court-company-data",
+    tag: "KI & DSGVO",
+    t: "Wenn KI-Chats vor Gericht landen",
+    mt: "Wenn KI-Chats vor Gericht landen: Risiko für KMU",
+    d: "Ein US-Gericht ließ OpenAI 20 Millionen ChatGPT-Gespräche herausgeben. Was das für europäische KMU bedeutet – und fünf Schritte zum Schutz Ihrer Unternehmensdaten.",
+    lead: "Viele Unternehmen behandeln KI-Chats wie lautes Nachdenken. Rechtlich sind sie eher E-Mails auf einem fremden Server – und ein US-Gericht hat gerade gezeigt, dass sie in einem Verfahren herausverlangt werden können.",
+    date: "November 2026", iso: "2026-11-14",
+    blocks: [
+      ["p", "Im Januar 2026 hat ein US-Bundesrichter eine Anordnung bestätigt: OpenAI muss 20 Millionen ChatGPT-Gespräche an die New York Times und weitere Verlage herausgeben. Es geht um eine Urheberrechtsklage. Die Protokolle wurden anonymisiert und unter einer Schutzanordnung übergeben. Die Botschaft an jedes Unternehmen ist trotzdem klar: Was Ihr Team in ein KI-Tool tippt, ist eine Aufzeichnung. Und Aufzeichnungen können herausverlangt werden."],
+      ["quote", "Behandeln Sie KI-Chats schon heute als Geschäftsunterlagen – egal, wie die Gerichte entscheiden."],
+
+      ["h2", "Eine Rechtslücke, mit der niemand gerechnet hat"],
+      ["p", "In einem neuen Beitrag im Journal of Free Speech Law benennt Caroline De Cock das Problem. Die Menschenrechte schützen seit jeher zwei Räume. Der eine sind Ihre Gedanken, das *forum internum*, absolut geschützt. Der andere ist das, was Sie öffentlich sagen, das *forum externum*, das der Staat aus guten Gründen einschränken darf."],
+      ["p", "Diese Trennung funktionierte, solange Denken keine Spuren hinterließ. Heute entwerfen Menschen Texte, testen Ideen und formulieren halbfertige Sorgen im Chatbot. Jeder dieser Schritte wird beim Anbieter gespeichert und kann in einem Verfahren angefordert werden."],
+      ["p", "De Cock schlägt einen dritten Raum zwischen Gedanke und Äußerung vor: das **forum interstitiale**. Es soll vorläufige, nicht geteilte Denkschritte schützen – eine Suche, einen Entwurf, ein Argument, das man ausprobiert und wieder verwirft. Gerichte stellen ihrer Ansicht nach die falsche Frage, wenn sie prüfen, ob ein Chatbot einem Anwalt oder Therapeuten „ähnelt“. Entscheidend sei, was der Mensch gerade tat. Meistens: Er dachte nach."],
+      ["p", "Das Argument ist überzeugend, bleibt aber vorerst ein Vorschlag. Kein Gericht und kein Gesetzgeber hat ihn bisher übernommen. Bis dahin müssen Unternehmen mit der geltenden Rechtslage planen."],
+
+      ["h2", "Warum das für europäische KMU relevant ist"],
+      ["p", "Ein US-Urheberrechtsfall scheint mit einer Beratung in Köln oder einer Spedition in Rotterdam wenig zu tun zu haben. Tatsächlich betrifft er Sie auf vier Wegen."],
+      ["ul", [
+        "**Ihre Daten liegen bei US-Anbietern.** Die meisten bekannten KI-Tools werden von US-Unternehmen betrieben. Deren Protokolle können in US-Verfahren zum Beweismittel werden – unabhängig davon, was Ihr EU-Vertrag zur Vertraulichkeit sagt.",
+        "**Die DSGVO gilt auch für das, was Mitarbeitende einfügen.** Kundennamen, Lebensläufe oder Gesundheitsangaben im Chatbot sind personenbezogene Daten. Sie brauchen eine Rechtsgrundlage, einen Auftragsverarbeitungsvertrag, wenn der Anbieter als Auftragsverarbeiter tätig ist, und eine klare Speicherfrist (Art. 5, 28 und 32 DSGVO).",
+        "**Geschäftsgeheimnisse brauchen angemessene Geheimhaltungsmaßnahmen.** Nach dem Geschäftsgeheimnisgesetz (GeschGehG), das die EU-Richtlinie 2016/943 umsetzt, sind Informationen nur geschützt, wenn Sie angemessene Maßnahmen zur Geheimhaltung treffen. Wer Kalkulationen oder Quellcode in Verbraucher-Chatbots kopieren lässt, schwächt diese Position.",
+        "**Die KI-Verordnung verlangt KI-Kompetenz.** Seit Februar 2025 müssen Organisationen, die KI-Systeme einsetzen, Maßnahmen ergreifen, um die KI-Kompetenz ihres Personals aufzubauen (Art. 4 KI-VO). Eine schriftliche KI-Richtlinie ist der einfachste Nachweis."
+      ]],
+
+      ["h2", "Das wirtschaftliche Risiko, klar gesagt"],
+      ["p", "Die Gefahr ist selten ein einzelnes spektakuläres Datenleck. Es ist die schleichende Ansammlung sensibler Inhalte an Orten, die Sie nicht kontrollieren: der Vertriebsleiter, der ein Angebot entwirft, die Personalreferentin, die eine Kündigungsakte zusammenfasst, die Gründerin, die eine zweite Meinung zu einem Vertrag einholt."],
+      ["p", "Kommt es zum Streit, fragt die Gegenseite, wo Ihre Unterlagen liegen. „In den Chatverläufen unserer Mitarbeitenden“ ist keine Antwort, die Sie geben möchten."],
+
+      ["h2", "Fünf Schritte für dieses Quartal"],
+      ["check", [
+        "**Eine einseitige KI-Richtlinie schreiben.** Erlaubte Tools, was nie eingegeben werden darf (personenbezogene Kundendaten, Geschäftsgeheimnisse, Rechtsakten) und wen man im Zweifel fragt.",
+        "**Geschäftskonten statt privater Konten nutzen.** Team- und Enterprise-Tarife bieten meist einen Auftragsverarbeitungsvertrag, Admin-Kontrollen und den Ausschluss vom Modelltraining. Prüfen Sie die Bedingungen jedes Anbieters.",
+        "**Speicherdauer minimieren.** Schalten Sie den Chatverlauf ab, wo möglich, oder stellen Sie eine kurze automatische Löschung ein. De Cocks Rat an KI-Anbieter gilt auch für Sie: weniger speichern.",
+        "**Identität und Inhalt trennen.** Nutzen Sie, wo möglich, Tools oder Einstellungen, die Nutzer pseudonymisieren – damit ein offengelegtes Protokoll nicht direkt zu einer namentlich bekannten Person führt.",
+        "**Das Team einmal schulen und regelmäßig erinnern.** Eine 30-minütige Schulung dazu, was nicht in den Chatbot gehört, erfüllt die Pflicht zur KI-Kompetenz und verhindert die meisten Probleme."
+      ]],
+
+      ["h2", "Worauf es ankommt"],
+      ["p", "Vielleicht erkennt das Recht eines Tages an, dass ein Gespräch mit einer KI Teil unseres Denkens ist und starken Schutz verdient. De Cock begründet überzeugend, warum es so sein sollte. Doch kein Unternehmen sollte seine Kundendaten auf eine Rechtstheorie setzen, die es noch nicht gibt."],
+      ["note", "Sie brauchen eine KI-Richtlinie oder einen DSGVO-Check der KI-Tools in Ihrem Team? Unser *Compliance-Handbuch für KMU* erklärt DSGVO, KI-Verordnung, NIS2 und DSA – und wir setzen es mit Ihnen praktisch um. **Sprechen Sie uns an**."]
+    ],
+    sources: [
+      ["Cybersecurity News — Gericht ordnet Herausgabe von 20 Mio. anonymisierten ChatGPT-Chats an (EN, Jan. 2026)", "https://cybersecuritynews.com/openai-20-million-chatgpt-chats/"],
+      ["eWeek — OpenAI ordered to hand over 20M ChatGPT logs (EN)", "https://www.eweek.com/news/openai-chatgpt-logs-new-york-times-copyright-mdl/"],
+      ["DSGVO — Verordnung (EU) 2016/679 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de"],
+      ["Geschäftsgeheimnis-Richtlinie — Richtlinie (EU) 2016/943 (EUR-Lex)", "https://eur-lex.europa.eu/eli/dir/2016/943/oj?locale=de"],
+      ["KI-Verordnung — Verordnung (EU) 2024/1689 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=de"]
+    ]
+  },
+  {
     slug: "bfsg-website-barrierefrei-pflicht",
     tag: "BFSG",
     t: "Muss meine Website barrierefrei sein? Das BFSG für kleine Unternehmen",
