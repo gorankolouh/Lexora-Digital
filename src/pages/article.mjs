@@ -31,6 +31,7 @@ function blocks(list) {
     if (k === "check") return `<ul class="checklist">${v.map((x) => `<li>${icon("check", 16, 2)}<span>${fmt(x)}</span></li>`).join("")}</ul>`;
     if (k === "quote") return `<blockquote class="pull"><p>${fmt(v)}</p></blockquote>`;
     if (k === "note") return `<p class="a-note">${fmt(v)}</p>`;
+    if (k === "video") return `<figure class="a-video"><video controls playsinline preload="none" poster="${esc(v.poster)}" width="${v.w}" height="${v.h}"><source src="${esc(v.src)}" type="video/mp4"></video>${v.cap ? `<figcaption>${fmt(v.cap)}</figcaption>` : ""}</figure>`;
     return `<p>${fmt(v)}</p>`;
   }).join("\n");
 }
@@ -53,7 +54,7 @@ export function article(t, a) {
         <div class="a-cta">${btn(`${path(t, cta)}${cta === "contact" ? "#project" : ""}`, cta === "check" ? t.nav.check[0] : u.talk, true)}</div>
         <div class="author">
           <img src="/assets/img/art/founder-640.webp" width="72" height="96" alt="" loading="lazy" decoding="async">
-          <div><p class="author-n">Goran Kolouh</p><p class="author-r">${esc(t.pages.about.photoCap.split("—")[1]?.trim() || "")} · Lexora Digital</p><p class="small dim">${esc(u.bio)}</p></div>
+          <div><p class="author-n">Goran Kolouh</p><p class="author-r">${esc(t.pages.about.photoCap.split("—")[1]?.trim() || "")} · Lexora Digital</p><p class="small dim">${esc(a.bio || u.bio)}</p></div>
         </div>
         <div class="sources"><p class="ml plain">${esc(u.sources)}</p><ol>${a.sources.map(([l, h]) => `<li><a href="${esc(h)}" rel="noopener" target="_blank">${esc(l)} ${icon("arrowUR", 13, 1.8)}</a></li>`).join("")}</ol></div>
         <p class="a-disc">${icon("info", 15, 1.6)}<span>${esc(u.disclaimer)}</span></p>

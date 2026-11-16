@@ -1,6 +1,87 @@
 // Journal articles — English. Block types: p, h2, h3, ul, quote, note, check (checklist).
 export default [
   {
+    slug: "ai-could-not-explain-itself",
+    tag: "AI Act",
+    cta: "contact",
+    t: "The AI That Couldn't Explain Itself",
+    mt: "The AI That Couldn't Explain Itself: Bias, Transparency and the EU AI Act",
+    d: "ChatGPT refused a political caricature of Benjamin Netanyahu three times, made the same image of Mark Rutte in seconds, and admitted it could not explain why. What this says about AI transparency, and what the EU AI Act does and does not cover.",
+    lead: "What one book cover taught me about bias, transparency and the EU AI Act.",
+    date: "November 2026", iso: "2026-11-16",
+    bio: "Goran Kolouh is the founder of Lexora Digital and author of the \"Compliance-Handbuch für KMU\" on GDPR, the EU AI Act and NIS2. In 2026 he made three formal filings with the European Commission and the EU AI Office: a complaint against X under the Digital Services Act, a submission on the DSA guidelines for protecting minors, and a submission on a gap in the AI Act's rules for AI used in hiring.",
+    blocks: [
+      ["h2", "A simple request"],
+      ["p", "I am writing a book about the influence of Israel in the world: lobbying, political pressure, and how it shapes the decisions of European and American governments. Like many authors today, I used AI to help me design the cover of my own book."],
+      ["p", "My first draft showed a puppet master pulling the strings of two figures, one in the colours of the United States, one in the colours of the European Union. The puppet master wore the Israeli flag, with the Star of David at its centre."],
+      ["p", "I looked at it and saw a problem. I was concerned that this first image, with the Israeli flag and the Star of David as part of it, could be seen as an antisemitic symbol. That was never my intention. My book criticises the policies of a government, not a religion or a people. So I decided to remove the star and replace the anonymous figure with a caricature of the politician whose policies the book is actually about: Benjamin Netanyahu."],
+      ["p", "I was trying to make the cover more precise and less open to misunderstanding. That is when the AI stopped cooperating."],
+      ["video", { src: "/assets/video/journal/ai-could-not-explain-itself.mp4", poster: "/assets/video/journal/ai-could-not-explain-itself-poster.jpg", w: 720, h: 1600, cap: "The full screen recording of the conversation, unedited (3:27, no sound)." }],
+
+      ["h2", "What happened"],
+      ["p", "I asked ChatGPT to remove the star and make the controlling figure a caricature of Netanyahu."],
+      ["p", "It refused. The reason given: a \"public-figure safety filter.\""],
+      ["p", "I explained that this was not a realistic image but a caricature, one of the oldest forms of political expression in Europe. ChatGPT agreed with me. It said that a political caricature of Netanyahu is generally allowed, including an unflattering one. Then it tried again, and the request was blocked again."],
+      ["p", "So, in the same conversation, I asked for exactly the same image with a different politician: Mark Rutte, former Prime Minister of the Netherlands and Secretary General of NATO."],
+      ["p", "It was created in seconds. No filter, no warning, no problem."],
+      ["quote", "Mark Rutte is a public figure too."],
+
+      ["h2", "\"I cannot honestly tell you why\""],
+      ["p", "I asked ChatGPT to explain the difference. Its answer surprised me more than the refusal itself."],
+      ["p", "It said there should not be a different standard for Mark Rutte and Benjamin Netanyahu. It said what happened was inconsistent. And then it said: it gave no detailed explanation, \"so I cannot honestly tell you why.\""],
+      ["p", "To be sure, I asked once more, this time to replace Rutte with Netanyahu on the very cover it had just created. Same composition, same style, only the face different. Refused, a third time."],
+      ["p", "I hold paid subscriptions with Claude, ChatGPT, Gemini and Kimi. I use AI every single day for research, writing and translation. This was the first time an AI told me directly that it cannot explain one of its own decisions."],
+
+      ["h2", "Not the first time, only the clearest"],
+      ["p", "I have written many articles about Israel, Palestine and the double standards of European politics. Again and again, AI tools have pushed me toward softer wording when the subject was Israel."],
+      ["p", "When I describe Netanyahu as a war criminal, I am not inventing anything. The International Criminal Court has issued an arrest warrant against him for war crimes and crimes against humanity. Yet AI tools regularly suggest milder formulations. I rarely experience the same on other subjects."],
+      ["p", "Until now, I could only describe this as a feeling. This time, everything is recorded: every prompt, every refusal, and the admission that the system cannot explain itself."],
+
+      ["h2", "Why this matters far beyond one picture"],
+      ["p", "This is not about one book cover."],
+      ["p", "Hundreds of millions of people use AI every day. They ask it what to read, what to buy, how to write, and what to think about the news. AI is quickly becoming the layer between people and information."],
+      ["p", "If such a system treats political figures differently, and cannot even tell us why, then we have to ask some serious questions:"],
+      ["ul", [
+        "How many other answers are shaped in the same way, without anyone noticing?",
+        "Who decides where these lines are drawn?",
+        "How are these models trained, and on what?",
+        "Why are users not allowed to know the rules that shape what they see?"
+      ]],
+      ["p", "A filter that nobody can see, applied by rules nobody can read, is not neutral. It is a decision. And decisions about political expression should never be made in the dark."],
+
+      ["h2", "What the EU AI Act says, and what it does not"],
+      ["p", "As someone who works in EU compliance, I want to be precise here."],
+      ["p", "The EU AI Act brings real transparency obligations. Since August 2025, providers of general-purpose AI models must prepare technical documentation and publish a summary of the content used to train their models. People must be told when they are interacting with AI, and AI-generated content must be recognisable as such."],
+      ["p", "But the AI Act does not give an ordinary user the right to know why a chatbot refused a request. The right to an explanation exists only for certain decisions made by high-risk AI systems, such as in employment or credit. A general-purpose chatbot that decides which politicians may be caricatured falls outside that protection."],
+      ["p", "That is a gap. These systems now influence public debate on a scale no newspaper ever had, and we still have no right to understand their rules."],
+
+      ["h2", "What should change"],
+      ["p", "I believe three things are necessary:"],
+      ["check", [
+        "**Published refusal policies.** AI providers should publish the rules that govern what their systems refuse, especially for political and public figures.",
+        "**Real explanations.** A user who is refused should receive a meaningful reason, not just a label like \"public-figure filter.\"",
+        "**Independent checks.** Regulators and researchers should be able to test whether those rules are applied equally, regardless of the country or person involved."
+      ]],
+      ["p", "AI should not choose political sides. And if it does, we deserve to know."],
+
+      ["h2", "What I am doing next"],
+      ["p", "I did not stop at screenshots. In the same conversation, I asked ChatGPT how to export the data of this chat, and I requested a full export of my data. That step is also visible in the recording."],
+      ["p", "I plan to file an official complaint under Article 85 of the EU AI Act, which gives anyone the right to complain to the competent authority. Lexora Digital is based in Brussels, so I will file in Belgium. Because ChatGPT runs on a general-purpose AI model, my complaint goes to the EU AI Office in Brussels, which supervises these models at European level. I will also send it to the Belgian Institute for Postal Services and Telecommunications (BIPT), the authority Belgium has chosen to enforce the AI Act. Belgium has still not formally put that authority in place, more than a year after the EU deadline. That delay is part of the problem too."],
+      ["p", "My complaint will rest on three points: the unequal treatment of two comparable public figures, the system's inability to explain its own decision, and the lack of transparency about the rules behind it. I want this case registered by the authorities, not only discussed on social media."],
+      ["p", "Why go that far for one picture? Because we use AI tools in almost every part of our daily lives. If these tools are indirectly shaping our opinions, or steering our decisions in favour of one state, that is very dangerous. In my experience, this is not a one-time error. It happens again and again, and always in the same direction. That deserves an investigation, and a closer look by those whose job it is to look."],
+
+      ["h2", "Judge for yourself"],
+      ["p", "The full screen recording of this conversation is at the top of this article. Watch it and decide for yourself what you see."],
+      ["p", "And if you have experienced something similar, I want to hear from you. One case can be dismissed. Many cases cannot."]
+    ],
+    sources: [
+      ["ICC press release, 21 November 2024: warrants of arrest for Benjamin Netanyahu and Yoav Gallant", "https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges"],
+      ["EU AI Act – Regulation (EU) 2024/1689, incl. Articles 53, 85 and 86 (EUR-Lex)", "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"],
+      ["European Commission – AI Act complaint tool (AI Office)", "https://digital-strategy.ec.europa.eu/en/policies/ai-act-complaints-tool"],
+      ["VRT NWS, 29 July 2026: no AI regulator yet in Belgium (Dutch)", "https://www.vrt.be/vrtnws/nl/2026/07/29/geen-toezichthouder-wel-al-strengere-regels-hoe-ver-staat-belg/"]
+    ]
+  },
+  {
     slug: "copy-privacy-policy",
     tag: "GDPR",
     cta: "check",

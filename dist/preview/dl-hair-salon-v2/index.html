@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DL Hair Salon – Abbey Street Upper, Dublin 1</title>
+<meta name="description" content="DL Hair Salon on Abbey Street Upper, Dublin 1. Colour, cuts, balayage and curls for women and men. Open seven days, late Thursday to Saturday.">
+<meta name="theme-color" content="#0F0E0C">
+<style>
+@font-face{font-family:'Syne';font-style:normal;font-weight:500;font-display:swap;src:url(assets/syne-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Syne';font-style:normal;font-weight:700;font-display:swap;src:url(assets/syne-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Syne';font-style:normal;font-weight:800;font-display:swap;src:url(assets/syne-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:300;font-display:swap;src:url(assets/dm-sans-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(assets/dm-sans-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url(assets/dm-sans-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url(assets/dm-sans-latin-600-normal.woff2) format('woff2')}
+</style>
+<style>
+:root{
+  --bg:#0F0E0C; --panel:#181612; --panel2:#211D17;
+  --oak:#C99A5B; --glow:#F2B761; --cream:#F1EADC;
+  --mute:rgba(241,234,220,.64); --faint:rgba(241,234,220,.4); --line:rgba(241,234,220,.14);
+  --disp:'Syne','Arial Black',system-ui,sans-serif; --sans:'DM Sans',system-ui,-apple-system,sans-serif;
+  --g:clamp(20px,5vw,64px); --max:1280px; --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--cream);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
+.slats{background-image:repeating-linear-gradient(90deg,rgba(201,154,91,.2) 0 9px,rgba(201,154,91,0) 9px 17px)}
+.kicker{display:inline-flex;align-items:center;gap:10px;margin:0;font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--glow)}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--glow);box-shadow:0 0 14px 2px rgba(242,183,97,.7)}
+h1,h2,h3{font-family:var(--disp);margin:0;letter-spacing:-.02em}
+.h2{font-weight:800;font-size:clamp(38px,5.6vw,76px);line-height:1;margin-top:18px}
+.h2 em,h1 em{font-style:normal;color:var(--glow)}
+.lede{color:var(--mute);font-weight:300;font-size:18px;max-width:520px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font:600 15px/1 var(--sans);border:1px solid transparent;cursor:pointer;transition:transform .35s var(--ease),background .35s,color .35s,border-color .35s,box-shadow .35s}
+.btn svg{width:19px;height:19px;fill:currentColor;flex:none}
+.btn-glow{background:var(--glow);color:#1A1307;box-shadow:0 0 0 0 rgba(242,183,97,.5)}
+.btn-glow:hover{transform:translateY(-2px);box-shadow:0 10px 40px -6px rgba(242,183,97,.6)}
+.btn-line{border-color:var(--line);color:var(--cream)}
+.btn-line:hover{border-color:var(--cream)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:40;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+.hdr.on{background:rgba(15,14,12,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo{display:flex;align-items:baseline;gap:12px;font-family:var(--disp);font-weight:800;font-size:26px;letter-spacing:.2em}
+.logo small{font:500 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.nav{display:flex;gap:clamp(18px,2.6vw,38px);font-size:15px;color:var(--mute)}
+.nav a{transition:color .3s}.nav a:hover{color:var(--cream)}
+.hdr .btn{min-height:44px;padding:0 20px;font-size:14px}
+@media (max-width:860px){.nav{display:none}}
+
+/* hero */
+.hero{position:relative;padding:calc(72px + clamp(40px,7vw,96px)) 0 clamp(56px,8vw,110px);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0 0 0 46%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 30%,#000 80%,transparent);mask-image:linear-gradient(90deg,transparent,#000 30%,#000 80%,transparent);background-image:repeating-linear-gradient(90deg,rgba(201,154,91,.22) 0 9px,rgba(201,154,91,0) 9px 17px);opacity:.75}
+.hero::after{content:"";position:absolute;right:-10%;top:10%;width:60%;aspect-ratio:1;background:radial-gradient(closest-side,rgba(242,183,97,.2),transparent);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,80px);align-items:center}
+h1{font-weight:800;font-size:clamp(52px,8.4vw,124px);line-height:.92;margin-top:22px;text-transform:uppercase}
+.hero .lede{margin:28px 0 0}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:30px;font-size:14px;color:var(--mute)}
+.hero-meta b{color:var(--cream);font-weight:600}
+.hero-meta .st{color:var(--glow);letter-spacing:2px}
+.mirrors{position:relative;aspect-ratio:1/1.02;width:100%;max-width:560px;margin-left:auto}
+.mirror{position:absolute;border-radius:50%;overflow:hidden;aspect-ratio:1;background:var(--panel2);box-shadow:0 0 0 4px #17120A,0 0 0 6px rgba(242,183,97,.95),0 0 70px 10px rgba(242,183,97,.38)}
+.mirror img{width:100%;height:100%;object-fit:cover}
+.m1{width:66%;left:0;top:0}
+.m2{width:44%;right:0;top:40%}
+.m3{width:34%;left:14%;bottom:0}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero::before{inset:46% 0 0 0;-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,#000 80%,transparent);mask-image:linear-gradient(180deg,transparent,#000 30%,#000 80%,transparent)}
+  .mirrors{max-width:440px;margin:10px auto 0}
+}
+
+/* stats */
+.stats{border-block:1px solid var(--line);background:var(--panel)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 0 28px;text-align:center;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font:800 clamp(26px,3.4vw,42px)/1 var(--disp);color:var(--glow)}
+.stat span{display:block;margin-top:10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+@media (max-width:700px){.stats .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+section{padding:clamp(72px,9vw,130px) 0}
+
+/* menu */
+.menu-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,6vw,96px);align-items:start}
+.menu-side{position:sticky;top:104px}
+.menu-side .lede{margin:22px 0 0}
+.menu-photo{margin:34px 0 0;border-radius:22px;overflow:hidden;aspect-ratio:4/3.3;border:1px solid var(--line)}
+.menu-photo img{width:100%;height:100%;object-fit:cover}
+.item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;padding:26px 0;border-top:1px solid var(--line);align-items:baseline}
+.item:last-of-type{border-bottom:1px solid var(--line)}
+.item h3{font-weight:700;font-size:clamp(21px,2.2vw,28px);letter-spacing:-.01em}
+.item p{grid-column:1;margin:0;color:var(--mute);font-weight:300;font-size:16px;max-width:460px}
+.item .price{grid-row:1;grid-column:2;font:700 clamp(18px,2vw,24px)/1 var(--disp);color:var(--glow);white-space:nowrap}
+.item .price small{font:400 13px/1 var(--sans);color:var(--mute);margin-right:6px}
+.item .price.ask{font:500 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:9px 12px;border-radius:999px}
+.menu-note{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:30px;color:var(--mute);font-size:15px}
+@media (max-width:860px){.menu-grid{grid-template-columns:1fr}.menu-side{position:static}}
+@media (max-width:560px){.item .price.ask{grid-row:auto;grid-column:1;justify-self:start;margin-top:8px}}
+
+/* gallery */
+.gal{background:var(--panel);padding-bottom:clamp(60px,7vw,100px)}
+.gal-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px}
+.gal-head p{margin:0;color:var(--mute);max-width:360px;font-weight:300}
+.strip{display:flex;gap:18px;margin-top:44px;padding:6px var(--g) 22px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--oak) transparent}
+.strip::before,.strip::after{content:"";flex:0 0 max(0px,calc((100vw - var(--max))/2))}
+.card{flex:0 0 clamp(230px,26vw,330px);scroll-snap-align:center;margin:0}
+.card .ph{border-radius:200px 200px 18px 18px;overflow:hidden;aspect-ratio:3/4.2;border:1px solid var(--line)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.card:hover img{transform:scale(1.05)}
+.card figcaption{display:flex;justify-content:space-between;gap:10px;margin-top:14px;font-size:14px}
+.card figcaption span{color:var(--mute)}
+.swipe{margin:6px 0 0;text-align:center;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:center}
+.about-pics{position:relative;padding:0 14% 12% 0}
+.about-pics .big{border-radius:22px;overflow:hidden;aspect-ratio:4/4.6;border:1px solid var(--line)}
+.about-pics .big img{width:100%;height:100%;object-fit:cover}
+.about-pics .small{position:absolute;right:0;bottom:0;width:44%;border-radius:50%;overflow:hidden;aspect-ratio:1;box-shadow:0 0 0 4px #17120A,0 0 0 6px rgba(242,183,97,.95),0 0 60px 8px rgba(242,183,97,.35)}
+.about-pics .small img{width:100%;height:100%;object-fit:cover}
+.about p.body{color:var(--mute);font-weight:300;margin:22px 0 0;max-width:520px}
+.points{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:0}
+.points li{display:grid;grid-template-columns:44px 1fr;gap:6px 14px;padding:18px 0;border-top:1px solid var(--line)}
+.points li:last-child{border-bottom:1px solid var(--line)}
+.points i{font:700 14px/1.9 var(--disp);font-style:normal;color:var(--glow)}
+.points b{font-weight:600}
+.points span{grid-column:2;color:var(--mute);font-size:15px;font-weight:300}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* reviews */
+.rev{background:var(--panel);position:relative;overflow:hidden}
+.rev::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(201,154,91,.2) 0 9px,rgba(201,154,91,0) 9px 17px);opacity:.28;-webkit-mask-image:linear-gradient(180deg,#000,transparent 70%);mask-image:linear-gradient(180deg,#000,transparent 70%)}
+.rev .wrap{position:relative}
+.rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px}
+.score{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--mute)}
+.score b{font:800 46px/1 var(--disp);color:var(--cream)}
+.score .st{color:var(--glow);letter-spacing:3px;display:block;font-size:16px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.q{margin:0;padding:30px 28px;border-radius:22px;background:var(--bg);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:230px}
+.q blockquote{margin:0;font:700 clamp(20px,2vw,25px)/1.25 var(--disp);letter-spacing:-.01em}
+.q figcaption{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.q figcaption b{color:var(--glow);font-weight:600}
+.rev-more{margin:34px 0 0}
+.rev-more a{border-bottom:1px solid var(--oak);padding-bottom:4px;font-size:15px}
+@media (max-width:860px){.quotes{grid-template-columns:1fr}.q{min-height:0}}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:start}
+.addr{font:700 clamp(24px,2.8vw,36px)/1.2 var(--disp);margin:30px 0 0;letter-spacing:-.01em}
+.addr a{border-bottom:1px solid var(--oak)}
+.contact{list-style:none;margin:30px 0 0;padding:0}
+.contact li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.contact li:last-child{border-bottom:1px solid var(--line)}
+.contact small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.visit-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hours{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,38px)}
+.hours-h{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.hours-h h3{font-weight:700;font-size:24px}
+.status{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);display:inline-flex;align-items:center;gap:8px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--faint)}
+.status.open{color:var(--glow)}.status.open::before{background:var(--glow);box-shadow:0 0 12px 2px rgba(242,183,97,.7)}
+.row{display:flex;justify-content:space-between;padding:13px 0;border-top:1px solid var(--line);color:var(--mute)}
+.row b{font-weight:500;color:var(--cream);font-variant-numeric:tabular-nums}
+.row.today{color:var(--glow)}.row.today b{color:var(--glow)}
+.hours p{margin:16px 0 0;font-size:14px;color:var(--faint)}
+@media (max-width:860px){.visit-grid{grid-template-columns:1fr}}
+
+/* footer */
+.foot{border-top:1px solid var(--line);padding:clamp(48px,6vw,80px) 0 110px;text-align:center;position:relative;overflow:hidden}
+.foot .big{font:800 clamp(110px,26vw,360px)/.8 var(--disp);letter-spacing:.08em;color:transparent;-webkit-text-stroke:1px rgba(242,183,97,.55);margin:0 0 30px;padding-left:.08em}
+.foot p{margin:6px 0;color:var(--mute);font-size:14px}
+.foot nav{display:flex;justify-content:center;gap:22px;margin-top:16px;font-size:13px;color:var(--faint)}
+
+.bar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;transform:translateY(140%);transition:transform .5s var(--ease)}
+.bar.show{transform:none}
+.bar .btn{flex:1;min-height:52px;box-shadow:0 14px 40px -10px rgba(0,0,0,.8)}
+.bar .call{flex:0 0 52px;padding:0;background:var(--panel2);border-color:var(--line);color:var(--cream)}
+@media (max-width:860px){.bar{display:flex}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.96 1.35-.5.05-1.13.07-1.83-.11a16.7 16.7 0 0 1-1.65-.61c-2.9-1.25-4.8-4.17-4.94-4.36-.15-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.83 2 .9 2.15.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.3-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.07 1.31 2.36 1.46.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.2-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.49.22.56.34.07.12.07.7-.17 1.37z"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+</svg>
+
+<header class="hdr" id="hdr">
+<div class="wrap">
+<a href="#top" class="logo" aria-label="DL Hair Salon">DL<small>Hair Salon</small></a>
+<nav class="nav" aria-label="Main">
+<a href="#menu">Price list</a><a href="#work">Our work</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+</nav>
+<a href="#" class="btn btn-glow wa"><svg><use href="#wa"/></svg>Book</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<p class="kicker">Abbey Street Upper · Dublin 1</p>
+<h1>Good hair<br>lives <em>here.</em></h1>
+<p class="lede">Colour, cuts and curls from a small team that takes its time. Pop in off Abbey Street, tell us what you're after, and leave looking like the best version of you.</p>
+<div class="hero-cta">
+<a href="#" class="btn btn-glow wa"><svg><use href="#wa"/></svg>Book on WhatsApp</a>
+<a href="#menu" class="btn btn-line">See the price list</a>
+</div>
+<p class="hero-meta"><span><b>4.9</b> <span class="st">★★★★★</span> on Google</span><span>Open <b>7 days</b></span><span>Late till <b>8pm</b> Thu to Sat</span></p>
+</div>
+<div class="mirrors" aria-label="Recent work from the salon">
+<div class="mirror m1"><img src="assets/img-f2351506.jpg" alt="Long waves with caramel balayage"></div>
+<div class="mirror m2"><img src="assets/img-d02080f3.jpg" alt="Ash blonde waves" style="object-position:50% 40%"></div>
+<div class="mirror m3"><img src="assets/img-583436ec.jpg" alt="Soft dark curls"></div>
+</div>
+</div>
+</section>
+
+<div class="stats">
+<div class="wrap">
+<div class="stat"><b>4.9</b><span>Google rating</span></div>
+<div class="stat"><b>74</b><span>Google reviews</span></div>
+<div class="stat"><b>7/7</b><span>Days a week</span></div>
+<div class="stat"><b>8pm</b><span>Late Thu · Fri · Sat</span></div>
+</div>
+</div>
+
+<section id="menu">
+<div class="wrap menu-grid">
+<div class="menu-side">
+<p class="kicker rv">Price list</p>
+<h2 class="h2 rv d1">Clear prices.<br><em>No surprises.</em></h2>
+<p class="lede rv d2">We talk it through before we start, so you know what you're getting and what it costs. Colour is quoted on the day, once we've seen your hair.</p>
+<figure class="menu-photo rv d3"><img src="assets/img-b4d63c01.jpg" alt="Inside DL Hair Salon: oak slat wall with round backlit mirrors"></figure>
+</div>
+<div>
+<div class="item rv"><h3>Cut &amp; finish</h3><span class="price"><small>from</small>€28</span><p>Wash, cut and blow dry for women. Trims, layers, fringes or a full restyle.</p></div>
+<div class="item rv"><h3>Dry cut</h3><span class="price"><small>from</small>€25</span><p>In a hurry? A precise cut on dry hair, no wash needed.</p></div>
+<div class="item rv"><h3>Blow dry</h3><span class="price"><small>from</small>€17</span><p>Wash and blow dry. Sleek, bouncy or waved, whatever the plans are.</p></div>
+<div class="item rv"><h3>Gents</h3><span class="price">€22</span><p>Wash, cut and style. Crops, fades and scissor cuts.</p></div>
+<div class="item rv"><h3>Colour &amp; blondes</h3><span class="price ask">Quote on the day</span><p>Root touch-ups, all-over colour and clean, bright blondes.</p></div>
+<div class="item rv"><h3>Highlights &amp; balayage</h3><span class="price ask">Quote on the day</span><p>Fine highlights or hand-painted balayage, blended so it grows out softly.</p></div>
+<div class="item rv"><h3>Curls &amp; care</h3><span class="price ask">Quote on the day</span><p>Lasting curls, occasion styling and treatments for tired hair.</p></div>
+<div class="menu-note rv"><span>Want a rough colour price first? Send us a photo.</span><a href="#" class="btn btn-line wa"><svg><use href="#wa"/></svg>Ask on WhatsApp</a></div>
+</div>
+</div>
+</section>
+
+<section class="gal" id="work">
+<div class="wrap gal-head">
+<div><p class="kicker rv">Our work</p><h2 class="h2 rv d1">Fresh from <em>the chair.</em></h2></div>
+<p class="rv d2">Real clients, real results, photographed in the salon straight after the finish.</p>
+</div>
+<div class="strip" tabindex="0" aria-label="Photo gallery, scroll sideways">
+<figure class="card"><div class="ph"><img src="assets/img-f2351506.jpg" alt="Caramel balayage on long waves"></div><figcaption><b>Caramel balayage</b><span>01</span></figcaption></figure>
+<figure class="card"><div class="ph"><img src="assets/img-d02080f3.jpg" alt="Ash blonde with a soft root"></div><figcaption><b>Ash blonde</b><span>02</span></figcaption></figure>
+<figure class="card"><div class="ph"><img src="assets/img-583436ec.jpg" alt="Soft defined curls"></div><figcaption><b>Soft curls</b><span>03</span></figcaption></figure>
+<figure class="card"><div class="ph"><img src="assets/img-621146bd.jpg" alt="Glossy black waves"></div><figcaption><b>Glossy waves</b><span>04</span></figcaption></figure>
+<figure class="card"><div class="ph"><img src="assets/img-06bef1b1.jpg" alt="Long, sleek straight hair"></div><figcaption><b>Sleek &amp; straight</b><span>05</span></figcaption></figure>
+<figure class="card"><div class="ph"><img src="assets/img-c5633249.jpg" alt="Men's textured crop" style="object-position:50% 20%"></div><figcaption><b>Textured crop</b><span>06</span></figcaption></figure>
+</div>
+<p class="swipe">Swipe for more →</p>
+</section>
+
+<section class="about" id="about">
+<div class="wrap about-grid">
+<div class="about-pics rv">
+<div class="big"><img src="assets/img-254a4f81.jpg" alt="The DL Hair Salon shopfront on Abbey Street Upper"></div>
+<div class="small"><img src="assets/img-1963f62c.jpg" alt="An orchid on the salon desk, with the round mirrors behind"></div>
+</div>
+<div>
+<p class="kicker rv">About DL</p>
+<h2 class="h2 rv d1">The cream shopfront <em>with the glowing mirrors.</em></h2>
+<p class="body rv d2">You'll spot us on Abbey Street Upper: cream front, big window, warm lights inside. It's a calm, spotless space with a team that's easy to talk to, in English or Chinese.</p>
+<p class="body rv">No rushing and no hard sell. We'll get you a coffee, ask the right questions and take the time the job needs.</p>
+<ul class="points rv">
+<li><i>01</i><b>Consultation every time</b><span>Bring a photo or just an idea. We'll tell you honestly what will work.</span></li>
+<li><i>02</i><b>Detail matters</b><span>Careful sectioning, clean blends and a finish you can recreate at home.</span></li>
+<li><i>03</i><b>Easy to visit</b><span>City centre, wheelchair accessible, cash or card.</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="rev" id="reviews">
+<div class="wrap">
+<div class="rev-top">
+<div><p class="kicker rv">Reviews</p><h2 class="h2 rv d1">Don't take <em>our word for it.</em></h2></div>
+<div class="score rv d2"><b>4.9</b><span><span class="st">★★★★★</span>from 74 Google reviews</span></div>
+</div>
+<div class="quotes">
+<figure class="q rv"><blockquote>“My new favourite salon in Dublin!”</blockquote><figcaption><b>Google review</b> · Balayage</figcaption></figure>
+<figure class="q rv d1"><blockquote>“The colour turned out exactly how I wanted it.”</blockquote><figcaption><b>Google review</b> · Highlights</figcaption></figure>
+<figure class="q rv d2"><blockquote>“The prices are also excellent for the quality of service provided.”</blockquote><figcaption><b>Google review</b> · Cut</figcaption></figure>
+</div>
+<p class="rev-more rv"><a href="https://www.google.com/maps/search/?api=1&query=DL+Hair+Salon+9+Abbey+Street+Upper+Dublin+1" target="_blank" rel="noopener">Read them all on Google →</a></p>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap visit-grid">
+<div>
+<p class="kicker rv">Visit</p>
+<h2 class="h2 rv d1">Come <em>say hello.</em></h2>
+<p class="addr rv d2"><a href="https://www.google.com/maps/dir/?api=1&destination=DL+Hair+Salon+9+Abbey+Street+Upper+Dublin+1" target="_blank" rel="noopener">9 Abbey Street Upper,<br>Dublin 1, D01 K2H7</a></p>
+<ul class="contact rv">
+<li><small>WhatsApp</small><a href="#" class="wa">+353 87 359 7885</a></li>
+<li><small>Call</small><a href="tel:+353873597885">087 359 7885</a></li>
+<li><small>Nearby</small><span>Jervis Luas stop · Henry Street</span></li>
+</ul>
+<div class="visit-btns rv"><a href="#" class="btn btn-glow wa"><svg><use href="#wa"/></svg>Book on WhatsApp</a><a href="tel:+353873597885" class="btn btn-line"><svg><use href="#ph"/></svg>Call us</a></div>
+</div>
+<div class="hours rv d1">
+<div class="hours-h"><h3>Opening hours</h3><span class="status" id="status" aria-live="polite"></span></div>
+<div class="row" data-d="1"><span>Monday</span><b>10:30 – 19:30</b></div>
+<div class="row" data-d="2"><span>Tuesday</span><b>10:30 – 19:30</b></div>
+<div class="row" data-d="3"><span>Wednesday</span><b>10:30 – 19:30</b></div>
+<div class="row" data-d="4"><span>Thursday</span><b>10:00 – 20:00</b></div>
+<div class="row" data-d="5"><span>Friday</span><b>10:00 – 20:00</b></div>
+<div class="row" data-d="6"><span>Saturday</span><b>10:00 – 20:00</b></div>
+<div class="row" data-d="0"><span>Sunday</span><b>11:00 – 19:00</b></div>
+<p>Bank holiday hours can differ. Message us to check.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="foot">
+<div class="wrap">
+<p class="big" aria-hidden="true">DL</p>
+<p>DL Hair Salon · 9 Abbey Street Upper, Dublin 1 · 087 359 7885</p>
+<p>© 2026 DL Hair Salon</p>
+<nav aria-label="Legal"><a href="#privacy">Privacy policy</a><a href="#cookies">Cookies</a></nav>
+</div>
+</footer>
+
+<div class="bar" id="bar">
+<a href="#" class="btn btn-glow wa"><svg><use href="#wa"/></svg>Book on WhatsApp</a>
+<a href="tel:+353873597885" class="btn call" aria-label="Call the salon"><svg style="width:20px;height:20px"><use href="#ph"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var MSG = "Hi DL Hair Salon, I'd like to book an appointment.";
+  document.querySelectorAll('a.wa').forEach(function(a){
+    a.href = 'https://wa.me/353873597885?text=' + encodeURIComponent(MSG);
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+  var HOURS = {1:[10.5,19.5],2:[10.5,19.5],3:[10.5,19.5],4:[10,20],5:[10,20],6:[10,20],0:[11,19]};
+  function status(){
+    var el = document.getElementById('status'), day, h, m;
+    try{
+      var p = new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Dublin',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+      var mp = {}; p.forEach(function(x){ mp[x.type] = x.value; });
+      day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(mp.weekday); h = parseInt(mp.hour,10)%24; m = parseInt(mp.minute,10);
+    }catch(e){ var d = new Date(); day = d.getDay(); h = d.getHours(); m = d.getMinutes(); }
+    document.querySelectorAll('.row').forEach(function(r){ r.classList.toggle('today', +r.getAttribute('data-d') === day); });
+    var hrs = HOURS[day], now = h + m/60, open = !!hrs && now >= hrs[0] && now < hrs[1];
+    el.textContent = open ? 'Open now' : 'Closed now';
+    el.classList.toggle('open', open);
+  }
+  status(); setInterval(status, 60000);
+
+  var hdr = document.getElementById('hdr'), bar = document.getElementById('bar');
+  var pending = Array.prototype.slice.call(document.querySelectorAll('.rv'));
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset, vh = window.innerHeight;
+    hdr.classList.toggle('on', y > 20);
+    bar.classList.toggle('show', y > vh * 0.6);
+    pending = pending.filter(function(el){
+      var r = el.getBoundingClientRect();
+      if (r.top < vh * 0.94 && r.bottom > -40){ el.classList.add('in'); return false; }
+      return true;
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll(); setTimeout(onScroll, 400);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>O'Reilly Motors – Crash Repair Specialists, Dublin 1</title>
+<meta name="description" content="O'Reilly Motors – honest crash repair, resprays, dent and scratch repair and diamond cut alloy wheels. Rear of 33 Summerhill Parade, Dublin 1. Call 085 223 0045.">
+<link rel="icon" href="assets/icon.png">
+<style>
+@font-face{font-family:"Big Shoulders";font-weight:700;font-display:swap;src:url("assets/big-shoulders-display-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Big Shoulders";font-weight:800;font-display:swap;src:url("assets/big-shoulders-display-latin-800-normal.woff2") format("woff2")}
+@font-face{font-family:"Big Shoulders";font-weight:900;font-display:swap;src:url("assets/big-shoulders-display-latin-900-normal.woff2") format("woff2")}
+@font-face{font-family:"Archivo";font-weight:400;font-display:swap;src:url("assets/archivo-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Archivo";font-weight:500;font-display:swap;src:url("assets/archivo-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Archivo";font-weight:600;font-display:swap;src:url("assets/archivo-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Archivo";font-weight:700;font-display:swap;src:url("assets/archivo-latin-700-normal.woff2") format("woff2")}
+
+:root{
+  --gun:#15181C; --iron:#1F242A; --steel:#2C3640; --slate:#3E4C59; --line:#323942;
+  --bone:#EEEAE2; --concrete:#DCD6CB; --ash:#8C939B; --text:#C3C8CE;
+  --red:#C8161D; --red-hi:#E0242B;
+  --head:"Big Shoulders","Arial Narrow",Impact,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--gun);color:var(--text);font:400 17px/1.65 "Archivo",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+.label{display:inline-flex;align-items:center;gap:10px;margin:0;font:700 13px/1 "Archivo",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ash)}
+.label::before{content:"";width:10px;height:10px;background:var(--red)}
+.h2{margin:16px 0 0;font:900 clamp(44px,5.6vw,76px)/.92 var(--head);text-transform:uppercase;color:#fff;letter-spacing:.005em}
+.h2 span{color:var(--red)}
+.lead{max-width:600px;margin:20px 0 0;color:var(--ash);font-size:18px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:0 28px;font:800 20px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:3px;cursor:pointer;transition:background .2s ease,border-color .2s ease,color .2s ease}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-hi)}
+.btn-line{background:transparent;color:#fff;border-color:#5A636D}.btn-line:hover{border-color:#fff}
+
+/* plate tag – nod to Irish reg plates */
+.plate{display:inline-flex;align-items:stretch;border:2px solid #111;border-radius:4px;background:#F7F6F2;color:#111;font:800 15px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;overflow:hidden}
+.plate i{font-style:normal;display:flex;align-items:center;padding:0 7px;background:#1F4FA3;color:#fff;font:700 10px/1 "Archivo",sans-serif;letter-spacing:.05em}
+.plate b{padding:7px 12px}
+
+/* topbar + nav */
+.top{background:#0E1013;border-bottom:1px solid var(--line);font-size:14px;color:var(--ash)}
+.top .wrap{display:flex;justify-content:space-between;gap:20px;height:40px;align-items:center}
+.top a{text-decoration:none;color:#fff;font-weight:600}
+.top span{display:inline-flex;gap:8px;align-items:center}
+@media(max-width:720px){.top .hide-s{display:none}}
+.nav{position:sticky;top:0;z-index:50;background:rgba(21,24,28,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:82px;gap:24px}
+.nav-logo img{height:50px;width:auto}
+.menu{display:flex;gap:34px}
+.menu a{font:800 19px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#E8EAED;padding:8px 0;border-bottom:3px solid transparent}
+.menu a:hover{border-color:var(--red)}
+.nav .btn{min-height:48px;padding:0 20px;font-size:19px}
+@media(max-width:980px){.menu{display:none}}
+@media(max-width:520px){.nav .btn span{display:none}.nav .btn{padding:0 15px}}
+
+/* hero */
+.hero{padding:clamp(56px,8vw,96px) 0 0;background:
+  linear-gradient(180deg,var(--gun) 0%,var(--iron) 100%)}
+.hero-top{display:grid;grid-template-columns:7fr 5fr;gap:clamp(30px,5vw,70px);align-items:end}
+.hero h1{margin:20px 0 0;font:900 clamp(60px,9vw,128px)/.86 var(--head);text-transform:uppercase;color:#fff;letter-spacing:-.005em}
+.hero h1 span{color:var(--red)}
+.hero .sub{margin:0;font-size:18px;color:var(--text)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.checks{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:10px}
+.checks li{display:flex;gap:12px;align-items:center;font-weight:600;color:#fff;font-size:16px}
+.checks svg{width:20px;height:20px;color:var(--red);flex:none}
+@media(max-width:900px){.hero-top{grid-template-columns:1fr}}
+@media(max-width:600px){.film figcaption span:last-child{display:none}.film::before,.film::after{width:40px;height:40px}.film::before{top:-7px;left:-7px}.film::after{bottom:-7px;right:-7px}.label{font-size:12px;letter-spacing:.16em}}
+.film{position:relative;margin:clamp(44px,6vw,72px) 0 0;border:1px solid var(--line);background:#000;box-shadow:0 40px 80px rgba(0,0,0,.45)}
+.film video{width:100%;height:auto;aspect-ratio:1280/572;object-fit:cover}
+.film figcaption{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px 20px;background:var(--iron);border-top:1px solid var(--line);font:700 13px/1.4 "Archivo",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+.film figcaption b{color:#fff}
+.film::before,.film::after{content:"";position:absolute;width:56px;height:56px;border:4px solid var(--red);z-index:2;pointer-events:none}
+.film::before{top:-10px;left:-10px;border-right:0;border-bottom:0}
+.film::after{bottom:-10px;right:-10px;border-left:0;border-top:0}
+
+/* trust band */
+.trust{background:var(--iron);padding:clamp(56px,7vw,84px) 0 clamp(64px,8vw,96px);border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.trust-grid div{padding:30px 28px;border-right:1px solid var(--line);background:var(--gun)}
+.trust-grid div:last-child{border-right:0}
+.trust-grid svg{width:36px;height:36px;color:var(--red)}
+.trust-grid h3{margin:18px 0 6px;font:800 26px/1 var(--head);text-transform:uppercase;color:#fff;letter-spacing:.02em}
+.trust-grid p{margin:0;font-size:15.5px;color:var(--ash)}
+@media(max-width:960px){.trust-grid{grid-template-columns:1fr 1fr}.trust-grid div:nth-child(2){border-right:0}.trust-grid div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:560px){.trust-grid{grid-template-columns:1fr}.trust-grid div{border-right:0;border-bottom:1px solid var(--line)}}
+
+/* services – bone section, list rows */
+.sec{padding:clamp(84px,11vw,140px) 0}
+.bone{background:var(--bone);color:#4C525A}
+.bone .h2{color:var(--gun)}
+.bone .label{color:#6B727B}
+.bone .lead{color:#5A6068}
+.svc-wrap{display:grid;grid-template-columns:4fr 7fr;gap:clamp(36px,6vw,90px);align-items:start}
+.svc-wrap .stick{position:sticky;top:120px}
+.svc{list-style:none;margin:0;padding:0;border-top:4px solid var(--gun)}
+.svc li{display:grid;grid-template-columns:76px 1fr auto;gap:20px;align-items:baseline;padding:28px 0;border-bottom:1px solid #CFC8BC}
+.svc .n{font:900 40px/1 var(--head);color:var(--red)}
+.svc h3{margin:0 0 6px;font:900 34px/1 var(--head);text-transform:uppercase;color:var(--gun);letter-spacing:.01em}
+.svc p{margin:0;font-size:16px}
+.svc .plate{align-self:center}
+@media(max-width:900px){.svc-wrap{grid-template-columns:1fr}.svc-wrap .stick{position:static}}
+@media(max-width:560px){.svc li{grid-template-columns:52px 1fr}.svc .plate{display:none}.svc .n{font-size:32px}}
+
+/* work */
+.work-grid{display:grid;grid-template-columns:3fr 2fr;grid-template-rows:auto auto;gap:18px;margin-top:56px}
+.card{position:relative;margin:0;background:var(--iron);border:1px solid var(--line);overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.card:hover img{transform:scale(1.03)}
+.card.big{grid-row:span 2}
+.card.big img{aspect-ratio:auto;min-height:100%}
+.card .ph{position:relative;overflow:hidden;height:100%}
+.card figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 24px;background:linear-gradient(0deg,rgba(10,12,14,.92),rgba(10,12,14,0));color:#fff}
+.card figcaption b{display:block;font:900 26px/1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.card figcaption small{display:block;margin-top:6px;color:#C9CDD2;font-size:14.5px}
+.card .plate{position:absolute;top:18px;left:18px;z-index:1}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;height:100%}
+.pair img{aspect-ratio:4/3}
+@media(max-width:900px){.work-grid{grid-template-columns:1fr}.card.big{grid-row:auto}.card.big img{aspect-ratio:4/3}}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px}
+.strip button{all:unset;cursor:zoom-in;display:block;border:1px solid var(--line);overflow:hidden;background:var(--iron)}
+.strip img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s ease}
+.strip button:hover img{transform:scale(1.05)}
+.strip button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+@media(max-width:760px){.strip{grid-template-columns:1fr 1fr}}
+.lb{position:fixed;inset:0;z-index:100;display:none;place-items:center;background:rgba(8,9,11,.95);padding:24px}
+.lb.on{display:grid}
+.lb img{max-height:86vh;width:auto}
+.lb button{position:absolute;top:16px;right:22px;background:none;border:0;color:#fff;font:700 42px/1 "Archivo",sans-serif;cursor:pointer}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:60px;border:1px solid var(--line)}
+.step{padding:34px 28px 36px;border-right:1px solid var(--line);position:relative}
+.step:last-child{border-right:0}
+.step .n{display:inline-grid;place-items:center;width:52px;height:52px;border:2px solid var(--red);font:900 26px/1 var(--head);color:#fff}
+.step h3{margin:22px 0 8px;font:900 28px/1 var(--head);text-transform:uppercase;color:#fff}
+.step p{margin:0;font-size:15.5px;color:var(--ash)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}}
+
+/* about */
+.about{display:grid;grid-template-columns:5fr 6fr;gap:clamp(36px,6vw,90px);align-items:center}
+.about .photo{position:relative;border:10px solid #fff;box-shadow:0 30px 60px rgba(21,24,28,.22)}
+.about .photo img{width:100%;aspect-ratio:5/6;object-fit:cover;object-position:center 30%}
+.about .photo .plate{position:absolute;bottom:-18px;right:20px}
+.about blockquote{margin:30px 0 0;padding:20px 24px;background:var(--gun);color:#fff;font:800 28px/1.15 var(--head);text-transform:uppercase;border-left:6px solid var(--red)}
+.about .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:30px;border-top:4px solid var(--gun)}
+.about .facts div{padding:16px 0}
+.about .facts b{display:block;font:900 30px/1 var(--head);color:var(--gun);text-transform:uppercase}
+.about .facts small{font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:#6B727B;font-weight:600}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+.about>*{min-width:0}@media(max-width:520px){.about .facts b{font-size:22px}.about .facts small{font-size:11.5px}}
+
+/* contact */
+.contact{background:var(--steel);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 2px,transparent 2px 12px)}
+.contact .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px)}
+.contact .label{color:#B9C2CB}
+.info{margin-top:36px;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.18)}
+.info div{display:flex;gap:18px;align-items:flex-start;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.info svg{flex:none;width:26px;height:26px;margin-top:4px;color:#fff}
+.info small{display:block;font-weight:700;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:#B9C2CB}
+.info a,.info strong{font:900 30px/1.15 var(--head);text-transform:uppercase;text-decoration:none;color:#fff}
+.info a:hover{color:#FFD1D2}
+.info .note{display:block;margin-top:4px;font-size:15px;color:#D5DBE1}
+form{background:var(--gun);padding:clamp(28px,4vw,44px);border-top:6px solid var(--red);box-shadow:0 30px 60px rgba(0,0,0,.35)}
+form h3{margin:0;font:900 36px/1 var(--head);text-transform:uppercase;color:#fff}
+form p{margin:8px 0 24px;font-size:15px;color:var(--ash)}
+label{display:block;margin-bottom:16px;font-weight:700;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+input,select,textarea{display:block;width:100%;margin-top:8px;padding:14px 16px;background:var(--iron);border:1px solid var(--line);border-radius:3px;color:#fff;font:400 16px "Archivo",sans-serif}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red)}
+textarea{min-height:110px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%;margin-top:8px}
+.out{display:none;margin-top:18px;padding:14px 16px;border-left:3px solid var(--red);background:var(--iron);font-size:15px}
+.out a{color:#fff;font-weight:700}
+@media(max-width:900px){.contact .wrap{grid-template-columns:1fr}}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+
+.foot{background:#0E1013;padding:56px 0 110px;font-size:15px;color:var(--ash);border-top:1px solid var(--line)}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.foot img{height:72px;width:auto}
+.foot nav{display:flex;gap:22px}
+.foot a{text-decoration:none}.foot a:hover{color:#fff}
+@media(min-width:761px){.foot{padding-bottom:56px}}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:10px;height:62px;font:800 20px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--gun)}
+.callbar a:first-child{background:var(--red)}
+.callbar svg{width:20px;height:20px}
+@media(max-width:760px){.callbar{display:grid}}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" d="M4 12.5l5 5L20 6.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M6 2h9l4 4v16H6zM15 2v4h4M9 11h7M9 15h7M9 19h4"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" d="M2 12l4-4 4 1 3-2 4 2 5 4-3 3-3-1-3 3-4-1-3-3zM9 9l4 4M13 7l-3 3"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 2.5S5 10 5 15a7 7 0 0 0 14 0c0-5-7-12.5-7-12.5z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9 15a3 3 0 0 0 3 3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+</svg>
+
+<div class="top">
+  <div class="wrap">
+    <span class="hide-s">Rear of 33 Summerhill Parade, Dublin 1</span>
+    <span>Call or WhatsApp&nbsp;<a href="tel:+353852230045">085 223 0045</a></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="nav-logo" href="#top" aria-label="O'Reilly Motors – home"><img src="assets/logo-nav.webp" alt="O'Reilly Motors" width="490" height="242"></a>
+    <nav class="menu" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#process">How it works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+353852230045"><svg><use href="#i-phone"/></svg><span>Call now</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <p class="label">Crash repair specialists · Dublin 1</p>
+          <h1>Honest bodywork.<br><span>Done right.</span></h1>
+        </div>
+        <div>
+          <p class="sub">Accident repairs, resprays and diamond cut alloy wheels from an independent bodyshop off Summerhill Parade. Straight answers, a fair price and a finish you'll be proud to drive.</p>
+          <div class="cta">
+            <a class="btn btn-red" href="tel:+353852230045"><svg><use href="#i-phone"/></svg>085 223 0045</a>
+            <a class="btn btn-line" href="#contact"><svg><use href="#i-wa"/></svg>Get a quote</a>
+          </div>
+        </div>
+      </div>
+      <figure class="film">
+        <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-label="Painter spraying a black car in the paint booth">
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+        <figcaption><span><b>On the job</b> · Respray in the booth</span><span>O'Reilly Motors · Dublin 1</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Why customers trust us">
+    <div class="wrap">
+      <div class="trust-grid rv">
+        <div><svg><use href="#i-doc"/></svg><h3>Clear price first</h3><p>We look at the damage and tell you what it costs before a spanner is lifted.</p></div>
+        <div><svg><use href="#i-hand"/></svg><h3>Straight talk</h3><p>You speak to the people doing the work, not a call centre.</p></div>
+        <div><svg><use href="#i-drop"/></svg><h3>Factory-match paint</h3><p>Mixed to your car's paint code and checked in daylight.</p></div>
+        <div><svg><use href="#i-shield"/></svg><h3>Done properly</h3><p>Every repair stripped back, fixed and finished. No shortcuts.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec bone" id="services">
+    <div class="wrap svc-wrap">
+      <div class="stick rv">
+        <p class="label">What we do</p>
+        <h2 class="h2">The full repair. <span>Under one roof.</span></h2>
+        <p class="lead">From a car-park scrape to serious accident damage, your car stays with us from first look to final polish.</p>
+        <div style="margin-top:30px"><a class="btn btn-red" href="#contact"><svg><use href="#i-wa"/></svg>Send us photos</a></div>
+      </div>
+      <ul class="svc rv">
+        <li><span class="n">01</span><div><h3>Crash repair</h3><p>Accident damage repaired from the frame out, with panels straightened or replaced and lines put back where they belong.</p></div><span class="plate"><i>IRL</i><b>Core</b></span></li>
+        <li><span class="n">02</span><div><h3>Resprays</h3><p>Single panels or full resprays in our booth, blended so new paint sits invisibly next to the old.</p></div></li>
+        <li><span class="n">03</span><div><h3>Dents &amp; scratches</h3><p>Keyed doors, kerb scrapes and car-park knocks filled, flatted and refinished smooth.</p></div></li>
+        <li><span class="n">04</span><div><h3>Bumper repairs</h3><p>Cracked, split or scuffed bumpers repaired and refinished. Often cheaper than replacing.</p></div></li>
+        <li><span class="n">05</span><div><h3>Diamond cut alloys</h3><p>Kerbed or corroded wheels stripped, painted and diamond cut for a bright two-tone finish.</p></div><span class="plate"><i>IRL</i><b>Popular</b></span></li>
+        <li><span class="n">06</span><div><h3>Colour matching</h3><p>Solid, metallic or pearl, mixed to your paint code before it goes anywhere near your car.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="rv">
+        <p class="label">Our work</p>
+        <h2 class="h2">Real cars. <span>Real results.</span></h2>
+        <p class="lead">Straight from our workshop floor. No stock photos.</p>
+      </div>
+      <div class="work-grid rv">
+        <figure class="card big"><div class="ph"><img src="assets/golf-paint.webp" alt="VW Golf front end freshly painted in deep gloss black" loading="lazy"></div><span class="plate"><i>IRL</i><b>VW Golf</b></span><figcaption><b>Front end respray</b><small>Wing and bumper prepped by hand, painted to a mirror-gloss black.</small></figcaption></figure>
+        <figure class="card"><div class="pair"><img src="assets/rav4-primer.webp" alt="RAV4 tailgate in primer" loading="lazy"><img src="assets/rav4-after.webp" alt="RAV4 tailgate finished" loading="lazy"></div><span class="plate"><i>IRL</i><b>Toyota RAV4</b></span><figcaption><b>Tailgate · Before &amp; after</b><small>Repaired, primed and refinished in gloss black.</small></figcaption></figure>
+        <figure class="card"><div class="ph"><img src="assets/door-filler.webp" alt="Rear door with body filler being shaped" loading="lazy" style="aspect-ratio:2/1"></div><span class="plate"><i>IRL</i><b>Door repair</b></span><figcaption><b>Shaped by hand</b><small>Filler worked back until the line is perfect.</small></figcaption></figure>
+      </div>
+      <div class="strip rv" id="gal">
+        <button><img src="assets/bmw6-primer.webp" alt="BMW 6 Series front bumper in primer" loading="lazy"></button>
+        <button><img src="assets/bmw3-boot.webp" alt="BMW 3 Series boot lid being prepared for paint" loading="lazy"></button>
+        <button><img src="assets/golf-prep.webp" alt="VW Golf wing flatted and masked" loading="lazy"></button>
+        <button><img src="assets/rav4-after.webp" alt="Finished RAV4 tailgate" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="process" style="background:var(--iron);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="rv">
+        <p class="label">How it works</p>
+        <h2 class="h2">Four steps. <span>No surprises.</span></h2>
+      </div>
+      <div class="steps rv">
+        <div class="step"><span class="n">1</span><h3>Send photos</h3><p>WhatsApp us a few pictures of the damage, or ring and drop the car in.</p></div>
+        <div class="step"><span class="n">2</span><h3>Clear price</h3><p>We tell you exactly what needs doing and what it costs.</p></div>
+        <div class="step"><span class="n">3</span><h3>Repair &amp; paint</h3><p>Panel work, prep, primer and paint in the booth, every stage done right.</p></div>
+        <div class="step"><span class="n">4</span><h3>Drive away</h3><p>Polished, checked in daylight and handed back like nothing happened.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec bone" id="about">
+    <div class="wrap about">
+      <div class="photo rv"><img src="assets/team.webp" alt="O'Reilly Motors with a boxer from Dublin Docklands Boxing Club, holding the O'Reilly Motors banner outside the club" loading="lazy"><span class="plate"><i>IRL</i><b>Proud sponsor</b></span></div>
+      <div class="rv">
+        <p class="label">About us</p>
+        <h2 class="h2">Local garage. <span>Local pride.</span></h2>
+        <p class="lead">O'Reilly Motors is an independent bodyshop in the heart of Dublin 1. No middlemen. You deal with the people who actually fix your car, from the first look to handing back the keys.</p>
+        <p class="lead">We back our community too, including sponsoring Dublin Docklands Boxing Club.</p>
+        <blockquote>"Treat every car like it's our own, and don't hand it back until it's right."</blockquote>
+        <div class="facts"><div><b>Dublin 1</b><small>Summerhill Parade</small></div><div><b>Independent</b><small>Locally run</small></div><div><b>Docklands BC</b><small>Club sponsor</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact">
+    <div class="wrap">
+      <div class="rv">
+        <p class="label">Get a quote</p>
+        <h2 class="h2">Damaged? <br>Let's take a look.</h2>
+        <div class="info">
+          <div><svg><use href="#i-phone"/></svg><p style="margin:0"><small>Call or WhatsApp</small><a href="tel:+353852230045">085 223 0045</a></p></div>
+          <div><svg><use href="#i-pin"/></svg><p style="margin:0"><small>Find us</small><a href="https://www.google.com/maps/search/?api=1&query=33+Summerhill+Parade+Dublin+1" target="_blank" rel="noopener">Rear of 33 Summerhill Parade, Dublin 1</a></p></div>
+          <div><svg><use href="#i-clock"/></svg><p style="margin:0"><small>Opening hours</small><strong>Mon – Fri · 9:00 – 18:00</strong><span class="note">Saturday by appointment. Ring ahead to drop in.</span></p></div>
+        </div>
+      </div>
+      <form id="quote" class="rv" novalidate>
+        <h3>Quick quote</h3>
+        <p>Fill this in and it opens WhatsApp with your message ready. Attach a couple of photos of the damage and hit send.</p>
+        <div class="row">
+          <label>Your name<input name="name" required autocomplete="name"></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+        </div>
+        <div class="row">
+          <label>Car (make &amp; model)<input name="car" placeholder="e.g. VW Golf 2018"></label>
+          <label>Service
+            <select name="service">
+              <option>Crash repair</option><option>Respray / panel paint</option><option>Dent or scratch repair</option><option>Bumper repair</option><option>Diamond cut alloy wheels</option><option>Something else</option>
+            </select>
+          </label>
+        </div>
+        <label>What happened?<textarea name="msg" placeholder="Where's the damage and how bad does it look?"></textarea></label>
+        <button class="btn btn-red" type="submit"><svg><use href="#i-wa"/></svg>Continue on WhatsApp</button>
+        <div class="out" id="out"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="assets/logo.webp" alt="O'Reilly Motors – Crash Repair Specialists" width="980" height="635">
+    <p style="margin:0">Rear of 33 Summerhill Parade, Dublin 1 · <a href="tel:+353852230045">085 223 0045</a></p>
+    <nav aria-label="Legal"><a href="#">Privacy</a><a href="#">Cookies</a><span>© 2026 O'Reilly Motors</span></nav>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+353852230045"><svg><use href="#i-phone"/></svg>Call now</a>
+  <a href="https://wa.me/353852230045" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button aria-label="Close">×</button><img alt=""></div>
+
+<script>
+(function(){
+  var v=document.querySelector('.film video');
+  if(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  } else document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.getElementById('gal').addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;var im=b.querySelector('img');li.src=im.src;li.alt=im.alt;lb.classList.add('on');
+  });
+  lb.addEventListener('click',function(e){if(e.target!==li)lb.classList.remove('on')});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+  document.getElementById('quote').addEventListener('submit',function(e){
+    e.preventDefault();var f=e.target,out=document.getElementById('out');
+    if(!f.name.value.trim()){f.name.focus();f.name.style.borderColor='#C8161D';return;}
+    var t="Hi O'Reilly Motors, I'd like a quote.\nName: "+f.name.value+(f.phone.value?"\nPhone: "+f.phone.value:"")+(f.car.value?"\nCar: "+f.car.value:"")+"\nService: "+f.service.value+(f.msg.value?"\nDetails: "+f.msg.value:"")+"\n(I'll attach photos.)";
+    var url="https://wa.me/353852230045?text="+encodeURIComponent(t);
+    out.style.display='block';
+    out.innerHTML='Your message is ready. <a href="'+url+'" target="_blank" rel="noopener">Open WhatsApp to send it →</a><br><small>Or call us on 085 223 0045.</small>';
+  });
+})();
+</script>
+</body>
+</html>

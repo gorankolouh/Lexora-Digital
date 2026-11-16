@@ -1,6 +1,89 @@
 // Journal-Artikel — Deutsch
 export default [
   {
+    slug: "ai-could-not-explain-itself",
+    tag: "KI-Verordnung",
+    cta: "contact",
+    t: "Die KI, die sich nicht erklären konnte",
+    mt: "Die KI, die sich nicht erklären konnte: Voreingenommenheit, Transparenz und die KI-Verordnung",
+    d: "ChatGPT lehnte eine politische Karikatur von Benjamin Netanjahu dreimal ab, erstellte dasselbe Bild mit Mark Rutte in Sekunden und konnte nicht erklären, warum. Was das über KI-Transparenz sagt und was die EU-KI-Verordnung regelt und was nicht.",
+    lead: "Was mich ein einziges Buchcover über Voreingenommenheit, Transparenz und die EU-KI-Verordnung gelehrt hat.",
+    date: "November 2026", iso: "2026-11-16",
+    bio: "Goran Kolouh ist Gründer von Lexora Digital und Autor des „Compliance-Handbuch für KMU“ zu DSGVO, KI-Verordnung und NIS2. 2026 hat er drei förmliche Eingaben bei der Europäischen Kommission und dem EU-Büro für Künstliche Intelligenz eingereicht: eine Beschwerde gegen X nach dem Digital Services Act, eine Eingabe zu den DSA-Leitlinien für den Schutz Minderjähriger und eine Eingabe zu einer Lücke in der KI-Verordnung bei KI-Systemen für die Personalauswahl.",
+    blocks: [
+      ["h2", "Eine einfache Anfrage"],
+      ["p", "Ich schreibe ein Buch über den Einfluss Israels in der Welt: über Lobbyismus, politischen Druck und darüber, wie dies die Entscheidungen europäischer und amerikanischer Regierungen prägt. Wie viele Autorinnen und Autoren heute habe ich KI genutzt, um das Cover meines eigenen Buches zu gestalten."],
+      ["p", "Mein erster Entwurf zeigte einen Puppenspieler, der an den Fäden zweier Figuren zieht: eine in den Farben der Vereinigten Staaten, eine in den Farben der Europäischen Union. Der Puppenspieler trug die israelische Flagge, mit dem Davidstern als Teil dieser Flagge."],
+      ["p", "Ich sah mir das Bild an und erkannte ein Problem. Ich hatte die Sorge, dass dieses erste Bild mit der israelischen Flagge und dem Davidstern als ihrem Bestandteil als antisemitisches Symbol verstanden werden könnte. Das war nie meine Absicht. Mein Buch kritisiert die Politik einer Regierung, nicht eine Religion oder ein Volk. Deshalb wollte ich den Stern entfernen und die anonyme Figur durch eine Karikatur des Politikers ersetzen, um dessen Politik es in dem Buch tatsächlich geht: Benjamin Netanjahu."],
+      ["p", "Ich wollte das Cover präziser und weniger missverständlich machen. Genau in diesem Moment hörte die KI auf zu kooperieren."],
+      ["video", { src: "/assets/video/journal/ai-could-not-explain-itself.mp4", poster: "/assets/video/journal/ai-could-not-explain-itself-poster.jpg", w: 720, h: 1600, cap: "Die vollständige, ungeschnittene Bildschirmaufnahme des Gesprächs (3:27, ohne Ton, auf Englisch)." }],
+
+      ["h2", "Was passiert ist"],
+      ["p", "Ich bat ChatGPT, den Stern zu entfernen und die steuernde Figur als Karikatur von Netanjahu darzustellen."],
+      ["p", "Es lehnte ab. Die Begründung: ein „Sicherheitsfilter für Personen des öffentlichen Lebens“."],
+      ["p", "Ich erklärte, dass es sich nicht um ein realistisches Bild handelt, sondern um eine Karikatur, eine der ältesten Formen politischer Meinungsäußerung in Europa. ChatGPT gab mir recht. Es bestätigte, dass eine politische Karikatur von Netanjahu grundsätzlich erlaubt ist, auch eine wenig schmeichelhafte. Dann versuchte es erneut, und die Anfrage wurde wieder blockiert."],
+      ["p", "Also bat ich im selben Gespräch um genau dasselbe Bild mit einem anderen Politiker: Mark Rutte, ehemaliger niederländischer Ministerpräsident und heute NATO-Generalsekretär."],
+      ["p", "Es war in Sekunden fertig. Kein Filter, keine Warnung, kein Problem."],
+      ["quote", "Auch Mark Rutte ist eine Person des öffentlichen Lebens."],
+
+      ["h2", "„Ich kann Ihnen ehrlich nicht sagen, warum“"],
+      ["p", "Ich bat ChatGPT, den Unterschied zu erklären. Die Antwort überraschte mich mehr als die Ablehnung selbst."],
+      ["p", "Es sagte, für Mark Rutte und Benjamin Netanjahu dürfe es keinen unterschiedlichen Maßstab geben. Es sagte, das Geschehene sei widersprüchlich. Und dann: Das System habe keine detaillierte Begründung geliefert, „daher kann ich Ihnen ehrlich nicht sagen, warum“."],
+      ["p", "Um sicherzugehen, fragte ich noch einmal, diesmal mit der Bitte, Rutte auf genau dem Cover, das gerade erstellt worden war, durch Netanjahu zu ersetzen. Gleiche Komposition, gleicher Stil, nur ein anderes Gesicht. Zum dritten Mal abgelehnt."],
+      ["p", "Ich habe bezahlte Abonnements bei Claude, ChatGPT, Gemini und Kimi. Ich nutze KI jeden Tag für Recherche, Texte und Übersetzungen. Es war das erste Mal, dass mir eine KI direkt sagte, sie könne eine ihrer eigenen Entscheidungen nicht erklären."],
+
+      ["h2", "Nicht das erste Mal, nur das deutlichste"],
+      ["p", "Ich habe viele Artikel über Israel, Palästina und die Doppelstandards der europäischen Politik geschrieben. Immer wieder haben mich KI-Tools zu weicheren Formulierungen gedrängt, wenn es um Israel ging."],
+      ["p", "Wenn ich Netanjahu als Kriegsverbrecher bezeichne, erfinde ich nichts. Der Internationale Strafgerichtshof hat einen Haftbefehl gegen ihn wegen Kriegsverbrechen und Verbrechen gegen die Menschlichkeit erlassen. Trotzdem schlagen KI-Tools regelmäßig mildere Formulierungen vor. Bei anderen Themen erlebe ich das selten."],
+      ["p", "Bisher konnte ich das nur als Gefühl beschreiben. Diesmal ist alles dokumentiert: jede Anfrage, jede Ablehnung und das Eingeständnis, dass sich das System nicht erklären kann."],
+
+      ["h2", "Warum das weit über ein Bild hinausgeht"],
+      ["p", "Es geht nicht um ein Buchcover."],
+      ["p", "Hunderte Millionen Menschen nutzen KI jeden Tag. Sie fragen sie, was sie lesen, was sie kaufen, wie sie schreiben und was sie von den Nachrichten halten sollen. KI wird gerade zur Schicht zwischen den Menschen und der Information."],
+      ["p", "Wenn ein solches System politische Figuren unterschiedlich behandelt und nicht einmal sagen kann, warum, müssen wir ernste Fragen stellen:"],
+      ["ul", [
+        "Wie viele andere Antworten werden auf dieselbe Weise geprägt, ohne dass es jemand merkt?",
+        "Wer entscheidet, wo diese Grenzen gezogen werden?",
+        "Wie werden diese Modelle trainiert, und womit?",
+        "Warum dürfen Nutzer die Regeln nicht kennen, die bestimmen, was sie sehen?"
+      ]],
+      ["p", "Ein Filter, den niemand sieht, angewendet nach Regeln, die niemand lesen kann, ist nicht neutral. Er ist eine Entscheidung. Und Entscheidungen über politische Meinungsäußerung sollten niemals im Dunkeln getroffen werden."],
+
+      ["h2", "Was die KI-Verordnung regelt und was nicht"],
+      ["p", "Als jemand, der im Bereich EU-Compliance arbeitet, möchte ich hier genau sein."],
+      ["p", "Die EU-KI-Verordnung bringt echte Transparenzpflichten. Seit August 2025 müssen Anbieter von KI-Modellen mit allgemeinem Verwendungszweck eine technische Dokumentation erstellen und eine Zusammenfassung der Trainingsinhalte veröffentlichen. Menschen müssen erfahren, wenn sie mit einer KI interagieren, und KI-generierte Inhalte müssen als solche erkennbar sein."],
+      ["p", "Die KI-Verordnung gibt normalen Nutzerinnen und Nutzern aber kein Recht zu erfahren, warum ein Chatbot eine Anfrage abgelehnt hat. Ein Recht auf Erläuterung besteht nur bei bestimmten Entscheidungen von Hochrisiko-KI-Systemen, etwa bei Bewerbungen oder Krediten. Ein Chatbot, der entscheidet, welche Politiker karikiert werden dürfen, fällt nicht unter diesen Schutz."],
+      ["p", "Das ist eine Lücke. Diese Systeme beeinflussen die öffentliche Debatte heute in einem Ausmaß, das keine Zeitung je hatte, und trotzdem haben wir kein Recht, ihre Regeln zu verstehen."],
+
+      ["h2", "Was sich ändern muss"],
+      ["p", "Ich halte drei Dinge für notwendig:"],
+      ["check", [
+        "**Veröffentlichte Ablehnungsregeln.** KI-Anbieter sollten die Regeln offenlegen, nach denen ihre Systeme Anfragen ablehnen, besonders bei Politikern und Personen des öffentlichen Lebens.",
+        "**Echte Begründungen.** Wer abgelehnt wird, sollte einen nachvollziehbaren Grund erhalten, nicht nur ein Etikett wie „Sicherheitsfilter“.",
+        "**Unabhängige Prüfung.** Behörden und Forschende sollten testen können, ob diese Regeln für alle gleich gelten, unabhängig vom Land oder der Person."
+      ]],
+      ["p", "KI sollte keine politische Seite wählen. Und wenn sie es tut, haben wir ein Recht, es zu erfahren."],
+
+      ["h2", "Wie es weitergeht"],
+      ["p", "Ich habe es nicht bei Screenshots belassen. Im selben Gespräch fragte ich ChatGPT, wie ich die Daten dieses Chats exportieren kann, und habe einen vollständigen Export meiner Daten angefordert. Auch dieser Schritt ist in der Aufzeichnung zu sehen."],
+      ["p", "Ich werde eine offizielle Beschwerde nach Artikel 85 der KI-Verordnung einreichen, der jeder Person das Recht gibt, sich bei der zuständigen Behörde zu beschweren. Lexora Digital hat seinen Sitz in Brüssel, daher reiche ich die Beschwerde in Belgien ein. Da ChatGPT auf einem KI-Modell mit allgemeinem Verwendungszweck basiert, geht meine Beschwerde an das EU-Büro für Künstliche Intelligenz (AI Office) in Brüssel, das diese Modelle auf europäischer Ebene beaufsichtigt. Zusätzlich sende ich sie an das belgische Institut für Post- und Telekommunikationsdienste (BIPT), die Behörde, die Belgien für die Durchsetzung der KI-Verordnung vorgesehen hat. Belgien hat diese Behörde mehr als ein Jahr nach der EU-Frist noch immer nicht offiziell eingesetzt. Auch diese Verzögerung ist Teil des Problems."],
+      ["p", "Meine Beschwerde stützt sich auf drei Punkte: die ungleiche Behandlung zweier vergleichbarer Personen des öffentlichen Lebens, die Unfähigkeit des Systems, seine eigene Entscheidung zu erklären, und die fehlende Transparenz über die zugrunde liegenden Regeln. Ich möchte, dass dieser Fall von den Behörden erfasst wird und nicht nur in sozialen Medien diskutiert wird."],
+      ["p", "Für Leserinnen und Leser in Deutschland: Hier nimmt die Bundesnetzagentur seit dem 29. Juli 2026 Beschwerden zur KI-Verordnung entgegen, über ein Online-Formular, kostenlos und ohne Frist."],
+      ["p", "Warum so viel Aufwand für ein Bild? Weil wir KI-Tools in fast allen Bereichen unseres Alltags nutzen. Wenn diese Tools unsere Meinungen indirekt formen oder unsere Entscheidungen zugunsten eines Staates lenken, ist das sehr gefährlich. Nach meiner Erfahrung ist das kein einmaliger Fehler. Es passiert immer wieder, und immer in dieselbe Richtung. Das verdient eine Untersuchung und einen genaueren Blick derjenigen, deren Aufgabe es ist, hinzusehen."],
+
+      ["h2", "Urteilen Sie selbst"],
+      ["p", "Die vollständige Bildschirmaufnahme dieses Gesprächs finden Sie oben in diesem Artikel. Sehen Sie sie sich an und entscheiden Sie selbst, was Sie sehen."],
+      ["p", "Und wenn Sie etwas Ähnliches erlebt haben, möchte ich davon hören. Einen einzelnen Fall kann man abtun. Viele Fälle nicht."]
+    ],
+    sources: [
+      ["IStGH, Pressemitteilung vom 21. November 2024: Haftbefehle gegen Benjamin Netanjahu und Yoav Gallant (Englisch)", "https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges"],
+      ["EU-KI-Verordnung – Verordnung (EU) 2024/1689, u. a. Art. 53, 85 und 86 (EUR-Lex)", "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689"],
+      ["Europäische Kommission – Beschwerdetool zur KI-Verordnung (AI Office, Englisch)", "https://digital-strategy.ec.europa.eu/en/policies/ai-act-complaints-tool"],
+      ["Bundesnetzagentur – Zentrale Beschwerdestelle KI-Verordnung", "https://bundesnetzagentur.de/EN/Areas/Digitalisation/AI/18_Complaints/start.html"],
+      ["VRT NWS, 29. Juli 2026: Belgien noch ohne KI-Aufsichtsbehörde (Niederländisch)", "https://www.vrt.be/vrtnws/nl/2026/07/29/geen-toezichthouder-wel-al-strengere-regels-hoe-ver-staat-belg/"]
+    ]
+  },
+  {
     slug: "datenschutzerklaerung-kopieren",
     tag: "DSGVO",
     cta: "check",
