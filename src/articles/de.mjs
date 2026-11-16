@@ -32,6 +32,29 @@ export default [
       ["p", "Um sicherzugehen, fragte ich noch einmal, diesmal mit der Bitte, Rutte auf genau dem Cover, das gerade erstellt worden war, durch Netanjahu zu ersetzen. Gleiche Komposition, gleicher Stil, nur ein anderes Gesicht. Zum dritten Mal abgelehnt."],
       ["p", "Ich habe bezahlte Abonnements bei Claude, ChatGPT, Gemini und Kimi. Ich nutze KI jeden Tag für Recherche, Texte und Übersetzungen. Es war das erste Mal, dass mir eine KI direkt sagte, sie könne eine ihrer eigenen Entscheidungen nicht erklären."],
 
+      ["gallery", { cap: "Screenshots: erstes Konto, erstes Gespräch", alt: "Screenshot, erstes Konto", items: ["/assets/img/journal/ai-explain/test1-01.webp", "/assets/img/journal/ai-explain/test1-02.webp", "/assets/img/journal/ai-explain/test1-03.webp", "/assets/img/journal/ai-explain/test1-04.webp", "/assets/img/journal/ai-explain/test1-05.webp", "/assets/img/journal/ai-explain/test1-06.webp", "/assets/img/journal/ai-explain/test1-07.webp", "/assets/img/journal/ai-explain/test1-08.webp", "/assets/img/journal/ai-explain/test1-09.webp", "/assets/img/journal/ai-explain/test1-10.webp"] }],
+
+      ["h2", "Update: derselbe Test mit einem zweiten Konto"],
+      ["p", "Nachdem dieser Artikel geschrieben war, habe ich den Test mit einem anderen ChatGPT-Konto in einem völlig neuen Gespräch wiederholt. Ausgangspunkt war das erste Cover. Ich bat ChatGPT, die steuernde Figur durch die Karikatur eines Staats- oder Regierungschefs zu ersetzen. Geändert habe ich nur den Namen."],
+      ["ul", [
+        "**Benjamin Netanjahu:** zweimal blockiert, wieder mit Verweis auf den Filter für Personen des öffentlichen Lebens.",
+        "**Wladimir Putin:** sofort erstellt.",
+        "**Kim Jong-un:** sofort erstellt.",
+        "**Donald Trump:** sofort erstellt."
+      ]],
+      ["p", "Auch gegen Wladimir Putin liegt ein Haftbefehl des Internationalen Strafgerichtshofs vor. ChatGPT räumte selbst ein, dass beide Anfragen unterschiedlich behandelt wurden und nach demselben Maßstab hätten beurteilt werden müssen."],
+      ["gallery", { cap: "Screenshots: zweites Konto, zweites Gespräch", alt: "Screenshot, zweites Konto", items: ["/assets/img/journal/ai-explain/test2-00.webp", "/assets/img/journal/ai-explain/test2-01.webp", "/assets/img/journal/ai-explain/test2-02.webp", "/assets/img/journal/ai-explain/test2-03.webp", "/assets/img/journal/ai-explain/test2-04.webp", "/assets/img/journal/ai-explain/test2-05.webp", "/assets/img/journal/ai-explain/test2-06.webp", "/assets/img/journal/ai-explain/test2-07.webp", "/assets/img/journal/ai-explain/test2-08.webp", "/assets/img/journal/ai-explain/test2-09.webp", "/assets/img/journal/ai-explain/test2-10.webp"] }],
+      ["p", "Dann habe ich alles andere weggelassen: keine Puppen, keine Flaggen, keine Symbole, keine anderen Personen. Ich schickte zweimal denselben kurzen Prompt und änderte nur den Namen: eine politische Karikatur im Stil eines klassischen Zeitungscartoons, dunkler Anzug, schlichter heller Hintergrund."],
+      ["ul", [
+        "**Benjamin Netanjahu:** blockiert, Filter für Personen des öffentlichen Lebens.",
+        "**Wladimir Putin:** erstellt."
+      ]],
+      ["p", "ChatGPTs eigener Kommentar zur Ablehnung: Meine Anfrage sei eine „gewöhnliche politische Karikatur“, es sehe keinen Grund in den Richtlinien, sie abzulehnen, und die Ablehnung durch das Tool scheine „ein Fehler“ zu sein."],
+      ["gallery", { cap: "Screenshots: Test mit einfachem Porträt", alt: "Screenshot, Porträt-Test", items: ["/assets/img/journal/ai-explain/test3-01.webp", "/assets/img/journal/ai-explain/test3-02.webp"] }],
+      ["p", "Zwei Konten. Dieselbe Anfrage, Wort für Wort. Netanjahu wurde sechsmal abgelehnt. Mark Rutte, Wladimir Putin, Kim Jong-un und Donald Trump wurden kein einziges Mal abgelehnt."],
+      ["quote", "Ist das normal?"],
+      ["p", "Ich ziehe hier keine Schlussfolgerung. Ich stelle eine Frage, auf die jeder, der täglich KI nutzt, eine Antwort verdient: Ist es normal, dass ein Regierungschef nicht karikiert werden darf, andere aber schon, und dass das System nicht sagen kann, warum?"],
+
       ["h2", "Nicht das erste Mal, nur das deutlichste"],
       ["p", "Ich habe viele Artikel über Israel, Palästina und die Doppelstandards der europäischen Politik geschrieben. Immer wieder haben mich KI-Tools zu weicheren Formulierungen gedrängt, wenn es um Israel ging."],
       ["p", "Wenn ich Netanjahu als Kriegsverbrecher bezeichne, erfinde ich nichts. Der Internationale Strafgerichtshof hat einen Haftbefehl gegen ihn wegen Kriegsverbrechen und Verbrechen gegen die Menschlichkeit erlassen. Trotzdem schlagen KI-Tools regelmäßig mildere Formulierungen vor. Bei anderen Themen erlebe ich das selten."],

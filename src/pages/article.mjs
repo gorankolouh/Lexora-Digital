@@ -31,6 +31,7 @@ function blocks(list) {
     if (k === "check") return `<ul class="checklist">${v.map((x) => `<li>${icon("check", 16, 2)}<span>${fmt(x)}</span></li>`).join("")}</ul>`;
     if (k === "quote") return `<blockquote class="pull"><p>${fmt(v)}</p></blockquote>`;
     if (k === "note") return `<p class="a-note">${fmt(v)}</p>`;
+    if (k === "gallery") return `<figure class="a-gallery">${v.cap ? `<figcaption>${fmt(v.cap)}</figcaption>` : ""}<div class="a-gallery-g">${v.items.map((x, i) => `<a href="${esc(x)}" target="_blank" rel="noopener"><img src="${esc(x)}" alt="${esc(v.alt)} ${i + 1}/${v.items.length}" loading="lazy" decoding="async"></a>`).join("")}</div></figure>`;
     if (k === "video") return `<figure class="a-video"><video controls playsinline preload="none" poster="${esc(v.poster)}" width="${v.w}" height="${v.h}"><source src="${esc(v.src)}" type="video/mp4"></video>${v.cap ? `<figcaption>${fmt(v.cap)}</figcaption>` : ""}</figure>`;
     return `<p>${fmt(v)}</p>`;
   }).join("\n");

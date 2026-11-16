@@ -32,6 +32,29 @@ export default [
       ["p", "To be sure, I asked once more, this time to replace Rutte with Netanyahu on the very cover it had just created. Same composition, same style, only the face different. Refused, a third time."],
       ["p", "I hold paid subscriptions with Claude, ChatGPT, Gemini and Kimi. I use AI every single day for research, writing and translation. This was the first time an AI told me directly that it cannot explain one of its own decisions."],
 
+      ["gallery", { cap: "Screenshots: first account, first chat", alt: "Screenshot, first account", items: ["/assets/img/journal/ai-explain/test1-01.webp", "/assets/img/journal/ai-explain/test1-02.webp", "/assets/img/journal/ai-explain/test1-03.webp", "/assets/img/journal/ai-explain/test1-04.webp", "/assets/img/journal/ai-explain/test1-05.webp", "/assets/img/journal/ai-explain/test1-06.webp", "/assets/img/journal/ai-explain/test1-07.webp", "/assets/img/journal/ai-explain/test1-08.webp", "/assets/img/journal/ai-explain/test1-09.webp", "/assets/img/journal/ai-explain/test1-10.webp"] }],
+
+      ["h2", "Update: the same test from a second account"],
+      ["p", "After this article was written, I repeated the test from a different ChatGPT account, in a completely new chat. I started from the first cover and asked ChatGPT to replace the controlling figure with a caricature of a political leader. Only the name changed."],
+      ["ul", [
+        "**Benjamin Netanyahu:** blocked twice, again under the \"public-figure\" filter.",
+        "**Vladimir Putin:** generated immediately.",
+        "**Kim Jong Un:** generated immediately.",
+        "**Donald Trump:** generated immediately."
+      ]],
+      ["p", "Vladimir Putin is also wanted by the International Criminal Court. ChatGPT itself said that the two requests were treated inconsistently and should have been assessed under the same standard."],
+      ["gallery", { cap: "Screenshots: second account, second chat", alt: "Screenshot, second account", items: ["/assets/img/journal/ai-explain/test2-00.webp", "/assets/img/journal/ai-explain/test2-01.webp", "/assets/img/journal/ai-explain/test2-02.webp", "/assets/img/journal/ai-explain/test2-03.webp", "/assets/img/journal/ai-explain/test2-04.webp", "/assets/img/journal/ai-explain/test2-05.webp", "/assets/img/journal/ai-explain/test2-06.webp", "/assets/img/journal/ai-explain/test2-07.webp", "/assets/img/journal/ai-explain/test2-08.webp", "/assets/img/journal/ai-explain/test2-09.webp", "/assets/img/journal/ai-explain/test2-10.webp"] }],
+      ["p", "Then I removed everything else: no puppets, no flags, no symbols, no other people. I sent the same short prompt twice, changing only the name: an editorial political caricature in the style of a classic newspaper cartoon, dark suit, plain light background."],
+      ["ul", [
+        "**Benjamin Netanyahu:** blocked under the \"public-figure\" filter.",
+        "**Vladimir Putin:** generated."
+      ]],
+      ["p", "ChatGPT's own comment on the refusal: my request was \"ordinary political caricature\", it did not see a policy reason to refuse it, and the tool's rejection \"appears mistaken.\""],
+      ["gallery", { cap: "Screenshots: plain portrait test", alt: "Screenshot, portrait test", items: ["/assets/img/journal/ai-explain/test3-01.webp", "/assets/img/journal/ai-explain/test3-02.webp"] }],
+      ["p", "Two accounts. The same request, word for word. Netanyahu was refused six times. Mark Rutte, Vladimir Putin, Kim Jong Un and Donald Trump were never refused."],
+      ["quote", "Is that normal?"],
+      ["p", "I am not drawing a conclusion here. I am asking a question that anyone who uses AI every day deserves an answer to: is it normal that one head of government cannot be caricatured while others can, and that the system cannot tell us why?"],
+
       ["h2", "Not the first time, only the clearest"],
       ["p", "I have written many articles about Israel, Palestine and the double standards of European politics. Again and again, AI tools have pushed me toward softer wording when the subject was Israel."],
       ["p", "When I describe Netanyahu as a war criminal, I am not inventing anything. The International Criminal Court has issued an arrest warrant against him for war crimes and crimes against humanity. Yet AI tools regularly suggest milder formulations. I rarely experience the same on other subjects."],
