@@ -60,6 +60,12 @@ export default [
       ["p", "When I describe Netanyahu as a war criminal, I am not inventing anything. The International Criminal Court has issued an arrest warrant against him for war crimes and crimes against humanity. Yet AI tools regularly suggest milder formulations. I rarely experience the same on other subjects."],
       ["p", "Until now, I could only describe this as a feeling. This time, everything is recorded: every prompt, every refusal, and the admission that the system cannot explain itself."],
 
+      ["h2", "What worries me"],
+      ["p", "I want to be clear about my own view, because for me this is not only a technical question."],
+      ["p", "I am genuinely concerned. I have now seen, on record, that one AI system treats one political leader differently from all the others, and cannot say why. Together with what I have experienced for a long time when writing about Israel, I cannot stop asking: is this limited to images? Or does the same system also lean in Israel's favour in other situations, when people ask it for advice, for information, or for an opinion on the news?"],
+      ["p", "ChatGPT is used by hundreds of millions of people every week. If even a small bias is built into what it says or refuses to say, it adds up across millions of everyday decisions: what people read, what they believe, what they buy, which causes they support. And who benefits from that? If the system is tilted in favour of one state, that state gains an influence over public opinion that no lobbying campaign could ever buy."],
+      ["p", "I cannot prove that this is happening. But I also cannot prove that it is not, and neither can anyone else, because the rules are secret. That is exactly why I am worried, and why I think everyone who uses AI should be worried too."],
+
       ["h2", "Why this matters far beyond one picture"],
       ["p", "This is not about one book cover."],
       ["p", "Hundreds of millions of people use AI every day. They ask it what to read, what to buy, how to write, and what to think about the news. AI is quickly becoming the layer between people and information."],

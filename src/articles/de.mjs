@@ -60,6 +60,12 @@ export default [
       ["p", "Wenn ich Netanjahu als Kriegsverbrecher bezeichne, erfinde ich nichts. Der Internationale Strafgerichtshof hat einen Haftbefehl gegen ihn wegen Kriegsverbrechen und Verbrechen gegen die Menschlichkeit erlassen. Trotzdem schlagen KI-Tools regelmäßig mildere Formulierungen vor. Bei anderen Themen erlebe ich das selten."],
       ["p", "Bisher konnte ich das nur als Gefühl beschreiben. Diesmal ist alles dokumentiert: jede Anfrage, jede Ablehnung und das Eingeständnis, dass sich das System nicht erklären kann."],
 
+      ["h2", "Was mir Sorgen macht"],
+      ["p", "Ich möchte meine eigene Sicht klar benennen, denn für mich ist das nicht nur eine technische Frage."],
+      ["p", "Ich bin ernsthaft besorgt. Ich habe jetzt dokumentiert gesehen, dass ein KI-System einen Politiker anders behandelt als alle anderen und nicht sagen kann, warum. Zusammen mit dem, was ich seit Langem erlebe, wenn ich über Israel schreibe, komme ich nicht um die Frage herum: Beschränkt sich das auf Bilder? Oder neigt dasselbe System auch in anderen Situationen zugunsten Israels, wenn Menschen es um Rat, um Informationen oder um eine Einschätzung der Nachrichten bitten?"],
+      ["p", "ChatGPT wird jede Woche von Hunderten Millionen Menschen genutzt. Wenn auch nur eine kleine Schlagseite in dem steckt, was es sagt oder verweigert, summiert sich das über Millionen alltäglicher Entscheidungen: was Menschen lesen, was sie glauben, was sie kaufen, welche Anliegen sie unterstützen. Und wer profitiert davon? Wenn das System zugunsten eines Staates geneigt ist, gewinnt dieser Staat einen Einfluss auf die öffentliche Meinung, den keine Lobbykampagne jemals kaufen könnte."],
+      ["p", "Ich kann nicht beweisen, dass das geschieht. Aber ich kann auch nicht beweisen, dass es nicht geschieht, und niemand sonst kann das, denn die Regeln sind geheim. Genau deshalb bin ich besorgt, und genau deshalb sollte es jeder sein, der KI nutzt."],
+
       ["h2", "Warum das weit über ein Bild hinausgeht"],
       ["p", "Es geht nicht um ein Buchcover."],
       ["p", "Hunderte Millionen Menschen nutzen KI jeden Tag. Sie fragen sie, was sie lesen, was sie kaufen, wie sie schreiben und was sie von den Nachrichten halten sollen. KI wird gerade zur Schicht zwischen den Menschen und der Information."],
