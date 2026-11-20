@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Peace Quilt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: app shell. Side nav on wide screens, bottom nav on phones; content column 640px, constellation full width. Single black-and-lime world. */
+  --bg:#0A0B0A;
+  --s1:#121412;
+  --s2:#1A1D1A;
+  --line:#272B27;
+  --ink:#EEF2EA;
+  --muted:#A3AB9F;
+  --lime:#C6F432;
+  --display:"Sora", system-ui, sans-serif;
+  --body:"DM Sans", system-ui, -apple-system, sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+a{color:var(--lime)}
+button{font-family:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.app{display:flex;min-height:100%}
+.side{width:230px;flex-shrink:0;border-right:1px solid var(--line);padding:20px 14px;display:flex;flex-direction:column;gap:4px;position:sticky;top:0;height:100vh}
+.logo{display:flex;align-items:center;gap:10px;padding:4px 10px 18px;text-decoration:none;color:var(--ink)}
+.logo b{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em}
+.orb{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#E9FF9A,var(--lime) 45%,#5A7A0A);box-shadow:0 0 14px #C6F43288,0 0 30px #C6F43233;flex-shrink:0}
+.nav a{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:500}
+.nav a.on{background:var(--s2);color:var(--ink)}
+.nav a.on svg{color:var(--lime)}
+.nav .badge{margin-left:auto;background:var(--lime);color:#0A0B0A;font-size:11px;font-weight:700;border-radius:9px;padding:0 7px}
+.side .add{margin-top:10px;background:var(--lime);color:#0A0B0A;border-radius:10px;padding:11px 14px;font-weight:600;text-decoration:none;text-align:center}
+.side .foot{margin-top:auto;font-size:12px;color:var(--muted);padding:0 10px}
+.bottom{display:none}
+main{flex:1;min-width:0}
+.col{max-width:640px;margin:0 auto;padding:20px 16px 100px;display:grid;gap:12px}
+.wide{max-width:1100px}
+@media (max-width:900px){
+  .side{display:none}
+  .bottom{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));position:fixed;left:0;right:0;bottom:0;height:64px;background:#0A0B0Af2;border-top:1px solid var(--line);backdrop-filter:blur(8px);z-index:5}
+  .bottom a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--muted);text-decoration:none;font-size:11px;position:relative}
+  .bottom a.on{color:var(--lime)}
+  .bottom .plus span{width:44px;height:44px;border-radius:50%;background:var(--lime);color:#0A0B0A;display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px #C6F43255}
+  .bottom .dot{position:absolute;top:8px;right:calc(50% - 18px);width:8px;height:8px;border-radius:50%;background:var(--lime)}
+  .mtop{display:flex!important}
+}
+.mtop{display:none;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#0A0B0Af2;backdrop-filter:blur(8px);z-index:4}
+body.welcome .side,body.welcome .bottom,body.welcome .mtop{display:none!important}
+
+h1,h2,h3{font-family:var(--display);letter-spacing:-.015em;text-wrap:balance}
+.pagehead{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.pagehead h1{font-size:26px;margin:0;font-weight:600}
+.sub{color:var(--muted);margin:0}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:7px 14px;font-weight:500;font-size:14px;cursor:pointer}
+.tab.on{background:var(--lime);border-color:var(--lime);color:#0A0B0A}
+
+.card{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:12px}
+.who{display:flex;align-items:center;gap:12px}
+.av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px;flex-shrink:0}
+.who .n{font-weight:600}
+.who .m{font-size:13px;color:var(--muted)}
+.chip{font-size:11px;font-weight:600;padding:1px 8px;border-radius:999px;display:inline-block}
+.row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.card p{margin:0}
+.piece{border:1px solid #C6F4324d;background:#C6F4320a;border-radius:12px;padding:14px;display:grid;gap:8px;text-decoration:none;color:var(--ink)}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--lime)}
+.piece h3,.art h3{margin:0;font-size:19px;font-weight:600;line-height:1.25}
+.audio{display:flex;align-items:center;gap:10px;background:var(--bg);border-radius:999px;padding:4px 14px 4px 4px}
+.play{width:36px;height:36px;border-radius:50%;border:0;background:var(--lime);color:#0A0B0A;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.wave{flex:1;display:flex;align-items:center;gap:3px;height:24px}
+.wave i{width:3px;border-radius:2px;background:var(--muted)}
+.wave i.p{background:var(--lime)}
+.art{border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;text-decoration:none;color:var(--ink)}
+.art .cover{height:140px;background:#050605;position:relative;overflow:hidden}
+.art .txt{padding:14px;display:grid;gap:6px}
+.art .txt p{color:var(--muted)}
+.photo{height:220px;border-radius:12px;background:repeating-linear-gradient(135deg,#1A1D1A 0 14px,#161916 14px 28px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;text-align:center;padding:12px}
+.doc{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-decoration:none;color:var(--ink)}
+.doc .ic{width:40px;height:48px;border-radius:6px;background:#C6F4321f;color:var(--lime);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.acts{display:flex;gap:22px;color:var(--muted);font-size:13px;margin:-4px 0 -8px}
+.acts button{min-height:44px;border:0;background:transparent;color:inherit;display:flex;align-items:center;gap:6px;cursor:pointer;padding:0;font-size:13px}
+.acts button.liked{color:var(--lime)}
+.acts .share{margin-left:auto}
+.composer{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--muted)}
+.composer span.fake{flex:1;background:var(--s2);border-radius:999px;padding:10px 16px}
+
+.stage{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#050605}
+#cv{display:block;width:100%;height:min(68vh,600px);min-height:420px;cursor:pointer;touch-action:manipulation}
+.legend{position:absolute;left:12px;bottom:10px;right:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);pointer-events:none}
+.legend i{display:inline-block;width:18px;height:0;border-top:2px solid var(--lime);vertical-align:middle;margin-right:6px}
+.legend i.d{border-top:2px dashed #6EE7B7}
+.roles{display:flex;gap:6px;flex-wrap:wrap}
+.rc{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:5px 11px;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.rc i{width:9px;height:9px;border-radius:50%}
+.rc.on{border-color:var(--lime);background:#C6F43214}
+.peek{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+
+.back{display:inline-flex;align-items:center;gap:6px;color:var(--muted);text-decoration:none;font-size:14px;min-height:36px}
+.detail h1{font-size:28px;margin:4px 0 0;line-height:1.15}
+.links{display:grid;gap:8px}
+.link{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;background:var(--s1);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink)}
+.link span{font-size:12px;color:var(--muted)}
+.btn{background:var(--lime);color:#0A0B0A;border:0;border-radius:10px;padding:11px 16px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;justify-self:start}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+
+article.read{max-width:640px;margin:0 auto;padding:20px 16px 100px}
+article.read h1{font-size:clamp(28px,5vw,40px);line-height:1.1;margin:10px 0}
+article.read p{font-size:17px;line-height:1.7;margin:0 0 18px;color:#D9DED5;max-width:65ch}
+article.read h2{font-size:21px;margin:28px 0 10px}
+
+form.cmp{display:grid;gap:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+label{display:grid;gap:5px;font-size:13px;color:var(--muted)}
+input,select,textarea{background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:15px var(--body)}
+textarea{min-height:110px;resize:vertical}
+.note{font-size:12px;color:var(--muted);margin:0}
+.safe{display:grid;gap:6px;background:#C6F4320d;border:1px solid #C6F43233;border-radius:12px;padding:12px 14px;font-size:13px}
+
+.inbox a{display:flex;gap:12px;padding:14px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.inbox a:last-child{border-bottom:0}
+.inbox .l{flex:1;min-width:0}
+.inbox .t{display:flex;justify-content:space-between;gap:8px}
+.inbox .x{color:var(--muted);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.inbox .u .x{color:var(--ink)}
+.inbox .u .n::after{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lime);margin-left:8px;vertical-align:middle}
+.chat{display:flex;flex-direction:column;gap:8px;min-height:50vh}
+.b{max-width:78%;padding:10px 14px;border-radius:16px;background:var(--s2)}
+.b.me{align-self:flex-end;background:var(--lime);color:#0A0B0A;border-bottom-right-radius:4px}
+.b.them{border-bottom-left-radius:4px}
+.b small{display:block;font-size:11px;opacity:.7;margin-top:2px}
+.send{display:flex;gap:8px;position:sticky;bottom:72px}
+@media (min-width:901px){.send{bottom:16px}}
+.send input{flex:1}
+
+.prof{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.prof .av{width:72px;height:72px;font-size:22px}
+.stats{display:flex;gap:22px}
+.stats b{display:block;font-family:var(--display);font-size:20px}
+.stats span{font-size:12px;color:var(--muted)}
+
+.toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--lime);color:#0A0B0A;font-weight:600;padding:10px 18px;border-radius:999px;box-shadow:0 0 24px #C6F43266;z-index:9;opacity:0;transition:opacity .25s;pointer-events:none}
+.toast.show{opacity:1}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+#hc{position:absolute;inset:0;width:100%;height:100%}
+.hero .in{position:relative;max-width:1100px;margin:0 auto;padding:48px 20px;width:100%}
+.hero h1{font-size:clamp(44px,9vw,92px);line-height:.98;margin:14px 0 18px;font-weight:700;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--lime);text-shadow:0 0 30px #C6F43266}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);max-width:44ch;color:#D9DED5;margin:0 0 26px}
+.hero .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.hero .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:48px;max-width:860px}
+.hero .pillars div{border-top:1px solid var(--line);padding-top:12px}
+.hero .pillars b{display:block;font-family:var(--display);font-weight:600;margin-bottom:2px}
+.hero .pillars span{font-size:14px;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side" aria-label="Main navigation">
+    <a class="logo" href="#welcome"><span class="orb"></span><b>The Peace Quilt</b></a>
+    <nav class="nav" id="sideNav"></nav>
+    <a class="add" href="#compose">Add your piece</a>
+    <p class="foot">Prototype · all stories are fictional samples</p>
+  </aside>
+  <main>
+    <div class="mtop"><a class="logo" href="#welcome" style="padding:0"><span class="orb"></span><b>The Peace Quilt</b></a><a href="#profile" class="av" id="mAv" aria-label="Your profile" style="width:34px;height:34px;text-decoration:none"></a></div>
+    <div id="view"></div>
+  </main>
+  <nav class="bottom" id="botNav" aria-label="Main navigation"></nav>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ROLES={Doctor:'#7DD3FC',Mother:'#F9A8D4',Mediator:'#C6F432',Teacher:'#86EFAC',Youth:'#C4B5FD',Elder:'#FDBA74',Researcher:'#5EEAD4',Team:'#EEF2EA'};
+const STORY_ROLES=['Doctor','Mother','Mediator','Teacher','Youth','Elder'];
+const THEMES=['Protecting a hospital','A chain of local agreements',"Women's cross-community mediation",'Safe passage','Reopening schools'];
+const SHORT=['Hospital','Local agreements',"Women's mediation",'Safe passage','Schools'];
+const PLACES=['Riverside district','Hill villages','Old town','Border crossing','Coastal camp'];
+const I={
+ feed:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>',
+ star:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="18" cy="5" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6.5l9-1M6.2 7.6l4.8 8.8M17 6.8l-4 9.4"/></svg>',
+ msg:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>',
+ user:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>',
+ plus:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
+ heart:f=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="${f?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>`,
+ cmt:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>',
+ rep:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 7h11l-3-3M17 17H6l3 3"/></svg>',
+ send:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg>',
+ playI:'<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>',
+ back:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>'
+};
+
+/* ---------- data ---------- */
+const RAW=[
+["We kept the generator running","Doctor",0,0,"For eleven nights the staff took turns guarding fuel for the generator. Neighbours from both sides brought diesel in jerrycans.","Audio","2:14"],
+["The sheets on the roof","Elder",0,0,"We painted a red crescent and a red cross side by side on bedsheets and laid them on the hospital roof.","Photo"],
+["Blood donors from across the line","Youth",0,2,"A group chat of forty students organised blood donations from both communities within a day.","Text"],
+["Nobody asked which side","Doctor",0,1,"In the field clinic we stopped writing down which village patients came from. Only their injuries.","Audio","1:40"],
+["Mothers at the gate","Mother",0,0,"When armed men came to the gate, twelve mothers sat down in front of it and refused to move.","Video","0:52"],
+["Night shift letters","Doctor",0,2,"Patients wrote notes to the families of the wounded from the other side, two beds away.","Text"],
+["The water-pump truce","Elder",1,1,"Two villages agreed to share one pump: mornings for one, afternoons for the other. It held for two years.","Audio","3:05"],
+["Market day without weapons","Mediator",1,2,"Traders agreed the Thursday market would be weapon-free. Then Friday, then the whole week.","Photo"],
+["Tea on both ends of the bridge","Mediator",1,3,"Commanders met halfway across the bridge. We had tea ready on both ends.","Text"],
+["The harvest corridor","Elder",1,1,"Farmers negotiated six quiet hours a day to bring in the olive harvest.","Audio","2:30"],
+["The football field rule","Youth",1,4,"Whoever plays on the field leaves politics at the gate. The boys wrote the rule themselves.","Video","1:10"],
+["Copying the pump deal","Mediator",1,0,"We heard about the water-pump agreement and used the same wording for our bakery.","Text"],
+["Kitchen table talks","Mother",2,4,"Our husbands would not meet, so we cooked together and talked. The first agreement was written on a recipe card.","Audio","4:12"],
+["Lists of the missing","Mother",2,3,"Women from both communities shared their lists of missing sons. Forty families got news.","Text"],
+["The sewing circle","Teacher",2,2,"Each family brought a piece of fabric for one quilt. While we sewed, we negotiated.","Photo"],
+["Through the commander's wife","Mediator",2,1,"Sometimes the shortest road to a commander goes through his wife.","Audio","1:58"],
+["Radio for mothers","Mother",2,0,"A weekly radio hour where mothers from both sides read letters to each other.","Audio","5:00"],
+["Translating grief","Teacher",2,4,"I translated between two mothers who lost sons in the same week. After a month they no longer needed me.","Text"],
+["The ambulance code","Doctor",3,3,"A three-word radio code meant: ambulance passing, hold fire. Both sides learned it.","Text"],
+["Walking the children through","Teacher",3,3,"Every morning I walked twenty-three children past the checkpoint to school.","Video","0:45"],
+["The bus driver's list","Elder",3,4,"I gave my passenger list to both checkpoints. Nobody went missing on my bus.","Photo"],
+["Escorted by grandmothers","Elder",3,1,"Young men could not pass alone, so grandmothers walked with them.","Audio","2:02"],
+["Two shifts, one classroom","Teacher",4,2,"Morning shift for one community, afternoon for the other. In the third year we merged.","Text"],
+["The first joint exam","Youth",4,0,"We sat the same exam in the same room. Nobody cheated, nobody fought.","Video","1:30"],
+["Books from the other side","Teacher",4,1,"A library across the line sent us three hundred books with notes inside the covers.","Photo"],
+["The parents' committee","Mother",4,2,"Five mothers from each side ran the school when the ministry could not.","Text"],
+["A choir in two languages","Youth",4,4,"We formed a choir that sang in both languages at the reopening.","Audio","3:20"],
+["The teacher who stayed","Teacher",4,3,"When the others left, she stayed and taught in a tent for a year.","Text"]
+];
+const S={
+ stories:RAW.map((r,i)=>({id:i,title:r[0],role:r[1],theme:r[2],place:r[3],text:r[4],media:r[5],dur:r[6]||'',consent:i%3===1?'Pseudonymous':'Public',likes:40+((i*37)%180),mine:false})),
+ inspired:[[11,6]],
+ liked:{},
+ following:{so:false,yc:false},
+ feed:[
+  {k:'story',sid:12,meta:'2h'},
+  {k:'post',id:'p1',author:'Lena Haddad',ini:'LH',role:'Mediator',meta:'@lena.mediates · 3h',text:'Three villages now use the same water-sharing wording. Local agreements copy each other faster than any treaty. If you helped make one, add your piece to the quilt.',likes:86,c:9,r:21},
+  {k:'article',id:'a1',author:'Dr. Mira Vos',ini:'MV',role:'Researcher',meta:'@miravos · 5h',title:'What 40 local truces have in common',dek:'Patterns from two years of community-held agreements: who started them, what they protected, and why most began with water or schools.',read:'9 min read',likes:214,c:37,r:58},
+  {k:'story',sid:0,meta:'6h'},
+  {k:'photo',id:'p2',author:'Youssef A.',ini:'YA',role:'Teacher',meta:'Old town · Yesterday',text:'First day back in the shared classroom. Morning shift, afternoon shift, same blackboard.',likes:342,c:41,r:77},
+  {k:'doc',id:'p3',author:'Archive team',ini:'AT',role:'Team',meta:'@archive · Yesterday',text:'Draft consent protocol for contributors. Comments are open until Friday.',doc:'Consent-protocol-v0.3.pdf',docMeta:'PDF · 6 pages',likes:63,c:22,r:15},
+  {k:'story',sid:19,meta:'2d'}
+ ],
+ chats:[
+  {id:'lena',name:'Lena Haddad',ini:'LH',role:'Mediator',unread:true,msgs:[['them','I read your piece about the bakery agreement.','13:51'],['them','Can we link it to the water-pump story? Same wording, two villages apart.','14:02']]},
+  {id:'mira',name:'Dr. Mira Vos',ini:'MV',role:'Researcher',unread:true,msgs:[['me','Which metadata fields do you use for testimonies?','11:20'],['them','Role, region, date, theme, outcome. Sending you our list now.','11:47']]},
+  {id:'archive',name:'Archive team',ini:'AT',role:'Team',unread:false,msgs:[['them','Your story is now part of the Women’s mediation thread. Thank you for sharing it.','Mon']]}
+ ]
+};
+const ME={name:'Demo account',ini:'DA',role:'Mediator',bio:'Collecting peace stories from the Riverside district.'};
+let links=[];
+function buildLinks(){
+  links=[];
+  THEMES.forEach((_,k)=>{const m=S.stories.filter(s=>s.theme===k);
+    m.forEach((s,j)=>{links.push({a:s.id,b:m[(j+1)%m.length].id,type:'theme'});if(m.length>4&&j%2===0)links.push({a:s.id,b:m[(j+2)%m.length].id,type:'theme'});});});
+  PLACES.forEach((_,p)=>{const m=S.stories.filter(s=>s.place===p).sort((x,y)=>x.theme-y.theme);
+    for(let j=0;j+1<m.length;j++)if(m[j].theme!==m[j+1].theme)links.push({a:m[j].id,b:m[j+1].id,type:'place'});});
+  S.inspired.forEach(([a,b])=>links.push({a,b,type:'inspired'}));
+}
+function connected(id){
+  const seen={},out=[];
+  links.forEach(l=>{if(l.a!==id&&l.b!==id)return;const o=l.a===id?l.b:l.a;if(seen[o])return;seen[o]=1;out.push({s:S.stories[o],type:l.type});});
+  return out;
+}
+
+/* ---------- helpers ---------- */
+function av(ini,role,size){const c=ROLES[role]||'#EEF2EA';return `<span class="av" style="background:${c}26;color:${c}${size?';width:'+size+'px;height:'+size+'px':''}">${esc(ini)}</span>`;}
+function chip(role){const c=ROLES[role]||'#EEF2EA';return `<span class="chip" style="background:${c}26;color:${c}">${esc(role)}</span>`;}
+function wave(){const h=[8,16,12,20,10,18,14,22,9,15,19,11,17,7,13,18,10,16];return '<div class="wave" aria-hidden="true">'+h.map((x,i)=>`<i class="${i<6?'p':''}" style="height:${x}px"></i>`).join('')+'</div>';}
+function acts(key,likes,c,r){const on=S.liked[key];return `<div class="acts"><button data-like="${key}" class="${on?'liked':''}" aria-label="Like">${I.heart(on)}<span>${likes+(on?1:0)}</span></button><button aria-label="Comment">${I.cmt}<span>${c}</span></button><button aria-label="Repost">${I.rep}<span>${r}</span></button><button class="share" aria-label="Send as message" data-go="messages">${I.send}</button></div>`;}
+function coverSvg(){return `<svg viewBox="0 0 400 140" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g stroke="#C6F432" stroke-opacity=".45" fill="none"><path d="M40 100L110 40L180 80L250 30L340 90L280 120L180 80M110 40L80 20M250 30L310 18"/></g>${[[40,100,'#F9A8D4'],[110,40,'#C6F432'],[180,80,'#7DD3FC'],[250,30,'#86EFAC'],[340,90,'#C6F432'],[280,120,'#FDBA74'],[80,20,'#C4B5FD'],[310,18,'#7DD3FC']].map(([x,y,c])=>`<circle cx="${x}" cy="${y}" r="4" fill="${c}" style="filter:drop-shadow(0 0 6px ${c})"/>`).join('')}</svg>`;}
+
+function storyCard(s,meta){
+  const who=s.mine?ME.name:(s.consent==='Pseudonymous'?'Pseudonymous contributor':(s.role==='Mother'?'A mother':'A '+s.role.toLowerCase()));
+  const ini=s.mine?ME.ini:(s.consent==='Pseudonymous'?'PC':s.role[0]);
+  const media=(s.media==='Audio'||s.media==='Video')?`<div class="audio"><button class="play" aria-label="Play ${s.media.toLowerCase()}">${I.playI}</button>${wave()}<span class="note">${s.media} ${esc(s.dur)}</span></div>`:s.media==='Photo'?`<div class="photo" style="height:160px">Photo · location data removed on upload</div>`:'';
+  return `<article class="card"><div class="who">${av(ini,s.role)}<div><div class="row"><span class="n">${esc(who)}</span>${chip(s.role)}</div><div class="m">${esc(PLACES[s.place])} · ${esc(meta||'now')}</div></div></div>
+  <a class="piece" href="#story-${s.id}"><span class="eyebrow">Piece · ${esc(SHORT[s.theme])}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p>${media}<span style="font-size:13px;font-weight:600;color:var(--lime)">${connected(s.id).length} connected pieces →</span></a>
+  ${acts('s'+s.id,s.likes,Math.round(s.likes/9),Math.round(s.likes/5))}</article>`;
+}
+function postCard(p){
+  let body='';
+  if(p.k==='post')body=`<p>${esc(p.text)}</p>`;
+  if(p.k==='article')body=`<a class="art" href="#article-${p.id}"><div class="cover">${coverSvg()}</div><div class="txt"><span class="eyebrow" style="color:var(--muted)">Article · ${esc(p.read)}</span><h3>${esc(p.title)}</h3><p>${esc(p.dek)}</p></div></a>`;
+  if(p.k==='photo')body=`<p>${esc(p.text)}</p><div class="photo">Photo · faces blurred and location removed on upload</div>`;
+  if(p.k==='doc')body=`<p>${esc(p.text)}</p><a class="doc" href="#feed"><span class="ic">PDF</span><span style="display:grid"><b style="font-weight:600">${esc(p.doc)}</b><span class="note">${esc(p.docMeta)}</span></span></a>`;
+  return `<article class="card"><div class="who">${av(p.ini,p.role)}<div><div class="row"><span class="n">${esc(p.author)}</span>${chip(p.role)}</div><div class="m">${esc(p.meta)}</div></div></div>${body}${acts(p.id,p.likes,p.c,p.r)}</article>`;
+}
+
+/* ---------- views ---------- */
+let feedTab='following';
+const V={};
+V.welcome=()=>`<section class="hero"><canvas id="hc" aria-hidden="true"></canvas><div class="in">
+  <span class="eyebrow">A living archive for peace</span>
+  <h1>The Peace<br><em>Quilt</em></h1>
+  <p class="lead">Thousands of small, true stories from doctors, mothers, teachers and mediators. Sewn together, they become a pattern no one can ignore.</p>
+  <div class="ctas"><a class="btn" href="#feed">Enter the quilt</a><a class="btn ghost" href="#constellation">See the constellation</a></div>
+  <div class="pillars">
+   <div><b>One piece at a time</b><span>Share a story, a photo, a voice note or a long article.</span></div>
+   <div><b>Threads, not silos</b><span>Every piece is tagged by role, theme and region, so separate voices connect.</span></div>
+   <div><b>Safe by design</b><span>Consent per story, pseudonyms, and location data removed on upload.</span></div>
+  </div></div></section>`;
+V.feed=()=>{
+  let items='';
+  if(feedTab==='following'){items=S.feed.map(f=>f.k==='story'?storyCard(S.stories[f.sid],f.meta):postCard(f)).join('');}
+  else if(feedTab==='pieces'){items=S.stories.slice().reverse().slice(0,10).map(s=>storyCard(s,'')).join('');}
+  else{items=S.feed.filter(f=>f.k==='article').map(postCard).join('')+`<p class="note">More long-form articles appear here as people write them.</p>`;}
+  return `<div class="col"><div class="pagehead"><h1>Your feed</h1><div class="tabs" role="tablist">${[['following','Following'],['pieces','Newest pieces'],['articles','Articles']].map(([k,l])=>`<button class="tab ${feedTab===k?'on':''}" data-tab="${k}" role="tab" aria-selected="${feedTab===k}">${l}</button>`).join('')}</div></div>
+  <a class="card composer" href="#compose">${av(ME.ini,ME.role)}<span class="fake">Share a piece, a post or an article</span></a>${items}</div>`;
+};
+let cMode=0,cRole=null,cSel=12;
+V.constellation=()=>`<div class="col wide"><div class="pagehead"><div><h1>The constellation</h1><p class="sub">${S.stories.length} pieces · ${links.length} threads. Tap any piece.</p></div>
+  <div class="tabs"><button class="tab ${cMode?'':'on'}" data-mode="0">Quilt</button><button class="tab ${cMode?'on':''}" data-mode="1">Constellation</button></div></div>
+  <div class="roles">${STORY_ROLES.map(r=>`<button class="rc ${cRole===r?'on':''}" data-role="${r}"><i style="background:${ROLES[r]}"></i>${r}</button>`).join('')}</div>
+  <div class="stage"><canvas id="cv" aria-label="Map of all story pieces"></canvas><div class="legend"><span><i></i>Same theme</span><span><i class="d"></i>Same region</span></div></div>
+  <div class="card peek" id="peek"></div></div>`;
+function peekHtml(){const s=S.stories[cSel];return `<div style="display:grid;gap:4px;flex:1;min-width:220px"><div class="row">${chip(s.role)}<span class="note">${esc(PLACES[s.place])} · ${esc(SHORT[s.theme])}</span></div><b style="font-family:var(--display);font-size:18px">${esc(s.title)}</b><span class="sub">${esc(s.text)}</span></div><a class="btn" href="#story-${s.id}">Open piece</a>`;}
+V.story=id=>{const s=S.stories[id];if(!s)return V.feed();const con=connected(id);const why={theme:'same theme',place:'same region',inspired:'inspired by'};
+  const media=(s.media==='Audio'||s.media==='Video')?`<div class="audio"><button class="play" aria-label="Play">${I.playI}</button>${wave()}<span class="note">${s.media} ${esc(s.dur)}</span></div>`:s.media==='Photo'?`<div class="photo">Photo · location data removed on upload</div>`:'';
+  return `<div class="col detail"><a class="back" href="#feed">${I.back}Back</a><span class="eyebrow">Piece · ${esc(THEMES[s.theme])}</span><h1>${esc(s.title)}</h1>
+  <div class="row">${chip(s.role)}<span class="chip" style="background:var(--s2);color:var(--muted)">${esc(PLACES[s.place])}</span><span class="chip" style="background:var(--s2);color:var(--muted)">${esc(s.consent)}</span><span class="chip" style="background:var(--s2);color:var(--muted)">${esc(s.media)}</span></div>
+  ${media}<p style="font-size:18px;line-height:1.6;margin:4px 0">${esc(s.text)}</p>${acts('s'+s.id,s.likes,Math.round(s.likes/9),Math.round(s.likes/5))}
+  <h2 style="font-size:18px;margin:12px 0 0">Connected pieces</h2><div class="links">${con.map(c=>`<a class="link" href="#story-${c.s.id}"><b style="font-weight:500">${esc(c.s.title)}</b><span>${why[c.type]}</span></a>`).join('')}</div>
+  <a class="btn ghost" href="#constellation" data-sel="${s.id}">${I.star}Show in the constellation</a></div>`;};
+V.article=()=>`<article class="read"><a class="back" href="#feed">${I.back}Back</a><div class="art" style="border:0;margin-top:8px"><div class="cover" style="height:200px;border-radius:14px">${coverSvg()}</div></div>
+  <span class="eyebrow" style="display:block;margin-top:18px">Article · 9 min read</span><h1>What 40 local truces have in common</h1>
+  <div class="who" style="margin:0 0 22px">${av('MV','Researcher')}<div><div class="row"><span class="n">Dr. Mira Vos</span>${chip('Researcher')}</div><div class="m">@miravos · 5h</div></div></div>
+  <p>For two years we collected agreements that no government signed: pump schedules, market rules, bus lists, exam rooms. Forty of them are now pieces in this quilt, and when you lay them side by side, the same shapes keep appearing.</p>
+  <h2>They start with something everyone needs</h2>
+  <p>Twenty-six of the forty began with water, food or schooling. Nobody negotiated about the conflict itself. They negotiated about a pump, a harvest or a classroom, and the conflict had to make room.</p>
+  <h2>Women often hold the first conversation</h2>
+  <p>In more than half of the cases, the first talks happened between women, in kitchens, sewing circles or on the radio, long before any commander was involved.</p>
+  <h2>The wording travels</h2>
+  <p>Agreements copy each other. A bakery used the exact wording of a water-pump truce from two villages away. That is the strongest argument for keeping these stories together: a solution that worked once can be found and reused.</p>
+  <p style="color:var(--muted);font-size:14px">Sample article written for this prototype.</p></article>`;
+let cType='Story';
+V.compose=()=>`<div class="col"><a class="back" href="#feed">${I.back}Back</a><div class="pagehead"><h1>Add your piece</h1><div class="tabs">${['Story','Post','Article'].map(t=>`<button class="tab ${cType===t?'on':''}" data-ctype="${t}">${t}</button>`).join('')}</div></div>
+  <form class="cmp card" id="cmp">
+   ${cType!=='Post'?`<label for="ct">Title<input id="ct" required maxlength="70" placeholder="${cType==='Story'?'e.g. Tea on both ends of the bridge':'e.g. Why local truces last longer'}"></label>`:''}
+   <label for="cx">${cType==='Story'?'Your story':cType==='Post'?'Your post':'Your article'}<textarea id="cx" required maxlength="${cType==='Article'?4000:500}" placeholder="${cType==='Story'?'Two or three sentences about what happened.':'What do you want to share?'}"></textarea></label>
+   ${cType==='Story'?`<div class="two"><label for="cr">Your role<select id="cr">${STORY_ROLES.map(r=>`<option>${r}</option>`).join('')}</select></label>
+   <label for="cth">Theme<select id="cth">${THEMES.map((t,i)=>`<option value="${i}">${esc(t)}</option>`).join('')}</select></label>
+   <label for="cp">Region<select id="cp">${PLACES.map((p,i)=>`<option value="${i}">${esc(p)}</option>`).join('')}</select></label>
+   <label for="cc">Who can see it<select id="cc"><option>Public</option><option>Pseudonymous</option><option>Researchers only</option></select></label></div>`:''}
+   <label for="cf">Photo, video, audio or document<input id="cf" type="file" accept="image/*,video/*,audio/*,.pdf"></label>
+   ${cType==='Story'?`<div class="safe"><b style="color:var(--lime)">Your safety</b><span>Location data is removed from photos and videos before they are stored. Places are shown as regions, never villages or addresses. You can withdraw consent and delete your piece at any time.</span></div>`:''}
+   <button class="btn" type="submit">${cType==='Story'?'Sew it into the quilt':'Publish'}</button></form></div>`;
+V.messages=()=>`<div class="col"><div class="pagehead"><h1>Messages</h1></div><div class="card inbox" style="padding:0;gap:0">${S.chats.map(c=>{const l=c.msgs[c.msgs.length-1];return `<a href="#chat-${c.id}" class="${c.unread?'u':''}">${av(c.ini,c.role)}<span class="l"><span class="t"><span class="n" style="font-weight:600">${esc(c.name)}</span><span class="note">${esc(l[2])}</span></span><span class="x">${l[0]==='me'?'You: ':''}${esc(l[1])}</span></span></a>`;}).join('')}</div></div>`;
+V.chat=id=>{const c=S.chats.find(x=>x.id===id);if(!c)return V.messages();c.unread=false;
+  return `<div class="col"><a class="back" href="#messages">${I.back}Messages</a><div class="who">${av(c.ini,c.role)}<div><div class="row"><span class="n">${esc(c.name)}</span>${chip(c.role)}</div><div class="m">End-to-end encrypted in the full version</div></div></div>
+  <div class="chat" id="chat">${c.msgs.map(m=>`<div class="b ${m[0]}">${esc(m[1])}<small>${esc(m[2])}</small></div>`).join('')}</div>
+  <form class="send" id="sendf" data-chat="${c.id}"><label for="mi" style="position:absolute;left:-9999px">Message</label><input id="mi" placeholder="Write a message" autocomplete="off" required><button class="btn" type="submit" aria-label="Send">${I.send}</button></form></div>`;};
+V.profile=()=>{const mine=S.stories.filter(s=>s.mine);const ex=mine.length?mine:[S.stories[11]];
+  return `<div class="col"><div class="card"><div class="prof">${av(ME.ini,ME.role)}<div style="display:grid;gap:4px"><div class="row"><b style="font-family:var(--display);font-size:22px">${esc(ME.name)}</b>${chip(ME.role)}</div><span class="sub">${esc(ME.bio)}</span></div></div>
+  <div class="stats"><div><b>${ex.length}</b><span>Pieces</span></div><div><b>214</b><span>Followers</span></div><div><b>${88+Object.values(S.following).filter(Boolean).length}</b><span>Following</span></div></div></div>
+  <h2 style="font-size:18px;margin:8px 0 0">People to follow</h2>
+  ${[['so','Dr. Samir Okafor','SO','Doctor','Field clinic, Hill villages'],['yc','Youth Choir Collective','YC','Youth','Songs in two languages']].map(([k,n,i,r,a])=>`<div class="card" style="grid-template-columns:auto 1fr auto;align-items:center">${av(i,r)}<div><div class="row"><b style="font-weight:600">${n}</b>${chip(r)}</div><span class="note">${a}</span></div><button class="btn ${S.following[k]?'':'ghost'}" data-follow="${k}">${S.following[k]?'Following':'Follow'}</button></div>`).join('')}
+  <h2 style="font-size:18px;margin:8px 0 0">${mine.length?'Your pieces':'Your pieces (sample)'}</h2>${ex.map(s=>storyCard(s,'')).join('')}</div>`;};
+
+/* ---------- nav ---------- */
+const NAV=[['feed','Feed',I.feed],['constellation','Constellation',I.star],['messages','Messages',I.msg],['profile','Profile',I.user]];
+function renderNav(cur){
+  const unread=S.chats.filter(c=>c.unread).length;
+  const group=cur.startsWith('chat')?'messages':cur.startsWith('story')||cur.startsWith('article')?'feed':cur;
+  document.getElementById('sideNav').innerHTML=NAV.map(([k,l,ic])=>`<a href="#${k}" class="${group===k?'on':''}" ${group===k?'aria-current="page"':''}>${ic}${l}${k==='messages'&&unread?`<span class="badge">${unread}</span>`:''}</a>`).join('');
+  const b=[NAV[0],NAV[1],['compose','Add',I.plus],NAV[2],NAV[3]];
+  document.getElementById('botNav').innerHTML=b.map(([k,l,ic])=>k==='compose'?`<a href="#compose" class="plus" aria-label="Add your piece"><span>${ic}</span></a>`:`<a href="#${k}" class="${group===k?'on':''}">${ic}${l}${k==='messages'&&unread?'<span class="dot"></span>':''}</a>`).join('');
+  document.getElementById('mAv').outerHTML=`<a href="#profile" id="mAv" aria-label="Your profile" style="text-decoration:none">${av(ME.ini,ME.role,34)}</a>`;
+}
+let cur='';
+function route(){
+  const h=(location.hash||'#welcome').slice(1)||'welcome';
+  cur=h;stopHero();
+  document.body.classList.toggle('welcome',h==='welcome');
+  let html;
+  if(h.startsWith('story-'))html=V.story(+h.slice(6));
+  else if(h.startsWith('article-'))html=V.article();
+  else if(h.startsWith('chat-'))html=V.chat(h.slice(5));
+  else html=(V[h]||V.welcome)();
+  document.getElementById('view').innerHTML=html;
+  renderNav(h);
+  if(h==='welcome')startHero();
+  if(h==='constellation')initConst();
+  if(h.startsWith('chat-')){const c=document.getElementById('chat');window.scrollTo(0,document.body.scrollHeight);}
+  if(!h.startsWith('chat-'))window.scrollTo(0,0);
+}
+function rerender(){const y=window.scrollY;route();window.scrollTo(0,y);}
+window.addEventListener('hashchange',route);
+
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-like],[data-tab],[data-mode],[data-role],[data-ctype],[data-follow],[data-sel],[data-go]');if(!t)return;
+  if(t.dataset.go){location.hash='#'+t.dataset.go;return;}
+  if(t.dataset.like){S.liked[t.dataset.like]=!S.liked[t.dataset.like];const on=S.liked[t.dataset.like];const n=t.querySelector('span');n.textContent=(+n.textContent)+(on?1:-1);t.classList.toggle('liked',on);t.querySelector('svg').outerHTML=I.heart(on);return;}
+  if(t.dataset.tab){feedTab=t.dataset.tab;rerender();return;}
+  if(t.dataset.mode){cMode=+t.dataset.mode;document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('on',b===t));target=cMode;kick();return;}
+  if(t.dataset.role){cRole=cRole===t.dataset.role?null:t.dataset.role;document.querySelectorAll('[data-role]').forEach(b=>b.classList.toggle('on',b.dataset.role===cRole));kick();return;}
+  if(t.dataset.ctype){cType=t.dataset.ctype;rerender();return;}
+  if(t.dataset.follow){S.following[t.dataset.follow]=!S.following[t.dataset.follow];rerender();return;}
+  if(t.dataset.sel){cSel=+t.dataset.sel;cMode=1;}
+});
+document.addEventListener('submit',e=>{
+  e.preventDefault();
+  if(e.target.id==='cmp'){
+    const v=id=>{const el=document.getElementById(id);return el?el.value.trim():'';};
+    const f=document.getElementById('cf');const file=f&&f.files[0];
+    const mtype=file?(file.type.startsWith('audio')?'Audio':file.type.startsWith('video')?'Video':file.type.startsWith('image')?'Photo':'Text'):'Text';
+    if(cType==='Story'){
+      const s={id:S.stories.length,title:v('ct'),role:v('cr'),theme:+v('cth'),place:+v('cp'),text:v('cx'),media:mtype,dur:mtype==='Audio'||mtype==='Video'?'0:30':'',consent:v('cc'),likes:0,mine:true};
+      S.stories.push(s);buildLinks();S.feed.unshift({k:'story',sid:s.id,meta:'just now'});cSel=s.id;flashId=s.id;
+      feedTab='following';location.hash='#feed';toast('Your piece was sewn into the quilt');
+    }else if(cType==='Post'){
+      S.feed.unshift({k:file&&mtype==='Photo'?'photo':'post',id:'u'+Date.now(),author:ME.name,ini:ME.ini,role:ME.role,meta:'just now',text:v('cx'),likes:0,c:0,r:0});
+      feedTab='following';location.hash='#feed';toast('Posted');
+    }else{
+      const id='u'+Date.now();S.feed.unshift({k:'article',id,author:ME.name,ini:ME.ini,role:ME.role,meta:'just now',title:v('ct'),dek:v('cx').slice(0,180),read:Math.max(1,Math.round(v('cx').split(/\s+/).length/200))+' min read',likes:0,c:0,r:0});
+      feedTab='following';location.hash='#feed';toast('Article published');
+    }
+  }
+  if(e.target.id==='sendf'){
+    const c=S.chats.find(x=>x.id===e.target.dataset.chat),inp=document.getElementById('mi');const txt=inp.value.trim();if(!txt)return;
+    const now=new Date(),tm=String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
+    c.msgs.push(['me',txt,tm]);rerender();document.getElementById('mi').focus();
+    if(c.msgs.length<6)setTimeout(()=>{c.msgs.push(['them','Thank you. Let’s connect our pieces.',tm]);if(cur==='chat-'+c.id){rerender();}},1400);
+  }
+});
+let toastT;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600);}
+
+/* ---------- constellation ---------- */
+let cv,ctx,W=0,H=0,t=0,target=0,stars=[],flashId=-1,flashT=0,running=false,labelPos=[];
+function initConst(){
+  cv=document.getElementById('cv');ctx=cv.getContext('2d');t=cMode;target=cMode;
+  layoutC();
+  cv.onclick=ev=>{const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top,e=ease(t);let best=-1,bd=1e9;
+    S.stories.forEach(s=>{const[x,y]=pos(s,e),sz=lerp(s.qs,10,e),d=Math.hypot(mx-x,my-y);if(d<sz/2+12&&d<bd){bd=d;best=s.id;}});
+    if(best>=0){cSel=best;document.getElementById('peek').innerHTML=peekHtml();kick();}};
+  document.getElementById('peek').innerHTML=peekHtml();
+  if(flashId>=0){flashT=1;}
+  draw();
+  if(!reduce&&cMode===0)setTimeout(()=>{if(cur==='constellation'&&target===0){cMode=1;target=1;document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('on',b.dataset.mode==='1'));kick();}},1500);
+  kick();
+}
+function layoutC(){
+  const r=cv.getBoundingClientRect(),dpr=window.devicePixelRatio||1;W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+  const n=S.stories.length,cols=W<560?6:10,rows=Math.ceil(n/cols),cell=Math.min((W-32)/cols,(H-60)/rows),ox=(W-cell*cols)/2,oy=(H-30-cell*rows)/2;
+  S.stories.forEach((s,i)=>{s.qx=ox+(i%cols+.5)*cell;s.qy=oy+(Math.floor(i/cols)+.5)*cell;s.qs=cell-6;});
+  const cx=W/2,cy=H/2-14,rx=W*(W<560?.29:.33),ry=H*.29,cr=Math.min(W,H)*(W<560?.1:.085);
+  labelPos=[];
+  THEMES.forEach((_,k)=>{const a=-Math.PI/2+k*2*Math.PI/THEMES.length,tx=cx+Math.cos(a)*rx,ty=cy+Math.sin(a)*ry;
+    const m=S.stories.filter(s=>s.theme===k);m.forEach((s,j)=>{const b=j*2*Math.PI/m.length+k,rr=cr*(1+.12*Math.sin(j*2.7));s.cx=tx+Math.cos(b)*rr;s.cy=ty+Math.sin(b)*rr;});
+    labelPos[k]=[tx,ty+cr+18];});
+  if(!stars.length)for(let i=0;i<150;i++)stars.push([Math.random(),Math.random(),Math.random()*1.1+.2,Math.random()]);
+}
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2,lerp=(a,b,e)=>a+(b-a)*e;
+function pos(s,e){return[lerp(s.qx,s.cx,e),lerp(s.qy,s.cy,e)];}
+function draw(){
+  if(!ctx)return;const e=ease(t);
+  ctx.fillStyle='#050605';ctx.fillRect(0,0,W,H);
+  if(e>0)stars.forEach(s=>{ctx.fillStyle=`rgba(238,242,234,${e*(.15+.4*s[3])})`;ctx.beginPath();ctx.arc(s[0]*W,s[1]*H,s[2],0,7);ctx.fill();});
+  const la=Math.max(0,(e-.45)/.55);
+  if(la>0){links.forEach(l=>{const A=S.stories[l.a],B=S.stories[l.b];if(!A||!B)return;
+      const dim=cRole&&A.role!==cRole&&B.role!==cRole,hot=l.a===cSel||l.b===cSel;
+      const rgb=l.type==='theme'?'198,244,50':l.type==='place'?'110,231,183':'249,168,212';
+      ctx.strokeStyle=`rgba(${rgb},${(hot?.95:l.type==='theme'?.4:.2)*la*(dim?.2:1)})`;ctx.lineWidth=hot?1.8:1;ctx.setLineDash(l.type==='theme'?[]:[3,4]);
+      const[ax,ay]=pos(A,e),[bx,by]=pos(B,e);ctx.beginPath();ctx.moveTo(ax,ay);
+      if(l.type==='theme')ctx.lineTo(bx,by);else ctx.quadraticCurveTo((ax+bx)/2+(ay-by)*.15,(ay+by)/2+(bx-ax)*.15,bx,by);ctx.stroke();});
+    ctx.setLineDash([]);ctx.font='600 12px "DM Sans", sans-serif';ctx.textAlign='center';
+    SHORT.forEach((nm,k)=>{const[x,y]=labelPos[k];ctx.fillStyle=`rgba(198,244,50,${la*.9})`;ctx.fillText(nm.toUpperCase(),x,Math.min(y,H-36));});}
+  S.stories.forEach(s=>{const[x,y]=pos(s,e),col=ROLES[s.role],dim=cRole&&s.role!==cRole,sz=lerp(s.qs,s.id===cSel?14:10,e),rad=lerp(4,sz/2,e);
+    ctx.globalAlpha=dim?.15:1;ctx.shadowColor=col;ctx.shadowBlur=e*16;ctx.fillStyle=col;
+    ctx.beginPath();ctx.roundRect(x-sz/2,y-sz/2,sz,sz,rad);ctx.fill();ctx.shadowBlur=0;
+    if(e<.6&&s.qs>22){ctx.strokeStyle=`rgba(5,6,5,${.5*(1-e/.6)})`;ctx.setLineDash([3,3]);ctx.lineWidth=1;ctx.beginPath();ctx.roundRect(x-sz/2+4,y-sz/2+4,sz-8,sz-8,2);ctx.stroke();ctx.setLineDash([]);
+      ctx.fillStyle=`rgba(5,6,5,${.65*(1-e/.6)})`;ctx.font=`700 ${Math.max(9,sz*.18)}px "DM Sans", sans-serif`;ctx.textAlign='center';ctx.fillText(s.media.toUpperCase(),x,y+sz*.06);}
+    if(s.id===cSel){ctx.strokeStyle='#EEF2EA';ctx.lineWidth=2;ctx.beginPath();ctx.roundRect(x-sz/2-4,y-sz/2-4,sz+8,sz+8,rad+4);ctx.stroke();}
+    if(s.id===flashId&&flashT>0){ctx.strokeStyle=`rgba(198,244,50,${flashT})`;ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,sz/2+6+(1-flashT)*28,0,7);ctx.stroke();}
+    ctx.globalAlpha=1;});
+}
+function kick(){if(running)return;running=true;requestAnimationFrame(tick);}
+function tick(){
+  if(cur!=='constellation'||!document.getElementById('cv')){running=false;return;}
+  let mv=false;
+  if(t!==target){const d=reduce?1:.02;t=target>t?Math.min(target,t+d):Math.max(target,t-d);mv=true;}
+  if(flashT>0){flashT=Math.max(0,flashT-.008);mv=true;if(flashT===0)flashId=-1;}
+  draw();if(mv)requestAnimationFrame(tick);else running=false;
+}
+window.addEventListener('resize',()=>{if(cur==='constellation'&&cv){layoutC();draw();}if(cur==='welcome')sizeHero();});
+
+/* ---------- hero animation ---------- */
+let hc,hx,hp=[],hRaf=0,hW=0,hH=0;
+function sizeHero(){if(!hc)return;const r=hc.getBoundingClientRect(),d=window.devicePixelRatio||1;hW=r.width;hH=r.height;hc.width=hW*d;hc.height=hH*d;hx.setTransform(d,0,0,d,0,0);}
+function startHero(){
+  hc=document.getElementById('hc');if(!hc)return;hx=hc.getContext('2d');sizeHero();
+  const cols=Object.values(ROLES);
+  hp=Array.from({length:Math.round(Math.min(90,hW*hH/14000))},(_,i)=>({x:Math.random()*hW,y:Math.random()*hH,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,c:i%4===0?cols[i%cols.length]:'#C6F432',r:Math.random()*1.6+1}));
+  const frame=()=>{hx.fillStyle='#0A0B0A';hx.fillRect(0,0,hW,hH);
+    for(let i=0;i<hp.length;i++){const a=hp[i];if(!reduce){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>hW)a.vx*=-1;if(a.y<0||a.y>hH)a.vy*=-1;}
+      for(let j=i+1;j<hp.length;j++){const b=hp[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<130){hx.strokeStyle=`rgba(198,244,50,${(1-d/130)*.22})`;hx.lineWidth=1;hx.beginPath();hx.moveTo(a.x,a.y);hx.lineTo(b.x,b.y);hx.stroke();}}}
+    hp.forEach(a=>{hx.shadowColor=a.c;hx.shadowBlur=10;hx.fillStyle=a.c;hx.globalAlpha=.85;hx.beginPath();hx.arc(a.x,a.y,a.r,0,7);hx.fill();});hx.shadowBlur=0;hx.globalAlpha=1;
+    const g=hx.createLinearGradient(0,0,hW*.7,0);g.addColorStop(0,'rgba(10,11,10,.92)');g.addColorStop(1,'rgba(10,11,10,0)');hx.fillStyle=g;hx.fillRect(0,0,hW,hH);
+    if(!reduce)hRaf=requestAnimationFrame(frame);};
+  frame();
+}
+function stopHero(){cancelAnimationFrame(hRaf);hc=null;}
+
+buildLinks();route();
+</script>
+</body>
+</html>
